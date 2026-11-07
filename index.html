@@ -1,0 +1,654 @@
+<!doctype html>
+<html lang="sr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Kviz Opšte Kulture</title>
+<meta name="description" content="Kviz opšte kulture za 2–8 igrača, sa pozivnicom.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;700;800&family=Manrope:wght@400;600;700;800&display=swap">
+<style>
+/* Layout: one centered "studio card" column on a cobalt quiz-show stage; answers as a 2x2 grid of lettered tiles. Single deliberate theme. */
+:root{
+  --stage:#1a2f9e; --stage-deep:#0f1e6e; --card:#ffffff; --ink:#121a3f; --muted:#5a6390;
+  --gold:#ffc83d; --gold-ink:#3a2a00; --line:#dde2f5; --soft:#eef1fb;
+  --ok:#1f9d55; --bad:#d6403a; --t1:#2563eb; --t2:#e2483d; --t3:#159a6b; --t4:#d8901a;
+  --display:"Unbounded","Arial Black",system-ui,sans-serif;
+  --body:"Manrope","Segoe UI",system-ui,sans-serif;
+  color-scheme:light;
+}
+html,body{min-height:100%}
+body{background:radial-gradient(120% 80% at 50% 0%,var(--stage) 0%,var(--stage-deep) 100%) fixed,var(--stage-deep);color:var(--ink);font-family:var(--body);font-size:16px;line-height:1.5;
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:24px 40px}
+.wrap{max-width:640px;margin:0 auto;display:flex;flex-direction:column;gap:16px}
+header.top{display:flex;align-items:center;justify-content:space-between;gap:12px;color:#fff}
+.logo{font-family:var(--display);font-weight:800;font-size:20px;letter-spacing:.02em;display:flex;align-items:center;gap:10px}
+.logo i{display:inline-grid;place-items:center;width:34px;height:34px;border-radius:50%;background:var(--gold);color:var(--gold-ink);font-style:normal;font-size:18px}
+.pill{font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:5px 10px;border-radius:99px;background:rgba(255,255,255,.14);color:#fff;white-space:nowrap}
+.card{background:var(--card);border-radius:20px;padding:24px;box-shadow:0 20px 50px rgba(5,12,60,.35);display:flex;flex-direction:column;gap:18px}
+h1,h2{font-family:var(--display);margin:0;text-wrap:balance;line-height:1.2}
+h1{font-size:26px;font-weight:800}
+h2{font-size:19px;font-weight:700}
+p{margin:0}
+.muted{color:var(--muted)}
+.small{font-size:13px}
+label.f{display:flex;flex-direction:column;gap:6px;font-weight:700;font-size:14px}
+input[type=text]{font:inherit;font-size:17px;padding:12px 14px;border:2px solid var(--line);border-radius:12px;color:var(--ink);background:#fff;width:100%;box-sizing:border-box}
+input[type=text]:focus{outline:none;border-color:var(--t1)}
+.row{display:flex;gap:10px;flex-wrap:wrap}
+.row>*{flex:1 1 160px}
+button{font:inherit;cursor:pointer;border:0;border-radius:12px;padding:13px 18px;font-weight:800;font-size:16px;transition:transform .08s,filter .15s}
+button:active{transform:scale(.98)}
+button:focus-visible,input:focus-visible,.opt:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
+button:disabled{opacity:.45;cursor:not-allowed}
+.btn-gold{background:var(--gold);color:var(--gold-ink)}
+.btn-blue{background:var(--t1);color:#fff}
+.btn-ghost{background:var(--soft);color:var(--ink)}
+.seg{display:flex;flex-wrap:wrap;gap:8px}
+.seg button{flex:0 0 auto;padding:9px 14px;font-size:15px;background:var(--soft);color:var(--ink);border:2px solid transparent}
+.seg button[aria-pressed=true]{background:var(--ink);color:#fff}
+.code{font-family:var(--display);font-weight:800;font-size:30px;letter-spacing:.18em;text-transform:uppercase;color:var(--ink)}
+.invite{display:flex;gap:8px;align-items:stretch;flex-wrap:wrap}
+.invite input{flex:1 1 220px;min-width:0;font-size:14px}
+.players{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:8px}
+.players li{display:flex;align-items:center;gap:12px;padding:10px 12px;border-radius:12px;background:var(--soft);font-weight:700}
+.av{width:32px;height:32px;border-radius:50%;display:grid;place-items:center;color:#fff;font-family:var(--display);font-size:14px;flex:0 0 auto}
+.players .nm{flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.tag{font-size:11px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;padding:3px 8px;border-radius:99px;background:#fff;color:var(--muted)}
+.tag.host{background:var(--gold);color:var(--gold-ink)}
+.tag.ok{background:var(--ok);color:#fff}
+.score{font-variant-numeric:tabular-nums;font-family:var(--display);font-size:16px}
+.note{padding:12px 14px;border-radius:12px;background:#fff6dc;color:#5a4300;font-size:14px}
+.note.err{background:#fde8e7;color:#7a1d18}
+.qhead{display:flex;justify-content:space-between;align-items:center;gap:10px;color:#fff;font-weight:700}
+.qhead .cat{font-size:12px;letter-spacing:.1em;text-transform:uppercase;opacity:.85}
+.timer{height:10px;border-radius:99px;background:rgba(255,255,255,.18);overflow:hidden}
+.timer>div{height:100%;width:100%;background:var(--gold);transform-origin:left;border-radius:99px}
+.timer.low>div{background:#ff6b5e}
+.clock{font-family:var(--display);font-size:22px;font-variant-numeric:tabular-nums;color:#fff;min-width:3ch;text-align:right}
+.qtext{font-family:var(--display);font-size:clamp(19px,4.6vw,24px);font-weight:700;line-height:1.3;text-wrap:balance}
+.opts{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+@media (max-width:480px){.opts{grid-template-columns:1fr}}
+.opt{display:flex;align-items:center;gap:12px;text-align:left;padding:14px;border-radius:14px;color:#fff;font-weight:700;font-size:16px;min-height:64px;border:3px solid transparent}
+.opt b{display:grid;place-items:center;width:30px;height:30px;border-radius:8px;background:rgba(255,255,255,.22);font-family:var(--display);font-size:14px;flex:0 0 auto}
+.opt span{min-width:0}
+.opt.o0{background:var(--t1)}.opt.o1{background:var(--t2)}.opt.o2{background:var(--t3)}.opt.o3{background:var(--t4)}
+.opt.picked{border-color:var(--ink);box-shadow:0 0 0 3px var(--gold) inset}
+.opts.locked .opt:not(.picked){filter:saturate(.35) brightness(1.05);opacity:.7}
+.opts.reveal .opt{filter:none;opacity:.35}
+.opts.reveal .opt.right{opacity:1;box-shadow:0 0 0 4px var(--ok);background:var(--ok)}
+.opts.reveal .opt.wrong{opacity:1;background:var(--bad)}
+.status{display:flex;flex-wrap:wrap;gap:8px}
+.chip{display:flex;align-items:center;gap:6px;padding:6px 10px;border-radius:99px;background:var(--soft);font-weight:700;font-size:13px}
+.chip .dot{width:8px;height:8px;border-radius:50%;background:#b9c0dc}
+.chip.done .dot{background:var(--ok)}
+.delta{font-family:var(--display);font-size:14px}
+.delta.p{color:var(--ok)}.delta.n{color:var(--bad)}.delta.z{color:var(--muted)}
+.big{font-family:var(--display);font-size:44px;font-weight:800;text-align:center}
+.podium li:first-child{background:#fff3cc}
+.rules{display:flex;gap:8px;flex-wrap:wrap}
+.rules span{font-size:13px;font-weight:700;padding:5px 10px;border-radius:8px;background:var(--soft)}
+footer{color:rgba(255,255,255,.7);font-size:12px;text-align:center}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+*{box-sizing:border-box}[hidden]{display:none!important}
+</style>
+</head>
+<body>
+
+<div class="wrap">
+  <header class="top">
+    <div class="logo"><i>?</i>Kviz</div>
+    <span class="pill" id="badge">Opšta kultura</span>
+  </header>
+  <main id="app"></main>
+  <footer>Tačan odgovor +3 · netačan −1 · bez odgovora 0</footer>
+</div>
+
+<script src="peerjs.min.js"></script>
+<script>
+const PREFIX="kvizsrb-opsta-";
+
+// [oblast, pitanje, TAČAN, netačan, netačan, netačan]
+const BANK = [
+["Istorija","Koje godine je počeo Prvi svetski rat?","1914.","1912.","1918.","1939."],
+["Istorija","Ko je predvodio Prvi srpski ustanak?","Karađorđe","Miloš Obrenović","Hajduk Veljko","Stevan Sinđelić"],
+["Istorija","Koje godine se odigrala Kosovska bitka?","1389.","1453.","1371.","1459."],
+["Istorija","Ko je bio prvi predsednik SAD?","Džordž Vašington","Tomas Džeferson","Abraham Linkoln","Džon Adams"],
+["Istorija","Koje godine je pao Berlinski zid?","1989.","1991.","1985.","1961."],
+["Istorija","Koji vladar je doneo zakonik 1349. godine?","Car Dušan","Stefan Nemanja","Knez Lazar","Stefan Prvovenčani"],
+["Istorija","Ko je bio prvi srpski arhiepiskop?","Sveti Sava","Stefan Prvovenčani","Sveti Simeon","Danilo II"],
+["Istorija","U kom gradu je 1914. izvršen atentat na Franca Ferdinanda?","Sarajevo","Beograd","Beč","Budimpešta"],
+["Istorija","Koje godine je Kolumbo stigao do Amerike?","1492.","1498.","1453.","1517."],
+["Istorija","Koja civilizacija je izgradila Maču Pikču?","Inke","Asteci","Maje","Olmeci"],
+["Istorija","Ko je prvi kročio na Mesec?","Nil Armstrong","Baz Oldrin","Jurij Gagarin","Majkl Kolins"],
+["Istorija","Koje godine je počela Francuska revolucija?","1789.","1776.","1804.","1815."],
+["Istorija","Koji grad je bio prestonica Vizantije?","Konstantinopolj","Rim","Atina","Antiohija"],
+["Istorija","Koje godine je završen Drugi svetski rat?","1945.","1944.","1946.","1943."],
+["Istorija","Ko je predvodio Drugi srpski ustanak?","Miloš Obrenović","Karađorđe","Mihailo Obrenović","Aleksandar Karađorđević"],
+["Istorija","Čiju grobnicu je Hauard Karter otkrio 1922. godine?","Tutankamonovu","Ramzesa II","Keopsovu","Ehnatonovu"],
+["Istorija","U kojoj bici je Napoleon konačno poražen 1815. godine?","Kod Vaterloa","Kod Austerlica","Kod Lajpciga","Kod Borodina"],
+["Istorija","Na kom kongresu je Srbija 1878. stekla međunarodno priznatu nezavisnost?","Berlinskom","Bečkom","Pariskom","Londonskom"],
+["Istorija","Koje godine je stvorena Kraljevina Srba, Hrvata i Slovenaca?","1918.","1921.","1929.","1914."],
+["Istorija","Ko je bio prvi rimski car?","Avgust","Julije Cezar","Neron","Trajan"],
+["Istorija","Koje godine je Jurij Gagarin poleteo u svemir?","1961.","1957.","1969.","1965."],
+["Istorija","Koji vladar je osnovao manastir Studenicu?","Stefan Nemanja","Sveti Sava","Car Dušan","Kralj Milutin"],
+["Geografija","Koja reka protiče kroz najviše država na svetu?","Dunav","Nil","Rajna","Amazon"],
+["Geografija","Koji je glavni grad Australije?","Kanbera","Sidnej","Melburn","Pert"],
+["Geografija","Koji je najviši vrh na svetu?","Mont Everest","K2","Kangčendžunga","Makalu"],
+["Geografija","Koji je najveći okean?","Tihi","Atlantski","Indijski","Severni ledeni"],
+["Geografija","Na kojoj planini se nalazi vrh Midžor?","Stara planina","Kopaonik","Zlatibor","Tara"],
+["Geografija","Koji je glavni grad Kanade?","Otava","Toronto","Montreal","Vankuver"],
+["Geografija","Koja je najveća vruća pustinja na svetu?","Sahara","Gobi","Kalahari","Atakama"],
+["Geografija","Koja je najveća država na svetu po površini?","Rusija","Kanada","Kina","SAD"],
+["Geografija","U kom gradu se nalazi Kip slobode?","Njujork","Vašington","Boston","Filadelfija"],
+["Geografija","Kroz koji grad protiče reka Nišava?","Niš","Kragujevac","Čačak","Valjevo"],
+["Geografija","U kom gradu se Sava uliva u Dunav?","Beogradu","Novom Sadu","Smederevu","Pančevu"],
+["Geografija","Koji je najveći kontinent po površini?","Azija","Afrika","Severna Amerika","Evropa"],
+["Geografija","Koji je glavni grad Brazila?","Brazilija","Rio de Žaneiro","Sao Paulo","Salvador"],
+["Geografija","Koje je najdublje jezero na svetu?","Bajkalsko","Tanganjika","Viktorijino","Gornje jezero"],
+["Geografija","Kojoj državi pripada Grenland?","Danskoj","Norveškoj","Islandu","Kanadi"],
+["Geografija","Koja je valuta Japana?","Jen","Juan","Von","Rupija"],
+["Geografija","Koji je glavni grad Turske?","Ankara","Istanbul","Izmir","Antalija"],
+["Geografija","Koja je najmanja država na svetu?","Vatikan","Monako","San Marino","Lihtenštajn"],
+["Geografija","Koji slapovi se nalaze na granici Kanade i SAD?","Nijagarini","Viktorijini","Iguasu","Anđeoski"],
+["Geografija","Na kojoj reci se nalazi Đerdapska klisura?","Dunav","Drina","Morava","Tisa"],
+["Geografija","Na kom ostrvu se nalazi vulkan Etna?","Siciliji","Sardiniji","Kritu","Korzici"],
+["Geografija","Koja planina se smatra granicom Evrope i Azije?","Ural","Kavkaz","Alpi","Karpati"],
+["Geografija","Koji je službeni jezik u Brazilu?","Portugalski","Španski","Engleski","Francuski"],
+["Geografija","Koji je glavni grad Egipta?","Kairo","Aleksandrija","Luksor","Giza"],
+["Geografija","Na kojoj reci leži Novi Sad?","Dunavu","Savi","Tisi","Begeju"],
+["Nauka","Koji je hemijski simbol zlata?","Au","Ag","Zn","Go"],
+["Nauka","Koja planeta je najbliža Suncu?","Merkur","Venera","Mars","Zemlja"],
+["Nauka","Koja je najveća planeta Sunčevog sistema?","Jupiter","Saturn","Neptun","Uran"],
+["Nauka","Koliko kostiju ima odrastao čovek?","206","186","212","230"],
+["Nauka","Ko je postavio teoriju relativnosti?","Albert Ajnštajn","Isak Njutn","Nikola Tesla","Nils Bor"],
+["Nauka","Kolika je približno brzina svetlosti?","300.000 km/s","30.000 km/s","3.000.000 km/s","150.000 km/s"],
+["Nauka","Koji gas biljke upijaju tokom fotosinteze?","Ugljen-dioksid","Kiseonik","Azot","Vodonik"],
+["Nauka","U kom mestu je rođen Nikola Tesla?","Smiljanu","Gospiću","Beogradu","Novom Sadu"],
+["Nauka","Koja je jedinica za električni otpor?","Om","Volt","Amper","Vat"],
+["Nauka","Koji organ luči insulin?","Gušterača","Jetra","Bubreg","Slezina"],
+["Nauka","Ko je otkrio penicilin?","Aleksandar Fleming","Luj Paster","Marija Kiri","Robert Koh"],
+["Nauka","Na kojoj temperaturi voda ključa pri normalnom pritisku?","100 °C","90 °C","120 °C","80 °C"],
+["Nauka","Koja planeta se naziva Crvena planeta?","Mars","Venera","Jupiter","Merkur"],
+["Nauka","Koliko hromozoma ima ljudska ćelija?","46","23","44","48"],
+["Nauka","Koji je hemijski simbol gvožđa?","Fe","Gv","Ir","Ge"],
+["Nauka","Ko je sastavio periodni sistem elemenata?","Dmitrij Mendeljejev","Antoan Lavoazje","Džon Dalton","Nils Bor"],
+["Nauka","Koji je najtvrđi prirodni materijal?","Dijamant","Kvarc","Titanijum","Granit"],
+["Nauka","Po kom izumu je najpoznatiji Mihajlo Pupin?","Kalemovima za telefonske linije","Sijalici","Radaru","Elektromotoru"],
+["Nauka","Koliko komora ima ljudsko srce?","4","2","3","6"],
+["Nauka","Koji je najveći organ ljudskog tela?","Koža","Jetra","Pluća","Mozak"],
+["Nauka","Koja je najveća životinja na svetu?","Plavi kit","Afrički slon","Kit ubica","Kitova ajkula"],
+["Nauka","Koja od ovih ptica ne može da leti?","Noj","Roda","Lasta","Galeb"],
+["Nauka","Koliko nogu ima pauk?","8","6","10","12"],
+["Nauka","Milutin Milanković je poznat po teoriji o:","ledenim dobima","elektromagnetizmu","evoluciji","radioaktivnosti"],
+["Nauka","Koja je hemijska formula kuhinjske soli?","NaCl","KCl","NaOH","CaCO₃"],
+["Nauka","Ko je izumeo telefon (patent 1876)?","Aleksandar Grejam Bel","Tomas Edison","Nikola Tesla","Guljelmo Markoni"],
+["Kultura","Ko je naslikao Mona Lizu?","Leonardo da Vinči","Mikelanđelo","Rafael","Botičeli"],
+["Kultura","Ko je napisao roman „Na Drini ćuprija”?","Ivo Andrić","Meša Selimović","Danilo Kiš","Miloš Crnjanski"],
+["Kultura","Koje godine je Ivo Andrić dobio Nobelovu nagradu?","1961.","1958.","1965.","1971."],
+["Kultura","Ko je napisao „Gorski vijenac”?","Petar II Petrović Njegoš","Vuk Karadžić","Branko Radičević","Laza Kostić"],
+["Kultura","Ko je reformisao srpski jezik i azbuku?","Vuk Stefanović Karadžić","Dositej Obradović","Đura Daničić","Sveti Sava"],
+["Kultura","Ko je napisao „Romea i Juliju”?","Vilijam Šekspir","Čarls Dikens","Molijer","Johan Volfgang Gete"],
+["Kultura","Ko je napisao roman „Rat i mir”?","Lav Tolstoj","Fjodor Dostojevski","Anton Čehov","Aleksandar Puškin"],
+["Kultura","Ko je napisao roman „Derviš i smrt”?","Meša Selimović","Ivo Andrić","Borislav Pekić","Branko Ćopić"],
+["Kultura","Ko je naslikao „Zvezdanu noć”?","Vinsent van Gog","Klod Mone","Pablo Pikaso","Pol Sezan"],
+["Kultura","Ko je oslikao tavanicu Sikstinske kapele?","Mikelanđelo","Leonardo da Vinči","Rafael","Ticijan"],
+["Kultura","Ko je autor romana „Seobe”?","Miloš Crnjanski","Ivo Andrić","Jovan Dučić","Isidora Sekulić"],
+["Kultura","Kako se zove prva knjiga štampana na Cetinju 1494. godine?","Oktoih prvoglasnik","Miroslavljevo jevanđelje","Zakonopravilo","Psaltir"],
+["Kultura","Ko je napisao „Don Kihota”?","Migel de Servantes","Lope de Vega","Dante Aligijeri","Đovani Bokačo"],
+["Kultura","Ko je autor „Božanstvene komedije”?","Dante Aligijeri","Frančesko Petrarka","Đovani Bokačo","Vergilije"],
+["Kultura","Ko je napisao „Ježevu kućicu”?","Branko Ćopić","Jovan Jovanović Zmaj","Desanka Maksimović","Dušan Radović"],
+["Kultura","Ko je napisao pesmu „Krvava bajka”?","Desanka Maksimović","Isidora Sekulić","Milica Stojadinović Srpkinja","Vesna Parun"],
+["Kultura","Koliko žica ima violina?","4","5","6","3"],
+["Kultura","Ko je komponovao „Mesečevu sonatu”?","Ludvig van Betoven","Volfgang Amadeus Mocart","Frederik Šopen","Johan Sebastijan Bah"],
+["Kultura","Kom periodu pripada Vivaldijevo delo „Četiri godišnja doba”?","Baroku","Romantizmu","Klasicizmu","Renesansi"],
+["Kultura","Ko je režirao film „Ko to tamo peva” (1980)?","Slobodan Šijan","Emir Kusturica","Dušan Kovačević","Živojin Pavlović"],
+["Kultura","U kojoj Mocartovoj operi se pojavljuje lik Papagena?","Čarobna frula","Figarova ženidba","Don Đovani","Kosi fan tute"],
+["Kultura","Ko je napisao roman „Zločin i kazna”?","Fjodor Dostojevski","Lav Tolstoj","Nikolaj Gogolj","Ivan Turgenjev"],
+["Kultura","Ko je autor skulpture „Mislilac”?","Ogist Roden","Mikelanđelo","Donatelo","Ivan Meštrović"],
+["Kultura","Ko je autor spomenika „Pobednik” na Kalemegdanu?","Ivan Meštrović","Toma Rosandić","Sreten Stojanović","Đorđe Jovanović"],
+["Kultura","Koliko dirki ima standardni klavir?","88","76","64","96"],
+["Sport","Koliko igrača jedne ekipe je na terenu u fudbalu?","11","10","9","12"],
+["Sport","Gde su održane prve moderne Olimpijske igre 1896. godine?","U Atini","U Parizu","U Londonu","U Rimu"],
+["Sport","Na kom Grend slem turniru je Novak Đoković osvojio najviše titula?","Australijan openu","Vimbldonu","Rolan Garosu","US openu"],
+["Sport","Koliko traje košarkaška utakmica po FIBA pravilima (čisto vreme)?","40 minuta","48 minuta","60 minuta","32 minuta"],
+["Sport","Koliko poena donosi pogođeno slobodno bacanje u košarci?","1","2","3","0,5"],
+["Sport","Koliko polja ima šahovska tabla?","64","81","100","49"],
+["Sport","Koliko dobijenih setova je potrebno za pobedu u odbojci?","3","2","4","5"],
+["Sport","Koja reprezentacija je osvojila prvo Svetsko prvenstvo u fudbalu 1930?","Urugvaj","Brazil","Argentina","Italija"],
+["Sport","Kolika je dužina maratonske trke?","42,195 km","40 km","45 km","41,5 km"],
+["Sport","Koji klub je 1991. osvojio Kup evropskih šampiona?","Crvena zvezda","Partizan","Ajaks","Olimpik Marselj"],
+["Sport","Koliko igrača jedne ekipe je u vodi u vaterpolu (sa golmanom)?","7","6","8","11"],
+["Sport","Koliko krugova ima olimpijski simbol?","5","4","6","7"],
+["Sport","U kom sportu se dodeljuje Dejvis kup?","Tenisu","Golfu","Odbojci","Stonom tenisu"],
+["Sport","Koliko traje jedna runda u profesionalnom boksu?","3 minuta","2 minuta","5 minuta","4 minuta"],
+["Razno","Koliko dana ima prestupna godina?","366","365","364","367"],
+["Razno","Koliko sati ima jedna nedelja?","168","144","172","160"],
+["Razno","Koliko je 15% od 200?","30","15","20","35"],
+["Razno","Koji rimski broj označava 50?","L","C","D","X"],
+["Razno","Koliko slova ima srpska ćirilica?","30","32","28","26"],
+["Razno","Koliko minuta ima jedan dan?","1440","1240","1640","1340"],
+["Razno","Koja boja se dobija mešanjem plave i žute?","Zelena","Ljubičasta","Narandžasta","Braon"],
+["Razno","Kakve boje je krug na zastavi Japana?","Crvene","Žute","Plave","Bele"],
+["Razno","Koji grad se naziva „Večni grad”?","Rim","Atina","Jerusalim","Pariz"],
+["Razno","Šta je osnovna sirovina za proizvodnju stakla?","Kvarcni pesak","Glina","Gips","Ugalj"],
+["Razno","Šta je glavni sastojak gvakamolea?","Avokado","Paradajz","Krastavac","Grašak"],
+["Razno","Za koju svetsku izložbu je izgrađen Ajfelov toranj?","1889.","1900.","1867.","1912."],
+["Razno","Koliko strana ima šestougao?","6","5","7","8"],
+["Razno","Koliko je sekundi u jednom satu?","3600","6000","360","1200"],
+["Razno","Koji je najveći prost broj manji od 20?","19","17","18","13"],
+["Razno","Kako se zove najduža kost u ljudskom telu?","Butna kost","Golenjača","Ramenjača","Kičma"]
+];
+
+const TIMES=[10,15,20,30,45,60];
+const COUNTS=[5,10,15,20,25,30];
+const MAX_PLAYERS=8;
+const REVEAL_MS=4500;
+const COLORS=["#2563eb","#e2483d","#159a6b","#d8901a","#7c3aed","#0e9bb5","#c2417a","#4b5563"];
+const LET=["A","B","C","D"];
+
+const $=s=>document.querySelector(s);
+const app=$("#app");
+const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const store={get(k){try{return localStorage.getItem(k)}catch(e){return null}},set(k,v){try{localStorage.setItem(k,v)}catch(e){}}};
+const shuffle=a=>{a=a.slice();for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]]}return a};
+const cleanName=n=>Array.from(String(n||"")).filter(ch=>{const c=ch.codePointAt(0);return !(c<32||(c>=127&&c<160)||(c>=0x200b&&c<=0x200f)||(c>=0x2028&&c<=0x202e)||(c>=0x2060&&c<=0x206f))}).join("").trim().slice(0,20);
+const mkCode=()=>{const al="abcdefghjkmnpqrstuvwxyz23456789";let s="";for(let i=0;i<5;i++)s+=al[Math.floor(Math.random()*al.length)];return s};
+const initial=n=>(n||"?").trim().charAt(0).toUpperCase();
+const pts=n=>(n>0?"+":n<0?"−":"")+Math.abs(n);
+
+// ---------- stanje ----------
+const S={
+  screen:"start", name:cleanName(store.get("kviz.name")), code:"", role:null,
+  peer:null, hostConn:null, pmap:{}, roomState:"ok", peers:[], myPeer:"me",
+  time:20, count:10, err:"",
+  H:null,            // domaćin: pun tok igre
+  myAns:[], myRound:-1,   // igrač: moji odgovori
+  localKey:"", qStart:0, joinTimer:null, hostSeen:false
+};
+const hashCode=()=>{const m=/^#igra-([a-z0-9]{4,8})$/.exec(location.hash||"");return m?m[1]:""};
+S.code=hashCode();
+
+// ---------- veza (PeerJS, direktno između pregledača) ----------
+S.roomState = (typeof Peer==="function") ? "ok" : "none";
+S.conns={}; // domaćin: peerId -> konekcija
+function peerList(){ S.peers=Object.values(S.pmap||{}); }
+function hostOpen(){
+  return new Promise(res=>{
+    const tryOpen=(n)=>{
+      const pr=new Peer(PREFIX+S.code,window.PEER_OPTS||{});
+      pr.on("open",id=>{S.peer=pr;S.myPeer=id;res(true)});
+      pr.on("error",e=>{
+        if(e.type==="unavailable-id"&&n<4){pr.destroy();S.code=mkCode();tryOpen(n+1)}
+        else if(!S.peer){S.err="Ne mogu da otvorim igru ("+e.type+"). Proverite internet i pokušajte ponovo.";res(false)}
+      });
+      pr.on("connection",conn=>{
+        conn.on("open",()=>{S.conns[conn.peer]=conn;});
+        conn.on("data",d=>{
+          if(!d||typeof d!=="object"||d.t!=="p"||typeof d.presence!=="object") return;
+          S.pmap=S.pmap||{};
+          const old=S.pmap[conn.peer];
+          S.pmap[conn.peer]={peer:conn.peer,presence:Object.assign({},old&&old.presence,d.presence)};
+          peerList(); hostPublish(); hostTick();
+        });
+        const gone=()=>{delete S.conns[conn.peer]; if(S.pmap){delete S.pmap[conn.peer]; peerList();} hostPublish();};
+        conn.on("close",gone); conn.on("error",gone);
+      });
+      pr.on("disconnected",()=>{try{pr.reconnect()}catch(e){}});
+    };
+    tryOpen(0);
+  });
+}
+function guestOpen(code){
+  return new Promise(res=>{
+    const pr=new Peer(undefined,window.PEER_OPTS||{});
+    let done=false;
+    pr.on("open",id=>{
+      S.peer=pr; S.myPeer=id;
+      const conn=pr.connect(PREFIX+code,{reliable:true});
+      S.hostConn=conn;
+      conn.on("open",()=>{done=true;res(true)});
+      conn.on("data",d=>{
+        if(!d||typeof d!=="object"||d.t!=="p"||typeof d.presence!=="object") return;
+        S.pmap={[conn.peer]:{peer:conn.peer,presence:d.presence}}; peerList(); onRoomChange();
+      });
+      conn.on("close",()=>{S.pmap={};peerList();S.hostSeen=true;S.screen="gone";render()});
+    });
+    pr.on("error",e=>{
+      if(e.type==="peer-unavailable"){S.screen="gone";S.hostSeen=false;render();if(!done)res(true);return}
+      if(!done){S.err="Ne mogu da se povežem ("+e.type+"). Proverite internet i pokušajte ponovo.";res(false)}
+    });
+    setTimeout(()=>{if(!done){S.err="Povezivanje traje predugo. Proverite kod i internet.";res(false)}},15000);
+  });
+}
+function setPresence(obj){
+  try{
+    if(S.role==="host"){ for(const c of Object.values(S.conns)) if(c.open) c.send({t:"p",presence:obj}); }
+    else if(S.hostConn&&S.hostConn.open){ S.hostConn.send({t:"p",presence:obj}); }
+  }catch(e){}
+}
+
+// ---------- pomoćne ----------
+function hostPeer(){ return S.peers.find(p=>p.presence&&p.presence.role==="host"&&!p.sameTab) }
+function G(){ // trenutno stanje igre koje vidim
+  if(S.role==="host") return S.H;
+  const h=hostPeer(); const g=h&&h.presence.g;
+  return (g&&typeof g==="object")?g:null;
+}
+function lobbyPlayers(){
+  if(S.role==="player"){
+    const g=G();
+    if(g&&Array.isArray(g.lobby)&&g.lobby.length){
+      const l=g.lobby.map(x=>({peer:x.p,name:cleanName(x.n),host:!!x.h,me:x.p===S.myPeer}));
+      if(!l.some(x=>x.me)) l.push({peer:S.myPeer,name:S.name,host:false,me:true});
+      return l.sort((a,b)=>(b.host-a.host));
+    }
+  }
+  const list=[{peer:S.myPeer,name:S.name,host:S.role==="host",me:true}];
+  if(S.role==="host"){
+    // samo domaćin vidi ko je u sobi kao igrač
+  }
+  for(const p of S.peers){
+    if(p.sameTab) continue;
+    const pr=p.presence||{}; const n=cleanName(pr.name);
+    if(!n||(pr.role!=="player"&&pr.role!=="host")) continue;
+    list.push({peer:p.peer,name:n,host:pr.role==="host",me:false});
+  }
+  return list.sort((a,b)=>(b.host-a.host));
+}
+function answerOf(peer,g){
+  if(peer===S.myPeer) return S.role==="host"?S.myAns[g.qi]:null;
+  const p=S.peers.find(x=>x.peer===peer); if(!p) return undefined;
+  const pr=p.presence||{}; if(pr.r!==g.round||!Array.isArray(pr.a)) return null;
+  const v=pr.a[g.qi]; if(!Array.isArray(v)) return null;
+  const c=v[0]; return (Number.isInteger(c)&&c>=0&&c<4)?v:null;
+}
+const inRoster=g=>Array.isArray(g.roster)&&g.roster.some(r=>r.p===S.myPeer);
+const myRow=g=>Array.isArray(g.roster)?g.roster.find(r=>r.p===S.myPeer):null;
+const present=peer=>peer===S.myPeer||S.peers.some(p=>p.peer===peer);
+
+// ---------- domaćin: tok igre ----------
+function hostPublish(){
+  if(!S.H) return;
+  S.H.lobby = S.H.phase==="lobby" ? lobbyPlayers().map(p=>({p:p.peer,n:p.name,h:p.host})) : [];
+  S.H.done = S.H.phase==="q" ? S.H.roster.filter(r=>answerOf(r.p,S.H)).map(r=>r.p) : [];
+  setPresence({role:"host",name:S.name,g:S.H}); onRoomChange();
+}
+function hostCreate(){
+  S.role="host"; S.code=mkCode();
+  S.H={round:0,phase:"lobby",time:S.time,count:S.count,qi:0,qs:[],roster:[]};
+  try{ history.replaceState(null,"","#igra-"+S.code) }catch(e){}
+}
+function hostStart(){
+  const players=lobbyPlayers().slice(0,MAX_PLAYERS);
+  const roster=players.map((p,i)=>({p:p.peer,n:p.name,s:0,c:i,lc:-1,lp:0}));
+  const picks=shuffle(BANK.map((_,i)=>i)).slice(0,Math.min(S.count,BANK.length));
+  S.H={round:(S.H?S.H.round:0)+1,phase:"q",time:S.time,count:picks.length,qi:0,
+       qs:picks.map(i=>[i,...shuffle([0,1,2,3])]),roster};
+  S.myAns=[]; S.hostPhaseAt=performance.now();
+  hostPublish();
+}
+function hostTick(){
+  const H=S.H; if(!H||S.role!=="host") return;
+  const now=performance.now();
+  if(H.phase==="q"){
+    const ids=H.roster.map(r=>r.p).filter(present);
+    const all=ids.length>0&&ids.every(id=>answerOf(id,H));
+    if(all||now-S.hostPhaseAt>H.time*1000+800){
+      const perm=H.qs[H.qi].slice(1), right=perm.indexOf(0);
+      for(const r of H.roster){
+        const a=answerOf(r.p,H);
+        if(!a){r.lc=-1;r.lp=0}else{r.lc=a[0];r.lp=a[0]===right?3:-1}
+        r.s+=r.lp;
+      }
+      H.phase="reveal"; S.hostPhaseAt=now; hostPublish();
+    }
+  }else if(H.phase==="reveal"){
+    if(now-S.hostPhaseAt>REVEAL_MS){
+      if(H.qi+1<H.count){H.qi++;H.phase="q"}else{H.phase="end"}
+      S.hostPhaseAt=now; hostPublish();
+    }
+  }
+}
+setInterval(hostTick,200);
+function hostToLobby(){ S.H.phase="lobby"; S.H.roster=[]; S.myAns=[]; hostPublish(); }
+
+// ---------- igrač ----------
+function answer(displayIdx){
+  const g=G(); if(!g||g.phase!=="q") return;
+  if(S.myAns[g.qi]) return;
+  const el=performance.now()-S.qStart;
+  if(el>g.time*1000) return;
+  if(!inRoster(g)) return;
+  S.myAns[g.qi]=[displayIdx,Math.round(el)];
+  if(S.role!=="host") setPresence({role:"player",name:S.name,r:g.round,a:S.myAns});
+  if(S.role==="host"){ hostPublish(); hostTick(); }
+  render(true);
+}
+
+// ---------- reakcija na promene ----------
+function onRoomChange(){
+  if(S.role==="player"){
+    const h=hostPeer();
+    if(h){S.hostSeen=true; clearTimeout(S.joinTimer)}
+    const g=G();
+    if(g&&g.round!==S.myRound){S.myRound=g.round;S.myAns=[];setPresence({role:"player",name:S.name,r:g.round,a:[]})}
+    if(S.hostSeen&&!h){S.screen="gone"}
+    else if(g){S.screen=g.phase==="lobby"?"lobby":"game"}
+  }else if(S.role==="host"){
+    S.screen=S.H.phase==="lobby"?"lobby":"game";
+  }
+  const g=G();
+  if(g&&g.phase==="q"){
+    const k=g.round+":"+g.qi;
+    if(S.localKey!==k){S.localKey=k;S.qStart=performance.now()}
+  }
+  render(true);
+}
+
+// ---------- prikaz ----------
+let lastKey="";
+function screenKey(){
+  const g=G();
+  if(S.screen==="game"&&g) return "game:"+g.round+":"+g.qi+":"+g.phase+":"+(S.myAns[g.qi]?1:0);
+  return S.screen+":"+S.roomState+":"+S.err;
+}
+function render(soft){
+  const k=screenKey();
+  if(soft&&k===lastKey){ updateDynamic(); return; }
+  lastKey=k;
+  $("#badge").textContent = S.code&&S.screen!=="start" ? "Igra "+S.code.toUpperCase() : "Opšta kultura";
+  ({start:vStart,lobby:vLobby,game:vGame,gone:vGone})[S.screen]();
+  updateDynamic();
+}
+
+function vStart(){
+  const inv=!!S.code&&!S.role;
+  const roomNote = S.roomState==="none"
+    ? `<p class="note">Veza sa drugim igračima nije dostupna (proverite internet). Možete da igrate sami.</p>` : "";
+  app.innerHTML=`<section class="card">
+    <div style="display:flex;flex-direction:column;gap:6px">
+      <h1>${inv?"Pozvani ste u kviz":"Kviz opšte kulture"}</h1>
+      <p class="muted">${inv?"Upišite ime i uđite u igru "+esc(S.code.toUpperCase())+". Domaćin pokreće kviz.":"Za dva ili više igrača. Domaćin bira vreme i broj pitanja, ostale poziva linkom."}</p>
+    </div>
+    <div class="rules"><span>Tačan +3</span><span>Netačan −1</span><span>Bez odgovora 0</span></div>
+    <label class="f" for="nm">Vaše ime<input type="text" id="nm" maxlength="20" autocomplete="nickname" placeholder="npr. Marko" value="${esc(S.name)}"></label>
+    ${S.err?`<p class="note err">${esc(S.err)}</p>`:""}
+    ${roomNote}
+    ${inv?`<button class="btn-gold" id="join">Uđi u igru</button>
+           <button class="btn-ghost" id="new">Napravi svoju igru</button>`
+        :`<button class="btn-gold" id="new">Napravi igru (domaćin)</button>
+          <div style="display:flex;flex-direction:column;gap:8px">
+            <label class="f" for="cd">Imate kod igre?</label>
+            <div class="row"><input type="text" id="cd" maxlength="8" placeholder="npr. k7m2p" autocapitalize="off" autocomplete="off"><button class="btn-blue" id="join" style="flex:0 0 auto">Pridruži se</button></div>
+          </div>`}
+  </section>`;
+  const nm=$("#nm");
+  const getName=()=>{const n=cleanName(nm.value);if(!n){S.err="Upišite ime da biste nastavili.";render();setTimeout(()=>$("#nm")&&$("#nm").focus(),0);return null}S.name=n;store.set("kviz.name",n);S.err="";return n};
+  $("#new").onclick=async()=>{
+    if(!getName())return;
+    hostCreate();
+    if(S.roomState==="ok"){ app.innerHTML='<section class="card"><p>Otvaram igru…</p></section>'; if(!await hostOpen()){S.role=null;S.code="";S.H=null;render();return} try{history.replaceState(null,"","#igra-"+S.code)}catch(e){} }
+    S.screen="lobby"; hostPublish(); render();
+  };
+  $("#join").onclick=async()=>{
+    if(!getName())return;
+    let c=S.code;
+    if(!inv){c=String(($("#cd")||{}).value||"").toLowerCase().replace(/[^a-z0-9]/g,"");}
+    if(!/^[a-z0-9]{4,8}$/.test(c)){S.err="Upišite ispravan kod igre (5 znakova).";render();return}
+    if(S.roomState!=="ok"){S.err="Veza nije dostupna. Proverite internet i osvežite stranicu.";render();return}
+    S.code=c; S.role="player"; S.err="";
+    try{history.replaceState(null,"","#igra-"+c)}catch(e){}
+    app.innerHTML='<section class="card"><p>Povezujem se sa domaćinom…</p></section>';
+    const ok=await guestOpen(c); if(!ok){S.role=null;render();return}
+    if(S.screen==="gone") return;
+    setPresence({role:"player",name:S.name,r:-1,a:[]});
+    S.screen="lobby"; render();
+  };
+  nm.addEventListener("keydown",e=>{if(e.key==="Enter")$(inv?"#join":"#new").click()});
+}
+
+function inviteUrl(){ return location.origin.startsWith("http") ? location.origin+location.pathname+"#igra-"+S.code : "" }
+function vLobby(){
+  const host=S.role==="host";
+  const url=inviteUrl();
+  app.innerHTML=`<section class="card">
+    ${host?`
+      <div style="display:flex;flex-direction:column;gap:4px">
+        <p class="muted small">Kod igre</p><div class="code">${esc(S.code)}</div>
+      </div>
+      ${S.peer?`<div style="display:flex;flex-direction:column;gap:8px">
+        <p style="font-weight:700">Pošaljite pozivnicu</p>
+        ${url?`<div class="invite"><input type="text" id="inv" readonly value="${esc(url)}"><button class="btn-blue" id="copy" style="flex:0 0 auto">Kopiraj link</button></div>`:""}
+        <p class="muted small">Ili neka otvore kviz i upišu kod <b>${esc(S.code.toUpperCase())}</b>.</p>
+      </div>`:`<p class="note">Bez veze sa sobom igrate sami.</p>`}
+      <div style="display:flex;flex-direction:column;gap:8px">
+        <p style="font-weight:700">Vreme po pitanju</p>
+        <div class="seg" id="segT">${TIMES.map(t=>`<button aria-pressed="${t===S.time}" data-t="${t}">${t} s</button>`).join("")}</div>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:8px">
+        <p style="font-weight:700">Broj pitanja</p>
+        <div class="seg" id="segC">${COUNTS.map(c=>`<button aria-pressed="${c===S.count}" data-c="${c}">${c}</button>`).join("")}</div>
+      </div>`
+    :`<div style="display:flex;flex-direction:column;gap:6px"><h2>Čekamo domaćina</h2><p class="muted" id="hostInfo">Domaćin će pokrenuti kviz kad svi uđu.</p></div>`}
+    <div style="display:flex;flex-direction:column;gap:8px">
+      <p style="font-weight:700">Igrači <span class="muted" id="pc"></span></p>
+      <ul class="players" id="plist"></ul>
+    </div>
+    ${host?`<button class="btn-gold" id="go">Pokreni kviz</button><p class="muted small" id="goHint"></p>`:""}
+  </section>`;
+  if(host){
+    $("#segT").onclick=e=>{const b=e.target.closest("button");if(!b)return;S.time=+b.dataset.t;S.H.time=S.time;hostPublish();render()};
+    $("#segC").onclick=e=>{const b=e.target.closest("button");if(!b)return;S.count=+b.dataset.c;S.H.count=S.count;hostPublish();render()};
+    $("#go").onclick=hostStart;
+    const cp=$("#copy");
+    if(cp)cp.onclick=()=>{const i=$("#inv");const done=()=>{cp.textContent="Kopirano";setTimeout(()=>{if(cp.isConnected)cp.textContent="Kopiraj link"},1800)};
+      try{navigator.clipboard.writeText(i.value).then(done,()=>{i.select();cp.textContent="Označeno, kopirajte"})}catch(e){i.select()}};
+  }
+  lastLobbySig="";
+}
+let lastLobbySig="";
+function updateLobby(){
+  const list=lobbyPlayers();
+  const sig=JSON.stringify(list.map(p=>[p.peer,p.name,p.host]));
+  if(S.role==="player"){
+    const g=G(); const hi=$("#hostInfo");
+    if(hi&&g) hi.textContent=`Domaćin je podesio ${g.count} pitanja, ${g.time} s po pitanju.`;
+  }
+  if(sig===lastLobbySig) return; lastLobbySig=sig;
+  const ul=$("#plist"); if(!ul) return;
+  ul.innerHTML=list.map((p,i)=>`<li><span class="av" style="background:${COLORS[i%COLORS.length]}">${esc(initial(p.name))}</span><span class="nm">${esc(p.name)}</span>${p.host?'<span class="tag host">Domaćin</span>':""}${p.me?'<span class="tag">Vi</span>':""}${i>=MAX_PLAYERS?'<span class="tag">Gledalac</span>':""}</li>`).join("");
+  const pc=$("#pc"); if(pc) pc.textContent=`(${Math.min(list.length,MAX_PLAYERS)}/${MAX_PLAYERS})`;
+  const hint=$("#goHint");
+  if(hint) hint.textContent = list.length<2 ? "Čeka se bar još jedan igrač. Možete pokrenuti i sami." : "Svi su spremni? Pokrenite kviz.";
+}
+
+function vGame(){
+  const g=G(); if(!g){app.innerHTML="";return}
+  if(g.phase==="end") return vEnd(g);
+  const [qIdx,...perm]=g.qs[g.qi]; const Q=BANK[qIdx];
+  if(!Q){app.innerHTML=`<section class="card"><p>Učitavam pitanje…</p></section>`;return}
+  const right=perm.indexOf(0);
+  const mine=S.myAns[g.qi]; const inGame=inRoster(g);
+  const reveal=g.phase==="reveal";
+  const myR=myRow(g);
+  const myChoice = reveal ? (myR?myR.lc:-1) : (mine?mine[0]:-1);
+  app.innerHTML=`
+  <div style="display:flex;flex-direction:column;gap:10px">
+    <div class="qhead"><span>Pitanje ${g.qi+1} / ${g.count} <span class="cat">· ${esc(Q[0])}</span></span><span class="clock" id="clock">${reveal?"":g.time}</span></div>
+    <div class="timer" id="tbar"><div id="tfill" style="${reveal?"transform:scaleX(0)":""}"></div></div>
+  </div>
+  <section class="card" style="margin-top:16px">
+    <p class="qtext">${esc(Q[1])}</p>
+    <div class="opts ${reveal?"reveal":mine||!inGame?"locked":""}" id="opts">
+      ${perm.map((k,i)=>`<button class="opt o${i} ${i===myChoice?"picked":""} ${reveal&&i===right?"right":""} ${reveal&&i===myChoice&&i!==right?"wrong":""}" data-i="${i}" ${reveal||mine||!inGame?"disabled":""}><b>${LET[i]}</b><span>${esc(Q[2+k])}</span></button>`).join("")}
+    </div>
+    <p class="muted small" id="gmsg">${!inGame?"Gledate ovu rundu. Uključićete se u sledeću.":reveal?revealMsg(myR,right):mine?"Odgovor je zaključan. Čekamo ostale…":"Izaberite odgovor."}</p>
+    <div class="status" id="gstat"></div>
+  </section>`;
+  $("#opts").onclick=e=>{const b=e.target.closest(".opt");if(b&&!b.disabled)answer(+b.dataset.i)};
+}
+function revealMsg(r,right){
+  if(!r) return "";
+  if(r.lc===-1) return "Niste odgovorili: 0 poena.";
+  return r.lc===right?"Tačno! +3 poena.":"Netačno: −1 poen.";
+}
+function rosterSorted(g){
+  return (g.roster||[]).slice().sort((a,b)=>b.s-a.s||a.c-b.c);
+}
+function updateGame(){
+  const g=G(); const st=$("#gstat"); if(!g||!st) return;
+  const reveal=g.phase==="reveal";
+  const rows=reveal?rosterSorted(g):(g.roster||[]).slice().sort((a,b)=>a.c-b.c);
+  st.innerHTML=rows.map(r=>{
+    const name=esc(cleanName(r.n))+(r.p===S.myPeer?" (vi)":"");
+    if(reveal){const cls=r.lp>0?"p":r.lp<0?"n":"z";return `<span class="chip"><span class="score">${r.s|0}</span> ${name} <span class="delta ${cls}">${pts(r.lp|0)}</span></span>`}
+    const done=r.p===S.myPeer?!!S.myAns[g.qi]:S.role==="host"?!!answerOf(r.p,g):(Array.isArray(g.done)&&g.done.includes(r.p));
+    return `<span class="chip ${done?"done":""}"><span class="dot"></span>${name}</span>`;
+  }).join("");
+}
+function vEnd(g){
+  const rows=rosterSorted(g);
+  const top=rows[0]; const tie=rows.length>1&&rows[1].s===top.s;
+  app.innerHTML=`<section class="card">
+    <div style="display:flex;flex-direction:column;gap:6px;text-align:center">
+      <p class="muted small" style="text-transform:uppercase;letter-spacing:.1em;font-weight:800">Kraj kviza</p>
+      <h1>${top?(tie?"Nerešeno!":"Pobednik: "+esc(cleanName(top.n))):"Kraj"}</h1>
+      ${top?`<div class="big">${top.s} <span class="muted" style="font-size:18px">poena</span></div>`:""}
+    </div>
+    <ol class="players podium">${rows.map((r,i)=>`<li><span class="av" style="background:${COLORS[r.c%COLORS.length]}">${i+1}</span><span class="nm">${esc(cleanName(r.n))}${r.p===S.myPeer?" (vi)":""}</span><span class="score">${r.s}</span></li>`).join("")}</ol>
+    ${S.role==="host"?`<button class="btn-gold" id="again">Nova igra sa istim igračima</button>`:`<p class="muted small" style="text-align:center">Domaćin može da pokrene novu igru.</p>`}
+  </section>`;
+  const a=$("#again"); if(a)a.onclick=hostToLobby;
+}
+function vGone(){
+  app.innerHTML=`<section class="card">
+    <h2>${S.hostSeen?"Domaćin je napustio igru":"Igra nije pronađena"}</h2>
+    <p class="muted">${S.hostSeen?"Igra je prekinuta. Možete napraviti novu.":"Proverite kod ili zamolite domaćina da ostavi kviz otvoren pa pokušajte ponovo."}</p>
+    <button class="btn-gold" id="back">Na početak</button>
+  </section>`;
+  $("#back").onclick=()=>{try{S.peer&&S.peer.destroy()}catch(e){};S.peer=null;S.hostConn=null;S.conns={};S.pmap={};S.role=null;S.hostSeen=false;S.peers=[];S.code="";S.screen="start";try{history.replaceState(null,"",location.pathname+location.search)}catch(e){};render()};
+}
+function updateDynamic(){
+  if(S.screen==="lobby") updateLobby();
+  if(S.screen==="game") updateGame();
+}
+
+// tajmer
+(function loop(){
+  const g=G();
+  if(S.screen==="game"&&g&&g.phase==="q"){
+    const left=Math.max(0,g.time*1000-(performance.now()-S.qStart));
+    const f=$("#tfill"),c=$("#clock"),b=$("#tbar");
+    if(f)f.style.transform=`scaleX(${left/(g.time*1000)})`;
+    if(c)c.textContent=Math.ceil(left/1000);
+    if(b)b.classList.toggle("low",left<5000);
+    if(left<=0&&!S.myAns[g.qi]){const o=$("#opts");if(o&&!o.classList.contains("locked")){o.classList.add("locked");o.querySelectorAll(".opt").forEach(x=>x.disabled=true);const m=$("#gmsg");if(m)m.textContent="Vreme je isteklo."}}
+  }
+  requestAnimationFrame(loop);
+})();
+
+render();
+</script>
+</body>
+</html>
