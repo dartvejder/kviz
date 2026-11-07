@@ -60,7 +60,8 @@ button:disabled{opacity:.45;cursor:not-allowed}
 .players{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:8px}
 .players li{display:flex;align-items:center;gap:12px;padding:10px 12px;border-radius:12px;background:var(--soft);font-weight:700}
 .av{width:32px;height:32px;border-radius:50%;display:grid;place-items:center;color:#fff;font-family:var(--display);font-size:18px;line-height:1;flex:0 0 auto}
-.avpick{display:grid;grid-template-columns:repeat(7,1fr);gap:6px}
+.avpick{display:grid;grid-template-columns:repeat(8,minmax(0,1fr));gap:6px}
+@media (max-width:380px){.avpick{grid-template-columns:repeat(6,minmax(0,1fr))}}
 .avpick svg{margin:auto;font-size:28px}
 .avpick button{aspect-ratio:1;max-width:100%;padding:0;font-size:24px;line-height:1;background:var(--soft);border:3px solid transparent;border-radius:12px}
 .avpick button[aria-pressed=true]{border-color:var(--ink);background:#fff6dc}
@@ -151,7 +152,7 @@ const TIMES=[10,15,20,30,45,60];
 const COUNTS=[5,10,15,20,25,30];
 const MAX_PLAYERS=8;
 const REVEAL_MS=6500;
-const AVATARS=["🦊","🐼","🐯","🦁","🐸","🐵","🐨","🐙","🦄","🐲","🦉","🐧","🐢","🦖","🐝","🐬","🦀","🐺","🐮","🐷",'<svg viewBox="0 0 64 64" width="1em" height="1em" style="display:block" aria-label="Dart Vejder"><path d="M32 4C17 4 9 15 9 29v9l-5 16 14 6h28l14-6-5-16v-9C55 15 47 4 32 4z" fill="#111"/><path d="M32 7c-3 0-4 4-4 10v12h8V17c0-6-1-10-4-10z" fill="#3a3a3a"/><path d="M14 30c5-4 11-5 16-2l-2 7c-5-1-10 0-15 3zM50 30c-5-4-11-5-16-2l2 7c5-1 10 0 15 3z" fill="#5b5b5b"/><path d="M27 36h10l5 16H22z" fill="#2b2b2b"/><path d="M28 41h8M27 45h10M26 49h12" stroke="#9a9a9a" stroke-width="1.6"/><path d="M18 54l4-6M46 54l-4-6" stroke="#555" stroke-width="2"/></svg>'];
+const AVATARS=["🦊","🐼","🐯","🦁","🐸","🐵","🐨","🐙","🦄","🐲","🦉","🐧","🐢","🦖","🐝","🐬","🦀","🐺","🐮","🐷",'<svg viewBox="0 0 64 64" width="1em" height="1em" style="display:block" aria-label="Dart Vejder"><path d="M32 4C17 4 9 15 9 29v9l-5 16 14 6h28l14-6-5-16v-9C55 15 47 4 32 4z" fill="#111"/><path d="M32 7c-3 0-4 4-4 10v12h8V17c0-6-1-10-4-10z" fill="#3a3a3a"/><path d="M14 30c5-4 11-5 16-2l-2 7c-5-1-10 0-15 3zM50 30c-5-4-11-5-16-2l2 7c5-1 10 0 15 3z" fill="#5b5b5b"/><path d="M27 36h10l5 16H22z" fill="#2b2b2b"/><path d="M28 41h8M27 45h10M26 49h12" stroke="#9a9a9a" stroke-width="1.6"/><path d="M18 54l4-6M46 54l-4-6" stroke="#555" stroke-width="2"/></svg>','<svg viewBox="0 0 64 64" width="1em" height="1em" style="display:block" aria-label="Dart Vejder roze"><path d="M32 4C17 4 9 15 9 29v9l-5 16 14 6h28l14-6-5-16v-9C55 15 47 4 32 4z" fill="#e0428f"/><path d="M32 7c-3 0-4 4-4 10v12h8V17c0-6-1-10-4-10z" fill="#f48cbf"/><path d="M14 30c5-4 11-5 16-2l-2 7c-5-1-10 0-15 3zM50 30c-5-4-11-5-16-2l2 7c5-1 10 0 15 3z" fill="#5a1236"/><path d="M27 36h10l5 16H22z" fill="#b02a6c"/><path d="M28 41h8M27 45h10M26 49h12" stroke="#ffd1e8" stroke-width="1.6"/><path d="M18 54l4-6M46 54l-4-6" stroke="#8f1f57" stroke-width="2"/><g transform="translate(46 17) scale(1.3)"><circle cx="0" cy="-6" r="4.6" fill="#fff"/><circle cx="5.7" cy="-1.9" r="4.6" fill="#fff"/><circle cx="3.5" cy="4.9" r="4.6" fill="#fff"/><circle cx="-3.5" cy="4.9" r="4.6" fill="#fff"/><circle cx="-5.7" cy="-1.9" r="4.6" fill="#fff"/><circle r="3.6" fill="#ffc83d"/></g></svg>',"🐻","🐰"];
 const avOk=a=>Number.isInteger(a)&&a>=0&&a<AVATARS.length;
 const fmtS=n=>(n<0?"−":"")+Math.abs(n|0);
 function avHtml(a,c,fallback){return `<span class="av" style="background:${COLORS[(c||0)%COLORS.length]}">${avOk(a)?AVATARS[a]:esc(initial(fallback))}</span>`}
