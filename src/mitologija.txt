@@ -343,3 +343,139 @@ Ko je bio arapski moreplovac iz „Hiljadu i jedne noći”?|Sinbad|Aladin|Ali B
 Koju čarobnu reč izgovara Ali Baba da otvori pećinu?|Sezame, otvori se|Abrakadabra|Hokus-pokus|Simsalabim
 Šta je Aladin pronašao u pećini?|Čarobnu lampu sa duhom|Leteći ćilim|Zlatnu ribicu|Mač
 Kako se zove duh iz lampe u arapskim pričama?|Džin|Ifrit|Gul|Pari
+Ko je bio vrhovni bog u nordijskoj mitologiji?|Odin|Tor|Loki|Frej
+Kako se zove dom bogova u nordijskoj mitologiji?|Asgard|Midgard|Valhala|Jotunhajm
+Kako se zove svet ljudi u nordijskoj mitologiji?|Midgard|Asgard|Hel|Vanahajm
+Kako se zove dvorana u koju idu poginuli ratnici kod Vikinga?|Valhala|Asgard|Bifrost|Ragnarok
+Kako se zove dugin most do Asgarda?|Bifrost|Igdrasil|Mjolnir|Gjalarhorn
+Kako se zove drvo sveta u nordijskoj mitologiji?|Igdrasil|Bifrost|Valhala|Midgard
+Kako se zove kraj sveta u nordijskoj mitologiji?|Ragnarok|Armagedon|Apokalipsa|Fimbulvetr
+Kako se zovu ratnice koje biraju poginule za Valhalu?|Valkire|Norne|Amazonke|Furije
+Kako se zove Odinov osmonogi konj?|Slejpnir|Pegaz|Fenrir|Hugin
+Kako se zove džinovski vuk sin Lokija?|Fenrir|Jormungand|Slejpnir|Garm
+Kako se zove svetska zmija koja okružuje Midgard?|Jormungand|Fenrir|Nidhog|Hel
+Kako se zovu Odinovi gavranovi?|Hugin i Munin|Geri i Freki|Tanngnjost i Tanngrisnir|Skol i Hati
+Koji dan u nedelji na engleskom nosi ime po Toru?|Četvrtak (Thursday)|Utorak (Tuesday)|Sreda (Wednesday)|Petak (Friday)
+Koji dan u nedelji na engleskom nosi ime po Odinu (Wodenu)?|Sreda (Wednesday)|Četvrtak|Utorak|Petak
+Kako se zove boginja ljubavi u nordijskoj mitologiji?|Freja|Frigga|Hel|Idun
+Kako se zove boginja podzemnog sveta, ćerka Lokija?|Hel|Freja|Frigga|Skadi
+Koji bog je ubijen imelom zbog Lokijeve prevare?|Baldr|Tor|Tir|Hajmdal
+Koji bog je izgubio ruku zbog vuka Fenrira?|Tir|Odin|Tor|Baldr
+Koji bog čuva Bifrost i ima rog Gjalarhorn?|Hajmdal|Tir|Baldr|Frej
+Ko je bio vrhovni bog Egipćana, bog sunca?|Ra|Oziris|Anubis|Set
+Ko je bog podzemnog sveta i mrtvih u Egiptu?|Oziris|Ra|Horus|Tot
+Koji egipatski bog ima glavu šakala?|Anubis|Horus|Tot|Set
+Koji egipatski bog ima glavu sokola?|Horus|Anubis|Tot|Ra
+Koji egipatski bog mudrosti ima glavu ibisa?|Tot|Horus|Anubis|Ptah
+Koja egipatska boginja ima glavu mačke?|Bastet|Izida|Sehmet|Hator
+Koja egipatska boginja je žena Ozirisa i majka Horusa?|Izida|Bastet|Hator|Nut
+Koji egipatski bog je ubio brata Ozirisa?|Set|Horus|Anubis|Ra
+Šta su Egipćani verovali da se meri na sudu mrtvih?|Srce naspram pera|Duša naspram zlata|Glava naspram kamena|Ruke naspram vode
+Koja životinja je bila sveta u Egiptu i balzamovana masovno?|Mačka|Konj|Pas|Svinja
+Kako se zove astečki bog „pernata zmija”?|Kecalkoatl|Huicilopočtli|Tlalok|Teskatlipoka
+Kako se zove astečki bog kiše?|Tlalok|Kecalkoatl|Huicilopočtli|Šipe Totek
+Kako se zove bog sunca Inka?|Inti|Viracoča|Pačamama|Kecalkoatl
+Kako se zove boginja zemlje kod Inka (Majka Zemlja)?|Pačamama|Inti|Mama Kila|Viracoča
+Kako se zove vrhovni bog stvoritelj kod Inka?|Viracoča|Inti|Kecalkoatl|Pačamama
+Kako se zove sveta knjiga Maja?|Popol Vuh|Kodeks Mendosa|Čilam Balam|Rigveda
+Koja su tri glavna boga hinduizma (trimurti)?|Brama, Višnu i Šiva|Rama, Krišna i Ganeša|Indra, Agni i Surja|Šiva, Kali i Parvati
+Koji hinduistički bog ima glavu slona?|Ganeša|Hanuman|Šiva|Višnu
+Koji hinduistički bog ima lik majmuna?|Hanuman|Ganeša|Garuda|Narasimha
+Koji bog je u hinduizmu „rušitelj” i ima treće oko?|Šiva|Višnu|Brama|Indra
+Koji bog je u hinduizmu „čuvar” sa avatarima Ramom i Krišnom?|Višnu|Šiva|Brama|Indra
+Kako se zove hinduistička boginja bogatstva?|Lakšmi|Kali|Sarasvati|Durga
+Kako se zove hinduistička boginja znanja i muzike?|Sarasvati|Lakšmi|Parvati|Kali
+Kako se zove ep o Rami?|Ramajana|Mahabharata|Bhagavad gita|Upanišade
+Koji deo Mahabharate je razgovor Krišne i Arđune?|Bhagavad gita|Ramajana|Vede|Upanišade
+Koje su najstarije svete knjige hinduizma?|Vede|Upanišade|Purane|Sutre
+Kako se zove ciklus ponovnih rađanja u hinduizmu i budizmu?|Samsara|Nirvana|Karma|Darma
+Kako se zove zakon uzroka i posledice dela u hinduizmu?|Karma|Darma|Mokša|Samsara
+Kako se zove stanje oslobođenja od patnje u budizmu?|Nirvana|Samsara|Karma|Mantra
+Kako se zvao Buda pre prosvetljenja?|Sidarta Gautama|Lao Ce|Konfučije|Mahavira
+Pod kojim drvetom je Buda doživeo prosvetljenje?|Bodhi (smokva)|Lotos|Banjan|Palma
+U kojoj zemlji je rođen Buda?|Nepalu|Indiji|Tibetu|Šri Lanki
+Koje su „četiri plemenite istine” deo?|Budizma|Hinduizma|Islama|Taoizma
+Ko je duhovni vođa tibetanskog budizma?|Dalaj Lama|Pančen Lama|Karmapa|Mao
+Ko je osnivač taoizma prema predanju?|Lao Ce|Konfučije|Buda|Mencije
+Kako se zove knjiga osnivača taoizma?|Tao Te Đing|I Đing|Analekti|Sutra lotosa
+Kako se zove simbol suprotnosti u kineskoj filozofiji?|Jin i jang|Mandala|Om|Lotos
+Kako se zove japanska izvorna religija?|Šintoizam|Budizam|Taoizam|Konfučijanizam
+Kako se zove boginja sunca u šintoizmu?|Amaterasu|Izanami|Inari|Susanoo
+Kako se zovu duhovi prirode u šintoizmu?|Kami|Oni|Jokai|Tengu
+Kako se zove kapija šintoističkih svetilišta?|Tori|Pagoda|Stupa|Minaret
+Ko je osnivač sikizma?|Guru Nanak|Guru Gobind Sing|Buda|Mahavira
+Koji je najsvetiji hram sikizma?|Zlatni hram u Amritsaru|Tadž Mahal|Angkor Vat|Kaba
+Ko je osnivač džainizma u današnjem obliku?|Mahavira|Buda|Guru Nanak|Šankara
+Ko je osnivač zoroastrizma?|Zaratustra|Mani|Mitra|Kir
+Kako se zove dobri bog u zoroastrizmu?|Ahura Mazda|Ariman|Mitra|Anahita
+Kako se zove sveta knjiga islama?|Kuran|Tora|Talmud|Vede
+Koji je najsvetiji grad u islamu?|Meka|Medina|Jerusalim|Kairo
+Kako se zove hodočašće u Meku?|Hadž|Ramazan|Bajram|Zekat
+Kako se zove crna kockasta građevina u Meki?|Kaba|Minaret|Mihrab|Kubbet
+Koliko puta dnevno se muslimani mole?|5|3|7|2
+Kako se zove mesec posta u islamu?|Ramazan|Muharem|Šaban|Ševal
+Kako se zove kula sa koje se poziva na molitvu?|Minaret|Kupola|Mihrab|Mimber
+Kako se zove poziv na molitvu u islamu?|Ezan|Hadž|Sura|Hutba
+Kako se zove poglavlje Kurana?|Sura|Ajet|Hadis|Džuz
+Kako se zove sveta knjiga judaizma, pet Mojsijevih knjiga?|Tora|Talmud|Kuran|Psaltir
+Kako se zove jevrejski praznik svetla sa devetokrakim svećnjakom?|Hanuka|Pesah|Jom Kipur|Purim
+Kako se zove jevrejski praznik izlaska iz Egipta?|Pesah|Hanuka|Šavuot|Sukot
+Kako se zove jevrejski Dan pomirenja?|Jom Kipur|Roš Hašana|Purim|Pesah
+Kako se zove jevrejski dan odmora?|Šabat|Nedelja|Petak|Hanuka
+Kako se zove jevrejska molitvena kuća?|Sinagoga|Džamija|Hram|Kapela
+Kako se zove ceremonija punoletstva jevrejskog dečaka?|Bar micva|Bat micva|Brit mila|Šabat
+Koji je simbol judaizma sa šest krakova?|Davidova zvezda|Menora|Polumesec|Krst
+Kako se zove zid u Jerusalimu sveto mesto Jevreja?|Zid plača|Zlatna kapija|Kupola na steni|Kula Davidova
+Koliko knjiga ima Novi zavet?|27|39|66|12
+Koliko jevanđelja ima u Novom zavetu?|4|3|5|12
+Koje jevanđelje je prvo po redu u Novom zavetu?|Po Mateju|Po Marku|Po Luki|Po Jovanu
+Koja je poslednja knjiga Biblije?|Otkrivenje (Apokalipsa)|Dela apostolska|Malahija|Jevanđelje po Jovanu
+Koja je prva knjiga Biblije?|Postanje|Izlazak|Psalmi|Jevanđelje po Mateju
+Ko je prema Bibliji sagradio barku pred potop?|Noje|Mojsije|Avram|David
+Koliko dana i noći je padala kiša tokom potopa?|40|7|100|12
+Na koju planinu se nasukala Nojeva barka?|Ararat|Sinaj|Golgota|Olimp
+Ko je primio Deset zapovesti na Sinaju?|Mojsije|Avram|Noje|Ilija
+Ko je prema Bibliji pobedio Golijata?|David|Samson|Solomon|Saul
+Ko je izgubio snagu kad mu je odsečena kosa?|Samson|David|Golijat|Jona
+Ko je u Bibliji progutan od strane kita (velike ribe)?|Jona|Jov|Noje|Danilo
+Ko je bačen u lavlju jamu i preživeo?|Danilo (Daniel)|Jona|David|Josif
+Koji kralj je poznat po mudrosti i sagradio Hram u Jerusalimu?|Solomon|David|Saul|Irod
+Ko je bio prvi ubica prema Bibliji?|Kain|Avelj|Set|Lameh
+Kako se zove brat koga je Kain ubio?|Avelj|Set|Enoh|Isak
+Koga je Avram trebalo da žrtvuje po Božjoj zapovesti?|Isaka|Ismaila|Jakova|Josifa
+Ko je imao šareni kaput i bio prodat od braće?|Josif|Jakov|Veniamin|Ruben
+Koliko apostola je imao Isus?|12|10|7|13
+Koji apostol je izdao Isusa?|Juda Iskariotski|Petar|Toma|Jovan
+Za koliko srebrnjaka je Juda izdao Isusa?|30|10|40|100
+Koji apostol se triput odrekao Isusa?|Petar|Juda|Toma|Andrej
+Koji apostol je sumnjao u vaskrsenje dok nije video rane?|Toma|Petar|Filip|Matej
+Koji apostol je bio ribar i brat Petra?|Andrej|Jovan|Jakov|Matej
+Koji apostol je bio carinik?|Matej|Luka|Toma|Filip
+Koje je prvo Isusovo čudo prema Jevanđelju po Jovanu?|Pretvaranje vode u vino u Kani|Hodanje po vodi|Vaskrsenje Lazara|Hranjenje 5000
+Koga je Isus vaskrsao iz mrtvih posle četiri dana?|Lazara|Petra|Jovana|Jaira
+Na kom brdu je Isus razapet?|Golgota|Sion|Maslinska gora|Tavor
+Ko je sudio Isusu i „oprao ruke”?|Pontije Pilat|Irod|Kajafa|Avgust
+U kom gradu je rođen Isus?|Vitlejemu|Nazaretu|Jerusalimu|Kapernaumu
+Koji je bio grad Isusovog detinjstva?|Nazaret|Vitlejem|Jerusalim|Kana
+Ko je krstio Isusa?|Jovan Krstitelj|Petar|Pavle|Andrej
+U kojoj reci je kršten Isus?|Jordanu|Nilu|Eufratu|Tigru
+Koji apostol je napisao najviše poslanica?|Pavle|Petar|Jovan|Jakov
+Kako se zvao Pavle pre obraćenja?|Savle|Simon|Levije|Natanael
+Ko je prvi hrišćanski mučenik?|Sveti Stefan (Arhiđakon)|Sveti Petar|Sveti Đorđe|Sveti Pavle
+Ko je zaštitnik putnika i dece, slavi se 19. decembra?|Sveti Nikola|Sveti Đorđe|Sveti Sava|Sveti Jovan
+Koji svetitelj ubija aždahu na ikonama?|Sveti Đorđe|Sveti Dimitrije|Sveti Nikola|Sveti Mihailo
+Koji svetitelj se slavi kao Mitrovdan?|Sveti Dimitrije|Sveti Mitrofan|Sveti Đorđe|Sveti Arhangel
+Koji svetitelj se slavi 21. novembra kao Aranđelovdan?|Sveti arhangel Mihailo|Sveti Gavrilo|Sveti Nikola|Sveti Luka
+Koja je najčešća krsna slava u Srbiji?|Sveti Nikola|Sveti Đorđe|Sveti Jovan|Sveti Arhangel
+Koji svetac se slavi kao Jovanjdan?|Sveti Jovan Krstitelj|Sveti Jovan Zlatousti|Sveti apostol Jovan|Sveti Jovan Vladimir
+Kada se slavi Jovanjdan?|20. januara|7. januara|27. januara|14. januara
+Kog datuma se slavi Petrovdan?|12. jula|2. avgusta|28. juna|6. maja
+Koji praznik se slavi 40 dana posle Uskrsa?|Spasovdan (Vaznesenje)|Duhovi|Cveti|Vidovdan
+Koji praznik se slavi 50 dana posle Uskrsa?|Duhovi (Trojice)|Spasovdan|Preobraženje|Blagovesti
+Kako se zove nedelja pred Uskrs kada se slavi ulazak u Jerusalim?|Cveti|Lazareva subota|Veliki petak|Mesne poklade
+Kog datuma pravoslavni slave Blagovesti?|7. aprila|25. marta|19. avgusta|28. avgusta
+Kog datuma se slavi Preobraženje?|19. avgusta|28. avgusta|2. avgusta|21. septembra
+Kog datuma se slavi Velika Gospojina?|28. avgusta|19. avgusta|21. septembra|4. decembra
+Kog datuma se slavi Mala Gospojina?|21. septembra|28. avgusta|4. decembra|14. oktobra
+Kog datuma se slavi Bogojavljenje?|19. januara|7. januara|14. januara|27. januara
+Kog datuma se slavi Mitrovdan?|8. novembra|21. novembra|19. decembra|26. oktobra

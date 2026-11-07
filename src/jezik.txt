@@ -388,3 +388,136 @@ Kako se zove stanovnik Smedereva?|Smederevac|Smederevčanin|Smederevljanin|Smede
 Kako se zove stanovnik Vranja?|Vranjanac|Vranjčanin|Vranjac|Vranjevac
 Kako se zove stanovnik Novog Sada?|Novosađanin|Novosadac|Novosadčanin|Novosadjanin
 Kako se zove stanovnik Subotice?|Subotičanin|Suboćanin|Subotičar|Subotac
+Šta znači reč „ćuprija”?|Most|Kuća|Reka|Put
+Šta znači reč „čaršija”?|Glavna ulica ili trgovački deo grada|Pijaca|Kafana|Crkva
+Šta znači reč „avlija”?|Dvorište|Kuhinja|Bašta|Ulica
+Šta znači reč „sokak”?|Uska ulica|Trg|Kuća|Selo
+Šta znači reč „kapija”?|Vrata od dvorišta|Prozor|Krov|Ograda
+Šta znači reč „pendžer”?|Prozor|Vrata|Zid|Pod
+Šta znači reč „ćilim”?|Tepih|Jastuk|Ćebe|Zavesa
+Šta znači reč „jorgan”?|Prekrivač za spavanje|Tepih|Jastuk|Zavesa
+Šta znači reč „bakšiš”?|Napojnica|Porez|Zajam|Kazna
+Šta znači reč „ćumez”?|Kokošinjac|Štala|Svinjac|Podrum
+Šta znači reč „đuture”?|Sve zajedno, na veliko|Polako|Pojedinačno|Na dug
+Šta znači reč „baška”?|Posebno, odvojeno|Zajedno|Odmah|Možda
+Šta znači reč „dembel”?|Lenj čovek|Vojnik|Bogataš|Pijanica
+Šta znači reč „merak”?|Uživanje|Tuga|Strah|Ljutnja
+Šta znači reč „sevdah”?|Ljubavna čežnja|Bes|Radost|Strah
+Šta znači reč „inat”?|Prkos|Lenjost|Hrabrost|Ljubomora
+Šta znači reč „ćeif”?|Raspoloženje, zadovoljstvo|Bolest|Glad|San
+Šta znači reč „ćorav”?|Slep|Gluv|Ćopav|Hrom
+Šta znači reč „ćopav”?|Hrom|Slep|Gluv|Nem
+Šta znači reč „buđelar”?|Novčanik|Torba|Sat|Kaiš
+Šta znači reč „šlafrok”?|Kućni ogrtač|Kaput|Šešir|Papuče
+Šta znači reč „šrafciger”?|Odvijač|Čekić|Klešta|Testera
+Šta znači reč „šporet”?|Peć za kuvanje|Frižider|Lonac|Sudopera
+Šta znači reč „vešmašina”?|Mašina za pranje veša|Usisivač|Pegla|Sušilica
+Šta znači reč „cušpajz”?|Gusto jelo od povrća|Supa|Kolač|Sos
+Šta znači reč „frtalj”?|Četvrtina|Polovina|Trećina|Desetina
+Šta znači reč „drot” u govoru Vojvodine?|Žica|Sat|Kapija|Šešir
+Šta znači reč „ajnfort” u Vojvodini?|Kolski ulaz u dvorište|Prozor|Krevet|Ormar
+Šta znači reč „šnajder”?|Krojač|Kuvar|Stolar|Obućar
+Šta znači reč „herc” u kartama?|Srce|Pik|Karo|Tref
+Šta znači reč „kibicovati”?|Gledati tuđu igru i komentarisati|Varati|Pobediti|Spavati
+Šta znači reč „blamaža”?|Sramota|Pohvala|Pobeda|Bolest
+Šta znači reč „fasovati”?|Dobiti sledovanje ili kaznu|Spakovati|Prodati|Pobeći
+Šta znači reč „flaster”?|Zavoj sa lepkom|Čekić|Ključ|Prozor
+Šta znači reč „ceger”?|Mrežasta torba za kupovinu|Kapa|Šal|Novčanik
+Šta znači izraz „pala mu je sekira u med”?|Imao je sreće|Izgubio je posao|Povredio se|Naljutio se
+Šta znači izraz „gledati kroz prste”?|Biti blag i popustljiv|Ne videti dobro|Biti ljubomoran|Krasti
+Šta znači izraz „pasti s Marsa”?|Biti neupućen|Biti srećan|Biti bogat|Biti umoran
+Šta znači izraz „seći granu na kojoj sediš”?|Raditi sebi o glavi|Biti vredan|Biti lenj|Biti hrabar
+Šta znači izraz „baciti peškir”?|Odustati|Pobediti|Okupati se|Počistiti
+Šta znači izraz „držati figu u džepu”?|Biti licemeran, tajno se protiviti|Imati sreće|Biti škrt|Biti gladan
+Šta znači izraz „mlatiti praznu slamu”?|Pričati uzalud|Raditi teško|Biti siromašan|Žeti žito
+Šta znači izraz „kupiti mačku u džaku”?|Kupiti nešto bez provere|Prevariti nekoga|Dobiti poklon|Uštedeti
+Šta znači izraz „nositi srce na dlanu”?|Biti otvoren i iskren|Biti bolestan|Biti tužan|Biti hrabar
+Šta znači izraz „biti na konju”?|Biti u dobroj poziciji|Biti jahač|Biti ljut|Biti u žurbi
+Šta znači izraz „lupiti glavom o zid”?|Shvatiti grešku kasno|Biti tvrdoglav|Imati glavobolju|Biti srećan
+Šta znači izraz „ići niz dlaku”?|Povlađivati nekome|Ljutiti nekoga|Ići nizbrdo|Biti srećan
+Šta znači izraz „tresla se gora, rodio se miš”?|Mnogo buke ni oko čega|Velika promena|Zemljotres|Sreća u nesreći
+Šta znači izraz „Ahilova peta”?|Slaba tačka|Brzina|Hrabrost|Povreda noge
+Šta znači izraz „Damoklov mač”?|Stalna opasnost|Pobeda|Pravda|Kazna
+Šta znači izraz „Sizifov posao”?|Uzaludan, beskonačan posao|Lak posao|Dobro plaćen posao|Tajni posao
+Šta znači izraz „Pandorina kutija”?|Izvor mnogih nevolja|Poklon|Tajna|Blago
+Šta znači izraz „Tantalove muke”?|Patnja zbog nedostižne želje|Bolest|Glad|Rad
+Šta znači izraz „Augijeve štale”?|Veliki nered|Lepa kuća|Bogatstvo|Konji
+Šta znači izraz „Pirova pobeda”?|Pobeda koja je skupo plaćena|Laka pobeda|Slavna pobeda|Poraz
+Šta znači izraz „preći Rubikon”?|Doneti neopozivu odluku|Preplivati reku|Odustati|Pobeći
+Šta znači izraz „Trojanski konj”?|Prevara skrivena u poklonu|Brz konj|Igračka|Spomenik
+Šta znači izraz „Gordijev čvor”?|Teško rešiv problem|Mornarski čvor|Kravata|Zagonetka za decu
+Šta znači izraz „Arijadnina nit”?|Put rešenja iz problema|Konac za šivenje|Ljubav|Prevara
+Šta znači izraz „Odisejada”?|Dugo mukotrpno putovanje|Pesma|Pobeda|Gozba
+Šta znači izraz „Judin poljubac”?|Izdaja|Ljubav|Pozdrav|Oproštaj
+Šta znači izraz „prati ruke” (kao Pilat)?|Odbiti odgovornost|Biti čist|Moliti se|Pozdraviti
+Šta znači izraz „Kasandrino proročanstvo”?|Upozorenje kome niko ne veruje|Srećna vest|Laž|Molitva
+Šta znači izraz „narcisoidan”?|Zaljubljen u sebe|Plašljiv|Darežljiv|Tužan
+Šta znači izraz „spartanski uslovi”?|Skromni i strogi uslovi|Luksuzni uslovi|Ratni uslovi|Sportski uslovi
+Šta znači izraz „homerski smeh”?|Gromoglasan smeh|Tihi osmeh|Plač|Podsmeh
+Šta znači izraz „olimpijski mir”?|Potpuna smirenost|Primirje u ratu|Sportski duh|Pobeda
+Šta znači izraz „kao grom iz vedra neba”?|Iznenada|Polako|Glasno|Opasno
+Šta znači izraz „ni luk jeo ni luk mirisao”?|Praviti se nevešt|Biti gladan|Ne voleti luk|Biti zdrav
+Šta znači izraz „obećavati kule i gradove”?|Obećavati nemoguće|Graditi kuće|Biti bogat|Putovati
+Šta znači izraz „isterati mak na konac”?|Ići u sitne detalje|Šiti|Saditi mak|Lagati
+Šta znači izraz „ne vidi šumu od drveća”?|Gubi celinu zbog detalja|Slabo vidi|Ne voli prirodu|Izgubio se
+Šta znači izraz „uzeti zdravo za gotovo”?|Prihvatiti bez provere|Biti zdrav|Kupiti gotovo jelo|Platiti unapred
+Koja reč ima suprotno značenje od „velikodušan”?|Škrt|Darežljiv|Plemenit|Dobar
+Koja reč je sinonim za „hrabar”?|Smeo|Plašljiv|Lenj|Spor
+Koja reč je sinonim za „brz”?|Hitar|Trom|Spor|Lenj
+Koja reč je sinonim za „pametan”?|Mudar|Glup|Naivan|Lenj
+Koja reč je sinonim za „lep”?|Krasan|Ružan|Grub|Bled
+Koja reč je antonim reči „star”?|Mlad|Drevan|Matori|Iskusan
+Koja reč je antonim reči „vredan”?|Lenj|Marljiv|Radan|Uporan
+Koja reč je antonim reči „svetao”?|Taman|Sjajan|Bistar|Jasan
+Koja reč je antonim reči „slatko”?|Gorko|Medeno|Šećerno|Lepo
+Kako se zove reč istog značenja, a različitog oblika?|Sinonim|Antonim|Homonim|Pleonazam
+Kako se zove reč suprotnog značenja?|Antonim|Sinonim|Homonim|Paronim
+Kako se zove reč istog oblika, a različitog značenja?|Homonim|Sinonim|Antonim|Metafora
+Kako se zove reč ili rečenica koja se isto čita s obe strane?|Palindrom|Anagram|Akronim|Homonim
+Koja reč je palindrom?|Potop|Prozor|Kuća|Voda
+Koja rečenica je palindrom?|Ana voli Milovana|Mama voli tatu|Idem kući sada|Pas laje glasno
+Kako se zove premetanje slova da se dobije nova reč?|Anagram|Palindrom|Akronim|Rebus
+Kako se zove reč od početnih slova drugih reči, poput NATO?|Akronim|Anagram|Palindrom|Sinonim
+Kako se zove ponavljanje istog značenja („viđeno svojim očima”)?|Pleonazam|Metafora|Ironija|Hiperbola
+Kako se zove preuveličavanje kao stilska figura?|Hiperbola|Litota|Ironija|Metafora
+Kako se zove poređenje sa rečju „kao”?|Poređenje|Metafora|Personifikacija|Alegorija
+Kako se zove prenošenje ljudskih osobina na stvari?|Personifikacija|Metafora|Hiperbola|Ironija
+Kako se zove figura koja kaže suprotno od onog što misli?|Ironija|Metafora|Hiperbola|Eufemizam
+Kako se zove ublažen izraz za nešto neprijatno?|Eufemizam|Ironija|Pleonazam|Hiperbola
+Kako se zove ponavljanje istog glasa na početku reči?|Aliteracija|Asonanca|Rima|Anafora
+Kako se zove ponavljanje samoglasnika u stihu?|Asonanca|Aliteracija|Rima|Anafora
+Kako se zove ponavljanje iste reči na početku stihova?|Anafora|Epifora|Rima|Asonanca
+Kako se zove stih od deset slogova u narodnoj epskoj pesmi?|Deseterac|Osmerac|Dvanaesterac|Šesterac
+Kako se zove pesma od 14 stihova?|Sonet|Oda|Elegija|Balada
+Kako se zove tužna pesma o gubitku?|Elegija|Oda|Satira|Epigram
+Kako se zove svečana pesma u slavu nekoga?|Oda|Elegija|Satira|Sonet
+Kako se zove kratka duhovita pesma sa poentom?|Epigram|Sonet|Oda|Ep
+Kako se zove japanska pesma od tri stiha (5-7-5 slogova)?|Haiku|Tanka|Sonet|Limerik
+Kako se zove engleska šaljiva pesma od pet stihova?|Limerik|Haiku|Sonet|Balada
+Koliko padeža ima srpski jezik?|7|6|5|8
+Koji padež se koristi za dozivanje?|Vokativ|Nominativ|Akuzativ|Dativ
+Koji padež odgovara na pitanje „gde?” (o kome? o čemu?)|Lokativ|Dativ|Genitiv|Instrumental
+Kako se zove promena imenica po padežima?|Deklinacija|Konjugacija|Komparacija|Derivacija
+Kako se zove promena glagola po licima?|Konjugacija|Deklinacija|Komparacija|Akcentovanje
+Kako se zove poređenje prideva (lep, lepši, najlepši)?|Komparacija|Deklinacija|Konjugacija|Sinonimija
+Koje glagolsko vreme je „biću radio”?|Futur drugi|Futur prvi|Perfekat|Pluskvamperfekat
+Koje glagolsko vreme je „bio sam radio”?|Pluskvamperfekat|Perfekat|Aorist|Imperfekat
+Koje glagolsko vreme je „rekoh”?|Aorist|Imperfekat|Perfekat|Prezent
+Koji je superlativ od „dobar”?|Najbolji|Najdobriji|Bolji|Najdoboljiji
+Koji je komparativ od „zao”?|Gori|Zliji|Najgori|Zaliji
+Kako se zove pravilo „s” ispred bezvučnih, „z” ispred zvučnih?|Jednačenje suglasnika po zvučnosti|Palatalizacija|Sibilarizacija|Nepostojano a
+Kako se zove promena k, g, h u č, ž, š?|Palatalizacija|Sibilarizacija|Jotovanje|Jednačenje
+Kako se zove promena k, g, h u c, z, s?|Sibilarizacija|Palatalizacija|Jotovanje|Asimilacija
+Kako se kaže „hvala” na mađarskom?|Köszönöm|Danke|Merci|Děkuji
+Kako se kaže „hvala” na češkom?|Děkuji|Dziękuję|Köszönöm|Ďakujem
+Kako se kaže „hvala” na poljskom?|Dziękuję|Děkuji|Spasibo|Dakujem
+Kako se kaže „hvala” na grčkom?|Efharisto|Teşekkürler|Gracias|Grazie
+Kako se kaže „hvala” na turskom?|Teşekkürler|Efharisto|Shukran|Merci
+Kako se kaže „hvala” na arapskom?|Šukran|Toda|Merci|Efharisto
+Kako se kaže „hvala” na hebrejskom?|Toda|Šukran|Danke|Spasibo
+Kako se kaže „hvala” na japanskom?|Arigato|Kamsahamnida|Xièxie|Spasibo
+Kako se kaže „hvala” na korejskom?|Kamsahamnida|Arigato|Xièxie|Khop khun
+Kako se kaže „hvala” na kineskom?|Sjesje (xièxie)|Arigato|Kamsahamnida|Namaste
+Kako se kaže „zdravo” na havajskom?|Aloha|Namaste|Ciao|Hola
+Kako se kaže „zdravo” na hindiju?|Namaste|Aloha|Salaam|Sawadee
+Na kom jeziku je reč „ciao”?|Italijanskom|Španskom|Portugalskom|Francuskom

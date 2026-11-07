@@ -249,3 +249,122 @@ Koja nagrada je televizijski pandan Oskaru?|Emi|Zlatni globus|Grami|Toni
 Koja nagrada se dodeljuje za muziku?|Grami|Emi|Toni|Oskar
 Koja nagrada se dodeljuje za pozorište na Brodveju?|Toni|Emi|Grami|Oskar
 Koja dramska serija ima najviše osvojenih Emi nagrada?|Igra prestola|Breaking Bad|Kruna|Ludi muškarci
+Kako se zove profesor hemije koji postaje proizvođač droge u seriji „Breaking Bad”?|Volter Vajt|Džesi Pinkman|Sol Gudman|Hank Šrejder
+Kako se zove partner Voltera Vajta u „Breaking Bad”?|Džesi Pinkman|Sol Gudman|Majk Ermantraut|Gas Fring
+Kako se zove advokat iz serije „Bolje pozovi Sola”?|Sol Gudman (Džimi Mekgil)|Hauard Hamlin|Čak Mekgil|Kim Veksler
+Kako se zove vlasnik lanca restorana „Los Pollos Hermanos”?|Gas Fring|Hektor Salamanka|Majk Ermantraut|Tuko
+U kom gradu se dešava „Breaking Bad”?|Albukerki|Feniks|El Paso|Santa Fe
+Koji glumac igra Voltera Vajta?|Brajan Kranston|Aron Pol|Bob Odenkirk|Đankarlo Espozito
+Kako se zove porodica iz serije „Sopranovi”?|Soprano|Korleone|Darko|Gali
+Kako se zove glavni junak serije „Sopranovi”?|Toni Soprano|Kristofer Moltisanti|Pol Galtijeri|Silvio Dante
+Kako se zove klub u kom se okupljaju u „Sopranovima”?|Bada Bing|Moonlight|Copacabana|Cheers
+U kojoj američkoj saveznoj državi se dešavaju „Sopranovi”?|Nju Džersi|Njujork|Pensilvanija|Merilend
+Kako se zove porodica iz serije „Nasledstvo” (Succession)?|Roj|Lanister|Soprano|Dutton
+Kako se zove ranč porodice Daton u seriji „Jelouston”?|Jelouston|Southfork|Ponderosa|Big Valley
+Kako se zove ranč porodice Juing u seriji „Dalas”?|Southfork|Ponderosa|Jelouston|Falcon Crest
+Kako se zove zli brat u seriji „Dalas”?|Dž. R. Juing|Bobi Juing|Klif Barns|Rej Krebs
+Kako se zove porodica iz serije „Dinastija”?|Karington|Juing|Kolbi|Daton
+Kako se zove glavna junakinja serije „Kraljičin gambit”?|Bet Harmon|Džolin|Alma|Klio
+Kako se zove glavna junakinja serije „Bafi, ubica vampira”?|Bafi Samers|Vilou Rozenberg|Kordelija Čejs|Fejt
+Kako se zove najstarija sestra u seriji „Čarobnice”?|Pru Halivel|Fibi Halivel|Pajper Halivel|Pejdž Metjuz
+Kako se zove porodica kod koje živi Alf?|Tanerovi|Simpsonovi|Bandijevi|Kosbijevi
+Sa koje planete je Alf?|Melmak|Ork|Kripton|Gallifrej
+Koje životinje Alf voli da jede?|Mačke|Pse|Ribe|Ptice
+Sa koje planete je Mork iz serije „Mork i Mindi”?|Ork|Melmak|Kripton|Vulkan
+Kako se zove porodica iz serije „Bračne vode”?|Bandijevi|Tanerovi|Simpsonovi|Kosbijevi
+Kako se zove otac porodice u „Bračnim vodama”?|Al Bandi|Hel Vilkerson|Fil Danfi|Džordž Kostanca
+Kako se preziva Fil u seriji „Moderna porodica”?|Danfi|Pričet|Takar|Bandi
+Kako se zove mama u Simpsonovima?|Mardž|Lisa|Megi|Patriša
+Kako se zove ćerka Simpsonovih koja svira saksofon?|Lisa|Megi|Mardž|Selma
+Kako se zove vlasnik nuklearne elektrane u „Simpsonovima”?|Gospodin Berns|Ned Flanders|Mo|Smiders
+Kako se zove komšija Homera Simpsona koji je veoma pobožan?|Ned Flanders|Leni|Karl|Mo
+Kako se zove prodavac u „Kvik-I-Martu” u Simpsonovima?|Apu|Mo|Barni|Klitus
+Kako se zove klovn u Simpsonovima?|Klovn Krasti|Bob Sporedni|Klovn Pipo|Itči
+Kako se zove pas Simpsonovih?|Mali pomoćnik Deda Mraza|Snežko|Odi|Brajan
+Kako se zove pas iz serije „Porodični čovek” koji govori?|Brajan|Stui|Kliv|Snupi
+Kako se zove beba koja želi da zavlada svetom u „Porodičnom čoveku”?|Stui|Megi|Kris|Keni
+Kako se zove dečak koji gine u skoro svakoj epizodi „South Parka”?|Keni|Kartman|Stan|Kajl
+Kako se zove debeli dečak iz „South Parka”?|Kartman|Keni|Stan|Baters
+Kako se zove naučnik deda iz serije „Rik i Morti”?|Rik Sančez|Morti Smit|Džeri Smit|Birdperson
+Kako se zove animirana serija o sunđeru koji živi u ananasu?|Sunđer Bob Kockalone|Avatar|Avanturističko vreme|Finijas i Ferb
+Kako se zove najbolji prijatelj Sunđer Boba, morska zvezda?|Patrik|Lignjoslav|Gospodin Kraba|Sendi
+Kako se zove prijatelj Skubi-Dua koji uvek jede?|Šegi|Fred|Velma|Dafne
+Kako se zove crtana serija o mačku i mišu koji se jure?|Tom i Džeri|Silvester i Tviti|Pera Kojot|Pink Panter
+Koji lik crtaća stalno juri Ptice Trkačice?|Pera Kojot|Silvester|Tom|Daša
+Kako se zove zec iz crtaća Vorner Brosa sa rečenicom „Šta ima, doktore?”|Duško Dugouško|Hopko|Rodžer Rabit|Zeka Peka
+Kako se zove lovac koji juri Duška Dugouška?|Elmer Fad|Josemit Sem|Pera Kojot|Patak Dača
+Kako se zove detektiv iz crtaća sa produžnim rukama?|Inspektor Gadžet|Inspektor Klouzo|Kapetan Zub|Doktor Klo
+Kako se zove zlikovac iz „Inspektora Gadžeta”?|Doktor Klo|Skeletor|Gargamel|Megatron
+Kako se zove zli čarobnjak iz „Štrumpfova”?|Gargamel|Skeletor|Doktor Klo|Azrael
+Kako se zove mačak Gargamela?|Azrael|Silvester|Tom|Garfild
+Kako se zove vođa Štrumpfova?|Papa Štrumpf|Mudrica|Štrumpfeta|Šaljivko
+Kako se zove vođa Autobota u „Transformersima”?|Optimus Prajm|Megatron|Bambalbi|Starskrim
+Kako se zove vođa Deseptikona?|Megatron|Optimus Prajm|Šokvejv|Starskrim
+Kako se zovu četiri kornjače nindža (po umetnicima)?|Leonardo, Mikelanđelo, Donatelo i Rafael|Leonardo, Ticijan, Rafael i Đoto|Mikelanđelo, Bernini, Rafael i Karavađo|Donatelo, Botičeli, Leonardo i Rafael
+Kako se zove pacov učitelj Nindža kornjača?|Splinter|Šreder|Bibop|Krang
+Kako se zove glavni trener iz crtaća „Pokemon”?|Eš Ketčum|Misti|Brok|Geri
+Kako se zove žuti Pokemon Eša Ketčuma?|Pikaču|Bulbasaur|Čarmander|Skvirtl
+Kako se zove robot-mačka iz japanskog crtaća koji vadi stvari iz džepa?|Doraemon|Pikaču|Totoro|Hello Kitty
+Koja serija prati doktore u bolnici Siatl Grejs?|Uvod u anatomiju|Hitna služba|Dr Haus|Čikago Med
+Kako se zove doktor iz serije „Dr Haus”?|Gregori Haus|Džejms Vilson|Erik Forman|Lisa Kadi
+Koji britanski glumac igra Dr Hausa?|Hju Lori|Hju Grant|Kolin Fert|Stiven Fraj
+Kako se zove fiktivna bolnica u seriji „Hitna služba”?|Opšta bolnica Kuk|Siatl Grejs|Prinston Plejnsboro|Sakred Hart
+Koji glumac je postao slavan kao dr Daglas Ros u „Hitnoj službi”?|Džordž Kluni|Noa Vajl|Entoni Edvards|Erik La Sal
+U kojoj seriji glume Lusil Bol i Desi Arnaz?|Volim Lusi|Moja žena je veštica|Bez zamene|Zakletva
+Kako se zove veštica koja mrda nosom u seriji „Moja žena je veštica”?|Samanta|Endora|Tabita|Sabrina
+Kako se zove tinejdžerka veštica sa mačkom Salemom?|Sabrina|Samanta|Hermiona|Vilou
+Kako se zove mačak koji govori u „Sabrini”?|Salem|Garfild|Azrael|Tom
+Kako se zove porodica iz serije „Adamsova porodica” – ćerka?|Vensdej|Morticija|Pagsli|Vilou
+Kako se zove ruka koja hoda u „Adamsovoj porodici”?|Stvar|Ruka|Prst|Pet
+Koja serija iz 2022. prati Vensdej Adams u školi Nevermor?|Vensdej|Sabrina|Stranger Things|Lokvud i drug
+Koja serija prati devojku Eleven i čudovišta iz Naopakog sveta?|Stranger Things|Mračno|Vensdej|Bela
+U kom izmišljenom gradu se dešava „Stranger Things”?|Hokins|Ridžvil|Springfild|Tvin Piks
+Kako se zove agent FBI iz serije „Tvin Piks”?|Dejl Kuper|Foks Molder|Džek Bauer|Dejna Skali
+Koja serija postavlja pitanje „Ko je ubio Loru Palmer?”|Tvin Piks|Dosije X|Ubistvo|Prava detektivska priča
+Kako se zove agent koji ima 24 sata da spreči napad u seriji „24”?|Džek Bauer|Dejl Kuper|Foks Molder|Džejson Born
+Koji let se srušio u seriji „Izgubljeni”?|Oceanic 815|Oceanic 747|Pan Am 103|Ajr Ostrali 6
+Ko je bio glavni lekar među preživelima u „Izgubljenima”?|Džek Šepard|Džon Lok|Sojer|Hjurli
+Kako se zove serija o porodici koja živi u Downton Abbey?|Dauntonska opatija|Gospodari i sluge|Gospođa Bruns|Viktorija
+Kako se zove porodica iz „Dauntonske opatije”?|Krouli|Bridžerton|Bedford|Grantam
+Kako se zove britanska serija o kraljici Elizabeti II?|Kruna|Viktorija|Tjudori|Kraljica
+Koja serija prati porodicu iz Regentske ere i ljubavne skandale?|Bridžerton|Dauntonska opatija|Gordost i predrasude|Kruna
+Kako se zove britanska serija o bandi Šelbi iz Birmingema?|Piki Blajnders|Dečaci|Bezobraznici|Lopovi
+Kako se zove vođa porodice Šelbi u seriji „Piki Blajnders”?|Tomas Šelbi|Artur Šelbi|Džon Šelbi|Alfi Solomons
+Koji glumac igra Tomasa Šelbija?|Kilijan Merfi|Tom Hardi|Pol Anderson|Sem Nil
+Šta članovi bande u „Piki Blajnders” nose ušiveno u kačketima?|Žilete|Novac|Pištolje|Karte
+Kako se zove serija o zatvoru i bekstvu dva brata?|Bekstvo iz zatvora|Oz|Narandžasta je nova crna|Zatvor
+Ko je tetovirao plan zatvora na telo u „Bekstvu iz zatvora”?|Majkl Skofild|Linkoln Barouz|Teodor Begvel|Sukre
+Kako se zove ženski zatvor u seriji „Narandžasta je nova crna”?|Litčfild|Šošenk|Fox River|Ozvald
+Kako se zove serija o španskoj pljački kovnice novca?|Kuća od papira|Elita|Narkos|Velvet
+Kako se zove „profesor” u „Kući od papira”?|Serhio Markina|Berlin|Tokio|Rio
+Koja maska se nosi u „Kući od papira”?|Maska Salvadora Dalija|Maska Gaja Foksa|Venecijanska maska|Klovnovska maska
+Koja serija prati Pabla Eskobara?|Narkos|Kuća od papira|Elita|Ozark
+Koja serija prati porodicu koja pere novac kartela u Misuriju?|Ozark|Narkos|Breaking Bad|Žica
+Koja serija prati policiju i dilere u Baltimoru?|Žica (The Wire)|Ozark|Breaking Bad|Prava detektivska priča
+Koja južnokorejska serija prati smrtonosne dečje igre?|Igra lignje|Parazit|Kingdom|Svi smo mrtvi
+Koja igra iz detinjstva se igra u prvoj epizodi „Igre lignje”?|Crveno svetlo, zeleno svetlo|Klikeri|Konopac|Žmurke
+Koja nemačka serija o putovanju kroz vreme se dešava u Vindenu?|Mračno (Dark)|Babilon Berlin|Deutschland 83|Kako prodati drogu
+Koja danska serija prati premijerku Birgit Nibor?|Borgen|Most|Ubistvo|Vikinzi
+Koja švedsko-danska serija počinje lešom na mostu Oresund?|Most|Ubistvo|Borgen|Valander
+Koja serija prati vikinga Ragnara Lotbroka?|Vikinzi|Poslednje kraljevstvo|Igra prestola|Norsemen
+Koja serija prati Uhtreda od Bebanburga?|Poslednje kraljevstvo|Vikinzi|Igra prestola|Merlin
+Kako se zove fantastična serija po knjigama Andžeja Sapkovskog?|Veščer|Igra prestola|Kolo vremena|Prsten moći
+Koji glumac igra Geralta u „Veščeru” (prve tri sezone)?|Henri Kavil|Liam Hemsvort|Kit Harington|Mads Mikelsen
+Kako se zove serija HBO o porodici Targarjen nastala posle „Igre prestola”?|Kuća zmaja|Prsten moći|Vitez sedam kraljevstava|Krv i vatra
+Kako se zove glavni grad Vesterosa u „Igri prestola”?|Kraljeva luka|Zimovrel|Livačka stena|Visoki vrt
+Kako se zove dom porodice Stark?|Zimovrel|Kraljeva luka|Livačka stena|Orlovo gnezdo
+Kako se zove džinovski zid na severu u „Igri prestola”?|Zid|Kapija|Bedem|Kula
+Ko je „Majka zmajeva” u „Igri prestola”?|Deneris Targarjen|Serisa Lanister|Sansa Stark|Arja Stark
+Koji glumac igra Tiriona Lanistera?|Piter Dinklidž|Kit Harington|Nikolaj Koster-Valdau|Čarls Dens
+Kako se zove domaća serija o porodici Popadić?|Bolji život|Srećni ljudi|Porodično blago|Kamiondžije
+Kako se zove glavni junak serije „Bolji život”?|Dragutin Popadić|Gile|Bane Bumbar|Đorđe Kalinić
+Koji glumac igra Dragutina Popadića u „Boljem životu”?|Dragan Nikolić|Mija Aleksić|Taško Načić|Bata Živojinović
+Ko je režirao seriju „Grlom u jagode”?|Srđan Karanović|Slobodan Šijan|Emir Kusturica|Goran Paskaljević
+Kako se zove glavni lik serije „Grlom u jagode”?|Bane Bumbar|Uške|Bocke|Boca
+Kako se zove glavni junak serije „Vruć vetar”?|Sule|Gile|Bane Bumbar|Uške
+Koji glumac igra Suleta u seriji „Vruć vetar”?|Ljubiša Samardžić|Bata Živojinović|Dragan Nikolić|Zoran Radmilović
+Koja serija Siniše Pavića je satira o političaru Srećku Šojiću?|Bela lađa|Bolji život|Srećni ljudi|Porodično blago
+Koji glumac igra Srećka Šojića?|Milan Gutović|Branislav Lečić|Milan Kalinić|Dragan Bjelogrlić
+Ko je scenarista serija „Bolji život”, „Srećni ljudi” i „Bela lađa”?|Siniša Pavić|Dušan Kovačević|Radoš Bajić|Milan Karadžić
+Ko je autor serije „Selo gori, a baba se češlja”?|Radoš Bajić|Siniša Pavić|Dragan Bjelogrlić|Milan Karadžić
+Kako se zove serija Dragana Bjelogrlića o Beogradu tridesetih?|Senke nad Balkanom|Montevideo|Kalkanski krugovi|Žigosani
