@@ -362,20 +362,28 @@ function hostPublish(){
 }
 function hostCreate(){
   S.role="host"; S.code=mkCode();
-  S.H={round:0,phase:"lobby",time:S.time,count:S.count,qi:0,qs:[],roster:[]};
+  S.H={round:0,phase:"lobby",time:S.time,count:S.count,qi:0,qs:[],roster:[],cats:S.cats.length===ALL_CATS.length?null:S.cats.slice()};
   try{ history.replaceState(null,"","#igra-"+S.code) }catch(e){}
 }
 // ---------- pitanja bez ponavljanja (pamti domaćinov pregledač) ----------
 const qid=q=>{let h=5381;const t=q[1];for(let i=0;i<t.length;i++)h=((h*33)^t.charCodeAt(i))>>>0;return h.toString(36)};
 function usedSet(){try{const v=JSON.parse(store.get("kviz.used")||"[]");return new Set(Array.isArray(v)?v:[])}catch(e){return new Set()}}
-function unusedCount(){const u=usedSet();return BANK.filter(q=>!u.has(qid(q))).length}
+// Oblasti: domaćin bira koje ulaze u igru (pamti se u pregledaču).
+const ALL_CATS=[...new Set(BANK.map(q=>q[0]))].sort((a,b)=>a.localeCompare(b,"sr"));
+const CAT_N={}; for(const q of BANK) CAT_N[q[0]]=(CAT_N[q[0]]||0)+1;
+function loadCats(){try{const v=JSON.parse(store.get("kviz.cats")||"null");if(Array.isArray(v)){const c=v.filter(x=>ALL_CATS.includes(x));if(c.length)return c}}catch(e){}return ALL_CATS.slice()}
+S.cats=loadCats();
+const inCats=i=>S.cats.includes(BANK[i][0]);
+function unusedCount(){const u=usedSet();return BANK.filter(q=>S.cats.includes(q[0])&&!u.has(qid(q))).length}
+function poolCount(){return BANK.filter(q=>S.cats.includes(q[0])).length}
 function pickQuestions(n){
   let used=usedSet();
-  let picks=shuffle(BANK.map((_,i)=>i).filter(i=>!used.has(qid(BANK[i])))).slice(0,n);
-  if(picks.length<n){ // sva pitanja su iskorišćena: počinje novi krug
+  const pool=BANK.map((_,i)=>i).filter(inCats);
+  let picks=shuffle(pool.filter(i=>!used.has(qid(BANK[i])))).slice(0,n);
+  if(picks.length<n){ // izabrane oblasti su iskorišćene: za njih počinje novi krug
     const have=new Set(picks);
-    used=new Set();
-    picks=picks.concat(shuffle(BANK.map((_,i)=>i).filter(i=>!have.has(i))).slice(0,n-picks.length));
+    for(const i of pool) used.delete(qid(BANK[i]));
+    picks=picks.concat(shuffle(pool.filter(i=>!have.has(i))).slice(0,n-picks.length));
   }
   picks.forEach(i=>used.add(qid(BANK[i])));
   store.set("kviz.used",JSON.stringify([...used]));
@@ -384,8 +392,8 @@ function pickQuestions(n){
 function hostStart(){
   const players=lobbyPlayers().slice(0,MAX_PLAYERS);
   const roster=players.map((p,i)=>({p:p.peer,n:p.name,a:avOk(p.av)?p.av:null,s:0,c:i,lc:-1,lp:0}));
-  const picks=pickQuestions(Math.min(S.count,BANK.length));
-  S.H={round:(S.H?S.H.round:0)+1,phase:"q",time:S.time,count:picks.length,qi:0,
+  const picks=pickQuestions(Math.min(S.count,poolCount()));
+  S.H={round:(S.H?S.H.round:0)+1,phase:"q",time:S.time,count:picks.length,qi:0,cats:S.cats.length===ALL_CATS.length?null:S.cats.slice(),
        qs:picks.map(i=>[i,...shuffle([0,1,2,3])]),roster};
   S.myAns=[]; S.hostPhaseAt=Date.now();
   hostPublish();
@@ -539,7 +547,14 @@ function vLobby(){
       <div style="display:flex;flex-direction:column;gap:8px">
         <p style="font-weight:700">Broj pitanja</p>
         <div class="seg" id="segC">${COUNTS.map(c=>`<button aria-pressed="${c===S.count}" data-c="${c}">${c}</button>`).join("")}</div>
-        <p class="muted small">U bazi je ${BANK.length} pitanja iz ${new Set(BANK.map(q=>q[0])).size} oblasti. Još neodigranih: ${unusedCount()}. Pitanja se ne ponavljaju dok se sva ne iskoriste.</p>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:8px">
+        <p style="font-weight:700">Oblasti <span class="muted small">(${S.cats.length} od ${ALL_CATS.length})</span></p>
+        <div class="seg" id="segK">
+          <button data-k="*" aria-pressed="${S.cats.length===ALL_CATS.length}">Sve</button>
+          ${ALL_CATS.map(c=>`<button data-k="${esc(c)}" aria-pressed="${S.cats.includes(c)}">${esc(c)}</button>`).join("")}
+        </div>
+        <p class="muted small">Izabrano ${poolCount()} od ${BANK.length} pitanja. Još neodigranih: ${unusedCount()}. Pitanja se ne ponavljaju dok se sva ne iskoriste.</p>
       </div>`
     :`<div style="display:flex;flex-direction:column;gap:6px"><h2>Čekamo domaćina</h2><p class="muted" id="hostInfo">Domaćin će pokrenuti kviz kad svi uđu.</p></div>`}
     <div style="display:flex;flex-direction:column;gap:8px">
@@ -557,6 +572,11 @@ function vLobby(){
   if(host){
     $("#segT").onclick=e=>{const b=e.target.closest("button");if(!b)return;S.time=+b.dataset.t;S.H.time=S.time;hostPublish();render()};
     $("#segC").onclick=e=>{const b=e.target.closest("button");if(!b)return;S.count=+b.dataset.c;S.H.count=S.count;hostPublish();render()};
+    $("#segK").onclick=e=>{const b=e.target.closest("button");if(!b)return;const k=b.dataset.k;
+      if(k==="*") S.cats=S.cats.length===ALL_CATS.length?[ALL_CATS[0]]:ALL_CATS.slice();
+      else if(S.cats.includes(k)){ if(S.cats.length>1) S.cats=S.cats.filter(x=>x!==k) }
+      else S.cats=ALL_CATS.filter(x=>x===k||S.cats.includes(x));
+      store.set("kviz.cats",JSON.stringify(S.cats)); S.H.cats=S.cats.length===ALL_CATS.length?null:S.cats.slice(); hostPublish(); render()};
     $("#go").onclick=hostStart;
     const cp=$("#copy");
     if(cp)cp.onclick=()=>{const i=$("#inv");const done=()=>{cp.textContent="Kopirano";setTimeout(()=>{if(cp.isConnected)cp.textContent="Kopiraj link"},1800)};
@@ -588,7 +608,7 @@ function updateLobby(){
   const sig=JSON.stringify([S.av,S.avMoved,list.map(p=>[p.peer,p.name,p.host,p.av])]);
   if(S.role==="player"){
     const g=G(); const hi=$("#hostInfo");
-    if(hi&&g) hi.textContent=`Domaćin je podesio ${g.count} pitanja, ${g.time} s po pitanju.`;
+    if(hi&&g) hi.textContent=`Domaćin je podesio ${g.count} pitanja, ${g.time} s po pitanju. Oblasti: ${Array.isArray(g.cats)&&g.cats.length?g.cats.join(", "):"sve"}.`;
   }
   if(sig===lastLobbySig) return; lastLobbySig=sig;
   const lv=$("#lavp");
