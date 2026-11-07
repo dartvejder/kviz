@@ -1,0 +1,368 @@
+Koja je najveća životinja na svetu?|Plavi kit|Afrički slon|Kitopsina|Žirafa
+Koja je najviša životinja na svetu?|Žirafa|Slon|Noj|Kamila
+Koja je najbrža kopnena životinja?|Gepard|Lav|Antilopa vilorog|Konj
+Koja je najbrža ptica u obrušavanju?|Sivi soko|Suri orao|Lastavica|Čiopa
+Koja ptica je najveća na svetu?|Noj|Emu|Kazuar|Kondor
+Koja je najmanja ptica na svetu?|Kolibri pčelica|Carić|Senica|Kraljić
+Koja ptica može da leti unazad?|Kolibri|Lastavica|Vrabac|Detlić
+Koliko nogu ima pauk?|8|6|10|12
+Koliko nogu ima insekt?|6|8|4|10
+Koliko krakova ima hobotnica?|8|10|6|12
+Koliko krakova ima lignja (sa dva duža pipka)?|10|8|12|6
+Koliko srca ima hobotnica?|3|1|2|4
+Koje boje je krv hobotnice?|Plave|Crvene|Zelene|Žute
+Koja životinja ima najduži period gestacije (trudnoće)?|Slon|Plavi kit|Žirafa|Nosorog
+Koliko otprilike traje trudnoća slonice?|22 meseca|9 meseci|12 meseci|36 meseci
+Koja životinja spava stojeći?|Konj|Mačka|Pas|Medved
+Kako se zove mladunče konja?|Ždrebe|Tele|Jare|Jagnje
+Kako se zove mladunče krave?|Tele|Ždrebe|Jare|Prase
+Kako se zove mladunče koze?|Jare|Jagnje|Tele|Lane
+Kako se zove mladunče ovce?|Jagnje|Jare|Tele|Ždrebe
+Kako se zove mladunče srne?|Lane|Jare|Tele|Mače
+Kako se zove mladunče žabe?|Punoglavac|Larva|Lutka|Mladica
+Kako se zove ženka konja?|Kobila|Krava|Košuta|Ovca
+Kako se zove mužjak ovce?|Ovan|Jarac|Bik|Vepar
+Kako se zove mužjak koze?|Jarac|Ovan|Bik|Pastuv
+Kako se zove mužjak svinje?|Vepar (nerast)|Jarac|Ovan|Bik
+Kako se zove ženka jelena?|Košuta|Srna|Kobila|Krmača
+Kako se zove mužjak patke?|Patak|Gusak|Ćuran|Petao
+Kako se zove mužjak ćurke?|Ćuran|Patak|Gusak|Petao
+Kako se zove kuća pčela koju pravi čovek?|Košnica|Saće|Gnezdo|Jazbina
+Kako se zove dom jazavca ili lisice pod zemljom?|Jazbina|Gnezdo|Brlog|Košnica
+Kako se zove mesto gde medved spava zimu?|Brlog|Jazbina|Gnezdo|Pećina
+Kako se zove zimski san životinja?|Hibernacija|Migracija|Metamorfoza|Fotosinteza
+Kako se zove promena oblika od gusenice do leptira?|Metamorfoza|Mutacija|Evolucija|Hibernacija
+Kako se zove faza između gusenice i leptira?|Lutka (čaura)|Larva|Jaje|Imago
+Koja životinja je simbol mudrosti?|Sova|Lisica|Gavran|Slon
+Koja životinja je simbol mira?|Golub|Labud|Lastavica|Roda
+Koja ptica, prema verovanju, donosi bebe?|Roda|Golub|Labud|Čaplja
+Koja ptica je poznata po tome što podmeće jaja u tuđa gnezda?|Kukavica|Svraka|Vrana|Gugutka
+Koja ptica je poznata po tome što krade sjajne predmete?|Svraka|Vrana|Gavran|Čavka
+Koja ptica ne može da leti, a živi na Antarktiku?|Pingvin|Noj|Kivi|Emu
+Koja ptica ne leti i simbol je Novog Zelanda?|Kivi|Emu|Noj|Kakapo
+Koja ptica je simbol Australije uz kengura na grbu?|Emu|Noj|Kakadu|Kookabura
+Koja životinja nosi mladunče u torbi?|Kengur|Lenjivac|Mravojed|Armadilo
+Kako se zove grupa životinja sa torbom?|Torbari|Glodari|Primati|Kopitari
+Koja životinja je torbar sa Tasmanije poznat po glasnom vrisku?|Tasmanijski đavo|Koala|Vombat|Oposum
+Čime se hrani koala?|Lišćem eukaliptusa|Bambusom|Insektima|Ribom
+Čime se pretežno hrani velika panda?|Bambusom|Eukaliptusom|Ribom|Medom
+Iz koje zemlje potiče velika panda?|Kine|Japana|Indije|Tajlanda
+Koja životinja je sisar koji leže jaja, sa pačjim kljunom?|Čudnovati kljunar|Ehidna|Vidra|Dabar
+Koji sisar može da leti?|Slepi miš|Leteća veverica|Kolibri|Leteća riba
+Kako se slepi miševi orijentišu u mraku?|Eholokacijom|Mirisom|Toplotom|Magnetnim poljem
+Koja životinja menja boju kože da bi se prikrila?|Kameleon|Gekon|Iguana|Daždevnjak
+Kojom životinjom je čovek najbliže srodan?|Šimpanzom|Gorilom|Orangutanom|Gibonom
+Koji majmun je najveći?|Gorila|Šimpanza|Orangutan|Babun
+Na kom ostrvu žive orangutani u divljini (pored Sumatre)?|Borneu|Madagaskaru|Javi|Novoj Gvineji
+Na kom ostrvu žive lemuri?|Madagaskaru|Borneu|Šri Lanki|Sumatri
+Koja životinja ima najveće oči od kopnenih sisara po veličini tela, noćni majmunčić?|Avetnjak (tarsier)|Lemur|Lori|Sova
+Koja životinja je poznata po sporosti i visi naopačke sa drveća?|Lenjivac|Koala|Mravojed|Kornjača
+Koja životinja ima najjači ugriz među živim životinjama?|Morski krokodil|Bela ajkula|Lav|Hijena
+Koja je najveća mačka na svetu?|Tigar|Lav|Jaguar|Leopard
+Koja velika mačka živi u čoporu (krdu)?|Lav|Tigar|Leopard|Gepard
+Kako se zove grupa lavova?|Čopor (prajd)|Jato|Krdo|Roj
+Koja mačka voli vodu i dobro pliva, a živi u Aziji?|Tigar|Lav|Gepard|Ris
+Koja velika mačka živi u Južnoj Americi?|Jaguar|Leopard|Gepard|Tigar
+Koja divlja mačka živi u Srbiji?|Ris|Puma|Leopard|Ocelot
+Koja je najveća zver (mesojed) u Srbiji?|Mrki medved|Vuk|Ris|Šakal
+Koja velika ptica grabljivica je na grbu Srbije?|Dvoglavi orao|Soko|Jastreb|Kondor
+Koja retka ptica strvinar se gnezdi u kanjonu Uvca?|Beloglavi sup|Kondor|Suri orao|Orao krstaš
+Koja zmija je najotrovnija u Evropi?|Poskok|Šarka|Belouška|Smuk
+Koja je najduža zmija na svetu?|Mrežasti piton|Anakonda|Kraljevska kobra|Crna mamba
+Koja je najteža zmija na svetu?|Zelena anakonda|Mrežasti piton|Boa|Kraljevska kobra
+Koja je najduža otrovna zmija?|Kraljevska kobra|Crna mamba|Tajpan|Poskok
+Koja zmija ima „zvečku” na repu?|Čegrtuša|Kobra|Mamba|Poskok
+Koja je najveća živa kornjača?|Kožasta morska kornjača|Galapagoska kornjača|Glavata kornjača|Aligatorska kornjača
+Koja životinja može da živi preko 150 godina?|Divovska kornjača|Slon|Papagaj|Krokodil
+Koji gušter je najveći na svetu?|Komodski varan|Iguana|Gekon|Kameleon
+Na kom ostrvu živi komodski varan?|Komodo (Indonezija)|Madagaskar|Borneo|Galapagos
+Koja životinja je poznata po regeneraciji izgubljenog repa?|Gušter|Zmija|Žaba|Kornjača
+Koja životinja može da regeneriše čitave udove, pa i delove srca?|Aksolotl|Gušter|Žaba|Riba
+Koja je najveća riba na svetu?|Kitova ajkula|Bela ajkula|Mesečeva riba|Kit
+Kojom životinjom je kit po vrsti?|Sisarom|Ribom|Vodozemcem|Gmizavcem
+Kojom životinjom je delfin po vrsti?|Sisarom|Ribom|Vodozemcem|Gmizavcem
+Kako dišu ribe?|Škrgama|Plućima|Kožom|Nozdrvama
+Kako diše kit?|Plućima|Škrgama|Kožom|Perajima
+Kojom životinjom je žaba?|Vodozemcem|Gmizavcem|Ribom|Sisarom
+Kojom životinjom je krokodil?|Gmizavcem|Vodozemcem|Sisarom|Ribom
+Kojom životinjom je slepi miš?|Sisarom|Pticom|Glodarom|Insektom
+Kojom životinjom je pingvin?|Pticom|Sisarom|Ribom|Vodozemcem
+Kojom životinjom je kit ubica?|Delfinom (sisar)|Ajkulom|Kitom usanom|Ribom
+Koja ajkula je najopasnija za čoveka prema broju napada?|Bela ajkula|Kitova ajkula|Ajkula čekić|Ajkula grdosija
+Koliko redova zuba može imati ajkula?|Više redova koji se stalno obnavljaju|Samo jedan|Dva|Nijedan
+Kojom životinjom je morski konjić?|Ribom|Sisarom|Mekušcem|Rakom
+Kod morskih konjića ko nosi i rađa mlade?|Mužjak|Ženka|Oba|Niko, polažu jaja na dno
+Koja riba je poznata po tome što se naduva kad je u opasnosti?|Riba balon (fugu)|Sabljarka|Pirana|Losos
+Koja riba se vraća u reku gde se izlegla da bi se mrestila?|Losos|Šaran|Pastrmka|Som
+Koja je najveća slatkovodna riba u Srbiji?|Som|Šaran|Štuka|Smuđ
+Koja riba iz Dunava daje kavijar?|Moruna|Šaran|Som|Štuka
+Koja riba živi u bistrim planinskim potocima?|Pastrmka|Šaran|Som|Deverika
+Koja riba je grabljivica sa dugom njuškom, iz naših voda?|Štuka|Šaran|Karaš|Deverika
+Od koje životinje se dobija sedef i biser?|Školjke|Puža|Korala|Sundera
+Šta su korali?|Životinje|Biljke|Stene|Gljive
+Koji je najveći koralni greben na svetu?|Veliki koralni greben|Belize greben|Crvenomorski greben|Novokaledonijski greben
+Koja životinja ima najviše nogu?|Stonoga (milipede)|Pauk|Rak|Gusenica
+Kojoj grupi pripadaju rakovi?|Zglavkari|Mekušci|Bodljokošci|Crvi
+Kojoj grupi pripadaju puževi?|Mekušci|Zglavkari|Gmizavci|Crvi
+Kojoj grupi pripada morska zvezda?|Bodljokošci|Mekušci|Ribe|Zglavkari
+Koliko krakova ima tipična morska zvezda?|5|6|8|4
+Koja životinja je u stanju da preživi u svemiru, sitni „vodeni medved”?|Tardigrada|Mrav|Bakterija|Žohar
+Koja životinja živi u koloniji sa kraljicom, radilicama i trutovima?|Pčela|Ose|Bumbar|Komarac
+Kako se zove mužjak pčele?|Trut|Radilica|Kralj|Matica
+Kako se zove pčelinja kraljica?|Matica|Trut|Radilica|Carica
+Šta pčele prave od nektara?|Med|Vosak|Propolis|Polen
+Kako pčele saopštavaju drugima gde je hrana?|Plesom|Mirisom|Zvukom|Bojom
+Koji insekt prenosi malariju?|Komarac (anofeles)|Muva cece|Buva|Krpelj
+Koju bolest prenosi muva cece?|Bolest spavanja|Malariju|Kugu|Žutu groznicu
+Koje životinje su prenosile kugu preko buva?|Pacovi|Psi|Mačke|Slepi miševi
+Koji insekt pravi svilu?|Svilena buba (gusenica)|Pauk|Pčela|Mrav
+Kojim biljem se hrani svilena buba?|Dudom|Hrastom|Lipom|Kupusom
+Koji insekt svetli u mraku?|Svitac|Bubamara|Cvrčak|Vilin konjic
+Koji insekt cvrči u letnjim noćima?|Cvrčak|Skakavac|Bubamara|Leptir
+Koja buba je crvena sa crnim tačkama?|Bubamara|Jelenak|Svitac|Gundelj
+Koja je najveća buba u Evropi?|Jelenak|Nosorožac|Bubamara|Gundelj
+Kako se zove insekt sa dva para prozirnih krila koji leti iznad vode?|Vilin konjic|Komarac|Moljac|Muva
+Koji leptir prelazi hiljade kilometara od Kanade do Meksika?|Monarh|Lastin rep|Admiral|Kupusar
+Koliko krila ima leptir?|4|2|6|8
+Koje životinje su mravi, po načinu života?|Društveni insekti|Usamljeni insekti|Paraziti|Grabljivice na drveću
+Koja životinja nosi teret i do 50 puta težak od sopstvene težine?|Mrav|Slon|Konj|Bik
+Koja je najveća kopnena životinja u Evropi?|Evropski bizon (zubar)|Mrki medved|Los|Jelen
+Koji jelen ima najveće rogove i živi na severu?|Los|Irvas|Jelen lopatar|Srna
+Koja životinja vuče sanke Deda Mraza?|Irvas|Los|Jelen|Konj
+Koji glodar gradi brane na rekama?|Dabar|Nutrija|Ondatra|Vidra
+Koja životinja je najveći glodar na svetu?|Kapibara|Dabar|Nutrija|Svizac
+Koja životinja ima bodlje i smota se u loptu?|Jež|Dikobraz|Armadilo|Ehidna
+Koja životinja ispušta smrdljivu tečnost kad je u opasnosti?|Tvor (skunk)|Lasica|Kuna|Rakun
+Koja životinja „pere” hranu pre jela?|Rakun|Vidra|Medved|Majmun
+Koja ptica ima najveći raspon krila?|Lutajući albatros|Kondor|Pelikan|Suri orao
+Koja ptica je poznata po tome što ponavlja ljudske reči?|Papagaj|Gavran|Kos|Čvorak
+Koja ptica kljuca drveće u potrazi za insektima?|Detlić|Brgljez|Sova|Kukavica
+Koja ptica pravi gnezdo od blata ispod strehe?|Lastavica|Vrabac|Kos|Svraka
+Koja ptica leti u jatu u obliku slova V?|Divlja guska|Vrana|Golub|Lastavica
+Koja ptica je simbol vernosti i bira partnera za ceo život?|Labud|Golub|Vrabac|Svraka
+Koja ptica često spava stojeći na jednoj nozi?|Flamingo|Roda|Čaplja|Pelikan
+Zašto je flamingo ružičast?|Zbog hrane (račića i algi)|Zbog gena|Zbog sunca|Zbog vode
+Koja ptica ima kesu ispod kljuna za hvatanje ribe?|Pelikan|Kormoran|Čaplja|Roda
+Koja ptica je simbol SAD?|Beloglavi orao|Suri orao|Kondor|Ćurka
+Koja ptica je nacionalni simbol Francuske?|Petao|Orao|Golub|Paun
+Koja ptica širi raskošan rep sa „očima”?|Paun|Fazan|Ćurka|Papagaj
+Koja noćna ptica može da okrene glavu za oko 270 stepeni?|Sova|Slavuj|Slepi miš|Gavran
+Koja ptica je poznata po prelepom pevanju noću?|Slavuj|Kos|Ševa|Sova
+Koja ptica je pre rudara služila kao upozorenje na gas u rudnicima?|Kanarinac|Golub|Papagaj|Vrabac
+Koja ptica je izumrla 1681. na ostrvu Mauricijus?|Dodo|Moa|Velika njorka|Putnički golub
+Koje životinje su izumrle pre oko 66 miliona godina?|Neptičji dinosaurusi|Mamuti|Sabljozubi tigrovi|Trilobiti
+Koja životinja je izumrla posle ledenog doba, dlakavi rođak slona?|Mamut|Mastodont|Deinoterijum|Nosorog
+Koji dinosaurus je imao tri roga na glavi?|Triceratops|Stegosaurus|Ankilosaurus|Brontosaurus
+Koji dinosaurus je imao ploče duž leđa?|Stegosaurus|Triceratops|Velociraptor|Diplodokus
+Koji dinosaurus se smatra jednim od najvećih grabljivaca, sa kratkim prednjim udovima?|Tiranosaurus reks|Velociraptor|Alosaurus|Spinosaurus
+Od kojih životinja potiču ptice, prema nauci?|Od dinosaurusa|Od sisara|Od riba|Od vodozemaca
+Ko je napisao „Poreklo vrsta”?|Čarls Darvin|Gregor Mendel|Žan-Batist Lamark|Alfred Volas
+Na kojim ostrvima je Darvin proučavao zebe i kornjače?|Galapagos|Havaji|Madagaskar|Kanarska ostrva
+Kako se zove brod na kom je putovao Darvin?|Bigl|Endevor|Viktorija|Santa Marija
+Koji naučnik je klasifikovao živi svet i uveo dvojna latinska imena?|Karl Line|Čarls Darvin|Aristotel|Gregor Mendel
+Kako se latinski naziva čovek kao vrsta?|Homo sapiens|Homo erectus|Homo habilis|Homo faber
+Koji je najveći kontinent po broju vrsta životinja?|Južna Amerika (Amazonija)|Evropa|Australija|Antarktik
+Koja je najveća prašuma na svetu?|Amazonska|Kongoanska|Borneo|Daintri
+Kako se naziva šuma koja nikada ne gubi lišće, u tropima?|Tropska kišna šuma|Tajga|Listopadna šuma|Savana
+Kako se zove pojas četinarskih šuma na severu Rusije i Kanade?|Tajga|Tundra|Stepa|Savana
+Kako se zove hladna oblast bez drveća sa mahovinama i lišajevima?|Tundra|Tajga|Stepa|Pustinja
+Kako se zove travnata ravnica u Africi sa retkim drvećem?|Savana|Prerija|Pampa|Stepa
+Kako se zovu travnate ravnice Severne Amerike?|Prerije|Pampe|Savane|Stepe
+Kako se zovu travnate ravnice Argentine?|Pampe|Prerije|Ljanosi|Stepe
+Koje drvo je najviše na svetu?|Obalna sekvoja|Eukaliptus|Baobab|Duglazija
+Koje drvo živi najduže (preko 4.800 godina)?|Bor dugoveki (Pinus longaeva)|Hrast|Maslina|Tisa
+Koje drvo ima ogromno deblo i raste u Africi, „drvo naopačke”?|Baobab|Akacija|Palma|Mangrov
+Koje drvo je simbol Libana?|Kedar|Maslina|Palma|Čempres
+Koje drvo daje hrastov žir?|Hrast|Bukva|Kesten|Orah
+Koje je najrasprostranjenije drvo u šumama Srbije?|Bukva|Hrast|Bor|Smrča
+Koje četinarsko drvo je endem Srbije, sa Tare?|Pančićeva omorika|Crni bor|Smrča|Jela
+Ko je otkrio Pančićevu omoriku?|Josif Pančić|Sava Petrović|Nikola Tesla|Jovan Cvijić
+Koja biljka, „feniks biljka”, može da oživi posle sušenja i simbol je Dana primirja u Srbiji?|Natalijina ramonda|Runolist|Lala|Božur
+Koji cvet je simbol Kosova u srpskoj tradiciji?|Božur|Ruža|Lala|Ljiljan
+Koji cvet je simbol Holandije?|Lala|Ruža|Suncokret|Orhideja
+Koji cvet je simbol Japana?|Cvet trešnje (sakura)|Lotos|Hrizantema|Orhideja
+Koji cvet je simbol carske porodice Japana?|Hrizantema|Lotos|Ruža|Trešnja
+Koji cvet je nacionalni cvet Indije?|Lotos|Ruža|Jasmin|Orhideja
+Koji cvet raste visoko u Alpima i simbol je Švajcarske i Austrije?|Runolist|Encijan|Ljubičica|Lavanda
+Koji cvet se okreće prema suncu?|Suncokret|Maslačak|Bela rada|Ruža
+Kako se zove biljka koja „hvata” muve?|Venerina muholovka|Rosika|Mesožderka rafflezija|Lokvanj
+Koji cvet je najveći na svetu?|Rafflezija|Lotos|Suncokret|Titan arum
+Koja biljka je najbrže rastuća na svetu?|Bambus|Kaktus|Eukaliptus|Paprat
+Koja biljka čuva vodu i raste u pustinji?|Kaktus|Paprat|Mahovina|Lokvanj
+Koja biljka se razmnožava sporama i nema cvet?|Paprat|Ruža|Lala|Hrast
+Kako se zove proces kojim biljke prave hranu uz pomoć sunca?|Fotosinteza|Disanje|Oprašivanje|Klijanje
+Koji gas biljke upijaju za fotosintezu?|Ugljen-dioksid|Kiseonik|Azot|Vodonik
+Koji gas biljke ispuštaju tokom fotosinteze?|Kiseonik|Ugljen-dioksid|Azot|Metan
+Kako se zove zelena materija u listovima?|Hlorofil|Karoten|Hemoglobin|Melanin
+Kako se zove prenošenje polena sa cveta na cvet?|Oprašivanje|Klijanje|Fotosinteza|Kalemljenje
+Kako se zove spajanje dve biljke da rastu kao jedna (kod voćaka)?|Kalemljenje|Oprašivanje|Rezidba|Presađivanje
+Koji deo biljke upija vodu iz zemlje?|Koren|List|Stablo|Cvet
+Koje voće raste na drvetu, a botanički je bobica (kao i paradajz)?|Banana|Jabuka|Breskva|Kruška
+Da li je paradajz botanički voće ili povrće?|Voće|Povrće|Žitarica|Mahunarka
+Da li je jagoda botanički bobica?|Nije|Jeste|Zavisi od sorte|Samo divlja
+Koja gljiva je smrtno otrovna, „zelena pupavka”?|Zelena pupavka|Vrganj|Lisičarka|Šampinjon
+Koja je najcenjenija jestiva gljiva u našim šumama?|Vrganj|Muhara|Zelena pupavka|Ludara
+Koja gljiva je crvena sa belim tačkicama i otrovna?|Muhara|Vrganj|Lisičarka|Sunčanica
+Koja skupa podzemna gljiva se traži uz pomoć pasa ili svinja?|Tartuf|Vrganj|Šampinjon|Smrčak
+Kojom grupom organizama su gljive?|Posebnim carstvom|Biljkama|Životinjama|Bakterijama
+Šta su lišajevi?|Zajednica gljive i alge|Vrsta mahovine|Mlade paprati|Korenje drveća
+Koje je najveće jezero u Srbiji (prirodno)?|Palićko jezero|Đerdapsko jezero|Vlasinsko jezero|Srebrno jezero
+Koji nacionalni park je najveći u Srbiji?|Đerdap|Kopaonik|Tara|Fruška gora
+Koji je najstariji nacionalni park u Srbiji (osnovan 1960)?|Fruška gora|Đerdap|Tara|Kopaonik
+Koji je najstariji nacionalni park na svetu?|Jeloustoun|Josemiti|Plitvička jezera|Krigerov park
+Koji nacionalni park u Hrvatskoj je poznat po nizu jezera i slapova?|Plitvička jezera|Krka|Risnjak|Kornati
+U kojoj zemlji se nalaze Viktorijini vodopadi?|Na granici Zambije i Zimbabvea|Keniji|Tanzaniji|Južnoj Africi
+Koji je najviši vodopad na svetu?|Anđeoski vodopad|Nijagarini vodopadi|Viktorijini vodopadi|Iguasu
+U kojoj zemlji je Anđeoski vodopad?|Venecueli|Brazilu|Kolumbiji|Gvajani
+Na kojoj planini je vodopad Jelovarnik?|Kopaoniku|Tari|Zlatiboru|Staroj planini
+Kod kog mesta se nalazi vodopad Lisine?|Despotovca|Bora|Kraljeva|Zaječara
+Koja je najveća pećina u Srbiji po dužini?|Lazareva pećina|Resavska pećina|Potpeć|Stopića pećina
+Koja pećina kod Despotovca je jedna od najlepših u Srbiji?|Resavska pećina|Lazareva pećina|Ceremošnja|Rajkova pećina
+Kako se zove ures u pećini koji visi sa tavanice?|Stalaktit|Stalagmit|Stalagnat|Draperija
+Kako se zove ures u pećini koji raste sa poda?|Stalagmit|Stalaktit|Stalagnat|Saliv
+Kako se zove stub kada se spoje stalaktit i stalagmit?|Stalagnat|Stalagmit|Draperija|Saliv
+Koja planina u Srbiji ima oblik piramide i poznata je po legendama?|Rtanj|Ozren|Suva planina|Kopaonik
+Koji je najviši vrh u užoj Srbiji (bez Kosova)?|Midžor|Pančićev vrh|Đeravica|Crni vrh
+Na kojoj planini se nalazi Midžor?|Staroj planini|Kopaoniku|Suvoj planini|Tari
+Na kojoj planini je kanjon Drine i Perućac?|Tari|Zlatiboru|Zlataru|Kopaoniku
+Koja reka meandrira kroz kanjon poznat po beloglavim supovima?|Uvac|Drina|Lim|Morava
+U koje more se uliva Dunav?|Crno|Jadransko|Egejsko|Kaspijsko
+Kroz koliko država teče Dunav?|10|7|5|12
+Gde izvire Dunav?|U Švarcvaldu u Nemačkoj|U Alpima u Švajcarskoj|U Austriji|U Karpatima
+Koja je najduža reka u Evropi?|Volga|Dunav|Rajna|Dnjepar
+Koja reka se tradicionalno navodi kao najduža na svetu?|Nil|Jangce|Misisipi|Kongo
+Koja reka nosi najviše vode na svetu?|Amazon|Nil|Kongo|Jangce
+Koje je najdublje jezero na svetu?|Bajkalsko jezero|Tanganjika|Kaspijsko jezero|Gornje jezero
+Koje je najveće jezero na svetu po površini?|Kaspijsko jezero|Gornje jezero|Viktorijino jezero|Bajkalsko jezero
+Koje je najveće slatkovodno jezero po površini?|Gornje jezero|Viktorijino jezero|Bajkalsko jezero|Huronsko jezero
+Koje jezero je najniže na kopnu, toliko slano da se na njemu pluta?|Mrtvo more|Kaspijsko jezero|Aralsko jezero|Veliko slano jezero
+Koja je najveća pustinja na svetu (uključujući hladne)?|Antarktik|Sahara|Gobi|Kalahari
+Koja je najveća vruća pustinja?|Sahara|Arabijska|Gobi|Kalahari
+Koja je najsušnija pustinja na svetu?|Atakama|Sahara|Gobi|Namib
+Koji je najveći okean?|Tihi|Atlantski|Indijski|Severni ledeni
+Koje je najdublje mesto u okeanu?|Marijanski rov|Portorikanski rov|Tonga rov|Javanski rov
+Koliko otprilike je dubok Marijanski rov?|11 km|5 km|20 km|2 km
+Koji je najviši vrh na svetu?|Mont Everest|K2|Kangčendženga|Makalu
+Koji je drugi po visini vrh na svetu?|K2|Kangčendženga|Lotse|Makalu
+Koliko je visok Mont Everest otprilike?|8.849 m|7.500 m|9.200 m|8.200 m
+Koji je najviši vrh Afrike?|Kilimandžaro|Kenija|Ruvenzori|Atlas
+Koji je najviši vrh Evrope (po većini podela)?|Elbrus|Mon Blan|Materhorn|Olimp
+Koji je najviši vrh Alpa?|Mon Blan|Materhorn|Monte Roza|Grosglokner
+Koji je najviši vrh Južne Amerike?|Akonkagva|Čimboraso|Uaskaran|Kotopaksi
+Koji je najviši aktivni vulkan u Evropi?|Etna|Vezuv|Stromboli|Hekla
+Koji vulkan je uništio Pompeje 79. godine?|Vezuv|Etna|Stromboli|Santorini
+Koja zemlja ima najviše aktivnih vulkana?|Indonezija|Japan|Island|Italija
+Kako se zove pojas vulkana i zemljotresa oko Tihog okeana?|Vatreni prsten|Pacifički pojas|Zlatni krug|Vulkanski luk
+Kako se zove topla stena koja izbija iz vulkana?|Lava|Magma|Pepeo|Bazalt
+Kako se zove rastopljena stena ispod površine Zemlje?|Magma|Lava|Granit|Plašt
+Kojom skalom se meri jačina zemljotresa?|Rihterovom|Bofortovom|Celzijusovom|Mohsovom
+Kojom skalom se meri jačina vetra?|Boforovom|Rihterovom|Mohsovom|Fudžitinom
+Kojom skalom se meri tvrdoća minerala?|Mohsovom|Rihterovom|Boforovom|Kelvinovom
+Koji mineral je najtvrđi u prirodi?|Dijamant|Kvarc|Korund|Topaz
+Koji je najmekši mineral na Mohsovoj skali?|Talk|Gips|Kalcit|Kvarc
+Kako se zove tropska oluja u Atlantiku?|Uragan|Tajfun|Ciklon|Tornado
+Kako se zove tropska oluja u zapadnom Pacifiku?|Tajfun|Uragan|Monsun|Tornado
+Kako se zove sezonski vetar sa kišama u južnoj Aziji?|Monsun|Pasat|Bura|Sirok
+Kako se zove hladan, jak vetar na Jadranu?|Bura|Jugo|Maestral|Košava
+Kako se zove vetar koji duva u Beogradu, jugoistočni?|Košava|Bura|Jugo|Severac
+Kako se zove topao, vlažan vetar sa juga na Jadranu?|Jugo|Bura|Maestral|Tramontana
+Koje životinje prave „mrežu” u kojoj hvataju plen?|Pauci|Mravi|Pčele|Leptiri
+Koji pauk je poznat po crvenoj oznaci u obliku peščanog sata?|Crna udovica|Tarantula|Vučji pauk|Krstaš
+Koja životinja ima ljušturu i nosi „kuću” na leđima?|Puž|Rak|Jež|Gusenica
+Koliko otprilike godina živi pas u proseku?|10–13|5–7|20–25|30
+Koja rasa psa je najveća po visini?|Doga|Bernardinac|Mastif|Vučjak
+Koja je najmanja rasa psa?|Čivava|Jorkširski terijer|Pomeranac|Maltezer
+Koja rasa psa je poznata po spasavanju ljudi u Alpima?|Bernardinac|Doga|Hrt|Pudla
+Koja rasa psa je najbrža?|Hrt|Dalmatinac|Labrador|Doberman
+Koja rasa psa ima crne tačke na beloj dlaci?|Dalmatinac|Bigl|Bokser|Mops
+Koja rasa psa je srpska ovčarska rasa?|Šarplaninac|Doga|Kangal|Haski
+Koja srpska rasa psa je goniča, trobojna?|Srpski trobojni gonič|Šarplaninac|Hrt|Bigl
+Koja rasa psa je poznata po plavim očima i vuče sanke?|Sibirski haski|Labrador|Doberman|Pudla
+Koja rasa mačke nema dlaku?|Sfinks|Persijska|Sijamska|Mejn kun
+Koja rasa mačke je jedna od najvećih domaćih mačaka?|Mejn kun|Sijamska|Sfinks|Ruska plava
+Koja rasa mačke ima plave oči i tamne uši, šapice i rep?|Sijamska|Persijska|Mejn kun|Britanska kratkodlaka
+Koji konj je rasa sa Arapskog poluostrva, poznata po izdržljivosti?|Arapski konj|Lipicaner|Haflinger|Mustang
+Koja rasa konja potiče iz Slovenije i nastupa u Španskoj školi jahanja u Beču?|Lipicaner|Arapski konj|Haflinger|Fris
+Kako se zove divlji konj Severne Amerike?|Mustang|Lipicaner|Ponij|Pržvaljski konj
+Koja životinja je ukrštanje magarca i kobile?|Mazga|Mula|Zebra|Ponij
+Koliko želudaca (odeljaka) ima krava?|4|1|2|3
+Koja životinja je preživar?|Krava|Konj|Svinja|Zec
+Koja domaća životinja je najviše zastupljena na svetu?|Kokoška|Krava|Ovca|Svinja
+Koja životinja daje vunu?|Ovca|Koza|Krava|Svinja
+Koja životinja daje kašmir vunu?|Kašmirska koza|Ovca|Lama|Zec
+Od koje životinje se dobija vuna angora?|Zeca (ili koze)|Ovce|Lame|Kamile
+Koja životinja sa Anda daje vunu i rođak je kamile?|Alpaka (lama)|Jak|Koza|Ovca
+Koliko grba ima dromedar?|Jednu|Dve|Tri|Nijednu
+Koliko grba ima baktrijska kamila?|Dve|Jednu|Tri|Nijednu
+Šta kamila čuva u grbi?|Mast|Vodu|Krv|Vazduh
+Koja životinja ima najduži jezik u odnosu na telo, hvata insekte?|Kameleon|Žaba|Mravojed|Žirafa
+Koje boje je jezik žirafe?|Tamnoplavo-ljubičastom|Ružičastom|Crvenom|Belom
+Koliko vratnih pršljenova ima žirafa?|7|14|21|30
+Koje boje je koža polarnog medveda ispod dlake?|Crne|Bele|Ružičaste|Sive
+Gde žive polarni medvedi?|Na Arktiku|Na Antarktiku|U Sibiru|Na Aljasci samo
+Gde žive pingvini u divljini?|Na južnoj hemisferi|Na severnoj hemisferi|Samo na Arktiku|Svuda
+Koja životinja ima najveći mozak?|Ulješura|Slon|Plavi kit|Delfin
+Koja životinja ima najbolji njuh među sisarima, prema istraživanjima?|Slon|Pas|Medved|Ajkula
+Koliko zuba ima odrasla mačka?|30|42|20|32
+Koliko zuba ima odrasli pas?|42|32|30|28
+Koja životinja ima zube koji rastu celog života?|Zec|Pas|Mačka|Konj
+Kojom životinjom su zec i kunić?|Dvozubima (zečevima)|Glodarima|Torbarima|Insektojedima
+Koja životinja gubi rogove svake godine i ponovo ih dobija?|Jelen|Koza|Bik|Nosorog
+Od čega je napravljen rog nosoroga?|Keratina|Kosti|Slonovače|Hrskavice
+Od čega su slonove kljove?|Zuba (slonovače)|Rogova|Kostiju lobanje|Keratina
+Koji slon ima veće uši?|Afrički|Indijski|Isti su|Azijski
+Koliko otprilike kilograma hrane pojede odrasli slon dnevno?|150|20|50|500
+Koja životinja je najglasnija na svetu?|Ulješura|Majmun drekavac|Lav|Slon
+Koji kopneni sisar je najglasniji?|Majmun drekavac|Lav|Slon|Vuk
+Kako se zove grupa riba koja pliva zajedno?|Jato|Čopor|Krdo|Roj
+Kako se zove grupa pčela koja napušta košnicu sa maticom?|Roj|Jato|Čopor|Krdo
+Kako se zove grupa vukova?|Čopor|Jato|Krdo|Roj
+Kako se zove grupa krava ili konja?|Krdo|Čopor|Jato|Roj
+Kako se zove životinja koja jede i biljke i meso?|Svaštojed|Biljojed|Mesojed|Strvinar
+Kako se zove životinja koja jede uginule životinje?|Strvinar|Grabljivica|Parazit|Svaštojed
+Koja životinja je svaštojed?|Medved|Lav|Krava|Konj
+Kako se zove odnos u kojem obe vrste imaju korist?|Simbioza (mutualizam)|Parazitizam|Grabljivost|Kompeticija
+Koja riba čisti zube i kožu većih riba?|Riba čistač (labrus)|Pirana|Ajkula|Losos
+Koja mala ptica čisti zube krokodilima, po legendi?|Egipatski trkač|Vrabac|Kolibri|Lastavica
+Koja životinja je parazit koji sisa krv i živi na psima?|Krpelj|Bubamara|Mrav|Pauk
+Koju bolest mogu preneti krpelji?|Lajmsku bolest|Malariju|Besnilo|Kugu
+Koje životinje najčešće prenose besnilo u Evropi?|Lisice|Pacovi|Ptice|Ribe
+Koja je najotrovnija životinja na svetu prema smrtnim slučajevima?|Komarac|Zmija|Škorpija|Pauk
+Koja meduza se smatra najotrovnijom?|Kutijasta meduza (morska osa)|Portugalska galija|Mesečeva meduza|Lavlja griva
+Koja žaba iz Južne Amerike je jako otrovna i jarkih boja?|Otrovna žaba strelica|Krastača|Gatalinka|Bik žaba
+Koja zelena žabica živi na drveću u Srbiji?|Gatalinka|Krastača|Zelena žaba|Mrmoljak
+Koji vodozemac iz pećina Dinarida je bez očiju i bele kože, „čovečja ribica”?|Čovečja ribica (proteus)|Aksolotl|Daždevnjak|Mrmoljak
+Koji vodozemac je crn sa žutim pegama i živi u vlažnim šumama?|Šareni daždevnjak|Mrmoljak|Krastača|Gatalinka
+Koja ptica peva „ku-ku”?|Kukavica|Gugutka|Golub|Sova
+Koja ptica gnezdi na dimnjacima u Vojvodini?|Roda|Čaplja|Lastavica|Golub
+Kojih jaja je najveće jaje na svetu od živih ptica?|Nojevo|Emuovo|Albatrosovo|Labudovo
+Koliko otprilike traje inkubacija kokošijeg jajeta?|21 dan|10 dana|30 dana|40 dana
+Zašto ptice selice odlaze na jug?|Zbog hrane i toplote|Zbog lova|Zbog mlađi|Zbog vetra
+Koja ptica ima najdužu seobu na svetu?|Arktička čigra|Roda|Lastavica|Albatros
+Šta pčele rade za biljke dok skupljaju nektar?|Oprašuju ih|Jedu ih|Zalivaju ih|Štite ih od mraza
+Koja je najveća sova u Evropi?|Buljina|Kukuvija|Ćuk|Šumska sova
+Koja ptica ima bele obraze i crnu glavu i čest je gost hranilica zimi?|Velika senica|Vrabac|Zeba|Crvendać
+Koja ptica ima narandžastocrvene grudi i česta je u vrtovima?|Crvendać|Zeba|Senica|Kos
+Koja crna ptica sa žutim kljunom peva u parkovima?|Kos|Vrana|Čavka|Čvorak
+Koja ptica je simbol mladosti i proleća jer se vraća u proleće?|Lastavica|Vrabac|Golub|Gavran
+Kako se zove nauka o pticama?|Ornitologija|Entomologija|Ihtiologija|Herpetologija
+Kako se zove nauka o insektima?|Entomologija|Ornitologija|Mikologija|Botanika
+Kako se zove nauka o ribama?|Ihtiologija|Ornitologija|Herpetologija|Malakologija
+Kako se zove nauka o gljivama?|Mikologija|Botanika|Zoologija|Virologija
+Kako se zove nauka o biljkama?|Botanika|Zoologija|Ekologija|Mikologija
+Kako se zove nauka o odnosima živih bića i sredine?|Ekologija|Geologija|Botanika|Etologija
+Kako se zove nauka o ponašanju životinja?|Etologija|Ekologija|Entomologija|Zoologija
+Ko je dobio Nobelovu nagradu za proučavanje ponašanja životinja (utiskivanje kod gusaka)?|Konrad Lorenc|Džejn Gudol|Dijan Fosi|Čarls Darvin
+Koja naučnica je decenijama proučavala šimpanze u Tanzaniji?|Džejn Gudol|Dijan Fosi|Biruté Galdikas|Rejčel Karson
+Koja naučnica je proučavala planinske gorile u Ruandi?|Dijan Fosi|Džejn Gudol|Biruté Galdikas|Marija Kiri
+Koji britanski voditelj je decenijama snimao prirodnjačke serije za BBC?|Dejvid Atenboro|Stiv Irvin|Žak Kusto|Bear Grils
+Koji francuski istraživač je snimao podvodni svet sa broda „Kalipso”?|Žak Iv Kusto|Dejvid Atenboro|Tur Hejerdal|Žak Pikar
+Koja organizacija ima pandu u logotipu?|WWF|Grinpis|UNESCO|UNICEF
+Koliko otprilike posto Zemljine površine prekriva voda?|71%|50%|60%|85%
+Koliko je slatke vode od ukupne vode na Zemlji, otprilike?|3%|10%|25%|50%
+Gde se nalazi najveći deo slatke vode na Zemlji?|U lednicima i ledu|U rekama|U jezerima|U oblacima
+Koji kontinent nema stalno stanovništvo?|Antarktik|Australija|Afrika|Grenland
+Koja je najniža temperatura izmerena na Zemlji, otprilike (Antarktik)?|−89 °C|−50 °C|−120 °C|−65 °C
+Gde je izmerena najviša temperatura vazduha na Zemlji (56,7 °C)?|Dolina smrti (SAD)|Sahara|Kuvajt|Australija
+Koja planeta se zove „Plava planeta”?|Zemlja|Neptun|Uran|Venera
+Koliko je otprilike star planet Zemlja?|4,5 milijardi godina|10.000 godina|1 milijarda godina|13,8 milijardi godina

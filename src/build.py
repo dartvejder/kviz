@@ -1,7 +1,7 @@
 import re, json, sys, unicodedata
 sys.path.insert(0,'.')
 from fixes import FIX, REPL
-CATS={"film":"Film","muzika":"Muzika","istorija":"Istorija","geografija":"Geografija","nauka":"Nauka","kultura":"Kultura","sport":"Sport","razno":"Razno"}
+CATS={"film":"Film","muzika":"Muzika","istorija":"Istorija","geografija":"Geografija","nauka":"Nauka","kultura":"Kultura","sport":"Sport","razno":"Razno","knjizevnost":"Književnost","umetnost":"Umetnost","priroda":"Priroda","zdravlje":"Telo i zdravlje","tehnologija":"Tehnologija","hrana":"Hrana i piće","mitologija":"Mitologija i religija","jezik":"Jezik i reči","serije":"Serije i TV","srbija":"Srbija"}
 html=open('../index.html').read()
 out=[]
 # existing bank (from index.html, or from questions.js after first build)
