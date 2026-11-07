@@ -220,3 +220,348 @@ Kako se zove odbojkaška lopta-prijatelj Toma Henksa u filmu „Kastaway”?|Vil
 Koji film Krisa Kolambusa prati dečaka Kevina zaboravljenog kod kuće za Božić?|Sam u kući|Grinč|Deda Mraz je pao s neba|Božićna priča
 Ko igra Kevina u filmu „Sam u kući”?|Makoli Kalkin|Elajdža Vud|Hali Džoel Osment|Džejk Lojd
 U kom gradu se Kevin izgubi u filmu „Sam u kući 2”?|Njujorku|Čikagu|Majamiju|Los Anđelesu
+Ko je režirao film „Pakleni šund” (1994)?|Kventin Tarantino|Martin Skorseze|Gaj Riči|Dejvid Finčer
+Ko je režirao film „Psiho” (1960)?|Alfred Hičkok|Orson Vels|Bili Vajlder|Stenli Kjubrik
+Ko je režirao film „Građanin Kejn”?|Orson Vels|Alfred Hičkok|Džon Ford|Frenk Kapra
+Ko je režirao film „Isijavanje” (1980)?|Stenli Kjubrik|Brajan de Palma|Džon Karpenter|Vilijam Fridkin
+Ko je režirao film „2001: Odiseja u svemiru”?|Stenli Kjubrik|Ridli Skot|Džordž Lukas|Andrej Tarkovski
+Ko je režirao film „Klub boraca”?|Dejvid Finčer|Gaj Riči|Kristofer Nolan|Den Bojl
+Ko je režirao film „Početak” (Inception)?|Kristofer Nolan|Dejvid Finčer|Deni Vilnev|Džejms Kameron
+Ko je režirao film „Interstelar”?|Kristofer Nolan|Ridli Skot|Deni Vilnev|Alfonso Kuaron
+Ko je režirao film „Taksista” (1976)?|Martin Skorseze|Frensis Ford Kopola|Sidni Lumet|Brajan de Palma
+Ko je režirao film „Dobri momci” (Goodfellas)?|Martin Skorseze|Brajan de Palma|Serđo Leone|Kventin Tarantino
+Ko je režirao film „Apokalipsa danas”?|Frensis Ford Kopola|Oliver Stoun|Stenli Kjubrik|Majkl Čimino
+Ko je režirao film „Spasavanje redova Rajana”?|Stiven Spilberg|Oliver Stoun|Ridli Skot|Mel Gibson
+Ko je režirao film „Šindlerova lista”?|Stiven Spilberg|Roman Polanski|Stenli Kjubrik|Ričard Atenboro
+Ko je režirao film „Pijanista” (2002)?|Roman Polanski|Stiven Spilberg|Mihael Haneke|Kšištof Kješlovski
+Ko je režirao film „Gladijator” (2000)?|Ridli Skot|Volfgang Peterzen|Mel Gibson|Oliver Stoun
+Ko je režirao film „Blade Runner” (1982)?|Ridli Skot|Džejms Kameron|Pol Verhoven|Džon Karpenter
+Ko je režirao film „Avatar” (2009)?|Džejms Kameron|Stiven Spilberg|Piter Džekson|Majkl Bej
+Ko je režirao trilogiju „Gospodar prstenova”?|Piter Džekson|Gijermo del Toro|Ridli Skot|Sem Rejmi
+Ko je režirao film „Lavirint fauna”?|Gijermo del Toro|Alfonso Kuaron|Alehandro Gonzales Injaritu|Pedro Almodovar
+Ko je režirao film „Gravitacija” (2013)?|Alfonso Kuaron|Alehandro Gonzales Injaritu|Kristofer Nolan|Deni Vilnev
+Ko je režirao film „Povratnik” (The Revenant)?|Alehandro Gonzales Injaritu|Alfonso Kuaron|Gijermo del Toro|Teren Malik
+Ko je režirao film „Dina” (2021)?|Deni Vilnev|Ridli Skot|Dejvid Linč|Kristofer Nolan
+Ko je režirao film „Dina” iz 1984. godine?|Dejvid Linč|Ridli Skot|Džordž Lukas|Džon Karpenter
+Ko je režirao film „Plavi somot” (1986)?|Dejvid Linč|Dejvid Kronenberg|Brajan de Palma|Dejvid Finčer
+Ko je režirao film „Fargo” (1996)?|Braća Koen|Braća Vačovski|Braća Fareli|Braća Ruso
+Ko je režirao film „Matriks”?|Vačovski|Braća Koen|Ridli Skot|Džejms Kameron
+Ko je režirao film „Parazit” (2019)?|Bong Džun-ho|Park Čan-vuk|Kim Ki-duk|Hirokazu Kore-eda
+Ko je režirao film „Oldboj” (2003)?|Park Čan-vuk|Bong Džun-ho|Takeši Kitano|Džon Vu
+Ko je režirao film „Sedam samuraja”?|Akira Kurosava|Jasudžiro Ozu|Takeši Kitano|Hajao Mijazaki
+Ko je režirao animirani film „Avanture male Čihiro”?|Hajao Mijazaki|Isao Takahata|Mamoru Hosoda|Makoto Šinkai
+Ko je režirao film „Sladak život” (La Dolce Vita)?|Federiko Felini|Mikelanđelo Antonioni|Roberto Roselini|Vitorio de Sika
+Ko je režirao film „Kradljivci bicikla”?|Vitorio de Sika|Federiko Felini|Lukino Viskonti|Pjer Paolo Pazolini
+Ko je režirao film „Dobar, loš, zao”?|Serđo Leone|Serđo Korbuči|Klint Istvud|Džon Ford
+Ko je režirao film „Ponoć u Parizu”?|Vudi Alen|Ves Anderson|Sofija Kopola|Ričard Linklejter
+Ko je režirao film „Hotel Grand Budimpešta”?|Ves Anderson|Vudi Alen|Noa Baumbah|Spajk Džonz
+Ko je režirao film „Izgubljeni u prevodu”?|Sofija Kopola|Ves Anderson|Greta Gervig|Džejn Kempion
+Ko je režirala film „Barbi” (2023)?|Greta Gervig|Sofija Kopola|Kloi Žao|Ketrin Bigelou
+Ko je režirala film „Katanac za bol” (The Hurt Locker)?|Ketrin Bigelou|Kloi Žao|Džejn Kempion|Sofija Kopola
+Ko je režirao film „Oppenhajmer” (2023)?|Kristofer Nolan|Deni Vilnev|Stiven Spilberg|Dejvid Finčer
+Ko je režirao film „Ubiti pticu rugalicu” (1962)?|Robert Maligan|Bili Vajlder|Elija Kazan|Frenk Kapra
+Ko je režirao film „Neki to vole vruće”?|Bili Vajlder|Hauard Hoks|Džordž Kjukor|Frenk Kapra
+Ko je režirao film „Kum”?|Frensis Ford Kopola|Martin Skorseze|Serđo Leone|Brajan de Palma
+Ko je režirao film „Lice s ožiljkom” (1983)?|Brajan de Palma|Martin Skorseze|Oliver Stoun|Sidni Lumet
+Ko je režirao film „Vod smrti” (Platoon)?|Oliver Stoun|Stenli Kjubrik|Frensis Ford Kopola|Majkl Čimino
+Ko je režirao film „Nedodirljivi” (1987)?|Brajan de Palma|Martin Skorseze|Kevin Kostner|Sidni Lumet
+Ko je režirao film „Terminator”?|Džejms Kameron|Pol Verhoven|Ridli Skot|Džon Makternan
+Ko je režirao film „Umri muški” (1988)?|Džon Makternan|Ričard Doner|Toni Skot|Reni Harlin
+Ko je režirao film „Robokap” (1987)?|Pol Verhoven|Džejms Kameron|Džon Karpenter|Ridli Skot
+Ko je režirao film „Noć veštica” (1978)?|Džon Karpenter|Ves Krejven|Tob Huper|Džordž Romero
+Ko je režirao film „Egzorcista” (1973)?|Vilijam Fridkin|Roman Polanski|Ričard Doner|Stenli Kjubrik
+Ko je režirao film „Kad jaganjci utihnu”?|Džonatan Demi|Dejvid Finčer|Ridli Skot|Majkl Man
+Ko je režirao film „Sedam” (Se7en)?|Dejvid Finčer|Džonatan Demi|Brajan Singer|Kristofer Nolan
+Ko je režirao film „Osumnjičeni” (The Usual Suspects)?|Brajan Singer|Dejvid Finčer|Gaj Riči|Kventin Tarantino
+Ko je režirao film „Ključ, kost, dve cevi” (Lock, Stock and Two Smoking Barrels)?|Gaj Riči|Den Bojl|Metju Von|Kventin Tarantino
+Ko je režirao film „Trejnspoting”?|Den Bojl|Gaj Riči|Ken Louč|Stiven Frirs
+Ko je režirao film „Milioner iz blata”?|Den Bojl|Ken Louč|Ričard Atenboro|Mira Nair
+Ko je režirao film „Forest Gamp”?|Robert Zemekis|Ron Hauard|Rob Rajner|Stiven Spilberg
+Ko je režirao film „Povratak u budućnost”?|Robert Zemekis|Stiven Spilberg|Džo Dante|Ivan Rajtman
+Ko je režirao film „Isterivači duhova” (1984)?|Ivan Rajtman|Robert Zemekis|Džon Lendis|Ričard Doner
+Ko je režirao film „Blistavi um” (A Beautiful Mind)?|Ron Hauard|Rob Rajner|Robert Zemekis|Bari Levinson
+Ko je režirao film „Iskupljenje u Šošenku”?|Frenk Darabont|Rob Rajner|Ron Hauard|Robert Zemekis
+Ko je režirao film „Zelena milja”?|Frenk Darabont|Stiven King|Rob Rajner|Klint Istvud
+Ko je režirao film „Mistična reka” (Mystic River)?|Klint Istvud|Ben Aflek|Sidni Lumet|Martin Skorseze
+Ko je režirao film „Devojka od milion dolara”?|Klint Istvud|Ron Hauard|Robert Redford|Sidni Lumet
+Ko je režirao film „Dvanaest gnevnih ljudi” (1957)?|Sidni Lumet|Elija Kazan|Bili Vajlder|Frenk Kapra
+Ko je režirao film „Divan život” (It's a Wonderful Life)?|Frenk Kapra|Džon Ford|Hauard Hoks|Vilijam Vajler
+Ko je režirao film „Ben-Hur” (1959)?|Vilijam Vajler|Sesil B. Demil|Dejvid Lin|Stenli Kjubrik
+Ko je režirao film „Lorens od Arabije”?|Dejvid Lin|Vilijam Vajler|Ričard Atenboro|Sesil B. Demil
+Ko je režirao film „Deset zapovesti” (1956)?|Sesil B. Demil|Vilijam Vajler|Dejvid Lin|Džon Hjuston
+Ko je režirao film „Avantura” (L'Avventura)?|Mikelanđelo Antonioni|Federiko Felini|Bernardo Bertoluči|Lukino Viskonti
+Ko je režirao film „Poslednji car”?|Bernardo Bertoluči|Federiko Felini|Đuzepe Tornatore|Serđo Leone
+Ko je režirao film „Bioskop Paradiso”?|Đuzepe Tornatore|Roberto Beninji|Bernardo Bertoluči|Federiko Felini
+Ko je režirao i glumio u filmu „Život je lep” (1997)?|Roberto Beninji|Đuzepe Tornatore|Nani Moreti|Marčelo Mastrojani
+Ko je režirao film „Ameli”?|Žan-Pjer Žene|Lik Beson|Fransoa Trifo|Žan-Lik Godar
+Ko je režirao film „Leon profesionalac”?|Lik Beson|Žan-Pjer Žene|Matje Kasovic|Žak Odijar
+Ko je režirao film „Na kraju daha” (1960)?|Žan-Lik Godar|Fransoa Trifo|Alen Rene|Erik Romer
+Ko je režirao film „400 udaraca”?|Fransoa Trifo|Žan-Lik Godar|Klod Šabrol|Žan Renoar
+Ko je režirao film „Sedmi pečat”?|Ingmar Bergman|Karl Teodor Drajer|Lars fon Trir|Mihael Haneke
+Ko je režirao film „Melanholija” (2011)?|Lars fon Trir|Ingmar Bergman|Tomas Vinterberg|Mihael Haneke
+Ko je režirao film „Lov” (Jagten, 2012)?|Tomas Vinterberg|Lars fon Trir|Suzane Bir|Nikolas Vinding Refn
+Ko je režirao film „Stalker” (1979)?|Andrej Tarkovski|Sergej Ejzenštajn|Nikita Mihalkov|Andrej Zvjagincev
+Ko je režirao film „Oklopnjača Potemkin”?|Sergej Ejzenštajn|Andrej Tarkovski|Dziga Vertov|Vsevolod Pudovkin
+Ko je režirao film „Metropolis” (1927)?|Fric Lang|F. V. Murnau|Robert Vine|Georg Vilhelm Pabst
+Ko je režirao film „Nosferatu” (1922)?|F. V. Murnau|Fric Lang|Robert Vine|Karl Drajer
+Ko je režirao film „Moderna vremena”?|Čarli Čaplin|Baster Kiton|Harold Lojd|Frenk Kapra
+Ko je režirao film „Ko to tamo peva”?|Slobodan Šijan|Emir Kusturica|Dušan Kovačević|Goran Paskaljević
+Ko je režirao film „Maratonci trče počasni krug”?|Slobodan Šijan|Dušan Kovačević|Srđan Karanović|Goran Marković
+Ko je režirao film „Underground” (1995)?|Emir Kusturica|Srdan Dragojević|Goran Paskaljević|Slobodan Šijan
+Ko je režirao film „Dom za vešanje”?|Emir Kusturica|Goran Paskaljević|Srđan Karanović|Živojin Pavlović
+Ko je režirao film „Crna mačka, beli mačor”?|Emir Kusturica|Srdan Dragojević|Goran Marković|Slobodan Šijan
+Ko je režirao film „Lepa sela lepo gore”?|Srdan Dragojević|Emir Kusturica|Goran Paskaljević|Darko Bajić
+Ko je režirao film „Rane” (1998)?|Srdan Dragojević|Goran Paskaljević|Srđan Golubović|Emir Kusturica
+Ko je režirao film „Parada” (2011)?|Srdan Dragojević|Uroš Stojanović|Stefan Arsenijević|Mladen Đorđević
+Ko je režirao film „Varljivo leto ’68”?|Goran Paskaljević|Emir Kusturica|Srđan Karanović|Goran Marković
+Ko je režirao film „Nacionalna klasa”?|Goran Marković|Slobodan Šijan|Srđan Karanović|Goran Paskaljević
+Ko je režirao film „Majstori, majstori”?|Goran Marković|Slobodan Šijan|Dušan Kovačević|Zdravko Šotra
+Ko je režirao film „Zona Zamfirova” (2002)?|Zdravko Šotra|Goran Marković|Radoš Bajić|Dragan Bjelogrlić
+Ko je režirao film „Montevideo, bog te video!”?|Dragan Bjelogrlić|Zdravko Šotra|Srdan Dragojević|Miloš Radović
+Ko je režirao film „Skupljači perja”?|Aleksandar Petrović|Živojin Pavlović|Dušan Makavejev|Puriša Đorđević
+Ko je režirao film „W.R. – Misterije organizma”?|Dušan Makavejev|Želimir Žilnik|Živojin Pavlović|Aleksandar Petrović
+Ko je režirao film „Buđenje pacova” (1967)?|Živojin Pavlović|Aleksandar Petrović|Dušan Makavejev|Puriša Đorđević
+Ko je režirao film „Sjećaš li se Dolly Bell?”?|Emir Kusturica|Ademir Kenović|Srđan Karanović|Goran Paskaljević
+Ko je režirao film „Sutjeska” (1973)?|Stipe Delić|Veljko Bulajić|Fadil Hadžić|Hajrudin Krvavac
+Ko je režirao film „Bitka na Neretvi”?|Veljko Bulajić|Stipe Delić|Hajrudin Krvavac|Žika Mitrović
+Ko je režirao film „Valter brani Sarajevo”?|Hajrudin Krvavac|Veljko Bulajić|Stipe Delić|Žika Mitrović
+Koji glumac je igrao Valtera u filmu „Valter brani Sarajevo”?|Velimir Bata Živojinović|Ljubiša Samardžić|Dragan Nikolić|Rade Šerbedžija
+Koji glumac je igrao Pantelu Topalovića u filmu „Maratonci trče počasni krug”?|Pavle Vuisić|Mija Aleksić|Bata Stojković|Zoran Radmilović
+Koji glumac je igrao Mirka u filmu „Maratonci trče počasni krug”?|Bogdan Diklić|Dragan Nikolić|Zoran Radmilović|Taško Načić
+Koji glumac je igrao Floyda u filmu „Nacionalna klasa”?|Dragan Nikolić|Bogdan Diklić|Žarko Laušević|Lazar Ristovski
+Koji glumac je igrao Blackyja u filmu „Underground”?|Lazar Ristovski|Miki Manojlović|Bora Todorović|Dragan Nikolić
+Koji glumac je igrao Marka u filmu „Underground”?|Miki Manojlović|Lazar Ristovski|Slavko Štimac|Srđan Todorović
+Koja glumica je igrala Nataliju u filmu „Underground”?|Mirjana Joković|Mirjana Karanović|Branka Katić|Sonja Savić
+Koji glumac je igrao Perhana u filmu „Dom za vešanje”?|Davor Dujmović|Slavko Štimac|Bora Todorović|Ljubica Adžović
+Ko je bio glavni glumac u filmu „Skupljači perja”?|Bekim Fehmiu|Velimir Bata Živojinović|Ljuba Tadić|Rade Marković
+Koji glumac je igrao Žiku Pavlovića u filmovima „Lude godine”?|Nikola Simić|Miodrag Andrić|Danilo Bata Stojković|Mija Aleksić
+Koji glumac je igrao Dadana u filmu „Crna mačka, beli mačor”?|Srđan Todorović|Bajram Severdžan|Zabit Memedov|Lazar Ristovski
+Koji film je osvojio Zlatnu palmu u Kanu 1995. godine?|Underground|Pakleni šund|Lepa sela lepo gore|Ulisov pogled
+Koji film Emira Kusturice je prvi osvojio Zlatnu palmu?|Otac na službenom putu|Underground|Dom za vešanje|Sjećaš li se Dolly Bell?
+Koji jugoslovenski film je 1969. dobio Zlatnog medveda u Berlinu?|Rani radovi|Skupljači perja|Buđenje pacova|Ljubavni slučaj
+Koji je prvi zvučni igrani film u istoriji (1927)?|Pevač džeza|Građanin Kejn|Metropolis|Prohujalo s vihorom
+Koji film je dobio prvog Oskara za najbolji film?|Krila|Prohujalo s vihorom|Pevač džeza|Kazablanka
+Koji film ima najviše Oskara (11), zajedno sa „Ben-Hurom” i „Titanikom”?|Gospodar prstenova: Povratak kralja|Prohujalo s vihorom|Kum|Lorens od Arabije
+Koji film je osvojio Oskara za najbolji film 2020. godine kao prvi film na stranom jeziku?|Parazit|Roma|Džoker|1917
+Koji film je osvojio Oskara za najbolji film za 2023. godinu?|Oppenhajmer|Barbi|Ubice cvetnog meseca|Jadna stvorenja
+Koji film je dobio Oskara za najbolji film za 1994. godinu?|Forest Gamp|Pakleni šund|Iskupljenje u Šošenku|Kralj lavova
+Koji film je dobio Oskara za najbolji film za 1997. godinu?|Titanik|Dobar Vil Hanting|L.A. poverljivo|Spasavanje redova Rajana
+Koji glumac je dobio Oskara za ulogu u filmu „Džoker” (2019)?|Hoakin Finiks|Hit Ledžer|Leonardo Dikaprio|Adam Drajver
+Koji glumac je posthumno dobio Oskara za ulogu Džokera u „Mračnom vitezu”?|Hit Ledžer|Hoakin Finiks|Džek Nikolson|Džered Leto
+Za koji film je Leonardo Dikaprio dobio Oskara?|Povratnik|Vuk sa Vol strita|Titanik|Avijatičar
+Koji glumac ima rekordna tri Oskara za glavnu mušku ulogu?|Danijel Dej-Luis|Džek Nikolson|Tom Henks|Marlon Brando
+Koja glumica ima rekordna četiri Oskara za glavnu ulogu?|Ketrin Hepbern|Meril Strip|Ingrid Bergman|Frensis Makdormand
+Koji glumac je igrao Vita Korleonea u filmu „Kum”?|Marlon Brando|Al Paćino|Robert de Niro|Džejms Kan
+Koji glumac je igrao mladog Vita Korleonea u filmu „Kum 2”?|Robert de Niro|Al Paćino|Endi Garsija|Džo Peši
+Koji glumac je igrao Majkla Korleonea?|Al Paćino|Robert de Niro|Džejms Kan|Robert Duval
+Koji glumac je igrao Tonija Montanu u filmu „Lice s ožiljkom”?|Al Paćino|Robert de Niro|Stiven Bauer|Džo Peši
+Koji glumac je igrao Travisa Bikla u filmu „Taksista”?|Robert de Niro|Al Paćino|Harvi Kajtel|Džek Nikolson
+Koji glumac je igrao Hanibala Lektera u filmu „Kad jaganjci utihnu”?|Entoni Hopkins|Gari Oldman|Rejf Fajns|Brajan Koks
+Koja glumica je igrala Klaris Starling u filmu „Kad jaganjci utihnu”?|Džodi Foster|Džulijana Mur|Sigurni Viver|Mišel Fajfer
+Koji glumac je igrao Džeka Torensa u filmu „Isijavanje”?|Džek Nikolson|Robert de Niro|Kristofer Vokn|Den Ejkrojd
+Koji glumac je igrao Rendla Mekmarfija u filmu „Let iznad kukavičjeg gnezda”?|Džek Nikolson|Dastin Hofman|Al Paćino|Džin Hekman
+Koji glumac je igrao glavnu ulogu u filmu „Kišni čovek”?|Dastin Hofman|Tom Kruz|Robin Vilijams|Al Paćino
+Koji glumac je igrao Forest Gampa?|Tom Henks|Robin Vilijams|Džim Keri|Kevin Kostner
+Koji glumac je igrao Endija Dufrejna u filmu „Iskupljenje u Šošenku”?|Tim Robins|Morgan Frimen|Kevin Spejsi|Edvard Norton
+Koji glumac je igrao Reda u filmu „Iskupljenje u Šošenku”?|Morgan Frimen|Tim Robins|Denzel Vošington|Semjuel L. Džekson
+Koji glumac je igrao Nea u filmu „Matriks”?|Kijanu Rivs|Tom Kruz|Vil Smit|Bred Pit
+Koji glumac je igrao Morfeusa u filmu „Matriks”?|Lorens Fišburn|Semjuel L. Džekson|Morgan Frimen|Denzel Vošington
+Koji glumac je igrao Tajlera Dardena u filmu „Klub boraca”?|Bred Pit|Edvard Norton|Džared Leto|Met Dejmon
+Koji glumac je igrao Maksimusa u filmu „Gladijator”?|Rasel Krou|Hoakin Finiks|Mel Gibson|Džerard Batler
+Koji glumac je igrao Vilijama Volasa u filmu „Hrabro srce”?|Mel Gibson|Rasel Krou|Liam Nison|Kevin Kostner
+Koji glumac je igrao Oskara Šindlera u filmu „Šindlerova lista”?|Liam Nison|Rejf Fajns|Ben Kingsli|Danijel Dej-Luis
+Koji glumac je igrao Indijanu Džonsa?|Harison Ford|Kevin Kostner|Tom Selek|Mel Gibson
+Koji glumac je igrao Rika Dekarda u filmu „Blade Runner”?|Harison Ford|Rutger Hauer|Rajan Gosling|Arnold Švarceneger
+Koji glumac je igrao Džona Meklejna u filmu „Umri muški”?|Brus Vilis|Silvester Stalone|Arnold Švarceneger|Mel Gibson
+Koji glumac je igrao Rokija Balbou?|Silvester Stalone|Robert de Niro|Arnold Švarceneger|Dolf Lundgren
+Koji glumac je igrao Džeka Sperou u „Piratima s Kariba”?|Džoni Dep|Orlando Blum|Džefri Raš|Kira Najtli
+Koji glumac je igrao Gendalfa u „Gospodaru prstenova”?|Ijan Mekelen|Kristofer Li|Patrik Stjuart|Majkl Gambon
+Koji glumac je igrao Aragorna u „Gospodaru prstenova”?|Vigo Mortensen|Orlando Blum|Šon Bin|Karl Urban
+Koji glumac je igrao Froda Baginsa?|Elajdža Vud|Šon Astin|Bili Bojd|Dominik Monahan
+Koji glumac je igrao Golum pomoću snimanja pokreta?|Endi Serkis|Ijan Holm|Džon Ris-Dejvis|Hjugo Viving
+Koji glumac je igrao Albusa Dambldora u prva dva filma o Hariju Poteru?|Ričard Haris|Majkl Gambon|Ijan Mekelen|Alan Rikman
+Koji glumac je igrao Severusa Snejpa?|Alan Rikman|Gari Oldman|Rejf Fajns|Džejson Ajzaks
+Koji glumac je igrao Lorda Voldemora u filmovima o Hariju Poteru?|Rejf Fajns|Alan Rikman|Gari Oldman|Kenet Brana
+Koja glumica je igrala Hermionu Grejndžer?|Ema Votson|Boni Rajt|Ivana Linč|Ema Tompson
+Koji glumac je igrao Džejmsa Bonda u filmu „Dr No” (1962)?|Šon Koneri|Rodžer Mur|Džordž Lejzenbi|Timoti Dalton
+Koji glumac je samo jednom igrao Džejmsa Bonda?|Džordž Lejzenbi|Timoti Dalton|Rodžer Mur|Pirs Brosnan
+Koji glumac je igrao Bonda u filmu „Kazino Rojal” (2006)?|Danijel Krejg|Pirs Brosnan|Klajv Oven|Idris Elba
+Koji glumac je igrao Bonda u filmu „Zlatno oko” (1995)?|Pirs Brosnan|Timoti Dalton|Danijel Krejg|Rodžer Mur
+Koji glumac je igrao Betmena u filmu „Betmen” iz 1989. godine?|Majkl Kiton|Val Kilmer|Džordž Kluni|Kristijan Bejl
+Koji glumac je igrao Betmena u Nolanovoj trilogiji?|Kristijan Bejl|Ben Aflek|Robert Patinson|Majkl Kiton
+Koji glumac je igrao Džokera u „Betmenu” iz 1989. godine?|Džek Nikolson|Hit Ledžer|Hoakin Finiks|Džered Leto
+Koji glumac je igrao Ajron Mena u filmovima Marvela?|Robert Dauni mlađi|Kris Evans|Kris Hemsvort|Mark Rafalo
+Koji glumac je igrao Kapetana Ameriku?|Kris Evans|Kris Prat|Kris Hemsvort|Sebastijan Sten
+Koji glumac je igrao Tora u filmovima Marvela?|Kris Hemsvort|Tom Hidlston|Kris Evans|Liam Hemsvort
+Koji glumac je igrao Lokija?|Tom Hidlston|Benedikt Kamberbač|Kris Hemsvort|Džeremi Rener
+Koji glumac je igrao Spajdermena u filmovima Sema Rejmija?|Tobi Megvajer|Endru Garfild|Tom Holand|Džejk Džilenhol
+Koja glumica je igrala Elen Ripli u filmu „Osmi putnik”?|Sigurni Viver|Linda Hamilton|Džejmi Li Kertis|Karen Alen
+Koja glumica je igrala Saru Konor u filmu „Terminator”?|Linda Hamilton|Sigurni Viver|Dženifer Konoli|Keri Fišer
+Koja glumica je igrala princezu Leju u „Ratovima zvezda”?|Keri Fišer|Natali Portman|Dejzi Ridli|Sigurni Viver
+Koji glumac je igrao Hana Soloa u originalnim „Ratovima zvezda”?|Harison Ford|Mark Hamil|Bili Di Vilijams|Alden Erenrajk
+Koji glumac je igrao Luka Skajvokera?|Mark Hamil|Harison Ford|Hejden Kristensen|Juan Mekgregor
+Koji glumac je dao glas Darta Vejdera u originalnoj trilogiji?|Džejms Erl Džons|Dejvid Prouz|Morgan Frimen|Kristofer Li
+Koji glumac je fizički igrao Darta Vejdera u originalnoj trilogiji?|Dejvid Prouz|Džejms Erl Džons|Piter Mejhju|Keni Bejker
+Koji glumac je igrao mladog Obi-Van Kenobija u prikvel trilogiji?|Juan Mekgregor|Hejden Kristensen|Liam Nison|Alek Ginis
+Koja glumica je igrala Holi Golajtli u filmu „Doručak kod Tifanija”?|Odri Hepbern|Merilin Monro|Grejs Keli|Elizabet Tejlor
+Koja glumica je igrala Skarlet O'Haru u filmu „Prohujalo s vihorom”?|Vivijen Li|Beti Dejvis|Ketrin Hepbern|Ingrid Bergman
+Koja glumica je igrala Ilsu u filmu „Kazablanka”?|Ingrid Bergman|Lorin Bakol|Greta Garbo|Ava Gardner
+Koji glumac je igrao Rika u filmu „Kazablanka”?|Hamfri Bogart|Keri Grant|Klark Gejbl|Džejms Stjuart
+Koja glumica je igrala Mariju u filmu „Moje pesme, moji snovi”?|Džuli Endruz|Odri Hepbern|Džudi Garland|Natali Vud
+Koja glumica je igrala Doroti u filmu „Čarobnjak iz Oza” (1939)?|Džudi Garland|Širli Templ|Liza Mineli|Džuli Endruz
+Koja glumica je igrala Rouz u filmu „Titanik”?|Kejt Vinslet|Gvinet Paltrou|Kler Dejns|Kira Najtli
+Koja glumica je igrala Miju u filmu „La La Lend”?|Ema Stoun|Ema Votson|Dženifer Lorens|En Hatavej
+Koji glumac je igrao Sebastijana u filmu „La La Lend”?|Rajan Gosling|Majls Teler|Rajan Rejnolds|Bredli Kuper
+Koja glumica je igrala Katnis Everdin u „Igrama gladi”?|Dženifer Lorens|Šejlin Vudli|Kristen Stjuart|Ema Stoun
+Koja glumica je igrala Belu Svon u „Sumraku”?|Kristen Stjuart|Dženifer Lorens|Ema Votson|Dakota Fening
+Koji glumac je igrao Edvarda Kalena u „Sumraku”?|Robert Patinson|Tejlor Lotner|Ešli Grin|Kelan Lac
+Koja glumica je igrala Lizbet Salander u američkoj verziji „Devojke sa tetovažom zmaja”?|Runi Mara|Numi Rapas|Kler Foj|Skarlet Johanson
+Koja glumica je igrala Crnu udovicu u filmovima Marvela?|Skarlet Johanson|Elizabet Olsen|Bri Larson|Zoi Saldana
+Koja glumica je igrala Vonder Vumen u filmu iz 2017?|Gal Gadot|Margo Robi|Ember Herd|Bri Larson
+Koja glumica je igrala Harli Kvin u „Odredu otpisanih”?|Margo Robi|Gal Gadot|Kara Delevinj|Ember Herd
+Koja glumica je igrala Barbi u filmu iz 2023?|Margo Robi|Ema Stoun|Ana de Armas|Florens Pju
+Koji glumac je igrao Kena u filmu „Barbi”?|Rajan Gosling|Kris Hemsvort|Zak Efron|Siмu Liu
+Koji glumac je igrao Oppenhajmera u istoimenom filmu?|Kilijan Merfi|Robert Dauni mlađi|Mat Dejmon|Kenet Brana
+Koji glumac je igrao Pola Atreidesa u „Dini” (2021)?|Timoti Šalame|Ostin Batler|Tom Holand|Robert Patinson
+Koji glumac je igrao Elvisa u filmu „Elvis” (2022)?|Ostin Batler|Timoti Šalame|Majls Teler|Rami Malek
+Koji glumac je igrao Fredija Merkjurija u filmu „Boemska rapsodija”?|Rami Malek|Saša Baron Koen|Ben Hardi|Džo Mazelo
+Koji glumac je igrao Vili Vonku u filmu iz 1971. godine?|Džin Vajlder|Džoni Dep|Timoti Šalame|Dik Van Dajk
+Koji glumac je igrao Džeka Sparoua i Edvarda Makazorukog?|Džoni Dep|Tim Barton|Orlando Blum|Gari Oldman
+Ko je režirao film „Edvard Makazoruki”?|Tim Barton|Stiven Spilberg|Kris Kolambus|Sem Rejmi
+Ko je režirao film „Sam u kući” (1990)?|Kris Kolambus|Džon Hjuz|Ivan Rajtman|Robert Zemekis
+Koji glumac je igrao Kevina u filmu „Sam u kući”?|Makoli Kalkin|Elajdža Vud|Hejli Džoel Osment|Frenki Munic
+Koji glumac je igrao Mr. Bina?|Rouan Atkinson|Džon Kliz|Hju Grant|Stiv Kugan
+Koji glumac je igrao Ejsa Venturu?|Džim Keri|Robin Vilijams|Edi Marfi|Ben Stiler
+Koji glumac je igrao gospođu Dautfajer?|Robin Vilijams|Dastin Hofman|Stiv Martin|Edi Marfi
+Koji glumac je igrao Aksela Folija u filmu „Policajac s Beverli Hilsa”?|Edi Marfi|Kris Rok|Vil Smit|Martin Lorens
+Koji glumac je dao glas Šreku u originalnoj verziji?|Majk Majers|Edi Marfi|Džim Keri|Robin Vilijams
+Koji glumac je dao glas magarcu u „Šreku” u originalnoj verziji?|Edi Marfi|Kris Rok|Majk Majers|Kevin Hart
+Koji glumac je dao glas Džiniju u „Aladinu” (1992)?|Robin Vilijams|Edi Marfi|Džim Keri|Bili Kristal
+Koji glumac je dao glas Vudiju u „Priči o igračkama”?|Tom Henks|Tim Alen|Bili Kristal|Robin Vilijams
+Koji glumac je dao glas Baz Lajtiru u originalnoj verziji?|Tim Alen|Tom Henks|Kris Evans|Džon Gudmen
+Koji je bio prvi dugometražni animirani film studija Pixar?|Priča o igračkama|Život buba|Čudovišta iz ormara|Potraga za Nemom
+Koji je prvi dugometražni animirani film studija Dizni (1937)?|Snežana i sedam patuljaka|Pinokio|Pepeljuga|Bambi
+Kako se zove riba klovn, otac Nema, u „Potrazi za Nemom”?|Marlin|Dori|Gil|Kraš
+Kako se zove pas u filmu „Gore” (Up)?|Dag|Rasel|Karl|Kevin
+Kako se zove robotkinja koju upoznaje VOLI u istoimenom filmu?|EVA|AVA|VALI|ROKSI
+Kako se zove pacov kuvar u filmu „Ratatuj”?|Remi|Emil|Gisto|Lingvini
+Kako se zove snežni Sneško u filmu „Zaleđeno kraljevstvo”?|Olaf|Sven|Kristof|Hans
+Kako se zove sestra Elze u „Zaleđenom kraljevstvu”?|Ana|Merida|Rapunzel|Moana
+Kako se zove lav, otac Simbe, u „Kralju lavova”?|Mufasa|Skar|Rafiki|Nala
+Kako se zove zli stric u „Kralju lavova”?|Skar|Džafar|Šir Kan|Mufasa
+Kako se zove tigar u „Knjizi o džungli”?|Šir Kan|Bagira|Balu|Ka
+Kako se zove medved u „Knjizi o džungli”?|Balu|Bagira|Šir Kan|Akela
+Kako se zove dečak iz „Knjige o džungli”?|Mogli|Tarzan|Aladin|Pinokio
+Kako se zove vila u filmu „Petar Pan”?|Zvončica|Vendi|Tigrica|Aurora
+Kako se zove kapetan, neprijatelj Petra Pana?|Kuka|Barbosa|Džek Sparou|Silver
+Kako se zove pas Mikija Mausa?|Pluton|Šilja|Paja|Čip
+Kako se zove devojka Mikija Mausa?|Mini|Dejzi|Klarabela|Paja
+Kako se zove dinosaurus iz „Kremenkovih”?|Dino|Bam-Bam|Pebls|Rex
+U kom gradu se dešava film „Kazablanka”?|Kazablanka|Tanger|Marakeš|Alžir
+U kom gradu se dešava film „Rimski praznik”?|Rim|Pariz|Venecija|Firenca
+U kojoj američkoj saveznoj državi se dešava film „Fargo”?|Minesota|Montana|Ajova|Viskonsin
+Na kom ostrvu se dešava film „Ralje”?|Amiti|Neptun|Nantaket|Kejp Kod
+Kako se zove hotel u filmu „Isijavanje”?|Overluk|Bejts|Kalifornija|Grand Budimpešta
+Kako se zove motel u filmu „Psiho”?|Bejts motel|Overluk|Kalifornija|Kristal Lejk
+Kako se zove brod u filmu „Osmi putnik”?|Nostromo|Sulaco|Prometej|Enterprajz
+Kako se zove kompjuter u filmu „2001: Odiseja u svemiru”?|HAL 9000|Skajnet|Majka|Džarvis
+Kako se zove zla veštačka inteligencija u „Terminatoru”?|Skajnet|HAL 9000|Matriks|Ultron
+Kako se zove vanzemaljac u filmu Stivena Spilberga iz 1982. godine?|E.T.|Alf|Joda|Stič
+Kako se zove ajkula u filmu „Ralje” prema nadimku ekipe?|Brus|Džo|Džeki|Rodžer
+Kako se zove brod Hana Soloa?|Milenijumski soko|Zvezdani razarač|Tantiv IV|Rob-1
+Kako se zove planeta pustinje na kojoj je odrastao Luk Skajvoker?|Tatuin|Dagoba|Hot|Endor
+Na kojoj planeti Luk uči kod Jode?|Dagoba|Tatuin|Naboo|Endor
+Kako se zove dlakavi saputnik Hana Soloa?|Čubaka|Joda|Džaba|Lando
+Koja rečenica je poznata iz filma „Terminator”?|I'll be back|May the Force be with you|Here's Johnny|I am your father
+Iz kog filma je rečenica „Pri tebi će biti Sila”?|Ratovi zvezda|Zvezdane staze|Matriks|Dina
+Iz kog filma je čuvena replika „Here's Johnny!”?|Isijavanje|Psiho|Taksista|Egzorcista
+Iz kog filma je replika „Napraviću mu ponudu koju ne može da odbije”?|Kum|Lice s ožiljkom|Dobri momci|Nedodirljivi
+Iz kog filma je replika „Hjuston, imamo problem”?|Apolo 13|Gravitacija|Marsovac|Armagedon
+Iz kog filma je replika „Život je kao kutija čokoladnih bombona”?|Forest Gamp|Kišni čovek|Divan život|Velika riba
+Iz kog filma je replika „Reci zdravo mom malom prijatelju!”?|Lice s ožiljkom|Kum|Kazino|Nedodirljivi
+Iz kog filma je replika „Gledam te, mala” (Here's looking at you, kid)?|Kazablanka|Prohujalo s vihorom|Malteški soko|Rimski praznik
+Kako se zove fiktivna država u kojoj vlada kralj u filmu „Crni Panter”?|Vakanda|Zamunda|Genovija|Latverija
+U kom fiktivnom gradu živi Betmen?|Gotam|Metropolis|Star Siti|Central Siti
+U kom fiktivnom gradu živi Supermen kao Klark Kent?|Metropolis|Gotam|Smolvil|Kostal Siti
+Kako se zove novinarka u koju je zaljubljen Supermen?|Lois Lejn|Lana Lang|Meri Džejn|Viki Vejl
+Kako se zove devojka Pitera Parkera u Rejmijevim filmovima?|Meri Džejn|Gven Stejsi|Lois Lejn|Felisija Hardi
+Koje je pravo ime Betmena?|Brus Vejn|Klark Kent|Piter Parker|Toni Stark
+Koje je pravo ime Ajron Mena?|Toni Stark|Brus Bener|Stiv Rodžers|Klint Barton
+Koje je pravo ime Hulka?|Brus Bener|Toni Stark|Brus Vejn|Nik Fjuri
+Kako se zove batler Brusa Vejna?|Alfred|Džarvis|Džejms|Lucijus
+Koji film iz 1999. godine je poznat po rečenici „Vidim mrtve ljude”?|Šesto čulo|Ostali|Matriks|Klub boraca
+Ko je režirao film „Šesto čulo”?|M. Najt Šjamalan|Dejvid Finčer|Sem Rejmi|Džejms Van
+Koji glumac je igrao psihologa u filmu „Šesto čulo”?|Brus Vilis|Tom Henks|Kevin Kostner|Džon Travolta
+Koji glumac je igrao Vinsenta Vegu u filmu „Pakleni šund”?|Džon Travolta|Semjuel L. Džekson|Brus Vilis|Tim Rot
+Koja glumica je igrala Mju Volas u filmu „Pakleni šund”?|Uma Terman|Bridžit Fonda|Pam Grir|Džulijeta Luis
+Koja glumica je igrala Nevestu u filmu „Ubiti Bila”?|Uma Terman|Lusi Liu|Daril Hana|Vivika Foks
+Koji glumac je igrao Hansa Landu u „Prokletnicima”?|Kristof Valc|Mihael Fasbender|Danijel Bril|Til Švajger
+Koji glumac je igrao Džanga u filmu „Đango bez okova”?|Džejmi Foks|Semjuel L. Džekson|Vil Smit|Denzel Vošington
+Koji film Kventina Tarantina se dešava u Drugom svetskom ratu?|Prokletnici|Đango bez okova|Mrska osmorka|Bilo jednom u Holivudu
+Koji je prvi film Kventina Tarantina kao režisera dugometražnog filma?|Ulični psi|Pakleni šund|Džeki Braun|Ubiti Bila
+Koji film je snimljen po romanu Marija Puza?|Kum|Dobri momci|Lice s ožiljkom|Kazino
+Po romanu kog pisca je snimljen film „Isijavanje”?|Stiven King|Piter Strob|Din Kunc|Robert Blok
+Po romanu kog pisca je snimljen film „Ralje”?|Piter Benčli|Stiven King|Majkl Krajton|Tom Klensi
+Po romanu kog pisca je snimljen „Park iz doba jure”?|Majkl Krajton|Piter Benčli|Stiven King|Den Braun
+Po romanu kog pisca je snimljen film „Da Vinčijev kod”?|Den Braun|Džon Grišam|Tom Klensi|Majkl Krajton
+Ko je napisao roman po kome je snimljen „Kad jaganjci utihnu”?|Tomas Haris|Stiven King|Džejms Elroj|Dejvid Morel
+Koji glumac je igrao Džona Rembo?|Silvester Stalone|Arnold Švarceneger|Čak Noris|Žan-Klod Van Dam
+Ko je napisao roman „Prva krv” po kome je snimljen „Rambo”?|Dejvid Morel|Tom Klensi|Robert Ladlam|Frederik Forsajt
+Koji film je pratio Džejsona Borna, agenta bez sećanja?|Bornov identitet|Nemoguća misija|Kazino Rojal|Kingsmen
+Koji glumac je igrao Džejsona Borna?|Mat Dejmon|Tom Kruz|Džeremi Rener|Ben Aflek
+Koji glumac igra Itana Hanta u serijalu „Nemoguća misija”?|Tom Kruz|Mat Dejmon|Kijanu Rivs|Bred Pit
+Koji glumac igra Džona Vika?|Kijanu Rivs|Džejson Stejtam|Tom Kruz|Liam Nison
+Koji glumac igra u filmu „Uzeta” (Taken) oca koji spasava ćerku?|Liam Nison|Kijanu Rivs|Denzel Vošington|Džejson Stejtam
+Koji glumac igra Dominika Toreta u serijalu „Paklene ulice”?|Vin Dizel|Pol Voker|Dvejn Džonson|Džejson Stejtam
+Koji glumac je preminuo 2013. tokom snimanja „Paklenih ulica 7”?|Pol Voker|Hit Ledžer|Filip Simor Hofman|Robin Vilijams
+Koji glumac je igrao Džeka Dosona u filmu „Titanik”?|Leonardo Dikaprio|Bili Zejn|Kristijan Bejl|Met Dejmon
+Koji film iz 2013. govori o berzanskom prevarantu Džordanu Belfortu?|Vuk sa Vol strita|Veliko klađenje|Vol strit|Uhvati me ako možeš
+Koji glumac je igrao Frenka Abegnejla u filmu „Uhvati me ako možeš”?|Leonardo Dikaprio|Tom Henks|Mat Dejmon|Bred Pit
+Koji film govori o osnivanju Fejsbuka?|Društvena mreža|Džobs|Pirati Silicijumske doline|Internship
+Ko je glumio Marka Zakerberga u „Društvenoj mreži”?|Džesi Ajzenberg|Endru Garfild|Majls Teler|Džastin Timberlejk
+Koji film iz 1993. godine je doneo dinosauruse na veliko platno?|Park iz doba jure|Godzila|Izgubljeni svet|Kralj Kong
+Kako se zove džinovski majmun iz filma iz 1933. godine?|King Kong|Godzila|Mogli|Džo Jang
+Kako se zove džinovsko čudovište iz japanskih filmova od 1954?|Godzila|Mothra|Gamera|Rodan
+U kom filmu iz 1972. putnici beže iz prevrnutog prekookeanskog broda?|Posejdonova avantura|Titanik|Pakleni toranj|Aerodrom
+Koja je glavna nagrada filmskog festivala u Veneciji?|Zlatni lav|Zlatna palma|Zlatni medved|Zlatni globus
+Koja je glavna nagrada filmskog festivala u Berlinu?|Zlatni medved|Zlatni lav|Zlatna palma|Kristalni globus
+Koja je glavna nagrada festivala u Karlovim Varima?|Kristalni globus|Zlatni lav|Zlatni medved|Zlatna arena
+Koja je glavna nagrada festivala u Puli?|Zlatna arena|Zlatni lav|Kristalni globus|Srce Sarajeva
+Koja je glavna nagrada Sarajevo film festivala?|Srce Sarajeva|Zlatna arena|Zlatni ćuran|Zlatni lav
+Kako se zove filmski festival u Beogradu koji se održava od 1971?|FEST|Sinema siti|Kustendorf|Festival autorskog filma
+U kom gradu se održava filmski festival „Sinema siti”?|Novi Sad|Beograd|Niš|Subotica
+Na Mokroj Gori Kusturica organizuje koji festival?|Kustendorf|FEST|Sinema siti|Palić
+Koji grad je domaćin Festivala evropskog filma?|Palić|Vrnjačka Banja|Herceg Novi|Sopot
+Koji festival se održava u Vrnjačkoj Banji?|Festival filmskog scenarija|FEST|Festival glumačkih ostvarenja|Kustendorf
+U kom gradu se održavaju Filmski susreti, festival glumačkih ostvarenja?|Niš|Kragujevac|Novi Sad|Čačak
+Koliko je Oskara osvojio film „Titanik”?|11|9|12|14
+Koliko je Oskara dobio film „Prohujalo s vihorom”?|8|10|5|11
+Koji glumac je igrao Šerloka Holmsa u filmovima Gaja Ričija?|Robert Dauni mlađi|Benedikt Kamberbač|Džud Lo|Hju Lori
+Koji glumac je igrao doktora Votsona u filmovima Gaja Ričija?|Džud Lo|Martin Friman|Robert Dauni mlađi|Mark Strong
+Ko je komponovao muziku za film „Kum”?|Nino Rota|Enio Morikone|Džon Vilijams|Hans Cimer
+Ko je komponovao muziku za film „Dobar, loš, zao”?|Enio Morikone|Nino Rota|Džon Bari|Moris Žar
+Ko je komponovao muziku za filmove o Džejmsu Bondu, uključujući „Goldfinger”?|Džon Bari|Džon Vilijams|Moris Žar|Hans Cimer
+Ko je komponovao muziku za film „Gladijator”?|Hans Cimer|Džon Vilijams|Hauard Šor|Džejms Horner
+Ko je komponovao muziku za film „Titanik”?|Džejms Horner|Hans Cimer|Džon Vilijams|Alan Silvestri
+Ko je komponovao muziku za „Gospodara prstenova”?|Hauard Šor|Hans Cimer|Džon Vilijams|Džejms Horner
+Ko je komponovao muziku za „Ralje”?|Džon Vilijams|Bernard Herman|Džeri Goldsmit|Henri Mancini
+Ko je komponovao muziku za film „Psiho”?|Bernard Herman|Džon Vilijams|Moris Žar|Elmer Bernštajn
+Ko je komponovao temu „Pink Panter”?|Henri Mancini|Džon Bari|Kvinsi Džons|Lalo Šifrin
+Ko je komponovao muziku za film „Underground”?|Goran Bregović|Zoran Simjanović|Vojislav Kostić|Dejan Cukić
+Ko je otpevao pesmu „My Heart Will Go On” za „Titanik”?|Selin Dion|Vitni Hjuston|Majra Keri|Šanaja Tven
+Ko je otpevao pesmu „I Will Always Love You” iz filma „Telohranitelj”?|Vitni Hjuston|Selin Dion|Majra Keri|Toni Brekston
+Ko je otpevala pesmu „Skyfall” za istoimeni film o Bondu?|Adel|Sem Smit|Bili Ajliš|Šerl Kro
+Ko je otpevala naslovnu pesmu filma o Bondu „Ne mogu da umrem” (No Time to Die)?|Bili Ajliš|Adel|Dua Lipa|Sem Smit
+Koji film je otvorio Marvelov filmski univerzum 2008. godine?|Ajron Men|Neverovatni Hulk|Tor|Kapetan Amerika
+Kako se zove ljubičasti zlikovac koji sakuplja Kamenje beskonačnosti?|Tanos|Ultron|Loki|Galaktus
+Koliko je Kamenja beskonačnosti u Marvelovim filmovima?|6|5|7|4
+Kako se zove čekić Tora?|Mjolnir|Stormbrejker|Gungnir|Ekskalibur
+Od kog metala je Kapetan Amerikin štit?|Vibranijum|Adamantijum|Titanijum|Uru
+Od kog metala su sečiva Vulverina?|Adamantijum|Vibranijum|Titanijum|Kriptonit
+Šta slabi Supermena?|Kriptonit|Vibranijum|Srebro|Beli luk
+Kako se zove rodna planeta Supermena?|Kripton|Oa|Apokolips|Tamaran
+Koji glumac je igrao Supermena u filmovima iz 1978. godine?|Kristofer Riv|Henri Kavil|Brendon Rut|Din Kejn
+Kako se zove profesor koji vodi Iks-ljude?|Čarls Ksavijer|Erik Lenšer|Logan|Henk Mekoj
+Koji glumac je igrao Vulverina?|Hju Džekman|Rasel Krou|Kris Hemsvort|Rajan Rejnolds
+Koji glumac igra Dedpula?|Rajan Rejnolds|Hju Džekman|Rajan Gosling|Kris Prat
+Koja animirana porodica živi u Springfildu?|Simpsonovi|Grifinovi|Kremenkovi|Belčerovi

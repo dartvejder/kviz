@@ -254,3 +254,319 @@ Ko je bio bubnjar grupe The Who poznat po razbijanju bubnjeva?|Kit Mun|Džon Bon
 Koja grupa je napravila album „Back in Black”?|AC/DC|Metalika|Kiss|Van Halen
 Koja grupa je poznata po šminci i pevaču Džinu Simonsu sa dugim jezikom?|Kiss|AC/DC|Motli Kru|Tvisted Sister
 Koja grupa je snimila „Dream On” i „I Don't Want to Miss a Thing”?|Aerosmit|Bon Džovi|Ganz en Rouzis|Džurni
+Ko je komponovao „Četiri godišnja doba”?|Antonio Vivaldi|Johan Sebastijan Bah|Đuzepe Verdi|Đoakino Rosini
+Ko je komponovao „Mesečevu sonatu”?|Ludvig van Betoven|Volfgang Amadeus Mocart|Frederik Šopen|Franc Šubert
+Ko je komponovao operu „Čarobna frula”?|Volfgang Amadeus Mocart|Ludvig van Betoven|Rihard Vagner|Đakomo Pučini
+Ko je komponovao operu „Aida”?|Đuzepe Verdi|Đakomo Pučini|Đoakino Rosini|Vinčenco Belini
+Ko je komponovao operu „Travijata”?|Đuzepe Verdi|Đakomo Pučini|Gaetano Doniceti|Đoakino Rosini
+Ko je komponovao operu „Madam Baterflaj”?|Đakomo Pučini|Đuzepe Verdi|Pjetro Maskanji|Ruđero Leonkavalo
+Ko je komponovao operu „Boemi”?|Đakomo Pučini|Đuzepe Verdi|Žorž Bize|Šarl Guno
+Ko je komponovao operu „Tosku”?|Đakomo Pučini|Đuzepe Verdi|Đoakino Rosini|Vinčenco Belini
+Ko je komponovao operu „Seviljski berberin”?|Đoakino Rosini|Volfgang Amadeus Mocart|Đuzepe Verdi|Gaetano Doniceti
+Ko je komponovao operu „Karmen”?|Žorž Bize|Šarl Guno|Žil Masne|Kamij Sen-Sans
+Ko je komponovao ciklus opera „Prsten Nibelunga”?|Rihard Vagner|Rihard Štraus|Johanes Brams|Anton Bruckner
+Ko je komponovao balet „Labudovo jezero”?|Petar Iljič Čajkovski|Igor Stravinski|Sergej Prokofjev|Nikolaj Rimski-Korsakov
+Ko je komponovao balet „Krcko Oraščić”?|Petar Iljič Čajkovski|Sergej Prokofjev|Igor Stravinski|Aram Hačaturijan
+Ko je komponovao balet „Posvećenje proleća”?|Igor Stravinski|Petar Iljič Čajkovski|Sergej Prokofjev|Dmitrij Šostakovič
+Ko je komponovao balet „Romeo i Julija” (1935)?|Sergej Prokofjev|Petar Iljič Čajkovski|Igor Stravinski|Dmitrij Šostakovič
+Ko je komponovao „Ples sablji”?|Aram Hačaturijan|Sergej Prokofjev|Modest Musorgski|Aleksandar Borodin
+Ko je komponovao „Slike sa izložbe”?|Modest Musorgski|Nikolaj Rimski-Korsakov|Petar Iljič Čajkovski|Aleksandar Borodin
+Ko je komponovao „Šeherezadu”?|Nikolaj Rimski-Korsakov|Modest Musorgski|Aleksandar Borodin|Mili Balakirev
+Ko je komponovao „Bolero”?|Moris Ravel|Klod Debisi|Erik Sati|Kamij Sen-Sans
+Ko je komponovao „Mesečinu” (Clair de lune)?|Klod Debisi|Moris Ravel|Erik Sati|Gabrijel Fore
+Ko je komponovao „Karneval životinja”?|Kamij Sen-Sans|Moris Ravel|Klod Debisi|Žorž Bize
+Ko je komponovao „Na lepom plavom Dunavu”?|Johan Štraus mlađi|Johan Štraus stariji|Rihard Štraus|Franc Lehar
+Ko je komponovao „Radecki marš”?|Johan Štraus stariji|Johan Štraus mlađi|Franc Lehar|Jozef Hajdn
+Ko je komponovao operetu „Vesela udovica”?|Franc Lehar|Johan Štraus mlađi|Imre Kalman|Žak Ofenbah
+Ko je komponovao „Kankan” iz operete „Orfej u podzemlju”?|Žak Ofenbah|Franc Lehar|Johan Štraus|Žorž Bize
+Ko je komponovao „Mađarske igre”?|Johanes Brams|Franc List|Bela Bartok|Antonjin Dvoržak
+Ko je komponovao „Mađarske rapsodije”?|Franc List|Johanes Brams|Bela Bartok|Zoltan Kodalj
+Ko je komponovao simfoniju „Iz Novog sveta”?|Antonjin Dvoržak|Bedržih Smetana|Leoš Janaček|Gustav Maler
+Ko je komponovao simfonijsku poemu „Vltava”?|Bedržih Smetana|Antonjin Dvoržak|Leoš Janaček|Bohuslav Martinu
+Ko je komponovao „Finlandiju”?|Jan Sibelijus|Edvard Grig|Karl Nilsen|Gustav Maler
+Ko je komponovao muziku za „Pera Ginta”?|Edvard Grig|Jan Sibelijus|Karl Nilsen|Ole Bul
+Ko je komponovao „Svadbeni marš” iz „Sna letnje noći”?|Feliks Mendelson|Rihard Vagner|Johan Pahelbel|Georg Fridrih Hendl
+Ko je komponovao „Kanon u D-duru”?|Johan Pahelbel|Johan Sebastijan Bah|Antonio Vivaldi|Georg Fridrih Hendl
+Ko je komponovao oratorijum „Mesija”?|Georg Fridrih Hendl|Johan Sebastijan Bah|Jozef Hajdn|Antonio Vivaldi
+Ko je komponovao „Muziku na vodi”?|Georg Fridrih Hendl|Johan Sebastijan Bah|Henri Persel|Antonio Vivaldi
+Ko je komponovao „Brandenburške koncerte”?|Johan Sebastijan Bah|Georg Fridrih Hendl|Antonio Vivaldi|Georg Filip Teleman
+Ko je komponovao „Tokatu i fugu u d-molu”?|Johan Sebastijan Bah|Volfgang Amadeus Mocart|Georg Fridrih Hendl|Johan Pahelbel
+Ko je komponovao „Malu noćnu muziku”?|Volfgang Amadeus Mocart|Jozef Hajdn|Ludvig van Betoven|Franc Šubert
+Ko je komponovao „Rekvijem” koji je ostao nedovršen 1791?|Volfgang Amadeus Mocart|Đuzepe Verdi|Gabrijel Fore|Antonio Salijeri
+Ko je komponovao „Za Elizu”?|Ludvig van Betoven|Volfgang Amadeus Mocart|Franc Šubert|Robert Šuman
+Ko je komponovao „Nedovršenu simfoniju”?|Franc Šubert|Ludvig van Betoven|Anton Bruckner|Feliks Mendelson
+Ko je komponovao „Pastoralnu” Šestu simfoniju?|Ludvig van Betoven|Jozef Hajdn|Franc Šubert|Johanes Brams
+Ko je nazvan „ocem simfonije”?|Jozef Hajdn|Ludvig van Betoven|Volfgang Amadeus Mocart|Johan Sebastijan Bah
+Koji kompozitor je bio poznat po „Minutnom valceru”?|Frederik Šopen|Franc List|Robert Šuman|Johanes Brams
+Iz koje zemlje je bio Frederik Šopen?|Poljska|Francuska|Mađarska|Austrija
+Iz koje zemlje je bio Edvard Grig?|Norveška|Švedska|Danska|Finska
+Iz koje zemlje je bio Jan Sibelijus?|Finska|Norveška|Švedska|Estonija
+Ko je komponovao „Adađo za gudače”?|Semjuel Barber|Aron Koplend|Leonard Bernštajn|Džordž Geršvin
+Ko je komponovao „Rapsodiju u plavom”?|Džordž Geršvin|Leonard Bernštajn|Aron Koplend|Kol Porter
+Ko je komponovao mjuzikl „Priča sa zapadne strane”?|Leonard Bernštajn|Džordž Geršvin|Endru Lojd Veber|Ričard Rodžers
+Ko je komponovao mjuzikl „Fantom iz opere”?|Endru Lojd Veber|Leonard Bernštajn|Klod-Mišel Šenberg|Stiven Sondhajm
+Ko je komponovao mjuzikl „Mačke”?|Endru Lojd Veber|Tim Rajs|Ričard Rodžers|Stiven Sondhajm
+Ko je komponovao mjuzikl „Isus Hrist Superstar”?|Endru Lojd Veber|Elton Džon|Leonard Bernštajn|Stiven Švarc
+Na kojem romanu se zasniva mjuzikl „Jadnici”?|Jadnici Viktora Igoa|Bogorodičina crkva u Parizu|Grof Monte Kristo|Tri musketara
+Ko je komponovao operu „Koštana” na srpsku temu?|Petar Konjović|Stevan Mokranjac|Stanislav Binički|Josif Marinković
+Ko je komponovao „Rukoveti”?|Stevan Stojanović Mokranjac|Kornelije Stanković|Josif Marinković|Petar Konjović
+Ko je komponovao marš „Marš na Drinu”?|Stanislav Binički|Stevan Mokranjac|Davorin Jenko|Isidor Bajić
+Ko je komponovao muziku himne „Bože pravde”?|Davorin Jenko|Stevan Mokranjac|Stanislav Binički|Kornelije Stanković
+Ko je napisao tekst himne „Bože pravde”?|Jovan Đorđević|Đura Jakšić|Jovan Jovanović Zmaj|Branko Radičević
+Koja je bila prva srpska opera (1903)?|Na uranku|Koštana|Knez od Zete|Ivo Lola
+Ko je komponovao operu „Na uranku”?|Stanislav Binički|Petar Konjović|Stevan Hristić|Josif Marinković
+Ko je komponovao balet „Ohridska legenda”?|Stevan Hristić|Petar Konjović|Stanislav Binički|Miloje Milojević
+Po kome je nazvana Muzička škola u Novom Sadu?|Isidor Bajić|Kornelije Stanković|Petar Konjović|Josif Marinković
+Koji kompozitor je dugo vodio Beogradsko pevačko društvo?|Stevan Mokranjac|Davorin Jenko|Kornelije Stanković|Stanislav Binički
+Koji instrument ima 88 tipki?|Klavir|Orgulje|Čembalo|Harmonika
+Koliko žica ima standardna violina?|4|5|6|3
+Koliko žica ima standardna gitara?|6|4|7|12
+Koliko žica ima standardna bas-gitara?|4|5|6|3
+Koji je najveći gudački instrument u orkestru?|Kontrabas|Violončelo|Viola|Harfa
+Koji je najviši po tonu gudački instrument u orkestru?|Violina|Viola|Violončelo|Kontrabas
+Koji instrument je između violine i violončela po veličini?|Viola|Kontrabas|Mandolina|Lauta
+Koji drveni duvački instrument ima dvostruki jezičak i najniži zvuk?|Fagot|Oboa|Klarinet|Flauta
+Koji duvački instrument se svira bez jezička, duvanjem preko otvora?|Flauta|Klarinet|Oboa|Saksofon
+Koji instrument je izumeo Adolf Saks?|Saksofon|Klarinet|Truba|Tuba
+Koji limeni duvački instrument ima pokretnu cev (izvlakač)?|Trombon|Truba|Tuba|Horna
+Koji je najniži limeni duvački instrument?|Tuba|Trombon|Horna|Truba
+Koji udaraljkaški instrument ima ploče od drveta?|Ksilofon|Vibrafon|Timpani|Činele
+Kako se zovu veliki orkestarski bubnjevi koji se mogu štimovati?|Timpani|Bongo|Kongo|Tam-tam
+Koji instrument ima pedale i 47 žica?|Harfa|Klavir|Čembalo|Citra
+Koji instrument je preteča klavira, sa trzanim žicama?|Čembalo|Orgulje|Harmonijum|Klavikord
+Koji je tradicionalni srpski gudački instrument sa jednom žicom?|Gusle|Tambura|Frula|Kaval
+Koji je tradicionalni srpski drveni duvački instrument?|Frula|Gusle|Tamburica|Darabuka
+Koji instrument se vezuje za škotsku tradiciju?|Gajde|Harfa|Bendžo|Sitar
+Kako se zove srpska tradicionalna gajda koja se svira u Vojvodini i Srbiji?|Gajde|Duduk|Zurla|Kaval
+Koji instrument je tipičan za vojvođanske tamburaške orkestre?|Tambura|Frula|Gusle|Truba
+Koji indijski instrument je proslavio Ravi Šankar?|Sitar|Tabla|Sarod|Veena
+Koji australijski instrument koriste Aboridžini?|Didžeridu|Ukulele|Kalimba|Sitar
+Sa kojih ostrva potiče ukulele kako ga danas znamo?|Havaji|Fidži|Samoa|Tahiti
+Koji instrument je povezan sa Lujom Armstrongom?|Truba|Saksofon|Klavir|Klarinet
+Koji instrument je svirao Čarli Parker?|Alt saksofon|Truba|Klavir|Kontrabas
+Koji instrument je svirao Majls Dejvis?|Truba|Saksofon|Klavir|Trombon
+Koji instrument je svirao Džimi Hendriks?|Električna gitara|Bubnjevi|Bas-gitara|Klavijature
+Koji instrument je svirao Ringo Star u Bitlsima?|Bubnjevi|Bas-gitara|Gitara|Klavijature
+Koji instrument je svirao Pol Makartni u Bitlsima?|Bas-gitara|Bubnjevi|Ritam gitara|Klavir
+Kako se zove italijanski termin za veoma tiho sviranje?|Pianissimo|Fortissimo|Allegro|Crescendo
+Šta znači muzički termin „forte”?|Glasno|Tiho|Brzo|Polako
+Šta znači muzički termin „crescendo”?|Postepeno pojačavanje|Postepeno stišavanje|Ubrzavanje|Usporavanje
+Šta znači muzički termin „adagio”?|Polako|Brzo|Glasno|Veselo
+Šta znači muzički termin „allegro”?|Brzo, živahno|Polako|Tiho|Tužno
+Šta znači „a cappella”?|Pevanje bez instrumentalne pratnje|Sviranje bez pevanja|Solo na klaviru|Pevanje u crkvi
+Koliko linija ima notno crtovlje?|5|4|6|7
+Koji ključ se najčešće koristi za violinu?|Violinski (G) ključ|Bas (F) ključ|Alt (C) ključ|Tenor ključ
+Koliko polutonova ima oktava?|12|8|7|10
+Koliko nota ima durska lestvica bez ponavljanja prve?|7|8|5|12
+Kako se zove znak koji povisuje notu za polustepen?|Povisilica|Snizilica|Razrešilica|Fermata
+Kako se zove znak koji snižava notu za polustepen?|Snizilica|Povisilica|Razrešilica|Pauza
+Kako se zove ženski glas najvišeg registra?|Sopran|Alt|Mecosopran|Kontraalt
+Kako se zove muški glas najnižeg registra?|Bas|Bariton|Tenor|Kontratenor
+Kako se zove muški glas između tenora i basa?|Bariton|Alt|Sopran|Kontratenor
+Koliko izvođača ima kvartet?|4|3|5|6
+Koliko izvođača ima kvintet?|5|4|6|7
+Kako se zove vođa orkestra koji maše palicom?|Dirigent|Koncertmajstor|Kompozitor|Solista
+Kako se zove prva violina koja vodi orkestar posle dirigenta?|Koncertmajstor|Dirigent|Korepetitor|Primarijus
+Kako se zove komad za solistu i orkestar u tri stava?|Koncert|Simfonija|Sonata|Uvertira
+Kako se zove instrumentalni uvod u operu?|Uvertira|Arija|Rečitativ|Kantata
+Kako se zove solo pesma u operi?|Arija|Duet|Uvertira|Libreto
+Kako se zove tekst opere?|Libreto|Partitura|Arija|Scenarij
+Kako se zove zapis svih deonica orkestra zajedno?|Partitura|Libreto|Deonica|Tablatura
+Koji bend je snimio album „Abbey Road”?|Bitlsi|Rolingstonsi|Pink Flojd|Ho
+Koji bend je snimio album „The Dark Side of the Moon”?|Pink Flojd|Led Cepelin|Dženezis|Jes
+Koji bend je snimio album „The Wall”?|Pink Flojd|Ho|Kvin|Dip Perpl
+Koji bend je snimio pesmu „Stairway to Heaven”?|Led Cepelin|Dip Perpl|Blek Sabat|Pink Flojd
+Koji bend je snimio pesmu „Smoke on the Water”?|Dip Perpl|Led Cepelin|Blek Sabat|Uraja Hip
+Koji bend je snimio pesmu „Hotel California”?|Igls|Fleetvud Mek|Dorsi|Lineard Skinard
+Koji bend je snimio pesmu „Bohemian Rhapsody”?|Kvin|Bitlsi|Ho|Elton Džon
+Koji bend je snimio pesmu „Satisfaction”?|Rolingstonsi|Bitlsi|Ho|Kinks
+Koji bend je snimio pesmu „Smells Like Teen Spirit”?|Nirvana|Perl Džem|Saundgarden|Alis in Čejns
+Koji bend je snimio pesmu „Sweet Child o' Mine”?|Guns N' Roses|Bon Džovi|Def Lepard|Motli Kru
+Koji bend je snimio pesmu „Livin' on a Prayer”?|Bon Džovi|Guns N' Roses|Jurop|Vajtsnejk
+Koji švedski bend je snimio „The Final Countdown”?|Jurop|ABBA|Rokset|Ejs of Bejs
+Koji švedski bend je pobedio na Evroviziji sa pesmom „Waterloo”?|ABBA|Rokset|Jurop|Ejs of Bejs
+Koji bend je snimio pesmu „Enter Sandman”?|Metalika|Megadet|Slejer|Ajron Mejden
+Koji bend je snimio pesmu „Nothing Else Matters”?|Metalika|Bon Džovi|Skorpions|Guns N' Roses
+Koji nemački bend je snimio „Wind of Change”?|Skorpions|Ramštajn|Akcept|Helouin
+Koji nemački bend je poznat po pesmi „Du hast”?|Ramštajn|Skorpions|Krafverk|Tokio Hotel
+Koji irski bend je snimio „With or Without You”?|U2|Kranberis|Korsovi|Tin Lizi
+Koji irski bend je snimio „Zombie”?|Kranberis|U2|Sinid O'Konor|Korsovi
+Koji britanski bend je snimio „Wonderwall”?|Oazis|Blur|Radiohed|Pulp
+Koji bend je snimio „Creep” (1992)?|Radiohed|Oazis|Kolplej|Blur
+Koji bend je snimio „Yellow” i „Viva la Vida”?|Kolplej|Kin|Snou Petrol|Radiohed
+Koji bend je snimio „Back in Black”?|AC/DC|Ajron Mejden|Metalika|Kis
+Iz koje zemlje potiče bend AC/DC?|Australija|Engleska|SAD|Kanada
+Koji bend je poznat po šminkanim licima i pesmi „I Was Made for Lovin' You”?|Kis|AC/DC|Alis Kuper|Motli Kru
+Koji bend je snimio „Another One Bites the Dust”?|Kvin|AC/DC|Bitlsi|Polis
+Ko je bio pevač grupe Kvin?|Fredi Merkjuri|Brajan Mej|Rodžer Tejlor|Džon Dikon
+Ko je bio pevač grupe Nirvana?|Kurt Kobejn|Edi Veder|Kris Kornel|Dejv Grol
+Ko je bio pevač grupe Dorsi?|Džim Morison|Rej Manzarek|Robi Kriger|Džon Densmor
+Ko je pevač grupe U2?|Bono|Edž|Adam Klejton|Leri Malen
+Ko je pevač Rolingstonsa?|Mik Džeger|Kit Ričards|Roni Vud|Čarli Vots
+Ko je pevač grupe Ajron Mejden od 1981?|Brus Dikinson|Pol Dianno|Blejz Bejli|Ozi Ozborn
+Ko je bio pevač grupe Blek Sabat u sedamdesetim?|Ozi Ozborn|Roni Džejms Dio|Ijan Gilan|Brus Dikinson
+Ko je pevač grupe Kolplej?|Kris Martin|Tom Jork|Bono|Brendon Flauers
+Ko je pevač grupe Radiohed?|Tom Jork|Kris Martin|Džoni Grinvud|Dejmon Albarn
+Ko je osnovao grupu Fu Fajters?|Dejv Grol|Kurt Kobejn|Kris Novoselić|Edi Veder
+Ko se naziva „kraljem roka”?|Elvis Prisli|Čak Beri|Litl Ričard|Džeri Li Luis
+Ko se naziva „kraljem popa”?|Majkl Džekson|Prins|Elvis Prisli|Džastin Timberlejk
+Ko se naziva „kraljicom popa”?|Madona|Britni Spirs|Ledi Gaga|Bijonse
+Ko se naziva „kraljicom soula”?|Areta Frenklin|Tina Tarner|Dajana Ros|Nina Simon
+Ko je snimio album „Thriller”?|Majkl Džekson|Prins|Stivi Vonder|Lajonel Riči
+Ko je snimio pesmu „Like a Prayer”?|Madona|Sindi Loper|Vitni Hjuston|Šer
+Ko je snimio pesmu „Purple Rain”?|Prins|Majkl Džekson|Stivi Vonder|Džejms Braun
+Ko je snimio pesmu „Imagine”?|Džon Lenon|Pol Makartni|Džordž Harison|Bob Dilan
+Ko je snimio pesmu „Like a Rolling Stone”?|Bob Dilan|Rolingstonsi|Brus Springstin|Nil Jang
+Koji muzičar je dobio Nobelovu nagradu za književnost 2016?|Bob Dilan|Leonard Koen|Pol Sajmon|Brus Springstin
+Ko je snimio pesmu „Born in the U.S.A.”?|Brus Springstin|Bon Džovi|Tom Peti|Džon Melenkemp
+Ko je snimio pesmu „Hallelujah” (1984) kao autor?|Leonard Koen|Džef Bakli|Bob Dilan|Pol Sajmon
+Ko je snimio pesmu „Space Oddity”?|Dejvid Bouvi|Elton Džon|Mik Džeger|Lu Rid
+Ko je snimio pesmu „Rocket Man”?|Elton Džon|Dejvid Bouvi|Bili Džoel|Rod Stjuart
+Ko je snimio pesmu „Piano Man”?|Bili Džoel|Elton Džon|Rendi Njumen|Brus Hornsbi
+Ko je snimio pesmu „Billie Jean”?|Majkl Džekson|Prins|Džordž Majkl|Lajonel Riči
+Ko je snimio pesmu „Careless Whisper”?|Džordž Majkl|Elton Džon|Sting|Fil Kolins
+Ko je snimio pesmu „Every Breath You Take”?|Polis|Dajer Strejts|Dženezis|U2
+Koji bend je snimio „Sultans of Swing”?|Dajer Strejts|Polis|Igls|Supertramp
+Ko je bio pevač grupe Polis?|Sting|Mark Nopfler|Fil Kolins|Piter Gabrijel
+Ko je snimio pesmu „In the Air Tonight”?|Fil Kolins|Piter Gabrijel|Sting|Mark Nopfler
+Koja pevačica je snimila „Rolling in the Deep” i „Hello”?|Adel|Ejmi Vajnhaus|Dafi|Sem Smit
+Koja pevačica je snimila album „Back to Black”?|Ejmi Vajnhaus|Adel|Lili Alen|Dafi
+Koja pevačica je snimila „Bad Romance” i „Poker Face”?|Ledi Gaga|Keti Peri|Rijana|Bijonse
+Koja pevačica je snimila „Umbrella”?|Rijana|Bijonse|Ledi Gaga|Šakira
+Koja pevačica je snimila „Single Ladies”?|Bijonse|Rijana|Šakira|Alisija Kiz
+Iz koje zemlje je pevačica Šakira?|Kolumbija|Meksiko|Španija|Argentina
+Iz koje zemlje je Bjork?|Island|Norveška|Švedska|Finska
+Iz koje zemlje je Selin Dion?|Kanada|Francuska|Belgija|Švajcarska
+Iz koje zemlje je Rijana?|Barbados|Jamajka|Trinidad i Tobago|Bahami
+Koja pevačica je snimila album „1989” i „Folklore”?|Tejlor Svift|Ariana Grande|Bili Ajliš|Olivija Rodrigo
+Koja pevačica je snimila „Bad Guy”?|Bili Ajliš|Ariana Grande|Lorde|Dua Lipa
+Koja pevačica albanskog porekla je snimila „New Rules” i „Levitating”?|Dua Lipa|Rita Ora|Bebe Reksa|Ava Maks
+Koji pevač je snimio „Shape of You”?|Ed Širan|Sem Smit|Šon Mendes|Luis Kapaldi
+Koji kanadski pevač je snimio „Baby” (2010)?|Džastin Biber|Šon Mendes|Drejk|Vikend
+Koji pevač je snimio „Blinding Lights”?|Vikend|Drejk|Bruno Mars|Ašer
+Koji pevač je snimio „Uptown Funk” sa Markom Ronsonom?|Bruno Mars|Farel Vilijams|Džastin Timberlejk|Ašer
+Koji pevač je snimio „Happy” (2013)?|Farel Vilijams|Bruno Mars|Ašer|Sido
+Koji južnokorejski izvođač je snimio „Gangnam Style”?|PSY|BTS|Big Beng|Rain
+Koja južnokorejska grupa je snimila „Dynamite”?|BTS|Blekpink|EXO|Tvajs
+Ko je snimio „Despacito” sa Dedi Jenkijem?|Luis Fonsi|Enrike Iglesijas|Riki Martin|Malu
+Ko je snimio pesmu „Livin' la Vida Loca”?|Riki Martin|Enrike Iglesijas|Mark Entoni|Luis Fonsi
+Koji iitalijanski tenor je pevao sa Domingom i Karerasom kao „Tri tenora”?|Lučano Pavaroti|Andrea Bočeli|Enriko Karuzo|Mario Lanca
+Koji slepi iitalijanski tenor je snimio „Con te partirò”?|Andrea Bočeli|Lučano Pavaroti|Plasido Domingo|Il Volo
+Koja grčka operska pevačica je bila poznata kao „La Divina”?|Marija Kalas|Montserat Kabalje|Renata Tebaldi|Džoan Saderland
+Ko je sa Fredijem Merkjurijem pevao „Barcelona”?|Montserat Kabalje|Marija Kalas|Ana Netrebko|Sesilija Bartoli
+Koja se pesma smatra prvim muzičkim spotom na MTV-ju 1981?|Video Killed the Radio Star|Thriller|Bohemian Rhapsody|Take On Me
+Koji norveški bend je snimio „Take On Me”?|A-ha|Rokset|ABBA|Jurop
+Koji irski pevač je pobedio na Evroviziji 1980. i 1987?|Džoni Logan|Dima Bilan|Selin Dion|Aleksander Ribak
+Koja pevačica je dva puta pobedila na Evroviziji za Švedsku (2012. i 2023)?|Lorin|Šarlota Perelli|Karola|Lena
+Koja izvođačica je pobedila na Evroviziji 2007. za Srbiju?|Marija Šerifović|Jelena Tomašević|Nevena Božović|Tijana Bogićević
+Kako se zove pesma kojom je Srbija pobedila na Evroviziji 2007?|Molitva|Oro|Lane moje|Zauvek
+Koja izvođačica je predstavljala Srbiju na Evroviziji 2022. sa pesmom „In corpore sano”?|Konstrakta|Hurricane|Luke Black|Teya Dora
+Koja izvođačica je predstavljala Srbiju 2024. pesmom „Ramonda”?|Teya Dora|Konstrakta|Nevena Božović|Sanja Vučić
+Ko je predstavljao Srbiju na Evroviziji 2008. pesmom „Oro”?|Jelena Tomašević|Marija Šerifović|Milan Stanković|Moje 3
+Ko je pevao „Lane moje” na Evroviziji 2004?|Željko Joksimović|Vlado Georgiev|Aleksa Jelić|Marko Kon
+Koja grupa je pobedila na Evroviziji 1989. za Jugoslaviju?|Riva|Novi fosili|Bijelo dugme|Prljavo kazalište
+Kako se zove pesma kojom je Riva pobedila na Evroviziji 1989?|Rock Me|Ja sam za ples|Bitanga i princeza|Ljubav je
+Koja grupa je pevala „Ja sam za ples” na Evroviziji 1987?|Novi fosili|Riva|Daniel Popović|Doris Dragović
+Koji pevač je pevao „Džuli” na Evroviziji 1983?|Danijel Popović|Željko Bebek|Oliver Dragojević|Zdravko Čolić
+Ko je bio pevač grupe Riblja čorba?|Bora Đorđević|Bajaga|Đorđe Balašević|Milan Mladenović
+Ko je bio frontmen grupe Bajaga i instruktori?|Momčilo Bajagić|Bora Đorđević|Žika Milenković|Saša Lokner
+U kom bendu je svirao Bajaga pre nego što je osnovao svoj?|Riblja čorba|Bijelo dugme|Smak|Yu grupa
+Ko je bio frontmen grupe Ekatarina Velika?|Milan Mladenović|Bora Đorđević|Koja|Zoran Kostić Cane
+Ko je bio pevač grupe Partibrejkers?|Zoran Kostić Cane|Milan Mladenović|Srđan Gojković Gile|Koja
+Ko je bio pevač grupe Električni orgazam?|Srđan Gojković Gile|Zoran Kostić Cane|Bora Đorđević|Milan Mladenović
+Ko je bio pevač grupe Disciplina kičme?|Dušan Kojić Koja|Milan Mladenović|Srđan Gojković Gile|Zoran Kostić Cane
+Ko je bio pevač grupe Idoli?|Vlada Divljan|Srđan Šaper|Nebojša Krstić|Kokan Popović
+Ko je bio gitarista i lider grupe Smak?|Radomir Mihajlović Točak|Goran Bregović|Vlatko Stefanovski|Josip Boček
+Iz kog grada je grupa Smak?|Kragujevac|Beograd|Niš|Čačak
+Ko je osnivač grupe Bijelo dugme?|Goran Bregović|Željko Bebek|Mladen Vojičić Tifa|Alen Islamović
+Ko je bio prvi pevač Bijelog dugmeta?|Željko Bebek|Mladen Vojičić Tifa|Alen Islamović|Zdravko Čolić
+Iz kog grada je grupa Bijelo dugme?|Sarajevo|Zagreb|Beograd|Mostar
+Iz kog grada je grupa Laibach?|Trbovlje|Ljubljana|Maribor|Celje
+Ko je pevač grupe Van Gogh?|Zvonimir Đukić Đule|Milan Mladenović|Bora Đorđević|Vlada Divljan
+Ko je pevač grupe Kerber?|Goran Šepa Gale|Bora Đorđević|Bajaga|Đule
+Iz kog grada je grupa Kerber?|Niš|Beograd|Novi Sad|Kragujevac
+Iz kog grada je grupa Galija?|Niš|Beograd|Kruševac|Leskovac
+Ko je pevač grupe Galija?|Nenad Milosavljević|Predrag Milosavljević|Goran Šepa|Bajaga
+Koji kantautor je napisao „Ne lomite mi bagrenje”?|Đorđe Balašević|Arsen Dedić|Bora Đorđević|Kemal Monteno
+Iz kog grada je bio Đorđe Balašević?|Novi Sad|Beograd|Subotica|Zrenjanin
+Koji Balaševićev bend je snimio „Računajte na nas”?|Rani mraz|Žetva|Riblja čorba|Bulevar
+Ko je pevao „Ostala si uvek ista”?|Bajaga|Bora Đorđević|Đorđe Balašević|Zdravko Čolić
+Ko je pevao „Ti si mi u krvi”?|Zdravko Čolić|Oliver Dragojević|Kemal Monteno|Dino Merlin
+Koja pevačica je pevala „Čačak, Čačak”?|Lepa Brena|Vesna Zmijanac|Dragana Mirković|Ceca
+Kako se zvao bend Lepe Brene?|Slatki greh|Lepi greh|Sloboda|Južni vetar
+Kako se zove producentska kuća i bend Miodraga Ilića?|Južni vetar|Slatki greh|Zlatni dukati|Ravnica
+Koji pevač je pevao „Kafana na Balkanu”?|Džej Ramadanovski|Šaban Šaulić|Saša Matić|Mile Kitić
+Koji pevač je poznat kao „Kralj narodne muzike”?|Šaban Šaulić|Toma Zdravković|Mile Kitić|Halid Bešlić
+Ko je komponovao „Mesečinu” za film „Underground”?|Goran Bregović|Zoran Simjanović|Nele Karajlić|Dejan Sparavalo
+Kako se zove orkestar sa kojim Goran Bregović nastupa?|Orkestar za svadbe i sahrane|No Smoking Orchestra|Boban Marković Orkestar|Fanfare Ciocărlia
+Ko je lider grupe Zabranjeno pušenje posle raspada (sarajevska verzija)?|Sejo Sexon|Nele Karajlić|Emir Kusturica|Dražen Ričl
+U kom mestu se održava čuveni Sabor trubača?|Guča|Čačak|Lučani|Arilje
+Kako se zove muzički festival na Petrovaradinskoj tvrđavi?|EXIT|Nišville|Beer Fest|Arsenal Fest
+U kom gradu se održava džez festival Nišville?|Niš|Novi Sad|Kragujevac|Beograd
+U kom gradu se održava Arsenal Fest?|Kragujevac|Niš|Novi Sad|Subotica
+Na kom ostrvu u Mađarskoj se održava Sziget festival?|Ostrvo Obuda|Margitino ostrvo|Čepel|Sentendre
+U kom gradu se održava festival „Lovefest”?|Vrnjačka Banja|Novi Sad|Beograd|Sombor
+Koji američki muzički festival je održan 1969. godine na farmi?|Vudstok|Koačela|Lolapaluza|Monterej
+Koji muzičar je otvorio Vudstok 1969. godine?|Riči Hejvens|Džimi Hendriks|Dženis Džoplin|Santana
+Koji muzičar je zatvorio Vudstok svirajući američku himnu na gitari?|Džimi Hendriks|Santana|Džo Koker|Nil Jang
+Koja država je domaćin festivala Glastonberi?|Engleska|Irska|Škotska|Vels
+Koja je najprodavanija ploča svih vremena?|Thriller|Back in Black|The Dark Side of the Moon|Bat Out of Hell
+Koje je pravo ime Eltona Džona?|Redžinald Dvajt|Gordon Samner|Dejvid Džons|Pol Hjuson
+Koje je pravo ime pevača Stinga?|Gordon Samner|Redžinald Dvajt|Dejvid Džons|Džon Lajdon
+Koje je pravo ime Dejvida Bouvija?|Dejvid Džons|Dejvid Bouvi Smit|Gordon Samner|Redžinald Dvajt
+Koje je pravo ime Bona iz U2?|Pol Hjuson|Dejvid Evans|Adam Klejton|Leri Malen
+Koje je pravo ime Fredija Merkjurija?|Farok Bulsara|Fred Bul|Fredi Dikon|Ferdinand Bulsar
+Koje je pravo ime Ledi Gage?|Stefani Đermanota|Stefani Ciccone|Elizabet Grant|Kejti Hadson
+Koje je pravo ime Madone?|Madona Luiza Čikone|Madona Stefani Đermanota|Marija Luiza Kikone|Madlen Čikone
+Koje je pravo ime Lepe Brene?|Fahreta Jahić|Fahreta Hodžić|Brenda Jahić|Bresa Jahić
+U kom bendu je pevala Dženis Džoplin pre solo karijere?|Big Brother and the Holding Company|Džeferson Erplejn|Grejtful Ded|Mamas and the Papas
+Kako se naziva grupa slavnih muzičara koji su umrli sa 27 godina?|Klub 27|Klub 33|Klub 40|Klub 21
+Koji muzičar NIJE preminuo u 27. godini?|Džon Lenon|Džimi Hendriks|Dženis Džoplin|Ejmi Vajnhaus
+Gde je ubijen Džon Lenon 1980?|Njujork|London|Liverpul|Los Anđeles
+Iz kog grada potiču Bitlsi?|Liverpul|London|Mančester|Birmingem
+U kom klubu u Liverpulu su Bitlsi često nastupali?|Kavern|Marki|Star|Bembi
+U kom nemačkom gradu su Bitlsi svirali pre slave?|Hamburg|Berlin|Minhen|Keln
+Ko je bio menadžer Bitlsa?|Brajan Epstajn|Džordž Martin|Alen Klajn|Endrju Lug Oldam
+Ko je bio producent Bitlsa, nazvan „peti Bitls”?|Džordž Martin|Brajan Epstajn|Fil Spektor|Džef Emerik
+Koje godine su se Bitlsi raspali?|1970|1968|1972|1966
+Gde je održan poslednji javni nastup Bitlsa (1969)?|Krov zgrade Apple u Londonu|Kavern klub|Šej stadion|Kraljevski albert hol
+Koja pesma Bitlsa ima najviše obrada?|Yesterday|Let It Be|Hey Jude|Help!
+Koji muzički žanr je nastao na Jamajci krajem 1960-ih?|Rege|Ska|Kalipso|Salsa
+Koji muzičar je najpoznatiji predstavnik regea?|Bob Marli|Piter Toš|Džimi Klif|Šegi
+Koji muzički žanr je nastao u Nju Orleansu početkom 20. veka?|Džez|Bluz|Kantri|Rok
+Koji grad se smatra kolevkom kantri muzike?|Nešvil|Memfis|Ostin|Nju Orleans
+U kom gradu je Elvisova kuća Grejslend?|Memfis|Nešvil|Tupelo|Las Vegas
+Koji žanr je nastao u Bronksu sedamdesetih godina?|Hip-hop|Disko|Pank|Fank
+Koji žanr predstavljaju Seks Pistols i Ramons?|Pank|Metal|Grandž|Glam
+Koji žanr predstavljaju Nirvana i Perl Džem?|Grandž|Pank|Glam metal|Brit-pop
+Iz kog grada potiče grandž?|Sijetl|Portlend|Los Anđeles|Čikago
+Koji žanr predstavljaju Oazis i Blur?|Brit-pop|Grandž|Pank|Novi talas
+Koji je ples i muzika iz Argentine?|Tango|Salsa|Samba|Flamenko
+Koji je ples i muzika iz Brazila povezan sa karnevalom?|Samba|Tango|Bosa nova|Merenge
+Koja muzika i ples potiču iz Andaluzije?|Flamenko|Fado|Tango|Pasodobl
+Koja tužna pesma je tipična za Portugal?|Fado|Flamenko|Morna|Šanson
+Koji je tradicionalni srpski kolo ples?|Kolo|Ora|Hora|Polka
+Koji ples potiče iz Češke?|Polka|Valcer|Mazurka|Čardaš
+Koji ples potiče iz Mađarske?|Čardaš|Polka|Mazurka|Tarantela
+Koji ples potiče iz južne Italije?|Tarantela|Polka|Bolero|Kadril
+Koji ples potiče iz Poljske?|Mazurka|Čardaš|Polka|Valcer
+U kom taktu se pleše valcer?|3/4|4/4|2/4|6/8
+Koji grad se smatra prestonicom valcera?|Beč|Pariz|Prag|Budimpešta
+Kako se zove novogodišnji koncert Bečke filharmonije koji se završava „Radecki maršem”?|Novogodišnji koncert|Bal opere|Proms|Salcburški festival
+U kom gradu se nalazi opera La Skala?|Milano|Rim|Venecija|Napulj
+U kom gradu se nalazi Metropoliten opera?|Njujork|Čikago|San Francisko|Boston
+U kom gradu se nalazi čuveni Boljšoj teatar?|Moskva|Sankt Peterburg|Kijev|Minsk
+U kom gradu se održava festival posvećen Mocartu?|Salcburg|Beč|Minhen|Prag
+U kom gradu je rođen Mocart?|Salcburg|Beč|Prag|Insbruk
+U kom gradu je rođen Betoven?|Bon|Beč|Berlin|Lajpcig
+U kom gradu je Bah proveo najveći deo karijere kao kantor crkve Svetog Tome?|Lajpcig|Drezden|Berlin|Ajzenah
+Koji kompozitor je potpuno izgubio sluh, a nastavio da komponuje?|Ludvig van Betoven|Volfgang Amadeus Mocart|Johan Sebastijan Bah|Jozef Hajdn
+Koja simfonija sadrži „Odu radosti”?|Betovenova Deveta|Mocartova Četrdeseta|Betovenova Peta|Šubertova Osma
+Koja kompozicija je himna Evropske unije?|Oda radosti|Na lepom plavom Dunavu|Bolero|Aleluja
+Koja Betovenova simfonija počinje čuvenim „ta-ta-ta-taaa”?|Peta|Treća|Šesta|Deveta
+Kome je Betoven prvobitno posvetio Treću simfoniju „Eroiku”?|Napoleonu|Mocartu|Hajdnu|Caru Francu
+Koji kompozitor je bio „čudo od deteta” i komponovao sa pet godina?|Volfgang Amadeus Mocart|Ludvig van Betoven|Johanes Brams|Rihard Vagner
+Ko je bio rival Mocarta prema filmu „Amadeus”?|Antonio Salijeri|Jozef Hajdn|Kristof Glik|Mucio Klementi
+Koji kompozitor je napisao „Gimnopedije”?|Erik Sati|Klod Debisi|Moris Ravel|Gabrijel Fore
+Ko je komponovao „4′33″”, delo tišine?|Džon Kejdž|Filip Glas|Stiv Rajh|Karlhajnc Štokhauzen
+Koji kompozitor je poznat po muzici iz filma „Amelie”?|Jan Tirsen|Erik Sati|Mišel Legran|Vladimir Kosma
