@@ -330,3 +330,135 @@ Koji režanj mozga obrađuje vid?|Potiljačni|Čeoni|Slepoočni|Temeni
 Kako se zove „hormon rasta” koji luči hipofiza?|Somatotropin|Insulin|Tiroksin|Kortizol
 Koji muški polni hormon dominira?|Testosteron|Estrogen|Progesteron|Oksitocin
 Koji ženski polni hormon dominira?|Estrogen|Testosteron|Adrenalin|Glukagon
+Koliko litara krvi ima odrasla osoba približno?|5|2|8|10
+Koliko puta u minuti otprilike kuca srce odrasle osobe u mirovanju?|60–100|30–50|120–150|150–200
+Koja je normalna telesna temperatura čoveka približno?|36,6 °C|35 °C|38 °C|39,5 °C
+Koja vrednost krvnog pritiska se smatra normalnom?|120/80|160/100|90/40|140/110
+Koji vitamin telo stvara na suncu?|Vitamin D|Vitamin C|Vitamin A|Vitamin K
+Nedostatak kog vitamina izaziva skorbut?|Vitamina C|Vitamina D|Vitamina B12|Vitamina A
+Nedostatak kog vitamina izaziva rahitis?|Vitamina D|Vitamina C|Vitamina E|Vitamina K
+Koji vitamin je važan za vid i ima ga u šargarepi?|Vitamin A|Vitamin C|Vitamin D|Vitamin B1
+Koji vitamin je važan za zgrušavanje krvi?|Vitamin K|Vitamin C|Vitamin A|Vitamin D
+Nedostatak kog minerala izaziva anemiju najčešće?|Gvožđa|Kalcijuma|Cinka|Natrijuma
+Nedostatak kog elementa izaziva gušavost?|Joda|Gvožđa|Kalcijuma|Fluora
+Koji mineral je najvažniji za kosti i zube?|Kalcijum|Gvožđe|Kalijum|Natrijum
+Koji element se dodaje pastama za zube protiv karijesa?|Fluor|Hlor|Jod|Kalcijum
+Koji organ filtrira krv i stvara mokraću?|Bubrezi|Jetra|Slezina|Pluća
+Koliko bubrega ima zdrav čovek?|2|1|3|4
+Koji organ proizvodi žuč?|Jetra|Žučna kesa|Gušterača|Slezina
+Gde se skladišti žuč?|U žučnoj kesi|U jetri|U želucu|U gušterači
+Koji organ može da se obnovi i posle uklanjanja dela?|Jetra|Srce|Mozak|Bubreg
+Koji deo oka daje boju očima?|Dužica|Zenica|Rožnjača|Mrežnjača
+Kako se zove crni otvor u sredini oka?|Zenica|Dužica|Sočivo|Žuta mrlja
+Kako se zove sloj oka sa ćelijama koje primaju svetlost?|Mrežnjača|Rožnjača|Dužica|Beonjača
+Kako se zove zamućenje sočiva oka?|Katarakta (siva mrena)|Glaukom|Astigmatizam|Daltonizam
+Kako se zove povišen pritisak u oku?|Glaukom|Katarakta|Miopija|Strabizam
+Kako se zove kratkovidost?|Miopija|Hipermetropija|Astigmatizam|Prezbiopija
+Kako se zove nemogućnost razlikovanja nekih boja?|Daltonizam|Astigmatizam|Strabizam|Ambliopija
+Kako se zove razrokost?|Strabizam|Astigmatizam|Nistagmus|Ptoza
+Koji deo uha je odgovoran za ravnotežu?|Unutrašnje uho (vestibularni aparat)|Ušna školjka|Bubna opna|Ušni kanal
+Kako se zove cev koja spaja srednje uho i ždrelo?|Eustahijeva tuba|Dušnik|Jednjak|Pužnica
+Kako se zove cev kojom hrana ide do želuca?|Jednjak|Dušnik|Grkljan|Ždrelo
+Kako se zove poklopac koji sprečava da hrana uđe u dušnik?|Epiglotis (grkljanski poklopac)|Resica|Krajnici|Jezik
+Gde se nalaze glasne žice?|U grkljanu|U dušniku|U ždrelu|U jednjaku
+Koliko je dugačko tanko crevo odraslog čoveka približno?|6–7 m|1–2 m|15 m|30 cm
+Gde se upija najveći deo hranljivih materija?|U tankom crevu|U želucu|U debelom crevu|U jednjaku
+Kako se zove mali izraštaj debelog creva koji se može upaliti?|Slepo crevo (crvuljak)|Žučna kesa|Krajnik|Polip
+Koji organ je najveći deo nervnog sistema?|Mozak|Kičmena moždina|Srce|Jetra
+Koja polovina mozga upravlja desnom stranom tela?|Leva|Desna|Obe podjednako|Mali mozak
+Koji deo mozga upravlja ravnotežom i koordinacijom?|Mali mozak|Veliki mozak|Produžena moždina|Hipofiza
+Koliko neurona ima ljudski mozak približno?|86 milijardi|86 miliona|8 milijardi|860 milijardi
+Kako se zove najveći mišić u ljudskom telu?|Veliki sedalni mišić|Biceps|Srčani mišić|Kvadriceps
+Kako se zove mišić sa prednje strane nadlaktice?|Biceps|Triceps|Deltoid|Kvadriceps
+Kako se zove tetiva iznad pete?|Ahilova tetiva|Patelarna tetiva|Rotatorna manžetna|Meniskus
+Kako se zove kost čašice kolena?|Patela|Tibija|Fibula|Femur
+Kako se latinski zove butna kost?|Femur|Tibija|Humerus|Radijus
+Koliko rebara ima čovek?|24 (12 pari)|20|26|32
+Koliko pršljenova ima kičma čoveka (ukupno, sa krsnim i trtičnim)?|33|24|26|30
+Koliko vratnih pršljenova ima čovek?|7|5|12|9
+Koja je jedina kost glave koja se pomera?|Donja vilica|Gornja vilica|Čeona kost|Potiljačna kost
+Kako se zove hrskavica između pršljenova?|Diskus|Meniskus|Ligament|Tetiva
+Kako se zove ispadanje diskusa između pršljenova?|Diskus hernija|Išijas|Lumbago|Skolioza
+Kako se zove bočno iskrivljenje kičme?|Skolioza|Kifoza|Lordoza|Osteoporoza
+Kako se zove smanjenje gustine kostiju?|Osteoporoza|Artritis|Skolioza|Rahitis
+Kako se narodski zove giht?|Kostobolja|Reuma|Išijas|Lumbago
+Koja bolest je izazvana virusom varicela?|Ovčije boginje|Male boginje|Zauške|Rubeola
+Koja dečja bolest izaziva oticanje pljuvačnih žlezda?|Zauške|Ovčije boginje|Šarlah|Rubeola
+Koja zarazna bolest se prenosi ujedom komarca Anofeles?|Malarija|Kolera|Tifus|Tuberkuloza
+Koja bolest se prenosi zagađenom vodom i izaziva jak proliv?|Kolera|Malarija|Tetanus|Besnilo
+Koja bolest se prenosi ujedom zaraženih životinja (pas, lisica)?|Besnilo|Tetanus|Lajmska bolest|Kuga
+Koja bolest se prenosi krpeljima i izaziva crveni krug na koži?|Lajmska bolest|Malarija|Besnilo|Tetanus
+Koja bolest se može dobiti od zarđalog eksera?|Tetanus|Besnilo|Sepsa|Gangrena
+Koja bakterija izaziva tuberkulozu?|Kohov bacil|Stafilokok|Streptokok|Ešerihija koli
+Koji organ najčešće napada tuberkuloza?|Pluća|Jetru|Bubrege|Kosti
+Koja bolest je iskorenjena vakcinacijom 1980. godine?|Velike boginje (variola)|Dečja paraliza|Male boginje|Tuberkuloza
+Kako se zove virus koji izaziva AIDS?|HIV|HPV|HBV|EBV
+Koji virus izaziva rak grlića materice i protiv njega postoji vakcina?|HPV|HIV|HBV|Herpes
+Koja bolest jetre se prenosi krvlju i ima tipove A, B i C?|Hepatitis|Ciroza|Žutica|Mononukleoza
+Kako se zove „bolest poljupca” izazvana Epštajn-Bar virusom?|Mononukleoza|Angina|Herpes|Zauške
+Koji antibiotik je prvi otkriven?|Penicilin|Amoksicilin|Streptomicin|Tetraciklin
+Da li antibiotici deluju na viruse?|Ne|Da|Samo na grip|Samo kod dece
+Koja bolest se karakteriše visokim šećerom u krvi?|Dijabetes|Hipertenzija|Anemija|Gastritis
+Kako se zove visok krvni pritisak?|Hipertenzija|Hipotenzija|Tahikardija|Aritmija
+Kako se zove ubrzan rad srca?|Tahikardija|Bradikardija|Aritmija|Hipertenzija
+Kako se zove usporen rad srca?|Bradikardija|Tahikardija|Fibrilacija|Angina
+Kako se zove začepljenje krvnog suda u mozgu?|Moždani udar|Infarkt|Aneurizma|Embolija pluća
+Kako se zove odumiranje dela srčanog mišića zbog začepljenja arterije?|Infarkt miokarda|Moždani udar|Aritmija|Angina pektoris
+Koji uređaj se koristi za ponovno pokretanje srca strujom?|Defibrilator|Pejsmejker|Respirator|EKG
+Koji uređaj se ugrađuje da reguliše rad srca?|Pejsmejker|Defibrilator|Stent|Bajpas
+Šta meri EKG?|Električnu aktivnost srca|Aktivnost mozga|Pritisak|Šećer
+Šta meri EEG?|Električnu aktivnost mozga|Rad srca|Funkciju pluća|Kosti
+Koji pregled koristi magnetno polje za snimanje tela?|Magnetna rezonanca|Rendgen|Ultrazvuk|Skener (CT)
+Ko je izveo prvu transplantaciju srca 1967?|Kristijan Barnard|Majkl Debejki|Džozef Marej|Norman Šamvej
+U kojoj zemlji je izvedena prva transplantacija srca?|Južnoafričkoj Republici|SAD|Velikoj Britaniji|Francuskoj
+Koji organ je prvi uspešno transplantiran (1954)?|Bubreg|Srce|Jetra|Pluća
+Koliko traje ljudska trudnoća približno?|40 nedelja|30 nedelja|50 nedelja|36 meseci
+Kako se zove lekar za decu?|Pedijatar|Gerijatar|Ginekolog|Internista
+Kako se zove lekar za kožu?|Dermatolog|Kardiolog|Neurolog|Urolog
+Kako se zove lekar za srce?|Kardiolog|Neurolog|Nefrolog|Pulmolog
+Kako se zove lekar za bubrege?|Nefrolog|Urolog|Kardiolog|Gastroenterolog
+Kako se zove lekar za oči?|Oftalmolog|Otorinolaringolog|Ortoped|Neurolog
+Kako se zove lekar za uho, grlo i nos?|Otorinolaringolog|Oftalmolog|Stomatolog|Pulmolog
+Kako se zove lekar za kosti i zglobove?|Ortoped|Neurolog|Fizijatar|Reumatolog
+Kako se zove lekar za starije osobe?|Gerijatar|Pedijatar|Internista|Psihijatar
+Kako se zove lekar za mentalno zdravlje koji prepisuje lekove?|Psihijatar|Psiholog|Neurolog|Logoped
+Kako se zove stručnjak koji ispravlja govor?|Logoped|Psiholog|Ortodont|Fizioterapeut
+Kako se zove stomatolog koji ispravlja zube aparatićima?|Ortodont|Parodontolog|Endodont|Protetičar
+Kako se zove strah od visine?|Akrofobija|Klaustrofobija|Agorafobija|Arahnofobija
+Kako se zove strah od zatvorenog prostora?|Klaustrofobija|Akrofobija|Agorafobija|Hidrofobija
+Kako se zove strah od paukova?|Arahnofobija|Akrofobija|Ofidiofobija|Kinofobija
+Kako se zove strah od zmija?|Ofidiofobija|Arahnofobija|Klaustrofobija|Aerofobija
+Kako se zove strah od otvorenog prostora i gužve?|Agorafobija|Klaustrofobija|Akrofobija|Ksenofobija
+Kako se zove nesanica?|Insomnija|Narkolepsija|Apneja|Somnambulizam
+Kako se zove mesečarenje?|Somnambulizam|Insomnija|Narkolepsija|Bruksizam
+Kako se zove škrgutanje zubima?|Bruksizam|Somnambulizam|Apneja|Tik
+Kako se zove prestanak disanja tokom sna?|Apneja|Insomnija|Narkolepsija|Hipoksija
+Koja faza sna je povezana sa snovima?|REM faza|Duboki san|Prva faza|NREM 2
+Koliko sati sna je preporučeno odraslima?|7–9|4–5|10–12|5–6
+Koliko vode dnevno se preporučuje odrasloj osobi otprilike?|2 litre|0,5 litre|5 litara|8 litara
+Koliko kalorija ima 1 gram masti?|9|4|7|2
+Koliko kalorija ima 1 gram ugljenih hidrata?|4|9|7|1
+Koliko kalorija ima 1 gram proteina?|4|9|7|2
+Kako se računa indeks telesne mase (BMI)?|Masa podeljena kvadratom visine|Visina podeljena masom|Masa puta visina|Obim struka kroz visinu
+Koji BMI se smatra normalnim?|18,5–24,9|25–29,9|30–34,9|15–18
+Koliko koraka dnevno se često preporučuje?|10.000|1.000|50.000|3.000
+Kako se zove broj koji označava zaštitu kreme od sunca?|SPF|UV|pH|IQ
+Koje UV zrake izazivaju opekotine od sunca najviše?|UVB|UVA|Infracrvene|Rendgenske
+Kako se zove pigment koji daje boju koži?|Melanin|Hemoglobin|Karoten|Hlorofil
+Kako se zove najčešći oblik raka kože koji je opasan?|Melanom|Bazaliom|Lipom|Fibrom
+Koja je najčešća krvna grupa u Srbiji?|A|0|B|AB
+Na koliko dana zdrav muškarac može ponovo da da krv?|Na 3 meseca|Na 1 nedelju|Na 1 godinu|Na 1 mesec
+Koliko krvi se uzima pri jednom davanju?|Oko 450 ml|Oko 1 litar|Oko 100 ml|Oko 2 litre
+Kako se zove postupak prečišćavanja krvi kod bolesti bubrega?|Dijaliza|Transfuzija|Infuzija|Hemoterapija
+Kako se zove lečenje raka lekovima?|Hemoterapija|Zračenje|Dijaliza|Fizioterapija
+Koji broj je hitna pomoć u Srbiji?|194|192|193|112
+Koji broj je policija u Srbiji?|192|194|193|911
+Koji broj je vatrogasna služba u Srbiji?|193|192|194|911
+Koji je jedinstveni evropski broj za hitne slučajeve?|112|911|194|999
+Kako se zove manevar za izbacivanje zalogaja iz grla?|Hajmlihov manevar|Kardiopulmonalna reanimacija|Valsalvin manevar|Bočni položaj
+Koliko pritisaka grudnog koša preporučuje se na dva udisaja u reanimaciji odraslih?|30|15|10|50
+Koji simbol prve pomoći se koristi u muslimanskim zemljama?|Crveni polumesec|Crveni krst|Zeleni krst|Plavi krst
+Ko je osnovao Crveni krst?|Anri Dinan|Florens Najtingejl|Klara Barton|Luj Paster
+U kom gradu je sedište Međunarodnog komiteta Crvenog krsta?|Ženevi|Beču|Briselu|Hagu
+Koja bolničarka je postala simbol modernog sestrinstva u Krimskom ratu?|Florens Najtingejl|Klara Barton|Edit Kavel|Meri Sikol
+Koja organizacija UN se bavi zdravljem?|Svetska zdravstvena organizacija (SZO)|UNICEF|UNESCO|FAO

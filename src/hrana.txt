@@ -313,3 +313,137 @@ Koje ulje je osnovno u mediteranskoj kuhinji?|Maslinovo|Suncokretovo|Repičino|K
 Koje ulje je najviše korišćeno u srpskoj kuhinji?|Suncokretovo|Maslinovo|Kokosovo|Bundevino
 Koje boje je maslina pre nego što sazri?|Zelenom|Crnom|Ljubičastom|Žutom
 Koliko otprilike litara mleka je potrebno za 1 kg sira?|10|2|50|1
+Od kog mesa se tradicionalno pravi pljeskavica?|Mešanog mlevenog mesa|Piletine|Ribe|Jagnjetine
+Koji grad je poznat po „Leskovačkoj roštiljijadi”?|Leskovac|Niš|Vranje|Pirot
+Koji grad je poznat po „Pirotskom kačkavalju”?|Pirot|Sjenica|Zlatibor|Leskovac
+Po kom siru je poznata Sjenica?|Sjenički sir|Kačkavalj|Kajmak|Feta
+Po čemu je poznato selo Mačkat na Zlatiboru?|Pršuti i suvom mesu|Siru|Rakiji|Medu
+Koje mesto je poznato po „Kulenijadi”?|Bački Petrovac|Erdevik|Kovačica|Futog
+U kom mestu se održava „Kupusijada”?|Futog|Kovačica|Erdevik|Bački Petrovac
+Koje selo je poznato po „Slaninijadi”?|Kačarevo|Futog|Erdevik|Bački Petrovac
+Koje jelo je kuvani kupus sa mesom u slojevima, tipično za Srbiju?|Podvarak|Sarma|Đuveč|Musaka
+Koje jelo se pravi od kiselog kupusa uvijenog oko mesa?|Sarma|Punjene paprike|Đuveč|Pita
+Koje jelo se pravi od povrća i pirinča u loncu, ime ima turskog porekla?|Đuveč|Sarma|Podvarak|Gulaš
+Kako se zove srpska pita od kora sa sirom?|Gibanica|Burek|Zeljanica|Pogača
+Kako se zove pita sa spanaćem ili zeljem?|Zeljanica|Gibanica|Krompiruša|Bundevara
+Kako se zove pita sa krompirom?|Krompiruša|Zeljanica|Bundevara|Sirnica
+Kako se zove pita sa bundevom?|Bundevara|Krompiruša|Tikvara|Zeljanica
+Kako se zove punjena pljeskavica sa sirom i šunkom?|Gurmanska pljeskavica|Karađorđeva šnicla|Ražnjić|Uštipak
+Kako se zove pohovani rolovani komad mesa punjen kajmakom?|Karađorđeva šnicla|Bečka šnicla|Gurmanska pljeskavica|Rolat
+Ko je, prema predanju, izmislio Karađorđevu šniclu?|Kuvar Mića Stojanović|Karađorđe|Kralj Milan|Tito
+Kako se zove mlečni proizvod od kajmaka i sira sa paprikom?|Urnebes|Kajmak|Ajvar|Pinđur
+Od čega se pravi ajvar?|Pečenih paprika|Paradajza|Patlidžana|Krastavaca
+Kako se zove namaz od paprika, paradajza i patlidžana, tipičan za jug?|Pinđur|Ajvar|Urnebes|Ljutenica
+Kako se zove bugarski namaz sličan ajvaru?|Ljutenica|Pinđur|Urnebes|Tarator
+Kako se zove hladna supa od jogurta i krastavca?|Tarator|Gaspačo|Boršč|Čorba
+Kako se zove hladna španska supa od paradajza?|Gaspačo|Tarator|Minestrone|Vičisoaz
+Kako se zove ruska supa od cvekle?|Boršč|Šči|Soljanka|Okroška
+Kako se zove italijanska supa od povrća?|Minestrone|Gaspačo|Bujabes|Ramen
+Kako se zove francuska riblja čorba iz Marselja?|Bujabes|Minestrone|Vičisoaz|Biski
+Kako se zove japanska supa od fermentisane soje?|Miso supa|Ramen|Pho|Tom jam
+Kako se zove vijetnamska supa sa rezancima?|Pho|Ramen|Tom jam|Laksa
+Kako se zove tajlandska ljuta kisela supa sa škampima?|Tom jam|Pho|Miso|Laksa
+Kako se zove korejska fermentisana kupus-salata?|Kimči|Bibimbap|Bulgogi|Kimbap
+Kako se zove korejsko jelo od pirinča sa povrćem i jajetom u činiji?|Bibimbap|Kimči|Bulgogi|Japčae
+Kako se zove indijski hleb pečen u tandur peći?|Nan|Čapati|Pita|Tortilja
+Kako se zove indijski jogurtni napitak?|Lasi|Ajran|Kefir|Čaj masala
+Kako se zove turski napitak od jogurta, vode i soli?|Ajran|Lasi|Boza|Salep
+Kako se zove napitak od fermentisanog prosa ili kukuruza poznat na Balkanu?|Boza|Ajran|Kvas|Salep
+Kako se zove ruski napitak od fermentisanog hleba?|Kvas|Boza|Kefir|Kompot
+Kako se zove fermentisano mleko poreklom sa Kavkaza?|Kefir|Jogurt|Ajran|Kumis
+Kako se zove fermentisani čaj sa gljivom (kultura)?|Kombuha|Matča|Mate|Rooibos
+Kako se zove japanski zeleni čaj u prahu?|Matča|Sencha|Oolong|Kombuha
+Kako se zove južnoamerički čaj koji se pije iz tikvice slamkom?|Mate|Rooibos|Matča|Kombuha
+Iz koje zemlje potiče čaj rooibos?|Južnoafričke Republike|Indije|Kine|Argentine
+Koja zemlja je najveći proizvođač kafe?|Brazil|Kolumbija|Vijetnam|Etiopija
+Iz koje zemlje potiče kafa kao napitak prema predanju?|Etiopije|Brazila|Jemena|Turske
+Koja sorta kafe je najzastupljenija?|Arabika|Robusta|Liberika|Ekscelza
+Kako se zove kafa sa mnogo mleka i penom u Italiji?|Kapućino|Espreso|Makijato|Ristreto
+Kako se zove espreso sa malo mlečne pene?|Makijato|Late|Kapućino|Flet vajt
+Kako se zove vrlo kratki, jaki espreso?|Ristreto|Lungo|Amerikano|Doppio
+Kako se zove espreso razblažen toplom vodom?|Amerikano|Ristreto|Makijato|Korto
+Kako se zove kafa sa sladoledom u Italiji?|Afogato|Frape|Late|Mokka
+Kako se zove grčka hladna kafa od instant kafe?|Frape|Freddo|Afogato|Ledena kafa
+Kako se zove posuda za kuvanje domaće (turske) kafe?|Džezva|Fildžan|Mokapot|Kafetijera
+Kako se zove mala šolja bez drške za domaću kafu?|Fildžan|Džezva|Šoljica|Bokal
+Koje začinsko bilje je glavni sastojak pesta?|Bosiljak|Peršun|Nana|Ruzmarin
+Koji sir se koristi u originalnom pestu?|Parmezan (i pekorino)|Mocarela|Gorgonzola|Rikota
+Koji je glavni sastojak tzatzikija?|Jogurt i krastavac|Paradajz i luk|Sir i paprika|Leblebije
+Od čega se pravi tahini?|Susama|Leblebija|Kikirikija|Lešnika
+Od čega se pravi falafel?|Leblebija ili boba|Mesa|Krompira|Pirinča
+Od čega se pravi tofu?|Soje|Pirinča|Kukuruza|Kikirikija
+Od čega se pravi kuskus?|Griza od pšenice|Pirinča|Kukuruza|Kinoe
+Od čega se pravi palenta?|Kukuruznog brašna|Pšeničnog brašna|Krompira|Pirinča
+Kako se zove srpsko jelo od kukuruznog brašna?|Kačamak|Proja|Cicvara|Popara
+Kako se zove jelo od kajmaka i brašna, tipično za Zlatibor?|Cicvara|Kačamak|Popara|Proja
+Kako se zove jelo od starog hleba natopljenog mlekom ili vodom?|Popara|Kačamak|Cicvara|Kaša
+Kako se zove pečeni kukuruzni hleb?|Proja|Pogača|Somun|Lepinja
+Kako se zove lepinja sa kajmakom i jajetom pečena u peći?|Komplet lepinja|Pogača|Pita|Somun
+Koji kraj je poznat po komplet lepinji?|Užice i Zlatibor|Vojvodina|Niš|Šumadija
+Koje mesto je poznato po „Užičkoj komplet lepinji” i „Užičkoj pršuti”?|Užice|Čačak|Valjevo|Kraljevo
+Kako se zove pihtijasto jelo od svinjskih nogica?|Pihtije (piktije)|Švargla|Čvarci|Kavurma
+Kako se zovu prženi komadići svinjske masti?|Čvarci|Pihtije|Kulen|Kobasica
+Kako se zove ljuta vojvođanska kobasica od svinjskog mesa i paprike?|Kulen|Švargla|Sudžuk|Čajna
+Kako se zove fermentisana goveđa kobasica poznata u Bosni i Turskoj?|Sudžuk|Kulen|Čajna|Kabanica
+Kako se zove crnogorski sušeni pršut?|Njeguški pršut|Užička pršuta|Dalmatinski pršut|Parma
+Kako se zove čuvena italijanska sušena šunka iz Parme?|Prošuto di Parma|Serano|Speck|Pancetta
+Kako se zove španska sušena šunka od crnih svinja?|Hamon iberiko|Prošuto|Serano|Čorizo
+Kako se zove ljuta španska kobasica sa paprikom?|Čorizo|Salami|Pepperoni|Kulen
+Kako se zove francuska guščja jetra?|Foa gra|Pate|Terina|Konfi
+Kako se zove francusko jelo od govedine u crnom vinu?|Bef burginjon|Kok o ven|Ratatuj|Kasule
+Kako se zove francusko jelo od petla u vinu?|Kok o ven|Bef burginjon|Ratatuj|Bujabes
+Kako se zove francusko jelo od dinstanog povrća iz Provanse?|Ratatuj|Kasule|Kiš|Kroke
+Kako se zove francuska slana pita sa jajima i slaninom?|Kiš Loren|Krep|Tart Taten|Sufle
+Kako se zove francuski obrnuti kolač od jabuka?|Tart Taten|Kiš|Klafuti|Mil fej
+Kako se zove francuski kolač od pene i bademovog brašna u bojama?|Makaron|Ekler|Madlen|Kroasan
+Kako se zove francuski kolač u obliku školjke?|Madlen|Makaron|Ekler|Brioš
+Kako se zove italijanski desert sa mascarponeom i kafom?|Tiramisu|Pana kota|Kanoli|Semifredo
+Kako se zove italijanski desert od kuvane pavlake?|Pana kota|Tiramisu|Đelato|Zabajone
+Kako se zove sicilijanska rolnica punjena rikotom?|Kanoli|Kasata|Biskoti|Sfoljatela
+Kako se zove italijanski sladoled?|Đelato|Sorbe|Semifredo|Granita
+Kako se zove austrijska čokoladna torta iz hotela Saher?|Saher torta|Linceri torta|Dobos torta|Esterhazi
+Kako se zove mađarska torta sa karamelom na vrhu?|Dobos torta|Saher torta|Rigo Janči|Esterhazi
+Kako se zove torta nazvana po mađarskoj plemićkoj porodici, sa bademima?|Esterhazi torta|Dobos torta|Saher torta|Reforma torta
+Kako se zove štrudla sa jabukama na nemačkom?|Apfelštrudel|Kuglof|Krofna|Kajzeršmarn
+Kako se zove razbarušena austrijska palačinka sa šećerom u prahu?|Kajzeršmarn|Apfelštrudel|Palatšinke|Knedle
+Kako se zove belgijski hrskavi kolač sa rešetkastim oblikom?|Vafl|Palačinka|Krofna|Gofra
+Kako se zove portugalski kolač od lisnatog testa i kreme?|Pastel de nata|Čuros|Flan|Tres leches
+Kako se zove španski prženi kolač koji se umače u čokoladu?|Čuros|Flan|Turon|Polvoron
+Kako se zove turski slatkiš od kora, oraha i šerbeta?|Baklava|Tulumba|Ratluk|Halva
+Kako se zove slatkiš od prženog testa u šerbetu u obliku valjka?|Tulumba|Baklava|Krofna|Urmašica
+Kako se zove slatkiš od skroba i šećera, kockice u šećeru u prahu?|Ratluk (lokum)|Halva|Baklava|Kadaif
+Kako se zove slatkiš od susamovog tahinija i šećera?|Halva|Ratluk|Nugat|Marcipan
+Kako se zove slatkiš od mlevenih badema i šećera?|Marcipan|Nugat|Halva|Karamel
+Kako se zove beogradska torta sa orasima i narandžom?|Vasina torta|Reforma torta|Moskva šnit|Žerbo
+Kako se zove torta nazvana po hotelu u Beogradu?|Moskva šnit|Vasina torta|Saher|Reforma
+Kako se zove kolač sa vanila kremom između kora od lisnatog testa?|Krempita|Šampita|Baklava|Tufahija
+Kako se zove kolač sa belom penom od belanaca?|Šampita|Krempita|Žerbo|Tufahija
+Kako se zove kuvana jabuka punjena orasima i šlagom?|Tufahija|Šampita|Krempita|Urmašica
+Kako se zove kolač u obliku urme natopljen šerbetom?|Urmašica|Tulumba|Tufahija|Ružica
+Iz kog austrijskog grada potiču „Mocart kugle”?|Salcburga|Beča|Graca|Linca
+Iz koje zemlje potiče Nutela?|Italije|Francuske|Švajcarske|Nemačke
+Koja švajcarska čokolada ima trouglasti oblik?|Toblerone|Milka|Lindt|Kajler
+Koje boje je pakovanje čokolade Milka?|Ljubičaste|Plave|Crvene|Zelene
+Koja zemlja je najveći proizvođač kakaa?|Obala Slonovače|Gana|Brazil|Ekvador
+Iz koje zemlje potiče vanila?|Meksika|Madagaskara|Indije|Brazila
+Koja zemlja je danas najveći proizvođač vanile?|Madagaskar|Meksiko|Indonezija|Tahiti
+Iz kog dela biljke se dobija cimet?|Kore drveta|Cveta|Korena|Semena
+Koji začin se dobija od tučkova šafranovog cveta?|Šafran|Kurkuma|Kardamom|Karanfilić
+Koji začin je osušeni nerazvijeni cvetni pupoljak?|Karanfilić|Cimet|Muskatni oraščić|Anis
+Koji začin ima oblik zvezde?|Zvezdasti anis|Karanfilić|Kardamom|Kumin
+Od čega se pravi wasabi u originalu?|Od korena japanskog rena|Od zelene paprike|Od senfa|Od đumbira
+Šta je kapari?|Pupoljci biljke kapar|Mlade masline|Zeleni biber|Sitni krastavci
+Koji je glavni sastojak meksičkog jela „čili kon karne”?|Mleveno meso, pasulj i čili|Piletina i pirinač|Riba i limun|Kukuruz i sir
+Kako se zove meksički umak od paradajza, luka i čilija?|Salsa|Gvakamole|Mole|Pico
+Kako se zove meksički sos od čokolade i čilija?|Mole|Salsa|Gvakamole|Čipotle
+Kako se zove peruansko jelo od sirove ribe marinirane limunom?|Seviče|Suši|Poke|Tartar
+Kako se zove havajsko jelo od sirove ribe u činiji?|Poke|Seviče|Suši|Sašimi
+Kako se zove japansko jelo od tanko sečene sirove ribe bez pirinča?|Sašimi|Suši|Nigiri|Maki
+Kako se zove japansko jelo od pohovanih škampa i povrća?|Tempura|Teriyaki|Jakitori|Gjoza
+Kako se zovu japanski ražnjići od piletine?|Jakitori|Tempura|Teriyaki|Udon
+Kako se zovu debeli japanski rezanci od pšenice?|Udon|Soba|Ramen|Somen
+Kako se zovu japanski rezanci od heljde?|Soba|Udon|Ramen|Pho
+Kako se zove kineska knedla na pari sa nadevom?|Dim sam (baozi)|Gjoza|Pelmeni|Ravioli
+Kako se zovu ruske knedle sa mesom?|Pelmeni|Pirogi|Blini|Varenjiki
+Kako se zovu ruske tanke palačinke?|Blini|Pelmeni|Sirniki|Pirog
+Kako se zovu poljske knedle sa krompirom i sirom?|Pjerogi|Pelmeni|Kluski|Gulaš
