@@ -1,0 +1,332 @@
+Koliko kostiju ima odrastao čovek?|206|186|226|300
+Koja je najduža kost u ljudskom telu?|Butna kost|Golenjača|Ramenjača|Kičma
+Koja je najmanja kost u ljudskom telu?|Uzengija (u uhu)|Nakovanj|Čekić|Kost malog prsta
+Gde se nalazi uzengija, najmanja kost?|U srednjem uhu|U nosu|U prstu|U oku
+Koliko kostiju ima novorođenče, otprilike?|Oko 300|206|150|100
+Koji je najveći organ ljudskog tela?|Koža|Jetra|Pluća|Mozak
+Koji je najveći unutrašnji organ?|Jetra|Pluća|Srce|Želudac
+Koji organ pumpa krv kroz telo?|Srce|Jetra|Pluća|Bubrezi
+Koliko komora ima ljudsko srce?|4|2|3|6
+Koliko otprilike puta u minuti kuca srce odraslog čoveka u mirovanju?|60–100|20–40|120–160|200
+Koliko litara krvi ima odrasla osoba, otprilike?|5|2|10|15
+Koje krvne ćelije prenose kiseonik?|Crvena krvna zrnca|Bela krvna zrnca|Trombociti|Plazma
+Koje krvne ćelije brane telo od infekcija?|Bela krvna zrnca|Crvena krvna zrnca|Trombociti|Plazma
+Koje ćelije pomažu zgrušavanje krvi?|Trombociti|Eritrociti|Leukociti|Limfociti
+Koja materija u crvenim krvnim zrncima vezuje kiseonik?|Hemoglobin|Hlorofil|Insulin|Melanin
+Koji metal je ključan za hemoglobin?|Gvožđe|Bakar|Cink|Kalcijum
+Kojom krvnom grupom se naziva „univerzalni davalac”?|0 negativna|AB pozitivna|A pozitivna|B negativna
+Kojom krvnom grupom se naziva „univerzalni primalac”?|AB pozitivna|0 negativna|A negativna|B pozitivna
+Ko je otkrio krvne grupe?|Karl Landštajner|Luj Paster|Robert Koh|Aleksandar Fleming
+Koji krvni sudovi nose krv od srca?|Arterije|Vene|Kapilari|Limfni sudovi
+Koji krvni sudovi vraćaju krv u srce?|Vene|Arterije|Kapilari|Aorta
+Koja je najveća arterija u telu?|Aorta|Karotida|Plućna vena|Femoralna arterija
+Koji su najsitniji krvni sudovi?|Kapilari|Vene|Arterije|Aorte
+Ko je opisao krvotok 1628. godine?|Vilijam Harvi|Andreas Vezalijus|Galen|Hipokrat
+Koji organ filtrira krv i pravi mokraću?|Bubrezi|Jetra|Slezina|Pankreas
+Koliko bubrega ima čovek normalno?|2|1|3|4
+Koji organ proizvodi insulin?|Gušterača (pankreas)|Jetra|Štitna žlezda|Bubrezi
+Koja bolest nastaje kada telo nema dovoljno insulina?|Dijabetes|Hipertenzija|Anemija|Astma
+Ko je otkrio insulin 1921?|Banting i Best|Fleming|Paster|Koh
+Koji organ luči žuč?|Jetra|Žučna kesa|Gušterača|Želudac
+Gde se žuč čuva?|U žučnoj kesi|U jetri|U želucu|U slezini
+Koji organ je najvažniji za uklanjanje otrova (detoksikaciju)?|Jetra|Slezina|Srce|Pluća
+Koja žlezda se nalazi na vratu i reguliše metabolizam?|Štitna žlezda|Hipofiza|Nadbubrežna žlezda|Timus
+Koji element je potreban štitnoj žlezdi, a dodaje se soli?|Jod|Fluor|Gvožđe|Kalcijum
+Koja žlezda luči adrenalin?|Nadbubrežna žlezda|Štitna žlezda|Hipofiza|Gušterača
+Koja žlezda se zove „glavna žlezda”, na dnu mozga?|Hipofiza|Epifiza|Štitna žlezda|Timus
+Koji hormon reguliše san i luči se u mraku?|Melatonin|Adrenalin|Insulin|Kortizol
+Koji hormon se zove „hormon stresa”?|Kortizol|Melatonin|Serotonin|Oksitocin
+Koji hormon se zove „hormon sreće” i povezan je sa raspoloženjem?|Serotonin|Kortizol|Adrenalin|Insulin
+Koji hormon se zove „hormon ljubavi” i luči se pri porođaju i grljenju?|Oksitocin|Testosteron|Adrenalin|Melatonin
+Gde se vari hrana najvećim delom i upija u krv?|U tankom crevu|U želucu|U debelom crevu|U jednjaku
+Koliko je otprilike dugo tanko crevo odraslog čoveka?|6–7 m|1 m|2 m|15 m
+Koja kiselina se nalazi u želucu?|Hlorovodonična|Sumporna|Limunska|Sirćetna
+Kako se zove cev koja vodi hranu od usta do želuca?|Jednjak|Dušnik|Grkljan|Ždrelo
+Kako se zove cev koja vodi vazduh do pluća?|Dušnik|Jednjak|Aorta|Bronhija
+Kako se zove poklopac koji sprečava da hrana uđe u dušnik?|Grkljanski poklopac (epiglotis)|Jezik|Resica|Krajnik
+Koji mišić je glavni za disanje?|Dijafragma|Srce|Trbušni mišić|Grudni mišić
+Kako se zovu sitne vrećice u plućima gde se razmenjuju gasovi?|Alveole|Bronhije|Kapilari|Režnjevi
+Koje plućno krilo je veće?|Desno|Levo|Ista su|Zavisi od osobe
+Koliko otprilike udisaja u minuti ima odrasla osoba u mirovanju?|12–20|5–8|30–40|50
+Koji organ kontroliše celo telo?|Mozak|Srce|Kičmena moždina|Jetra
+Koliko je otprilike težak ljudski mozak?|1,4 kg|500 g|3 kg|5 kg
+Koji deo mozga je odgovoran za ravnotežu i koordinaciju?|Mali mozak|Veliki mozak|Moždano stablo|Hipotalamus
+Koji deo mozga je važan za pamćenje?|Hipokampus|Mali mozak|Hipofiza|Produžena moždina
+Koja hemisfera mozga uglavnom kontroliše desnu stranu tela?|Leva|Desna|Obe podjednako|Nijedna
+Kako se zovu nervne ćelije?|Neuroni|Eritrociti|Hepatociti|Osteociti
+Kako se zove dugi nastavak nervne ćelije?|Akson|Dendrit|Sinapsa|Mijelin
+Kako se zove mesto spajanja dve nervne ćelije?|Sinapsa|Akson|Neuron|Ganglija
+Koliko pari kranijalnih (moždanih) nerava ima čovek?|12|10|31|7
+Koji je najduži nerv u telu?|Išijadični nerv|Optički nerv|Vagus|Facijalni nerv
+Koji je najjači mišić prema veličini (sila zagriza)?|Žvačni mišić (maseter)|Srce|Butni mišić|Jezik
+Koji je najveći mišić u telu?|Veliki sedalni mišić|Butni mišić|Biceps|Dijafragma
+Koji mišić savija ruku u laktu?|Biceps|Triceps|Deltoid|Kvadriceps
+Koji mišić ispravlja ruku u laktu?|Triceps|Biceps|Deltoid|Trapez
+Koliko otprilike mišića ima čovek?|Preko 600|206|100|1.500
+Kako se zove tetiva iznad pete, nazvana po grčkom junaku?|Ahilova tetiva|Herkulova tetiva|Odisejeva tetiva|Hektorova tetiva
+Kako se zove čašica kolena?|Patela|Klavikula|Skapula|Fibula
+Kako se zove ključna kost latinski?|Klavikula|Skapula|Sternum|Patela
+Kako se zove lopatica latinski?|Skapula|Klavikula|Humerus|Radijus
+Kako se zove grudna kost?|Sternum (grudna kost)|Klavikula|Skapula|Pelvis
+Koliko pari rebara ima čovek?|12|10|14|24
+Koliko pršljenova ima vratni deo kičme?|7|5|12|9
+Koliko zuba ima odrasla osoba sa umnjacima?|32|28|30|36
+Koliko mlečnih zuba ima dete?|20|24|28|32
+Kako se zovu poslednji kutnjaci koji niču kasno?|Umnjaci|Očnjaci|Sekutići|Pretkutnjaci
+Šta je najtvrđa supstanca u ljudskom telu?|Zubna gleđ|Kost|Nokat|Hrskavica
+Od čega su napravljeni kosa i nokti?|Keratina|Kolagena|Kalcijuma|Hitina
+Koji pigment daje boju koži i kosi?|Melanin|Hemoglobin|Karoten|Hlorofil
+Koliko otprilike raste kosa mesečno?|1–1,5 cm|5 cm|1 mm|3 cm
+Koji je najčešći krvni tip u Srbiji?|A pozitivna|0 negativna|AB negativna|B negativna
+Koliko čula ima čovek prema klasičnoj podeli?|5|3|7|6
+Koji deo oka daje boju očima?|Dužica (iris)|Zenica|Rožnjača|Mrežnjača
+Kako se zove otvor u sredini oka koji se širi i skuplja?|Zenica|Dužica|Sočivo|Mrežnjača
+Kako se zove sloj u oku na kom se stvara slika?|Mrežnjača (retina)|Rožnjača|Beonjača|Sočivo
+Kako se zove poremećaj kad osoba ne razlikuje crvenu i zelenu boju?|Daltonizam|Astigmatizam|Kratkovidost|Katarakta
+Kako se zove kratkovidost stručno?|Miopija|Hipermetropija|Prezbiopija|Astigmatizam
+Kako se zove zamućenje očnog sočiva?|Katarakta (siva mrena)|Glaukom|Daltonizam|Miopija
+Kako se zove bolest povišenog pritiska u oku?|Glaukom (zelena mrena)|Katarakta|Miopija|Konjunktivitis
+Kako se zove upala sluznice oka („crveno oko”)?|Konjunktivitis|Glaukom|Katarakta|Sinusitis
+Koji organ je zadužen i za sluh i za ravnotežu?|Uho|Oko|Mozak|Nos
+Kako se zove spiralni deo unutrašnjeg uha za sluh?|Puž (kohlea)|Bubna opna|Uzengija|Eustahijeva tuba
+Koliko osnovnih ukusa jezik razlikuje (uključujući umami)?|5|4|3|7
+Kako se zove peti osnovni ukus, „ukus mesa”?|Umami|Ljuto|Trpko|Masno
+Koliko otprilike ima pupoljaka ukusa na jeziku?|Oko 10.000|Oko 100|Oko 1 milion|Oko 500
+Koja je normalna telesna temperatura čoveka, otprilike?|36,5–37 °C|35 °C|38 °C|39 °C
+Od kolike temperature se govori o povišenoj temperaturi (groznici) kod odraslih?|38 °C|36 °C|37 °C|40 °C
+Koliko otprilike posto ljudskog tela čini voda?|60%|30%|80%|45%
+Koliko je normalan krvni pritisak odraslih po pravilu?|120/80|90/40|160/100|200/120
+Kako se zove povišen krvni pritisak?|Hipertenzija|Hipotenzija|Tahikardija|Anemija
+Kako se zove ubrzan rad srca?|Tahikardija|Bradikardija|Aritmija|Hipertenzija
+Kako se zove usporen rad srca?|Bradikardija|Tahikardija|Fibrilacija|Hipotenzija
+Kako se zove manjak crvenih krvnih zrnaca ili hemoglobina?|Anemija|Leukemija|Hemofilija|Dijabetes
+Kako se zove nasledna bolest nezgrušavanja krvi?|Hemofilija|Anemija|Leukemija|Tromboza
+Koja kraljica je prenela hemofiliju u evropske kraljevske porodice?|Kraljica Viktorija|Marija Antoaneta|Katarina Velika|Elizabeta I
+Kako se zove rak krvi?|Leukemija|Limfom|Melanom|Sarkom
+Kako se zove rak kože koji polazi od pigmentnih ćelija?|Melanom|Leukemija|Karcinom pluća|Sarkom
+Kako se zove začepljenje krvnog suda ugruškom?|Tromboza|Anemija|Edem|Aneurizma
+Kako se zove odumiranje dela srčanog mišića zbog začepljenja arterije?|Infarkt|Moždani udar|Aritmija|Angina
+Kako se zove oštećenje mozga zbog prekida dotoka krvi?|Moždani udar|Infarkt|Epilepsija|Migrena
+Kako se zove bolest u kojoj kosti postaju krhke?|Osteoporoza|Artritis|Reumatizam|Skolioza
+Kako se zove iskrivljenje kičme u stranu?|Skolioza|Kifoza|Lordoza|Osteoporoza
+Kako se zove upala zglobova?|Artritis|Osteoporoza|Bursitis|Tendinitis
+Kako se zove alergijska bolest disajnih puteva sa otežanim disanjem?|Astma|Bronhitis|Tuberkuloza|Upala pluća
+Koja bakterija izaziva tuberkulozu i ko ju je otkrio?|Kohov bacil (Robert Koh)|Pasterov bacil|Flemingova bakterija|Lajmov bacil
+Koja bolest je poznata kao „španska groznica” 1918?|Grip|Kuga|Kolera|Tifus
+Koja bolest je zvanično iskorenjena 1980. godine?|Velike boginje|Dečja paraliza|Malarija|Tuberkuloza
+Koje godine je izbila velika epidemija velikih boginja u Jugoslaviji?|1972.|1956.|1985.|1991.
+Ko je izumeo prvu vakcinu (protiv velikih boginja)?|Edvard Džener|Luj Paster|Robert Koh|Jonas Salk
+Ko je napravio vakcinu protiv besnila?|Luj Paster|Edvard Džener|Robert Koh|Aleksandar Fleming
+Ko je napravio prvu vakcinu protiv dečje paralize?|Jonas Salk|Luj Paster|Edvard Džener|Albert Sejbin
+Koji virus izaziva sidu?|HIV|HPV|Herpes|Hepatitis B
+Koja bolest se prenosi ujedom komarca i izaziva groznicu u tropima?|Malarija|Kolera|Tifus|Lepra
+Koja bolest se prenosi zagađenom vodom i izaziva jak proliv?|Kolera|Malarija|Boginje|Rubeola
+Kako se zove upala jetre?|Hepatitis|Gastritis|Nefritis|Pankreatitis
+Kako se zove upala želuca?|Gastritis|Hepatitis|Kolitis|Bronhitis
+Kako se zove upala slepog creva?|Apendicitis|Kolitis|Gastritis|Peritonitis
+Kako se zove upala krajnika?|Tonzilitis (angina)|Laringitis|Sinusitis|Otitis
+Kako se zove upala uha?|Otitis|Rinitis|Sinusitis|Tonzilitis
+Kako se zove upala sinusa?|Sinusitis|Rinitis|Otitis|Faringitis
+Kako se zove promuklost zbog upale grkljana?|Laringitis|Faringitis|Tonzilitis|Bronhitis
+Kako se zove upala moždanica?|Meningitis|Encefalitis|Neuritis|Artritis
+Koja dečja bolest se manifestuje sitnim crvenim pegama i visokom temperaturom, zarazna?|Male boginje (morbili)|Šarlah|Ovčije boginje|Zauške
+Koja dečja bolest daje mehuriće koji svrbe?|Ovčije boginje (varičela)|Male boginje|Rubeola|Šarlah
+Koja bolest izaziva oticanje pljuvačnih žlezda?|Zauške|Rubeola|Šarlah|Difterija
+Koja bolest je poznata kao „velike boginje”?|Variola|Varičela|Morbili|Rubeola
+Koju bolest izaziva nedostatak vitamina C?|Skorbut|Rahitis|Beri-beri|Pelagra
+Koju bolest izaziva nedostatak vitamina D kod dece?|Rahitis|Skorbut|Anemija|Pelagra
+Koja bolest je nastajala kod mornara zbog nedostatka voća?|Skorbut|Kolera|Malarija|Kuga
+Koji vitamin telo stvara pod uticajem sunca?|Vitamin D|Vitamin C|Vitamin A|Vitamin B12
+Koji vitamin je važan za vid i ima ga u šargarepi (beta-karoten)?|Vitamin A|Vitamin C|Vitamin K|Vitamin E
+Koji vitamin je važan za zgrušavanje krvi?|Vitamin K|Vitamin C|Vitamin D|Vitamin B1
+Koji vitamin ima najviše u limunu i paprici?|Vitamin C|Vitamin A|Vitamin D|Vitamin K
+Koja namirnica ima više vitamina C, paprika ili limun (na 100 g)?|Paprika|Limun|Isto|Nijedna nema
+Koji mineral je važan za zdrave kosti i zube?|Kalcijum|Gvožđe|Natrijum|Kalijum
+Koji mineral ima mnogo u bananama?|Kalijum|Gvožđe|Kalcijum|Jod
+Koji element se dodaje pastama za zube protiv karijesa?|Fluor|Hlor|Jod|Kalcijum
+Koliko otprilike kalorija dnevno je potrebno prosečnoj odrasloj osobi?|2.000–2.500|800–1.000|4.000–5.000|500
+Koliko kalorija ima 1 gram masti?|9|4|7|2
+Koliko kalorija ima 1 gram ugljenih hidrata ili proteina?|4|9|7|1
+Koliko kalorija ima 1 gram alkohola, otprilike?|7|4|9|2
+Kako se zove indeks koji se računa iz težine i visine?|Indeks telesne mase (BMI)|Kalorijski indeks|Glikemijski indeks|Indeks masnoće
+Koja vrednost BMI se smatra normalnom za odrasle?|18,5–24,9|10–15|25–30|30–35
+Šta meri glikemijski indeks?|Koliko brzo hrana podiže šećer u krvi|Količinu masti|Količinu vitamina|Količinu soli
+Koliko otprilike časova sna je preporučeno odraslima?|7–9|4–5|10–12|6
+Kako se zove faza sna u kojoj sanjamo, sa brzim pokretima očiju?|REM faza|NREM faza|Duboki san|Alfa faza
+Kako se zove bolest u kojoj osoba ne može da zaspi?|Nesanica (insomnija)|Narkolepsija|Apneja|Somnambulizam
+Kako se zove mesečarenje stručno?|Somnambulizam|Narkolepsija|Insomnija|Apneja
+Kako se zove prestanak disanja u snu?|Apneja u snu|Hrkanje|Insomnija|Narkolepsija
+Koliko vode je preporučeno piti dnevno, otprilike?|1,5–2 litra|0,5 litra|5 litara|10 litara
+Koliko minuta umerene fizičke aktivnosti nedeljno preporučuje SZO odraslima?|150|30|60|500
+Koliko koraka dnevno se često preporučuje kao cilj?|10.000|1.000|3.000|50.000
+Koja grana medicine se bavi srcem?|Kardiologija|Neurologija|Dermatologija|Nefrologija
+Koja grana medicine se bavi kožom?|Dermatologija|Oftalmologija|Kardiologija|Ortopedija
+Koja grana medicine se bavi očima?|Oftalmologija|Otorinolaringologija|Neurologija|Dermatologija
+Koja grana medicine se bavi uhom, grlom i nosom?|Otorinolaringologija|Oftalmologija|Pulmologija|Neurologija
+Koja grana medicine se bavi decom?|Pedijatrija|Gerijatrija|Ginekologija|Ortopedija
+Koja grana medicine se bavi starijim osobama?|Gerijatrija|Pedijatrija|Ortopedija|Onkologija
+Koja grana medicine se bavi rakom?|Onkologija|Hematologija|Kardiologija|Urologija
+Koja grana medicine se bavi krvlju?|Hematologija|Onkologija|Kardiologija|Nefrologija
+Koja grana medicine se bavi bubrezima?|Nefrologija|Urologija|Hepatologija|Pulmologija
+Koja grana medicine se bavi plućima?|Pulmologija|Kardiologija|Nefrologija|Gastroenterologija
+Koja grana medicine se bavi nervnim sistemom?|Neurologija|Psihijatrija|Kardiologija|Ortopedija
+Koja grana medicine se bavi kostima i zglobovima?|Ortopedija|Kardiologija|Dermatologija|Neurologija
+Koja grana medicine se bavi hormonima i žlezdama?|Endokrinologija|Hematologija|Imunologija|Neurologija
+Koja grana medicine se bavi trudnoćom i porođajem?|Akušerstvo|Pedijatrija|Urologija|Onkologija
+Koja grana medicine se bavi zubima?|Stomatologija|Dermatologija|Ortopedija|Otorinolaringologija
+Kako se zove lekar koji ispravlja zube protezom?|Ortodont|Oralni hirurg|Parodontolog|Protetičar
+Kako se zove lekar koji daje anesteziju?|Anesteziolog|Hirurg|Radiolog|Patolog
+Kako se zove lekar koji tumači rendgenske snimke?|Radiolog|Patolog|Kardiolog|Onkolog
+Ko je otkrio rendgenske zrake?|Vilhelm Rendgen|Marija Kiri|Tomas Edison|Nikola Tesla
+Šta znači skraćenica MR u medicini?|Magnetna rezonanca|Mikroskopski rendgen|Medicinski rezultat|Merenje refleksa
+Šta prikazuje EKG?|Električnu aktivnost srca|Aktivnost mozga|Pritisak|Šećer u krvi
+Šta prikazuje EEG?|Električnu aktivnost mozga|Rad srca|Funkciju pluća|Mišićnu snagu
+Kako se zove aparat za merenje krvnog pritiska?|Merač pritiska (sfigmomanometar)|Stetoskop|Termometar|Otoskop
+Kojim instrumentom lekar sluša srce i pluća?|Stetoskopom|Otoskopom|Termometrom|Endoskopom
+Ko je izumeo stetoskop?|Rene Laenek|Luj Paster|Vilijam Harvi|Hipokrat
+Ko se smatra ocem medicine?|Hipokrat|Galen|Avicena|Paracelzus
+Kako se zove zakletva koju polažu lekari?|Hipokratova zakletva|Galenova zakletva|Asklepijeva zakletva|Ženevska povelja
+Koji simbol medicine prikazuje štap sa jednom zmijom?|Asklepijev štap|Hermesov kaducej|Trozubac|Krst
+Ko je otkrio penicilin 1928?|Aleksandar Fleming|Luj Paster|Robert Koh|Edvard Džener
+Od čega je dobijen prvi penicilin?|Od plesni|Od biljke|Od bakterije|Od kore drveta
+Protiv čega deluju antibiotici?|Bakterija|Virusa|Alergija|Glavobolje
+Od koje biljke potiče aspirin (salicilna kiselina)?|Vrbe|Maka|Kamilice|Lavande
+Koja kompanija je prva prodavala aspirin?|Bajer|Pfajzer|Roš|Novartis
+Od koje biljke se dobija morfijum?|Maka|Konoplje|Koke|Duvana
+Ko je izveo prvu uspešnu transplantaciju srca 1967?|Kristijan Barnard|Majkl Debejki|Džozef Marej|Norman Šamvej
+Koji se organ najčešće presađuje?|Bubreg|Srce|Pluća|Jetra
+Koja ovca je prvi klonirani sisar?|Dolly|Molly|Polly|Daisy
+Kako se zove dvostruka spirala koja nosi nasledni materijal?|DNK|RNK|Protein|Hromozom
+Ko je opisao strukturu DNK 1953?|Votson i Krik|Mendel i Darvin|Paster i Koh|Kiri i Rendgen
+Koliko hromozoma ima ljudska ćelija?|46|23|48|44
+Koji hromozomi određuju muški pol?|XY|XX|YY|X0
+Koja genetska bolest nastaje zbog viška 21. hromozoma?|Daunov sindrom|Hemofilija|Daltonizam|Cistična fibroza
+Ko se smatra ocem genetike, proučavao je grašak?|Gregor Mendel|Čarls Darvin|Luj Paster|Tomas Morgan
+Kako se zove projekat koji je mapirao ljudske gene (završen 2003)?|Projekat ljudski genom|Projekat DNK|Projekat Gen|Projekat Život
+Koliko otprilike gena ima čovek?|Oko 20.000|Oko 2.000|Oko 200.000|Oko 2 miliona
+Kako se zove nauka o ćeliji?|Citologija|Histologija|Anatomija|Fiziologija
+Kako se zove nauka o tkivima?|Histologija|Citologija|Patologija|Hematologija
+Kako se zove nauka o građi tela?|Anatomija|Fiziologija|Patologija|Genetika
+Kako se zove nauka o radu organa?|Fiziologija|Anatomija|Patologija|Histologija
+Ko je napisao prvu modernu knjigu anatomije „O građi ljudskog tela” (1543)?|Andreas Vezalijus|Leonardo da Vinči|Galen|Vilijam Harvi
+Koji renesansni umetnik je secirao leševe i crtao anatomske skice?|Leonardo da Vinči|Rafael|Botičeli|Ticijan
+Koja medicinska sestra je postala simbol nege ranjenika u Krimskom ratu?|Florens Najtingejl|Klara Barton|Marija Kiri|Elsi Inglis
+Koja škotska lekarka je pomagala Srbiji u Prvom svetskom ratu sa bolnicama?|Elsi Inglis|Florens Najtingejl|Flora Sends|Klara Barton
+Koja Britanka je bila jedina žena vojnik u srpskoj vojsci u Prvom svetskom ratu?|Flora Sends|Elsi Inglis|Florens Najtingejl|Džulija Hjuz
+Koji srpski lekar je osnovao Srpsko lekarsko društvo 1872?|Vladan Đorđević|Laza Lazarević|Milan Jovanović Batut|Đorđe Nešić
+Koji srpski lekar je bio i pisac, autor pripovetke „Švabica”?|Laza Lazarević|Vladan Đorđević|Milan Jovanović Batut|Jovan Jovanović Zmaj
+Koji pesnik je bio i lekar, a pisao dečje pesme?|Jovan Jovanović Zmaj|Laza Kostić|Đura Jakšić|Branko Radičević
+Po kom lekaru je nazvan Institut za javno zdravlje Srbije?|Milan Jovanović Batut|Vladan Đorđević|Laza Lazarević|Ivan Ribar
+Koji srpski fiziolog je osnivač naše fiziologije, poznat po istraživanjima hipotermije?|Ivan Đaja|Milan Jovanović Batut|Vladan Đorđević|Josif Pančić
+Koja se tehnika prve pomoći koristi kod zastoja srca?|Kardiopulmonalna reanimacija (KPR)|Hajmlihov zahvat|Bočni položaj|Imobilizacija
+Koji zahvat se koristi kada se neko guši stranim telom?|Hajmlihov zahvat|KPR|Bočni položaj|Masaža srca
+Koji je odnos pritisaka na grudni koš i udisaja kod KPR odraslih?|30:2|15:2|5:1|10:5
+Koji broj hitne pomoći je u Srbiji?|194|192|193|112
+Koji broj policije je u Srbiji?|192|194|193|911
+Koji broj vatrogasaca je u Srbiji?|193|192|194|985
+Koji je jedinstveni evropski broj za hitne slučajeve?|112|911|999|100
+Kako se zove aparat koji strujom vraća normalan rad srca?|Defibrilator|Pejsmejker|Respirator|Inhalator
+Kako se zove uređaj ugrađen u telo koji održava ritam srca?|Pejsmejker|Defibrilator|Stent|Bajpas
+Kako se zove cevčica koja se ugrađuje da proširi suženu arteriju?|Stent|Kateter|Bajpas|Pejsmejker
+Kako se zove poremećaj koji se javlja posle teškog traumatskog događaja?|Posttraumatski stresni poremećaj|Depresija|Anksioznost|Fobija
+Kako se zove strah od visine?|Akrofobija|Klaustrofobija|Agorafobija|Arahnofobija
+Kako se zove strah od zatvorenog prostora?|Klaustrofobija|Akrofobija|Agorafobija|Hidrofobija
+Kako se zove strah od paukova?|Arahnofobija|Klaustrofobija|Ofidiofobija|Akrofobija
+Kako se zove strah od zmija?|Ofidiofobija|Arahnofobija|Kinofobija|Akrofobija
+Kako se zove strah od otvorenog prostora i gužve?|Agorafobija|Klaustrofobija|Akrofobija|Socijalna fobija
+Ko je osnivač psihoanalize?|Sigmund Frojd|Karl Gustav Jung|Alfred Adler|Ivan Pavlov
+Ko je proučavao uslovne reflekse na psima?|Ivan Pavlov|Sigmund Frojd|B. F. Skiner|Žan Pijaže
+Kako se zove poremećaj ishrane sa izgladnjivanjem?|Anoreksija|Bulimija|Gojaznost|Dijabetes
+Kako se zove bolest zavisnosti od alkohola?|Alkoholizam|Narkomanija|Gojaznost|Anoreksija
+Koja materija u cigaretama izaziva zavisnost?|Nikotin|Katran|Ugljen-monoksid|Amonijak
+Koja materija u kafi deluje stimulativno?|Kofein|Teobromin|Nikotin|Tein i tanin
+Koja materija u čokoladi je otrovna za pse?|Teobromin|Kofein|Šećer|Mleko
+Kako se zove teška, po život opasna alergijska reakcija?|Anafilaktički šok|Prehlada|Migrena|Gastritis
+Koji lek se ubrizgava kod anafilaktičkog šoka?|Adrenalin|Insulin|Aspirin|Penicilin
+Koja vrsta šećera je u krvi glavni izvor energije?|Glukoza|Fruktoza|Laktoza|Saharoza
+Koji šećer se nalazi u mleku?|Laktoza|Glukoza|Fruktoza|Maltoza
+Kako se zove nepodnošenje mlečnog šećera?|Intolerancija na laktozu|Celijakija|Dijabetes|Alergija na gluten
+Kako se zove bolest u kojoj je organizam osetljiv na gluten?|Celijakija|Intolerancija na laktozu|Krohnova bolest|Gastritis
+U kojim žitaricama se nalazi gluten?|Pšenici, raži i ječmu|Pirinču|Kukuruzu|Heljdi
+Koja masnoća se smatra lošom i podiže holesterol, iz industrijske hrane?|Trans masti|Omega-3 masne kiseline|Maslinovo ulje|Nezasićene masti
+U kojoj hrani ima mnogo omega-3 masnih kiselina?|U masnoj ribi|U šećeru|U belom hlebu|U suvom mesu
+Koliko otprilike grama soli dnevno preporučuje SZO kao maksimum?|5|15|1|25
+Šta znači skraćenica SZO?|Svetska zdravstvena organizacija|Srpska zdravstvena organizacija|Svetski zavod za oporavak|Služba zdravstvene obuke
+U kom gradu je sedište Svetske zdravstvene organizacije?|Ženevi|Njujorku|Parizu|Beču
+Koja organizacija sa crvenim krstom pruža humanitarnu pomoć?|Crveni krst|Lekari bez granica|UNICEF|Karitas
+Ko je osnivač Crvenog krsta?|Anri Dinan|Florens Najtingejl|Albert Švajcer|Klara Barton
+Koju nagradu je Anri Dinan dobio 1901. kao prvi dobitnik?|Nobelovu nagradu za mir|Oskara|Pulicerovu nagradu|Saharovljevu nagradu
+Koji dan se obeležava kao Svetski dan zdravlja?|7. april|1. decembar|31. maj|10. oktobar
+Koji dan je Svetski dan borbe protiv side?|1. decembar|7. april|4. februar|14. novembar
+Koji dan je Svetski dan bez duvanskog dima?|31. maj|7. april|1. decembar|5. jun
+Kako se zove sistem koji brani telo od bolesti?|Imunski sistem|Nervni sistem|Endokrini sistem|Limfni sistem
+Kako se zovu proteini koje telo stvara protiv mikroba?|Antitela|Antigeni|Enzimi|Hormoni
+Šta su virusi u odnosu na bakterije?|Mnogo manji i ne žive samostalno|Veći|Iste veličine|Biljke
+Kako se zove pojava kada bolest pogađa ceo svet?|Pandemija|Epidemija|Endemija|Infekcija
+Koje godine je SZO proglasila pandemiju kovida 19?|2020.|2019.|2021.|2018.
+Kako se zove period od zaraze do pojave simptoma?|Inkubacija|Rekonvalescencija|Remisija|Karantin
+Odakle potiče reč „karantin”?|Od italijanskog „40 dana”|Od latinskog „zatvor”|Od grčkog „bolest”|Od arapskog „čekanje”
+U kom gradu je prvi put uveden karantin 1377?|Dubrovniku|Veneciji|Đenovi|Marseju
+Kako se zove oporavak posle bolesti?|Rekonvalescencija|Inkubacija|Remisija|Relaps
+Kako se zove povratak bolesti posle poboljšanja?|Recidiv (relaps)|Remisija|Inkubacija|Imunitet
+Kako se zove lek koji obara temperaturu?|Antipiretik|Antibiotik|Antihistaminik|Anestetik
+Kako se zove lek protiv alergija?|Antihistaminik|Antibiotik|Antipiretik|Analgetik
+Kako se zove lek protiv bolova?|Analgetik|Antibiotik|Antihistaminik|Diuretik
+Kako se zove lek koji podstiče izbacivanje vode iz organizma?|Diuretik|Laksativ|Analgetik|Antacid
+Kako se zove lek bez aktivne supstance u ispitivanjima?|Placebo|Generik|Antidot|Serum
+Kako se zove protivotrov?|Antidot|Placebo|Vakcina|Antiseptik
+Ko je uveo antiseptičko pranje ruku u porodilištima, „spasitelj majki”?|Ignac Zemelvajs|Džozef Lister|Luj Paster|Robert Koh
+Ko je uveo antisepsu u hirurgiju karbolnom kiselinom?|Džozef Lister|Ignac Zemelvajs|Luj Paster|Teodor Kocher
+Koliko dugo se preporučuje pranje ruku sapunom?|Najmanje 20 sekundi|3 sekunde|2 minuta|5 minuta
+Po kome je, prema legendi, carski rez dobio ime?|Po Juliju Cezaru|Po Avgustu|Po Neronu|Po Napoleonu
+Koliko nedelja traje normalna trudnoća, otprilike?|40|30|36|52
+Koja je najčešća bolest zuba?|Karijes|Paradontoza|Gingivitis|Afte
+Kako se zove upala desni?|Gingivitis|Karijes|Stomatitis|Tonzilitis
+Koliko često je preporučeno prati zube dnevno?|Dva puta|Jednom nedeljno|Pet puta|Jednom mesečno
+Koliko otprilike treba menjati četkicu za zube?|Na 3 meseca|Na 3 godine|Svake nedelje|Jednom u životu
+Kako se zove spoj dve kosti?|Zglob|Tetiva|Ligament|Hrskavica
+Šta povezuje mišić sa kosti?|Tetiva|Ligament|Hrskavica|Nerv
+Šta povezuje kost sa kosti u zglobu?|Ligament (veza)|Tetiva|Mišić|Nerv
+Kako se zove povreda istegnuća ligamenta, npr. kod skočnog zgloba?|Uganuće|Prelom|Iščašenje|Kontuzija
+Kako se zove kada kost izađe iz zgloba?|Iščašenje|Uganuće|Prelom|Napuklina
+Kako se zove modrica stručno?|Hematom|Edem|Ekcem|Apsces
+Kako se zove otok zbog nakupljanja tečnosti?|Edem|Hematom|Ekcem|Cista
+Kako se zove svrab i crvenilo kože, hronična bolest?|Ekcem (atopijski dermatitis)|Psorijaza|Akne|Herpes
+Koja bolest kože ima srebrnaste ljuspe?|Psorijaza|Ekcem|Akne|Vitiligo
+Koja bolest kože ima bele fleke bez pigmenta?|Vitiligo|Psorijaza|Ekcem|Melanom
+Kako se zovu bubuljice kod tinejdžera?|Akne|Ekcem|Herpes|Psorijaza
+Koji virus izaziva „groznicu” na usnama?|Herpes simpleks|HPV|Varičela|Grip
+Od kog virusa nastaje herpes zoster (pojasni herpes)?|Virusa ovčijih boginja|Virusa gripa|HPV-a|HIV-a
+Koja vakcina štiti od raka grlića materice?|HPV vakcina|BCG|MMR|DTP
+Šta pokriva MMR vakcina?|Male boginje, zauške i rubeolu|Tetanus i difteriju|Hepatitis A i B|Grip
+Protiv koje bolesti je BCG vakcina?|Tuberkuloze|Tetanusa|Gripa|Hepatitisa
+Koja bakterija izaziva tetanus ulaskom kroz ranu?|Klostridijum tetani|Salmonela|Ešerihija koli|Stafilokok
+Koja bakterija često izaziva trovanje hranom (jaja, piletina)?|Salmonela|Tetanus|Kohov bacil|Spiroheta
+Koja je najsmrtonosnija prirodna otrovna supstanca poznata čoveku?|Botulinski toksin|Cijanid|Arsen|Strihnin
+Koji kozmetički tretman koristi razblažen botulinski toksin?|Botoks|Hijaluron|Kolagen|Piling
+Koji gas bez boje i mirisa je smrtonosan, a nastaje od loših peći?|Ugljen-monoksid|Ugljen-dioksid|Azot|Metan
+Kako se zove ubrzano disanje usled panike?|Hiperventilacija|Apneja|Asfiksija|Dispneja
+Kako se zove snižena telesna temperatura opasna po život?|Hipotermija|Hipertermija|Groznica|Dehidracija
+Kako se zove gubitak vode iz organizma?|Dehidracija|Hipotermija|Edem|Anemija
+Kako se zove pregrevanje tela, npr. od sunca?|Toplotni udar|Hipotermija|Šok|Kolaps
+Koji UV zraci uglavnom izazivaju opekotine od sunca?|UVB|UVA|UVC|Infracrveni
+Šta znači oznaka SPF na kremi za sunčanje?|Zaštitni faktor od sunca|Spisak sastojaka|Vodootpornost|Rok trajanja
+Koliko otprilike posto težine tela čini krv?|7–8%|20%|2%|40%
+Koliko otprilike puta dnevno treptimo?|15.000–20.000|100|1.000|1 milion
+Kojim čulom se najbolje pamte uspomene, prema istraživanjima?|Mirisom|Vidom|Sluhom|Dodirom
+Kako se zove osoba koja podjednako koristi obe ruke?|Ambidekstra|Levoruka|Desnoruka|Ambivalentna
+Otprilike koliko posto ljudi je levoruko?|10%|30%|1%|50%
+Koji je naziv za strah od zubara?|Dentofobija|Klaustrofobija|Akrofobija|Ksenofobija
+Šta je „kucanje” u kolenu kada lekar čekićem udari ispod čašice?|Refleks|Grč|Zglob|Bol
+Koji organ može da se regeneriše i ponovo izraste delom?|Jetra|Srce|Mozak|Bubreg
+Bez kog organa čovek može normalno da živi, iako je deo imunog sistema?|Slezine|Srca|Jetre|Mozga
+Koji organ je „zaostatak” evolucije, a može se upaliti?|Slepo crevo|Jetra|Slezina|Žučna kesa
+Kako se zove pupak stručno?|Umbilikus|Sternum|Kokcix|Patela
+Kako se zove trtična kost?|Kokcix|Sakrum|Atlas|Sternum
+Kako se zove prvi vratni pršljen, po titanu koji drži nebo?|Atlas|Aksis|Titan|Herkul
+Kako se zove drugi vratni pršljen?|Aksis|Atlas|Kokcix|Sakrum
+Kojim delom mozga razmišljamo, planiramo i odlučujemo?|Čeonim režnjem|Malim mozgom|Potiljačnim režnjem|Moždanim stablom
+Koji režanj mozga obrađuje vid?|Potiljačni|Čeoni|Slepoočni|Temeni
+Kako se zove „hormon rasta” koji luči hipofiza?|Somatotropin|Insulin|Tiroksin|Kortizol
+Koji muški polni hormon dominira?|Testosteron|Estrogen|Progesteron|Oksitocin
+Koji ženski polni hormon dominira?|Estrogen|Testosteron|Adrenalin|Glukagon

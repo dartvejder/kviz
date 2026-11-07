@@ -1,0 +1,286 @@
+Ko je osnovao kompaniju Majkrosoft zajedno sa Polom Alenom?|Bil Gejts|Stiv Džobs|Mark Zakerberg|Lari Pejdž
+Ko je osnovao Epl zajedno sa Stivom Voznijakom?|Stiv Džobs|Bil Gejts|Lari Elison|Majkl Del
+Koje godine je osnovana kompanija Epl?|1976.|1984.|1969.|1990.
+Koje godine je predstavljen prvi Ajfon?|2007.|2004.|2010.|2001.
+Ko je osnovao Fejsbuk?|Mark Zakerberg|Džek Dorsi|Lari Pejdž|Elon Mask
+Koje godine je pokrenut Fejsbuk?|2004.|2000.|2008.|1998.
+Ko su osnivači Gugla?|Lari Pejdž i Sergej Brin|Bil Gejts i Pol Alen|Stiv Džobs i Voznijak|Džef Bezos i Elon Mask
+Koje godine je osnovan Gugl?|1998.|1994.|2002.|2005.
+Ko je osnovao Amazon?|Džef Bezos|Elon Mask|Bil Gejts|Lari Elison
+Šta je Amazon prvobitno prodavao?|Knjige|Elektroniku|Odeću|Muziku
+Koja kompanija pravi Plejstejšn?|Soni|Nintendo|Majkrosoft|Sega
+Koja kompanija pravi konzolu Iks boks?|Majkrosoft|Soni|Nintendo|Sega
+Koja kompanija je napravila Game Boy?|Nintendo|Soni|Sega|Atari
+Kako se zove Nintendov brkati vodoinstalater?|Mario|Luiđi|Sonik|Link
+Kako se zove plavi jež iz Seginih igara?|Sonik|Mario|Krash|Spajro
+Koja igra slaže padajuće oblike i nastala je u SSSR-u?|Tetris|Pac-Man|Snake|Space Invaders
+Ko je izmislio Tetris?|Aleksej Pažitnov|Šigeru Mijamoto|Nolan Bušnel|Tim Svini
+Koja žuta figura jede tačkice i beži od duhova?|Pac-Man|Mario|Kirbi|Sonik
+Koja igra kockica je najprodavanija video-igra svih vremena?|Majnkraft|Tetris|GTA V|Fortnajt
+Koja švedska kompanija je napravila Majnkraft?|Mojang|Ubisoft|DICE|Rovio
+Koja finska kompanija je napravila „Angry Birds”?|Rovio|Supercell|Mojang|Nokia
+Iz koje zemlje potiče kompanija Nokia?|Finske|Švedske|Norveške|Danske
+Iz koje zemlje potiče kompanija Samsung?|Južne Koreje|Japana|Kine|Tajvana
+Iz koje zemlje potiče kompanija Huawei?|Kine|Južne Koreje|Japana|Tajvana
+Iz koje zemlje potiče kompanija Soni?|Japana|Južne Koreje|Kine|SAD
+Iz koje zemlje potiče kompanija Siemens?|Nemačke|Austrije|Švajcarske|Holandije
+Iz koje zemlje potiče kompanija Filips?|Holandije|Belgije|Nemačke|Danske
+Kojoj kompaniji pripada operativni sistem Android?|Guglu|Eplu|Majkrosoftu|Samsungu
+Kako se zove Eplov operativni sistem za telefone?|iOS|Android|Vindouz|Linuks
+Ko je stvorio Linuks?|Linus Torvalds|Ričard Stolman|Bil Gejts|Denis Riči
+Kako se zove pingvin, maskota Linuksa?|Taks|Pingu|Tuks|Linko
+Kako se zove Majkrosoftov operativni sistem?|Vindouz|macOS|Linuks|Android
+Koje godine je izašao Vindouz 95?|1995.|1993.|1998.|2000.
+Ko je izumeo Svetsku mrežu (World Wide Web)?|Tim Berners-Li|Vint Serf|Bil Gejts|Mark Andresen
+U kojoj ustanovi je nastao WWW 1989?|CERN-u|MIT-u|NASA-i|Stanfordu
+Šta znači skraćenica WWW?|World Wide Web|Wide World Web|Web World Wide|World Web Works
+Kako se zvala prva računarska mreža, preteča interneta?|ARPANET|ETHERNET|USENET|BITNET
+Šta znači skraćenica „http”?|Protokol za prenos hiperteksta|Visoki tehnološki protokol|Kućni internet protokol|Hitni tekst protokol
+Šta označava „s” u „https”?|Sigurnu (šifrovanu) vezu|Brzinu|Servis|Sajt
+Šta je URL?|Adresa veb-stranice|Vrsta virusa|Program za crtanje|Vrsta kabla
+Šta znači skraćenica „Wi-Fi” u praksi?|Bežična lokalna mreža|Žična mreža|Satelitska veza|Bluetooth
+Po kom vikinškom kralju je dobio ime Bluetooth?|Haraldu Plavozubom|Ragnaru Lodbroku|Eriku Crvenom|Knutu Velikom
+Koja je oznaka domena Srbije na internetu?|.rs|.sr|.yu|.srb
+Koji je bio internet domen Jugoslavije?|.yu|.ju|.sfrj|.jg
+Koji znak se nalazi u svakoj imejl adresi?|@|#|&|%
+Kako se kod nas popularno zove znak @?|Majmunče|Ručica|Puž|Kukica
+Ko je poslao prvi imejl 1971. i uveo znak @?|Rej Tomlinson|Tim Berners-Li|Vint Serf|Bil Gejts
+Kako se zove neželjena imejl pošta?|Spam|Fišing|Kolačić|Bag
+Kako se zove prevara kojom se lažnim porukama kradu lozinke?|Fišing|Spam|Hakovanje|Kripto
+Kako se zove mali fajl koji sajt čuva u pregledaču?|Kolačić (cookie)|Virus|Plagin|Keš
+Kako se zove zlonamerni program koji šifruje fajlove i traži otkup?|Ransomver|Spajver|Adver|Trojanac
+Kako se zove program koji se predstavlja kao koristan, a štetan je?|Trojanac|Crv|Spam|Kolačić
+Šta je „bag” u programiranju?|Greška u programu|Vrsta procesora|Antivirus|Vrsta kabla
+Ko je popularizovao izraz „bag” kada je pronašla moljca u računaru?|Grejs Hoper|Ada Lavlejs|Hedi Lamar|Margaret Hamilton
+Ko se smatra prvom programerkom u istoriji?|Ada Lavlejs|Grejs Hoper|Marija Kiri|Hedi Lamar
+Za čiju mašinu je Ada Lavlejs pisala program?|Čarlsa Bebidža|Alana Tjuringa|Džona fon Nojmana|Blejza Paskala
+Ko se smatra ocem računara, autor „analitičke mašine”?|Čarls Bebidž|Alan Tjuring|Džon fon Nojman|Konrad Cuze
+Ko je razbio nemačku Enigmu i smatra se ocem računarstva i veštačke inteligencije?|Alan Tjuring|Čarls Bebidž|Džon fon Nojman|Klod Šenon
+Kako se zove test da li mašina može da se ponaša kao čovek?|Tjuringov test|Bebidžov test|Turing kod|Fon Nojmanov test
+Koja holivudska glumica je izumela tehnologiju koja je preteča Wi-Fi-ja i Bluetootha?|Hedi Lamar|Merilin Monro|Grejs Keli|Odri Hepbern
+Kako se zvao prvi elektronski računar opšte namene iz 1946?|ENIAC|UNIVAC|Kolos|Mark I
+Koliko bitova ima jedan bajt?|8|4|10|16
+Koliko bajtova ima kilobajt (tradicionalno u računarstvu)?|1024|1000|512|2048
+Šta je veće: gigabajt ili terabajt?|Terabajt|Gigabajt|Isti su|Zavisi
+Koliko gigabajta ima terabajt (otprilike)?|1000|100|10|10.000
+Koje cifre koristi binarni sistem?|0 i 1|0 do 9|1 i 2|0 do 7
+Kako se zapisuje broj 5 u binarnom sistemu?|101|110|111|100
+Kako se zove „mozak” računara?|Procesor (CPU)|Hard disk|Monitor|Tastatura
+Šta znači skraćenica CPU?|Centralna procesorska jedinica|Kompjuterska programska jedinica|Centralna pomoćna jedinica|Kontrolna procesna jedinica
+Šta znači skraćenica RAM?|Memorija sa slučajnim pristupom|Samo-čitajuća memorija|Brza disk memorija|Radna arhiva memorije
+Šta znači skraćenica ROM?|Memorija samo za čitanje|Brza radna memorija|Spoljna memorija|Rezervna memorija
+Šta znači skraćenica GPU?|Grafička procesorska jedinica|Glavna procesna jedinica|Opšta programska jedinica|Grafički programski uređaj
+Šta je SSD?|Brzi disk bez pokretnih delova|Vrsta monitora|Grafička kartica|Kabl za internet
+Koja kompanija je najpoznatija po grafičkim karticama GeForce?|Nvidia|Intel|AMD|Kvalkom
+Kako se zove zakon da se broj tranzistora na čipu udvostručuje svake dve godine?|Murov zakon|Omov zakon|Njutnov zakon|Metkalfov zakon
+Ko je jedan od osnivača Intela, po kom je nazvan zakon o tranzistorima?|Gordon Mur|Robert Nojs|Endi Grouv|Bil Gejts
+Kako se zove dolina u Kaliforniji poznata po tehnološkim kompanijama?|Silicijumska dolina|Zlatna dolina|Tehnološka dolina|Dolina smrti
+Od kog materijala se prave čipovi?|Silicijuma|Bakra|Zlata|Gvožđa
+Kako se zove raspored slova na većini tastatura?|QWERTY|ABCDEF|AZERTY|DVORAK
+Koji raspored tastature se koristi u Srbiji za latinicu?|QWERTZ|QWERTY|AZERTY|DVORAK
+Koja kombinacija tastera služi za kopiranje u Vindouzu?|Ctrl+C|Ctrl+V|Ctrl+X|Ctrl+Z
+Koja kombinacija tastera služi za lepljenje?|Ctrl+V|Ctrl+C|Ctrl+P|Ctrl+A
+Koja kombinacija tastera poništava poslednju radnju?|Ctrl+Z|Ctrl+Y|Ctrl+X|Ctrl+U
+Koja kombinacija tastera selektuje sve?|Ctrl+A|Ctrl+S|Ctrl+E|Ctrl+L
+Koja kombinacija tastera čuva dokument?|Ctrl+S|Ctrl+C|Ctrl+D|Ctrl+O
+Ko je izumeo računarski miš?|Daglas Engelbart|Stiv Džobs|Bil Gejts|Alan Kej
+Šta je bila jugoslovenska „Galaksija” iz 1983?|Računar za samogradnju|Igračka konzola|Mobilni telefon|Kalkulator
+Ko je konstruisao jugoslovenski računar „Galaksija”?|Voja Antonić|Nikola Tesla|Mihajlo Pupin|Rajko Tomović
+Koji računar je bio najpopularniji kućni računar u Jugoslaviji 80-ih?|Komodor 64|Atari 2600|Epl II|IBM PC
+Koji britanski kućni računar sa gumenim tasterima je bio popularan 80-ih?|ZX Spectrum|Komodor 64|Amiga|Atari ST
+Kako se zvao prvi srpski digitalni računar sa Instituta „Mihajlo Pupin”?|CER|Galaksija|Pupin 1|Vinča
+Koji programski jezik je dobio ime po britanskoj komičarskoj grupi?|Pajton|Java|Rubi|Perl
+Po kojoj komičarskoj grupi je Pajton dobio ime?|Monti Pajton|Mr. Bin|Blekader|Fawlty Towers
+Koji programski jezik je dobio ime po indonežanskom ostrvu?|Java|Pajton|Rubi|Swift
+Koji jezik se koristi za izgled veb-stranica?|CSS|SQL|C++|Fortran
+Koji jezik je osnova strukture veb-stranica?|HTML|SQL|Pajton|C
+Koji jezik se koristi za upite u bazama podataka?|SQL|HTML|CSS|Java
+Koji jezik pokreće interaktivnost u veb-pregledačima?|JavaScript|Pajton|C#|PHP
+Koji programski jezik je stvorio Denis Riči?|C|Java|Pajton|Paskal
+Koji jezik je stvorio Bjarne Stroustrup?|C++|C#|Java|Go
+Kako se zove poznati program „Zdravo, svete” na engleskom?|Hello, World!|Hi there|Good morning|Start
+Kako se zove sajt na kom programeri postavljaju kod, kupljen od Majkrosofta 2018?|GitHub|GitLab|Stack Overflow|SourceForge
+Koji je najposećeniji sajt na svetu?|Gugl|Jutjub|Fejsbuk|Vikipedija
+Koje godine je pokrenut Jutjub?|2005.|2002.|2008.|2010.
+Koja kompanija je kupila Jutjub 2006?|Gugl|Majkrosoft|Jahu|Fejsbuk
+Kako se zvao prvi video na Jutjubu?|Me at the zoo|Charlie bit my finger|Gangnam Style|Hello YouTube
+Koja pesma je prva dostigla milijardu pregleda na Jutjubu?|Gangnam Style|Despacito|Baby|See You Again
+Koje godine je pokrenuta Vikipedija?|2001.|1998.|2004.|2006.
+Ko je osnivač Vikipedije?|Džimi Vejls|Lari Pejdž|Džek Dorsi|Mark Zakerberg
+Koja društvena mreža je imala logo plave ptice?|Tviter|Fejsbuk|Instagram|Linkedin
+Kako se Tviter zove od 2023?|X|Meta|Threads|Bluesky
+Koja kompanija je vlasnik Instagrama i Vocapa?|Meta|Gugl|Majkrosoft|Epl
+Koliko karaktera je originalno imala poruka na Tviteru?|140|160|280|500
+Koja društvena mreža je poznata po kratkim videima i kineskog je porekla?|TikTok|Snapčet|Instagram|Pinterest
+Koja aplikacija je poznata po porukama koje nestaju i duhu u logou?|Snapčet|Tinder|Telegram|Signal
+Koja društvena mreža je namenjena poslovnim kontaktima?|Linkedin|Tviter|Redit|Pinterest
+Koja aplikacija za poruke ima zelenu ikonicu sa telefonom?|WhatsApp|Viber|Telegram|Signal
+Koja aplikacija za pozive ima ljubičastu ikonicu i popularna je na Balkanu?|Viber|WhatsApp|Skajp|Telegram
+Koja platforma je najpoznatija za striming filmova i serija sa crvenim N?|Netfliks|HBO Max|Dizni plus|Hulu
+Šta je Netfliks prvobitno radio?|Iznajmljivao DVD-ove poštom|Pravio filmove|Prodavao televizore|Bio televizija
+Koja švedska platforma je najveći muzički striming servis?|Spotifaj|Dizer|Tajdal|Epl Mjuzik
+Koja kompanija je napravila pretraživač Krom?|Gugl|Majkrosoft|Mozila|Epl
+Koji pregledač ima lisicu u logou?|Fajerfoks|Krom|Opera|Edž
+Kako se zvao Majkrosoftov stari veb-pregledač?|Internet Eksplorer|Netskejp|Safari|Opera
+Kako se zove Eplov pregledač?|Safari|Krom|Edž|Opera
+Kako se zove Gugl pomoćnik u telefonu, a kako Eplov?|Gugl Asistent i Siri|Aleksa i Kortana|Siri i Aleksa|Bikbi i Kortana
+Kako se zove Amazonov glasovni asistent?|Aleksa|Siri|Kortana|Bikbi
+Šta znači skraćenica AI (VI)?|Veštačka inteligencija|Automatski internet|Aktivna informacija|Analogni interfejs
+Koja kompanija je napravila ChatGPT?|OpenAI|Gugl|Majkrosoft|Meta
+Koje godine je ChatGPT predstavljen javnosti?|2022.|2018.|2020.|2024.
+Koji program kompanije DeepMind je pobedio svetskog prvaka u igri go 2016?|AlphaGo|Deep Blue|Watson|Stockfish
+Koji računar je pobedio Kasparova u šahu 1997?|Deep Blue|AlphaZero|Watson|HAL 9000
+Kako se zove računar u filmu „Odiseja u svemiru 2001”?|HAL 9000|Skajnet|Džarvis|Matrica
+Ko je napisao „Tri zakona robotike”?|Isak Asimov|Artur K. Klark|Filip K. Dik|Karel Čapek
+Šta je „dron”?|Bespilotna letelica|Vrsta robota za čišćenje|Mobilni telefon|Pametni sat
+Šta je QR kod?|Kvadratni kod koji se skenira telefonom|Vrsta lozinke|Program za crtanje|Kabl
+U kojoj zemlji je izmišljen QR kod?|Japanu|Kini|SAD|Nemačkoj
+Šta znači skraćenica GPS?|Globalni sistem za pozicioniranje|Opšti sistem za pretragu|Geografski poštanski sistem|Globalna poštanska služba
+Koliko otprilike satelita je potrebno da prijemnik odredi poziciju GPS-om?|4|1|2|10
+Kako se zove evropski sistem satelitske navigacije?|Galileo|GLONASS|Beidou|Kopernik
+Šta znači skraćenica USB?|Univerzalna serijska magistrala|Ultra brzi bajt|Unutrašnja sistemska baterija|Univerzalni sistem baze
+Šta znači skraćenica PDF?|Prenosivi format dokumenta|Program za fotografije|Paket digitalnih fajlova|Prvi dokument formata
+Koja kompanija je napravila PDF format?|Adobi|Majkrosoft|Epl|Gugl
+Koji program kompanije Adobi se koristi za obradu fotografija?|Fotošop|Vord|Ekscel|Paint
+Koji Majkrosoftov program služi za tabele?|Ekscel|Vord|PauerPoint|Autluk
+Koji Majkrosoftov program služi za prezentacije?|PauerPoint|Ekscel|Vord|Akses
+Šta znači skraćenica „LOL” u porukama?|Glasno se smejem|Puno ljubavi|Laku noć|Gubitnik
+Šta znači skraćenica „BTW”?|Usput (by the way)|Vrati se (back)|Najbolje želje|Vidimo se
+Kako se zove sličica koja izražava emociju u porukama?|Emodži|Gif|Mim|Stiker
+U kojoj zemlji su izmišljeni emodžiji?|Japanu|SAD|Južnoj Koreji|Kini
+Kako se zove smešna slika sa tekstom koja se širi internetom?|Mim|Emodži|Fišing|Avatar
+Šta znači skraćenica „GIF”?|Format za animirane slike|Grafički internet fajl|Opšta slika|Video zapis
+Kako se zove lažni nalog ili osoba koja namerno provocira na internetu?|Trol|Bot|Haker|Stalker
+Kako se zove program koji automatski obavlja zadatke na internetu?|Bot|Trol|Kolačić|Server
+Šta je „oblak” (cloud) u računarstvu?|Skladištenje i rad na udaljenim serverima|Vrsta virusa|Bežična mreža|Vrsta ekrana
+Koja kompanija pruža najveće usluge u oblaku, AWS?|Amazon|Gugl|Majkrosoft|IBM
+Šta je „blokčejn”?|Decentralizovana baza podataka u blokovima|Vrsta virusa|Vrsta procesora|Društvena mreža
+Koja je prva kriptovaluta?|Bitkoin|Etirijum|Doudžkoin|Ripl
+Ko je tvorac Bitkoina pod pseudonimom?|Satoši Nakamoto|Vitalik Buterin|Elon Mask|Hal Fini
+Koje godine je Bitkoin pokrenut?|2009.|2005.|2013.|2017.
+Koja kriptovaluta ima psa šiba inu u logou?|Doudžkoin|Bitkoin|Etirijum|Litkoin
+Ko je osnovao kompaniju Tesla Motors (u kojoj je Elon Mask kasnije bio direktor)?|Martin Eberhard i Mark Tarpening|Elon Mask sam|Nikola Tesla|Bil Gejts
+Po kome je dobila ime kompanija Tesla?|Po Nikoli Tesli|Po Elonu Mosku|Po mestu Tesla|Po jedinici tesla
+Koja kompanija Elona Maska šalje rakete u svemir?|SpejsIks|Blu Orižin|NASA|Boing
+Koja kompanija pravi automobile marke Volkswagen, Audi i Porše?|Folksvagen grupa|BMW|Mercedes|Stelantis
+Koji je prvi automobil masovno proizveden na traci?|Ford model T|Folksvagen buba|Fijat 500|Mercedes 300
+Ko je napravio prvi automobil sa motorom na benzin 1886?|Karl Benc|Henri Ford|Gotlib Dajmler|Rudolf Dizel
+Ko je izumeo dizel motor?|Rudolf Dizel|Karl Benc|Nikolaus Oto|Džejms Vat
+Ko je usavršio parnu mašinu?|Džejms Vat|Tomas Njukomen|Robert Fulton|Džordž Stivenson
+Ko je napravio prvu parnu lokomotivu za javnu prugu („Raketa”)?|Džordž Stivenson|Džejms Vat|Robert Fulton|Ričard Trevitik
+Ko je izveo prvi kontrolisani let motornim avionom 1903?|Braća Rajt|Braća Monglfije|Luj Blerio|Otto Lilijental
+Ko su prvi poleteli balonom na topao vazduh 1783?|Braća Monglfije|Braća Rajt|Ferdinand Cepelin|Luj Blerio
+Ko je prvi preleteo Lamanš avionom 1909?|Luj Blerio|Čarls Lindberg|Braća Rajt|Amelija Erhart
+Ko je prvi preleteo Atlantik sam, bez prekida, 1927?|Čarls Lindberg|Amelija Erhart|Luj Blerio|Hauard Hjuz
+Koja je prva žena koja je sama preletela Atlantik?|Amelija Erhart|Valentina Tereškova|Hedi Lamar|Džeki Kokran
+Kako se zvao putnički nadzvučni avion koji je leteo do 2003?|Konkord|Boing 747|Tupoljev 104|Erbas A380
+Koji je najveći putnički avion na svetu?|Erbas A380|Boing 747|Antonov An-225|Boing 777
+Koji je najveći transportni avion ikada napravljen, uništen 2022?|Antonov An-225 Mrija|Erbas A380|Boing 747|Lokid C-5
+Ko je izumeo telefon (patent 1876)?|Aleksandar Grejem Bel|Tomas Edison|Antonio Meuči|Nikola Tesla
+Ko je prvi poslao radio signal preko Atlantika 1901?|Gulijelmo Markoni|Nikola Tesla|Hajnrih Herc|Aleksandar Popov
+Ko je izumeo telegraf i azbuku od tačaka i crta?|Samjuel Morze|Aleksandar Bel|Tomas Edison|Markoni
+Kako se piše SOS Morzeovom azbukom?|… — — — …|— — — … — — —|… … …|— … —
+Ko je izumeo sijalicu sa dugotrajnim vlaknom (patent 1879)?|Tomas Edison|Nikola Tesla|Džozef Svon|Hamfri Dejvi
+Ko je izumeo fonograf?|Tomas Edison|Emil Berliner|Aleksandar Bel|Nikola Tesla
+Ko je izumeo gramofon sa pločom?|Emil Berliner|Tomas Edison|Markoni|Bel
+Ko je izumeo televiziju (prvi javni prikaz 1926)?|Džon Logi Berd|Filo Farnsvort|Vladimir Zvorikin|Tomas Edison
+Ko je izumeo štampariju sa pokretnim slovima u Evropi?|Johan Gutenberg|Martin Luter|Vilijam Kakston|Aldo Manucije
+Koja je prva knjiga koju je štampao Gutenberg?|Biblija|Kuran|Ilijada|Psaltir
+Kako se zove prva štampana knjiga na srpskoslovenskom jeziku (1494)?|Oktoih prvoglasnik|Miroslavljevo jevanđelje|Zakonopravilo|Psaltir
+U kojoj štampariji je odštampan „Oktoih prvoglasnik”?|Crnojevića štampariji na Cetinju|U Beogradu|U Veneciji|U Hilandaru
+Ko je izumeo fotoaparat i prvu trajnu fotografiju (1826/27)?|Nisefor Nijeps|Luj Dager|Džordž Istman|Braća Limijer
+Ko su prvi javno prikazali film 1895?|Braća Limijer|Tomas Edison|Žorž Melijes|Braća Vorner
+Koja kompanija je napravila prvi masovni fotoaparat „Brauni”?|Kodak|Polaroid|Kanon|Nikon
+Koja kompanija je bila poznata po fotografijama koje se odmah razviju?|Polaroid|Kodak|Fudži|Lajka
+Ko je izumeo dinamit?|Alfred Nobel|Tomas Edison|Nikola Tesla|Antoan Lavoazje
+Ko je izumeo naizmenični motor i sistem prenosa struje?|Nikola Tesla|Tomas Edison|Džordž Vestinghaus|Majkl Faradej
+Ko je izumeo bateriju (Voltin stub)?|Alesandro Volta|Luiđi Galvani|Andre Amper|Majkl Faradej
+Ko je otkrio elektromagnetnu indukciju?|Majkl Faradej|Nikola Tesla|Džejms Maksvel|Andre Amper
+Ko je izumeo gromobran?|Bendžamin Frenklin|Nikola Tesla|Tomas Edison|Alesandro Volta
+Čiji sistem naizmenične struje je korišćen u hidroelektrani na Nijagari 1895?|Nikole Tesle|Tomasa Edisona|Mihajla Pupina|Markonija
+Koja jedinica za jačinu magnetnog polja nosi ime po Tesli?|Tesla|Vat|Volt|Herc
+Koji srpski naučnik je izumeo „Pupinove kalemove” za telefonske linije?|Mihajlo Pupin|Nikola Tesla|Milutin Milanković|Ogneslav Kostović
+Koji srpski izumitelj je izumeo materijal „arbonit”, preteču šperploče?|Ogneslav Kostović Stepanović|Mihajlo Pupin|Đorđe Stanojević|Kosta Stamenković
+U kom gradu je izgrađena prva hidroelektrana u Srbiji po Teslinim principima (1900)?|Užicu|Beogradu|Nišu|Valjevu
+Po čemu je poznat Ivan Sarić iz Subotice?|Po prvom letu avionom domaće izrade u Srbiji|Po prvom automobilu|Po telefonu|Po radiju
+Koja jugoslovenska fabrika je proizvodila automobile „Zastava”?|Crvena zastava u Kragujevcu|IMR u Rakovici|FAP u Priboju|IMT u Beogradu
+Koji automobil je bio popularno zvan „Fića”?|Zastava 750|Zastava 101|Jugo 45|Zastava 128
+Koji automobil je popularno zvan „Stojadin”?|Zastava 101|Zastava 750|Jugo 45|Zastava Florida
+Koji jugoslovenski automobil se prodavao u SAD od 1985?|Jugo|Fića|Stojadin|Florida
+Koja fabrika je pravila kamione u Priboju?|FAP|IMR|IMT|Zastava
+Koja fabrika je pravila traktore u Beogradu?|IMT|IMR|FAP|Ikarbus
+Koja fabrika je pravila autobuse u Zemunu?|Ikarbus|IMT|FAP|Zastava
+Koja fabrika je pravila motocikle „Tomos”?|Tomos u Kopru (Slovenija)|IMR u Rakovici|Zastava|FAP
+Koji kineski proizvođač je preuzeo železaru u Smederevu 2016?|HBIS|Huawei|Linglong|Zijin
+Koja kineska kompanija ima fabriku guma kod Zrenjanina?|Linglong|HBIS|Zijin|Mint
+Koja kompanija je preuzela RTB Bor 2018?|Zijin|HBIS|Linglong|Rio Tinto
+Šta je „5G”?|Peta generacija mobilne mreže|Brzina procesora|Vrsta Wi-Fi rutera|Vrsta baterije
+Koja država je prva uvela 4G mrežu komercijalno (2009)?|Švedska i Norveška|SAD|Japan|Južna Koreja
+Koji je bio prvi mobilni operater u Srbiji?|Mobtel (063)|Telenor|Vip|A1
+Koji pozivni broj je imao Mobtel?|063|064|062|060
+Koji je pozivni broj Srbije za međunarodne pozive?|+381|+38|+385|+387
+Koji je pozivni broj Beograda?|011|021|018|034
+Koji je pozivni broj Novog Sada?|021|011|018|024
+Koji je pozivni broj Niša?|018|011|021|034
+Koji je pozivni broj Kragujevca?|034|018|021|032
+Ko je obavio prvi poziv mobilnim telefonom 1973?|Martin Kuper (Motorola)|Stiv Džobs|Bil Gejts|Aleksandar Bel
+Koji mobilni telefon kompanije Nokia je poznat kao „neuništiv” i ima igru Zmija?|Nokia 3310|Nokia 6110|Nokia 8800|Nokia N95
+Koja kompanija je pravila Blekberi telefone?|RIM (Kanada)|Nokia|Motorola|Erikson
+Šta znači SMS?|Kratka tekstualna poruka|Specijalni mobilni sistem|Slanje mejla|Siguran mobilni servis
+Koliko karaktera ima standardna SMS poruka?|160|140|100|200
+Šta je „aplikacija” na telefonu?|Program|Igrica samo|Vrsta baterije|Vrsta ekrana
+Kako se zove Guglova prodavnica aplikacija?|Gugl Plej|Ep Stor|Galaksi Stor|Ap Market
+Kako se zove Eplova prodavnica aplikacija?|Ep Stor|Gugl Plej|Ajtjuns|Ajklaud
+Koji uređaj je Epl predstavio 2001. za slušanje muzike?|Ajpod|Ajpad|Ajmek|Volkmen
+Koja kompanija je napravila Volkmen 1979?|Soni|Panasonik|Filips|Toshiba
+Koja kompanija je izumela audio kasetu?|Filips|Soni|Panasonik|Grundig
+Koje dve kompanije su razvile CD?|Filips i Soni|Epl i Majkrosoft|Kodak i Polaroid|Toshiba i Šarp
+Koji je format pobedio u ratu video formata 80-ih protiv Betamaksa?|VHS|DVD|Laserdisk|Video 2000
+Koji format je pobedio HD DVD u ratu formata?|Blu-rej|VHS|CD|Betamaks
+Šta je „piksel”?|Najmanja tačka na ekranu|Vrsta kabla|Jedinica za zvuk|Deo procesora
+Šta znači oznaka 4K kod televizora?|Rezolucija oko 4000 piksela širine|4 kanala zvuka|4 kilograma|4 godine garancije
+Šta znači skraćenica LED?|Svetleća dioda|Laserski ekran|Lagani električni displej|Linijski displej
+Šta znači skraćenica LCD?|Displej sa tečnim kristalima|Laserski svetleći displej|Linijski kolor displej|Lagani crni displej
+Šta znači skraćenica VR?|Virtuelna stvarnost|Vizuelni radio|Video zapis|Veliki ram
+Koja kompanija pravi VR naočare Kvest?|Meta|Soni|Epl|Samsung
+Kako se zovu Eplove naočare za mešanu stvarnost iz 2024?|Vižn Pro|Gugl Glas|Kvest|HoloLens
+Kako se zove Eplov pametni sat?|Epl Voč|Galaksi Voč|Fitbit|Garmin
+Šta je „hardver”?|Fizički delovi računara|Programi|Internet|Igre
+Šta je „softver”?|Programi u računaru|Fizički delovi računara|Kablovi|Tastatura
+Šta je „operativni sistem”?|Osnovni program koji upravlja računarom|Antivirusni program|Igrica|Pretraživač
+Šta je „ruter”?|Uređaj koji usmerava internet saobraćaj|Vrsta monitora|Štampač|Miš
+Šta je „IP adresa”?|Broj koji identifikuje uređaj na mreži|Imejl adresa|Lozinka|Ime sajta
+Šta je lozinka „123456”?|Jedna od najčešćih i najslabijih lozinki|Najjača lozinka|Kod za bankomat|PIN za SIM
+Šta je dvofaktorska autentifikacija?|Prijava sa lozinkom i dodatnim kodom|Dva naloga|Dve lozinke iste|Prijava sa dva uređaja istovremeno
+Šta je „haker” u izvornom smislu?|Stručnjak koji vešto rešava tehničke probleme|Lopov|Policajac|Novinar
+Kako se zove zaštitni zid mreže?|Fajervol|Ruter|Server|Proksi
+Šta je „server”?|Računar koji pruža usluge drugim računarima|Vrsta kabla|Igrica|Monitor
+Šta je „piksel art”?|Crtež od vidljivih kvadratića|Fotografija|3D model|Skulptura
+Šta znači skraćenica „PC”?|Personalni računar|Programski kod|Procesorski čip|Prenosni kompjuter
+Šta znači skraćenica „ATM” u bankarstvu?|Bankomat|Kreditna kartica|Brza uplata|Bankovni račun
+Ko je izumeo bankomat (1967, London)?|Džon Šeperd-Baron|Bil Gejts|Tim Berners-Li|Martin Kuper
+Šta je „NFC” na telefonu?|Bežična veza na kratkoj udaljenosti, npr. za plaćanje|Brzo punjenje|Vrsta kamere|Wi-Fi
+Šta je „bar kod”?|Niz linija koji se skenira|Kod za Wi-Fi|PIN|Lozinka
+Kako se zove 3D štampanje ukratko?|Aditivna proizvodnja|Laserska štampa|Ofset štampa|Sitotisak
+Šta je „ekran osetljiv na dodir”?|Tačskrin|Monitor|Projektor|LED lampa
+Kako se zove robot-usisivač kompanije iRobot?|Rumba|Roomster|Vaku|Robi
+Koja kompanija je napravila prvi komercijalni mikroprocesor (4004, 1971)?|Intel|IBM|AMD|Motorola
+Koja kompanija se zvala „Big Blue”?|IBM|Intel|Majkrosoft|Del
+Koji IBM računar je pobedio u kvizu „Jeopardi” 2011?|Watson|Deep Blue|AlphaGo|HAL
+Kako se zove Eplov programski jezik predstavljen 2014?|Swift|Kotlin|Java|C#
+Koji jezik je Gugl preporučio za Android aplikacije?|Kotlin|Swift|Pajton|Ruby
+Kako se zove poznata Eplova kampanja iz 1984. sa reklamom za Super Boul?|„1984”|„Think Different”|„Get a Mac”|„Hello”
+Koji je slogan Epla iz 1997?|Think Different|Just Do It|Don’t Be Evil|Impossible Is Nothing
+Koji je bio neformalni moto Gugla?|Don’t be evil|Think different|Just do it|Connecting people
+Koji je slogan Nokie?|Connecting People|Think Different|Life’s Good|Inspire the World
+Kako se zove poznato Majkrosoftovo pomagalo u obliku spajalice iz Ofisa?|Klipi|Klipo|Spajko|Kortana
+Koji zvuk modema pamte svi koji su se priključivali na internet 90-ih?|Dial-up krčanje|Zvono|Pištanje mikrotalasne|Tišina
+Šta je bio „Y2K problem”?|Strah da računari neće prepoznati 2000. godinu|Kompjuterski virus|Kriza procesora|Nestanak struje
+Koji kompjuterski virus iz 2000. širio se imejlom sa naslovom „ILOVEYOU”?|ILOVEYOU (Ljubavno pismo)|Melisa|Stuxnet|WannaCry
+Kako se zove zeleni robot, maskota Androida?|Bagdroid|Robi|Andi|Droid
+Kako se zove Eplov centar za razvoj u kom je glavna zgrada u obliku prstena?|Ep Park|Infinite Loop|Kupertino Ring|Ep Ring
+U kom gradu je sedište Majkrosofta?|Redmondu|Sijetlu|San Francisku|Kupertinu
+U kom gradu je sedište Epla?|Kupertinu|Redmondu|Mauntin Vjuu|Palo Altu
+U kom gradu je sedište Gugla?|Mauntin Vjuu|Kupertinu|Redmondu|Menlo Parku
+Kako se zove Guglova matična kompanija?|Alfabet|Meta|Oracle|Kaliko
+Kako se zove Fejsbukova matična kompanija od 2021?|Meta|Alfabet|X|Instagram Inc.
