@@ -52,7 +52,13 @@ button:disabled{opacity:.45;cursor:not-allowed}
 .invite input{flex:1 1 220px;min-width:0;font-size:14px}
 .players{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:8px}
 .players li{display:flex;align-items:center;gap:12px;padding:10px 12px;border-radius:12px;background:var(--soft);font-weight:700}
-.av{width:32px;height:32px;border-radius:50%;display:grid;place-items:center;color:#fff;font-family:var(--display);font-size:14px;flex:0 0 auto}
+.av{width:32px;height:32px;border-radius:50%;display:grid;place-items:center;color:#fff;font-family:var(--display);font-size:18px;line-height:1;flex:0 0 auto}
+.avpick{display:grid;grid-template-columns:repeat(10,1fr);gap:6px}
+@media (max-width:480px){.avpick{grid-template-columns:repeat(5,1fr)}}
+.avpick button{aspect-ratio:1;max-width:100%;padding:0;font-size:24px;line-height:1;background:var(--soft);border:3px solid transparent;border-radius:12px}
+.avpick button[aria-pressed=true]{border-color:var(--ink);background:#fff6dc}
+.opts.reveal .opt:disabled{opacity:1}
+.opt .who i .e{margin-right:3px}
 .players .nm{flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 .tag{font-size:11px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;padding:3px 8px;border-radius:99px;background:#fff;color:var(--muted)}
 .tag.host{background:var(--gold);color:var(--gold-ink)}
@@ -75,9 +81,27 @@ button:disabled{opacity:.45;cursor:not-allowed}
 .opt.o0{background:var(--t1)}.opt.o1{background:var(--t2)}.opt.o2{background:var(--t3)}.opt.o3{background:var(--t4)}
 .opt.picked{border-color:var(--ink);box-shadow:0 0 0 3px var(--gold) inset}
 .opts.locked .opt:not(.picked){filter:saturate(.35) brightness(1.05);opacity:.7}
-.opts.reveal .opt{filter:none;opacity:.35}
-.opts.reveal .opt.right{opacity:1;box-shadow:0 0 0 4px var(--ok);background:var(--ok)}
-.opts.reveal .opt.wrong{opacity:1;background:var(--bad)}
+.opts.reveal .opt{background:var(--soft);color:var(--muted);flex-wrap:wrap}
+.opts.reveal .opt b{background:#dfe3f3;color:var(--muted)}
+.opts.reveal .opt.right{background:var(--ok);color:#fff;box-shadow:0 0 0 4px #b8ecd0;transform:scale(1.02)}
+.opts.reveal .opt.right b,.opts.reveal .opt.wrong b{background:rgba(255,255,255,.25);color:#fff}
+.opts.reveal .opt.wrong{background:var(--bad);color:#fff}
+.opt .mark{margin-left:auto;font-size:12px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;white-space:nowrap}
+.opt .who{flex-basis:100%;display:flex;flex-wrap:wrap;gap:4px;padding-left:42px}
+.opt .who i{font-style:normal;font-size:12px;font-weight:700;padding:2px 8px;border-radius:99px;background:rgba(0,0,0,.08)}
+.opt.right .who i,.opt.wrong .who i{background:rgba(255,255,255,.22)}
+.verdict{display:flex;flex-direction:column;gap:4px;padding:14px 16px;border-radius:14px;font-weight:700}
+.verdict strong{font-family:var(--display);font-size:20px}
+.verdict.v-ok{background:#e3f7ec;color:#0f5a32}.verdict.v-bad{background:#fde8e7;color:#7a1d18}.verdict.v-none{background:var(--soft);color:var(--ink)}
+.verdict .ans{font-size:15px}
+.board{display:flex;flex-direction:column;gap:6px;list-style:none;margin:0;padding:0}
+.board li{display:grid;grid-template-columns:22px 32px 1fr auto auto;align-items:center;gap:10px;padding:8px 10px;border-radius:12px;background:var(--soft)}
+.board li.me{outline:2px solid var(--gold)}
+.board .rk{font-family:var(--display);font-size:14px;color:var(--muted);text-align:center}
+.board .nm{font-weight:700;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.board .st{font-size:12px;font-weight:700;color:var(--muted);white-space:nowrap}
+.board .st.done{color:var(--ok)}
+.board .score{font-size:20px;min-width:2.5ch;text-align:right}
 .status{display:flex;flex-wrap:wrap;gap:8px}
 .chip{display:flex;align-items:center;gap:6px;padding:6px 10px;border-radius:99px;background:var(--soft);font-weight:700;font-size:13px}
 .chip .dot{width:8px;height:8px;border-radius:50%;background:#b9c0dc}
@@ -114,7 +138,11 @@ const PREFIX="kvizsrb-opsta-";
 const TIMES=[10,15,20,30,45,60];
 const COUNTS=[5,10,15,20,25,30];
 const MAX_PLAYERS=8;
-const REVEAL_MS=4500;
+const REVEAL_MS=6500;
+const AVATARS=["🦊","🐼","🐯","🦁","🐸","🐵","🐨","🐙","🦄","🐲","🦉","🐧","🐢","🦖","🐝","🐬","🦀","🐺","🐮","🐷"];
+const avOk=a=>Number.isInteger(a)&&a>=0&&a<AVATARS.length;
+const fmtS=n=>(n<0?"−":"")+Math.abs(n|0);
+function avHtml(a,c,fallback){return `<span class="av" style="background:${COLORS[(c||0)%COLORS.length]}">${avOk(a)?AVATARS[a]:esc(initial(fallback))}</span>`}
 const COLORS=["#2563eb","#e2483d","#159a6b","#d8901a","#7c3aed","#0e9bb5","#c2417a","#4b5563"];
 const LET=["A","B","C","D"];
 
@@ -137,6 +165,7 @@ const S={
   myAns:[], myRound:-1,   // igrač: moji odgovori
   localKey:"", qStart:0, joinTimer:null, hostSeen:false
 };
+{const a=parseInt(store.get("kviz.avatar"),10); S.av=avOk(a)?a:Math.floor(Math.random()*20);}
 const hashCode=()=>{const m=/^#igra-([a-z0-9]{4,8})$/.exec(location.hash||"");return m?m[1]:""};
 S.code=hashCode();
 
@@ -174,7 +203,7 @@ function hostOpen(resume){
         }else if(!S.peer){S.err="Ne mogu da otvorim igru ("+e.type+"). Proverite internet i pokušajte ponovo.";finish(false)}
       });
       pr.on("connection",conn=>{
-        conn.on("open",()=>{S.conns[conn.peer]=conn; setPresence({role:"host",name:S.name,g:S.H});});
+        conn.on("open",()=>{S.conns[conn.peer]=conn; setPresence({role:"host",name:S.name,av:S.av,g:S.H});});
         conn.on("data",d=>{
           if(!d||typeof d!=="object"||d.t!=="p"||typeof d.presence!=="object") return;
           S.pmap=S.pmap||{};
@@ -218,7 +247,7 @@ function connectHost(){
     let done=false;
     conn.on("open",()=>{
       done=true; S.hostConn=conn; setNet(false);
-      setPresence({role:"player",name:S.name,r:S.myRound,a:S.myAns});
+      setPresence({role:"player",name:S.name,av:S.av,r:S.myRound,a:S.myAns});
       res(true);
     });
     conn.on("data",d=>{
@@ -269,12 +298,12 @@ function lobbyPlayers(){
   if(S.role==="player"){
     const g=G();
     if(g&&Array.isArray(g.lobby)&&g.lobby.length){
-      const l=g.lobby.map(x=>({peer:x.p,name:cleanName(x.n),host:!!x.h,me:x.p===S.myPeer}));
-      if(!l.some(x=>x.me)) l.push({peer:S.myPeer,name:S.name,host:false,me:true});
+      const l=g.lobby.map(x=>({peer:x.p,name:cleanName(x.n),av:x.a,host:!!x.h,me:x.p===S.myPeer}));
+      if(!l.some(x=>x.me)) l.push({peer:S.myPeer,name:S.name,av:S.av,host:false,me:true});
       return l.sort((a,b)=>(b.host-a.host));
     }
   }
-  const list=[{peer:S.myPeer,name:S.name,host:S.role==="host",me:true}];
+  const list=[{peer:S.myPeer,name:S.name,av:S.av,host:S.role==="host",me:true}];
   if(S.role==="host"){
     // samo domaćin vidi ko je u sobi kao igrač
   }
@@ -282,7 +311,7 @@ function lobbyPlayers(){
     if(p.sameTab) continue;
     const pr=p.presence||{}; const n=cleanName(pr.name);
     if(!n||(pr.role!=="player"&&pr.role!=="host")) continue;
-    list.push({peer:p.peer,name:n,host:pr.role==="host",me:false});
+    list.push({peer:p.peer,name:n,av:avOk(pr.av)?pr.av:null,host:pr.role==="host",me:false});
   }
   return list.sort((a,b)=>(b.host-a.host));
 }
@@ -300,9 +329,9 @@ const present=peer=>peer===S.myPeer||S.peers.some(p=>p.peer===peer);
 // ---------- domaćin: tok igre ----------
 function hostPublish(){
   if(!S.H) return;
-  S.H.lobby = S.H.phase==="lobby" ? lobbyPlayers().map(p=>({p:p.peer,n:p.name,h:p.host})) : [];
+  S.H.lobby = S.H.phase==="lobby" ? lobbyPlayers().map(p=>({p:p.peer,n:p.name,a:p.av,h:p.host})) : [];
   S.H.done = S.H.phase==="q" ? S.H.roster.filter(r=>answerOf(r.p,S.H)).map(r=>r.p) : [];
-  setPresence({role:"host",name:S.name,g:S.H}); onRoomChange(); save();
+  setPresence({role:"host",name:S.name,av:S.av,g:S.H}); onRoomChange(); save();
 }
 function hostCreate(){
   S.role="host"; S.code=mkCode();
@@ -327,7 +356,7 @@ function pickQuestions(n){
 }
 function hostStart(){
   const players=lobbyPlayers().slice(0,MAX_PLAYERS);
-  const roster=players.map((p,i)=>({p:p.peer,n:p.name,s:0,c:i,lc:-1,lp:0}));
+  const roster=players.map((p,i)=>({p:p.peer,n:p.name,a:avOk(p.av)?p.av:null,s:0,c:i,lc:-1,lp:0}));
   const picks=pickQuestions(Math.min(S.count,BANK.length));
   S.H={round:(S.H?S.H.round:0)+1,phase:"q",time:S.time,count:picks.length,qi:0,
        qs:picks.map(i=>[i,...shuffle([0,1,2,3])]),roster};
@@ -367,7 +396,7 @@ function answer(displayIdx){
   if(el>g.time*1000) return;
   if(!inRoster(g)) return;
   S.myAns[g.qi]=[displayIdx,Math.round(el)]; save();
-  if(S.role!=="host") setPresence({role:"player",name:S.name,r:g.round,a:S.myAns});
+  if(S.role!=="host") setPresence({role:"player",name:S.name,av:S.av,r:g.round,a:S.myAns});
   if(S.role==="host"){ hostPublish(); hostTick(); }
   render(true);
 }
@@ -378,7 +407,7 @@ function onRoomChange(){
     const h=hostPeer();
     if(h){S.hostSeen=true; clearTimeout(S.joinTimer)}
     const g=G();
-    if(g&&g.round!==S.myRound){S.myRound=g.round;S.myAns=[];setPresence({role:"player",name:S.name,r:g.round,a:[]});save()}
+    if(g&&g.round!==S.myRound){S.myRound=g.round;S.myAns=[];setPresence({role:"player",name:S.name,av:S.av,r:g.round,a:[]});save()}
     if(g){S.screen=g.phase==="lobby"?"lobby":"game"}
   }else if(S.role==="host"){
     S.screen=S.H.phase==="lobby"?"lobby":"game";
@@ -418,6 +447,8 @@ function vStart(){
     </div>
     <div class="rules"><span>Tačan +3</span><span>Netačan −1</span><span>Bez odgovora 0</span></div>
     <label class="f" for="nm">Vaše ime<input type="text" id="nm" maxlength="20" autocomplete="nickname" placeholder="npr. Marko" value="${esc(S.name)}"></label>
+    <div style="display:flex;flex-direction:column;gap:6px"><p style="font-weight:700;font-size:14px">Izaberite avatar</p>
+      <div class="avpick" id="avp">${AVATARS.map((e,i)=>`<button type="button" aria-label="Avatar ${i+1}" aria-pressed="${i===S.av}" data-a="${i}">${e}</button>`).join("")}</div></div>
     ${S.err?`<p class="note err">${esc(S.err)}</p>`:""}
     ${roomNote}
     ${inv?`<button class="btn-gold" id="join">Uđi u igru</button>
@@ -429,6 +460,8 @@ function vStart(){
           </div>`}
   </section>`;
   const nm=$("#nm");
+  $("#avp").onclick=e=>{const b=e.target.closest("button");if(!b)return;S.av=+b.dataset.a;store.set("kviz.avatar",String(S.av));
+    $("#avp").querySelectorAll("button").forEach(x=>x.setAttribute("aria-pressed",String(+x.dataset.a===S.av)))};
   const getName=()=>{const n=cleanName(nm.value);if(!n){S.err="Upišite ime da biste nastavili.";render();setTimeout(()=>$("#nm")&&$("#nm").focus(),0);return null}S.name=n;store.set("kviz.name",n);S.err="";return n};
   $("#new").onclick=async()=>{
     if(!getName())return;
@@ -503,7 +536,7 @@ function updateLobby(){
   }
   if(sig===lastLobbySig) return; lastLobbySig=sig;
   const ul=$("#plist"); if(!ul) return;
-  ul.innerHTML=list.map((p,i)=>`<li><span class="av" style="background:${COLORS[i%COLORS.length]}">${esc(initial(p.name))}</span><span class="nm">${esc(p.name)}</span>${p.host?'<span class="tag host">Domaćin</span>':""}${p.me?'<span class="tag">Vi</span>':""}${i>=MAX_PLAYERS?'<span class="tag">Gledalac</span>':""}</li>`).join("");
+  ul.innerHTML=list.map((p,i)=>`<li>${avHtml(p.av,i,p.name)}<span class="nm">${esc(p.name)}</span>${p.host?'<span class="tag host">Domaćin</span>':""}${p.me?'<span class="tag">Vi</span>':""}${i>=MAX_PLAYERS?'<span class="tag">Gledalac</span>':""}</li>`).join("");
   const pc=$("#pc"); if(pc) pc.textContent=`(${Math.min(list.length,MAX_PLAYERS)}/${MAX_PLAYERS})`;
   const hint=$("#goHint");
   if(hint) hint.textContent = list.length<2 ? "Čeka se bar još jedan igrač. Možete pokrenuti i sami." : "Svi su spremni? Pokrenite kviz.";
@@ -526,18 +559,27 @@ function vGame(){
   </div>
   <section class="card" style="margin-top:16px">
     <p class="qtext">${esc(Q[1])}</p>
+    ${reveal?verdictBox(myR,right,Q[2],inGame):""}
     <div class="opts ${reveal?"reveal":mine||!inGame?"locked":""}" id="opts">
-      ${perm.map((k,i)=>`<button class="opt o${i} ${i===myChoice?"picked":""} ${reveal&&i===right?"right":""} ${reveal&&i===myChoice&&i!==right?"wrong":""}" data-i="${i}" ${reveal||mine||!inGame?"disabled":""}><b>${LET[i]}</b><span>${esc(Q[2+k])}</span></button>`).join("")}
+      ${perm.map((k,i)=>{
+        const who=reveal?(g.roster||[]).filter(r=>r.lc===i).map(r=>`<i>${avOk(r.a)?`<span class="e">${AVATARS[r.a]}</span>`:""}${esc(cleanName(r.n))}${r.p===S.myPeer?" (vi)":""}</i>`).join(""):"";
+        const mark=reveal&&i===right?'<span class="mark">✓ Tačan odgovor</span>':reveal&&i===myChoice?'<span class="mark">✗ Vaš odgovor</span>':"";
+        return `<button class="opt o${i} ${!reveal&&i===myChoice?"picked":""} ${reveal&&i===right?"right":""} ${reveal&&i===myChoice&&i!==right?"wrong":""}" data-i="${i}" ${reveal||mine||!inGame?"disabled":""}><b>${LET[i]}</b><span>${esc(Q[2+k])}</span>${mark}${who?`<span class="who">${who}</span>`:""}</button>`;
+      }).join("")}
     </div>
-    <p class="muted small" id="gmsg">${!inGame?"Gledate ovu rundu. Uključićete se u sledeću.":reveal?revealMsg(myR,right):mine?"Odgovor je zaključan. Čekamo ostale…":"Izaberite odgovor."}</p>
-    <div class="status" id="gstat"></div>
+    ${reveal?"":`<p class="muted small" id="gmsg">${!inGame?"Gledate ovu rundu. Uključićete se u sledeću.":mine?"Odgovor je zaključan. Čekamo ostale…":"Izaberite odgovor."}</p>`}
+  </section>
+  <section class="card" style="margin-top:16px;gap:12px">
+    <h2 style="font-size:16px">Tabela</h2>
+    <ol class="board" id="gstat"></ol>
   </section>`;
   $("#opts").onclick=e=>{const b=e.target.closest(".opt");if(b&&!b.disabled)answer(+b.dataset.i)};
 }
-function revealMsg(r,right){
-  if(!r) return "";
-  if(r.lc===-1) return "Niste odgovorili: 0 poena.";
-  return r.lc===right?"Tačno! +3 poena.":"Netačno: −1 poen.";
+function verdictBox(r,right,text,inGame){
+  const ans=`<span class="ans">Tačan odgovor: <b>${LET[right]} · ${esc(text)}</b></span>`;
+  if(!inGame||!r) return `<div class="verdict v-none"><strong>Tačan odgovor</strong>${ans}</div>`;
+  if(r.lc===-1) return `<div class="verdict v-none"><strong>Bez odgovora · 0</strong>${ans}</div>`;
+  return r.lc===right?`<div class="verdict v-ok"><strong>Tačno! +3</strong>${ans}</div>`:`<div class="verdict v-bad"><strong>Netačno · −1</strong>${ans}</div>`;
 }
 function rosterSorted(g){
   return (g.roster||[]).slice().sort((a,b)=>b.s-a.s||a.c-b.c);
@@ -545,12 +587,16 @@ function rosterSorted(g){
 function updateGame(){
   const g=G(); const st=$("#gstat"); if(!g||!st) return;
   const reveal=g.phase==="reveal";
-  const rows=reveal?rosterSorted(g):(g.roster||[]).slice().sort((a,b)=>a.c-b.c);
-  st.innerHTML=rows.map(r=>{
+  const rows=rosterSorted(g);
+  let rank=0,prev=null;
+  st.innerHTML=rows.map((r,i)=>{
+    if(r.s!==prev){rank=i+1;prev=r.s}
     const name=esc(cleanName(r.n))+(r.p===S.myPeer?" (vi)":"");
-    if(reveal){const cls=r.lp>0?"p":r.lp<0?"n":"z";return `<span class="chip"><span class="score">${r.s|0}</span> ${name} <span class="delta ${cls}">${pts(r.lp|0)}</span></span>`}
-    const done=r.p===S.myPeer?!!S.myAns[g.qi]:S.role==="host"?!!answerOf(r.p,g):(Array.isArray(g.done)&&g.done.includes(r.p));
-    return `<span class="chip ${done?"done":""}"><span class="dot"></span>${name}</span>`;
+    let stat;
+    if(reveal){const cls=r.lp>0?"p":r.lp<0?"n":"z";stat=`<span class="delta ${cls}">${pts(r.lp|0)}</span>`}
+    else{const done=r.p===S.myPeer?!!S.myAns[g.qi]:S.role==="host"?!!answerOf(r.p,g):(Array.isArray(g.done)&&g.done.includes(r.p));
+      stat=`<span class="st ${done?"done":""}">${done?"✓ odgovorio":"razmišlja…"}</span>`}
+    return `<li class="${r.p===S.myPeer?"me":""}"><span class="rk">${rank}.</span>${avHtml(r.a,r.c,r.n)}<span class="nm">${name}</span>${stat}<span class="score">${fmtS(r.s)}</span></li>`;
   }).join("");
 }
 function vEnd(g){
@@ -560,9 +606,9 @@ function vEnd(g){
     <div style="display:flex;flex-direction:column;gap:6px;text-align:center">
       <p class="muted small" style="text-transform:uppercase;letter-spacing:.1em;font-weight:800">Kraj kviza</p>
       <h1>${top?(tie?"Nerešeno!":"Pobednik: "+esc(cleanName(top.n))):"Kraj"}</h1>
-      ${top?`<div class="big">${top.s} <span class="muted" style="font-size:18px">poena</span></div>`:""}
+      ${top?`<div class="big">${fmtS(top.s)} <span class="muted" style="font-size:18px">poena</span></div>`:""}
     </div>
-    <ol class="players podium">${rows.map((r,i)=>`<li><span class="av" style="background:${COLORS[r.c%COLORS.length]}">${i+1}</span><span class="nm">${esc(cleanName(r.n))}${r.p===S.myPeer?" (vi)":""}</span><span class="score">${r.s}</span></li>`).join("")}</ol>
+    <ol class="players podium">${rows.map((r,i)=>`<li><span class="score" style="min-width:2ch">${i+1}.</span>${avHtml(r.a,r.c,r.n)}<span class="nm">${esc(cleanName(r.n))}${r.p===S.myPeer?" (vi)":""}</span><span class="score">${fmtS(r.s)}</span></li>`).join("")}</ol>
     ${S.role==="host"?`<button class="btn-gold" id="again">Nova igra sa istim igračima</button>`:`<p class="muted small" style="text-align:center">Domaćin može da pokrene novu igru.</p>`}
   </section>`;
   const a=$("#again"); if(a)a.onclick=hostToLobby;
