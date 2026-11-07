@@ -64,6 +64,7 @@ button:disabled{opacity:.45;cursor:not-allowed}
 .avpick svg{margin:auto;font-size:28px}
 .avpick button{aspect-ratio:1;max-width:100%;padding:0;font-size:24px;line-height:1;background:var(--soft);border:3px solid transparent;border-radius:12px}
 .avpick button[aria-pressed=true]{border-color:var(--ink);background:#fff6dc}
+.avpick button:disabled{opacity:.25;cursor:not-allowed;filter:grayscale(1)}
 .opts.reveal .opt:disabled{opacity:1}
 .opt .who i .e{margin-right:3px}
 .players .nm{flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
@@ -324,8 +325,22 @@ function lobbyPlayers(){
     if(!n||(pr.role!=="player"&&pr.role!=="host")) continue;
     list.push({peer:p.peer,name:n,av:avOk(pr.av)?pr.av:null,host:pr.role==="host",me:false});
   }
-  return list.sort((a,b)=>(b.host-a.host));
+  list.sort((a,b)=>(b.host-a.host));
+  if(S.role==="host") uniqueAvatars(list);
+  return list;
 }
+// Svaki igrač ima svoj avatar: ko je prvi izabrao zadržava ga, ostali dobijaju prvi slobodan.
+function uniqueAvatars(list){
+  const used=new Set();
+  for(const p of list){
+    p.want=p.av;
+    if(avOk(p.av)&&!used.has(p.av)){used.add(p.av);continue}
+    let f=0; while(f<AVATARS.length&&used.has(f)) f++;
+    p.av=f<AVATARS.length?f:null; if(p.av!==null) used.add(f);
+  }
+  return list;
+}
+function playerPresence(){ setPresence({role:"player",name:S.name,av:S.av,r:S.myRound,a:S.myAns}) }
 function answerOf(peer,g){
   if(peer===S.myPeer) return S.role==="host"?S.myAns[g.qi]:null;
   const p=S.peers.find(x=>x.peer===peer); if(!p) return undefined;
@@ -340,7 +355,7 @@ const present=peer=>peer===S.myPeer||S.peers.some(p=>p.peer===peer);
 // ---------- domaćin: tok igre ----------
 function hostPublish(){
   if(!S.H) return;
-  S.H.lobby = S.H.phase==="lobby" ? lobbyPlayers().map(p=>({p:p.peer,n:p.name,a:p.av,h:p.host})) : [];
+  S.H.lobby = S.H.phase==="lobby" ? lobbyPlayers().map(p=>({p:p.peer,n:p.name,a:p.av,w:p.want,h:p.host})) : [];
   S.H.done = S.H.phase==="q" ? S.H.roster.filter(r=>answerOf(r.p,S.H)).map(r=>r.p) : [];
   setPresence({role:"host",name:S.name,av:S.av,g:S.H}); onRoomChange(); save();
 }
@@ -419,6 +434,10 @@ function onRoomChange(){
     if(h){S.hostSeen=true; clearTimeout(S.joinTimer)}
     const g=G();
     if(g&&g.round!==S.myRound){S.myRound=g.round;S.myAns=[];setPresence({role:"player",name:S.name,av:S.av,r:g.round,a:[]});save()}
+    if(g&&g.phase==="lobby"&&Array.isArray(g.lobby)){
+      const me=g.lobby.find(x=>x.p===S.myPeer);
+      if(me&&me.w===S.av&&avOk(me.a)&&me.a!==S.av){S.av=me.a;S.avMoved=true;playerPresence();save()}
+    }
     if(g){S.screen=g.phase==="lobby"?"lobby":"game"}
   }else if(S.role==="host"){
     S.screen=S.H.phase==="lobby"?"lobby":"game";
@@ -523,6 +542,12 @@ function vLobby(){
       </div>`
     :`<div style="display:flex;flex-direction:column;gap:6px"><h2>Čekamo domaćina</h2><p class="muted" id="hostInfo">Domaćin će pokrenuti kviz kad svi uđu.</p></div>`}
     <div style="display:flex;flex-direction:column;gap:8px">
+      <p style="font-weight:700">Vaš avatar</p>
+      <p class="note" id="avMoved" ${S.avMoved?"":"hidden"}>Avatar koji ste izabrali je već zauzet, pa ste dobili drugi. Možete ga promeniti ovde.</p>
+      <div class="avpick" id="lavp"></div>
+      <p class="muted small">Zauzeti avatari su posivljeni.</p>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:8px">
       <p style="font-weight:700">Igrači <span class="muted" id="pc"></span></p>
       <ul class="players" id="plist"></ul>
     </div>
@@ -536,6 +561,10 @@ function vLobby(){
     if(cp)cp.onclick=()=>{const i=$("#inv");const done=()=>{cp.textContent="Kopirano";setTimeout(()=>{if(cp.isConnected)cp.textContent="Kopiraj link"},1800)};
       try{navigator.clipboard.writeText(i.value).then(done,()=>{i.select();cp.textContent="Označeno, kopirajte"})}catch(e){i.select()}};
   }
+  $("#lavp").onclick=e=>{const b=e.target.closest("button");if(!b||b.disabled)return;
+    S.av=+b.dataset.a;S.avMoved=false;store.set("kviz.avatar",String(S.av));const n=$("#avMoved");if(n)n.hidden=true;
+    if(S.role==="host")hostPublish();else{playerPresence();save()}
+    lastLobbySig="";updateLobby()};
   const sh=$("#share");
   if(sh)sh.onclick=e=>{const b=e.target.closest("button");if(b)shareInvite(b.dataset.app,url)};
   lastLobbySig="";
@@ -555,12 +584,16 @@ function shareInvite(appName,url){
 let lastLobbySig="";
 function updateLobby(){
   const list=lobbyPlayers();
-  const sig=JSON.stringify(list.map(p=>[p.peer,p.name,p.host]));
+  const sig=JSON.stringify([S.av,S.avMoved,list.map(p=>[p.peer,p.name,p.host,p.av])]);
   if(S.role==="player"){
     const g=G(); const hi=$("#hostInfo");
     if(hi&&g) hi.textContent=`Domaćin je podesio ${g.count} pitanja, ${g.time} s po pitanju.`;
   }
   if(sig===lastLobbySig) return; lastLobbySig=sig;
+  const lv=$("#lavp");
+  if(lv){const taken=new Set(list.filter(p=>!p.me&&avOk(p.av)).map(p=>p.av));
+    lv.innerHTML=AVATARS.map((e,i)=>`<button type="button" aria-label="Avatar ${i+1}${taken.has(i)?" (zauzet)":""}" aria-pressed="${i===S.av}" data-a="${i}" ${taken.has(i)&&i!==S.av?"disabled":""}>${e}</button>`).join("");}
+  const mv=$("#avMoved"); if(mv) mv.hidden=!S.avMoved;
   const ul=$("#plist"); if(!ul) return;
   ul.innerHTML=list.map((p,i)=>`<li>${avHtml(p.av,i,p.name)}<span class="nm">${esc(p.name)}</span>${p.host?'<span class="tag host">Domaćin</span>':""}${p.me?'<span class="tag">Vi</span>':""}${i>=MAX_PLAYERS?'<span class="tag">Gledalac</span>':""}</li>`).join("");
   const pc=$("#pc"); if(pc) pc.textContent=`(${Math.min(list.length,MAX_PLAYERS)}/${MAX_PLAYERS})`;
