@@ -4,6 +4,10 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>Kviz Opšte Kulture</title>
+<link rel="manifest" href="manifest.webmanifest">
+<meta name="theme-color" content="#1a2f9e">
+<link rel="icon" type="image/png" href="icons/icon-192.png">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
 <meta name="description" content="Kviz opšte kulture za 2–8 igrača, sa pozivnicom.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;700;800&family=Manrope:wght@400;600;700;800&display=swap">
@@ -112,7 +116,10 @@ button:disabled{opacity:.45;cursor:not-allowed}
 .podium li:first-child{background:#fff3cc}
 .rules{display:flex;gap:8px;flex-wrap:wrap}
 .rules span{font-size:13px;font-weight:700;padding:5px 10px;border-radius:8px;background:var(--soft)}
-footer{color:rgba(255,255,255,.7);font-size:12px;text-align:center}
+footer{color:rgba(255,255,255,.7);font-size:12px;text-align:center;display:flex;flex-direction:column;gap:6px;align-items:center}
+footer a,.linkbtn{color:#fff;font-weight:700;text-decoration:underline;background:none;border:0;padding:0;font-size:12px;cursor:pointer}
+.upd{display:flex;flex-direction:column;gap:8px;background:#fff6dc;color:#5a4300;border-radius:14px;padding:14px 16px}
+.upd a{align-self:flex-start;text-decoration:none;display:inline-block;border-radius:12px;padding:10px 16px;font-weight:800}
 @media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
 *{box-sizing:border-box}[hidden]{display:none!important}
 </style>
@@ -124,9 +131,10 @@ footer{color:rgba(255,255,255,.7);font-size:12px;text-align:center}
     <div class="logo"><i>?</i>Kviz</div>
     <span class="pill" id="badge">Opšta kultura</span>
   </header>
+  <div class="upd" id="upd" hidden></div>
   <p class="note" id="net" hidden>Veza je prekinuta. Ponovo se povezujem…</p>
   <main id="app"></main>
-  <footer>Tačan odgovor +3 · netačan −1 · bez odgovora 0</footer>
+  <footer><span>Tačan odgovor +3 · netačan −1 · bez odgovora 0</span><span id="appinfo"></span></footer>
 </div>
 
 <script src="peerjs.min.js"></script>
@@ -638,6 +646,29 @@ function updateDynamic(){
     if(left<=0&&!S.myAns[g.qi]){const o=$("#opts");if(o&&!o.classList.contains("locked")){o.classList.add("locked");o.querySelectorAll(".opt").forEach(x=>x.disabled=true);const m=$("#gmsg");if(m)m.textContent="Vreme je isteklo."}}
   }
   requestAnimationFrame(loop);
+})();
+
+// ---------- Android aplikacija: verzija i ažuriranje ----------
+(function appInfo(){
+  const m=/KvizAndroid\/(\d+)\/([0-9A-Za-z.]+)/.exec(navigator.userAgent||"");
+  const el=$("#appinfo"), ban=$("#upd");
+  async function check(manual){
+    const st=$("#chkst"); if(st&&manual) st.textContent=" · Proveravam…";
+    try{
+      const v=await (await fetch("version.json?t="+Date.now(),{cache:"no-store"})).json();
+      if(+v.versionCode>+m[1]){
+        ban.innerHTML=`<b>Dostupna je nova verzija aplikacije: ${esc(v.versionName)} (vi imate ${esc(m[2])})</b>${v.notes?`<span>${esc(v.notes)}</span>`:""}<a class="btn-gold" href="${esc(v.url)}">Preuzmi i instaliraj</a><span class="small">Posle preuzimanja otvorite fajl kviz.apk i potvrdite instalaciju. Vaši podaci ostaju.</span>`;
+        ban.hidden=false; if(st) st.textContent=" · Ima nova verzija";
+      }else if(st) st.textContent=manual?" · Imate najnoviju verziju":"";
+    }catch(e){ if(st&&manual) st.textContent=" · Provera nije uspela, proverite internet"; }
+  }
+  if(m){
+    el.innerHTML=`Android aplikacija v${esc(m[2])} · <button class="linkbtn" id="chk" type="button">Proveri ažuriranje</button><span id="chkst"></span>`;
+    $("#chk").onclick=()=>check(true);
+    check(false);
+  }else{
+    el.innerHTML=`<a href="https://github.com/dartvejder/kviz/releases/latest/download/kviz.apk">Preuzmi Android aplikaciju (APK)</a>`;
+  }
 })();
 
 // ---------- nastavak posle osvežavanja ----------

@@ -1,0 +1,35 @@
+plugins { id 'com.android.application' }
+
+// Verzija se čita iz version.json u korenu repozitorijuma, da web i aplikacija budu usklađeni.
+def ver = new groovy.json.JsonSlurper().parse(rootProject.file('../version.json'))
+
+android {
+    namespace 'rs.kviz.app'
+    compileSdk 34
+    defaultConfig {
+        applicationId 'rs.kviz.app'
+        minSdk 24
+        targetSdk 34
+        versionCode ver.versionCode as int
+        versionName ver.versionName as String
+    }
+    signingConfigs {
+        release {
+            // Stalni ključ (iz GitHub tajni), da nova verzija može da se instalira preko stare.
+            storeFile file(System.getenv('KEYSTORE_FILE') ?: 'kviz.keystore')
+            storePassword System.getenv('KEYSTORE_PASSWORD')
+            keyAlias 'kviz'
+            keyPassword System.getenv('KEYSTORE_PASSWORD')
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            signingConfig signingConfigs.release
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+}
