@@ -207,3 +207,218 @@ Koji grad je poznat po fabrici „Štark” (Smoki, Najlepše želje)?|Beograd|N
 Kako se zove popularni grickalica-štapić sa kikirikijem iz Srbije?|Smoki|Čips|Flips|Krokiti
 Kako se zove poznati srpski ljuti umak od paprike i paradajza, sličan ajvaru?|Pindžur|Kajmak|Urnebes|Ljutenica
 Kako se zove srpski namaz od sira i ljutih papričica?|Urnebes|Pindžur|Kajmak|Tarator
+Koliko dana ima prestupna godina?|366|365|364|367
+Koliko nedelja ima godina približno?|52|48|50|54
+Koliko sati ima nedelja?|168|144|172|160
+Koliko minuta ima jedan dan?|1440|1240|1600|1000
+Koliko sekundi ima jedan sat?|3600|6000|360|1200
+Koji mesec ima 28 ili 29 dana?|Februar|Januar|April|Novembar
+Koliko meseci ima 31 dan?|7|6|5|8
+Koji mesec je deveti u godini?|Septembar|Oktobar|Avgust|Novembar
+Koji je po redu dan u nedelji četvrtak u Srbiji?|Četvrti|Peti|Treći|Šesti
+Koliko godina ima jedan vek?|100|1000|10|50
+Koliko godina ima jedan milenijum?|1000|100|10.000|500
+Kako se zove period od deset godina?|Decenija|Vek|Milenijum|Lustrum
+Koja godišnjica braka se zove zlatna svadba?|50.|25.|40.|60.
+Koja godišnjica braka se zove srebrna svadba?|25.|10.|50.|30.
+Koja godišnjica braka se zove dijamantska?|60.|50.|75.|40.
+Koliko je tuce?|12|10|20|6
+Koliko komada je jedna kopa?|60|12|100|144
+Koliko je grama u jednom kilogramu?|1000|100|10.000|500
+Koliko litara ima jedan kubni metar?|1000|100|10|10.000
+Koliko centimetara ima jedan inč?|2,54|3,14|2,24|1,54
+Koliko kilometara ima jedna milja približno?|1,6|1,2|2,0|1,9
+Koliko je stopa u jednom metru približno?|3,28|2,54|1,6|3,0
+Koliko kilograma ima jedna funta približno?|0,45|1,0|0,75|0,25
+Koliko je jedan hektar?|10.000 m²|1.000 m²|100 m²|100.000 m²
+Koliko je kvadratnih metara jedan ar?|100|1000|10|10.000
+Koliko karata ima standardni špil bez džokera?|52|54|48|32
+Koliko karata ima špil za igru „Preferans”?|32|52|36|40
+Koliko boja ima u standardnom špilu karata?|4|2|3|5
+Koliko tačaka ima kocka za igru ukupno na svim stranama?|21|18|24|36
+Koliko iznosi zbir suprotnih strana na kockici za igru?|7|6|8|9
+Koliko polja ima tabla za „Ne ljuti se, čoveče” po igraču u kući?|4|3|5|6
+Koliko pločica ima osnovna igra domina (dupla šestica)?|28|24|32|36
+Koliko kvadrata ima Rubikova kocka na jednoj strani?|9|8|12|16
+Ko je izumeo Rubikovu kocku?|Erne Rubik|Pjer Rubik|Lazar Rubik|Ferenc Rubik
+Iz koje zemlje potiče Rubikova kocka?|Mađarska|Japan|Nemačka|Češka
+Iz koje zemlje potiče igra Tetris?|SSSR|Japan|SAD|Finska
+Iz koje zemlje potiče LEGO?|Danska|Švedska|Nemačka|Holandija
+Šta znači „LEGO” na danskom?|Igraj se dobro|Gradi brzo|Kocka|Mala kuća
+Iz koje zemlje potiče IKEA?|Švedska|Danska|Norveška|Finska
+Iz koje zemlje potiče kompanija Nokia?|Finska|Švedska|Japan|Južna Koreja
+Iz koje zemlje potiče kompanija Samsung?|Južna Koreja|Japan|Kina|Tajvan
+Iz koje zemlje potiče kompanija Sony?|Japan|Južna Koreja|SAD|Kina
+Iz koje zemlje potiče automobil Škoda?|Češka|Slovačka|Poljska|Mađarska
+Iz koje zemlje potiče automobil Volvo?|Švedska|Norveška|Nemačka|Holandija
+Iz koje zemlje potiče automobil Fiat?|Italija|Francuska|Španija|Nemačka
+Iz koje zemlje potiče automobil Seat?|Španija|Italija|Portugal|Francuska
+Iz koje zemlje potiče automobil Peugeot?|Francuska|Belgija|Italija|Švajcarska
+U kom gradu je proizvođen automobil „Fića”?|Kragujevac|Beograd|Kraljevo|Novi Sad
+Kako se zvala kragujevačka fabrika automobila?|Zastava|IMR|Tomos|IMT
+Koji automobil je Zastava izvozila u SAD kao „Yugo”?|Jugo 45|Fića|Stojadin|Florida
+Koji je nadimak automobila Zastava 101?|Stojadin|Fića|Jugić|Kec
+Kako se zvao jugoslovenski traktor iz Beograda?|IMT|Zastava|Tomos|FAP
+Kako se zvao slovenački proizvođač mopeda?|Tomos|Rog|Elan|Gorenje
+Koja kompanija je proizvodila čuveni „Smoki”?|Štark|Bambi|Pionir|Kraš
+Koja fabrika je proizvodila „Plazma” keks?|Bambi|Štark|Pionir|Jaffa
+U kom gradu je fabrika Bambi?|Požarevac|Beograd|Subotica|Crvenka
+U kom gradu je fabrika „Jaffa”?|Crvenka|Požarevac|Subotica|Beograd
+U kom gradu je fabrika čokolade „Pionir”?|Subotica|Beograd|Požarevac|Novi Sad
+Kako se zove čuvena čokolada sa lešnicima iz Štarka?|Najlepše želje|Animal Kingdom|Bananica|Menaž
+Koja država je izumela Coca-Colu?|SAD|Kanada|Meksiko|Velika Britanija
+U kom gradu je izumljena Coca-Cola?|Atlanta|Njujork|Čikago|Nju Orleans
+Koji je originalni naziv Pepsija?|Bredovo piće|Pepsi Kola|Kola Džek|Pepsin pića
+Koje boje je logo kompanije Ferrari?|Crni konj na žutoj podlozi|Crveni konj na beloj podlozi|Zlatni lav|Plavi bik
+Koja životinja je na logou Lamborghinija?|Bik|Konj|Lav|Jaguar
+Koja životinja je na logou Peugeota?|Lav|Bik|Konj|Orao
+Koje voće je na logou kompanije Apple?|Jabuka|Kruška|Trešnja|Narandža
+Koliko krugova ima na logou Audija?|4|5|3|6
+Koje životinje je ime marke patika Puma?|Puma|Gepard|Jaguar|Leopard
+Po kom božanstvu je nazvana marka Nike?|Grčkoj boginji pobede|Rimskom bogu rata|Egipatskom bogu sunca|Nordijskom bogu groma
+Koja marka sportske opreme ima tri trake?|Adidas|Nike|Puma|Reebok
+Koja dva brata su osnovala Adidas i Pumu?|Adolf i Rudolf Dasler|Karl i Hans Benc|Vilhelm i Fridrih Maj|Gotlib i Paul Dajmler
+Koja zemlja je izumela čokoladu u čvrstom obliku (tabla)?|Engleska|Švajcarska|Belgija|Francuska
+Od čega se pravi čokolada?|Kakao zrna|Kafa|Rogač|Kesten
+Koji je glavni sastojak guakamolea?|Avokado|Paradajz|Paprika|Krastavac
+Koji je glavni sastojak humusa?|Leblebije|Pasulj|Sočivo|Grašak
+Koje se voće naziva „kraljem voća” u jugoistočnoj Aziji?|Durijan|Mango|Ananas|Liči
+Koji je najskuplji začin na svetu?|Šafran|Vanila|Biber|Cimet
+Koji začin daje boju kariju?|Kurkuma|Šafran|Paprika|Kumin
+Koliko je crnih polja na šahovskoj tabli?|32|16|36|64
+Koliko ima slova u srpskoj azbuci?|30|31|29|33
+Koliko ima slova u engleskoj abecedi?|26|24|28|30
+Koliko ima samoglasnika u srpskom jeziku?|5|6|4|7
+Kako se zove znak „&”?|Ampersand|Tilda|Majmunče|Taraba
+Kako se kolokvijalno zove znak „@”?|Majmunče|Taraba|Zvezdica|Ampersand
+Kako se zove znak „#”?|Taraba|Majmunče|Zvezdica|Ampersand
+Koja je boja koja nastaje mešanjem plave i žute?|Zelena|Ljubičasta|Narandžasta|Braon
+Koja boja nastaje mešanjem crvene i plave?|Ljubičasta|Zelena|Narandžasta|Roze
+Koja boja nastaje mešanjem crvene i žute?|Narandžasta|Zelena|Ljubičasta|Braon
+Koje su tri osnovne boje svetlosti (RGB)?|Crvena, zelena i plava|Crvena, žuta i plava|Bela, crna i siva|Žuta, zelena i ljubičasta
+Koliko boja ima duga?|7|6|5|8
+Koja boja je na spoljnoj (gornjoj) ivici duge?|Crvena|Ljubičasta|Plava|Žuta
+Koja boja simbolizuje žalost u većini evropskih zemalja?|Crna|Bela|Crvena|Ljubičasta
+Koja boja simbolizuje žalost u delovima Azije?|Bela|Crna|Crvena|Zelena
+Koji cvet je simbol Holandije?|Lala|Ruža|Iris|Suncokret
+Koja životinja je simbol Australije uz kengura?|Emu|Koala|Dingo|Kakadu
+Koja životinja je nacionalni simbol Kine?|Džinovska panda|Tigar|Zmaj|Ždral
+Koja ptica je simbol mira?|Golub|Labud|Lasta|Roda
+Koja ptica, prema verovanju, donosi bebe?|Roda|Golub|Sova|Gavran
+Koja ptica je simbol mudrosti?|Sova|Gavran|Orao|Paun
+Koji broj se smatra nesrećnim u zapadnoj kulturi?|13|7|4|666
+Koji broj se smatra nesrećnim u Kini i Japanu?|4|13|9|8
+Koji broj se smatra srećnim u Kini?|8|4|7|13
+Koliko listova ima detelina za sreću?|4|3|5|6
+Šta se, prema sujeverju, dešava ako razbiješ ogledalo?|Sedam godina nesreće|Godinu dana sreće|Dobiješ pismo|Dolaze gosti
+Koji dan se smatra danom šala?|1. april|1. maj|13. jun|31. oktobar
+Kog datuma se slavi Dan zaljubljenih?|14. februara|8. marta|1. maja|14. marta
+Kog datuma se slavi Međunarodni dan žena?|8. marta|1. maja|14. februara|25. novembra
+Kog datuma se slavi Praznik rada?|1. maja|8. marta|9. maja|1. juna
+Kog datuma pravoslavci slave Božić po julijanskom kalendaru?|7. januara|25. decembra|14. januara|19. januara
+Kog datuma se slavi pravoslavna Nova godina?|14. januara|7. januara|1. januara|19. januara
+Kog datuma se slavi Sretenje, Dan državnosti Srbije?|15. februara|1. decembra|28. juna|4. aprila
+Kog datuma se slavi Vidovdan?|28. juna|6. maja|2. avgusta|27. januara
+Kog datuma se slavi Savindan?|27. januara|28. juna|14. januara|6. maja
+Kog datuma se slavi Đurđevdan?|6. maja|28. juna|19. decembra|2. avgusta
+Kog datuma se slavi Sveti Nikola?|19. decembra|6. maja|27. januara|2. avgusta
+Kog datuma se slavi Ilindan?|2. avgusta|19. decembra|28. avgusta|21. septembra
+Kog datuma se slavi Noć veštica?|31. oktobra|1. novembra|13. oktobra|30. aprila
+Koji praznik Amerikanci slave četvrtog četvrtka u novembru?|Dan zahvalnosti|Dan nezavisnosti|Dan rada|Dan sećanja
+Koji je praznik SAD 4. jula?|Dan nezavisnosti|Dan zahvalnosti|Dan predsednika|Dan rada
+Kako se zove irski praznik 17. marta?|Dan Svetog Patrika|Dan Svetog Đorđa|Dan Svetog Andreja|Dan Svetog Davida
+Koji praznik se slavi farbanjem jaja?|Uskrs|Božić|Bogojavljenje|Duhovi
+Kako se zove dan pre Božića kod pravoslavaca?|Badnji dan|Materice|Oci|Detinjci
+Šta se seče na Badnje veče i stavlja na vatru?|Badnjak|Česnica|Slama|Bosiljak
+Kako se zove božićni hleb u koji se stavlja novčić?|Česnica|Pogača|Kolač|Ljeb
+Koji praznik se slavi bacanjem krsta u vodu?|Bogojavljenje|Uskrs|Božić|Spasovdan
+Kako se zove hleb koji se seče na slavi?|Slavski kolač|Česnica|Pogača|Prosfora
+Šta se pored kolača priprema za slavu?|Žito (koljivo)|Farbanje jaja|Badnjak|Kićenje jelke
+Koja je UNESCO kulturna baština Srbije upisana 2014. godine kao običaj?|Slava|Kolo|Gusle|Zlakuško grnčarstvo
+Koliko igrača igra u igri „Jamb” najmanje?|1|2|3|4
+Koliko kockica se koristi u igri „Jamb”?|5 ili 6|2|3|10
+Šta se dobija kada u jambu bacite pet istih brojeva?|Jamb|Kenta|Ful|Poker
+Šta je „kenta” u jambu?|Pet uzastopnih brojeva|Pet istih|Tri plus dva ista|Četiri ista
+Šta je „ful” u jambu?|Tri iste i dve iste|Pet istih|Četiri iste|Pet uzastopnih
+Koja igra sa slovima koristi pločice sa vrednostima?|Skrabl|Monopol|Riziko|Kluedo
+Koja društvena igra se bavi kupovinom ulica i hotela?|Monopol|Riziko|Skrabl|Kluedo
+Koja društvena igra se bavi osvajanjem sveta?|Riziko|Monopol|Kluedo|Mlin
+Koja društvena igra se bavi otkrivanjem ubice?|Kluedo|Riziko|Monopol|Dama
+Koja igra za dvoje se igra sa 9 figura i mlinovima?|Mlin|Dama|Šah|Go
+Koja drevna igra potiče iz Kine i igra se crnim i belim kamenčićima?|Go|Mlin|Dama|Mahdžong
+Koja igra se igra sa 15 kamenčića i dve kockice na tabli sa 24 polja?|Tavla|Mlin|Dama|Ludo
+Iz koje zemlje potiče origami?|Japan|Kina|Koreja|Tajland
+Iz koje zemlje potiče karaoke?|Japan|Južna Koreja|SAD|Filipini
+Iz koje zemlje potiče joga?|Indija|Kina|Tibet|Tajland
+Iz koje zemlje potiče feng šui?|Kina|Japan|Indija|Vijetnam
+Iz koje zemlje potiče bonsai u današnjem obliku?|Japan|Kina|Koreja|Vijetnam
+Iz koje zemlje potiče sauna?|Finska|Švedska|Rusija|Turska
+Iz koje zemlje potiče flamenko?|Španija|Portugal|Meksiko|Argentina
+Iz koje zemlje potiču matrjoške?|Rusija|Ukrajina|Poljska|Belorusija
+Iz koje zemlje potiču klompe?|Holandija|Belgija|Danska|Švajcarska
+Iz koje zemlje potiče kilt?|Škotska|Irska|Vels|Engleska
+Iz koje zemlje potiče kimono?|Japan|Kina|Koreja|Vijetnam
+Iz koje zemlje potiče sari?|Indija|Pakistan|Nepal|Šri Lanka
+Kako se zove tradicionalna srpska obuća?|Opanci|Klompe|Papuče|Sandale
+Kako se zove tradicionalna srpska kapa?|Šajkača|Fes|Beretka|Šubara
+Kako se zove tradicionalni srpski prsluk?|Jelek|Šal|Džemper|Kaput
+Kako se zove tradicionalni srpski ćup za rakiju?|Čuturica|Čokanj|Bokal|Testija
+Koje drvo se najčešće koristi za badnjak?|Hrast|Bukva|Bor|Lipa
+Koje drvo je simbol Slovena i čest motiv narodne kulture?|Lipa|Hrast|Breza|Javor
+Koje drvo se kiti za Novu godinu?|Jelka|Hrast|Bukva|Lipa
+Ko donosi poklone za Novu godinu u Srbiji?|Deda Mraz|Sveti Nikola|Badnjak|Božić Bata
+Ko donosi poklone deci u Holandiji 5. decembra?|Sinterklas|Deda Mraz|Befana|Krampus
+Ko u Italiji donosi poklone 6. januara?|Befana|Sinterklas|Krampus|Deda Mraz
+Kako se zove irvas Deda Mraza sa crvenim nosom?|Rudolf|Dančer|Komet|Blicen
+Gde, prema predanju, živi Deda Mraz?|Na Severnom polu (ili Laponiji)|Na Islandu|U Kanadi|Na Grenlandu
+Koji grad u Finskoj se predstavlja kao dom Deda Mraza?|Rovanijemi|Helsinki|Oulu|Turku
+Koji teksaški rendžer je junak čuvenog italijanskog stripa?|Teks Viler|Zagor|Mister No|Dilan Dog
+Kako se zove junak stripa „Zagor” sa sekirom?|Zagor Te Nej|Čiko|Teks|Kit Karson
+Kako se zove debeli Meksikanac, Zagorov prijatelj?|Čiko|Kit|Pedro|Pako
+Ko je autor stripa „Alan Ford”?|Maks Bunker i Magnus|Bonelli i Galep|Goscini i Uderzo|Erže
+Kako se zove vođa grupe TNT u „Alan Fordu”?|Broj 1|Ser Oliver|Bob Rok|Grunf
+Ko je autor stripa „Asteriks”?|Goscini i Uderzo|Erže|Moris|Franken
+Ko je autor stripa „Tintin”?|Erže|Goscini|Moris|Uderzo
+Kako se zove pas Tintina?|Mili (Snowy)|Idefiks|Pluton|Bil
+Kako se zove pas Obeliksa?|Idefiks|Mili|Bil|Rex
+Ko je autor stripa „Talični Tom”?|Moris|Erže|Franken|Uderzo
+Koji kauboj puca brže od svoje senke?|Talični Tom|Teks Viler|Zagor|Kit Karson
+Kako se zovu četiri brata razbojnika iz „Taličnog Toma”?|Daltoni|Džejmsi|Bejkeri|Kidovi
+Ko je autor stripa „Garfild”?|Džim Dejvis|Čarls Šulc|Bil Voterson|Skot Adams
+Ko je autor stripa „Peanuts” sa Snupijem?|Čarls Šulc|Džim Dejvis|Bil Voterson|Mort Voker
+Kako se zove dečak iz stripa sa tigrom Hobsom?|Kalvin|Čarli Braun|Lajnus|Denis
+Kako se zove vlasnik mačka Garfilda?|Džon Arbakl|Čarli Braun|Lajmon|Noni
+Kako se zove pas Garfildovog vlasnika?|Odi|Snupi|Mili|Pluton
+Kako se zove ptica Snupijev prijatelj?|Vudstok|Tviti|Zazu|Kokoška
+Koji beogradski dnevni list je najstariji na Balkanu?|Politika|Borba|Večernje novosti|Danas
+Koje godine je osnovana „Politika”?|1904|1914|1920|1898
+Koja zgrada je najviša na svetu?|Burdž Kalifa|Šangajski toranj|Taipei 101|Abradž el Bejt
+U kom gradu je najviša zgrada u Srbiji – Kula Beograd?|Beogradu|Novom Sadu|Nišu|Kragujevcu
+Koja je najviša građevina u Srbiji?|Avalski toranj|Kula Beograd|Ušće|Genex kula
+Kako se zove zgrada u Beogradu sa dva tornja i mostom (Zapadna kapija)?|Genex kula|Beogradjanka|Ušće|Kula Beograd
+Kako se zove neboder u Masarikovoj ulici, nekad najviši u Beogradu?|Beograđanka|Genex kula|Ušće|Albanija
+Koja zgrada na Terazijama se smatra prvim beogradskim neboderom?|Palata Albanija|Beograđanka|Hotel Moskva|Palata Srbija
+U kojoj zgradi radi Narodna skupština Srbije?|Dom Narodne skupštine|Palata Srbija|Stari dvor|Novi dvor
+Gde je sedište predsednika Srbije?|Novi dvor|Stari dvor|Palata Srbija|Beli dvor
+Koja zgrada je nekad bila SIV, a danas Palata Srbija?|Palata Federacije|Ušće|Genex|Dom omladine
+Koji spomenik stoji na Trgu republike u Beogradu?|Knez Mihailo na konju|Karađorđe|Vuk Karadžić|Pobednik
+Kako se zove bronzani spomenik na Kalemegdanu iznad ušća?|Pobednik|Knez Mihailo|Zahvalnost Francuskoj|Despot Stefan
+Ko je autor spomenika „Pobednik”?|Ivan Meštrović|Toma Rosandić|Đorđe Jovanović|Sreten Stojanović
+Kako se zove most sa jednim pilonom u Beogradu otvoren 2012?|Most na Adi|Gazela|Brankov most|Pančevački most
+Kako se zove najprometniji most u Beogradu na autoputu?|Gazela|Most na Adi|Brankov most|Stari savski
+Kako se zove ostrvo u Beogradu poznato kao „Beogradsko more”?|Ada Ciganlija|Veliko ratno ostrvo|Ada Huja|Gročanska ada
+Kako se zove ostrvo na ušću Save u Dunav?|Veliko ratno ostrvo|Ada Ciganlija|Ada Huja|Malo ratno ostrvo
+Kako se zove park-šuma iznad Beograda sa tornjem?|Avala|Košutnjak|Topčider|Zvezdara
+Kako se zove poznata ulica u Beogradu sa kafanama i boemima?|Skadarlija|Knez Mihailova|Strahinjića bana|Bulevar
+Kako se zove pešačka ulica od Kalemegdana do Terazija?|Knez Mihailova|Skadarlija|Kralja Milana|Makedonska
+Kako se zove poznata ulica u Novom Sadu za šetnju?|Zmaj Jovina|Dunavska|Bulevar oslobođenja|Futoška
+Koja je glavna tvrđava Novog Sada?|Petrovaradinska tvrđava|Kalemegdan|Fruška|Bač
+Kako se zove poznati sat na Petrovaradinu?|„Pijani sat”|„Ludi sat”|„Sat unazad”|„Sat bez kazaljki”
+Zašto se sat na Petrovaradinu zove „pijani”?|Velika kazaljka pokazuje sate, a mala minute|Stalno kasni|Kuca nasumično|Nema brojeva
+U kom gradu se nalazi Gradska kuća u secesijskom stilu i Palić u blizini?|Subotica|Sombor|Kikinda|Zrenjanin
+Koji grad u Srbiji se zove „zeleni grad” zbog drveća?|Sombor|Subotica|Kikinda|Vršac
+Po kom vinu je poznat Vršac?|Belo vino i berbe grožđa|Šljivovica|Pivo|Kafa
+Koji grad je poznat po „Dužijanci”, prazniku žetve?|Subotica|Sombor|Novi Sad|Kikinda
+Koji grad je poznat po mamutu Kiki?|Kikinda|Zrenjanin|Pančevo|Sombor
+Koji grad je poznat po Danima piva?|Zrenjanin|Pančevo|Kikinda|Apatin
+Koji vojvođanski grad ima pivaru osnovanu 1756. godine?|Apatin|Zrenjanin|Pančevo|Čelarevo
