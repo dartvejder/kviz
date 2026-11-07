@@ -380,3 +380,127 @@ Ko je bio glavni prevodilac „Alana Forda” na naš jezik, poznat po duhovitom
 Kako se zove šef grupe TNT u „Alanu Fordu”?|Broj Jedan|Ser Oliver|Bob Rok|Grunf
 Kako se zove debeli pomoćnik Zagora, Meksikanac?|Čiko|Kit Karson|Tiger Džek|Grunf
 Ko je Teksov stalni drug u stripu „Teks Viler”?|Kit Karson|Čiko|Zagor|Mister No
+Kako se zove glavni junak romana „Na Drini ćuprija” koji je nabijen na kolac?|Radisav|Alihodža|Lotika|Fata
+Kako se zove devojka koja skače sa mosta u „Na Drini ćupriji”?|Fata Avdagina|Lotika|Zorka|Jelenka
+Kako se zove glavni junak „Derviša i smrti”?|Ahmed Nurudin|Hasan|Mula Jusuf|Isak
+Kako se zove glavni junak „Tvrđave” Meše Selimovića?|Ahmet Šabo|Ahmed Nurudin|Mahmut Neretljak|Ramiz
+U kom gradu se dešava „Travnička hronika”?|Travniku|Sarajevu|Mostaru|Višegradu
+Kako se zove fratar koji pripoveda u „Prokletoj avliji”?|Fra Petar|Fra Marko|Fra Grgo|Fra Luka
+Kako se zove zatvorenik koji sebe zamišlja kao sultana Džem u „Prokletoj avliji”?|Ćamil|Haim|Karađoz|Zaim
+Kako se zove upravnik zatvora u „Prokletoj avliji”?|Karađoz|Ćamil|Haim|Latif-aga
+Kako se zove glavni junak „Seoba” Miloša Crnjanskog?|Vuk Isakovič|Aranđel Isakovič|Pavle Isakovič|Đurđe Isakovič
+Kako se zove junak „Romana o Londonu”?|Nikolaj Rjepnin|Vuk Isakovič|Pavle Isakovič|Ivan Galeb
+Ko je napisao „Dnevnik o Čarnojeviću”?|Miloš Crnjanski|Rastko Petrović|Momčilo Nastasijević|Stanislav Vinaver
+Ko je napisao „Ljudi govore”?|Rastko Petrović|Miloš Crnjanski|Isidora Sekulić|Momčilo Nastasijević
+Ko je napisao „Kroniku palanačkog groblja”?|Isidora Sekulić|Desanka Maksimović|Jela Spiridonović|Danica Marković
+Ko je napisao roman „Sumnjivo lice”?|Branislav Nušić|Radoje Domanović|Stevan Sremac|Kosta Trifković
+Ko je napisao satiru „Stradija”?|Radoje Domanović|Branislav Nušić|Stevan Sremac|Milovan Glišić
+Ko je napisao satiru „Vođa”?|Radoje Domanović|Branislav Nušić|Jovan Skerlić|Petar Kočić
+Ko je napisao „Jazavac pred sudom”?|Petar Kočić|Branko Ćopić|Svetozar Ćorović|Aleksa Šantić
+Ko je napisao „Emina”?|Aleksa Šantić|Jovan Dučić|Svetozar Ćorović|Osman Đikić
+Ko je napisao „Ostajte ovdje”?|Aleksa Šantić|Petar Kočić|Jovan Dučić|Vladislav Petković Dis
+Ko je napisao pesmu „Utopljene duše”?|Vladislav Petković Dis|Sima Pandurović|Milan Rakić|Jovan Dučić
+Ko je napisao pesmu „Na Gazimestanu”?|Milan Rakić|Jovan Dučić|Aleksa Šantić|Milutin Bojić
+Ko je napisao „Plavu grobnicu”?|Milutin Bojić|Milan Rakić|Vladislav Petković Dis|Dragutin Ilić
+Ko je napisao „Jablanove”?|Jovan Dučić|Milan Rakić|Aleksa Šantić|Vojislav Ilić
+Ko je napisao „Pisma iz Italije”?|Ljubomir Nenadović|Jovan Skerlić|Dositej Obradović|Matija Nenadović
+Ko je napisao „Memoare” o Prvom srpskom ustanku?|Prota Matija Nenadović|Vuk Karadžić|Jakov Nenadović|Dositej Obradović
+Ko je napisao pripovetku „Prvi put s ocem na jutrenje”?|Laza Lazarević|Milovan Glišić|Janko Veselinović|Simo Matavulj
+Ko je napisao „Švabicu”?|Laza Lazarević|Stevan Sremac|Jakov Ignjatović|Milovan Glišić
+Ko je napisao „Hajduk Stanka”?|Janko Veselinović|Laza Lazarević|Milovan Glišić|Simo Matavulj
+Ko je napisao „Glavu šećera”?|Milovan Glišić|Janko Veselinović|Stevan Sremac|Laza Lazarević
+Ko je napisao „Bakonju fra Brnu”?|Simo Matavulj|Petar Kočić|Svetozar Ćorović|Ivo Andrić
+Ko je napisao roman „Došljaci”?|Milutin Uskoković|Borisav Stanković|Veljko Petrović|Ivo Ćipiko
+Ko je napisao „Gospodu Glembajeve”?|Miroslav Krleža|Ivo Vojnović|Milan Begović|Ranko Marinković
+Ko je napisao „Dubrovačku trilogiju”?|Ivo Vojnović|Miroslav Krleža|Marin Držić|Ivan Gundulić
+Ko je napisao „Dunda Maroja”?|Marin Držić|Ivan Gundulić|Ivo Vojnović|Džore Držić
+Ko je napisao „Osmana”?|Ivan Gundulić|Marin Držić|Petar Hektorović|Marko Marulić
+Ko je napisao „Juditu” (1501)?|Marko Marulić|Ivan Gundulić|Marin Držić|Petar Zoranić
+Ko je napisao roman „Kiklop”?|Ranko Marinković|Miroslav Krleža|Ivo Andrić|Slobodan Novak
+Ko je napisao „Kad su cvetale tikve”?|Dragoslav Mihailović|Dobrica Ćosić|Vidosav Stevanović|Slobodan Selenić
+Ko je napisao „Očeve i oce”?|Slobodan Selenić|Dragoslav Mihailović|Borislav Pekić|Svetlana Velmar-Janković
+Ko je napisao „Ubistvo s predumišljajem”?|Slobodan Selenić|Svetlana Velmar-Janković|Milorad Pavić|Dragoslav Mihailović
+Ko je napisao „Lagum”?|Svetlana Velmar-Janković|Gordana Kuić|Isidora Sekulić|Slobodan Selenić
+Ko je napisao „Miris kiše na Balkanu”?|Gordana Kuić|Svetlana Velmar-Janković|Vida Ognjenović|Ljiljana Habjanović Đurović
+Ko je napisao „Knjigu o Milutinu”?|Danko Popović|Dobrica Ćosić|Dragoslav Mihailović|Antonije Isaković
+Ko je napisao roman „Upotreba čoveka”?|Aleksandar Tišma|Danilo Kiš|Borislav Pekić|Milorad Pavić
+Ko je napisao „Mansardu” i „Peščanik”?|Danilo Kiš|Aleksandar Tišma|David Albahari|Milorad Pavić
+Ko je napisao „Mamac”?|David Albahari|Danilo Kiš|Svetislav Basara|Goran Petrović
+Ko je napisao „Fama o biciklistima”?|Svetislav Basara|David Albahari|Goran Petrović|Radoslav Petković
+Ko je napisao „Opsadu crkve Svetog Spasa”?|Goran Petrović|Svetislav Basara|Milorad Pavić|Zoran Živković
+Ko je napisao „Sudbinu i komentare”?|Radoslav Petković|Goran Petrović|Svetislav Basara|Vladimir Pištalo
+Ko je napisao roman „Tesla, portret među maskama”?|Vladimir Pištalo|Goran Petrović|Dragan Velikić|Vladimir Arsenijević
+Ko je napisao roman „U potpalublju”?|Vladimir Arsenijević|Vladimir Pištalo|Dragan Velikić|Srđan Valjarević
+Ko je napisao „Ruski prozor”?|Dragan Velikić|Vladimir Pištalo|Svetislav Basara|Goran Petrović
+Kako se zove princ Danske u Šekspirovom komadu?|Hamlet|Magbet|Otelo|Lir
+Kako se zove mavar iz Venecije kod Šekspira?|Otelo|Šajlok|Jago|Prospero
+Kako se zove zelenaš iz „Mletačkog trgovca”?|Šajlok|Antonio|Jago|Falstaf
+Ko je napisao „Tartifa”?|Molijer|Rasin|Kornej|Volter
+Ko je napisao „Kandida”?|Volter|Ruso|Didro|Monteskje
+Ko je napisao „Gargantuu i Pantagruela”?|Fransoa Rable|Mišel de Montenj|Molijer|Volter
+Ko je napisao „Gospođu Bovari”?|Gistav Flober|Onore de Balzak|Emil Zola|Stendal
+Ko je napisao „Crveno i crno”?|Stendal|Balzak|Flober|Igo
+Ko je napisao „Čiča Gorioa”?|Onore de Balzak|Stendal|Emil Zola|Gi de Mopasan
+Ko je napisao „Žerminal”?|Emil Zola|Balzak|Flober|Mopasan
+Ko je napisao „Bel ami”?|Gi de Mopasan|Emil Zola|Flober|Dode
+Ko je napisao „Cveće zla”?|Šarl Bodler|Artur Rembo|Pol Verlen|Stefan Malarme
+Ko je napisao „U traganju za izgubljenim vremenom”?|Marsel Prust|Andre Žid|Alber Kami|Žan Kokto
+Ko je napisao „Proces” i „Preobražaj”?|Franc Kafka|Tomas Man|Herman Hese|Robert Muzil
+Ko je napisao „Čarobni breg”?|Tomas Man|Herman Hese|Franc Kafka|Štefan Cvajg
+Ko je napisao „Stepskog vuka” i „Sidartu”?|Herman Hese|Tomas Man|Erih Marija Remark|Štefan Cvajg
+Ko je napisao „Na zapadu ništa novo”?|Erih Marija Remark|Ernest Hemingvej|Herman Hese|Tomas Man
+Ko je napisao „Šahovsku novelu”?|Štefan Cvajg|Tomas Man|Herman Hese|Franc Kafka
+Ko je napisao „Majku Hrabrost”?|Bertolt Breht|Fridrih Direnmat|Maks Friš|Peter Handke
+Ko je napisao „Posetu stare dame”?|Fridrih Direnmat|Bertolt Breht|Maks Friš|Tomas Bernhard
+Ko je napisao „Ime ruže”?|Umberto Eko|Italo Kalvino|Alberto Moravija|Primo Levi
+Ko je napisao „Ako jedne zimske noći neki putnik”?|Italo Kalvino|Umberto Eko|Alberto Moravija|Dino Bucati
+Ko je napisao „Gepard” (Il Gattopardo)?|Đuzepe Tomazi di Lampeduza|Italo Kalvino|Umberto Eko|Đovani Verga
+Ko je napisao „Mrtve duše”?|Nikolaj Gogolj|Aleksandar Puškin|Ivan Gončarov|Mihail Ljermontov
+Ko je napisao „Evgenija Onjegina”?|Aleksandar Puškin|Mihail Ljermontov|Nikolaj Gogolj|Ivan Turgenjev
+Ko je napisao „Junaka našeg doba”?|Mihail Ljermontov|Aleksandar Puškin|Ivan Turgenjev|Ivan Gončarov
+Ko je napisao „Oblomova”?|Ivan Gončarov|Ivan Turgenjev|Nikolaj Gogolj|Lav Tolstoj
+Ko je napisao „Očeve i decu”?|Ivan Turgenjev|Ivan Gončarov|Lav Tolstoj|Fjodor Dostojevski
+Ko je napisao „Višnjik”?|Anton Čehov|Maksim Gorki|Ivan Turgenjev|Nikolaj Gogolj
+Ko je napisao „Doktora Živaga”?|Boris Pasternak|Mihail Bulgakov|Aleksandar Solženjicin|Mihail Šolohov
+Ko je napisao „Jedan dan Ivana Denisoviča”?|Aleksandar Solženjicin|Boris Pasternak|Mihail Bulgakov|Varlam Šalamov
+Ko je napisao „Tihi Don”?|Mihail Šolohov|Maksim Gorki|Boris Pasternak|Aleksej Tolstoj
+Ko je napisao „Lolitu”?|Vladimir Nabokov|Boris Pasternak|Džon Apdajk|Filip Rot
+Ko je napisao „Lovca u žitu”?|Dž. D. Selindžer|Džek Keruak|Truman Kapote|Kurt Vonegat
+Ko je napisao „Na putu” (On the Road)?|Džek Keruak|Alen Ginzberg|Vilijam Barouz|Dž. D. Selindžer
+Ko je napisao „Klaonicu pet”?|Kurt Vonegat|Džozef Heler|Tomas Pinčon|Filip Rot
+Ko je napisao „Kvaku 22”?|Džozef Heler|Kurt Vonegat|Norman Majler|Gor Vidal
+Ko je napisao „Hladnokrvno”?|Truman Kapote|Norman Majler|Tom Volf|Harper Li
+Ko je napisala „Ubiti pticu rugalicu”?|Harper Li|Toни Morison|Elis Voker|Margaret Mičel
+Ko je napisala „Prohujalo s vihorom”?|Margaret Mičel|Harper Li|Perl Bak|Edit Vorton
+Ko je napisala „Voljenu” (Beloved)?|Toni Morison|Elis Voker|Maja Anđelou|Harper Li
+Ko je napisala „Gospođu Dalovej”?|Virdžinija Vulf|Džejn Ostin|Šarlota Bronte|Doris Lesing
+Ko je napisala „Sluškinjinu priču”?|Margaret Atvud|Doris Lesing|Elis Manro|Ursula Le Gvin
+Ko je napisao „Ponoćnu decu”?|Salman Ruždi|V. S. Najpol|Arundati Roj|Kazuo Išiguro
+Ko je napisao „Ostatke dana”?|Kazuo Išiguro|Salman Ruždi|Ijan Makjuan|Džulijan Barns
+Ko je napisao „Norvešku šumu”?|Haruki Murakami|Kenzaburo Oe|Jasunari Kavabata|Jukio Mišima
+Ko je napisao „Alhemičara”?|Paulo Koeljo|Žoze Saramago|Hulio Kortasar|Izabel Aljende
+Ko je napisao „Slepilo”?|Žoze Saramago|Paulo Koeljo|Fernando Pesoa|Antonio Lobo Antunes
+Ko je napisala „Kuću duhova”?|Izabel Aljende|Laura Eskivel|Gabrijela Mistral|Klarise Lispektor
+Ko je napisao „Ljubav u doba kolere”?|Gabrijel Garsija Markes|Mario Vargas Ljosa|Karlos Fuentes|Horhe Amado
+Ko je napisao „Školicu” (Rayuela)?|Hulio Kortasar|Horhe Luis Borhes|Ernesto Sabato|Adolfo Bioj Kasares
+Ko je napisao zbirku „Fikcije”?|Horhe Luis Borhes|Hulio Kortasar|Pablo Neruda|Oktavio Pas
+Koji čileanski pesnik je dobio Nobelovu nagradu 1971?|Pablo Neruda|Gabrijela Mistral|Vinsente Uidobro|Nikanor Para
+Ko je napisao „Gitandžali”?|Rabindranat Tagore|Halil Džubran|Omar Hajam|Rumi
+Ko je napisao „Proroka” (1923)?|Halil Džubran|Rabindranat Tagore|Rumi|Nagib Mahfuz
+Ko je autor „Rubaija”?|Omar Hajam|Rumi|Hafiz|Firdusi
+Ko je autor persijskog epa „Šahname”?|Firdusi|Omar Hajam|Rumi|Hafiz
+Koji egipatski pisac je dobio Nobelovu nagradu 1988?|Nagib Mahfuz|Taha Husein|Alaa al-Asvani|Tevfik el-Hakim
+Koji turski pisac je dobio Nobelovu nagradu 2006?|Orhan Pamuk|Jašar Kemal|Nazim Hikmet|Elif Šafak
+Koja poljska pesnikinja je dobila Nobelovu nagradu 1996?|Vislava Šimborska|Olga Tokarčuk|Česlav Miloš|Zbignjev Herbert
+Koja poljska književnica je dobila Nobelovu nagradu za 2018?|Olga Tokarčuk|Vislava Šimborska|Herta Miler|Elfride Jelinek
+Koji austrijski pisac je dobio Nobelovu nagradu 2019?|Peter Handke|Tomas Bernhard|Elfride Jelinek|Robert Menase
+Koji kineski pisac je dobio Nobelovu nagradu 2012?|Mo Jen|Gao Singđijan|Ju Hua|Lu Sin
+Koja južnokorejska književnica je dobila Nobelovu nagradu 2024?|Han Kang|Kjung-suk Šin|Bae Suah|Čo Nam-džu
+Kako se zove pseudonim Semjuela Klemensa?|Mark Tven|O. Henri|Luis Kerol|Džordž Orvel
+Kako se zvao pisac Džordž Orvel pravim imenom?|Erik Artur Bler|Erik Mitčel|Džordž Bler|Artur Erik Orvel
+Kako se zove pravim imenom Volter?|Fransoa-Mari Arue|Žan-Batist Poklen|Anri Bejl|Amandina Diden
+Koji pisac se zvao pravim imenom Anri Bejl?|Stendal|Volter|Molijer|Balzak
+Koji pisac je pravim imenom Žan-Batist Poklen?|Molijer|Volter|Rasin|Stendal
+Koja književnica je pisala pod pseudonimom Žorž Sand?|Amandina Diden|Meri En Evans|Šarlota Bronte|Karen Bliksen
+Koja književnica je pisala pod pseudonimom Džordž Eliot?|Meri En Evans|Amandina Diden|Emili Bronte|Džejn Ostin
+Kojim pseudonimom se potpisivao pisac Aleksej Peškov?|Maksim Gorki|Anton Čehov|Andrej Beli|Aleksandar Grin

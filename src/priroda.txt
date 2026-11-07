@@ -366,3 +366,125 @@ Koja je najniža temperatura izmerena na Zemlji, otprilike (Antarktik)?|−89 °
 Gde je izmerena najviša temperatura vazduha na Zemlji (56,7 °C)?|Dolina smrti (SAD)|Sahara|Kuvajt|Australija
 Koja planeta se zove „Plava planeta”?|Zemlja|Neptun|Uran|Venera
 Koliko je otprilike star planet Zemlja?|4,5 milijardi godina|10.000 godina|1 milijarda godina|13,8 milijardi godina
+Koja je najviša vrsta drveta na svetu?|Sekvoja (obalska)|Eukaliptus|Baobab|Duglazija
+Koje drvo je poznato kao najstarije živo biće (preko 4.000 godina)?|Bor Pinus longaeva|Sekvoja|Maslina|Tisa
+Koje drvo skladišti vodu u debelom stablu u Africi?|Baobab|Palma|Akacija|Kaktus
+Kako se zove drvo iz čije kore se dobija pluta?|Hrast plutnjak|Bukva|Breza|Lipa
+Iz kog drveta se dobija kaučuk?|Kaučukovac (Hevea)|Palma|Akacija|Javor
+Iz kog drveta se dobija javorov sirup?|Šećerni javor|Breza|Lipa|Hrast
+Koje drvo ima belu koru koja se ljušti?|Breza|Bukva|Topola|Javor
+Koje drvo ima listove u obliku lepeze i smatra se „živim fosilom”?|Ginko|Tisa|Sekvoja|Magnolija
+Koje drvo je otrovno skoro u svim delovima osim crvenog omotača semena?|Tisa|Jela|Smrča|Kleka
+Koja četinarska vrsta gubi iglice zimi?|Ariš|Jela|Smrča|Bor
+Koja endemska četinara raste samo na Tari i okolini?|Pančićeva omorika|Molika|Munika|Bela jela
+Ko je otkrio Pančićevu omoriku?|Josif Pančić|Jovan Cvijić|Sava Petrović|Nedeljko Košanin
+Koja biljka je endem Balkana i „cvet feniks” koji oživljava posle sušenja?|Natalijina ramonda|Pančićeva omorika|Lincura|Runolist
+Po kome je nazvana Natalijina ramonda?|Kraljici Nataliji Obrenović|Kneginji Ljubici|Kraljici Draginji|Princezi Jeleni
+Koji cvet raste visoko u planinama i zaštićen je, sa belim dlakavim listićima?|Runolist|Lincura|Encijan|Planinski božur
+Koja planinska biljka se koristi za pravljenje gorkih rakija i lekova?|Lincura|Runolist|Kantarion|Kamilica
+Koja biljka se koristi za čaj za smirenje i ima žuti centar sa belim laticama?|Kamilica|Nana|Žalfija|Majčina dušica
+Koja biljka cveta žutim cvetovima i od nje se pravi „crveno ulje”?|Kantarion|Kamilica|Neven|Hajdučka trava
+Koja biljka se zove i „stolisnik”?|Hajdučka trava|Kantarion|Matičnjak|Žalfija
+Koja biljka ima miris limuna i koristi se za čaj?|Matičnjak|Nana|Kamilica|Žalfija
+Koji cvet je simbol Kosova i Metohije?|Kosovski božur|Ruža|Lala|Ljiljan
+Koji cvet se prema predanju javlja iz krvi junaka na Kosovu?|Božur|Mak|Ruža|Karanfil
+Koji cvet je simbol Japana?|Trešnjin cvet (sakura)|Lotos|Hrizantema|Orhideja
+Koji cvet je carski simbol Japana na pečatu?|Hrizantema|Sakura|Lotos|Iris
+Koji cvet je nacionalni cvet Indije?|Lotos|Ruža|Jasmin|Neven
+Koji cvet je simbol Engleske?|Ruža|Lala|Narcis|Čičak
+Koji cvet je simbol Škotske?|Čičak|Ruža|Detelina|Vresak
+Koja biljka je simbol Irske?|Detelina|Čičak|Ruža|Bršljan
+Koja biljka je simbol Kanade na zastavi?|Javorov list|Hrastov list|Lipov list|Borova grana
+Koja biljka jede insekte zatvarajući listove?|Muholovka (Venerina)|Rosika|Mešinka|Lokvanj
+Koji je najveći cvet na svetu?|Raflezija|Titan arum|Suncokret|Lotos
+Koja biljka cveta retko i zove se „leš-cvet” zbog smrada?|Titan arum|Raflezija|Lotos|Orhideja
+Koja biljka ima najveće listove u vodi (lokvanj iz Amazonije)?|Viktorija amazonika|Lotos|Lokvanj beli|Vodena paprat
+Koja biljka raste najbrže na svetu?|Bambus|Kudzu|Eukaliptus|Paprat
+Kojom biljkom se pretežno hrane pande?|Bambusom|Eukaliptusom|Paprati|Travom
+Kojom biljkom se hrane koale?|Eukaliptusom|Bambusom|Akacijom|Kaktusom
+Koja životinja ima najduži vrat?|Žirafa|Noj|Kamila|Lama
+Koliko vratnih pršljenova ima žirafa?|7|14|21|5
+Koje boje je jezik žirafe?|Tamnoljubičast|Ružičast|Žut|Beo
+Koja životinja spava naglavačke?|Slepi miš|Lenjivac|Koala|Sova
+Koja životinja je najsporiji sisar?|Lenjivac|Koala|Kornjača|Puž
+Koja životinja ima najjači ugriz?|Morski krokodil|Lav|Velika bela ajkula|Hijena
+Koja životinja ima crno-bele pruge i niko ne zna tačno zašto?|Zebra|Okapi|Tapir|Lemur
+Koja životinja je u srodstvu sa žirafom, a ima pruge na nogama?|Okapi|Zebra|Tapir|Antilopa
+Koja životinja živi samo na Madagaskaru i ima prstenasti rep?|Lemur|Koala|Rakun|Tarzijer
+Koja ptica ne može da leti, a živi na Novom Zelandu i nacionalni je simbol?|Kivi|Emu|Pingvin|Kakapo
+Koji je jedini papagaj koji ne leti?|Kakapo|Kea|Ara|Kakadu
+Koja ptica može da leti unazad?|Kolibri|Lasta|Vrabac|Čiopa
+Koja ptica polaže jaja u tuđa gnezda?|Kukavica|Vrana|Svraka|Sova
+Koja ptica provodi gotovo ceo život u letu?|Čiopa|Lasta|Albatros|Galeb
+Koja ptica ima najveći kljun u odnosu na telo?|Tukan|Pelikan|Kljunorožac|Roda
+Koja ptica migrira najdalje, sa pola na pol?|Arktička čigra|Roda|Lasta|Albatros
+Koje boje su flamingosi kad se izlegu?|Sivo-beli|Ružičasti|Crveni|Žuti
+Zašto su flamingosi ružičasti?|Zbog pigmenta iz hrane|Zbog krvi|Zbog sunca|Zbog vode
+Koja ptica je simbol Srbije na grbu?|Dvoglavi beli orao|Soko|Gavran|Golub
+Kako se zove mladunče konja?|Ždrebe|Tele|Jagnje|Jare
+Kako se zove mladunče krave?|Tele|Ždrebe|Prase|Jare
+Kako se zove mladunče ovce?|Jagnje|Jare|Tele|Ždrebe
+Kako se zove mladunče koze?|Jare|Jagnje|Tele|Ždrebe
+Kako se zove mladunče svinje?|Prase|Jare|Tele|Kozle
+Kako se zove ženka jelena?|Košuta|Srna|Jelenka|Kobila
+Kako se zove ženka konja?|Kobila|Košuta|Krmača|Ovca
+Kako se zove ženka svinje?|Krmača|Kobila|Košuta|Ovca
+Kako se zove mužjak ovce?|Ovan|Jarac|Bik|Vepar
+Kako se zove mužjak koze?|Jarac|Ovan|Vepar|Bik
+Kako se zove mužjak divlje svinje?|Vepar|Ovan|Jarac|Bik
+Kako se zove mužjak patke?|Patak|Gusak|Ćuran|Petao
+Kako se zove mužjak guske?|Gusak|Patak|Ćuran|Paun
+Kako se zove grupa vukova?|Čopor|Krdo|Jato|Roj
+Kako se zove grupa ptica u letu?|Jato|Čopor|Krdo|Roj
+Kako se zove grupa pčela koja napušta košnicu?|Roj|Jato|Čopor|Krdo
+Kako se zove grupa krava ili konja?|Krdo|Jato|Roj|Čopor
+Šta luče pčele za izgradnju saća?|Vosak|Med|Propolis|Mleč
+Kako se zove hrana kojom se hrani matica?|Matični mleč|Polen|Med|Propolis
+Koliko krila ima pčela?|4|2|6|8
+Koji insekt pravi svilu?|Svilena buba|Pauk|Moljac|Mrav
+Kojom biljkom se hrani gusenica svilene bube?|Lišćem duda|Lišćem hrasta|Lišćem lipe|Travom
+Koji leptir migrira hiljadama kilometara iz Kanade u Meksiko?|Monarh|Lastin rep|Admiral|Kupusar
+Kako se zove razvojni stadijum leptira između gusenice i odraslog?|Lutka (čaura)|Larva|Nimfa|Jaje
+Kako se zove pretvaranje gusenice u leptira?|Metamorfoza|Fotosinteza|Mutacija|Mitoza
+Koji insekt svetli noću?|Svitac|Bubamara|Cvrčak|Moljac
+Koliko tačaka ima najčešća vrsta bubamare kod nas?|7|5|9|12
+Koja životinja ima najviše nogu?|Stonoga|Pauk|Rak|Hobotnica
+Koji insekt nosi teret 50 puta teži od sebe?|Mrav|Pčela|Skakavac|Bubamara
+Koja je najveća životinja koja je ikad živela?|Plavi kit|Argentinosaurus|Megalodon|Mamut
+Kojim organom diše riba?|Škrgama|Plućima|Kožom|Peraja
+Koja riba se pari u slatkoj vodi, a živi u moru?|Losos|Bakalar|Tuna|Haringa
+Koja riba se rađa u Sargaškom moru, a živi u rekama Evrope?|Jegulja|Losos|Šaran|Som
+Koja je najveća slatkovodna riba u Srbiji?|Som|Šaran|Smuđ|Štuka
+Koja riba iz Dunava daje crni kavijar?|Moruna|Som|Smuđ|Kečiga
+Koja je najmanja riba iz porodice jesetri u Dunavu?|Kečiga|Moruna|Jesetra|Pastruga
+Koja morska životinja ima pet krakova?|Morska zvezda|Hobotnica|Meduza|Sipa
+Koliko krakova ima hobotnica?|8|10|6|12
+Koliko krakova ima lignja?|10|8|6|12
+Koja životinja izbacuje mastilo kad je u opasnosti?|Hobotnica|Meduza|Rak|Morski krastavac
+Koja morska životinja je „besmrtna” jer se može vratiti u mladi stadijum?|Meduza Turritopsis|Morska zvezda|Sunđer|Koral
+Koja životinja živi u kućici od školjke koju menja?|Rak samac|Puž|Jastog|Kamenica
+Šta je koral?|Kolonija sitnih životinja|Biljka|Kamen|Alga
+Šta proizvodi biser?|Školjka (kamenica)|Puž|Rak|Morska zvezda
+Koja životinja menja boju da bi se uklopila?|Kameleon|Gekon|Iguana|Leguan
+Koja životinja živi i u vodi i na kopnu, a koža joj je vlažna?|Žaba (vodozemac)|Kornjača|Krokodil|Zmija
+Kako se zove mladunče žabe?|Punoglavac|Larva|Gusenica|Pulen
+Koji vodozemac je crn sa žutim mrljama?|Šareni daždevnjak|Vodenjak|Krastava žaba|Gatalinka
+Koje otrovne zmije žive u Srbiji?|Poskok i šarka|Belouška|Smuk|Ribarica
+Kako se zove neotrovna zmija sa žutim mrljama na glavi?|Belouška|Poskok|Šarka|Smuk
+Koja životinja zimi spava (hibernira) u Srbiji?|Medved|Vuk|Lisica|Srna
+Koja životinja nosi bodlje i hibernira?|Jež|Dikobraz|Kuna|Jazavac
+Koja životinja gradi brane na rekama?|Dabar|Vidra|Ondatra|Nutrija
+Koja životinja je vraćena u Srbiju posle izumiranja u 20. veku i gradi brane?|Dabar|Ris|Bizon|Vidra
+Koja divlja mačka živi u planinama Srbije?|Ris|Puma|Leopard|Gepard
+Koji je najveći sisar u Srbiji?|Mrki medved|Jelen|Divlja svinja|Vuk
+Koja ptica grabljivica je simbol Uvca?|Beloglavi sup|Suri orao|Soko|Jastreb
+Na kojoj reci su meandri i kolonija beloglavog supa?|Uvac|Tara|Drina|Lim
+Koje jezero u Srbiji je poznato po pticama i Ramsar je područje kod Novog Bečeja?|Slano Kopovo|Palić|Ludaško|Srebrno
+Kako se zove specijalni rezervat prirode kod Kovina sa peskom?|Deliblatska peščara|Subotička peščara|Zasavica|Obedska bara
+Kako se zove rezervat u Sremu, jedan od najstarijih zaštićenih u Evropi?|Obedska bara|Zasavica|Carska bara|Gornje Podunavlje
+U kom rezervatu žive podolska goveda i mangulice uz reku Zasavicu?|Zasavica|Obedska bara|Carska bara|Ludaško jezero
+Koja vrsta svinje je autohtona u Vojvodini i ima kovrdžavu dlaku?|Mangulica|Moravka|Resavka|Šiška
+Koja autohtona rasa konja potiče iz Srbije?|Domaći brdski konj|Lipicaner|Arapski konj|Haflinger
+Koja autohtona pasmina psa potiče sa Šar planine?|Šarplaninac|Srpski gonič|Tornjak|Kraški ovčar
+Koja pasmina psa je „srpski trobojni gonič”?|Gonič|Ovčar|Hrt|Terijer
+Koji pas je bio prvi u svemiru u orbiti?|Lajka|Belka|Strelka|Rex
