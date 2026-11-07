@@ -54,6 +54,9 @@ button:disabled{opacity:.45;cursor:not-allowed}
 .code{font-family:var(--display);font-weight:800;font-size:30px;letter-spacing:.18em;text-transform:uppercase;color:var(--ink)}
 .invite{display:flex;gap:8px;align-items:stretch;flex-wrap:wrap}
 .invite input{flex:1 1 220px;min-width:0;font-size:14px}
+.share{display:flex;gap:8px;flex-wrap:wrap}
+.share button{flex:1 1 0;min-width:90px;padding:10px 8px;font-size:15px;color:#fff;display:flex;align-items:center;justify-content:center;gap:6px}
+.share .sh-vb{background:#7360f2}.share .sh-wa{background:#25d366;color:#08331a}.share .sh-sg{background:#3a76f0}.share .sh-ot{background:var(--soft);color:var(--ink)}
 .players{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:8px}
 .players li{display:flex;align-items:center;gap:12px;padding:10px 12px;border-radius:12px;background:var(--soft);font-weight:700}
 .av{width:32px;height:32px;border-radius:50%;display:grid;place-items:center;color:#fff;font-family:var(--display);font-size:18px;line-height:1;flex:0 0 auto}
@@ -506,6 +509,7 @@ function vLobby(){
       ${S.peer?`<div style="display:flex;flex-direction:column;gap:8px">
         <p style="font-weight:700">Pošaljite pozivnicu</p>
         ${url?`<div class="invite"><input type="text" id="inv" readonly value="${esc(url)}"><button class="btn-blue" id="copy" style="flex:0 0 auto">Kopiraj link</button></div>`:""}
+        ${url?`<div class="share" id="share"><button class="sh-vb" data-app="viber">Viber</button><button class="sh-wa" data-app="whatsapp">WhatsApp</button><button class="sh-sg" data-app="signal">Signal</button>${(navigator.share||window.KvizApp)?`<button class="sh-ot" data-app="other">Ostalo…</button>`:""}</div><p class="muted small" id="shareMsg" hidden></p>`:""}
         <p class="muted small">Ili neka otvore kviz i upišu kod <b>${esc(S.code.toUpperCase())}</b>.</p>
       </div>`:`<p class="note">Bez veze sa sobom igrate sami.</p>`}
       <div style="display:flex;flex-direction:column;gap:8px">
@@ -532,7 +536,21 @@ function vLobby(){
     if(cp)cp.onclick=()=>{const i=$("#inv");const done=()=>{cp.textContent="Kopirano";setTimeout(()=>{if(cp.isConnected)cp.textContent="Kopiraj link"},1800)};
       try{navigator.clipboard.writeText(i.value).then(done,()=>{i.select();cp.textContent="Označeno, kopirajte"})}catch(e){i.select()}};
   }
+  const sh=$("#share");
+  if(sh)sh.onclick=e=>{const b=e.target.closest("button");if(b)shareInvite(b.dataset.app,url)};
   lastLobbySig="";
+}
+const SHARE_PKG={viber:"com.viber.voip",whatsapp:"com.whatsapp",signal:"org.thoughtcrime.securesms",other:""};
+function shareInvite(appName,url){
+  const text=`Hajde da igramo kviz! Uđi preko linka: ${url} (kod igre: ${S.code.toUpperCase()})`;
+  const msg=t=>{const m=$("#shareMsg");if(m){m.textContent=t;m.hidden=false}};
+  if(window.KvizApp&&KvizApp.share){KvizApp.share(text,SHARE_PKG[appName]);return}
+  if(appName==="whatsapp"){window.open("https://wa.me/?text="+encodeURIComponent(text),"_blank");return}
+  if(appName==="viber"){location.href="viber://forward?text="+encodeURIComponent(text);return}
+  // Signal nema link za deljenje: telefon nudi meni za deljenje, inače kopiramo poruku.
+  if(navigator.share){navigator.share({text}).catch(()=>{});return}
+  const copied=()=>msg(appName==="signal"?"Poruka je kopirana. Otvorite Signal i nalepite je u razgovor.":"Poruka je kopirana, nalepite je gde želite.");
+  try{navigator.clipboard.writeText(text).then(copied,()=>msg("Kopirajte link iznad i pošaljite ga."))}catch(e){msg("Kopirajte link iznad i pošaljite ga.")}
 }
 let lastLobbySig="";
 function updateLobby(){

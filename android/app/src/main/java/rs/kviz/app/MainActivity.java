@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.graphics.Color;
 import android.net.Uri;
 import android.os.Bundle;
+import android.webkit.JavascriptInterface;
 import android.webkit.WebResourceRequest;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
@@ -30,6 +31,8 @@ public class MainActivity extends Activity {
         // Sajt po ovome zna da je otvoren u aplikaciji i koju verziju ima.
         s.setUserAgentString(s.getUserAgentString() + " KvizAndroid/" + BuildConfigInfo.code(this));
 
+        web.addJavascriptInterface(new Bridge(), "KvizApp");
+
         web.setWebViewClient(new WebViewClient() {
             @Override
             public boolean shouldOverrideUrlLoading(WebView view, WebResourceRequest req) {
@@ -49,6 +52,23 @@ public class MainActivity extends Activity {
         } else {
             Uri data = getIntent() != null ? getIntent().getData() : null;
             web.loadUrl(data != null ? data.toString() : HOME);
+        }
+    }
+
+    /** Deljenje pozivnice preko Vibera, WhatsAppa, Signala ili bilo koje aplikacije. */
+    class Bridge {
+        @JavascriptInterface
+        public void share(String text, String pkg) {
+            runOnUiThread(() -> {
+                Intent send = new Intent(Intent.ACTION_SEND);
+                send.setType("text/plain");
+                send.putExtra(Intent.EXTRA_TEXT, text);
+                if (pkg != null && !pkg.isEmpty()) {
+                    Intent direct = new Intent(send).setPackage(pkg);
+                    try { startActivity(direct); return; } catch (Exception ignored) {}
+                }
+                try { startActivity(Intent.createChooser(send, "Pošalji pozivnicu")); } catch (Exception ignored) {}
+            });
         }
     }
 
