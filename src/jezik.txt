@@ -1,0 +1,390 @@
+Koliko slova ima srpska ćirilica?|30|28|32|26
+Koliko slova ima srpska latinica (abeceda)?|30|26|28|32
+Ko je reformisao srpsku ćirilicu?|Vuk Stefanović Karadžić|Dositej Obradović|Sava Mrkalj|Đura Daničić
+Koje slovo je Vuk preuzeo iz latinice?|J|Ž|Č|Đ
+Koje slovo srpske ćirilice je uveo Đura Daničić?|Ђ|Џ|Љ|Њ
+Kako glasi Vukovo pravilo pisanja?|Piši kao što govoriš, čitaj kao što je napisano|Govori kako pišeš|Piši kratko i jasno|Jedno slovo, dva glasa
+Koliko samoglasnika ima srpski jezik?|5|6|7|4
+Koji glas može biti samoglasnik u srpskom, kao u reči „prst”?|R|L|N|M
+Koliko padeža ima srpski jezik?|7|6|5|8
+Koji padež odgovara na pitanje „koga? šta?”|Akuzativ|Genitiv|Dativ|Lokativ
+Koji padež odgovara na pitanje „kome? čemu?”|Dativ|Akuzativ|Genitiv|Instrumental
+Koji padež se koristi za dozivanje?|Vokativ|Nominativ|Lokativ|Dativ
+Koji padež odgovara na pitanje „s kim? čim?”|Instrumental|Lokativ|Dativ|Genitiv
+Koji padež odgovara na pitanje „o kome? o čemu?”|Lokativ|Instrumental|Akuzativ|Genitiv
+Koji padež odgovara na pitanje „koga? čega?”|Genitiv|Akuzativ|Dativ|Vokativ
+Koliko vrsta reči ima srpski jezik?|10|8|12|7
+Koje su promenljive vrste reči?|Imenice, zamenice, pridevi, brojevi, glagoli|Prilozi, predlozi, veznici|Uzvici i rečce|Samo imenice i glagoli
+Kako se zovu reči istog značenja, a različitog oblika?|Sinonimi|Antonimi|Homonimi|Paronimi
+Kako se zovu reči suprotnog značenja?|Antonimi|Sinonimi|Homonimi|Arhaizmi
+Kako se zovu reči istog oblika, a različitog značenja (npr. „kosa”)?|Homonimi|Sinonimi|Antonimi|Neologizmi
+Kako se zovu zastarele reči koje se više ne koriste?|Arhaizmi|Neologizmi|Tuđice|Žargonizmi
+Kako se zovu nove reči u jeziku?|Neologizmi|Arhaizmi|Turcizmi|Dijalektizmi
+Kako se zovu reči preuzete iz turskog jezika?|Turcizmi|Germanizmi|Anglicizmi|Galicizmi
+Kako se zovu reči preuzete iz nemačkog jezika?|Germanizmi|Turcizmi|Rusizmi|Hungarizmi
+Kako se zovu reči preuzete iz francuskog jezika?|Galicizmi|Germanizmi|Anglicizmi|Italijanizmi
+Kako se zovu reči preuzete iz engleskog?|Anglicizmi|Galicizmi|Germanizmi|Latinizmi
+Koja reč je turcizam?|Čarapa|Šraf|Kompjuter|Šofer
+Koja reč je germanizam?|Šraf|Jastuk|Kompjuter|Avlija
+Koja reč je galicizam?|Šofer|Šraf|Komšija|Pendžer
+Iz kog jezika potiče reč „kafa”?|Arapskog (preko turskog)|Italijanskog|Grčkog|Francuskog
+Iz kog jezika potiče reč „šećer”?|Persijskog (preko turskog)|Latinskog|Grčkog|Nemačkog
+Iz kog jezika potiče reč „pendžer” (prozor)?|Persijskog (preko turskog)|Nemačkog|Mađarskog|Grčkog
+Šta znači turcizam „avlija”?|Dvorište|Prozor|Krov|Bunar
+Šta znači turcizam „sokak”?|Ulica|Trg|Kuća|Pijaca
+Šta znači turcizam „komšija”?|Sused|Prijatelj|Gost|Rođak
+Šta znači turcizam „ćuprija”?|Most|Kula|Kapija|Reka
+Šta znači turcizam „đuvegija”?|Mladoženja|Svekar|Kum|Zet
+Šta znači turcizam „baška”?|Posebno|Zajedno|Odmah|Nikad
+Šta znači turcizam „sevdah”?|Ljubavna čežnja|Bes|Glad|San
+Šta znači germanizam „šrafciger”?|Odvijač|Čekić|Klešta|Testera
+Šta znači reč „cušpajz” u kuhinji?|Gusto povrtno jelo (varivo)|Kolač|Supa|Salata
+Šta znači reč „ofinger”?|Vešalica za odeću|Kaput|Šešir|Kišobran
+Šta znači reč „ringišpil”?|Vrteška|Ljuljaška|Tobogan|Klackalica
+Šta znači reč „šlingeraj” (u vojvođanskom govoru)?|Vez na tkanini|Kolač|Prozor|Bunar
+Šta znači reč „frajla”?|Gospođica|Starica|Kuvarica|Učiteljica
+Šta znači reč „kibicer”?|Onaj ko posmatra igru i daje savete|Igrač|Sudija|Pobednik
+Šta znači reč „šoder”?|Šljunak|Pesak|Cement|Zemlja
+Šta znači reč „pajser”?|Gvozdena poluga|Čekić|Ključ|Testera
+Koji dijalekat je osnova srpskog književnog jezika?|Štokavski|Kajkavski|Čakavski|Torlački
+Koji izgovor praslovenskog glasa jat postoji u Srbiji pored ekavskog?|Ijekavski|Ikavski|Akavski|Jekavsko-ekavski
+Kako glasi reč „mleko” na ijekavskom?|Mlijeko|Mliko|Mlako|Mleko
+Kako glasi reč „lepo” na ikavskom?|Lipo|Lijepo|Lepo|Lapo
+Koji govor se govori na jugoistoku Srbije (Pirot, Niš, Vranje)?|Prizrensko-timočki (torlački)|Šumadijsko-vojvođanski|Kosovsko-resavski|Zetsko-južnosandžački
+Šta znači reč „ćale” u žargonu?|Otac|Majka|Brat|Deda
+Šta znači reč „keva” u žargonu?|Majka|Sestra|Baba|Tetka
+Šta znači reč „lova” u žargonu?|Novac|Ljubav|Hrana|Posao
+Šta znači reč „gajba” u beogradskom žargonu?|Stan, kuća|Kutija za pivo samo|Automobil|Posao
+Šta znači reč „kul” u žargonu?|Dobar, opušten|Hladan|Glup|Ljut
+Šta znači reč „ortak”?|Drug, prijatelj|Neprijatelj|Komšija|Učitelj
+Šta znači reč „kapirati” u žargonu?|Razumeti|Kupiti|Ukrasti|Pevati
+Šta znači reč „smorati” u žargonu?|Dosađivati|Spavati|Bežati|Jesti
+Šta znači žargonska reč „zicer”?|Sigurna stvar|Riba|Zec|Cigareta
+Šta znači žargonska reč „lebac”?|Hleb|Lav|Lep|Lopov
+Kako se na šatrovačkom kaže „pivo”?|Vopi|Ivpo|Vopa|Pivce
+Kako se na šatrovačkom kaže „žena”?|Najže|Naže|Žene|Žana
+Šta je šatrovački govor?|Govor u kom se slogovi menjaju mestima|Govor Šatora|Govor iz Šapca|Tajni jezik vojske
+Šta znači izraz „pala mu je sekira u med”?|Imao je veliku sreću|Pao je|Ljut je|Bolestan je
+Šta znači izraz „kupiti mačku u džaku”?|Kupiti nešto bez provere|Kupiti ljubimca|Prevariti nekoga|Mnogo platiti
+Šta znači izraz „vući nekoga za nos”?|Zavaravati nekoga|Pomagati nekome|Kažnjavati|Smejati se
+Šta znači izraz „baciti peškir”?|Odustati|Pobediti|Okupati se|Posvađati se
+Šta znači izraz „gledati kroz prste”?|Biti blag, popustljiv|Ne videti dobro|Kriti lice|Pažljivo posmatrati
+Šta znači izraz „nositi glavu u torbi”?|Biti u stalnoj opasnosti|Biti zaboravan|Biti srećan|Biti umoran
+Šta znači izraz „praviti se lud”?|Pretvarati se da ne razumeš|Biti zaista lud|Šaliti se|Ljutiti se
+Šta znači izraz „sedeti skrštenih ruku”?|Ne raditi ništa|Moliti se|Čekati red|Biti ljut
+Šta znači izraz „biti na konju”?|Biti u dobroj poziciji|Jahati|Biti ponosan|Biti brz
+Šta znači izraz „ići niz dlaku”?|Udovoljavati nekome|Češljati se|Svađati se|Bežati
+Šta znači izraz „prodavati maglu”?|Obećavati nešto nestvarno|Prodavati vodu|Gatati|Lagati o vremenu
+Šta znači izraz „biti treći točak”?|Biti suvišan|Biti važan|Biti brz|Biti nov
+Šta znači izraz „ni luk jeo, ni luk mirisao”?|Praviti se nevešt, nevin|Ne voleti luk|Biti gladan|Biti prehlađen
+Šta znači izraz „kao grom iz vedra neba”?|Iznenada, neočekivano|Glasno|Brzo|Opasno
+Šta znači izraz „zub vremena”?|Propadanje tokom vremena|Starost zuba|Brzina|Sat
+Šta znači izraz „krokodilske suze”?|Lažna tuga|Velika tuga|Radost|Strah
+Šta znači izraz „Ahilova peta”?|Slaba tačka|Brzina|Hrabrost|Lepota
+Šta znači izraz „Sizifov posao”?|Uzaludan, beskrajan posao|Težak ali plaćen posao|Brz posao|Tajni posao
+Šta znači izraz „Pandorina kutija”?|Izvor mnogih nevolja|Poklon|Tajna|Blago
+Šta znači izraz „Trojanski konj”?|Prevara skrivena u poklonu|Brz konj|Vojska|Igračka
+Šta znači izraz „Damoklov mač”?|Stalna pretnja|Oštro oružje|Pobeda|Kazna
+Šta znači izraz „Gordijev čvor”?|Težak problem|Mornarski čvor|Kravata|Zagonetka za decu
+Kako je Aleksandar Makedonski rešio Gordijev čvor?|Presekao ga je mačem|Razvezao ga je|Spalio ga je|Ostavio ga je
+Šta znači izraz „Pirova pobeda”?|Pobeda sa prevelikim gubicima|Laka pobeda|Pobeda prevarom|Pobeda u poslednjem trenutku
+Šta znači izraz „Kasandrino proročanstvo”?|Upozorenje kome niko ne veruje|Lažno proročanstvo|Srećna vest|Zagonetka
+Šta znači izraz „Arijadnina nit”?|Ono što pomaže da se izađe iz teške situacije|Konac za šivenje|Ljubavna veza|Zamka
+Šta znači izraz „Herkulovski posao”?|Ogroman, težak posao|Lak posao|Sportski posao|Kratak posao
+Šta znači izraz „Tantalove muke”?|Mučna želja za nečim nedostižnim|Glad|Bol u leđima|Strah od visine
+Šta znači izraz „Odiseja”?|Dugo i teško putovanje|Kratak izlet|Brodolom|Pobeda
+Šta znači izraz „mentor”?|Savetnik, učitelj|Učenik|Neprijatelj|Vladar
+Iz kog dela potiče reč „mentor”?|Iz Homerove „Odiseje”|Iz Biblije|Iz „Ilijade”|Iz Šekspira
+Šta znači izraz „judin poljubac”?|Izdaja|Ljubav|Pozdrav|Oproštaj
+Šta znači izraz „oprati ruke” (kao Pilat)?|Odbiti odgovornost|Biti čist|Pomiriti se|Pobediti
+Šta znači izraz „Toma neverni”?|Neko ko u sve sumnja|Lopov|Lažov|Izdajnik
+Šta znači izraz „vavilonska kula”?|Zbrka jezika, nesporazum|Visoka zgrada|Bogatstvo|Ponos
+Šta znači izraz „Solomonsko rešenje”?|Mudro rešenje|Brzo rešenje|Pogrešno rešenje|Skupo rešenje
+Šta znači izraz „Kainov znak”?|Žig zločina|Znak sreće|Biblijski simbol mira|Prvi znak
+Šta znači izraz „Noina barka”?|Mesto spasa za mnoge|Brod|Potop|Zoološki vrt
+Šta znači latinski izraz „carpe diem”?|Iskoristi dan|Znam da ništa ne znam|Dođoh, videh, pobedih|U vinu je istina
+Šta znači latinski izraz „veni, vidi, vici”?|Dođoh, videh, pobedih|Iskoristi dan|Kocka je bačena|Zdrav duh u zdravom telu
+Ko je izgovorio „Veni, vidi, vici”?|Julije Cezar|Neron|Avgust|Ciceron
+Šta znači „alea iacta est”?|Kocka je bačena|Dođoh, videh, pobedih|Istina pobeđuje|I ti, sine Brute
+Pri prelasku koje reke je Cezar rekao „kocka je bačena”?|Rubikona|Tibra|Rajne|Pada
+Šta znači izraz „preći Rubikon”?|Doneti nepovratnu odluku|Preći reku|Pobediti|Pobeći
+Šta znači „in vino veritas”?|U vinu je istina|Vino je život|Pij umereno|Vino i ljubav
+Šta znači „mens sana in corpore sano”?|Zdrav duh u zdravom telu|Zdravlje je bogatstvo|Telo je hram|Um iznad tela
+Šta znači „errare humanum est”?|Grešiti je ljudski|Čovek je čoveku vuk|Znanje je moć|Sve teče
+Šta znači „homo homini lupus”?|Čovek je čoveku vuk|Grešiti je ljudski|Čovek je mera svih stvari|Čovek je društveno biće
+Šta znači „cogito, ergo sum”?|Mislim, dakle postojim|Znam da ništa ne znam|Sve teče|Mislim, dakle grešim
+Ko je rekao „Mislim, dakle postojim”?|Dekart|Sokrat|Kant|Platon
+Šta znači „panta rei”?|Sve teče|Sve je jedno|Sve je prolazno i ništa|Vatra je početak
+Ko je rekao „Sve teče”?|Heraklit|Platon|Sokrat|Pitagora
+Šta znači „et tu, Brute?”|I ti, Brute?|Brute, beži|Brute, dođi|Ti si Brut
+Šta znači „per aspera ad astra”?|Kroz trnje do zvezda|Zvezde su daleko|Nebo je granica|Kroz noć do dana
+Šta znači „memento mori”?|Seti se da ćeš umreti|Seti se dana|Živi danas|Zapamti me
+Šta znači „tabula rasa”?|Prazna ploča, čista stranica|Okrugli sto|Kraj priče|Pravilo igre
+Šta znači „status quo”?|Postojeće stanje|Novo stanje|Status u društvu|Pobeda
+Šta znači „ad hoc”?|Za ovu priliku, privremeno|Zauvek|Unapred|Po zakonu
+Šta znači „de facto”?|U stvari, stvarno|Po zakonu|Unapred|Naknadno
+Šta znači „de jure”?|Po zakonu|U stvari|Za sada|Bez razloga
+Šta znači „persona non grata”?|Nepoželjna osoba|Važna osoba|Nepoznata osoba|Strana osoba
+Šta znači „alter ego”?|Drugo ja|Veliki ego|Suprotno mišljenje|Brat blizanac
+Šta znači „a priori”?|Unapred, pre iskustva|Posle iskustva|Bez razloga|Na kraju
+Šta znači „curriculum vitae”?|Tok života (biografija)|Školski plan|Lična karta|Pismo preporuke
+Šta znači „ex libris”?|Iz knjiga (oznaka vlasništva knjige)|Bez knjige|Nova knjiga|Kraj knjige
+Šta znači „post scriptum” (P.S.)?|Dopisano posle teksta|Pre teksta|Potpis|Naslov
+Šta znači skraćenica „npr.”?|Na primer|Nema problema|Na pr. reci|Najprobaniji
+Šta znači skraćenica „itd.”?|I tako dalje|I tome drugo|Isto tako|Itekako
+Šta znači skraćenica „tj.”?|To jest|Tako je|Tačno je|Tom jednom
+Šta znači skraćenica „sl.”?|Slično|Slavno|Slobodno|Slika
+Šta znači skraćenica „dr”?|Doktor|Drug|Drugo|Država
+Šta znači skraćenica „god.”?|Godina|Gospodin|Godišnjak|Godišnje
+Šta znači skraćenica „OK”, prema najpoznatijoj teoriji?|Šaljiva skraćenica „oll korrect”|Olimpijski klub|Odlično kao|Ostavi kako jeste
+Šta znači skraćenica „a.m.” kod vremena?|Pre podne|Posle podne|Ponoć|Podne
+Šta znači skraćenica „p. n. e.”?|Pre nove ere|Posle nove ere|Pre naše epohe|Prošle nedelje
+Šta znači skraćenica „UNESCO”, ukratko?|Organizacija UN za obrazovanje, nauku i kulturu|Ujedinjeni narodi za ekonomiju|Svetski savet za kulturu|Evropski kulturni savez
+Šta znači skraćenica „NATO”?|Organizacija Severnoatlantskog ugovora|Nacionalna armija Turske|Novi atlantski tim|Narodna armijska teritorija
+Koji je najrasprostranjeniji jezik na svetu po broju izvornih govornika?|Mandarinski kineski|Engleski|Španski|Hindi
+Koji je jezik najviše učen kao strani jezik?|Engleski|Španski|Francuski|Kineski
+Koliko otprilike jezika postoji na svetu?|Oko 7.000|Oko 700|Oko 70.000|Oko 2.000
+Koja zemlja ima najviše jezika?|Papua Nova Gvineja|Indija|Kina|Nigerija
+Koji jezik ima najviše izvornih govornika u Evropi?|Ruski|Nemački|Francuski|Engleski
+Koji je službeni jezik Brazila?|Portugalski|Španski|Brazilski|Engleski
+Koji jezik se govori u Austriji?|Nemački|Austrijski|Mađarski|Češki
+Koji jezici su službeni u Švajcarskoj?|Nemački, francuski, italijanski i retoromanski|Samo nemački|Nemački i francuski|Švajcarski
+Koji jezici su službeni u Belgiji?|Holandski, francuski i nemački|Belgijski|Francuski|Flamanski i engleski
+Koji su službeni jezici Kanade?|Engleski i francuski|Engleski|Kanadski|Engleski i španski
+Koji jezik se govori u Meksiku?|Španski|Meksički|Portugalski|Engleski
+Koji je službeni jezik Argentine?|Španski|Portugalski|Argentinski|Italijanski
+Koji jezik se govori u Iranu?|Persijski (farsi)|Arapski|Turski|Urdu
+Koji jezik se govori u Egiptu?|Arapski|Egipatski|Koptski|Persijski
+Koji jezik je u Izraelu oživljen kao govorni jezik?|Hebrejski|Jidiš|Aramejski|Arapski
+Koji jezik je govorio Isus Hristos?|Aramejski|Latinski|Grčki|Hebrejski samo
+Koji jezik se govori u Holandiji?|Holandski (nizozemski)|Nemački|Flamanski|Danski
+Kojoj jezičkoj porodici pripada mađarski?|Ugro-finskoj (uralskoj)|Slovenskoj|Germanskoj|Romanskoj
+Koji jezik je srodan mađarskom?|Finski|Rumunski|Slovački|Turski
+Kojoj grupi jezika pripada rumunski?|Romanskoj|Slovenskoj|Germanskoj|Ugro-finskoj
+Kojoj grupi jezika pripada albanski?|Posebnoj grani indoevropskih jezika|Slovenskoj|Romanskoj|Turkijskoj
+Kojoj grupi jezika pripada srpski?|Južnoslovenskoj|Zapadnoslovenskoj|Istočnoslovenskoj|Baltičkoj
+Koji jezik je zapadnoslovenski?|Poljski|Ruski|Bugarski|Slovenački
+Koji jezik je istočnoslovenski?|Ukrajinski|Češki|Slovački|Makedonski
+Koji jezik nije slovenski?|Litvanski|Slovački|Lužičkosrpski|Beloruski
+Koji jezik nema padeže kao srpski, iako je južnoslovenski?|Bugarski (i makedonski)|Slovenački|Hrvatski|Ruski
+Koji slovenski jezik ima dvojinu (dual)?|Slovenački|Srpski|Ruski|Bugarski
+Gde se govori lužičkosrpski jezik?|U Nemačkoj|U Srbiji|U Poljskoj|U Češkoj
+Koji jezik koristi Kirilovo pismo osim srpskog?|Ruski, bugarski, makedonski i drugi|Poljski|Češki|Hrvatski
+Ko su tvorci glagoljice?|Ćirilo i Metodije|Kliment i Naum|Sava i Simeon|Vuk i Dositej
+Po kome je ćirilica dobila ime?|Po Ćirilu|Po Klimentu|Po Metodiju|Po Kiru
+Ko je, prema većini istoričara, stvorio ćirilicu?|Učenici Ćirila i Metodija (Kliment Ohridski)|Sam Ćirilo|Vuk Karadžić|Sveti Sava
+Kako se zove najstarije slovensko pismo?|Glagoljica|Ćirilica|Latinica|Runsko pismo
+Kog datuma se obeležava Dan slovenske pismenosti?|24. maja|21. februara|27. januara|8. septembra
+Kog datuma je Međunarodni dan maternjeg jezika?|21. februar|24. maj|26. septembar|8. septembar
+Kog datuma je Evropski dan jezika?|26. septembar|21. februar|9. maj|24. maj
+Koji jezik je stvoren veštački, kao međunarodni (Zamenhof)?|Esperanto|Volapik|Interlingva|Ido
+Ko je stvorio esperanto?|Ludvik Zamenhof|Johan Šlajer|Đuzepe Peano|Tolkin
+Koji izmišljeni jezik su stvorili za Zvezdane staze?|Klingonski|Vilenjački|Dotraki|Navi
+Koji jezik je izmislio Tolkin za vilenjake?|Kvenja i Sindarin|Klingonski|Dotraki|Esperanto
+Kako se zove jezik gluvih osoba?|Znakovni jezik|Brajevo pismo|Morzeova azbuka|Esperanto
+Kako se zove pismo za slepe sa ispupčenim tačkama?|Brajevo pismo|Morzeova azbuka|Znakovni jezik|Stenografija
+Koliko tačaka ima osnovna ćelija Brajevog pisma?|6|4|8|10
+Kako se zove brzo pisanje skraćenim znacima?|Stenografija|Kaligrafija|Kriptografija|Tipografija
+Kako se zove nauka o šifrovanju poruka?|Kriptografija|Stenografija|Kaligrafija|Paleografija
+Kako se zove nauka o poreklu reči?|Etimologija|Entomologija|Fonetika|Sintaksa
+Kako se zove nauka o glasovima?|Fonetika (fonologija)|Morfologija|Sintaksa|Semantika
+Kako se zove nauka o značenju reči?|Semantika|Sintaksa|Morfologija|Fonetika
+Kako se zove nauka o rečenici?|Sintaksa|Semantika|Fonetika|Etimologija
+Kako se zove nauka o oblicima reči?|Morfologija|Sintaksa|Semantika|Leksikologija
+Kako se zove knjiga sa rečima i njihovim značenjima poređanim azbučno?|Rečnik|Atlas|Enciklopedija|Gramatika
+Kako se zove knjiga sinonima?|Tezaurus|Leksikon|Atlas|Almanah
+Kako se zove reč ili rečenica koja se čita isto unapred i unazad?|Palindrom|Anagram|Akronim|Homonim
+Koja reč je palindrom?|Radar|Kuća|Voda|Lopta
+Koja srpska rečenica je poznat palindrom?|Ana voli Milovana|Mama i tata|Sunce sija|Ide maca oko tebe
+Kako se zove reč dobijena premeštanjem slova druge reči (npr. „Rim” – „mir”)?|Anagram|Palindrom|Akronim|Sinonim
+Kako se zove reč napravljena od početnih slova (npr. NATO)?|Akronim|Anagram|Palindrom|Neologizam
+Kako se zove rečenica koja sadrži sva slova azbuke?|Pangram|Palindrom|Anagram|Tautologija
+Koja je poznata engleska rečenica koja sadrži sva slova?|The quick brown fox jumps over the lazy dog|Hello world|To be or not to be|I came, I saw, I conquered
+Koja srpska rečenica je poznat pangram?|Ljubazni fenjerdžija čađavog lica hoće da mi pokaže štos|Ide maca oko tebe|Ana voli Milovana|Sunce je žuto
+Kako se zove ponavljanje istog značenja nepotrebno (npr. „vratiti se nazad”)?|Pleonazam|Palindrom|Metafora|Eufemizam
+Kako se zove ublaženi izraz za nešto neprijatno (npr. „preminuo” umesto „umro”)?|Eufemizam|Pleonazam|Hiperbola|Ironija
+Kako se zove izraz koji podražava zvuk (npr. „mijau”)?|Onomatopeja|Eufemizam|Akronim|Palindrom
+Šta znači reč „kafana” po poreklu?|Mesto gde se pije kafa|Mesto gde se jede|Mesto gde se peva|Konačište
+Šta znači reč „mezimac”?|Najmlađe, najmilije dete|Najstariji sin|Siroče|Unuk
+Šta znači reč „jaran”?|Prijatelj, drug|Neprijatelj|Brat|Konj
+Šta znači reč „merak”?|Uživanje, zadovoljstvo|Tuga|Glad|Bes
+Šta znači reč „ćeif” (ćef)?|Raspoloženje, volja|Šešir|Kafa|Bes
+Šta znači reč „inat”?|Prkos|Ljubav|Strah|Lenjost
+Šta znači reč „dert”?|Tuga, briga|Radost|Bes|Bolest
+Šta znači reč „aršin”?|Mera za dužinu|Ćilim|Vaga|Novac
+Šta znači izraz „meriti istim aršinom”?|Postupati jednako prema svima|Biti precizan|Prevariti|Prodati
+Šta znači reč „bakšiš”?|Napojnica|Mito|Kazna|Kusur
+Šta znači reč „jorgan”?|Prekrivač, pokrivač|Jastuk|Ćilim|Zavesa
+Šta znači reč „sanduk”?|Kovčeg, kutija|Sto|Krevet|Prozor
+Iz kog jezika potiče reč „kašika”?|Turskog|Nemačkog|Latinskog|Grčkog
+Šta znači reč „čaršija”?|Glavna ulica, središte grada|Pijaca samo|Kafana|Džamija
+Šta znači reč „kapija”?|Vrata dvorišta|Krov|Prozor|Most
+Šta znači reč „bostan”?|Lubenica (i bašta)|Bunar|Krompir|Kukuruz
+Šta znači reč „patlidžan”?|Plavi paradajz|Krastavac|Krompir|Paprika
+Kako se u Srbiji kaže za ono što se u Hrvatskoj zove „kruh”?|Hleb|Pekara|Kifla|Testo
+Kako se u Srbiji kaže za ono što se u Hrvatskoj zove „vlak”?|Voz|Tramvaj|Kamion|Brod
+Kako se u Srbiji kaže za ono što se u Hrvatskoj zove „tjedan”?|Nedelja (sedmica)|Mesec|Dan|Godina
+Kako se u Srbiji kaže za „zrakoplov”?|Avion|Helikopter|Balon|Raketa
+Kako se u Srbiji kaže za „nogomet”?|Fudbal|Rukomet|Odbojka|Košarka
+Kako se u Srbiji kaže za „glazba”?|Muzika|Pesma|Igra|Ples
+Kako se u Srbiji kaže za „kolodvor”?|Stanica|Aerodrom|Luka|Raskrsnica
+Kako se u Srbiji kaže za „žlica”?|Kašika|Viljuška|Nož|Tanjir
+Kako se u Srbiji kaže za „vrhnje”?|Pavlaka|Mleko|Sir|Maslac
+Kako se u Srbiji kaže za „češnjak”?|Beli luk|Crni luk|Praziluk|Vlašac
+Kako se na engleskom kaže „hvala”?|Thank you|Please|Sorry|Hello
+Kako se na nemačkom kaže „hvala”?|Danke|Bitte|Merci|Grazie
+Kako se na francuskom kaže „hvala”?|Merci|Danke|Gracias|Grazie
+Kako se na italijanskom kaže „hvala”?|Grazie|Gracias|Merci|Obrigado
+Kako se na španskom kaže „hvala”?|Gracias|Grazie|Obrigado|Merci
+Kako se na portugalskom kaže „hvala”?|Obrigado|Gracias|Grazie|Danke
+Kako se na grčkom kaže „hvala”?|Efharisto|Kalimera|Jasu|Parakalo
+Kako se na turskom kaže „hvala”?|Teşekkür ederim (Sağ ol)|Merhaba|Evet|Lütfen
+Kako se na ruskom kaže „hvala”?|Spasibo|Pažalujsta|Zdravstvujte|Do svidanija
+Kako se na japanskom kaže „hvala”?|Arigato|Konničiva|Sajonara|Kampai
+Kako se na japanskom kaže „zdravo” (dobar dan)?|Konničiva|Arigato|Sajonara|Banzai
+Kako se na japanskom kaže „doviđenja”?|Sajonara|Arigato|Konničiva|Sake
+Kako se na havajskom kaže „zdravo” i „ljubav”?|Aloha|Mahalo|Hula|Luau
+Kako se na hebrejskom pozdravlja, a znači „mir”?|Šalom|Salam|Mazel tov|Amin
+Kako se na arapskom pozdravlja, a znači „mir”?|Salam|Šalom|Inšalah|Habibi
+Šta znači arapski izraz „inšalah”?|Ako Bog da|Hvala Bogu|Bog je veliki|Mir s tobom
+Šta znači italijanski izraz „dolče vita”?|Slatki život|Lepa žena|Dobar dan|Ljubav je slepa
+Šta znači francuski izraz „bon apeti”?|Prijatno (dobar tek)|Dobar dan|Laku noć|Živeli
+Šta znači francuski izraz „deža vi”?|Već viđeno|Lepa noć|Dobar ukus|Do viđenja
+Šta znači francuski izraz „laissez-faire”?|Pustite da radi (bez mešanja)|Lepo jedite|Dobro došli|Uživajte
+Šta znači francuski izraz „femme fatale”?|Kobna žena|Lepa žena|Pametna žena|Žena udovica
+Šta znači francuski izraz „savoir-vivre”?|Umeće življenja, lepo ponašanje|Znati jesti|Živeti u Parizu|Znati plesati
+Šta znači francuski izraz „bon voyage”?|Srećan put|Dobar dan|Dobar tek|Laku noć
+Šta znači nemački izraz „kindergarten” u engleskom?|Vrtić (dečji vrt)|Kuhinja|Bašta|Škola
+Šta znači nemačka reč „cajtgajst”?|Duh vremena|Vreme je novac|Sat|Kalendar
+Šta znači nemačka reč „angst”?|Strah, tesnoba|Ljutnja|Radost|Tuga
+Šta znači nemačka reč „wanderlust”?|Strast za putovanjima|Ljubav prema šumi|Strah od lutanja|Umor
+Šta znači nemačka reč „šadenfrojde”?|Radovanje tuđoj nesreći|Strah od senke|Radost sunca|Tuga za domom
+Šta znači danska reč „hjuge”?|Ugođaj, toplina i udobnost doma|Hladnoća|Bicikl|Kafa
+Šta znači japanska reč „cunami”?|Talas u luci|Zemljotres|Vetar|Oluja
+Šta znači japanska reč „karaoke”?|Prazan orkestar|Pevanje|Mikrofon|Zabava
+Šta znači japanska reč „emodži” (otprilike)?|Slika + znak|Smajli|Lice|Osećaj
+Šta znači japanska reč „kamikaze”?|Božanski vetar|Samoubica|Pilot|Hrabrost
+Šta znači japanska reč „bonsai”?|Drvo u posudi|Malo drvo|Japanski vrt|Cveće
+Šta znači reč „ciao” na italijanskom?|Zdravo / ćao (i pri odlasku)|Hvala|Molim|Laku noć
+Iz kog jezika potiče pozdrav „ćao”?|Iz venecijanskog dijalekta („sluga vaš”)|Iz francuskog|Iz latinskog|Iz španskog
+Iz kog jezika potiče reč „robot”?|Češkog|Ruskog|Nemačkog|Engleskog
+Iz kog jezika potiče reč „vampir”?|Iz srpskog (slovenskih jezika)|Iz rumunskog|Iz mađarskog|Iz engleskog
+Koja srpska reč je ušla u mnoge svetske jezike?|Vampir|Kafana|Rakija|Šljiva
+Iz kog jezika potiče reč „kiosk”?|Turskog (persijskog)|Francuskog|Nemačkog|Ruskog
+Iz kog jezika potiče reč „alkohol”?|Arapskog|Latinskog|Grčkog|Nemačkog
+Iz kog jezika potiče reč „algebra”?|Arapskog|Grčkog|Latinskog|Persijskog
+Iz kog jezika potiče reč „demokratija”?|Grčkog|Latinskog|Francuskog|Engleskog
+Šta znači grčka reč „demos” u reči demokratija?|Narod|Vlast|Grad|Zakon
+Šta znači grčka reč „filo” u reči filozofija?|Ljubav|Mudrost|Znanje|Mišljenje
+Šta znači reč „filozofija” doslovno?|Ljubav prema mudrosti|Nauka o životu|Znanje o svetu|Učenje
+Šta znači grčka reč „bios”?|Život|Zemlja|Voda|Telo
+Šta znači grčka reč „hidro”?|Voda|Vatra|Vazduh|Zemlja
+Šta znači grčka reč „geo”?|Zemlja|Voda|Nebo|Grad
+Šta znači grčka reč „tele” (kao u telefon)?|Daleko|Zvuk|Slika|Glas
+Šta znači grčka reč „mikro”?|Mali|Veliki|Brz|Novi
+Šta znači grčka reč „poli”?|Mnogo|Jedan|Grad|Malo
+Šta znači grčka reč „mono”?|Jedan, sam|Mnogo|Dva|Ceo
+Šta znači grčki prefiks „anti”?|Protiv|Pre|Posle|Sa
+Šta znači latinski prefiks „pre”?|Pre|Posle|Protiv|Ispod
+Šta znači latinski prefiks „post”?|Posle|Pre|Ispod|Iznad
+Šta znači latinski prefiks „super”?|Iznad, nad|Ispod|Pored|Unutar
+Šta znači latinski prefiks „sub”?|Ispod, pod|Iznad|Posle|Pre
+Šta znači latinski prefiks „inter”?|Između|Unutar|Iznad|Ispod
+Šta znači reč „autobiografija”?|Životopis koji osoba piše o sebi|Biografija o autu|Knjiga o putovanjima|Dnevnik
+Šta znači reč „autonomija”?|Samouprava|Automobil|Zakon|Sloboda kretanja
+Šta znači reč „hipodrom”?|Trkalište za konje|Bolnica|Stadion|Pozorište
+Šta znači reč „nekropola”?|Groblje (grad mrtvih)|Glavni grad|Utvrđenje|Hram
+Šta znači reč „metropola”?|Veliki grad (grad-majka)|Selo|Utvrđenje|Luka
+Šta znači reč „akropolj”?|Gornji grad|Donji grad|Grad mrtvih|Pijaca
+Šta znači reč „hipopotam” (nilski konj) doslovno?|Rečni konj|Debeo konj|Vodeni bik|Veliki konj
+Šta znači ime „Aleksandar” na grčkom?|Zaštitnik ljudi|Pobednik|Kralj|Hrabri
+Šta znači ime „Petar”?|Kamen|Ribar|Sveti|Hrabri
+Šta znači ime „Sofija”?|Mudrost|Lepota|Ljubav|Svetlost
+Šta znači ime „Filip”?|Ljubitelj konja|Prijatelj|Kralj|Mudar
+Šta znači ime „Teodor” (Todor)?|Božji dar|Kralj|Hrabri|Sveti
+Šta znači ime „Nikola”?|Pobednik naroda|Ribar|Mudri|Darovati
+Šta znači ime „Dragan”?|Drag, mio|Hrabar|Jak|Pobednik
+Šta znači ime „Vuk” u srpskoj tradiciji davanja imena?|Da ga ne bi napadale veštice i bolesti (zaštitno ime)|Da bude lovac|Da bude vojnik|Bez razloga
+Šta znači ime „Milica”?|Mila, draga|Lepa|Mudra|Jaka
+Koja reč srpskog jezika nema nijedan samoglasnik?|Prst (sa slogotvornim r)|Most|Dom|Kuća
+Koje slovo engleske abecede je najčešće?|E|A|T|S
+Koliko slova ima engleska abeceda?|26|30|24|28
+Koliko slova ima nemačka abeceda (osnovnih)?|26|30|24|28
+Koliko slova ima grčki alfabet?|24|26|22|28
+Koje je prvo slovo grčkog alfabeta?|Alfa|Beta|Gama|Delta
+Koje je poslednje slovo grčkog alfabeta?|Omega|Zeta|Omikron|Psi
+Kako se zove slovo π?|Pi|Ro|Fi|Psi
+Koliko slova ima ruska azbuka?|33|30|32|28
+Koje slovo postoji u srpskoj ćirilici, a ne u ruskoj?|Ђ|Ы|Э|Я
+Koje pismo koristi japanski jezik osim kanđija?|Hiragana i katakana|Hangul|Latinica|Devanagari
+Kako se zove korejsko pismo?|Hangul|Hiragana|Kanđi|Devanagari
+Kako se zove pismo hindija?|Devanagari|Hangul|Arapsko|Tamilsko
+U kom smeru se piše arapsko i hebrejsko pismo?|Zdesna nalevo|Sleva nadesno|Odozgo nadole|Odozdo nagore
+Kako se zove klinasto pismo Sumera?|Klinopis|Hijeroglifi|Glagoljica|Runsko pismo
+Kako se zove pismo starih Germana i Vikinga?|Rune|Klinopis|Hijeroglifi|Ogam
+Kako se zove pismo starih Egipćana?|Hijeroglifi|Klinopis|Rune|Linear B
+Iz kog pisma potiče latinica?|Iz grčkog (preko etrurskog)|Iz ćirilice|Iz hijeroglifa|Iz runa
+Iz kog pisma potiče ćirilica?|Iz grčkog alfabeta (i glagoljice)|Iz latinice|Iz runa|Iz arapskog
+Koliko otprilike ima znakova u kineskom pismu za svakodnevnu upotrebu?|Oko 3.000|Oko 30|Oko 300|Oko 30.000
+Kako se zove jezik na kom su pisani stari srpski rukopisi?|Srpskoslovenski|Staroruski|Latinski|Grčki
+Kako se zove jezik koji je u 18. veku koristila srpska elita pre Vuka?|Slavenosrpski|Srpskoslovenski|Ruskoslovenski|Narodni
+Ko se protivio Vukovoj reformi i zalagao za slavenosrpski?|Jovan Hadžić (i crkva)|Dositej Obradović|Đura Daničić|Branko Radičević
+Koje godine je Vukov jezik zvanično prihvaćen u Srbiji?|1868.|1818.|1847.|1878.
+Koje delo 1847. se smatra pobedom Vukove reforme (pored Vukovog prevoda Novog zaveta)?|„Pesme” Branka Radičevića i „Rat za srpski jezik” Daničića|„Gorski vijenac”|„Srpski rječnik”|„Pismenica”
+Ko je napisao „Rat za srpski jezik i pravopis”?|Đura Daničić|Vuk Karadžić|Branko Radičević|Sava Mrkalj
+Ko je izbacio „poluglase” iz azbuke i napisao „Salo debeloga jera”?|Sava Mrkalj|Vuk Karadžić|Dositej Obradović|Đura Daničić
+Koja institucija je izdala „Pravopis srpskoga jezika”?|Matica srpska|Vukova zadužbina|SANU sama|Narodna biblioteka
+Koje je najstarije srpsko književno, kulturno i naučno društvo (osnovano 1826)?|Matica srpska|SANU|Vukova zadužbina|Kolarac
+U kom gradu je osnovana Matica srpska?|Pešti|Novom Sadu|Beogradu|Sremskim Karlovcima
+U kom gradu je danas sedište Matice srpske?|Novom Sadu|Beogradu|Pešti|Kragujevcu
+Koja reč je pravilno napisana?|Uopšte|Uopće|Uobšte|U opšte
+Koja reč je pravilno napisana?|Pogrešno|Pogrješno|Pogrešnno|Pogresno
+Koji oblik je pravilan?|Dođem|Dojdem|Dodjem|Dođim
+Koji oblik je pravilan?|Ne znam|Neznam|Nezam|Ne-znam
+Koji oblik je pravilan u standardnom srpskom?|Nisam|Nesam|Ni sam|Nesmam
+Koji oblik je pravilan?|Ručao sam|Ručo sam|Ručio sam|Ručal sam
+Koji je pravilan oblik množine reči „čovek”?|Ljudi|Čoveci|Čovekovi|Čovjeci
+Koji je pravilan oblik množine reči „dete”?|Deca|Deteta|Detovi|Detići
+Koji je pravilan oblik množine reči „oko” (organ)?|Oči|Oka|Okovi|Oke
+Koji je pravilan oblik množine reči „uvo”?|Uši|Uva|Uvovi|Uške
+Koji je pravilan oblik množine reči „brat” (zbirna)?|Braća|Bratovi|Brati|Bratci
+Kako glasi vokativ imena „Petar”?|Petre|Petar|Petru|Petrom
+Kako glasi vokativ reči „drug”?|Druže|Drugu|Drugo|Drug
+Kako glasi vokativ reči „Bog”?|Bože|Bogu|Bogo|Boga
+Kako glasi vokativ reči „gospodin”?|Gospodine|Gospodinu|Gospodino|Gospodin
+Šta znači glagolsko vreme „aorist” u srpskom?|Prošla radnja završena neposredno pre govora|Buduće vreme|Sadašnje vreme|Zapovedni način
+Koji glagolski oblik je primer aorista?|Rekoh|Rekao sam|Reći ću|Rekavši
+Koji glagolski oblik je futur I?|Pevaću|Pevao sam|Pevah|Pevaj
+Koji glagolski oblik je imperativ?|Pevaj|Pevaću|Pevao|Pevah
+Kako se zove znak „?”|Upitnik|Uzvičnik|Tačka-zarez|Navodnik
+Kako se zove znak „!”|Uzvičnik|Upitnik|Crtica|Apostrof
+Kako se zove znak „;”|Tačka i zarez|Dve tačke|Zarez|Apostrof
+Kako se zove znak „’”|Apostrof|Navodnik|Crtica|Zarez
+Kako se zove znak „…”|Tri tačke|Dve tačke|Tačka-zarez|Crta
+Kakvi su srpski navodnici prema pravopisu?|„dole-gore”|"gore-gore"|«ugaoni»|‚jednostruki‘
+Kako se zove reč od milošte (npr. „seka”, „bata”)?|Hipokoristik|Pejorativ|Augmentativ|Deminutiv
+Kako se zove reč koja označava nešto umanjeno (kućica, stolić)?|Deminutiv|Augmentativ|Pejorativ|Hipokoristik
+Kako se zove reč koja označava nešto uvećano (kućerina, nosina)?|Augmentativ|Deminutiv|Hipokoristik|Kolektiv
+Koja reč je deminutiv?|Kućica|Kućerina|Kuća|Kućni
+Koja reč je augmentativ?|Ručerda|Ručica|Ruka|Ručni
+Kako se zove pejorativna reč?|Reč sa pogrdnim značenjem|Reč od milošte|Uvećanica|Umanjenica
+Kako se zove zbirna imenica od „list”?|Lišće|Listovi|Listić|Listina
+Kako se zove zbirna imenica od „cvet”?|Cveće|Cvetovi|Cvetić|Cvetnjak
+Kako se zove zbirna imenica od „kamen”?|Kamenje|Kamenovi|Kamenčić|Kamenolom
+Kako se zove mladunče od „pas”?|Štene|Pseto|Psić|Kuče
+Kako se zove stanovnik Niša?|Nišlija|Nišanin|Nišević|Nišanac
+Kako se zove stanovnik Užica?|Užičanin|Užićanin|Užičar|Užičan
+Kako se zove stanovnica Beograda?|Beograđanka|Beogradkinja|Beogradska|Beograđanica
+Kako se zove stanovnik Kragujevca?|Kragujevčanin|Kragujevac|Kragujevčar|Kragujevljanin
+Kako se zove stanovnik Kraljeva?|Kraljevčanin|Kraljevac|Kraljevljanin|Kraljevčar
+Kako se zove stanovnik Pirota?|Piroćanac|Pirotac|Pirotlija|Pirotčanin
+Kako se zove stanovnik Leskovca?|Leskovčanin|Leskovac|Leskovčar|Leskovljanin
+Kako se zove stanovnik Čačka?|Čačanin|Čačkanin|Čačanac|Čačkalac
+Kako se zove stanovnik Zrenjanina?|Zrenjaninac|Zrenjaninčanin|Zrenjanac|Zrenjaninjanin
+Kako se zove stanovnik Sombora?|Somborac|Somborčanin|Somborljanin|Somborčan
+Kako se zove stanovnik Šapca?|Šapčanin|Šabčanin|Šabac|Šapčanac
+Kako se zove stanovnik Valjeva?|Valjevac|Valjevčanin|Valjevljanin|Valjevčar
+Kako se zove stanovnik Smedereva?|Smederevac|Smederevčanin|Smederevljanin|Smederac
+Kako se zove stanovnik Vranja?|Vranjanac|Vranjčanin|Vranjac|Vranjevac
+Kako se zove stanovnik Novog Sada?|Novosađanin|Novosadac|Novosadčanin|Novosadjanin
+Kako se zove stanovnik Subotice?|Subotičanin|Suboćanin|Subotičar|Subotac
