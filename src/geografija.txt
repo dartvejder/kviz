@@ -311,3 +311,331 @@ Koji je najstariji most u Pragu?|Karlov most|Lančani most|Rialto|Most Mehmed-pa
 U kom gradu je most Rialto?|Veneciji|Firenci|Rimu|Veroni
 U kom gradu je čuveni Stari most iz 16. veka, srušen 1993. i obnovljen?|Mostaru|Višegradu|Sarajevu|Trebinju
 U kom gradu je Lančani most na Dunavu?|Budimpešti|Beču|Bratislavi|Beogradu
+Koji je glavni grad Australije?|Kanbera|Sidnej|Melburn|Pert
+Koji je glavni grad Kanade?|Otava|Toronto|Montreal|Vankuver
+Koji je glavni grad Brazila?|Brazilija|Rio de Žaneiro|San Paolo|Salvador
+Koji je glavni grad Turske?|Ankara|Istanbul|Izmir|Antalija
+Koji je glavni grad Švajcarske?|Bern|Cirih|Ženeva|Bazel
+Koji je glavni grad Novog Zelanda?|Velington|Okland|Krajstčerč|Danidin
+Koji je glavni grad Južnoafričke Republike (izvršna vlast)?|Pretorija|Johanesburg|Kejptaun|Durban
+Koji je glavni grad Nigerije?|Abudža|Lagos|Ibadan|Kano
+Koji je glavni grad Maroka?|Rabat|Kazablanka|Marakeš|Fes
+Koji je glavni grad Egipta?|Kairo|Aleksandrija|Giza|Luksor
+Koji je glavni grad Kenije?|Najrobi|Mombasa|Kampala|Dar es Salam
+Koji je glavni grad Etiopije?|Adis Abeba|Asmara|Mogadiš|Kartum
+Koji je glavni grad Tanzanije?|Dodoma|Dar es Salam|Zanzibar|Aruša
+Koji je glavni grad Gane?|Akra|Kumasi|Lome|Abidžan
+Koji je glavni grad Senegala?|Dakar|Bamako|Konakri|Nuakšot
+Koji je glavni grad Alžira?|Alžir|Oran|Tunis|Konstantin
+Koji je glavni grad Tunisa?|Tunis|Sfaks|Tripoli|Alžir
+Koji je glavni grad Libije?|Tripoli|Bengazi|Tunis|Kairo
+Koji je glavni grad Sudana?|Kartum|Omdurman|Džuba|Adis Abeba
+Koji je glavni grad Angole?|Luanda|Maputo|Harare|Lusaka
+Koji je glavni grad Madagaskara?|Antananarivo|Tuamasina|Moroni|Port Luj
+Koji je glavni grad Argentine?|Buenos Ajres|Kordoba|Rosario|Montevideo
+Koji je glavni grad Čilea?|Santjago|Valparaiso|Lima|Konsepsion
+Koji je glavni grad Perua?|Lima|Kusko|Kito|Arekipa
+Koji je glavni grad Kolumbije?|Bogota|Medeljin|Kali|Kartahena
+Koji je glavni grad Venecuele?|Karakas|Marakaibo|Bogota|Valensija
+Koji je glavni grad Ekvadora?|Kito|Gvajakil|Lima|Kuenka
+Koji je glavni grad Bolivije (sedište vlade)?|La Paz|Sukre|Santa Kruz|Kočabamba
+Koji je glavni grad Urugvaja?|Montevideo|Buenos Ajres|Asunsion|Punta del Este
+Koji je glavni grad Paragvaja?|Asunsion|Montevideo|La Paz|Sjudad del Este
+Koji je glavni grad Meksika?|Meksiko Siti|Gvadalahara|Monterej|Kankun
+Koji je glavni grad Kube?|Havana|Santjago de Kuba|San Huan|Santo Domingo
+Koji je glavni grad Jamajke?|Kingston|Montego Bej|Port o Prens|Nasau
+Koji je glavni grad Japana?|Tokio|Kjoto|Osaka|Jokohama
+Koji je glavni grad Južne Koreje?|Seul|Busan|Pjongjang|Inčeon
+Koji je glavni grad Severne Koreje?|Pjongjang|Seul|Kesong|Hamhung
+Koji je glavni grad Vijetnama?|Hanoj|Ho Ši Min|Da Nang|Pnom Pen
+Koji je glavni grad Tajlanda?|Bangkok|Čijang Maj|Puket|Vijentijan
+Koji je glavni grad Indonezije?|Džakarta|Bali|Surabaja|Bandung
+Koji je glavni grad Filipina?|Manila|Sebu|Davao|Kezon Siti
+Koji je glavni grad Malezije?|Kuala Lumpur|Singapur|Džordž Taun|Putradžaja
+Koji je glavni grad Pakistana?|Islamabad|Karači|Lahor|Ravalpindi
+Koji je glavni grad Indije?|Nju Delhi|Mumbaj|Kolkata|Bangalor
+Koji je glavni grad Bangladeša?|Daka|Čitagong|Katmandu|Kolkata
+Koji je glavni grad Nepala?|Katmandu|Pokara|Timpu|Daka
+Koji je glavni grad Avganistana?|Kabul|Kandahar|Herat|Islamabad
+Koji je glavni grad Irana?|Teheran|Isfahan|Širaz|Tabriz
+Koji je glavni grad Iraka?|Bagdad|Basra|Mosul|Erbil
+Koji je glavni grad Sirije?|Damask|Alep|Homs|Bejrut
+Koji je glavni grad Libana?|Bejrut|Tripoli|Damask|Sidon
+Koji je glavni grad Jordana?|Aman|Akaba|Damask|Jerusalim
+Koji je glavni grad Saudijske Arabije?|Rijad|Džeda|Meka|Medina
+Koji je glavni grad Ujedinjenih Arapskih Emirata?|Abu Dabi|Dubai|Šardža|Doha
+Koji je glavni grad Katara?|Doha|Abu Dabi|Manama|Maskat
+Koji je glavni grad Kazahstana?|Astana|Almati|Taškent|Biškek
+Koji je glavni grad Uzbekistana?|Taškent|Samarkand|Buhara|Astana
+Koji je glavni grad Gruzije?|Tbilisi|Batumi|Jerevan|Baku
+Koji je glavni grad Jermenije?|Jerevan|Tbilisi|Baku|Gjumri
+Koji je glavni grad Azerbejdžana?|Baku|Tbilisi|Jerevan|Gandža
+Koji je glavni grad Mongolije?|Ulan Bator|Astana|Biškek|Harbin
+Koji je glavni grad Mjanmara?|Nepjido|Jangon|Mandalaj|Bangkok
+Koji je glavni grad Šri Lanke (administrativni)?|Šri Džajavardenepura Kote|Kolombo|Kandi|Gale
+Koji je glavni grad Portugala?|Lisabon|Porto|Koimbra|Faro
+Koji je glavni grad Irske?|Dablin|Kork|Belfast|Golvej
+Koji je glavni grad Škotske?|Edinburg|Glazgov|Aberdin|Dandi
+Koji je glavni grad Velsa?|Kardif|Svonsi|Njuport|Bangor
+Koji je glavni grad Holandije prema ustavu?|Amsterdam|Hag|Roterdam|Utreht
+U kom gradu je sedište holandske vlade?|Hag|Amsterdam|Roterdam|Utreht
+Koji je glavni grad Belgije?|Brisel|Antverpen|Gent|Brož
+Koji je glavni grad Danske?|Kopenhagen|Orhus|Odense|Malme
+Koji je glavni grad Norveške?|Oslo|Bergen|Stavanger|Trondhajm
+Koji je glavni grad Švedske?|Stokholm|Geteborg|Malme|Upsala
+Koji je glavni grad Finske?|Helsinki|Turku|Tampere|Talin
+Koji je glavni grad Islanda?|Rejkjavik|Akurejri|Torshavn|Nuk
+Koji je glavni grad Estonije?|Talin|Tartu|Riga|Helsinki
+Koji je glavni grad Letonije?|Riga|Talin|Viljnus|Kaunas
+Koji je glavni grad Litvanije?|Viljnus|Kaunas|Riga|Minsk
+Koji je glavni grad Belorusije?|Minsk|Grodno|Viljnus|Kijev
+Koji je glavni grad Ukrajine?|Kijev|Harkov|Odesa|Lavov
+Koji je glavni grad Moldavije?|Kišinjev|Tiraspolj|Bukurešt|Odesa
+Koji je glavni grad Rumunije?|Bukurešt|Kluž|Temišvar|Jaši
+Koji je glavni grad Bugarske?|Sofija|Plovdiv|Varna|Burgas
+Koji je glavni grad Grčke?|Atina|Solun|Patra|Pirej
+Koji je glavni grad Albanije?|Tirana|Drač|Skadar|Valona
+Koji je glavni grad Severne Makedonije?|Skoplje|Bitolj|Ohrid|Kumanovo
+Koji je glavni grad Crne Gore?|Podgorica|Cetinje|Nikšić|Budva
+Koji grad je po ustavu prestonica Crne Gore, pored glavnog grada Podgorice?|Cetinje|Podgorica|Kotor|Bar
+Koji je glavni grad Bosne i Hercegovine?|Sarajevo|Banja Luka|Mostar|Tuzla
+Koji je glavni grad Hrvatske?|Zagreb|Split|Rijeka|Osijek
+Koji je glavni grad Slovenije?|Ljubljana|Maribor|Koper|Celje
+Koji je glavni grad Mađarske?|Budimpešta|Debrecin|Segedin|Pečuj
+Koji je glavni grad Slovačke?|Bratislava|Košice|Žilina|Nitra
+Koji je glavni grad Češke?|Prag|Brno|Ostrava|Plzenj
+Koji je glavni grad Austrije?|Beč|Salcburg|Grac|Insbruk
+Koji je glavni grad Poljske?|Varšava|Krakov|Gdanjsk|Vroclav
+Koji je glavni grad Malte?|Valeta|Mdina|Slima|Birgu
+Koji je glavni grad Kipra?|Nikozija|Limasol|Larnaka|Pafos
+Koji je glavni grad Luksemburga?|Luksemburg|Eš-sir-Alzet|Diferdanž|Vijanden
+Koji je glavni grad Lihtenštajna?|Vaduc|Šan|Balcers|Triesen
+Koji je glavni grad Andore?|Andora la Velja|Eskaldes|Kanilo|Enkamp
+Koji je glavni grad San Marina?|San Marino|Serravale|Borgo Madjore|Domanjano
+Koja je najduža reka na svetu?|Nil|Amazon|Jangce|Misisipi
+Koja reka ima najveći protok vode na svetu?|Amazon|Nil|Kongo|Jangce
+Koja je najduža reka u Evropi?|Volga|Dunav|Dnjepar|Rajna
+Koja je najduža reka u Aziji?|Jangce|Žuta reka|Mekong|Ob
+Koja je najduža reka u Severnoj Americi?|Misuri|Misisipi|Jukon|Rio Grande
+Koja je najduža reka u Africi posle Nila?|Kongo|Niger|Zambezi|Oranž
+Na kojoj reci se nalaze Viktorijini vodopadi?|Zambezi|Kongo|Nil|Limpopo
+Na kojoj reci se nalaze Nijagarini vodopadi?|Nijagara|Sv. Lovrenc|Hadson|Kolumbija
+Između kojih zemalja su Nijagarini vodopadi?|SAD i Kanade|SAD i Meksika|Kanade i Grenlanda|Brazila i Argentine
+Koji je najviši vodopad na svetu?|Anđeoski vodopad|Viktorijini vodopadi|Nijagarini vodopadi|Iguasu
+U kojoj zemlji je Anđeoski vodopad?|Venecuela|Brazil|Kolumbija|Gvajana
+Između kojih zemalja su vodopadi Iguasu?|Argentine i Brazila|Brazila i Paragvaja|Perua i Bolivije|Venecuele i Kolumbije
+Koja reka teče kroz Bagdad?|Tigar|Eufrat|Jordan|Nil
+Koja reka teče kroz London?|Temza|Sena|Severn|Trent
+Koja reka teče kroz Pariz?|Sena|Loara|Rona|Garona
+Koja reka teče kroz Rim?|Tibar|Po|Arno|Adiđe
+Koja reka teče kroz Firencu?|Arno|Tibar|Po|Piave
+Koja reka teče kroz Prag?|Vltava|Laba|Morava|Odra
+Koja reka teče kroz Varšavu?|Visla|Odra|Bug|Varta
+Koja reka teče kroz Moskvu?|Moskva|Volga|Don|Neva
+Koja reka teče kroz Sankt Peterburg?|Neva|Volga|Moskva|Dvina
+Koja reka teče kroz Kijev?|Dnjepar|Dnjestar|Don|Južni Bug
+Koja reka teče kroz Lisabon?|Težo|Duero|Gvadalkivir|Ebro
+Koja reka teče kroz Sevilju?|Gvadalkivir|Težo|Ebro|Duero
+Koja reka teče kroz Keln i Bon?|Rajna|Majna|Elba|Mozel
+Koja reka teče kroz Frankfurt?|Majna|Rajna|Mozel|Neckar
+Koja reka teče kroz Hamburg?|Laba|Rajna|Vezer|Odra
+Koja reka teče kroz Ljubljanu?|Ljubljanica|Sava|Drava|Krka
+Koja reka teče kroz Zagreb?|Sava|Drava|Kupa|Una
+Koja reka teče kroz Sarajevo?|Miljacka|Bosna|Drina|Neretva
+Koja reka teče kroz Mostar?|Neretva|Bosna|Vrbas|Drina
+Koja reka teče kroz Banja Luku?|Vrbas|Sana|Una|Bosna
+Koja reka teče kroz Skoplje?|Vardar|Crni Drim|Treska|Bregalnica
+Koja reka teče kroz Podgoricu?|Morača|Zeta|Tara|Lim
+Koja reka teče kroz Kairo?|Nil|Eufrat|Kongo|Niger
+Koja reka teče kroz Njujork pored Menhetna (zapadna strana)?|Hadson|Ist River|Potomak|Delaver
+Koja reka teče kroz Vašington?|Potomak|Hadson|Delaver|Ohajo
+Koja reka teče kroz Šangaj?|Huangpu|Jangce|Žuta reka|Biserna reka
+Koja reka je sveta za hinduiste?|Gang|Ind|Bramaputra|Jamuna
+Kroz koliko država teče Dunav?|10|8|7|12
+U koje more se uliva Dunav?|Crno more|Jadransko more|Egejsko more|Kaspijsko jezero
+Gde izvire Dunav?|Švarcvald u Nemačkoj|Alpi u Austriji|Karpati|Tatre
+Koja reka formira granicu između SAD i Meksika?|Rio Grande|Kolorado|Pekos|Misisipi
+Koja reka je usekla Veliki kanjon?|Kolorado|Misuri|Rio Grande|Snejk
+Koje je najveće jezero na svetu po površini?|Kaspijsko jezero|Gornje jezero|Viktorijino jezero|Bajkalsko jezero
+Koje je najdublje jezero na svetu?|Bajkalsko jezero|Tanganjika|Kaspijsko jezero|Gornje jezero
+Koje je najveće slatkovodno jezero po površini?|Gornje jezero|Viktorijino jezero|Bajkalsko jezero|Mičigen
+Koje je najveće jezero u Africi?|Viktorijino jezero|Tanganjika|Malavi|Čad
+Koje jezero je najviše plovno jezero na svetu?|Titikaka|Bajkal|Viktorijino|Tahoe
+Između kojih zemalja se nalazi jezero Titikaka?|Perua i Bolivije|Čilea i Argentine|Ekvadora i Perua|Bolivije i Čilea
+Koje jezero je najniža tačka na kopnu?|Mrtvo more|Kaspijsko jezero|Bajkal|Asal
+Između kojih zemalja je Ohridsko jezero?|Severne Makedonije i Albanije|Grčke i Albanije|Crne Gore i Albanije|Bugarske i Severne Makedonije
+Između kojih zemalja je Skadarsko jezero?|Crne Gore i Albanije|Severne Makedonije i Albanije|Srbije i Crne Gore|Hrvatske i BiH
+Koje je najveće jezero u Evropi?|Ladoga|Onjega|Vener|Balaton
+Koje je najveće jezero u Srednjoj Evropi?|Balaton|Ženevsko jezero|Bodensko jezero|Neusidlersko jezero
+Uz koje jezero leži Ženeva?|Ženevsko (Leman)|Bodensko|Cirihsko|Lago Mađore
+Koja tri države dele Bodensko jezero?|Nemačka, Austrija i Švajcarska|Francuska, Švajcarska i Italija|Austrija, Italija i Slovenija|Nemačka, Francuska i Švajcarska
+Koje je najveće jezero u Italiji?|Garda|Komo|Lago Mađore|Trazimeno
+Koje jezero je u blizini Bleda u Sloveniji?|Bledsko jezero|Bohinjsko jezero|Plitvička jezera|Cerknica
+U kojoj zemlji se nalaze Plitvička jezera?|Hrvatska|Slovenija|BiH|Crna Gora
+Koji je najviši vrh na svetu?|Mont Everest|K2|Kangčendzenga|Lotse
+Koji je drugi po visini vrh na svetu?|K2|Kangčendzenga|Lotse|Makalu
+Koliko je visok Mont Everest približno?|8849 m|8611 m|8091 m|9200 m
+Na granici kojih zemalja se nalazi Mont Everest?|Nepala i Kine|Nepala i Indije|Indije i Kine|Pakistana i Kine
+Koji je najviši vrh Afrike?|Kilimandžaro|Mount Kenija|Ruvenzori|Atlas
+U kojoj zemlji je Kilimandžaro?|Tanzanija|Kenija|Uganda|Etiopija
+Koji je najviši vrh Južne Amerike?|Akonkagva|Čimborazo|Huaskaran|Ojos del Salado
+U kojoj zemlji je Akonkagva?|Argentina|Čile|Peru|Bolivija
+Koji je najviši vrh Severne Amerike?|Denali|Mount Logan|Mount Vitni|Orizaba
+Koji je najviši vrh Alpa?|Mon Blan|Materhorn|Monte Roza|Gros Glokner
+Koji je najviši vrh Evrope prema većini podela?|Elbrus|Mon Blan|Kazbek|Dihtau
+U kom planinskom lancu je Elbrus?|Kavkaz|Ural|Alpi|Karpati
+Koji je najviši vrh Antarktika?|Vinsonov masiv|Erebus|Mount Kirkpatrik|Mount Marhem
+Koji je najviši vrh Australije?|Košćuško|Mount Ku|Ajers Rok|Mount Ossa
+Koji planinski lanac deli Evropu od Azije?|Ural|Kavkaz|Altaj|Karpati
+Koji planinski lanac deli Francusku i Španiju?|Pirineji|Alpi|Apenini|Juri
+Koji planinski lanac se proteže duž Italije?|Apenini|Alpi|Dolomiti|Pirineji
+Koji je najduži planinski lanac na svetu?|Andi|Himalaji|Stenovite planine|Ural
+Koje planine se protežu kroz Rumuniju u luku?|Karpati|Balkan|Rodopi|Alpi
+Koji je najviši vrh Balkanskog poluostrva?|Musala|Olimp|Vihren|Korab
+U kojoj zemlji je Musala?|Bugarska|Grčka|Severna Makedonija|Albanija
+Koji je najviši vrh Grčke?|Olimp|Parnas|Smolikas|Ida
+Koji je najviši vrh Severne Makedonije?|Korab|Šar planina (Titov vrh)|Pelister|Jakupica
+Koji je najviši vrh Crne Gore?|Zla Kolata|Bobotov kuk|Maja Rosit|Kom
+Koji je najviši vrh Durmitora?|Bobotov kuk|Zla Kolata|Savin kuk|Kom
+Koji je najviši vrh BiH?|Maglić|Bjelašnica|Vranica|Prenj
+Koji je najviši vrh Hrvatske?|Dinara (Sinjal)|Velebit (Vaganski vrh)|Biokovo|Kamešnica
+Koji je najviši vrh Slovenije?|Triglav|Grintovec|Stol|Mangart
+Koji je najviši vrh Srbije uključujući Kosovo i Metohiju?|Đeravica|Midžor|Pančićev vrh|Ljuboten
+Koji je najviši vrh centralne Srbije?|Midžor|Pančićev vrh|Đeravica|Rtanj
+Na kojoj planini je Midžor?|Stara planina|Kopaonik|Suva planina|Zlatibor
+Koji je najviši vrh Kopaonika?|Pančićev vrh|Midžor|Suvo rudište|Gobelja
+Koja planina u Srbiji ima oblik piramide i vrh Šiljak?|Rtanj|Ozren|Tara|Goč
+Na kojoj planini je nacionalni park sa jezerom Perućac?|Tara|Zlatibor|Kopaonik|Divčibare
+Koje je najveće ostrvo na svetu?|Grenland|Nova Gvineja|Borneo|Madagaskar
+Koje je drugo po veličini ostrvo na svetu?|Nova Gvineja|Borneo|Madagaskar|Bafinovo ostrvo
+Koje je najveće ostrvo u Sredozemnom moru?|Sicilija|Sardinija|Kipar|Korzika
+Koje ostrvo pripada Francuskoj u Sredozemlju?|Korzika|Sardinija|Sicilija|Malta
+Kojoj zemlji pripada ostrvo Sardinija?|Italiji|Francuskoj|Španiji|Grčkoj
+Kojoj zemlji pripada Majorka?|Španiji|Italiji|Portugalu|Francuskoj
+Kojoj zemlji pripada Krit?|Grčkoj|Kipru|Turskoj|Italiji
+Kojoj zemlji pripada Grenland?|Danskoj|Norveškoj|Kanadi|Islandu
+Kojoj zemlji pripadaju Kanarska ostrva?|Španiji|Portugalu|Maroku|Francuskoj
+Kojoj zemlji pripadaju Azori?|Portugalu|Španiji|Francuskoj|Velikoj Britaniji
+Kojoj zemlji pripadaju Farska ostrva?|Danskoj|Norveškoj|Islandu|Velikoj Britaniji
+Kojoj zemlji pripadaju Galapagos ostrva?|Ekvadoru|Peruu|Čileu|Kolumbiji
+Kojoj zemlji pripada Uskršnje ostrvo?|Čileu|Peruu|Francuskoj|Novom Zelandu
+Kojoj zemlji pripada ostrvo Bali?|Indoneziji|Maleziji|Tajlandu|Filipinima
+Kojoj zemlji pripada Tasmanija?|Australiji|Novom Zelandu|Velikoj Britaniji|Papui Novoj Gvineji
+Kojoj zemlji pripada ostrvo Sahalin?|Rusiji|Japanu|Kini|Južnoj Koreji
+Kojoj zemlji pripada Sicilija?|Italiji|Malti|Grčkoj|Španiji
+Koji je najveći okean?|Tihi okean|Atlantski okean|Indijski okean|Severni ledeni okean
+Koji je najmanji okean?|Severni ledeni okean|Indijski okean|Južni okean|Atlantski okean
+Koja je najdublja tačka okeana?|Marijanski rov (Čelendžerova dubina)|Portoriko rov|Javanski rov|Tongaški rov
+Koliko je duboka Čelendžerova dubina približno?|Oko 11 km|Oko 8 km|Oko 5 km|Oko 14 km
+Koji moreuz razdvaja Evropu i Afriku?|Gibraltarski|Bosforski|Dardanelski|Mesinski
+Koji moreuz deli Istanbul na evropski i azijski deo?|Bosfor|Dardaneli|Gibraltar|Hormuški
+Koji moreuz razdvaja Aziju i Severnu Ameriku?|Beringov|Magelanov|Hormuški|Malački
+Koji moreuz deli Veliku Britaniju i Francusku na najužem delu?|Dover (Pa-de-Kale)|Mesinski|Gibraltarski|Kategat
+Koji moreuz razdvaja Siciliju od Italije?|Mesinski|Otrantski|Bonifačo|Sicilijanski
+Koji moreuz deli Korziku i Sardiniju?|Bonifačo|Mesinski|Otrantski|Gibraltarski
+Koji moreuz povezuje Jadransko i Jonsko more?|Otrantska vrata|Mesinski moreuz|Bosfor|Dardaneli
+Koji moreuz je na jugu Južne Amerike?|Magelanov|Beringov|Drejkov prolaz|Panamski
+Koji kanal povezuje Sredozemno i Crveno more?|Suecki|Panamski|Kilski|Korintski
+Koji kanal povezuje Atlantski i Tihi okean?|Panamski|Suecki|Kilski|Korintski
+Koje more je najslanije među velikim morima?|Crveno more|Sredozemno more|Baltičko more|Crno more
+Koje more nema obale (okruženo je strujama)?|Sargaško more|Karipsko more|Arapsko more|Koralno more
+Koje more se nalazi između Italije i Balkana?|Jadransko more|Egejsko more|Tirensko more|Ligursko more
+Koje more je između Grčke i Turske?|Egejsko more|Jonsko more|Mramorno more|Crno more
+Koje more je između Italije, Sardinije i Sicilije?|Tirensko more|Ligursko more|Jonsko more|Jadransko more
+Koje more je između Turske i Ukrajine?|Crno more|Azovsko more|Mramorno more|Egejsko more
+Koje more je spojeno sa Crnim morem Kerčkim moreuzom?|Azovsko more|Mramorno more|Kaspijsko jezero|Egejsko more
+Koje more je između Švedske i Finske?|Botnijski zaliv (Baltik)|Severno more|Norveško more|Barencovo more
+Koji je najveći koralni greben na svetu?|Veliki koralni greben|Mezoamerički greben|Crveno more|Maldivi
+Uz obalu koje zemlje je Veliki koralni greben?|Australije|Indonezije|Filipina|Novog Zelanda
+Koja je najveća pustinja na svetu?|Antarktička|Sahara|Gobi|Arabijska
+Koja je najveća vruća pustinja na svetu?|Sahara|Arabijska|Kalahari|Gobi
+Koja je najsuvlja pustinja na svetu?|Atakama|Sahara|Gobi|Namib
+U kojoj zemlji je najveći deo pustinje Atakama?|Čile|Peru|Bolivija|Argentina
+Između kojih zemalja je pustinja Gobi?|Mongolije i Kine|Kine i Kazahstana|Indije i Pakistana|Irana i Avganistana
+U kojoj zemlji je pustinja Kalahari najvećim delom?|Bocvana|Namibija|JAR|Zambija
+Koja je najmnogoljudnija zemlja na svetu (od 2023)?|Indija|Kina|SAD|Indonezija
+Koja je najveća zemlja na svetu po površini?|Rusija|Kanada|Kina|SAD
+Koja je druga po površini zemlja na svetu?|Kanada|SAD|Kina|Brazil
+Koja je najmanja zemlja na svetu?|Vatikan|Monako|San Marino|Nauru
+Koja je druga najmanja zemlja na svetu?|Monako|Vatikan|Nauru|Tuvalu
+Koja je najveća zemlja u Africi po površini?|Alžir|DR Kongo|Sudan|Libija
+Koja je najmnogoljudnija zemlja u Africi?|Nigerija|Etiopija|Egipat|DR Kongo
+Koja je najveća zemlja u Južnoj Americi?|Brazil|Argentina|Peru|Kolumbija
+Koja je najveća zemlja u Evropi koja je u potpunosti u Evropi?|Ukrajina|Francuska|Španija|Švedska
+Koja zemlja ima najviše vremenskih zona?|Francuska|Rusija|SAD|Kina
+Koliko kontinenata ima prema najčešćoj podeli?|7|5|6|8
+Koja zemlja se prostire na dva kontinenta i ima glavni grad u Aziji?|Turska|Egipat|Rusija|Kazahstan
+Na kom kontinentu se nalazi Egipat?|Afrika|Azija|Evropa|Bliski istok
+Koja zemlja je i kontinent?|Australija|Grenland|Antarktik|Indija
+Koja zemlja ima oblik čizme?|Italija|Grčka|Čile|Portugal
+Koja je najduža zemlja od severa ka jugu?|Čile|Argentina|Norveška|Brazil
+Koja zemlja ima najviše ostrva na svetu?|Švedska|Indonezija|Filipini|Norveška
+Koja zemlja ima najviše jezera?|Kanada|Finska|Rusija|SAD
+Koja se zemlja naziva „zemljom hiljadu jezera”?|Finska|Kanada|Švedska|Norveška
+Koja se zemlja naziva „zemljom izlazećeg sunca”?|Japan|Kina|Koreja|Tajland
+Koja se zemlja naziva „zemljom lala”?|Holandija|Belgija|Danska|Turska
+Koja se zemlja naziva „zemljom leda i vatre”?|Island|Norveška|Grenland|Finska
+Koja država je potpuno okružena Južnoafričkom Republikom?|Lesoto|Esvatini|Bocvana|Namibija
+Koje dve države su potpuno okružene Italijom?|Vatikan i San Marino|Monako i Malta|Andora i Lihtenštajn|San Marino i Monako
+Koja dva kontinenta povezuje Panamska prevlaka?|Severnu i Južnu Ameriku|Afriku i Aziju|Evropu i Aziju|Australiju i Aziju
+Koja prevlaka spaja Afriku i Aziju?|Suecka|Panamska|Korintska|Karelska
+Koja zemlja nema izlaz na more?|Švajcarska|Hrvatska|Slovenija|Belgija
+Koja od ovih zemalja ima izlaz na more?|Slovenija|Austrija|Mađarska|Češka
+Kroz koje države prolazi ekvator u Južnoj Americi?|Ekvador, Kolumbija i Brazil|Peru, Bolivija i Brazil|Venecuela, Gvajana i Brazil|Ekvador, Peru i Kolumbija
+Koja paralela je ekvator?|0°|23,5°|45°|90°
+Šta je griniški meridijan?|Početni meridijan 0°|Linija promene datuma|Ekvator|Severni povratnik
+U kom gradu je Griniška opservatorija?|London|Pariz|Edinburg|Oksford
+Koji povratnik prolazi kroz Saharu i Meksiko?|Rakov povratnik|Jarčev povratnik|Severni polarnik|Ekvator
+Koji povratnik prolazi kroz Australiju i Brazil?|Jarčev povratnik|Rakov povratnik|Južni polarnik|Ekvator
+Kroz koji okean prolazi linija promene datuma?|Tihi okean|Atlantski okean|Indijski okean|Severni ledeni okean
+Kako se zove sveti monolit u Australiji?|Uluru|Kata Tjuta|Mount Ku|Plava planina
+Koji vulkan je uništio Pompeje?|Vezuv|Etna|Stromboli|Vulkano
+Koji je najveći aktivni vulkan u Evropi?|Etna|Vezuv|Hekla|Stromboli
+Koji islandski vulkan je 2010. prekinuo letove u Evropi?|Ejafjalajekidl|Hekla|Katla|Laki
+U kojoj zemlji je vulkan Fudži?|Japan|Indonezija|Filipini|Južna Koreja
+Koji vulkan je eksplodirao 1883. u Indoneziji?|Krakatau|Tambora|Merapi|Pinatubo
+Kako se zove pojas vulkana i potresa oko Tihog okeana?|Vatreni prsten|Pacifički pojas|Vulkanski luk|Zemljin pojas
+Koji grad je razoren zemljotresom 1963?|Skoplje|Banja Luka|Kraljevo|Podgorica
+Koji grad u Srbiji je pogođen zemljotresom 2010?|Kraljevo|Kragujevac|Novi Pazar|Kruševac
+Kog datuma je bio veliki zemljotres u Crnogorskom primorju?|15. aprila 1979|26. jula 1963|27. oktobra 1969|3. novembra 2010
+Koja zemlja ima najviše stanovnika u Evropskoj uniji?|Nemačka|Francuska|Italija|Španija
+Koji grad leži na dva kontinenta?|Istanbul|Kairo|Moskva|Atina
+Koji je najsevernij glavni grad na svetu?|Rejkjavik|Oslo|Helsinki|Nuk
+Koji je najviše smešten glavni grad (sedište vlade)?|La Paz|Kito|Bogota|Adis Abeba
+Koji je najjužniji glavni grad na svetu?|Velington|Kanbera|Buenos Ajres|Montevideo
+U kom gradu se nalazi Hram Svetog Save?|Beograd|Novi Sad|Niš|Kragujevac
+U kom gradu se nalazi Kip Hrista Spasitelja?|Rio de Žaneiro|San Paolo|Buenos Ajres|Lisabon
+U kom gradu se nalazi Sagrada Familija?|Barselona|Madrid|Valensija|Sevilja
+U kom gradu se nalazi Alhambra?|Granada|Sevilja|Kordoba|Toledo
+U kom gradu se nalazi Akropolj?|Atina|Solun|Rim|Istanbul
+U kom gradu se nalazi Aja Sofija?|Istanbul|Atina|Ankara|Solun
+U kom gradu se nalazi Kremlj sa Crvenim trgom?|Moskva|Sankt Peterburg|Kijev|Kazanj
+U kom gradu se nalazi Ermitaž?|Sankt Peterburg|Moskva|Pariz|Beč
+U kom gradu se nalazi Zabranjeni grad?|Peking|Šangaj|Tokio|Seul
+U kom gradu se nalazi Tadž Mahal?|Agra|Nju Delhi|Džajpur|Mumbaj
+U kojoj zemlji je hram Angkor Vat?|Kambodža|Tajland|Vijetnam|Laos
+U kojoj zemlji je Petra, grad isklesan u steni?|Jordan|Egipat|Sirija|Liban
+U kom gradu se nalazi Opera kuća sa krovom poput jedara?|Sidnej|Melburn|Okland|Velington
+U kom gradu se nalazi Most Zlatna kapija?|San Francisko|Los Anđeles|Sijetl|Njujork
+U kom gradu se nalazi Kip slobode?|Njujork|Vašington|Boston|Filadelfija
+U kom gradu se nalazi Big Ben?|London|Edinburg|Dablin|Mančester
+U kom gradu se nalazi Brandenburška kapija?|Berlin|Minhen|Beč|Hamburg
+U kom gradu se nalazi Karlov most?|Prag|Beč|Budimpešta|Krakov
+U kom gradu se nalazi Lančani most?|Budimpešta|Prag|Beč|Bratislava
+U kom gradu se nalazi Atomijum?|Brisel|Antverpen|Amsterdam|Luksemburg
+U kom gradu se nalazi Mala sirena?|Kopenhagen|Oslo|Stokholm|Helsinki
+U kom gradu se nalazi Kosi toranj?|Piza|Firenca|Bolonja|Siena
+U kom gradu se nalazi Burdž Kalifa?|Dubai|Abu Dabi|Doha|Rijad
+U kom gradu se nalaze Petronas kule?|Kuala Lumpur|Singapur|Džakarta|Bangkok
+U kom gradu se nalazi Stari most?|Mostar|Sarajevo|Višegrad|Trebinje
+U kom gradu se nalazi most Mehmed-paše Sokolovića?|Višegrad|Mostar|Sarajevo|Goražde
+U kom gradu se nalazi Dioklecijanova palata?|Split|Zadar|Šibenik|Pula
+U kom gradu se nalazi rimska arena dobro očuvana na Jadranu?|Pula|Split|Zadar|Rijeka
+Koji grad se naziva „Biser Jadrana”?|Dubrovnik|Split|Kotor|Zadar
+U kom zalivu se nalazi Kotor?|Bokokotorski zaliv|Tivatski zaliv|Kvarnerski zaliv|Pirotski zaliv
+Koji grad se naziva „Večni grad”?|Rim|Atina|Jerusalim|Istanbul
+Koji grad se naziva „Grad svetlosti”?|Pariz|Njujork|Las Vegas|London
+Koji grad se naziva „Velika jabuka”?|Njujork|Čikago|Los Anđeles|Boston
+Koji grad se naziva „Grad vetrova”?|Čikago|Velington|Njujork|Boston
+Koji grad se naziva „Grad na sedam brežuljaka”?|Rim|Lisabon|Moskva|Beograd
+Koji grad je poznat kao „Severna Venecija”?|Sankt Peterburg|Amsterdam|Brož|Stokholm
