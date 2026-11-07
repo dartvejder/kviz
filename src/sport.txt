@@ -1,0 +1,215 @@
+Koliko traje fudbalska utakmica (regularno vreme)?|90 minuta|80 minuta|100 minuta|60 minuta
+Koliko igrača ima košarkaški tim na terenu?|5|6|7|4
+Koliko igrača ima odbojkaški tim na terenu?|6|5|7|8
+Koliko igrača ima rukometni tim na terenu (sa golmanom)?|7|6|8|11
+Koliko igrača ima ragbi (ragbi unija) tim na terenu?|15|13|11|12
+Koliko igrača ima hokejaški tim na ledu (sa golmanom)?|6|5|7|11
+Koliko igrača ima bejzbol tim u odbrani?|9|11|10|8
+Koliko je visok košarkaški koš?|3,05 m|2,90 m|3,20 m|3,50 m
+Koliko je dugačak olimpijski bazen?|50 m|25 m|100 m|33 m
+Koliko traje jedna trećina u hokeju na ledu?|20 minuta|15 minuta|25 minuta|30 minuta
+Koliko traje jedno poluvreme u rukometu?|30 minuta|25 minuta|35 minuta|45 minuta
+Koliko četvrtina ima košarkaška utakmica?|4|2|3|6
+Koliko dugo traje napad u košarci (sat za napad)?|24 sekunde|30 sekundi|20 sekundi|35 sekundi
+Koliko poena vredi touchdown u američkom fudbalu?|6|7|3|5
+Kako se zove rezultat 0 poena u tenisu?|Love (nula)|Deuce|Ace|Let
+Kako se zove servis koji protivnik ni ne dotakne u tenisu?|As|Let|Brejk|Smeč
+Kako se zove izjednačenje na 40:40 u tenisu?|Deuce (dvojka)|Brejk|Tajbrejk|Advantage
+Koliko setova treba osvojiti za pobedu na muškom Grend slemu?|3|2|4|5
+Na kojoj podlozi se igra Rolan Garos?|Šljaci|Travi|Tvrdoj podlozi|Tepihu
+Na kojoj podlozi se igra Vimbldon?|Travi|Šljaci|Tvrdoj podlozi|Tepihu
+U kom gradu se igra Vimbldon?|Londonu|Parizu|Njujorku|Melburnu
+U kom gradu se igra US open?|Njujorku|Majamiju|Los Anđelesu|Bostonu
+U kom gradu se igra Australijan open?|Melburnu|Sidneju|Brizbejnu|Pertu
+Koji je prvi Grend slem u kalendarskoj godini?|Australijan open|Rolan Garos|Vimbldon|US open
+Ko je osvojio zlatnu medalju u tenisu na Olimpijskim igrama u Parizu 2024. u muškoj konkurenciji?|Novak Đoković|Karlos Alkaraz|Janik Siner|Aleksandar Zverev
+Koja srpska teniserka je bila prva na WTA listi 2008?|Jelena Janković|Ana Ivanović|Bojana Jovanovski|Olga Danilović
+Koja srpska teniserka je osvojila Rolan Garos 2008?|Ana Ivanović|Jelena Janković|Monika Seleš|Nina Stojanović
+Koja teniserka, rođena u Novom Sadu, je osvojila devet Grend slem titula?|Monika Seleš|Ana Ivanović|Jelena Janković|Martina Navratilova
+Koje godine je Srbija osvojila Dejvis kup?|2010.|2008.|2013.|2012.
+Koji srpski teniser je, pored Đokovića, bio u finalu Dejvis kupa 2010. i osvojio odlučujući meč?|Viktor Troicki|Janko Tipsarević|Nenad Zimonjić|Dušan Lajović
+Koliko titula na Vimbldonu ima Novak Đoković?|7|5|6|8
+Iz kog grada je Novak Đoković?|Beograda|Novog Sada|Kopaonika|Niša
+Ko ima najviše Grend slem titula u muškom tenisu?|Novak Đoković|Rafael Nadal|Rodžer Federer|Pit Sampras
+Koliko puta je Rafael Nadal osvojio Rolan Garos?|14|12|10|13
+Iz koje zemlje je Rodžer Federer?|Švajcarske|Austrije|Nemačke|Švedske
+Koji turnir je Federer osvojio rekordnih osam puta?|Vimbldon|Australijan open|US open|Rolan Garos
+Koja teniserka ima rekordne 23 Grend slem titule u Open eri?|Serena Vilijams|Štefi Graf|Martina Navratilova|Margaret Kort
+Koja država ima najviše titula Svetskog prvenstva u fudbalu?|Brazil|Nemačka|Italija|Argentina
+Koliko titula svetskog prvaka u fudbalu ima Brazil?|5|4|6|3
+Ko je osvojio Svetsko prvenstvo u fudbalu 2022?|Argentina|Francuska|Hrvatska|Brazil
+Gde je održano Svetsko prvenstvo u fudbalu 2022?|Katar|Rusija|Saudijska Arabija|UAE
+Ko je osvojio Svetsko prvenstvo u fudbalu 2018?|Francuska|Hrvatska|Belgija|Nemačka
+Ko je osvojio Svetsko prvenstvo u fudbalu 2014?|Nemačka|Argentina|Brazil|Holandija
+Ko je osvojio Svetsko prvenstvo u fudbalu 2010?|Španija|Holandija|Nemačka|Italija
+Ko je osvojio Svetsko prvenstvo u fudbalu 2006?|Italija|Francuska|Nemačka|Portugal
+U kojim zemljama se održava Svetsko prvenstvo u fudbalu 2026?|SAD, Kanadi i Meksiku|Maroku, Španiji i Portugalu|Saudijskoj Arabiji|Brazilu
+Koliko reprezentacija učestvuje na Svetskom prvenstvu 2026?|48|32|40|64
+Koji fudbaler ima najviše Zlatnih lopti?|Lionel Mesi|Kristijano Ronaldo|Mišel Platini|Johan Krojf
+Iz koje zemlje je Lionel Mesi?|Argentine|Španije|Urugvaja|Brazila
+Iz koje zemlje je Kristijano Ronaldo?|Portugalije|Brazila|Španije|Italije
+Koji brazilski fudbaler je osvojio tri Svetska prvenstva?|Pele|Ronaldo|Garinča|Romario
+Koji argentinski fudbaler je postigao gol „Božjom rukom” 1986?|Dijego Maradona|Lionel Mesi|Gabrijel Batistuta|Mario Kempes
+Koji klub ima najviše titula Lige šampiona?|Real Madrid|Milan|Bajern Minhen|Liverpul
+Iz kog grada je klub Barselona?|Barselone|Madrida|Valensije|Sevilje
+Kako se zove stadion Real Madrida?|Santjago Bernabeu|Kamp Nou|Vanda Metropolitano|Mestalja
+Kako se zove stadion Barselone?|Kamp Nou|Santjago Bernabeu|Mestalja|San Mames
+Kako se zove stadion Crvene zvezde?|Rajko Mitić|Partizanov stadion|Karađorđe|Čair
+Kako se popularno zove stadion Crvene zvezde?|Marakana|JNA|Karaburma|Topčider
+Kako se zove derbi Crvene zvezde i Partizana?|Večiti derbi|El klasiko|Derbi Madonine|Superklasiko
+Kako se zove derbi Reala i Barselone?|El klasiko|Večiti derbi|Derbi d'Italija|Der klasiker
+Iz kog grada je fudbalski klub Juventus?|Torina|Milana|Rima|Napulja
+Iz kog grada su Ajaks?|Amsterdama|Roterdama|Ajndhovena|Haga
+Koji engleski klub ima nadimak „Topdžije”?|Arsenal|Čelsi|Totenhem|Vest Hem
+Koji engleski klub igra na Old Trafordu?|Mančester junajted|Mančester siti|Liverpul|Everton
+Koji engleski klub igra na Enfildu?|Liverpul|Everton|Mančester junajted|Arsenal
+Kako se zove najviša engleska fudbalska liga?|Premijer liga|Čempionšip|La liga|Seri A
+Kako se zove najviša italijanska fudbalska liga?|Seri A|La liga|Bundesliga|Liga 1
+Kako se zove najviša nemačka fudbalska liga?|Bundesliga|Seri A|Premijer liga|Eredivizi
+Koji srpski fudbaler je bio kapiten Mančester junajteda?|Nemanja Vidić|Branislav Ivanović|Nemanja Matić|Dejan Stanković
+Koji srpski fudbaler je osvojio Ligu šampiona sa Interom 2010?|Dejan Stanković|Nemanja Vidić|Branislav Ivanović|Mateja Kežman
+Koji srpski fudbaler je osvojio Ligu šampiona sa Čelsijem 2012?|Branislav Ivanović|Nemanja Matić|Nemanja Vidić|Aleksandar Kolarov
+Koji igrač Crvene zvezde je postigao odlučujući penal u finalu Kupa šampiona 1991?|Darko Pančev|Siniša Mihajlović|Dejan Savićević|Robert Prosinečki
+Protiv kog kluba je Crvena zvezda osvojila Interkontinentalni kup 1991?|Kolo-Kolo|Boka Džuniors|River Plejt|Santos
+Koji klub je igrao finale Kupa evropskih šampiona 1966. kao prvi jugoslovenski finalista?|Partizan|Crvena zvezda|Dinamo Zagreb|Hajduk Split
+Ko je bio selektor Jugoslavije u finalu Svetskog prvenstva... (pitanje izbaciti)|a|b|c|d
+Koji srpski košarkaš je trostruki MVP NBA lige?|Nikola Jokić|Vlade Divac|Peja Stojaković|Bogdan Bogdanović
+Za koji NBA tim igra Nikola Jokić?|Denver Nagets|Sakramento Kings|Los Anđeles Lejkers|Majami Hit
+Iz kog grada je Nikola Jokić?|Sombora|Novog Sada|Beograda|Zrenjanina
+Koje godine je Denver sa Jokićem osvojio NBA titulu?|2023.|2022.|2024.|2021.
+Koji srpski košarkaš je prvi iz Evrope odigrao više od 1000 NBA utakmica i igrao za Lejkerse?|Vlade Divac|Žarko Paspalj|Predrag Danilović|Peja Stojaković
+Koji srpski košarkaš je osvojio NBA titulu sa Dalasom 2011?|Peja Stojaković|Vlade Divac|Darko Miličić|Nenad Krstić
+Koji srpski košarkaš je osvojio NBA titulu sa Detroitom 2004?|Darko Miličić|Vlade Divac|Peja Stojaković|Željko Rebrača
+Koji srpski trener je poznat kao „Profesor” i pobedio sa Jugoslavijom na Svetskom prvenstvu 1970?|Ne, pitanje izbaciti|a|b|c
+Koji srpski košarkaški trener je osvojio najviše Evrolige (9 titula)?|Željko Obradović|Dušan Ivković|Svetislav Pešić|Božidar Maljković
+Sa kojim klubom je Željko Obradović osvojio najviše Evroliga?|Panatinaikos|Partizan|Fenerbahče|Real Madrid
+Koje godine je Partizan osvojio Evroligu (Kup evropskih šampiona) u Istanbulu?|1992.|1991.|1995.|1989.
+Koji igrač je pogodio čuvenu trojku za Partizan u finalu 1992?|Aleksandar Đorđević|Predrag Danilović|Žarko Paspalj|Vlade Divac
+Koje godine je Jugoslavija (SR) osvojila Svetsko prvenstvo u košarci u Indijanapolisu?|2002.|1998.|2006.|1994.
+Koje godine je Jugoslavija osvojila Svetsko prvenstvo u košarci u Atini?|1998.|2002.|1994.|1990.
+Koliko je visok Nikola Jokić (približno)?|211 cm|200 cm|221 cm|205 cm
+Kako se zove NBA igrač koji je osvojio šest titula sa Čikago Bulsima?|Majkl Džordan|Kobi Brajant|Lebron Džejms|Skoti Pipen
+Koji broj je nosio Majkl Džordan u Čikagu?|23|24|33|32
+Koji je nadimak Lebrona Džejmsa?|Kralj Džejms|Njegovo vazdušno veličanstvo|Mamba|Šak
+Koji je nadimak Kobija Brajanta?|Crna mamba|Kralj|Šak|Mejlmen
+Koji igrač ima najviše poena u istoriji NBA lige?|Lebron Džejms|Karim Abdul-Džabar|Majkl Džordan|Kobi Brajant
+Kako se zove tim SAD koji je na Olimpijskim igrama 1992. imao Džordana, Medžika i Birda?|Dream Team|Redeem Team|All-Star Team|Super Team
+Koji Amerikanac je osvojio rekordne 23 zlatne olimpijske medalje u plivanju?|Majkl Felps|Mark Špic|Rajan Lohte|Ijan Torp
+Koji jamajčanski atletičar drži svetski rekord na 100 metara (9,58 s)?|Jusein Bolt|Johan Blejk|Asafa Pauel|Tajson Gej
+Kako se zove ženska verzija… (pitanje izbaciti)|a|b|c|d
+Koja srpska atletičarka je osvajala svetska prvenstva u skoku u dalj?|Ivana Vuleta (Španović)|Olivera Jevtić|Dragana Tomašević|Biljana Petrović
+Koji srpski plivač je bio svetski šampion na 100 m delfin i dobio medalje na Olimpijskim igrama?|Milorad Čavić|Velimir Stjepanović|Andrej Barna|Nađa Higl
+Za koliko stotinki je Milorad Čavić izgubio od Majkla Felpsa u Pekingu 2008?|Jednu stotinku|Deset stotinki|Pet stotinki|Pola sekunde
+Koja srpska reprezentacija je osvojila tri uzastopna olimpijska zlata (2016, 2020, 2024)?|Vaterpolo|Košarka 3x3|Odbojka|Rukomet
+Koja srpska reprezentacija je osvojila olimpijsko zlato u odbojci 2000. (kao SRJ)?|Muška odbojkaška|Ženska odbojkaška|Vaterpolo|Košarka
+Koja srpska reprezentacija je osvojila Svetsko prvenstvo u odbojci 2018. i 2022?|Ženska odbojkaška|Muška odbojkaška|Ženska košarkaška|Rukometna
+Koja srpska odbojkašica je proglašena najboljom igračicom Svetskog prvenstva 2018. i 2022?|Tijana Bošković|Maja Ognjenović|Brankica Mihajlović|Jovana Stevanović
+Koja srpska reprezentacija je osvojila bronzu u košarci 3x3 i zlato na Olimpijskim igrama u Tokiju?|Muška 3x3 (bronza u Tokiju)|Ženska 3x3|Vaterpolo|Odbojka
+Koji srpski teniser i dubl igrač je osvajao Grend slemove u dublu, a bio kapiten Dejvis kupa?|Nenad Zimonjić|Janko Tipsarević|Viktor Troicki|Slobodan Živojinović
+Koja srpska karatistkinja ili džudistkinja... (pitanje izbaciti)|a|b|c|d
+Koji srpski strelac je osvojio olimpijsko zlato u Riju 2016?|Ne, pitanje izbaciti|a|b|c
+Koja srpska taekvondistkinja je osvojila olimpijsko zlato u Londonu 2012?|Milica Mandić|Tijana Bogdanović|Aleksandra Krunić|Ivana Maksimović
+Koji srpski rvač je osvojio olimpijsko zlato u Tokiju 2020?|Davor Štefanek je osvojio u Riju 2016, a u Tokiju zlato nije bilo — pitanje izbaciti|a|b|c
+Koji srpski rvač je osvojio olimpijsko zlato u Riju 2016?|Davor Štefanek|Mate Nemeš|Zurab Datunašvili|Aleksandar Komarov
+Koji kajakaši... (pitanje izbaciti)|a|b|c|d
+Gde su održane Olimpijske igre 2024?|Pariz|Los Anđeles|Tokio|London
+Gde će se održati Letnje olimpijske igre 2028?|Los Anđeles|Brizbejn|Pariz|Madrid
+Gde će se održati Letnje olimpijske igre 2032?|Brizbejn|Los Anđeles|Doha|Rim
+Gde su održane Letnje olimpijske igre 2020 (održane 2021)?|Tokio|Peking|Rio de Žaneiro|Pariz
+Gde su održane Letnje olimpijske igre 2016?|Rio de Žaneiro|London|Peking|Tokio
+Gde su održane Letnje olimpijske igre 2012?|London|Peking|Atina|Rio de Žaneiro
+Gde su održane Letnje olimpijske igre 2008?|Peking|Atina|London|Sidnej
+Gde su održane Zimske olimpijske igre 2026?|Milano i Kortina d'Ampeco|Pariz|Soči|Pjongčang
+Koliko često se održavaju Olimpijske igre?|Svake četiri godine|Svake dve godine|Svake godine|Svakih pet godina
+Ko se smatra osnivačem modernih Olimpijskih igara?|Pjer de Kuberten|Avgust Brundidž|Huan Antonio Samaran|Žak Rog
+Koje boje su olimpijski krugovi?|Plava, žuta, crna, zelena, crvena|Plava, bela, crna, zelena, crvena|Crvena, žuta, plava, bela, zelena|Ljubičasta, žuta, crna, zelena, crvena
+Koliko disciplina ima desetoboj?|10|7|5|12
+Koliko disciplina ima sedmoboj?|7|10|5|6
+Koliko je dug teren za fudbal na FIFA takmičenjima (uobičajeno)?|105 m|90 m|120 m|100 m tačno
+Koliko je težak muški bacački kugla (atletika)?|7,26 kg|5 kg|10 kg|4 kg
+Kako se zove sport u kome se koriste kamen i četke na ledu?|Karling|Hokej|Biatlon|Bob
+Koji sport kombinuje skijaško trčanje i gađanje puškom?|Biatlon|Nordijska kombinacija|Slalom|Triatlon
+Koje tri discipline čine triatlon?|Plivanje, biciklizam, trčanje|Trčanje, skok, bacanje|Plivanje, veslanje, trčanje|Biciklizam, skijanje, trčanje
+Koji sport se igra sa loptom i palicama na konjima?|Polo|Kriket|Lakros|Hokej na travi
+Koji sport se igra na terenu sa wicketom i palicom, popularan u Indiji i Engleskoj?|Kriket|Bejzbol|Polo|Golf
+Koliko rupa ima standardan teren za golf?|18|9|12|21
+Kako se zove udarac u golfu kojim se loptica ubaci jednim udarcem?|Hole in one|Birdi|Igl|Bogi
+Ko je najpoznatiji golfer sa 15 major titula, nadimka „Tigar”?|Tajger Vuds|Džek Niklaus|Fil Mikelson|Rori Makilroj
+Kako se zove najprestižnija biciklistička trka u Francuskoj?|Tur de Frans|Điro d'Italija|Vuelta|Pariz-Rube
+Koje boje je majica vodećeg vozača na Tur de Fransu?|Žuta|Roze|Zelena|Crvena
+Koje boje je majica vodećeg vozača na Điro d'Italiji?|Roze|Žuta|Crvena|Plava
+Koji slovenački biciklista je višestruki pobednik Tur de Fransa (2020, 2021, 2024, 2025)?|Tadej Pogačar|Primož Roglič|Jonas Vingegor|Matej Mohorič
+Kako se zove najprestižnije takmičenje u Formuli 1?|Svetsko prvenstvo Formule 1|Le Man|Indijanapolis 500|Dakar
+Koji vozač ima sedam titula svetskog prvaka Formule 1 (pored Šumahera)?|Luis Hamilton|Ajrton Sena|Sebastijan Fetel|Alen Prost
+Koji vozač je osvojio sedam titula F1 sa Beneton i Ferarijem?|Mihael Šumaher|Luis Hamilton|Ajrton Sena|Fernando Alonso
+Iz koje zemlje je bio Ajrton Sena?|Brazila|Argentine|Portugalije|Španije
+Koji tim Formule 1 ima crvenu boju i konja na grbu?|Ferari|Makleren|Red bul|Mercedes
+Koji holandski vozač je osvojio četiri uzastopne titule F1 (2021-2024)?|Maks Ferstapen|Lando Noris|Šarl Lekler|Džordž Rasel
+Kako se zove čuvena trka od 24 sata u Francuskoj?|24 sata Le Mana|Dakar|Monte Karlo reli|Targa Florio
+Na kojoj stazi se vozi Velika nagrada Monaka?|Ulicama Monte Karla|Monci|Silverstonu|Spa
+Koliko traje runda u amaterskom (olimpijskom) boksu?|3 minuta|2 minuta|5 minuta|4 minuta
+Koji bokser je bio poznat po rečenici „Leti kao leptir, ubodi kao pčela”?|Muhamed Ali|Majk Tajson|Džo Frejzer|Šugar Rej Leonard
+Kako se ranije zvao Muhamed Ali?|Kasijus Klej|Džo Lui|Rokijano Marćano|Džek Džonson
+Koji bokser je postao najmlađi svetski prvak u teškoj kategoriji sa 20 godina?|Majk Tajson|Muhamed Ali|Džordž Formen|Lenoks Luis
+Koji borilački sport potiče iz Japana i znači „nežni put”?|Džudo|Karate|Kendo|Aikido
+Koji borilački sport potiče iz Koreje?|Tekvondo|Džudo|Karate|Kung fu
+Kako se zove pojas najvišeg ranga u većini borilačkih veština?|Crni|Crveni|Beli|Braon
+Kako se zove pozicija u šahu kad kralj nema legalnog poteza, ali nije u šahu?|Pat|Mat|Remi ponavljanjem|Rokada
+Kako se zove potez u šahu kada kralj i top menjaju mesta?|Rokada|En pasan|Promocija|Gambit
+Koja šahovska figura može da se kreće u obliku slova L?|Skakač (konj)|Lovac|Top|Kraljica
+Koja šahovska figura je najjača?|Dama (kraljica)|Kralj|Top|Skakač
+Koji šahista je bio svetski prvak od 1985. do 2000. i poznat po meču protiv računara Deep Blue?|Gari Kasparov|Anatolij Karpov|Magnus Karlsen|Bobi Fišer
+Koji američki šahista je osvojio titulu prvaka sveta 1972. u Rejkjaviku?|Bobi Fišer|Gari Kasparov|Pol Morfi|Hikaru Nakamura
+U kom gradu je održan revanš-meč Fišer–Spaski 1992?|Svetom Stefanu i Beogradu|Rejkjaviku|Moskvi|Njujorku
+Koji norveški šahista je bio svetski prvak od 2013. do 2023?|Magnus Karlsen|Fabijano Karuana|Ding Liren|Visvanatan Anand
+Koja srpska skakačica uvis je osvojila dve svetske titule u dvorani?|Pitanje izbaciti|a|b|c
+Koja je najbrža ženska plivačka tehnika?|Kraul (slobodni stil)|Delfin|Leđno|Prsno
+Koliko staza ima olimpijski bazen za takmičenja?|8 (ili 10 sa praznim krajnjim)|6|12|4
+Koji sport se igra na stolu sa reketima i malom lopticom?|Stoni tenis|Badminton|Skvoš|Padel
+Kako se zove loptica sa perjem u badmintonu?|Pernata loptica (vulan)|Pak|Šatl|Kugla
+Kako se zove crna gumena pločica u hokeju na ledu?|Pak|Lopta|Kugla|Disk
+Koliko traje utakmica u vaterpolu (četiri četvrtine po)?|8 minuta|10 minuta|12 minuta|15 minuta
+Koji sport koristi termin „smeč” za snažan udarac preko mreže?|Odbojka|Košarka|Fudbal|Hokej
+Kako se zove dodavanje koje omogućava smečeru udarac u odbojci?|Dizanje|Prijem|Blok|Servis
+Kako se zove igrač u odbojci u drugačijem dresu koji ne sme da servira ni napada iznad mreže?|Libero|Korektor|Tehničar|Bloker
+Koliko faula sme da napravi košarkaš u FIBA utakmici pre isključenja?|5|6|4|3
+Koliko poena donosi koš iz igre iznad linije za tri?|3|2|4|1
+Koji tim je osvojio najviše NBA titula (zajedno sa Lejkersima)?|Boston Seltiks|Čikago Bulls|Golden Stejt Voriors|San Antonio Sperz
+Kako se zove finale američkog fudbala, najgledaniji sportski događaj u SAD?|Superboul|Svetska serija|NBA finale|Stenli kup
+Kako se zove trofej u NHL ligi?|Stenli kup|Lari O'Brajen trofej|Lombardijev trofej|Grej kup
+Kako se zove finale bejzbol lige u SAD?|Svetska serija|Superboul|Stenli kup|Final Four
+Koja zemlja je izmislila košarku?|SAD (izumeo je Kanađanin Džejms Nejsmit)|Kanada|Engleska|Francuska
+Ko je izumeo košarku 1891?|Džejms Nejsmit|Vilijam Morgan|Volter Kemp|Abner Dabldej
+Ko je izumeo odbojku 1895?|Vilijam Morgan|Džejms Nejsmit|Pjer de Kuberten|Vilijam Veb Elis
+U kojoj zemlji je nastao moderni fudbal?|Engleskoj|Brazilu|Italiji|Škotskoj
+U kojoj zemlji je nastao rukomet?|Danskoj (i Nemačkoj)|Srbiji|Francuskoj|Španiji
+Koja zemlja je izmislila džudo?|Japan|Kina|Koreja|Tajland
+Koliko kilometara ima polumaraton?|21,0975 km|20 km|25 km|21,5 km
+Ko je prvi istrčao maraton ispod dva sata (nezvanično, 2019)?|Elijud Kipčoge|Haile Gebrselasije|Kenenisa Bekele|Mo Farah
+Koje zemlje su poznate po dugoprugaškim trkačima iz istočne Afrike?|Kenija i Etiopija|Nigerija i Gana|Egipat i Sudan|Maroko i Alžir
+Koja disciplina je najduža atletska trka na Olimpijskim igrama?|Maraton (i 50 km brzo hodanje ranije)|10.000 m|5.000 m|3.000 m s preponama
+Koliko visoko je postavljena prečka u skoku s motkom po svetskom rekordu Mondo Duplantisa (oko 2025)?|Preko 6,2 m|5,5 m|7 m|6 m tačno
+Iz koje zemlje je skakač s motkom Armand Mondo Duplantis?|Švedske|SAD|Norveške|Francuske
+Koja srpska skijašica je… (pitanje izbaciti)|a|b|c|d
+Koji je najpoznatiji skijaški slalomaš iz Švajcarske, koji ne postoji… (izbaciti)|a|b|c|d
+Kako se zove alpska disciplina sa najviše kapija i najkraćom stazom?|Slalom|Spust|Superveleslalom|Veleslalom
+Kako se zove najbrža alpska skijaška disciplina?|Spust|Slalom|Veleslalom|Super-G je najbrži
+Koja skijašica ima najviše pobeda u Svetskom kupu u alpskom skijanju?|Mikaela Šifrin|Lindzi Von|Anemari Mozer-Prel|Janica Kostelić
+Iz koje zemlje je Mikaela Šifrin?|SAD|Austrije|Švajcarske|Kanade
+Koja hrvatska skijašica je osvojila četiri zlata na Olimpijskim igrama 2002?|Janica Kostelić|Tina Maze|Ana Jelušić|Nika Fleiss
+Koja zemlja je najuspešnija na Zimskim olimpijskim igrama?|Norveška|SAD|Nemačka|Rusija
+Koja država je bila domaćin Svetskog prvenstva u fudbalu 1990?|Italija|Nemačka|Meksiko|SAD
+Koja država je bila domaćin prvog Evropskog prvenstva u fudbalu 1960?|Francuska|Italija|Španija|Jugoslavija
+Ko je osvojio Evropsko prvenstvo u fudbalu 2024?|Španija|Engleska|Francuska|Nemačka
+Ko je osvojio Evropsko prvenstvo u fudbalu 2016?|Portugal|Francuska|Nemačka|Španija
+Koja zemlja je osvojila Evropsko prvenstvo u fudbalu 1992. kao zamena za Jugoslaviju?|Danska|Švedska|Nemačka|Holandija
+Koja reprezentacija je bila evropski prvak u košarci 1995, 1997. i 2001?|SR Jugoslavija|Litvanija|Španija|Italija
+Koja reprezentacija je osvojila srebro na Olimpijskim igrama u košarci 2016. u Riju?|Srbija|Španija|Francuska|Australija
+Koja reprezentacija je osvojila srebro na Svetskom prvenstvu u košarci 2023?|Srbija|Nemačka|Kanada|SAD
+Ko je osvojio Svetsko prvenstvo u košarci 2023?|Nemačka|Srbija|SAD|Španija
+Koja država je bila domaćin Evropskog prvenstva u košarci 2005?|Srbija i Crna Gora|Grčka|Španija|Litvanija
+Kako se zove dvorana u Beogradu za velike sportske događaje kapaciteta preko 18.000 mesta?|Beogradska arena|Pionir|Hala sportova|Ranko Žeravica
+Kako se popularno zove hala „Aleksandar Nikolić” u Beogradu?|Pionir|Arena|Hala sportova|Sajam
+Po kome je nazvana hala „Aleksandar Nikolić”?|Po košarkaškom treneru|Po fudbaleru|Po odbojkašu|Po vaterpolisti
+Kako se zove legendarni srpski košarkaški trener nazvan „Profesor”, koji je vodio Jugoslaviju do svetskog zlata 1970. i 1978?|Aleksandar Nikolić|Ranko Žeravica|Dušan Ivković|Bora Stanković
+Koliko igrača ima tim u vaterpolu na bazenu (sa golmanom)?|7|6|11|8

@@ -1,0 +1,274 @@
+Koji je hemijski simbol srebra?|Ag|Au|Si|Sr
+Koji je hemijski simbol kiseonika?|O|K|Ki|Ox
+Koji je hemijski simbol natrijuma?|Na|N|Nt|So
+Koji je hemijski simbol kalijuma?|K|Ka|Kl|P
+Koji je hemijski simbol bakra?|Cu|Ba|Bk|Co
+Koji je hemijski simbol olova?|Pb|Ol|Pl|Ld
+Koji je hemijski simbol žive?|Hg|Ži|Me|Zv
+Koji je hemijski simbol kalcijuma?|Ca|K|Kc|C
+Koji je hemijski simbol ugljenika?|C|U|Ug|Ca
+Koji je hemijski simbol vodonika?|H|V|Vo|Hy
+Koji je hemijski simbol azota?|N|A|Az|Ni
+Koji je hemijski simbol hlora?|Cl|H|Hl|C
+Koji je hemijski simbol kalaja?|Sn|Ka|Kl|Ti
+Koji je hemijski simbol cinka?|Zn|Ci|Cn|Z
+Koji je hemijski simbol urana?|U|Ur|Un|Ra
+Koji element ima atomski broj 1?|Vodonik|Helijum|Litijum|Kiseonik
+Koji je najlakši plemeniti gas?|Helijum|Neon|Argon|Kripton
+Koji gas čini oko 78% vazduha?|Azot|Kiseonik|Ugljen-dioksid|Argon
+Koliki je približno udeo kiseonika u vazduhu?|21%|78%|50%|1%
+Koji metal je tečan na sobnoj temperaturi?|Živa|Olovo|Kalaj|Galijum na 40 °C
+Koji metal je najbolji provodnik električne struje?|Srebro|Bakar|Zlato|Aluminijum
+Koji je najrasprostranjeniji metal u Zemljinoj kori?|Aluminijum|Gvožđe|Bakar|Kalcijum
+Koji element je najrasprostranjeniji u svemiru?|Vodonik|Helijum|Kiseonik|Ugljenik
+Kako se zove legura bakra i cinka?|Mesing|Bronza|Čelik|Duraluminijum
+Kako se zove legura bakra i kalaja?|Bronza|Mesing|Čelik|Amalgam
+Kako se zove legura gvožđa i ugljenika?|Čelik|Bronza|Mesing|Liveno zlato
+Koja je pH vrednost čiste vode?|7|0|14|5
+Kako se zove rastvor sa pH manjim od 7?|Kiselina|Baza|Neutralan rastvor|So
+Šta meri Rihterova skala?|Jačinu zemljotresa|Brzinu vetra|Tvrdoću minerala|Kiselost
+Šta meri Mosova skala?|Tvrdoću minerala|Jačinu zemljotresa|Brzinu vetra|Temperaturu
+Šta meri Boforova skala?|Jačinu vetra|Jačinu zemljotresa|Tvrdoću|Pritisak
+Čime se meri vazdušni pritisak?|Barometrom|Termometrom|Higrometrom|Anemometrom
+Čime se meri vlažnost vazduha?|Higrometrom|Barometrom|Termometrom|Seizmografom
+Koja je jedinica za silu?|Njutn|Džul|Vat|Paskal
+Koja je jedinica za energiju i rad?|Džul|Njutn|Vat|Om
+Koja je jedinica za snagu?|Vat|Džul|Volt|Amper
+Koja je jedinica za električni napon?|Volt|Amper|Om|Vat
+Koja je jedinica za jačinu električne struje?|Amper|Volt|Om|Kulon
+Koja je jedinica za pritisak?|Paskal|Njutn|Bar je jedina|Džul
+Koja je jedinica za frekvenciju?|Herc|Decibel|Vat|Tesla
+Koja SI jedinica nosi ime Nikole Tesle?|Jedinica za magnetnu indukciju|Jedinica za napon|Jedinica za snagu|Jedinica za frekvenciju
+Koja je osnovna SI jedinica za masu?|Kilogram|Gram|Tona|Njutn
+Koja je osnovna SI jedinica za temperaturu?|Kelvin|Celzijus|Farenhajt|Rankin
+Na kojoj temperaturi u Celzijusima je apsolutna nula (približno)?|−273 °C|−100 °C|−459 °C|0 °C
+Na kojoj temperaturi se voda smrzava (u Farenhajtima)?|32 °F|0 °F|100 °F|−32 °F
+Koliko metara ima jedan kilometar?|1000|100|10.000|1024
+Koliko centimetara ima jedan inč?|2,54|1,5|3,3|5
+Koliko približno kilometara ima jedna milja (kopnena)?|1,6|1,2|2|1,85
+Koliko kilograma ima jedna tona?|1000|100|500|10.000
+Koliko je mililitara u jednom litru?|1000|100|10|500
+Ko je otkrio zakon gravitacije posmatrajući, prema predanju, jabuku?|Isak Njutn|Galileo Galilej|Johan Kepler|Albert Ajnštajn
+Ko je postavio heliocentrični sistem (Sunce u centru)?|Nikola Kopernik|Ptolomej|Galileo|Tiho Brahe
+Ko je usavršio teleskop i otkrio četiri Jupiterova meseca?|Galileo Galilej|Johan Kepler|Isak Njutn|Edmond Halej
+Ko je formulisao zakone kretanja planeta?|Johan Kepler|Nikola Kopernik|Galileo Galilej|Tiho Brahe
+Koji grčki naučnik je uzviknuo „Eureka!” u kadi?|Arhimed|Pitagora|Euklid|Tales
+Koju teoremu o pravouglom trouglu svi uče u školi?|Pitagorinu|Talesovu|Euklidovu|Arhimedovu
+Kolika je vrednost broja π na dve decimale?|3,14|3,41|3,16|2,72
+Ko je zaslužan za formulu E = mc²?|Albert Ajnštajn|Isak Njutn|Maks Plank|Nils Bor
+Koja naučnica je dobila dve Nobelove nagrade, iz fizike i hemije?|Marija Kiri|Lize Majtner|Rozalind Frenklin|Ada Lavlejs
+Koje elemente je otkrila Marija Kiri?|Polonijum i radijum|Uranijum i torijum|Helijum i neon|Plutonijum i americijum
+Ko je postavio teoriju evolucije prirodnom selekcijom?|Čarls Darvin|Gregor Mendel|Žan-Batist Lamark|Alfred Volas
+Kako se zove brod kojim je Darvin putovao oko sveta?|Bigl|Endevor|Viktorija|Bounti
+Koja ostrva su inspirisala Darvinovu teoriju?|Galapagos|Havaji|Madagaskar|Kanarska ostrva
+Ko je otac genetike, koji je eksperimentisao sa graškom?|Gregor Mendel|Čarls Darvin|Luj Paster|Džejms Votson
+Ko je otkrio strukturu DNK 1953?|Votson i Krik|Mendel i Darvin|Paster i Koh|Kiri i Plank
+Šta je DNK?|Molekul nasledne informacije|Vrsta proteina|Hormon|Krvna ćelija
+Ko je otkrio vakcinu protiv besnila?|Luj Paster|Robert Koh|Edvard Džener|Aleksandar Fleming
+Ko je napravio prvu vakcinu (protiv velikih boginja)?|Edvard Džener|Luj Paster|Robert Koh|Jonas Salk
+Ko je otkrio bacil tuberkuloze?|Robert Koh|Luj Paster|Aleksandar Fleming|Pol Erlih
+Ko je otkrio rendgenske zrake?|Vilhelm Rendgen|Marija Kiri|Tomas Edison|Nikola Tesla
+Ko je izumeo sijalicu sa ugljenim vlaknom koja je bila komercijalno uspešna?|Tomas Edison|Nikola Tesla|Džozef Svon|Džordž Vestinghaus
+Koji sistem struje je zagovarao Nikola Tesla?|Naizmeničnu struju|Jednosmernu struju|Statičku struju|Baterijsku struju
+U kom gradu je Nikola Tesla proveo veći deo radnog veka?|Njujorku|Parizu|Pragu|Budimpešti
+Na kojoj reci je Tesla sa Vestinghausom pustio u rad hidroelektranu 1895?|Na Nijagari|Na Misisipiju|Na Hudsonu|Na Kolorado
+Gde se nalazi Muzej Nikole Tesle sa njegovom urnom?|U Beogradu|U Smiljanu|U Njujorku|U Zagrebu
+Koje godine je rođen Nikola Tesla?|1856.|1846.|1866.|1876.
+Koji srpski naučnik je radio na Kolumbija univerzitetu i dobio Pulicerovu nagradu za autobiografiju?|Mihajlo Pupin|Nikola Tesla|Milutin Milanković|Josif Pančić
+Kako se zove autobiografija Mihajla Pupina?|Sa pašnjaka do naučenjaka|Moji izumi|Kroz vasionu i vekove|Uspomene
+Iz kog mesta u Banatu je bio Mihajlo Pupin?|Idvora|Zrenjanina|Vršca|Pančeva
+Kako se zove knjiga Milutina Milankovića u obliku pisama?|Kroz vasionu i vekove|Sa pašnjaka do naučenjaka|Moji izumi|Kanon osunčavanja
+Koji srpski botaničar je otkrio Pančićevu omoriku?|Josif Pančić|Sava Petrović|Nedeljko Košanin|Ivan Đaja
+Koji srpski matematičar je poznat po nadimku „Mika Alas”?|Mihailo Petrović|Bogdan Gavrilović|Jovan Karamata|Đuro Kurepa
+Koji je glavni sastojak Sunca?|Vodonik|Helijum|Kiseonik|Gvožđe
+Koliko približno traje da svetlost sa Sunca stigne do Zemlje?|8 minuta|8 sekundi|1 sat|1 dan
+Koliko je udaljena Zemlja od Sunca (približno)?|150 miliona km|15 miliona km|1,5 milijardi km|384.000 km
+Koliko je približno udaljen Mesec od Zemlje?|384.000 km|38.400 km|3,8 miliona km|150 miliona km
+Koliko traje jedna Zemljina orbita oko Sunca?|365,25 dana|360 dana|366 dana tačno|354 dana
+Koliko planeta ima Sunčev sistem (od 2006)?|8|9|7|10
+Koja nebeska tela je 2006. „izbacila” iz grupe planeta?|Pluton|Ceres|Eris|Haumea
+Koja planeta ima najizraženije prstenove?|Saturn|Jupiter|Uran|Neptun
+Koja planeta je najtoplija u Sunčevom sistemu?|Venera|Merkur|Mars|Jupiter
+Koja planeta je najudaljenija od Sunca?|Neptun|Uran|Pluton|Saturn
+Koja planeta se okreće „na boku”, sa osom skoro u ravni orbite?|Uran|Neptun|Saturn|Venera
+Koja planeta ima „Veliku crvenu pegu”, ogromnu oluju?|Jupiter|Mars|Saturn|Neptun
+Kako se zove najveći vulkan u Sunčevom sistemu, na Marsu?|Olimp|Etna|Mauna Kea|Tarsis
+Kako se zove najveći Jupiterov mesec?|Ganimed|Io|Evropa|Kalisto
+Kako se zove najveći Saturnov mesec?|Titan|Enkelad|Rea|Mimas
+Koliko meseca ima Mars?|2|1|0|4
+Kako se zovu Marsovi meseci?|Fobos i Dejmos|Io i Evropa|Titan i Rea|Haron i Niks
+Kako se zove naša galaksija?|Mlečni put|Andromeda|Triangulum|Magelanov oblak
+Koja je najbliža velika galaksija Mlečnom putu?|Andromeda|Veliki Magelanov oblak|Sombrero|Vrtlog
+Koja je zvezda najbliža Zemlji?|Sunce|Proksima Kentauri|Sirijus|Alfa Kentauri A
+Koja je najsjajnija zvezda na noćnom nebu?|Sirijus|Polarna zvezda|Vega|Betelgez
+Kako se zove zvezda koja pokazuje sever?|Polarna zvezda|Sirijus|Vega|Arktur
+U kom sazvežđu je Polarna zvezda?|Mali medved|Veliki medved|Orion|Kasiopeja
+Kako se zove svetlosna godina?|Daljina koju svetlost pređe za godinu|Vreme za koje svetlost obiđe Zemlju|Godina na Suncu|Starost zvezde
+Kako se zove kometa koja se vraća svakih 75-76 godina?|Halejeva|Hejl-Bop|Enkeova|Šumejker-Levi
+Kako se zove teleskop lansiran 1990. u orbitu?|Habl|Džejms Veb|Kepler|Spicer
+Kako se zove svemirski teleskop lansiran 2021?|Džejms Veb|Habl|Čandra|Gaja
+Kako se zove Međunarodna svemirska stanica skraćeno?|ISS|MIR|NASA|ESA
+Kako se zove američka svemirska agencija?|NASA|ESA|Roskosmos|JAXA
+Kako se zove pojava kada Mesec prekrije Sunce?|Pomračenje Sunca|Pomračenje Meseca|Mlad mesec|Pun mesec
+Koja je faza Meseca kada se uopšte ne vidi?|Mlad mesec|Pun mesec|Prva četvrt|Poslednja četvrt
+Koliko približno traje Mesečev ciklus mena?|29,5 dana|24 dana|31 dan|14 dana
+Šta izaziva plimu i oseku?|Privlačna sila Meseca (i Sunca)|Vetar|Rotacija Zemlje sama|Zemljotresi
+Kako se zove sloj atmosfere u kome živimo?|Troposfera|Stratosfera|Mezosfera|Termosfera
+U kom sloju atmosfere je ozonski omotač?|Stratosferi|Troposferi|Mezosferi|Egzosferi
+Od čega nas štiti ozonski omotač?|Ultraljubičastog zračenja|Meteora|Hladnoće|Radio-talasa
+Koji gas je najzaslužniji za efekat staklene bašte koji izaziva čovek?|Ugljen-dioksid|Kiseonik|Azot|Helijum
+Kako se zove unutrašnji deo Zemlje?|Jezgro|Kora|Omotač|Litosfera
+Kako se zove pomeranje kontinenata?|Tektonika ploča|Erozija|Vulkanizam|Sedimentacija
+Kako se zvao drevni superkontinent?|Pangea|Atlantida|Lemurija|Gondvana je jedini
+Kako se zove vrsta stene nastala hlađenjem lave?|Magmatska|Sedimentna|Metamorfna|Organska
+U koju vrstu stena spada mermer?|Metamorfnu|Magmatsku|Sedimentnu|Vulkansku
+Koji mineral je najmekši po Mosovoj skali?|Talk|Gips|Kvarc|Kalcit
+Od čega je napravljen grafit u olovci?|Ugljenika|Olova|Silicijuma|Gvožđa
+Šta je kristal dijamant po hemijskom sastavu?|Čist ugljenik|Silicijum-dioksid|Aluminijum-oksid|Kalcijum-karbonat
+Od čega se sastoji kuhinjska so?|Natrijuma i hlora|Kalijuma i hlora|Natrijuma i kiseonika|Kalcijuma i ugljenika
+Šta nastaje kada gvožđe oksidiše na vlažnom vazduhu?|Rđa|Patina|Kamenac|Čađ
+Kako se zove zelenkasti sloj na bakru i bronzi?|Patina|Rđa|Kamenac|Glazura
+Koji gas biljke oslobađaju tokom fotosinteze?|Kiseonik|Ugljen-dioksid|Azot|Metan
+Kako se zove zeleni pigment u biljkama?|Hlorofil|Melanin|Hemoglobin|Karoten
+U kom delu ćelije se nalazi DNK (kod eukariota najviše)?|U jedru|U ćelijskom zidu|U ribozomu|U vakuoli
+Kako se zove „elektrana” ćelije?|Mitohondrija|Ribozom|Jedro|Golđijev aparat
+Koji organ pumpa krv kroz telo?|Srce|Pluća|Jetra|Bubrezi
+Koji organ filtrira krv i stvara mokraću?|Bubrezi|Jetra|Slezina|Pluća
+Koji je najveći unutrašnji organ u telu?|Jetra|Pluća|Srce|Mozak
+Koja je najmanja kost u ljudskom telu?|Uzengija (u uhu)|Čekić|Nakovanj je najmanji|Trtična kost
+Koliko zuba ima odrastao čovek (sa umnjacima)?|32|28|30|36
+Koliko mlečnih zuba ima dete?|20|24|16|32
+Koja krvna grupa je „univerzalni davalac”?|0 negativna|AB pozitivna|A pozitivna|B negativna
+Koja krvna grupa je „univerzalni primalac”?|AB pozitivna|0 negativna|A negativna|B pozitivna
+Šta prenose crvena krvna zrnca?|Kiseonik|Antitela|Hormone|Masti
+Koji protein u krvi vezuje kiseonik?|Hemoglobin|Insulin|Keratin|Kolagen
+Koji vitamin telo stvara na suncu?|Vitamin D|Vitamin C|Vitamin A|Vitamin B12
+Nedostatak kog vitamina izaziva skorbut?|Vitamina C|Vitamina D|Vitamina A|Vitamina K
+Nedostatak kog vitamina izaziva noćno slepilo?|Vitamina A|Vitamina C|Vitamina D|Vitamina B1
+Koji mineral je potreban za zdrave kosti i zube?|Kalcijum|Gvožđe|Natrijum|Jod
+Nedostatak kog minerala izaziva gušavost?|Joda|Gvožđa|Kalcijuma|Cinka
+Koji organ proizvodi žuč?|Jetra|Žučna kesa|Gušterača|Slezina
+Gde se u telu nalazi rožnjača?|U oku|U uhu|U nosu|U kolenu
+Koliko čula ima čovek (tradicionalno)?|5|4|6|7
+Koji deo mozga je zadužen za ravnotežu i koordinaciju?|Mali mozak|Veliki mozak|Moždano stablo|Hipotalamus
+Koliko približno litara krvi ima odrastao čovek?|5|2|10|8
+Kako se zove najduži mišić u telu?|Krojački mišić|Biceps|Kvadriceps|Gluteus
+Kako se zove najjači mišić po odnosu sile i veličine (žvakaći)?|Maseter|Biceps|Srčani mišić|Jezik
+Koja je normalna telesna temperatura čoveka (približno)?|37 °C|35 °C|39 °C|36 °F
+Kako se zove nauka o životinjama?|Zoologija|Botanika|Ekologija|Mikologija
+Kako se zove nauka o biljkama?|Botanika|Zoologija|Geologija|Entomologija
+Kako se zove nauka o insektima?|Entomologija|Ornitologija|Ihtiologija|Herpetologija
+Kako se zove nauka o pticama?|Ornitologija|Entomologija|Ihtiologija|Mamalogija
+Kako se zove nauka o ribama?|Ihtiologija|Ornitologija|Malakologija|Hidrologija
+Kako se zove nauka o pečurkama?|Mikologija|Botanika|Mikrobiologija|Virologija
+Kako se zove nauka o Zemljinoj građi i stenama?|Geologija|Geografija|Seizmologija|Petrografija
+Kako se zove nauka o vremenu i atmosferi?|Meteorologija|Klimatologija je jedina|Astronomija|Hidrologija
+Kako se zove nauka o fosilima?|Paleontologija|Arheologija|Antropologija|Geologija
+Koja životinja je najbrža na kopnu?|Gepard|Lav|Antilopa|Konj
+Koja ptica je najbrža (u obrušavanju)?|Sivi soko|Orao|Noj|Lasta
+Koja je najveća ptica na svetu?|Noj|Albatros|Kondor|Emu
+Koja ptica ima najveći raspon krila?|Lutajući albatros|Andski kondor|Pelikan|Orao
+Koja je najmanja ptica na svetu?|Kolibri (pčelinji kolibri)|Carić|Senica|Vrabac
+Koji sisar može da leti?|Slepi miš|Leteća veverica|Leteći lemur|Pingvin
+Koji sisar polaže jaja?|Kljunar|Kengur|Koala|Delfin
+Koja je životinja simbol Australije pored kengura, nosi mladunce u torbi i jede eukaliptus?|Koala|Vombat|Oposum|Dingo
+Gde žive pingvini u prirodi?|Na južnoj hemisferi|Na Severnom polu|U Arktiku|U Sibiru
+Koliko srca ima hobotnica?|3|1|2|4
+Koliko krakova ima hobotnica?|8|6|10|12
+Koliko nogu ima insekt?|6|8|4|10
+Koja životinja ima najduži vrat?|Žirafa|Noj|Kamila|Lama
+Koja životinja spava naopačke?|Slepi miš|Lenjivac|Sova|Koala
+Koliko dugo traje trudnoća kod slona (približno)?|22 meseca|9 meseci|12 meseci|36 meseci
+Koja životinja je poznata po menjanju boje kože?|Kameleon|Gekon|Iguana|Žaba
+Šta je kit po vrsti životinje?|Sisar|Riba|Gmizavac|Vodozemac
+Šta je delfin?|Sisar|Riba|Vodozemac|Glavonožac
+Šta je žaba?|Vodozemac|Gmizavac|Riba|Sisar
+Šta je kornjača?|Gmizavac|Vodozemac|Sisar|Riba
+Kako se zove mladunče konja?|Ždrebe|Tele|Jare|Jagnje
+Kako se zove mladunče krave?|Tele|Ždrebe|Prase|Jare
+Kako se zove mladunče koze?|Jare|Jagnje|Tele|Mače
+Kako se zove mladunče ovce?|Jagnje|Jare|Tele|Ždrebe
+Kako se zove mužjak kokoške?|Petao|Ćuran|Gusak|Patak
+Kako se zove ženka svinje?|Krmača|Ovca|Koza|Kobila
+Kako se zove ženka konja?|Kobila|Krava|Krmača|Ovca
+Kako se zove žensko jelena?|Košuta|Srna|Lisica|Kobila
+Šta proizvode pčele osim meda?|Vosak|Svilu|Mleko|Lak
+Koja životinja proizvodi svilu?|Svilena buba (gusenica)|Pauk|Pčela|Mrav
+Koja životinja je najveća riba na svetu?|Kitova ajkula|Beli ajkula|Plavi kit|Orka
+Koja životinja je najveći gmizavac?|Morski krokodil|Komodo zmaj|Anakonda|Aligator
+Koja je najveća zmija po masi?|Zelena anakonda|Mrežasti piton|Kraljevska kobra|Boa
+Koja je najotrovnija kopnena zmija?|Taipan (unutrašnji)|Kobra|Crna mamba|Poskok
+Koja je jedina otrovna zmija koja se često sreće u Srbiji?|Poskok i šarka|Smuk|Belouška|Bjelica
+Koja je nacionalna životinja Kine?|Džinovska panda|Tigar|Zmaj|Majmun
+Šta jede džinovska panda?|Bambus|Eukaliptus|Ribu|Insekte
+Koliko dugo živi muva (približno)?|Oko mesec dana|Jedan dan|Godinu dana|Pet godina
+Koja životinja ima najveće oči?|Džinovska lignja|Plavi kit|Sova|Konj
+Koje drvo je najviše na svetu?|Sekvoja (obalska)|Baobab|Eukaliptus|Bor
+Koje drvo je najstarije, sa primercima starim preko 4.000 godina?|Bor čekinjaš|Hrast|Maslina|Tisa
+Od koje biljke se pravi čokolada?|Kakaovca|Kafe|Vanile|Rogača
+Iz koje biljke se dobija šećer u Srbiji?|Šećerne repe|Šećerne trske|Kukuruza|Javora
+Iz koje biljke se pravi lan i laneno ulje?|Lan|Konoplja|Pamuk|Jutа
+Koja biljka je cvet sa velikom glavom koja prati Sunce?|Suncokret|Maslačak|Lala|Mak
+Koji deo biljke upija vodu iz zemlje?|Koren|List|Cvet|Stablo
+Koliko približno godina ima Zemlja?|4,5 milijardi|450 miliona|45 milijardi|6.000
+Koliko približno godina ima svemir?|13,8 milijardi|4,5 milijardi|100 milijardi|1 milijarda
+Kako se zove teorija o nastanku svemira?|Veliki prasak|Teorija struna|Stacionarni svemir|Relativnost
+Kada su izumrli dinosaurusi (približno)?|Pre 66 miliona godina|Pre 6 miliona godina|Pre 650 miliona godina|Pre 6.000 godina
+Koji dinosaurus je poznat kao „kralj tiranosaurusa”?|Tiranosaurus reks|Velociraptor|Stegosaurus|Triceratops
+Koji dinosaurus je imao tri roga?|Triceratops|Stegosaurus|Ankilosaurus|Brahiosaurus
+Kako se zove period kada su živeli dinosaurusi?|Mezozoik|Paleozoik|Kenozoik|Prekambrij
+Koliko kostiju ima ljudska šaka (sa ručjem)?|27|20|32|15
+Koliko pršljenova ima vratni deo kičme čoveka?|7|5|12|9
+Kako se zove pojava kad se svetlost razlaže na boje u kapljicama vode?|Duga|Fatamorgana|Polarna svetlost|Odjek
+Koje boje ima duga (koliko)?|7|5|6|8
+Koja boja svetlosti ima najveću talasnu dužinu u dugi?|Crvena|Ljubičasta|Plava|Zelena
+Koje su tri osnovne boje svetlosti (RGB)?|Crvena, zelena, plava|Crvena, žuta, plava|Žuta, plava, bela|Cijan, magenta, žuta
+Šta je brže, zvuk ili svetlost?|Svetlost|Zvuk|Isto su brzi|Zavisi od vremena
+Kolika je približno brzina zvuka u vazduhu?|340 m/s|34 m/s|3.400 m/s|300.000 km/s
+Kroz šta zvuk ne može da se prostire?|Vakuum|Vodu|Čelik|Vazduh
+Kako se zove zvuk previsoke frekvencije da bi ga čovek čuo?|Ultrazvuk|Infrazvuk|Supersonik|Eho
+Koja životinja koristi eholokaciju?|Slepi miš|Sova|Krtica|Mačka
+Kako se zove „odbijeni zvuk”?|Eho (odjek)|Rezonancija|Interferencija|Refleksija svetlosti
+Ko je izumeo dinamit?|Alfred Nobel|Tomas Edison|Džejms Vat|Ernest Raderford
+Ko je usavršio parnu mašinu u 18. veku?|Džejms Vat|Džordž Stivenson|Tomas Njukomen|Robert Fulton
+Ko je izgradio prvu javnu železnicu na parni pogon?|Džordž Stivenson|Džejms Vat|Ričard Trevitik|Robert Fulton
+Ko je napravio prvi uspešan let avionom sa motorom 1903?|Braća Rajt|Braća Monglfje|Luj Blerio|Oto Lilijental
+Ko je prvi preleteo Lamanš avionom 1909?|Luj Blerio|Braća Rajt|Čarls Lindberg|Amelija Erhart
+Ko je prvi sam preleteo Atlantik bez zaustavljanja 1927?|Čarls Lindberg|Amelija Erhart|Luj Blerio|Hauard Hjuz
+Ko je izumeo radio, prema patentima priznatim 1943. u SAD (Vrhovni sud)?|Nikola Tesla|Guljelmo Markoni|Hajnrih Herc|Aleksandar Popov
+Ko je pronašao World Wide Web?|Tim Berners-Li|Bil Gejts|Stiv Džobs|Vint Serf
+Ko je osnovao Majkrosoft sa Polom Alenom?|Bil Gejts|Stiv Džobs|Mark Zakerberg|Lari Pejdž
+Ko je suosnivač kompanije Epl sa Stivom Voznijakom?|Stiv Džobs|Bil Gejts|Lari Elison|Džef Bezos
+Ko je osnovao Fejsbuk?|Mark Zakerberg|Džek Dorsi|Lari Pejdž|Kevin Sistrom
+Ko je osnovao Amazon?|Džef Bezos|Ilon Mask|Bil Gejts|Lari Pejdž
+Koja kompanija je napravila pretraživač Gugl?|Gugl (Lari Pejdž i Sergej Brin)|Majkrosoft|Jahu|Epl
+Kako se zove najmanja jedinica informacije u računaru?|Bit|Bajt|Kilobajt|Piksel
+Koliko bitova ima jedan bajt?|8|16|4|10
+Šta znači skraćenica CPU?|Centralna procesorska jedinica|Kompjuterska jedinica napajanja|Centralna memorija|Grafička kartica
+Šta znači skraćenica RAM?|Memorija sa slučajnim pristupom|Samo-čitajuća memorija|Radna aplikacija|Mrežni adapter
+Kako se zove prvi programer u istoriji, ćerka lorda Bajrona?|Ada Lavlejs|Grejs Hoper|Alan Tjuring|Čarls Bebidž
+Ko je razbio nemačku šifru Enigma i smatra se ocem računarstva?|Alan Tjuring|Džon fon Nojman|Čarls Bebidž|Klod Šenon
+Kako se zove binarni brojni sistem?|Sistem sa ciframa 0 i 1|Sistem sa 10 cifara|Sistem sa 16 cifara|Rimski sistem
+Koliko je 2 na 10. stepen?|1024|1000|512|2048
+Koliko je kvadratni koren iz 144?|12|14|11|16
+Koliko je 7 puta 8?|56|54|64|48
+Koliko je 13 na kvadrat?|169|139|156|196
+Koliko stepeni ima zbir uglova u trouglu?|180|360|90|270
+Koliko stepeni ima pun krug?|360|180|90|400
+Kako se zove trougao sa sve tri jednake stranice?|Jednakostranični|Jednakokraki|Pravougli|Raznostranični
+Kako se zove mnogougao sa osam stranica?|Osmougao|Šestougao|Desetougao|Petougao
+Koliko ivica ima kocka?|12|8|6|24
+Koliko temena ima kocka?|8|6|12|4
+Koliko strana ima kocka?|6|4|8|12
+Koji je najmanji prost broj?|2|1|3|0
+Koliko je 10% od 350?|35|3,5|350|30
+Koji je sledeći broj u nizu 1, 1, 2, 3, 5, 8…?|13|11|12|10
+Kako se zove niz 1, 1, 2, 3, 5, 8, 13…?|Fibonačijev niz|Paskalov niz|Aritmetički niz|Geometrijski niz
+Koliko je nula podeljeno sa pet?|0|5|Nije definisano|1
+Koliko nula ima jedan milion?|6|5|7|9
+Koliko nula ima jedna milijarda?|9|6|12|8
+Koji rimski broj označava 100?|C|M|D|L
+Koji rimski broj označava 1000?|M|C|D|K
+Koji rimski broj označava 500?|D|L|M|C
+Kako se rimskim brojevima piše 9?|IX|VIIII|XI|IIX
+Koliko iznosi zbir svih brojeva od 1 do 10?|55|50|45|100
