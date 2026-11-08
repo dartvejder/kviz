@@ -107,6 +107,7 @@ button:disabled{opacity:.45;cursor:not-allowed}
 .verdict strong{font-family:var(--display);font-size:20px}
 .verdict.v-ok{background:#e3f7ec;color:#0f5a32}.verdict.v-bad{background:#fde8e7;color:#7a1d18}.verdict.v-none{background:var(--soft);color:var(--ink)}
 .verdict .ans{font-size:15px}
+.linkbtn{background:none;border:0;padding:0;font:inherit;font-weight:700;color:var(--t1);text-decoration:underline;cursor:pointer}
 .ntf{display:flex;align-items:center;gap:8px;font-weight:700;font-size:15px;cursor:pointer}
 .ntf input{width:20px;height:20px;accent-color:var(--t1)}
 .board{display:flex;flex-direction:column;gap:6px;list-style:none;margin:0;padding:0}
@@ -374,6 +375,10 @@ function hostCreate(){
 }
 // ---------- pitanja bez ponavljanja (pamti domaćinov pregledač) ----------
 const qid=q=>{let h=5381;const t=q[1];for(let i=0;i<t.length;i++)h=((h*33)^t.charCodeAt(i))>>>0;return h.toString(36)};
+// Jednokratni reset odigranih pitanja (2026-11-08): posle ove verzije sva pitanja ponovo mogu u kviz.
+const USED_RESET="2026-11-08";
+if(store.get("kviz.usedReset")!==USED_RESET){ store.set("kviz.used","[]"); store.set("kviz.usedReset",USED_RESET); }
+function resetUsed(){ store.set("kviz.used","[]"); render(); }
 function usedSet(){try{const v=JSON.parse(store.get("kviz.used")||"[]");return new Set(Array.isArray(v)?v:[])}catch(e){return new Set()}}
 // Oblasti: domaćin bira koje ulaze u igru (pamti se u pregledaču).
 const ALL_CATS=[...new Set(BANK.map(q=>q[0]))].sort((a,b)=>a.localeCompare(b,"sr"));
@@ -574,7 +579,7 @@ function vLobby(){
           <button data-k="*" aria-pressed="${S.cats.length===ALL_CATS.length}">Sve</button>
           ${ALL_CATS.map(c=>`<button data-k="${esc(c)}" aria-pressed="${S.cats.includes(c)}">${esc(c)}</button>`).join("")}
         </div>
-        <p class="muted small">Izabrano ${poolCount()} od ${BANK.length} pitanja. Još neodigranih: ${unusedCount()}. Pitanja se ne ponavljaju dok se sva ne iskoriste.</p>
+        <p class="muted small">Izabrano ${poolCount()} od ${BANK.length} pitanja. Još neodigranih: ${unusedCount()}. Pitanja se ne ponavljaju dok se sva ne iskoriste. ${unusedCount()<BANK.length?`<button type="button" class="linkbtn" id="resetUsed">Vrati sva pitanja u igru</button>`:""}</p>
       </div>`
     :`<div style="display:flex;flex-direction:column;gap:6px"><h2>Čekamo domaćina</h2><p class="muted" id="hostInfo">Domaćin će pokrenuti kviz kad svi uđu.</p></div>`}
     <div style="display:flex;flex-direction:column;gap:8px">
@@ -599,6 +604,7 @@ function vLobby(){
       else S.cats=ALL_CATS.filter(x=>x===k||S.cats.includes(x));
       store.set("kviz.cats",JSON.stringify(S.cats)); S.H.cats=S.cats.length===ALL_CATS.length?null:S.cats.slice(); hostPublish(); render()};
     $("#go").onclick=hostStart;
+    const ru=$("#resetUsed"); if(ru) ru.onclick=()=>{ if(confirm("Vratiti sva već odigrana pitanja u igru?")) resetUsed(); };
     const nt=$("#ntf"); if(nt) nt.onchange=()=>setNotify(nt.checked);
     const cp=$("#copy");
     if(cp)cp.onclick=()=>{const i=$("#inv");const done=()=>{cp.textContent="Kopirano";setTimeout(()=>{if(cp.isConnected)cp.textContent="Kopiraj link"},1800)};
