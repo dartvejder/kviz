@@ -484,6 +484,13 @@ function render(soft){
   $("#badge").textContent = S.code&&S.screen!=="start" ? "Igra "+S.code.toUpperCase() : "Opšta kultura";
   ({start:vStart,lobby:vLobby,game:vGame,gone:vGone})[S.screen]();
   updateDynamic();
+  // Novo pitanje: vrati ekran na pitanje tako da se vidi i traka sa preostalim vremenom.
+  const g=G();
+  if(S.screen==="game"&&g&&g.phase==="q"&&S.scrollKey!==S.localKey){
+    S.scrollKey=S.localKey;
+    const h=document.querySelector(".qhead");
+    if(h){const y=h.getBoundingClientRect().top+window.scrollY-12; if(window.scrollY>y) window.scrollTo({top:Math.max(0,y),behavior:"smooth"})}
+  }
 }
 
 function vStart(){
