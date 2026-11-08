@@ -422,3 +422,97 @@ Koji grad je poznat po „Dužijanci”, prazniku žetve?|Subotica|Sombor|Novi S
 Koji grad je poznat po mamutu Kiki?|Kikinda|Zrenjanin|Pančevo|Sombor
 Koji grad je poznat po Danima piva?|Zrenjanin|Pančevo|Kikinda|Apatin
 Koji vojvođanski grad ima pivaru osnovanu 1756. godine?|Apatin|Zrenjanin|Pančevo|Čelarevo
+Koliko sati ima u dva dana?|48|36|24|72
+Koliko je minuta u četvrt sata?|15|25|10|20
+Koliko je dana u tri nedelje?|21|18|24|28
+Koji broj dolazi posle 999?|1000|1100|9999|990
+Koliko nula ima jedan milion?|6|5|7|9
+Koliko je polovina od 3/4?|3/8|3/2|1/4|1/2
+Koliko je 25% od 80?|20|25|40|16
+Koliko je 12 tuceta?|144|120|112|240
+Koja je sledeća u nizu: 2, 4, 8, 16...?|32|24|20|64
+Koja je sledeća u nizu: 1, 4, 9, 16...?|25|20|24|32
+Koja je sledeća u nizu: 1, 3, 6, 10...?|15|14|16|12
+Ako je danas utorak, koji dan je za 10 dana?|Petak|Četvrtak|Sreda|Subota
+Koliko je uglova u kvadratu?|4|3|5|6
+Koliko ivica ima kocka?|12|8|6|24
+Koliko temena ima kocka?|8|6|12|4
+Koliko strana ima kocka?|6|8|4|12
+Koliko stranica ima petougao?|5|6|4|7
+Kako se zove geometrijsko telo poput lopte?|Lopta (sfera)|Valjak|Kupa|Prizma
+Kako se zove telo poput konzerve?|Valjak|Kupa|Prizma|Piramida
+Kako se zove telo poput kornete sladoleda?|Kupa|Valjak|Prizma|Kocka
+Koja je boja na vrhu semafora?|Crvena|Zelena|Žuta|Plava
+Koja boja na semaforu znači da treba stati?|Crvena|Žuta|Zelena|Plava
+Koliko točkova ima tricikl?|3|2|4|1
+Kako se zove pomoćni točak automobila?|Rezervni točak|Kolotur|Zupčanik|Volan
+Kako se zove deo automobila kojim se upravlja?|Volan|Menjač|Kočnica|Kvačilo
+Koja pedala u automobilu sa ručnim menjačem je skroz levo?|Kvačilo|Kočnica|Gas|Sirena
+Koliko pedala ima automobil sa ručnim menjačem?|3|2|4|1
+Koja je oznaka bezolovnog benzina u Srbiji, najčešća?|BMB 95|Dizel|TNG|BMB 80
+Šta znači skraćenica TNG?|Tečni naftni gas|Tehnički nadzor gorivom|Turbo nafta gas|Teško naftno gorivo
+Kako se zove tablica koja pokazuje da je vozač početnik?|Tablica sa slovom „P”|Tablica sa „L”|Crvena tablica|Plava tablica
+Koja je oznaka Srbije na međunarodnim tablicama?|SRB|SR|SB|RS
+Koja je međunarodna oznaka Nemačke na tablicama?|D|DE|G|GER
+Koja je međunarodna oznaka Švajcarske na tablicama?|CH|SW|SZ|S
+Koja je međunarodna oznaka Hrvatske na tablicama?|HR|CR|KR|H
+Koja je međunarodna oznaka Austrije na tablicama?|A|AT|AU|O
+Koja je međunarodna oznaka Mađarske na tablicama?|H|HU|M|MA
+Koji je pozivni broj Srbije?|+381|+385|+387|+382
+Koji je pozivni broj Hrvatske?|+385|+381|+386|+387
+Koji je pozivni broj Bosne i Hercegovine?|+387|+385|+381|+382
+Koji je pozivni broj Crne Gore?|+382|+381|+387|+389
+Koji je pozivni broj Severne Makedonije?|+389|+382|+359|+355
+Koji je pozivni broj Slovenije?|+386|+385|+381|+387
+Koji je pozivni broj Nemačke?|+49|+43|+41|+48
+Koji je pozivni broj SAD?|+1|+44|+11|+7
+Koji je pozivni broj Velike Britanije?|+44|+1|+33|+49
+Koji je pozivni broj Austrije?|+43|+49|+41|+36
+Koji je pozivni broj Rusije?|+7|+1|+70|+38
+Koji je internet domen Srbije?|.rs|.sr|.srb|.yu
+Koji je bio internet domen Jugoslavije?|.yu|.jg|.ju|.sfrj
+Koji je internet domen Nemačke?|.de|.ge|.nm|.gr
+Koji je internet domen Švajcarske?|.ch|.sw|.sz|.si
+Kojoj zemlji pripada domen .tv koji je popularan zbog televizije?|Tuvalu|Tonga|Tajvan|Tunis
+Kojoj zemlji pripada domen .me?|Crnoj Gori|Meksiku|Malti|Mongoliji
+Kako se zove prva poštanska marka na svetu (1840)?|Crni peni|Plavi Mauricijus|Crveni dinar|Zlatni šiling
+Čiji lik je na prvoj poštanskoj marki?|Kraljice Viktorije|Napoleona|Džordža Vašingtona|Kraljice Elizabete
+Kako se zove sakupljanje poštanskih maraka?|Filatelija|Numizmatika|Kartofilija|Bibliofilija
+Kako se zove sakupljanje novca?|Numizmatika|Filatelija|Falerstika|Kartofilija
+Kako se zove ljubitelj knjiga?|Bibliofil|Filatelist|Numizmatičar|Kinofil
+Kako se zove ljubitelj pasa?|Kinofil|Bibliofil|Ornitolog|Filatelist
+Kako se zove osoba koja posmatra ptice?|Ornitolog|Entomolog|Kinolog|Ihtiolog
+Kako se zove osoba koja ne jede nijedan proizvod životinjskog porekla?|Vegan|Vegetarijanac|Pescetarijanac|Fleksitarijanac
+Kako se zove osoba koja podjednako koristi obe ruke?|Ambideksteran|Levak|Dešnjak|Bilingvalan
+Kako se zove osoba koja govori dva jezika kao maternje?|Bilingvalna|Poliglota|Prevodilac|Lingvista
+Kako se zove osoba koja govori mnogo jezika?|Poliglota|Bilingvalna|Lingvista|Filolog
+Kako se zove neko ko rano ustaje?|Ranoranilac|Noćna ptica|Pospanko|Spavalica
+Kako se zove ženski pandan reči „kum”?|Kuma|Kumica|Kumka|Kumovica
+Kako se zove muž sestre?|Zet|Šurak|Dever|Pašanac
+Kako se zove ženin brat?|Šurak|Dever|Zet|Pašanac
+Kako se zove muževljev brat?|Dever|Šurak|Zet|Svak
+Kako se zove ženina sestra?|Svastika|Zaova|Jetrva|Snaja
+Kako se zove muževljeva sestra?|Zaova|Svastika|Jetrva|Snaja
+Kako se zovu muževi dveju sestara međusobno?|Pašanci|Šuraci|Deveri|Zetovi
+Kako se zovu žene dvojice braće međusobno?|Jetrve|Zaove|Svastike|Snaje
+Kako se zove ženin otac?|Tast|Svekar|Pašanac|Dever
+Kako se zove muževljev otac?|Svekar|Tast|Dever|Šurak
+Kako se zove ženina majka?|Tašta|Svekrva|Zaova|Jetrva
+Kako se zove muževljeva majka?|Svekrva|Tašta|Zaova|Svastika
+Kako se zove sinova žena za njegove roditelje?|Snaja (snaha)|Zaova|Jetrva|Svastika
+Kako se zove ćerkin muž za njene roditelje?|Zet|Šurak|Dever|Pašanac
+Kako se zovu roditelji supružnika međusobno?|Prijatelji (prija i prijatelj)|Kumovi|Svatovi|Rođaci
+Kako se zove sestrin sin?|Sestrić|Bratanac|Unuk|Kumče
+Kako se zove očev brat?|Stric|Ujak|Teča|Dever
+Kako se zove majčin brat?|Ujak|Stric|Teča|Šurak
+Kako se zove muž tetke?|Teča|Stric|Ujak|Pašanac
+Kako se zove žena strica?|Strina|Ujna|Tetka|Snaja
+Kako se zove žena ujaka?|Ujna|Strina|Tetka|Svastika
+Kako se zove očeva ili majčina sestra?|Tetka|Strina|Ujna|Zaova
+Kako se zove dete od unuka?|Praunuk|Čukununuk|Unuk|Sinovac
+Kako se zove dedin otac?|Pradeda|Čukundeda|Šukundeda|Deda
+Kako se zove pradedin otac?|Čukundeda|Šukundeda|Pradeda|Navrdeda
+Kako se zove dete koje je kršteno za kuma?|Kumče|Pastorče|Posinak|Sinovac
+Kako se zove dete supružnika iz prethodnog braka?|Pastorak (pastorka)|Kumče|Posinak|Unuk
+Kako se zove očeva nova žena za decu?|Maćeha|Svekrva|Tašta|Kuma
+Kako se zove majčin novi muž za decu?|Očuh|Tast|Svekar|Teča

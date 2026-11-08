@@ -495,3 +495,109 @@ Koji sport je Džordž Best igrao?|Fudbal|Ragbi|Snuker|Boks
 Iz koje zemlje je bio Džordž Best?|Severna Irska|Škotska|Irska|Vels
 Koji sport igra Roni O'Salivan?|Snuker|Pikado|Golf|Bilijar 8
 Koji pikado igrač je osvojio 16 svetskih titula?|Fil Tejlor|Majkl van Gervin|Rejmond van Barneveld|Luk Litler
+Koliko je dugačak fudbalski gol?|7,32 m|6 m|8 m|5,5 m
+Koliko je visok fudbalski gol?|2,44 m|2 m|3 m|2,2 m
+Sa koliko metara se izvodi penal u fudbalu?|11 m|9 m|12 m|16 m
+Koliko izmena je dozvoljeno po timu u fudbalu (pravila od 2020)?|5|3|4|7
+Koja kartica u fudbalu znači isključenje?|Crvena|Žuta|Plava|Zelena
+Kako se zove pravilo kad je napadač iza poslednjeg braniča u trenutku dodavanja?|Ofsajd|Penal|Korner|Aut
+Kako se zove tehnologija za video proveru odluka u fudbalu?|VAR|Hawk-Eye|TMO|DRS
+Kako se zove tehnologija za proveru da li je loptica bila u autu u tenisu?|Hawk-Eye (Jastrebovo oko)|VAR|TMO|DRS
+Kako se zove pogodak kad isti igrač postigne tri gola na utakmici?|Het-trik|Dubl|Poker|Tripl
+Ko je postigao het-trik u finalu Svetskog prvenstva 2022?|Kilijan Mbape|Lionel Mesi|Anhel di Marija|Đuljan Alvarez
+Ko je postigao het-trik u finalu Svetskog prvenstva 1966?|Džef Herst|Bobi Čarlton|Ojzebio|Gerd Miler
+Koji klub je osvojio prvi Kup šampiona 1956?|Real Madrid|Benfika|Milan|Ajaks
+Koliko uzastopnih Kupova šampiona je Real Madrid osvojio od 1956?|5|3|4|6
+Koji holandski klub je osvojio tri uzastopna Kupa šampiona 1971–1973?|Ajaks|Fejenord|PSV|AZ
+Koji engleski klub je osvojio Ligu šampiona 2023?|Mančester siti|Liverpul|Čelsi|Arsenal
+Koji klub je osvojio Ligu šampiona 2005. posle preokreta od 0:3 u Istanbulu?|Liverpul|Milan|Čelsi|Barselona
+Koji klub je osvojio Ligu šampiona 1999. sa dva gola u nadoknadi?|Mančester junajted|Bajern|Juventus|Real Madrid
+Koji trener je najduže vodio Mančester junajted?|Ser Aleks Ferguson|Mat Bazbi|Žoze Murinjo|Luj van Gal
+Koji trener se naziva „Posebni”?|Žoze Murinjo|Pep Gvardiola|Jirgen Klop|Karlo Anćeloti
+Koji trener ima najviše osvojenih Liga šampiona?|Karlo Anćeloti|Pep Gvardiola|Zinedin Zidan|Aleks Ferguson
+Iz koje zemlje je Pep Gvardiola?|Španije|Italije|Portugala|Argentine
+Koji klub je osvojio Premijer ligu 2016. kao veliko iznenađenje?|Lester|Totenhem|Everton|Vest Hem
+Koji tim je prošao kroz Premijer ligu bez poraza 2003–2004?|Arsenal|Čelsi|Mančester junajted|Liverpul
+Kako se nazvao Arsenalov tim bez poraza?|Nepobedivi|Galaktikosi|Busby Babes|Crvena mašina
+Kako se nazivala Realova postava sa Zidanom, Figom i Bekamom?|Galaktikosi|Nepobedivi|Dream Team|Plavi tim
+Kako se zove derbi Reala i Barselone?|El Klasiko|Derbi della Madonina|Der Klasiker|Superklasiko
+Kako se zove derbi Boke Juniors i River Plejta?|Superklasiko|El Klasiko|Derbi Madonina|Fla-Flu
+Kako se zove derbi Milana i Intera?|Derbi della Madonina|El Klasiko|Derbi d'Italija|Derbi della Kapitale
+Kako se zove derbi Bajerna i Borusije Dortmund?|Der Klasiker|El Klasiko|Revirderbi|Nordderbi
+Koji klub iz Dortmunda igra na stadionu sa „Žutim zidom”?|Borusija Dortmund|Šalke|Bajer Leverkuzen|Keln
+Koji je najstariji fudbalski klub na svetu koji još postoji?|Šefild FC|Notingem Kaunti|Kvins Park|Barnsli
+Koja zemlja je izmislila fudbal u modernom obliku?|Engleska|Škotska|Italija|Brazil
+Koja je najstarija fudbalska reprezentacijska utakmica (1872)?|Škotska – Engleska|Engleska – Vels|Urugvaj – Argentina|Irska – Škotska
+Koja reprezentacija je osvojila najviše Kopa Amerika?|Argentina|Brazil|Urugvaj|Kolumbija
+Koja reprezentacija je osvojila najviše Afričkih kupova nacija?|Egipat|Kamerun|Gana|Nigerija
+Koja reprezentacija je senzacionalno stigla do polufinala SP 2022. kao prva afrička?|Maroko|Senegal|Kamerun|Gana
+Koja azijska reprezentacija je stigla do polufinala SP 2002?|Južna Koreja|Japan|Saudijska Arabija|Iran
+Koja reprezentacija je bila treća na SP 1998. u svom prvom nastupu kao nezavisna država?|Hrvatska|Slovenija|Ukrajina|Češka
+Koji fudbaler je bio najbolji strelac SP 1998?|Davor Šuker|Ronaldo|Gabrijel Batistuta|Kristijan Vieri
+Koji tim je bio finalista SP 2018 iz bivše Jugoslavije?|Hrvatska|Srbija|Slovenija|BiH
+Koji igrač je proglašen najboljim na SP 2018?|Luka Modrić|Kilijan Mbape|Antoan Grizman|Eden Azar
+Koji je bio rezultat finala Svetskog prvenstva 2022. posle 120 minuta?|3:3|2:2|1:1|4:2
+Koji golman je odbranio penale za Argentinu u finalu 2022?|Emilijano Martines|Franko Armani|Heronimo Rulji|Serhio Romero
+Protiv koje reprezentacije je Srbija odigrala prvu utakmicu na SP 2022?|Brazila|Švajcarske|Kameruna|Portugala
+Kog srpskog fudbalera je Juventus kupio od Fiorentine 2022?|Dušana Vlahovića|Aleksandra Mitrovića|Sergeja Milinković-Savića|Luku Jovića
+Koji srpski fudbaler je igrao za Real Madrid od 2019?|Luka Jović|Dušan Vlahović|Aleksandar Mitrović|Nemanja Matić
+Koji srpski fudbaler je postigao rekordnih 43 gola u Čempionšipu za Fulam?|Aleksandar Mitrović|Dušan Vlahović|Luka Jović|Dušan Tadić
+Koji srpski klub je finalista Kupa UEFA 1979?|Crvena zvezda|Partizan|Vojvodina|OFK Beograd
+Kome je Crvena zvezda izgubila finale Kupa UEFA 1979?|Borusiji Menhengladbah|Ajntrahtu|Ipsviču|Bajernu
+Koje godine je Crvena zvezda pobedila Liverpul 2:0 u Ligi šampiona na Marakani?|2018|2019|2016|2020
+Ko je bio trener Crvene zvezde kad je osvojen Kup šampiona 1991?|Ljupko Petrović|Dragoslav Šekularac|Miljan Miljanić|Velibor Vasović
+Ko je bio dugogodišnji trener i selektor, poznat po radu u Realu i reprezentaciji Jugoslavije?|Miljan Miljanić|Ljupko Petrović|Ivica Osim|Tomislav Ivić
+Ko je bio selektor Jugoslavije na SP 1990?|Ivica Osim|Miljan Miljanić|Ilija Petković|Slobodan Santrač
+Koliko je NBA titula osvojio Majkl Džordan?|6|5|7|4
+Koji košarkaš je dobio nadimak „Mađik”?|Ervin Džonson|Lari Berd|Karim Abdul-Džabar|Kobi Brajant
+Koji košarkaš je bio veliki rival Mađika Džonsona u Bostonu?|Lari Berd|Kevin Mekhejl|Robert Periš|Denis Džonson
+Koji košarkaš je poznat po „skyhook” šutu?|Karim Abdul-Džabar|Vilt Čemberlen|Hakim Olajdžuvon|Šakil O'Nil
+Koji košarkaš je predvodio „Dream Team” u Barseloni 1992 sa Džordanom i Mađikom?|Lari Berd|Kobi Brajant|Lebron Džejms|Kevin Garnet
+Koji košarkaš ima rekord po broju ubačenih trojki u NBA?|Stef Kari|Rej Alen|Džejms Harden|Klej Tompson
+Koji je nadimak Lebrona Džejmsa?|Kralj Džejms|Mamba|Njegovo veličanstvo|Grk
+Koji je bio nadimak Kobija Brajanta?|Crna mamba|Kralj|Šak|Đavo
+U kojoj nesreći je poginuo Kobi Brajant 2020?|Pad helikoptera|Saobraćajna nesreća|Pad aviona|Brodolom
+Koji grčki košarkaš je MVP NBA lige 2019 i 2020?|Janis Adetokunbo|Nikola Jokić|Luka Dončić|Đorđos Printezis
+Koji slovenački košarkaš je zvezda NBA lige?|Luka Dončić|Goran Dragić|Beno Udrih|Vlatko Čančar
+Koji francuski košarkaš je izabran kao prvi pik na NBA draftu 2023?|Viktor Vembanjama|Rudi Gober|Toni Parker|Nikola Batum
+Koji srpski košarkaš je primljen u Kuću slavnih NBA 2019?|Vlade Divac|Predrag Stojaković|Dejan Bodiroga|Aleksandar Đorđević
+Koji srpski košarkaš je proglašen MVP-om fajnal-fora Evrolige i igrao za Real, Panatinaikos i Barselonu?|Dejan Bodiroga|Vlade Divac|Miloš Teodosić|Peđa Stojaković
+Koji srpski košarkaš je proglašen MVP-om Evrolige 2010?|Miloš Teodosić|Dejan Bodiroga|Nemanja Bjelica|Bogdan Bogdanović
+Koji klub je poznat kao „crno-beli” u košarci iz Beograda?|Partizan|Crvena zvezda|FMP|Radnički
+Koja država je osvojila zlato u košarci na OI 2024. kod muškaraca?|SAD|Francuska|Srbija|Nemačka
+Koju medalju je Srbija osvojila u muškoj košarci na OI 2024?|Bronzu|Srebro|Zlato|Nijednu
+Koju medalju je Srbija osvojila u muškoj košarci na OI 2016?|Srebro|Bronzu|Zlato|Nijednu
+Koju medalju je Jugoslavija osvojila u košarci na OI 1980. u Moskvi?|Zlato|Srebro|Bronzu|Nijednu
+Koja država je osvojila Evrobasket 2022?|Španija|Francuska|Nemačka|Srbija
+Koji tenisač je osvojio Vimbldon 2023. pobedom nad Đokovićem?|Karlos Alkaraz|Janik Siner|Danil Medvedev|Holger Rune
+Koji italijanski teniser je osvojio Australijan open 2024?|Janik Siner|Lorenco Muzeti|Mateo Beretini|Fabio Fonjini
+Ko je bio Đokovićev dugogodišnji trener od 2006. do 2016?|Marjan Vajda|Boris Beker|Goran Ivanišević|Andre Agasi
+Koji bivši vimbldonski šampion iz Hrvatske je bio Đokovićev trener?|Goran Ivanišević|Ivan Ljubičić|Marin Čilić|Mario Ančić
+Koji teniser je osvojio Vimbldon 2001. kao vajld-kard igrač?|Goran Ivanišević|Pit Sampras|Patrik Rafter|Lejton Hjuit
+Koji švajcarski teniser je osvojio tri grend slema i bio Federerov rival u reprezentaciji?|Stan Vavrinka|Mark Rose|Ronald Agenor|Jakob Hlasek
+Koji je bio prvi teniser koji je osvojio „Zlatni slem” u karijeri (4 GS + OI)?|Andre Agasi|Pit Sampras|Rodžer Federer|Bjern Borg
+Na kom turniru se 2012. igralo na plavoj šljaci?|Madrid|Rim|Monte Karlo|Hamburg
+Kako se zove ekipno takmičenje teniserki?|Bili Džin King kup|Dejvis kup|Hopman kup|Laver kup
+Kako se zove ekipni turnir Evropa protiv ostatka sveta koji je osnovao Federer?|Laver kup|Dejvis kup|ATP kup|Junajted kup
+Koji belgijski biciklista se zove „Kanibal”?|Edi Merks|Tom Bunen|Vaut van Art|Remko Evenepul
+Koji kenijski trkač je osvojio zlato na maratonu na OI 2016. i 2020?|Eliud Kipčoge|Kenenisa Bekele|Abel Kirui|Džefri Mutai
+Koji atletičar je pobedio na 100 m na OI 2024?|Noa Lajls|Kišejn Tompson|Fred Kerli|Jusein Bolt
+Koja zemlja je dominantna u trčanju na srednje i duge staze uz Keniju?|Etiopija|Jamajka|Maroko|SAD
+Koja atletičarka je držala svetski rekord u skoku uvis (2,09 m) od 1987. do 2024?|Stefka Kostadinova|Blanka Vlašić|Jaroslava Mahučih|Ana Čičerova
+Koja ukrajinska skakačica uvis je oborila svetski rekord 2024?|Jaroslava Mahučih|Julija Levčenko|Ana Čičerova|Blanka Vlašić
+Koliko disciplina ima moderni petoboj?|5|4|6|3
+Koje oružje se koristi u mačevanju?|Floret, mač i sablja|Koplje, mač i štit|Nož, sablja i luk|Floret, buzdovan i sablja
+Kako se zove borilački sport u kome se boduje bacanje protivnika na leđa (ipon)?|Džudo|Karate|Rvanje|Sambo
+Koja boja pojasa je najviša u karateu kod učenika?|Crna|Braon|Plava|Crvena
+Koji sport kombinuje skijanje i streljaštvo?|Biatlon|Nordijska kombinacija|Triatlon|Moderni petoboj
+Koji sport se igra sa kamenom i metlama na ledu?|Kerling|Hokej|Bob|Kegl
+Koja zemlja je osvojila najviše medalja na Zimskim olimpijskim igrama?|Norveška|SAD|Nemačka|Rusija
+Koji norveški biatlonac ima osam zlatnih medalja na ZOI?|Ole Ejnar Bjerndalen|Johanes Tines Be|Bjern Delij|Martin Fourkad
+Koji norveški skijaški trkač ima osam olimpijskih zlata (1992–1998)?|Bjern Delij|Ole Ejnar Bjerndalen|Peter Northug|Johanes Klebo
+Koji kanadski hokejaš se naziva „Velikim”?|Vejn Grecki|Mario Lemje|Sidni Krosbi|Bobi Or
+Koji klub NHL lige je osvojio najviše Stenli kupova?|Montreal Kanadijens|Toronto Mejpl Lifs|Detroit Red Vings|Boston Bruins
+Koji ruski hokejaš je oborio Greckijev rekord po golovima 2025?|Aleksandar Ovečkin|Jevgenij Malkin|Pavel Bure|Ilja Kovalčuk
+Koji vozač Formule 1 je bio prvak 2008. kao prvi crni vozač?|Luis Hamilton|Fernando Alonso|Kimi Raikonen|Felipe Masa
+Koji španski vozač je osvojio titule F1 2005. i 2006?|Fernando Alonso|Karlos Sajnc|Pedro de la Rosa|Marko Galjardo
+Koji finski vozač je osvojio titulu F1 2007. sa Ferarijem?|Kimi Raikonen|Mika Hakinen|Valteri Botas|Keke Rosberg
+Koji nemački vozač je osvojio četiri uzastopne titule sa Red Bulom 2010–2013?|Sebastijan Fetel|Niko Rozberg|Mihael Šumaher|Nik Hajdfeld

@@ -389,3 +389,93 @@ Kako se zove valuta Meksika?|Pezos|Real|Dolar|Kolon
 Kako se zove valuta Saudijske Arabije?|Rijal|Dinar|Dirham|Lira
 Kako se zove valuta UAE?|Dirham|Rijal|Dinar|Lira
 Kako se zove valuta Južnoafričke Republike?|Rand|Dolar|Funta|Kvaca
+Koje od sedam svetskih čuda antičkog sveta još postoji?|Keopsova piramida|Kolos sa Roda|Svetionik u Aleksandriji|Viseći vrtovi
+Na kom ostrvu je stajao Kolos?|Rodosu|Kritu|Kipru|Malti
+U kom gradu je bio Artemidin hram, jedno od svetskih čuda?|Efesu|Atini|Olimpiji|Halikarnasu
+U kom gradu je bio Mauzolej, od čega potiče reč „mauzolej”?|Halikarnasu|Efesu|Atini|Rodosu
+Gde je stajala Zevsova statua, jedno od sedam čuda?|U Olimpiji|U Atini|Na Rodosu|U Delfima
+Kako se zvala čuvena biblioteka antičkog sveta u Egiptu?|Aleksandrijska biblioteka|Pergamska biblioteka|Biblioteka u Ninivi|Kapitolska biblioteka
+Kako se zove najveća biblioteka na svetu po broju knjiga?|Kongresna biblioteka|Britanska biblioteka|Nacionalna biblioteka Francuske|Ruska državna biblioteka
+U kom gradu se nalazi Kongresna biblioteka?|Vašingtonu|Njujorku|Bostonu|Filadelfiji
+Koja organizacija UN se bavi obrazovanjem, naukom i kulturom?|UNESCO|UNICEF|SZO|FAO
+U kom gradu je sedište UNESCO-a?|Parizu|Ženevi|Njujorku|Beču
+U kom gradu je sedište UN?|Njujorku|Ženevi|Beču|Parizu
+U kom gradu je sedište NATO-a?|Briselu|Vašingtonu|Hagu|Parizu
+U kom gradu je Međunarodni sud pravde?|Hagu|Ženevi|Strazburu|Briselu
+U kom gradu je sedište Evropskog parlamenta (plenarne sednice)?|Strazburu|Briselu|Luksemburgu|Frankfurtu
+U kom gradu je sedište Evropske centralne banke?|Frankfurtu|Briselu|Parizu|Luksemburgu
+U kom gradu je sedište Međunarodnog olimpijskog komiteta?|Lozani|Ženevi|Atini|Cirihu
+U kom gradu je sedište FIFA?|Cirihu|Ženevi|Lozani|Parizu
+U kom gradu je sedište UEFA?|Nionu|Cirihu|Parizu|Ženevi
+Koji je službeni jezik u Brazilu?|Portugalski|Španski|Brazilski|Engleski
+Koji je službeni jezik u Argentini?|Španski|Portugalski|Italijanski|Engleski
+Koliko službenih jezika ima Švajcarska?|4|3|2|5
+Koji su službeni jezici Belgije?|Holandski, francuski i nemački|Francuski i engleski|Samo francuski|Flamanski i engleski
+Koji jezik se govori u Austriji kao službeni?|Nemački|Austrijski|Mađarski|Češki
+Koji jezik se najviše govori u Meksiku?|Španski|Portugalski|Engleski|Nahuatl
+Koji je najrasprostranjeniji maternji jezik na svetu?|Mandarinski kineski|Engleski|Španski|Hindi
+Koji jezik ima najviše govornika ukupno (maternji i drugi)?|Engleski|Mandarinski|Španski|Hindi
+Koji je službeni jezik Irana?|Persijski (farsi)|Arapski|Turski|Urdu
+Koji je službeni jezik Izraela?|Hebrejski|Arapski|Jidiš|Aramejski
+Koji jezik se govori u Kvebeku?|Francuski|Engleski|Španski|Italijanski
+Koji jezik se govori u Flandriji?|Holandski (flamanski)|Francuski|Nemački|Valonski
+Koliko pisama ima japanski jezik u upotrebi?|Tri (hiragana, katakana, kanđi)|Jedno|Dva|Pet
+Koje pismo koristi ruski jezik?|Ćirilicu|Latinicu|Grčko|Glagoljicu
+Koje pismo je stvorio Ćirilo kao prvo slovensko pismo?|Glagoljicu|Ćirilicu|Latinicu|Bosančicu
+Koja braća su ponela pismenost Slovenima u 9. veku?|Ćirilo i Metodije|Kliment i Naum|Sava i Simeon|Kosma i Damjan
+Koji jezik je bio jezik nauke u srednjovekovnoj Evropi?|Latinski|Grčki|Francuski|Nemački
+Na kom jeziku je napisan Novi zavet izvorno?|Grčkom (koine)|Latinskom|Hebrejskom|Aramejskom
+Koji jezik se smatra „mrtvim” ali se uči u školama medicine i prava?|Latinski|Grčki|Sanskrit|Staroslovenski
+Ko je stvorio veštački jezik esperanto?|Ludvik Zamenhof|Johan Šlejer|Đuzepe Peano|Tolkin
+Koji izmišljeni jezik je stvorio Tolkin za vilenjake?|Kvenja|Klingonski|Dotraki|Navi
+Koji izmišljeni jezik se govori u „Zvezdanim stazama”?|Klingonski|Kvenja|Dotraki|Sindarin
+Koja knjiga je najprevođenija na svetu?|Biblija|Mali princ|Pinokio|Kuran
+Koja je najprevođenija knjiga posle verskih tekstova?|Mali princ|Pinokio|Alisa u zemlji čuda|Don Kihot
+Koja nagrada se dodeljuje za novinarstvo i književnost u SAD?|Pulicerova|Bukerova|Gonkurova|Servantesova
+Koja britanska nagrada se dodeljuje za roman?|Bukerova|Pulicerova|Gonkurova|Strega
+Koja je najprestižnija francuska književna nagrada?|Gonkurova|Bukerova|Servantesova|Strega
+Koja nagrada je najvažnija za književnost na španskom jeziku?|Servantesova|Gonkurova|Bukerova|Nobelova
+Ko je izumeo štampu u Kini mnogo pre Gutenberga sa pokretnim slovima?|Bi Šeng|Cai Lun|Konfučije|Mao
+Ko je, prema predanju, izumeo papir u Kini?|Cai Lun|Bi Šeng|Lao Ce|Sun Cu
+Ko je napisao „Umeće ratovanja”?|Sun Cu|Konfučije|Lao Ce|Makijaveli
+Ko je napisao „Državu” (Politeju)?|Platon|Aristotel|Sokrat|Ciceron
+Koji filozof je pio kukutu?|Sokrat|Platon|Aristotel|Diogen
+Koji filozof je živeo u buretu?|Diogen|Sokrat|Epikur|Zenon
+Koji filozof je rekao „Mislim, dakle postojim”?|Rene Dekart|Imanuel Kant|Džon Lok|Spinoza
+Koji filozof je rekao „Bog je mrtav”?|Fridrih Niče|Karl Marks|Žan-Pol Sartr|Artur Šopenhauer
+Koji filozof je napisao „Kritiku čistog uma”?|Imanuel Kant|Hegel|Fihte|Šeling
+Koji filozof je napisao „Levijatana”?|Tomas Hobs|Džon Lok|Ruso|Monteskje
+Koji filozof je napisao „Društveni ugovor”?|Žan-Žak Ruso|Volter|Monteskje|Lok
+Ko je osnivač psihoanalize?|Sigmund Frojd|Karl Gustav Jung|Alfred Adler|Ivan Pavlov
+Koji naučnik je poznat po eksperimentu sa psima i uslovnim refleksom?|Ivan Pavlov|Sigmund Frojd|B. F. Skiner|Žan Pijaže
+Ko je bio „otac ekonomije” i napisao „Bogatstvo naroda”?|Adam Smit|Džon Mejnard Kejnz|Karl Marks|David Rikardo
+Koji ekonomista je dao ime teoriji državne intervencije u krizi?|Džon Mejnard Kejnz|Adam Smit|Milton Fridman|Fridrih Hajek
+Kako se zove indeks najvećih američkih kompanija na berzi?|S&P 500|DAX|FTSE|Nikei
+Kako se zove indeks nemačke berze?|DAX|CAC 40|FTSE 100|Dau Džouns
+Kako se zove berza u Njujorku?|NYSE (Njujorška berza)|Nasdaq|LSE|Euronext
+Koja je simbolična životinja rastuće berze?|Bik|Medved|Orao|Lav
+Koja životinja simbolizuje berzu u padu?|Medved|Bik|Vuk|Lisica
+Koji lanac brze hrane ima zlatne lukove kao logo?|Mekdonalds|Burger King|KFC|Vendis
+Koji lanac je poznat po pukovniku Sandersu?|KFC|Mekdonalds|Burger King|Popajs
+Iz kog grada potiče lanac kafe Starbaks?|Sijetl|Njujork|San Francisko|Čikago
+Koja kompanija pravi Monopol?|Hasbro|Matel|Ravensburger|Lego
+Ko je stvorio Mikija Mausa?|Volt Dizni|Čak Džouns|Hana i Barbera|Maks Flajšer
+Kako se zvao prvi zvučni crtani film sa Mikijem Mausom (1928)?|Parobrod Vili|Bambi|Pinokio|Ludi avion
+Koji studio je stvorio Toma i Džerija?|Hana i Barbera (MGM)|Dizni|Vorner Bros|Pixar
+Koji studio je stvorio Duška Dugouška?|Vorner Bros|Dizni|MGM|Paramaunt
+Kako se zove stripski izdavač Supermena i Betmena?|DC Comics|Marvel|Dark Horse|Image
+Ko je suosnivač Marvelovih likova poput Spajdermena i pojavljivao se u filmovima?|Sten Li|Džek Kirbi|Stiv Ditko|Bob Kejn
+Ko je stvorio Betmena zajedno sa Bilom Fingerom?|Bob Kejn|Sten Li|Džeri Sigel|Džek Kirbi
+Kako se zove fiktivni grad Paje Patka?|Patkovgrad|Gotam|Springfild|Metropolis
+Kako se zove bogati ujak Paje Patka?|Baja Patak|Hari Patak|Gaja Patak|Pera Detlić
+Kako se zovu nećaci Paje Patka?|Raja, Gaja i Vlaja|Huj, Duj i Luj|Čip i Dejl|Tom, Dik i Hari
+Kako se zove pronalazač iz Patkovgrada?|Pera Detlić|Baja Patak|Hiacint Hipo|Ludvig fon Dejk
+Kako se zovu razbojnici iz Patkovgrada?|Braća Bigl (Bigl boys)|Daltoni|Kurjaci|Crni Petar
+Kako se zove veštica koja želi Bajinu prvu paru?|Magika de Hex|Mim|Kruela|Ursula
+Kako se zove Mikijev pas prijatelj koji hoda uspravno?|Šilja|Pluton|Pera|Paja
+Kako se zove Mikijev neprijatelj sa crnim šeširom?|Crni Petar|Baja|Pera|Šilja
+Koji grad je Evropska prestonica kulture 2022. iz Srbije?|Novi Sad|Beograd|Niš|Subotica
+Koji manastir u Srbiji je na listi Uneska od 1986?|Studenica|Žiča|Manasija|Ravanica
+Koji lokalitet kod Zaječara je na listi Uneska?|Gamzigrad – Feliks Romulijana|Lepenski Vir|Viminacijum|Caričin grad
+Kako se zove mezolitsko nalazište na Dunavu sa skulpturama ribolikih glava?|Lepenski Vir|Vinča|Starčevo|Viminacijum
+Kako se zove neolitska kultura nazvana po nalazištu kod Beograda?|Vinčanska|Starčevačka|Lepenska|Badenska
