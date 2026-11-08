@@ -269,3 +269,126 @@ Ko je pogodio trojku za pobedu Partizana u finalu 1992?|Saša Đorđević|Predra
 Koliko Grend slem titula ima Novak Đoković (zaključno sa 2024)?|24|20|22|23
 Koje godine je Novak Đoković osvojio olimpijsko zlato?|2024. u Parizu|2012. u Londonu|2016. u Riju|2021. u Tokiju
 Koja srpska atletičarka je višestruka evropska prvakinja u skoku udalj?|Ivana Vuleta|Olivera Jevtić|Dragana Tomašević|Biljana Petrović
+Koliko okruga ima Srbija (bez Kosova i Metohije)?|24|29|17|30
+Koji je najveći okrug u Srbiji po broju stanovnika posle Grada Beograda?|Južnobački|Nišavski|Sremski|Šumadijski
+U kom okrugu je Kragujevac?|Šumadijskom|Pomoravskom|Raškom|Moravičkom
+U kom okrugu je Čačak?|Moravičkom|Zlatiborskom|Raškom|Šumadijskom
+U kom okrugu je Užice?|Zlatiborskom|Moravičkom|Kolubarskom|Mačvanskom
+U kom okrugu je Valjevo?|Kolubarskom|Mačvanskom|Zlatiborskom|Šumadijskom
+U kom okrugu je Šabac?|Mačvanskom|Kolubarskom|Sremskom|Podunavskom
+U kom okrugu je Smederevo?|Podunavskom|Braničevskom|Šumadijskom|Pomoravskom
+U kom okrugu je Požarevac?|Braničevskom|Podunavskom|Borskom|Zaječarskom
+U kom okrugu je Jagodina?|Pomoravskom|Rasinskom|Šumadijskom|Raškom
+U kom okrugu je Kruševac?|Rasinskom|Pomoravskom|Raškom|Nišavskom
+U kom okrugu je Kraljevo?|Raškom|Moravičkom|Rasinskom|Zlatiborskom
+U kom okrugu je Leskovac?|Jablaničkom|Pčinjskom|Nišavskom|Topličkom
+U kom okrugu je Vranje?|Pčinjskom|Jablaničkom|Pirotskom|Topličkom
+U kom okrugu je Prokuplje?|Topličkom|Nišavskom|Jablaničkom|Rasinskom
+U kom okrugu je Zrenjanin?|Srednjobanatskom|Južnobanatskom|Severnobanatskom|Južnobačkom
+U kom okrugu je Pančevo?|Južnobanatskom|Srednjobanatskom|Sremskom|Južnobačkom
+U kom okrugu je Kikinda?|Severnobanatskom|Srednjobanatskom|Severnobačkom|Zapadnobačkom
+U kom okrugu je Sombor?|Zapadnobačkom|Severnobačkom|Južnobačkom|Srednjobanatskom
+U kom okrugu je Subotica?|Severnobačkom|Zapadnobačkom|Severnobanatskom|Južnobačkom
+U kom okrugu je Sremska Mitrovica?|Sremskom|Mačvanskom|Južnobačkom|Kolubarskom
+Koji grad je sedište Borskog okruga?|Bor|Zaječar|Negotin|Majdanpek
+Po čemu je poznat Bor?|Rudniku bakra|Rudniku uglja|Vinogradima|Termalnim izvorima
+Po kom rudniku je poznat Majdanpek?|Bakra i zlata|Uglja|Olova|Soli
+Gde se nalazi najveći rudnik uglja u Srbiji (površinski kop)?|Kolubara (Lazarevac)|Kostolac|Resavica|Bor
+Koja termoelektrana je najveća u Srbiji?|TE Nikola Tesla (Obrenovac)|TE Kostolac|TE Morava|TE Kolubara
+Gde se nalazi hidroelektrana „Đerdap 1”?|Kod Kladova|Kod Golupca|Kod Bajine Bašte|Kod Zvornika
+Na kojoj reci je hidroelektrana Bajina Bašta?|Drini|Limu|Uvcu|Ibru
+Koja reka protiče kroz Kraljevo?|Ibar (i Zapadna Morava)|Južna Morava|Nišava|Toplica
+Na kojoj reci je Ivanjica?|Moravica|Ibar|Lim|Rasina
+Na kojoj reci je Priboj?|Lim|Drina|Uvac|Ibar
+Na kojoj reci je Prijepolje?|Lim|Drina|Uvac|Ibar
+Na kojoj reci je Užice?|Đetinja|Moravica|Lim|Drina
+Na kojoj reci je Valjevo?|Kolubara|Drina|Sava|Jadar
+Na kojoj reci je Paraćin?|Crnica (Velika Morava)|Južna Morava|Resava|Ibar
+Na kojoj reci je Pirot?|Nišava|Timok|Južna Morava|Jerma
+Na kojoj reci je Zaječar?|Timok|Nišava|Mlava|Pek
+Na kojoj reci je Zrenjanin?|Begej|Tisa|Tamiš|Dunav
+Na kojoj reci je Pančevo?|Tamiš|Begej|Tisa|Sava
+Na kojoj reci je Novi Bečej?|Tisa|Begej|Tamiš|Dunav
+Na kojoj reci je Senta?|Tisa|Dunav|Begej|Krivaja
+Ko je pobedio Turke u bici kod Sente 1697?|Princ Eugen Savojski|Sultan Mustafa II|Karlo Lotarinški|Jan Sobjeski
+Na kojoj reci je Bačka Palanka?|Dunav|Tisa|Sava|Begej
+U kom gradu se nalazi crkva Lazarica?|Kruševcu|Kraljevu|Nišu|Čačku
+Čija zadužbina je Lazarica u Kruševcu?|Kneza Lazara|Despota Stefana|Kneginje Milice|Cara Dušana
+Gde se nalazi manastir Krušedol?|Fruška gora|Ovčar|Rudnik|Tara
+Gde se nalazi manastir Rača?|Kod Bajine Bašte|Kod Užica|Kod Čačka|Kod Kraljeva
+Gde se nalazi manastir Mileševa?|Kod Prijepolja|Kod Novog Pazara|Kod Raške|Kod Priboja
+Gde se nalazi manastir Studenica?|Kod Ušća (Kraljevo)|Kod Novog Pazara|Kod Ivanjice|Kod Čačka
+Gde se nalazi manastir Sopoćani?|Kod Novog Pazara|Kod Raške|Kod Prijepolja|Kod Kraljeva
+Gde se nalazi manastir Žiča?|Kod Kraljeva|Kod Čačka|Kod Kruševca|Kod Ivanjice
+Gde se nalazi manastir Manasija?|Kod Despotovca|Kod Ćuprije|Kod Paraćina|Kod Svilajnca
+Gde se nalazi manastir Ravanica?|Kod Ćuprije|Kod Despotovca|Kod Paraćina|Kod Jagodine
+Gde se nalazi manastir Tronoša?|Kod Loznice|Kod Valjeva|Kod Šapca|Kod Ljubovije
+Gde je Vuk Karadžić učio da čita?|U manastiru Tronoša|U manastiru Rača|U Beogradu|U Sremskim Karlovcima
+Gde se nalazi Đavolja varoš?|Kod Kuršumlije|Kod Leskovca|Kod Vranja|Kod Pirota
+Šta je Đavolja varoš?|Kamene figure nastale erozijom|Pećina|Vodopad|Stara tvrđava
+Gde se nalazi Resavska pećina?|Kod Despotovca|Kod Sokobanje|Kod Kučeva|Kod Bora
+Gde se nalazi Potpeća pećina?|Kod Užica|Kod Ivanjice|Kod Čačka|Kod Nove Varoši
+Gde se nalazi Lazareva pećina?|Kod Zlota (Bor)|Kod Despotovca|Kod Užica|Kod Kučeva
+Gde se nalazi Ceremošnja pećina?|Kod Kučeva|Kod Bora|Kod Despotovca|Kod Sokobanje
+Kako se zove najviši vodopad u Srbiji?|Kopren (Stara planina)|Lisine|Jelovarnik|Gostilje
+Kako se zove poznati vodopad kod Despotovca?|Lisine|Gostilje|Kopren|Prskalo
+Kako se zove vodopad na Zlatiboru?|Gostilje|Lisine|Kopren|Jelovarnik
+Kako se zove vodopad na Kopaoniku?|Jelovarnik|Gostilje|Lisine|Kopren
+Koje jezero na Tari je veštačko i visoko?|Zaovinsko jezero|Perućac|Ribničko|Uvac
+Koje jezero ima plutajuća ostrva?|Vlasinsko jezero|Palić|Zaovine|Bovan
+Koje jezero je kod Sokobanje?|Bovansko jezero|Vlasinsko|Gružansko|Garaši
+Koje jezero je kod Kragujevca (Knić)?|Gružansko jezero|Bovansko|Garaši|Gazivode
+Koje jezero je kod Aranđelovca?|Garaši|Gruža|Bovan|Palić
+Koje jezero je u Beogradu kod Ade Ciganlije?|Savsko jezero|Palić|Ludaško|Srebrno
+Gde se nalazi Srebrno jezero?|Kod Velikog Gradišta|Kod Smedereva|Kod Golupca|Kod Kladova
+Koja tvrđava je na ulazu u Đerdap kod Golupca?|Golubačka tvrđava|Smederevska|Ramska|Fetislam
+Kako se zove tvrđava u Kladovu?|Fetislam|Golubac|Ram|Kalemegdan
+Kako se zove tvrđava kod Velikog Gradišta?|Ramska tvrđava|Golubačka|Fetislam|Smederevska
+Koja srednjovekovna tvrđava kod Ćićevca je poznata po junaku Prijezdi?|Stalać|Koznik|Maglič|Ras
+Kako se zove tvrđava na Ibru kod Kraljeva?|Maglič|Stalać|Koznik|Borač
+Kako se zove srednjovekovna prestonica Raške kod Novog Pazara?|Ras|Maglič|Stalać|Zvečan
+Kako se zove tvrđava u Nišu?|Niška tvrđava|Kalemegdan|Fetislam|Stalać
+Kako se zove tvrđava u Užicu?|Stari grad Užice|Maglič|Koznik|Soko
+Kako se zove tvrđava kod Ljubovije, Soko grad?|Soko grad|Koznik|Maglič|Brvenik
+Kakva je to građevina Bač?|Srednjovekovna tvrđava u Vojvodini|Manastir|Banja|Dvorac
+Koji grad u Vojvodini ima katedralu Svetog Gerharda?|Vršac|Zrenjanin|Subotica|Sombor
+Koja vojvođanska planina je poznata po vinogradima i kuli?|Vršački breg|Fruška gora|Titelski breg|Zlatica
+Koji grad je poznat po ćilimima?|Pirot|Sjenica|Kovačica|Ivanjica
+Koje selo je poznato po zlakuskoj grnčariji?|Zlakusa|Sirogojno|Kovačica|Mokra Gora
+Koje selo na Zlatiboru je poznato po džemperima i etno-muzeju?|Sirogojno|Zlakusa|Mokra Gora|Drvengrad
+Gde se nalazi Drvengrad (Kustendorf)?|Mokra Gora|Sirogojno|Zlatibor|Tara
+Kako se zove uskotračna pruga na Mokroj Gori?|Šarganska osmica|Ćira|Mokrogorska kružna|Zlatiborska pruga
+Kako se zove poznati voz uskotračne pruge u Vojvodini i Srbiji?|Ćira|Romantika|Plavi voz|Soko
+Kako se zove Titov luksuzni voz?|Plavi voz|Ćira|Romantika|Orijent ekspres
+Kako se zove brzi voz Beograd–Novi Sad od 2022?|Soko|Plavi voz|Ćira|Romantika
+Kako se zove beogradski aerodrom?|Nikola Tesla|Konstantin Veliki|Morava|Batajnica
+Kako se zove niški aerodrom?|Konstantin Veliki|Nikola Tesla|Morava|Ponikve
+Kako se zove aerodrom kod Kraljeva?|Morava|Ponikve|Konstantin Veliki|Vrnjci
+Kako se zove aerodrom na Zlatiboru (Užice)?|Ponikve|Morava|Lađevci|Vrnjci
+Kako se zove nacionalna avio-kompanija Srbije?|Er Srbija|JAT|Montenegro Airlines|Srpski let
+Kako se zvala jugoslovenska avio-kompanija?|JAT|Er Srbija|Adrija|Kroacija
+Kako se zove autoput od Beograda prema Čačku?|Miloš Veliki|Bratstvo i jedinstvo|Koridor 10|Moravski koridor
+Kako se zvao autoput Ljubljana–Zagreb–Beograd–Skoplje?|Bratstvo i jedinstvo|Miloš Veliki|Koridor 11|Panonski put
+Koji koridor prolazi kroz Srbiju od severa ka jugu?|Koridor 10|Koridor 11|Koridor 7|Koridor 5
+Koji koridor je Dunav kao plovni put?|Koridor 7|Koridor 10|Koridor 11|Koridor 4
+Kako se zove auto-put kroz Moravsku dolinu Pojate–Preljina?|Moravski koridor|Miloš Veliki|Koridor 10|Fruškogorski koridor
+Kako se zove tunel ispod Fruške gore na novoj pruzi Beograd–Budimpešta?|Čortanovci|Iriški venac|Kamenjar|Sviloš
+Kako se zove most u Novom Sadu poznat po belim lukovima i srušen 1999?|Žeželjev most|Most slobode|Varadinski|Most Mihajla Pupina
+Kako se zove viseći most u Novom Sadu?|Most slobode|Žeželjev|Varadinski|Pupinov
+Kako se zove beogradski most preko Dunava kod Zemuna i Borče, otvoren 2014?|Most Mihajla Pupina|Pančevački most|Most na Adi|Gazela
+Koji beogradski most je najstariji preko Dunava?|Pančevački most|Most Mihajla Pupina|Brankov|Gazela
+Kako se zove most preko Save koji spaja Stari grad i Novi Beograd na Brankovoj?|Brankov most|Gazela|Most na Adi|Stari savski
+Kako se zove fabrika guma u Pirotu?|Tigar|Trajal|Mitas|Ruma
+U kom gradu se nalazi fabrika „Fiat Srbija” (Stellantis)?|Kragujevcu|Beogradu|Nišu|Novom Sadu
+Gde se nalazi železara koju je kupila kineska kompanija HBIS?|Smederevo|Bor|Nikšić|Zenica
+U kom gradu je kompanija Zijin u Srbiji (bakar)?|Boru|Smederevu|Kragujevcu|Nišu
+U kom gradu se nalazi rafinerija NIS-a?|Pančevu|Novom Sadu|Smederevu|Boru
+Koja je dužina granice Srbije ukupno približno?|Oko 2.300 km|Oko 1.000 km|Oko 5.000 km|Oko 800 km
+Koja je najduža granica Srbije?|Sa Rumunijom|Sa BiH|Sa Mađarskom|Sa Bugarskom
+Koja je najveća opština po površini u Srbiji?|Kraljevo (grad)|Sjenica|Zrenjanin|Novi Pazar
+Koji grad ima najviše univerziteta i studenata posle Beograda?|Novi Sad|Niš|Kragujevac|Novi Pazar
+Koje godine je osnovan Univerzitet u Novom Sadu?|1960|1945|1975|1919
+Koje godine je osnovan Univerzitet u Nišu?|1965|1950|1980|1971
+Koje godine je osnovan Univerzitet u Kragujevcu?|1976|1965|1960|1990
+Koja je najstarija gimnazija u Srbiji (1791)?|Karlovačka gimnazija|Prva beogradska|Kragujevačka|Novosadska
+Koja je najstarija gimnazija u Srbiji južno od Save i Dunava (1833)?|Prva kragujevačka gimnazija|Prva beogradska|Šabačka|Niška
