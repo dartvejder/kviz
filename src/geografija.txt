@@ -639,3 +639,103 @@ Koji grad se naziva „Velika jabuka”?|Njujork|Čikago|Los Anđeles|Boston
 Koji grad se naziva „Grad vetrova”?|Čikago|Velington|Njujork|Boston
 Koji grad se naziva „Grad na sedam brežuljaka”?|Rim|Lisabon|Moskva|Beograd
 Koji grad je poznat kao „Severna Venecija”?|Sankt Peterburg|Amsterdam|Brož|Stokholm
+Koja je najveća država u Okeaniji po površini?|Australija|Papua Nova Gvineja|Novi Zeland|Fidži
+Koji je glavni grad Papue Nove Gvineje?|Port Morsbi|Lae|Suva|Honijara
+Koji je glavni grad Fidžija?|Suva|Nadi|Apija|Nukualofa
+Koji je glavni grad Kambodže?|Pnom Pen|Sijem Rip|Vijentijan|Bangkok
+Koji je glavni grad Laosa?|Vijentijan|Luang Prabang|Pnom Pen|Hanoj
+Koji je glavni grad Butana?|Timpu|Katmandu|Daka|Paro
+Koji je glavni grad Maldiva?|Male|Kolombo|Port Luj|Viktorija
+Koji je glavni grad Omana?|Maskat|Doha|Manama|Sana
+Koji je glavni grad Jemena?|Sana|Aden|Maskat|Rijad
+Koji je glavni grad Kuvajta?|Kuvajt|Manama|Doha|Basra
+Koji je glavni grad Bahreina?|Manama|Doha|Kuvajt|Abu Dabi
+Koji je glavni grad Kirgistana?|Biškek|Taškent|Dušanbe|Astana
+Koji je glavni grad Tadžikistana?|Dušanbe|Biškek|Ašhabad|Taškent
+Koji je glavni grad Turkmenistana?|Ašhabad|Dušanbe|Taškent|Baku
+Koji glavni grad je podeljen „zelenom linijom”?|Nikozija|Limasol|Famagusta|Larnaka
+Koji je glavni grad Ruande?|Kigali|Kampala|Bužumbura|Najrobi
+Koji je glavni grad Ugande?|Kampala|Kigali|Najrobi|Džuba
+Koji je glavni grad Zambije?|Lusaka|Harare|Lilongve|Maputo
+Koji je glavni grad Zimbabvea?|Harare|Lusaka|Bulavajo|Maputo
+Koji je glavni grad Mozambika?|Maputo|Luanda|Harare|Lusaka
+Koji je glavni grad Namibije?|Vindhuk|Gaborone|Luanda|Pretorija
+Koji je glavni grad Bocvane?|Gaborone|Vindhuk|Maseru|Mbabane
+Koji je glavni grad Kameruna?|Jaunde|Duala|Abudža|Libervil
+Koji je glavni grad Obale Slonovače (zvanični)?|Jamusukro|Abidžan|Akra|Bamako
+Koji je glavni grad Malija?|Bamako|Nijamej|Dakar|Uagadugu
+Koji je glavni grad Burkine Faso?|Uagadugu|Bamako|Nijamej|Lome
+Koji je glavni grad Nigera?|Nijamej|Abudža|Bamako|Ndžamena
+Koji je glavni grad Čada?|Ndžamena|Nijamej|Kartum|Bangi
+Koji je glavni grad DR Konga?|Kinšasa|Brazavil|Lubumbaši|Luanda
+Koji je glavni grad Republike Kongo?|Brazavil|Kinšasa|Libervil|Jaunde
+Koja dva glavna grada su najbliža jedan drugom na svetu (osim Rima i Vatikana)?|Kinšasa i Brazavil|Beč i Bratislava|Buenos Ajres i Montevideo|Kopenhagen i Malme
+Koji je glavni grad Eritreje?|Asmara|Adis Abeba|Džibuti|Mogadiš
+Koji je glavni grad Somalije?|Mogadiš|Džibuti|Asmara|Hargeisa
+Koji je glavni grad Mauritanije?|Nuakšot|Dakar|Rabat|Bamako
+Koji je glavni grad Gvatemale?|Gvatemala|San Salvador|Tegusigalpa|Managva
+Koji je glavni grad Hondurasa?|Tegusigalpa|Managva|San Salvador|San Hoze
+Koji je glavni grad Nikaragve?|Managva|Tegusigalpa|San Hoze|Panama
+Koji je glavni grad Kostarike?|San Hoze|Managva|Panama|San Salvador
+Koji je glavni grad Paname?|Panama|San Hoze|Bogota|Kito
+Koji je glavni grad Dominikanske Republike?|Santo Domingo|San Huan|Port o Prens|Havana
+Koji je glavni grad Haitija?|Port o Prens|Santo Domingo|Kingston|Nasau
+Koji je glavni grad Bahama?|Nasau|Kingston|Havana|Bridžtaun
+Koji je glavni grad Portorika?|San Huan|Santo Domingo|Havana|Ponse
+Koji je glavni grad Gvajane?|Džordžtaun|Paramaribo|Kajena|Karakas
+Koji je glavni grad Surinama?|Paramaribo|Džordžtaun|Kajena|Belem
+Kojoj zemlji pripada Francuska Gvajana?|Francuskoj|Brazilu|Holandiji|Surinamu
+Kako se zove najviše jezero Afrike i izvor Plavog Nila?|Tana|Viktorija|Turkana|Čad
+Gde se spajaju Beli i Plavi Nil?|U Kartumu|U Kairu|U Asuanu|U Džubi
+Kako se zove velika brana na Nilu u Egiptu?|Asuanska brana|Huverova brana|Tri klisure|Kariba
+Kako se zove najveća hidroelektrana na svetu (Kina)?|Tri klisure|Itaipu|Asuan|Guri
+Na kojoj reci je brana Itaipu?|Parana|Amazon|Orinoko|Urugvaj
+Na kojoj reci je Huverova brana?|Kolorado|Misisipi|Kolumbija|Snejk
+Koja reka teče kroz šest zemalja jugoistočne Azije?|Mekong|Jangce|Irvadi|Gang
+Koja reka deli Budim i Peštu?|Dunav|Tisa|Drava|Raba
+Koja reka teče kroz Beč?|Dunav|Inn|Mura|Drava
+Koja reka teče kroz Bratislavu?|Dunav|Morava|Vah|Hron
+Koja reka teče kroz Bukurešt?|Dimbovica|Dunav|Olt|Siret
+Koja reka teče kroz Plovdiv?|Marica|Iskar|Struma|Tundža
+Koja reka je najduža u Albaniji?|Drim|Vjosa|Semani|Škumbin
+Koja reka izvire u Crnoj Gori i čini kanjon dubok 1300 m?|Tara|Piva|Morača|Lim
+Koje dve reke formiraju Drinu?|Tara i Piva|Lim i Uvac|Ibar i Sitnica|Sava i Una
+Koje dve reke formiraju Veliku Moravu?|Zapadna i Južna Morava|Ibar i Rasina|Nišava i Toplica|Mlava i Pek
+Koje dve reke formiraju Savu?|Sava Dolinka i Sava Bohinjka|Kupa i Una|Drava i Mura|Krka i Sora
+Gde Sava izvire?|U Sloveniji|U Hrvatskoj|U BiH|U Austriji
+Gde Tisa izvire?|U Ukrajini (Karpati)|U Rumuniji|U Mađarskoj|U Slovačkoj
+Koja reka je najduža pritoka Dunava?|Tisa|Sava|Drava|Prut
+Koja reka teče kroz kanjon Đerdap?|Dunav|Sava|Timok|Morava
+Koja je najduža reka u Francuskoj?|Loara|Sena|Rona|Garona
+Koja je najduža reka u Italiji?|Po|Tibar|Arno|Adiđe
+Koja je najduža reka u Velikoj Britaniji?|Severn|Temza|Trent|Klajd
+Koja je najduža reka u Španiji i Portugalu?|Težo|Ebro|Duero|Gvadalkivir
+Kako se zove delta reke u Rumuniji, rezervat ptica?|Delta Dunava|Delta Nila|Delta Po|Delta Rone
+Kako se zove najveća delta na svetu (Indija i Bangladeš)?|Delta Ganga (Sundarbans)|Delta Nila|Delta Mekonga|Delta Amazona
+U kojoj zemlji je Kapadokija sa vilinskim dimnjacima?|Turskoj|Grčkoj|Jermeniji|Iranu
+U kojoj zemlji je Pamukale sa belim terasama?|Turskoj|Grčkoj|Kipru|Egiptu
+U kojoj zemlji su Meteori, manastiri na stenama?|Grčkoj|Bugarskoj|Albaniji|Severnoj Makedoniji
+U kojoj zemlji je zaliv Halong?|Vijetnamu|Tajlandu|Kini|Filipinima
+U kojoj zemlji su Pirinčane terase Banaue?|Filipinima|Indoneziji|Vijetnamu|Kini
+U kojoj zemlji je planina Table (Stolna planina)?|Južnoafričkoj Republici|Namibiji|Australiji|Brazilu
+U kojoj zemlji je Ngorongoro krater?|Tanzaniji|Keniji|Ugandi|Etiopiji
+U kojoj zemlji je nacionalni park Serengeti?|Tanzaniji|Keniji|Bocvani|JAR
+U kojoj zemlji je rezervat Masai Mara?|Keniji|Tanzaniji|Ugandi|Ruandi
+U kojoj zemlji je delta Okavango?|Bocvani|Namibiji|Angoli|Zambiji
+U kojoj zemlji je Jeloustoun, prvi nacionalni park na svetu?|SAD|Kanadi|Australiji|Novom Zelandu
+U kojoj zemlji je Banf nacionalni park?|Kanadi|SAD|Norveškoj|Švajcarskoj
+U kojoj zemlji je Torres del Paine?|Čileu|Argentini|Peruu|Boliviji
+U kojoj zemlji je Salar de Ujuni, najveća slana pustinja?|Boliviji|Čileu|Peruu|Argentini
+U kojoj zemlji su linije Naske?|Peruu|Boliviji|Čileu|Meksiku
+U kojoj zemlji je Čičen Ica?|Meksiku|Gvatemali|Belizeu|Hondurasu
+U kojoj zemlji je Tikal, grad Maja?|Gvatemali|Meksiku|Hondurasu|Belizeu
+U kojoj zemlji su fjordovi Gejranger?|Norveškoj|Islandu|Švedskoj|Danskoj
+U kojoj zemlji je Džinov nasip (Giant's Causeway)?|Severnoj Irskoj|Škotskoj|Islandu|Irskoj
+U kojoj zemlji su litice Moher?|Irskoj|Škotskoj|Velsu|Engleskoj
+U kojoj zemlji je jezero Loh Nes?|Škotskoj|Irskoj|Velsu|Engleskoj
+U kojoj zemlji su Bele litice Dovera?|Engleskoj|Francuskoj|Irskoj|Škotskoj
+U kojoj zemlji je ostrvo Santorini?|Grčkoj|Italiji|Turskoj|Kipru
+U kojoj zemlji je poluostrvo Istra najvećim delom?|Hrvatskoj|Sloveniji|Italiji|Austriji
+Na granici kojih zemalja je Materhorn?|Švajcarske i Italije|Francuske i Italije|Austrije i Švajcarske|Francuske i Švajcarske
+Na granici kojih zemalja je Mon Blan?|Francuske i Italije|Švajcarske i Italije|Francuske i Švajcarske|Austrije i Italije
+U kojoj zemlji su Dolomiti?|Italiji|Austriji|Švajcarskoj|Sloveniji

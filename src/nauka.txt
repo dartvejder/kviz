@@ -577,3 +577,113 @@ Koja je najprestižnija nagrada u matematici (za mlađe od 40)?|Fildsova medalja
 Koja nagrada se smatra „Nobelovom” za informatiku?|Tjuringova nagrada|Fildsova medalja|Abelova nagrada|Volfova nagrada
 Za koju oblast NE postoji Nobelova nagrada?|Matematika|Fizika|Hemija|Književnost
 U kom gradu se dodeljuje Nobelova nagrada za mir?|Oslo|Stokholm|Ženeva|Hag
+Šta meri barometar?|Vazdušni pritisak|Temperaturu|Vlažnost|Brzinu vetra
+Šta meri higrometar?|Vlažnost vazduha|Pritisak|Temperaturu|Kišu
+Šta meri anemometar?|Brzinu vetra|Pritisak|Vlažnost|Zračenje
+Šta meri seizmograf?|Zemljotrese|Vetar|Pritisak|Radijaciju
+Šta meri Gajgerov brojač?|Radioaktivno zračenje|Struju|Napon|Zvuk
+Šta meri ampermetar?|Jačinu struje|Napon|Otpor|Snagu
+Šta meri voltmetar?|Napon|Jačinu struje|Otpor|Frekvenciju
+Šta meri ommetar?|Električni otpor|Napon|Struju|Snagu
+Kojim instrumentom se meri atmosferski pritisak živom?|Barometrom|Termometrom|Manometrom|Higrometrom
+Ko je izumeo barometar?|Evanđelista Toričeli|Blez Paskal|Galilej|Robert Bojl
+Ko je izumeo prvi praktični termometar sa skalom od 0 do 100?|Anders Celzijus|Danijel Farenhajt|Lord Kelvin|Galilej
+Šta je izvorno bilo 0 °C na prvoj Celzijusovoj skali?|Tačka ključanja vode|Tačka mržnjenja vode|Telesna temperatura|Apsolutna nula
+Na kojoj temperaturi su Celzijus i Farenhajt isti?|−40|0|32|100
+Koliko je 100 °C u Farenhajtima?|212 °F|180 °F|100 °F|273 °F
+Koliko je 0 °C u kelvinima?|273,15 K|0 K|100 K|−273 K
+Kako se zove promena smera svetlosti pri prelasku u drugu sredinu?|Prelamanje (refrakcija)|Odbijanje (refleksija)|Difrakcija|Polarizacija
+Kako se zove razlaganje bele svetlosti na boje kroz prizmu?|Disperzija|Refleksija|Interferencija|Polarizacija
+Ko je prvi razložio belu svetlost prizmom?|Isak Njutn|Kristijan Hajgens|Tomas Jang|Galilej
+Zašto je nebo plavo?|Zbog rasejanja svetlosti na molekulima vazduha|Zbog odraza mora|Zbog ozona|Zbog vodene pare
+Koja boja svetlosti ima najveću talasnu dužinu u vidljivom spektru?|Crvena|Ljubičasta|Zelena|Plava
+Koja boja ima najkraću talasnu dužinu u vidljivom spektru?|Ljubičasta|Crvena|Narandžasta|Žuta
+Kako se zove zračenje koje osećamo kao toplotu?|Infracrveno|Ultraljubičasto|Rendgensko|Gama
+Koje zračenje izaziva opekotine od sunca?|Ultraljubičasto|Infracrveno|Mikrotalasno|Radio
+Ko je izumeo mikrotalasnu pećnicu slučajno?|Persi Spenser|Tomas Edison|Nikola Tesla|Hajnrih Herc
+Kako se zove pojava kada zvuk menja visinu dok izvor prolazi pored nas?|Doplerov efekat|Eho|Rezonanca|Interferencija
+Kako se zove odbijeni zvuk koji se vraća?|Eho|Rezonanca|Dopler|Refrakcija
+Kako slepi miševi nalaze plen?|Eholokacijom|Vidom|Mirisom|Toplotom
+Kroz šta zvuk ne može da se prostire?|Vakuum|Vodu|Čelik|Vazduh
+Kroz koju sredinu zvuk putuje najbrže od navedenih?|Čelik|Voda|Vazduh|Vakuum
+U kojoj jedinici se meri jačina zvuka?|Decibel|Herc|Njutn|Lumen
+Kako se zove zvuk iznad granice čujnosti čoveka?|Ultrazvuk|Infrazvuk|Hipersonik|Supersonik
+Kako se zove zvuk ispod granice čujnosti čoveka?|Infrazvuk|Ultrazvuk|Subsonik|Bas
+Kako se zove brzina veća od brzine zvuka?|Nadzvučna (supersonična)|Podzvučna|Svetlosna|Orbitalna
+Kako se zove broj koji pokazuje koliko puta je brzina veća od brzine zvuka?|Mahov broj|Rejnoldsov broj|Avogadrov broj|Plankov broj
+Kako se zove putnički nadzvučni avion koji je leteo do 2003?|Konkord|Boing 747|Tupoljev 104|Erbas A380
+Kako se zove konstanta koja daje broj čestica u jednom molu?|Avogadrov broj|Plankova konstanta|Gravitaciona konstanta|Bolcmanova konstanta
+Kako se zove najmanja čestica hemijskog elementa?|Atom|Molekul|Elektron|Kvark
+Koje čestice se nalaze u jezgru atoma?|Protoni i neutroni|Elektroni i protoni|Samo elektroni|Fotoni
+Koja čestica ima negativno nanelektrisanje?|Elektron|Proton|Neutron|Foton
+Koja čestica nema nanelektrisanje?|Neutron|Proton|Elektron|Pozitron
+Kako se zove čestica svetlosti?|Foton|Gluon|Bozon|Neutrino
+Kako se zove antičestica elektrona?|Pozitron|Proton|Neutron|Antikvark
+Kako se zove čestica otkrivena 2012. u CERN-u?|Higsov bozon|Kvark|Neutrino|Graviton
+Kako se zove najveći akcelerator čestica na svetu?|Veliki hadronski sudarač (LHC)|Tevatron|Fermilab|SLAC
+Iz kojih čestica se sastoje protoni i neutroni?|Kvarkova|Elektrona|Fotona|Neutrina
+Kako se zove raspad teškog jezgra na manja uz oslobađanje energije?|Fisija|Fuzija|Jonizacija|Sublimacija
+Kako se zove spajanje lakih jezgara u teže?|Fuzija|Fisija|Oksidacija|Kondenzacija
+Kako se zove vreme za koje se raspadne polovina radioaktivnih atoma?|Vreme poluraspada|Period oscilacije|Životni vek|Faza
+Koji izotop se koristi za određivanje starosti organskih ostataka?|Ugljenik-14|Uranijum-235|Kalijum-40|Jod-131
+Koji izotop uranijuma se koristi u reaktorima i bombama?|Uranijum-235|Uranijum-238|Uranijum-233|Uranijum-240
+Kako se zove pojava kada metal izbacuje elektrone pod svetlošću?|Fotoelektrični efekat|Kompton efekat|Doplerov efekat|Tindalov efekat
+Za šta je Ajnštajn dobio Nobelovu nagradu?|Za fotoelektrični efekat|Za teoriju relativnosti|Za atomsku bombu|Za E=mc²
+Koliko iznosi gravitaciono ubrzanje na Mesecu u odnosu na Zemlju?|Oko šestine|Oko polovine|Isto|Oko trećine
+Šta kaže prvi Njutnov zakon?|Telo miruje ili se kreće ravnomerno dok na njega ne deluje sila|Sila je masa puta ubrzanje|Svaka akcija ima reakciju|Gravitacija opada sa kvadratom
+Šta kaže treći Njutnov zakon?|Svaka akcija ima jednaku i suprotnu reakciju|F = m · a|Telo teži miru|Energija se održava
+Kako se zove zakon da se energija ne stvara niti uništava?|Zakon održanja energije|Zakon entropije|Omov zakon|Hukov zakon
+Kako se zove mera nereda u termodinamici?|Entropija|Entalpija|Energija|Temperatura
+Kako se zove legura bakra i cinka?|Mesing|Bronza|Čelik|Duralumin
+Kako se zove legura bakra i kalaja?|Bronza|Mesing|Čelik|Lem
+Kako se zove legura gvožđa i ugljenika?|Čelik|Bronza|Mesing|Amalgam
+Koji metal se dodaje čeliku da bude nerđajući?|Hrom|Cink|Olovo|Bakar
+Kako se zove nanošenje sloja cinka na gvožđe protiv rđe?|Pocinkovanje|Hromiranje|Eloksiranje|Kaljenje
+Kako se zove legura žive sa drugim metalima, nekad za plombe?|Amalgam|Mesing|Bronza|Lem
+Šta je rđa hemijski?|Gvožđe-oksid|Gvožđe-sulfat|Bakar-oksid|Gvožđe-hlorid
+Kako se zove zeleni sloj na bakru i bronzi?|Patina|Rđa|Kamenac|Oksid aluminijuma
+Koji gas nastaje kad se sirće pomeša sa sodom bikarbonom?|Ugljen-dioksid|Kiseonik|Vodonik|Azot
+Koji gas je potreban za gorenje?|Kiseonik|Azot|Ugljen-dioksid|Helijum
+Koji gas koriste aparati za gašenje požara?|Ugljen-dioksid|Kiseonik|Vodonik|Metan
+Koji gas ima miris trulih jaja?|Vodonik-sulfid|Amonijak|Metan|Hlor
+Koji gas je bez boje i mirisa, a veoma otrovan iz loših peći?|Ugljen-monoksid|Ugljen-dioksid|Metan|Azot
+Koji gas se dodaje prirodnom gasu da bi se osetio miris?|Merkaptan (tiol)|Hlor|Amonijak|Ozon
+Kako se zove gas koji štiti Zemlju od UV zraka u stratosferi?|Ozon|Kiseonik|Azot|Argon
+Koje hemikalije su oštetile ozonski omotač?|Freoni (CFC)|Ugljen-dioksid|Metan|Azotni oksidi
+Koji gas najviše doprinosi efektu staklene bašte od ljudskih aktivnosti?|Ugljen-dioksid|Kiseonik|Azot|Helijum
+Kako se zove pojava povećanja prosečne temperature Zemlje?|Globalno zagrevanje|Ozonska rupa|Kisela kiša|El Ninjo
+Kako se zove sporazum o klimi iz 2015?|Pariski sporazum|Kjoto protokol|Montrealski protokol|Rio deklaracija
+Kako se zove sporazum iz 1987. o zaštiti ozonskog omotača?|Montrealski protokol|Kjoto protokol|Pariski sporazum|Ženevska konvencija
+Kako se zove topla morska struja u Atlantiku koja greje Evropu?|Golfska struja|Humboltova struja|Labradorska struja|El Ninjo
+Kako se zove hladna struja duž Perua i Čilea?|Humboltova struja|Golfska struja|Kanarska struja|Benguelska struja
+Kako se zove klimatska pojava zagrevanja Pacifika kod Južne Amerike?|El Ninjo|La Ninja|Monsun|Golfska struja
+Kako se zove sezonski vetar sa kišom u južnoj Aziji?|Monsun|Tajfun|Siroko|Bura
+Kako se zove jak hladan vetar na Jadranu?|Bura|Jugo|Maestral|Siroko
+Kako se zove topao vlažan vetar sa juga na Jadranu?|Jugo|Bura|Maestral|Košava
+Kako se zove letnji osvežavajući vetar sa mora na Jadranu?|Maestral|Bura|Jugo|Tramontana
+Kako se zove jak jugoistočni vetar u Beogradu?|Košava|Bura|Jugo|Severac
+Kako se zove tropska oluja u Atlantiku?|Uragan|Tajfun|Ciklon|Tornado
+Kako se zove tropska oluja u zapadnom Pacifiku?|Tajfun|Uragan|Monsun|Tornado
+Kako se zove najviši sloj oblaka sa perjastim izgledom?|Cirusi|Kumulusi|Stratusi|Nimbusi
+Kako se zovu olujni oblaci sa grmljavinom?|Kumulonimbusi|Cirusi|Stratusi|Altostratusi
+Kako se zove sloj atmosfere u kom živimo i nastaju vremenske pojave?|Troposfera|Stratosfera|Mezosfera|Termosfera
+U kom sloju atmosfere je ozonski omotač?|Stratosferi|Troposferi|Mezosferi|Egzosferi
+Kako se zove svetlost na nebu blizu polova?|Polarna svetlost (aurora)|Duga|Halo|Zodijačka svetlost
+Šta izaziva polarnu svetlost?|Čestice sa Sunca u magnetnom polju Zemlje|Odbijanje leda|Munje|Mesečina
+Šta izaziva plimu i oseku?|Gravitacija Meseca (i Sunca)|Vetar|Rotacija Zemlje samo|Temperatura
+Koliko puta dnevno ima plime na većini obala?|2|1|4|6
+Zašto imamo godišnja doba?|Zbog nagiba Zemljine ose|Zbog udaljenosti od Sunca|Zbog Meseca|Zbog okeana
+Koliki je nagib Zemljine ose približno?|23,5°|10°|45°|0°
+Kada je najduži dan na severnoj polulopti?|Oko 21. juna|Oko 21. decembra|Oko 21. marta|Oko 23. septembra
+Kako se zove dan kada su dan i noć jednaki?|Ravnodnevica|Solsticij|Perihel|Afel
+Koliko traje jedna rotacija Zemlje oko ose približno?|24 sata|12 sati|365 dana|28 dana
+Koliko traje jedan obilazak Meseca oko Zemlje približno?|27–29 dana|7 dana|365 dana|24 sata
+Zašto vidimo uvek istu stranu Meseca?|Zbog vezane rotacije|Jer Mesec ne rotira|Zbog Sunca|Slučajno
+Kako se zove pomračenje kada Mesec prekrije Sunce?|Pomračenje Sunca|Pomračenje Meseca|Mlad mesec|Tranzit
+Kako se zove pomračenje kada Zemlja baci senku na Mesec?|Pomračenje Meseca|Pomračenje Sunca|Prvi kvartal|Supermesec
+Kako se zove „pucanje zvezda” kad meteoroid sagori u atmosferi?|Meteor|Kometa|Asteroid|Pulsar
+Kako se zove meteoroid koji padne na tlo?|Meteorit|Meteor|Kometa|Bolid
+Kako se zove poznata kiša meteora u avgustu?|Perseidi|Leonidi|Geminidi|Orionidi
+Kako se zove kosmička jedinica za udaljenost Zemlja–Sunce?|Astronomska jedinica|Svetlosna godina|Parsek|Kiloparsek
+Šta meri svetlosna godina?|Udaljenost|Vreme|Brzinu|Sjaj
+Koliko je približno jedna svetlosna godina?|9,5 biliona km|1 milion km|150 miliona km|300.000 km
