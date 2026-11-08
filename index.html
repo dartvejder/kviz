@@ -107,6 +107,8 @@ button:disabled{opacity:.45;cursor:not-allowed}
 .verdict strong{font-family:var(--display);font-size:20px}
 .verdict.v-ok{background:#e3f7ec;color:#0f5a32}.verdict.v-bad{background:#fde8e7;color:#7a1d18}.verdict.v-none{background:var(--soft);color:var(--ink)}
 .verdict .ans{font-size:15px}
+.ntf{display:flex;align-items:center;gap:8px;font-weight:700;font-size:15px;cursor:pointer}
+.ntf input{width:20px;height:20px;accent-color:var(--t1)}
 .board{display:flex;flex-direction:column;gap:6px;list-style:none;margin:0;padding:0}
 .board li{display:grid;grid-template-columns:22px 32px 1fr auto auto;align-items:center;gap:10px;padding:8px 10px;border-radius:12px;background:var(--soft)}
 .board li.me{outline:2px solid var(--gold)}
@@ -585,6 +587,7 @@ function vLobby(){
       <p style="font-weight:700">Igrači <span class="muted" id="pc"></span></p>
       <ul class="players" id="plist"></ul>
     </div>
+    ${host?`<label class="ntf"><input type="checkbox" id="ntf" ${S.ntf?"checked":""}> Obavesti me kad neko uđe u igru</label><p class="muted small" id="ntfMsg" hidden></p>`:""}
     ${host?`<button class="btn-gold" id="go">Pokreni kviz</button><p class="muted small" id="goHint"></p>`:""}
   </section>`;
   if(host){
@@ -596,6 +599,7 @@ function vLobby(){
       else S.cats=ALL_CATS.filter(x=>x===k||S.cats.includes(x));
       store.set("kviz.cats",JSON.stringify(S.cats)); S.H.cats=S.cats.length===ALL_CATS.length?null:S.cats.slice(); hostPublish(); render()};
     $("#go").onclick=hostStart;
+    const nt=$("#ntf"); if(nt) nt.onchange=()=>setNotify(nt.checked);
     const cp=$("#copy");
     if(cp)cp.onclick=()=>{const i=$("#inv");const done=()=>{cp.textContent="Kopirano";setTimeout(()=>{if(cp.isConnected)cp.textContent="Kopiraj link"},1800)};
       try{navigator.clipboard.writeText(i.value).then(done,()=>{i.select();cp.textContent="Označeno, kopirajte"})}catch(e){i.select()}};
@@ -620,6 +624,48 @@ function shareInvite(appName,url){
   const copied=()=>msg(appName==="signal"?"Poruka je kopirana. Otvorite Signal i nalepite je u razgovor.":"Poruka je kopirana, nalepite je gde želite.");
   try{navigator.clipboard.writeText(text).then(copied,()=>msg("Kopirajte link iznad i pošaljite ga."))}catch(e){msg("Kopirajte link iznad i pošaljite ga.")}
 }
+// ---------- obaveštenje domaćinu kad neko uđe ----------
+S.ntf=store.get("kviz.ntf")==="1"; S.seenPeers=null;
+let swReg=null;
+function swReady(){
+  if(swReg||!("serviceWorker" in navigator)) return Promise.resolve(swReg);
+  return navigator.serviceWorker.register("sw.js").then(r=>(swReg=r)).catch(()=>null);
+}
+function ntfMsg(t){const m=$("#ntfMsg");if(m){m.textContent=t;m.hidden=!t}}
+async function setNotify(on){
+  S.ntf=on; store.set("kviz.ntf",on?"1":"0"); ntfMsg("");
+  if(!on) return;
+  if(window.KvizApp&&KvizApp.notify){ try{KvizApp.askNotify&&KvizApp.askNotify()}catch(e){} return; }
+  if(!("Notification" in window)){ ntfMsg("Ovaj pregledač ne podržava obaveštenja. Čućete zvuk ako je stranica otvorena."); return; }
+  let p=Notification.permission;
+  if(p!=="granted"){ try{p=await Notification.requestPermission()}catch(e){} }
+  S.ntfPerm=p;
+  if(p!=="granted"){ ntfMsg("Obaveštenja su zabranjena u pregledaču. Dozvolite ih u podešavanjima sajta."); return; }
+  swReady();
+  ntfMsg("Uključeno. Ostavite kviz otvoren (može u pozadini) i dobićete obaveštenje.");
+}
+function beep(){
+  try{const C=new (window.AudioContext||window.webkitAudioContext)();const o=C.createOscillator(),g=C.createGain();
+    o.frequency.value=880;g.gain.setValueAtTime(.15,C.currentTime);g.gain.exponentialRampToValueAtTime(.001,C.currentTime+.4);
+    o.connect(g);g.connect(C.destination);o.start();o.stop(C.currentTime+.4);setTimeout(()=>C.close(),600)}catch(e){}
+}
+function notifyJoin(name){
+  const title="Novi igrač: "+name, body="U čekaonici igre "+(S.code||"").toUpperCase()+". Dodirnite da otvorite kviz.";
+  beep(); try{navigator.vibrate&&navigator.vibrate(200)}catch(e){}
+  if(document.hidden){ S.unseen=(S.unseen||0)+1; document.title="("+S.unseen+") Novi igrač: "+name; }
+  if(!S.ntf) return;
+  if(window.KvizApp&&KvizApp.notify){ try{KvizApp.notify(title,body)}catch(e){} return; }
+  if(!document.hidden||!("Notification" in window)||(S.ntfPerm||Notification.permission)!=="granted") return;
+  swReady().then(r=>{ try{ if(r&&r.showNotification) r.showNotification(title,{body,icon:"icons/icon-192.png",tag:"kviz-join-"+name,renotify:true}).catch(()=>{}); else new Notification(title,{body}); }catch(e){} });
+}
+function checkJoins(list){
+  const g=G(); if(!g||g.phase!=="lobby") { S.seenPeers=null; return; }
+  const others=list.filter(p=>!p.me);
+  if(!S.seenPeers){ S.seenPeers=new Set(others.map(p=>p.peer)); return; }
+  for(const p of others) if(!S.seenPeers.has(p.peer)){ S.seenPeers.add(p.peer); notifyJoin(p.name); }
+}
+document.addEventListener("visibilitychange",()=>{ if(!document.hidden&&S.unseen){ S.unseen=0; document.title=BASE_TITLE; } });
+const BASE_TITLE=document.title;
 let lastLobbySig="";
 function updateLobby(){
   const list=lobbyPlayers();
@@ -628,6 +674,7 @@ function updateLobby(){
     const g=G(); const hi=$("#hostInfo");
     if(hi&&g) hi.textContent=`Domaćin je podesio ${g.count} pitanja, ${g.time} s po pitanju. Oblasti: ${Array.isArray(g.cats)&&g.cats.length?g.cats.join(", "):"sve"}.`;
   }
+  if(S.role==="host") checkJoins(list);
   if(sig===lastLobbySig) return; lastLobbySig=sig;
   const lv=$("#lavp");
   if(lv){const taken=new Set(list.filter(p=>!p.me&&avOk(p.av)).map(p=>p.av));
