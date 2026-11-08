@@ -80,21 +80,25 @@ button:disabled{opacity:.45;cursor:not-allowed}
 .timer{height:10px;border-radius:99px;background:rgba(255,255,255,.18);overflow:hidden}
 .timer>div{height:100%;width:100%;background:var(--gold);transform-origin:left;border-radius:99px}
 .timer.low>div{background:#ff6b5e}
+.timer.next>div{background:#7fd1ff;transition:none}
+.clock.next{font-family:var(--body);font-size:14px;font-weight:700;opacity:.9}
+.board .tm{font-size:12px;font-weight:700;color:var(--muted);white-space:nowrap}
 .clock{font-family:var(--display);font-size:22px;font-variant-numeric:tabular-nums;color:#fff;min-width:3ch;text-align:right}
 .qtext{font-family:var(--display);font-size:clamp(19px,4.6vw,24px);font-weight:700;line-height:1.3;text-wrap:balance}
 .opts{display:grid;grid-template-columns:1fr 1fr;gap:10px}
 @media (max-width:480px){.opts{grid-template-columns:1fr}}
-.opt{display:flex;align-items:center;gap:12px;text-align:left;padding:14px;border-radius:14px;color:#fff;font-weight:700;font-size:16px;min-height:64px;border:3px solid transparent}
-.opt b{display:grid;place-items:center;width:30px;height:30px;border-radius:8px;background:rgba(255,255,255,.22);font-family:var(--display);font-size:14px;flex:0 0 auto}
+.opt{display:flex;align-items:center;gap:12px;text-align:left;padding:14px;border-radius:14px;color:var(--ink);background:#fff;font-weight:700;font-size:16px;min-height:64px;border:2px solid var(--line)}
+.opt:not(:disabled):hover{border-color:var(--t1)}
+.opt b{display:grid;place-items:center;width:30px;height:30px;border-radius:8px;background:var(--soft);color:var(--ink);font-family:var(--display);font-size:14px;flex:0 0 auto}
 .opt span{min-width:0}
-.opt.o0{background:var(--t1)}.opt.o1{background:var(--t2)}.opt.o2{background:var(--t3)}.opt.o3{background:var(--t4)}
-.opt.picked{border-color:var(--ink);box-shadow:0 0 0 3px var(--gold) inset}
-.opts.locked .opt:not(.picked){filter:saturate(.35) brightness(1.05);opacity:.7}
-.opts.reveal .opt{background:var(--soft);color:var(--muted);flex-wrap:wrap}
+.opt.picked{border-color:var(--t1);background:#e8eefe;box-shadow:0 0 0 2px var(--t1) inset}
+.opt.picked b{background:var(--t1);color:#fff}
+.opts.locked .opt:not(.picked){opacity:.55}
+.opts.reveal .opt{background:#fff;color:var(--muted);flex-wrap:wrap}
 .opts.reveal .opt b{background:#dfe3f3;color:var(--muted)}
-.opts.reveal .opt.right{background:var(--ok);color:#fff;box-shadow:0 0 0 4px #b8ecd0;transform:scale(1.02)}
+.opts.reveal .opt.right{background:var(--ok);border-color:var(--ok);color:#fff;box-shadow:0 0 0 4px #b8ecd0;transform:scale(1.02)}
 .opts.reveal .opt.right b,.opts.reveal .opt.wrong b{background:rgba(255,255,255,.25);color:#fff}
-.opts.reveal .opt.wrong{background:var(--bad);color:#fff}
+.opts.reveal .opt.wrong{background:var(--bad);border-color:var(--bad);color:#fff}
 .opt .mark{margin-left:auto;font-size:12px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;white-space:nowrap}
 .opt .who{flex-basis:100%;display:flex;flex-wrap:wrap;gap:4px;padding-left:42px}
 .opt .who i{font-style:normal;font-size:12px;font-weight:700;padding:2px 8px;border-radius:99px;background:rgba(0,0,0,.08)}
@@ -154,6 +158,7 @@ const MAX_PLAYERS=8;
 const REVEAL_MS=6500;
 const AVATARS=["🦊","🐼","🐯","🦁","🐸","🐵","🐨","🐙","🦄","🐲","🦉","🐧","🐢","🦖","🐝","🐬","🦀","🐺","🐮","🐷",'<svg viewBox="0 0 64 64" width="1em" height="1em" style="display:block" aria-label="Dart Vejder"><path d="M32 4C17 4 9 15 9 29v9l-5 16 14 6h28l14-6-5-16v-9C55 15 47 4 32 4z" fill="#111"/><path d="M32 7c-3 0-4 4-4 10v12h8V17c0-6-1-10-4-10z" fill="#3a3a3a"/><path d="M14 30c5-4 11-5 16-2l-2 7c-5-1-10 0-15 3zM50 30c-5-4-11-5-16-2l2 7c5-1 10 0 15 3z" fill="#5b5b5b"/><path d="M27 36h10l5 16H22z" fill="#2b2b2b"/><path d="M28 41h8M27 45h10M26 49h12" stroke="#9a9a9a" stroke-width="1.6"/><path d="M18 54l4-6M46 54l-4-6" stroke="#555" stroke-width="2"/></svg>','<svg viewBox="0 0 64 64" width="1em" height="1em" style="display:block" aria-label="Dart Vejder roze"><path d="M32 4C17 4 9 15 9 29v9l-5 16 14 6h28l14-6-5-16v-9C55 15 47 4 32 4z" fill="#e0428f"/><path d="M32 7c-3 0-4 4-4 10v12h8V17c0-6-1-10-4-10z" fill="#f48cbf"/><path d="M14 30c5-4 11-5 16-2l-2 7c-5-1-10 0-15 3zM50 30c-5-4-11-5-16-2l2 7c5-1 10 0 15 3z" fill="#5a1236"/><path d="M27 36h10l5 16H22z" fill="#b02a6c"/><path d="M28 41h8M27 45h10M26 49h12" stroke="#ffd1e8" stroke-width="1.6"/><path d="M18 54l4-6M46 54l-4-6" stroke="#8f1f57" stroke-width="2"/></svg>',"🐻","🐰",'<img src="icons/avatar-7of9.webp" alt="Sedma od devet" class="avimg">'];
 const avOk=a=>Number.isInteger(a)&&a>=0&&a<AVATARS.length;
+const fmtT=ms=>(ms/1000).toFixed(1).replace(".",",")+" s";
 const fmtS=n=>(n<0?"−":"")+Math.abs(n|0);
 function avHtml(a,c,fallback){return `<span class="av" style="background:${COLORS[(c||0)%COLORS.length]}">${avOk(a)?AVATARS[a]:esc(initial(fallback))}</span>`}
 const COLORS=["#2563eb","#e2483d","#159a6b","#d8901a","#7c3aed","#0e9bb5","#c2417a","#4b5563"];
@@ -408,8 +413,8 @@ function hostTick(){
       const perm=H.qs[H.qi].slice(1), right=perm.indexOf(0);
       let best=Infinity;
       for(const r of H.roster){
-        const a=answerOf(r.p,H); r.fb=false;
-        if(!a){r.lc=-1;r.lp=0}else{r.lc=a[0];r.lp=a[0]===right?3:-1;r.lt=+a[1]||0;if(r.lp>0&&r.lt<best)best=r.lt}
+        const a=answerOf(r.p,H); r.fb=false; r.lt=null;
+        if(!a){r.lc=-1;r.lp=0}else{r.lc=a[0];r.lp=a[0]===right?3:-1;r.lt=Math.max(0,+a[1]||0);if(r.lp>0&&r.lt<best)best=r.lt}
       }
       // Bonus +2 za najbrži tačan odgovor (ako je više igrača jednako brzo, svi dobijaju bonus).
       for(const r of H.roster){ if(r.lp>0&&r.lt===best){r.fb=true;r.lp+=2} r.s+=r.lp; }
@@ -457,6 +462,10 @@ function onRoomChange(){
   if(g&&g.phase==="q"){
     const k=g.round+":"+g.qi;
     if(S.localKey!==k){S.localKey=k;S.qStart=performance.now();S.qStartAt=Date.now();save()}
+  }
+  if(g&&g.phase==="reveal"){
+    const k=g.round+":"+g.qi;
+    if(S.revKey!==k){S.revKey=k;S.revStart=performance.now()}
   }
   render(true);
 }
@@ -636,15 +645,15 @@ function vGame(){
   const myChoice = reveal ? (myR?myR.lc:-1) : (mine?mine[0]:-1);
   app.innerHTML=`
   <div style="display:flex;flex-direction:column;gap:10px">
-    <div class="qhead"><span>Pitanje ${g.qi+1} / ${g.count} <span class="cat">· ${esc(Q[0])}</span></span><span class="clock" id="clock">${reveal?"":g.time}</span></div>
-    <div class="timer" id="tbar"><div id="tfill" style="${reveal?"transform:scaleX(0)":""}"></div></div>
+    <div class="qhead"><span>Pitanje ${g.qi+1} / ${g.count} <span class="cat">· ${esc(Q[0])}</span></span><span class="clock ${reveal?"next":""}" id="clock">${reveal?(g.qi+1<g.count?"Sledeće pitanje…":"Rezultati…"):g.time}</span></div>
+    <div class="timer ${reveal?"next":""}" id="tbar"><div id="tfill" style="${reveal?"transform:scaleX(0)":""}"></div></div>
   </div>
   <section class="card" style="margin-top:16px">
     <p class="qtext">${esc(Q[1])}</p>
     ${reveal?verdictBox(myR,right,Q[2],inGame):""}
     <div class="opts ${reveal?"reveal":mine||!inGame?"locked":""}" id="opts">
       ${perm.map((k,i)=>{
-        const who=reveal?(g.roster||[]).filter(r=>r.lc===i).map(r=>`<i>${avOk(r.a)?`<span class="e">${AVATARS[r.a]}</span>`:""}${esc(cleanName(r.n))}${r.p===S.myPeer?" (vi)":""}${r.fb?" ⚡":""}</i>`).join(""):"";
+        const who=reveal?(g.roster||[]).filter(r=>r.lc===i).map(r=>`<i>${avOk(r.a)?`<span class="e">${AVATARS[r.a]}</span>`:""}${esc(cleanName(r.n))}${r.p===S.myPeer?" (vi)":""}${r.lt!=null?" · "+fmtT(r.lt):""}${r.fb?" ⚡":""}</i>`).join(""):"";
         const mark=reveal&&i===right?'<span class="mark">✓ Tačan odgovor</span>':reveal&&i===myChoice?'<span class="mark">✗ Vaš odgovor</span>':"";
         return `<button class="opt o${i} ${!reveal&&i===myChoice?"picked":""} ${reveal&&i===right?"right":""} ${reveal&&i===myChoice&&i!==right?"wrong":""}" data-i="${i}" ${reveal||mine||!inGame?"disabled":""}><b>${LET[i]}</b><span>${esc(Q[2+k])}</span>${mark}${who?`<span class="who">${who}</span>`:""}</button>`;
       }).join("")}
@@ -675,7 +684,7 @@ function updateGame(){
     if(r.s!==prev){rank=i+1;prev=r.s}
     const name=esc(cleanName(r.n))+(r.p===S.myPeer?" (vi)":"");
     let stat;
-    if(reveal){const cls=r.lp>0?"p":r.lp<0?"n":"z";stat=`<span class="delta ${cls}">${pts(r.lp|0)}</span>`}
+    if(reveal){const cls=r.lp>0?"p":r.lp<0?"n":"z";stat=`<span class="delta ${cls}">${r.lt!=null?`<span class="tm">${fmtT(r.lt)}</span> `:""}${pts(r.lp|0)}</span>`}
     else{const done=r.p===S.myPeer?!!S.myAns[g.qi]:S.role==="host"?!!answerOf(r.p,g):(Array.isArray(g.done)&&g.done.includes(r.p));
       stat=`<span class="st ${done?"done":""}">${done?"✓ odgovorio":"razmišlja…"}</span>`}
     return `<li class="${r.p===S.myPeer?"me":""}"><span class="rk">${rank}.</span>${avHtml(r.a,r.c,r.n)}<span class="nm">${name}</span>${stat}<span class="score">${fmtS(r.s)}</span></li>`;
@@ -718,6 +727,12 @@ function updateDynamic(){
     if(c)c.textContent=Math.ceil(left/1000);
     if(b)b.classList.toggle("low",left<5000);
     if(left<=0&&!S.myAns[g.qi]){const o=$("#opts");if(o&&!o.classList.contains("locked")){o.classList.add("locked");o.querySelectorAll(".opt").forEach(x=>x.disabled=true);const m=$("#gmsg");if(m)m.textContent="Vreme je isteklo."}}
+  }
+  if(S.screen==="game"&&g&&g.phase==="reveal"&&S.revStart){
+    const el=Math.min(REVEAL_MS,performance.now()-S.revStart);
+    const f=$("#tfill"),c=$("#clock");
+    if(f)f.style.transform=`scaleX(${el/REVEAL_MS})`;
+    if(c)c.textContent=(g.qi+1<g.count?"Sledeće pitanje za ":"Rezultati za ")+Math.ceil((REVEAL_MS-el)/1000)+" s";
   }
   requestAnimationFrame(loop);
 })();
