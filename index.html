@@ -139,7 +139,7 @@ footer a,.linkbtn{color:#fff;font-weight:700;text-decoration:underline;backgroun
   <div class="upd" id="upd" hidden></div>
   <p class="note" id="net" hidden>Veza je prekinuta. Ponovo se povezujem…</p>
   <main id="app"></main>
-  <footer><span>Tačan odgovor +3 · netačan −1 · bez odgovora 0</span><span id="appinfo"></span></footer>
+  <footer><span>Tačan odgovor +3 · najbrži tačan +2 · netačan −1 · bez odgovora 0</span><span id="appinfo"></span></footer>
 </div>
 
 <script src="peerjs.min.js"></script>
@@ -406,11 +406,13 @@ function hostTick(){
     const all=ids.length>0&&ids.every(id=>answerOf(id,H));
     if(all||now-S.hostPhaseAt>H.time*1000+800){
       const perm=H.qs[H.qi].slice(1), right=perm.indexOf(0);
+      let best=Infinity;
       for(const r of H.roster){
-        const a=answerOf(r.p,H);
-        if(!a){r.lc=-1;r.lp=0}else{r.lc=a[0];r.lp=a[0]===right?3:-1}
-        r.s+=r.lp;
+        const a=answerOf(r.p,H); r.fb=false;
+        if(!a){r.lc=-1;r.lp=0}else{r.lc=a[0];r.lp=a[0]===right?3:-1;r.lt=+a[1]||0;if(r.lp>0&&r.lt<best)best=r.lt}
       }
+      // Bonus +2 za najbrži tačan odgovor (ako je više igrača jednako brzo, svi dobijaju bonus).
+      for(const r of H.roster){ if(r.lp>0&&r.lt===best){r.fb=true;r.lp+=2} r.s+=r.lp; }
       H.phase="reveal"; S.hostPhaseAt=now; hostPublish();
     }
   }else if(H.phase==="reveal"){
@@ -484,7 +486,7 @@ function vStart(){
       <h1>${inv?"Pozvani ste u kviz":"Kviz opšte kulture"}</h1>
       <p class="muted">${inv?"Upišite ime i uđite u igru "+esc(S.code.toUpperCase())+". Domaćin pokreće kviz.":"Za dva ili više igrača. Domaćin bira vreme i broj pitanja, ostale poziva linkom."}</p>
     </div>
-    <div class="rules"><span>Tačan +3</span><span>Netačan −1</span><span>Bez odgovora 0</span></div>
+    <div class="rules"><span>Tačan +3</span><span>Najbrži tačan +2</span><span>Netačan −1</span><span>Bez odgovora 0</span></div>
     <label class="f" for="nm">Vaše ime<input type="text" id="nm" maxlength="20" autocomplete="nickname" placeholder="npr. Marko" value="${esc(S.name)}"></label>
     <div style="display:flex;flex-direction:column;gap:6px"><p style="font-weight:700;font-size:14px">Izaberite avatar</p>
       <div class="avpick" id="avp">${AVATARS.map((e,i)=>`<button type="button" aria-label="Avatar ${i+1}" aria-pressed="${i===S.av}" data-a="${i}">${e}</button>`).join("")}</div></div>
@@ -642,7 +644,7 @@ function vGame(){
     ${reveal?verdictBox(myR,right,Q[2],inGame):""}
     <div class="opts ${reveal?"reveal":mine||!inGame?"locked":""}" id="opts">
       ${perm.map((k,i)=>{
-        const who=reveal?(g.roster||[]).filter(r=>r.lc===i).map(r=>`<i>${avOk(r.a)?`<span class="e">${AVATARS[r.a]}</span>`:""}${esc(cleanName(r.n))}${r.p===S.myPeer?" (vi)":""}</i>`).join(""):"";
+        const who=reveal?(g.roster||[]).filter(r=>r.lc===i).map(r=>`<i>${avOk(r.a)?`<span class="e">${AVATARS[r.a]}</span>`:""}${esc(cleanName(r.n))}${r.p===S.myPeer?" (vi)":""}${r.fb?" ⚡":""}</i>`).join(""):"";
         const mark=reveal&&i===right?'<span class="mark">✓ Tačan odgovor</span>':reveal&&i===myChoice?'<span class="mark">✗ Vaš odgovor</span>':"";
         return `<button class="opt o${i} ${!reveal&&i===myChoice?"picked":""} ${reveal&&i===right?"right":""} ${reveal&&i===myChoice&&i!==right?"wrong":""}" data-i="${i}" ${reveal||mine||!inGame?"disabled":""}><b>${LET[i]}</b><span>${esc(Q[2+k])}</span>${mark}${who?`<span class="who">${who}</span>`:""}</button>`;
       }).join("")}
@@ -659,7 +661,7 @@ function verdictBox(r,right,text,inGame){
   const ans=`<span class="ans">Tačan odgovor: <b>${LET[right]} · ${esc(text)}</b></span>`;
   if(!inGame||!r) return `<div class="verdict v-none"><strong>Tačan odgovor</strong>${ans}</div>`;
   if(r.lc===-1) return `<div class="verdict v-none"><strong>Bez odgovora · 0</strong>${ans}</div>`;
-  return r.lc===right?`<div class="verdict v-ok"><strong>Tačno! +3</strong>${ans}</div>`:`<div class="verdict v-bad"><strong>Netačno · −1</strong>${ans}</div>`;
+  return r.lc===right?`<div class="verdict v-ok"><strong>Tačno! +3${r.fb?" · najbrži +2 ⚡":""}</strong>${ans}</div>`:`<div class="verdict v-bad"><strong>Netačno · −1</strong>${ans}</div>`;
 }
 function rosterSorted(g){
   return (g.roster||[]).slice().sort((a,b)=>b.s-a.s||a.c-b.c);

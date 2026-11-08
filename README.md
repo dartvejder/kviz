@@ -2,7 +2,7 @@
 
 Kviz na srpskom za 2–8 igrača. Domaćin upiše ime, izabere vreme po pitanju i broj pitanja i pošalje pozivnicu (link ili kod). Ostali upišu ime i uđu. Domaćin pokreće kviz.
 
-Bodovanje: tačan odgovor +3, netačan −1, bez odgovora 0.
+Bodovanje: tačan odgovor +3, najbrži tačan odgovor dobija još +2, netačan −1, bez odgovora 0.
 
 Igrači se povezuju direktno između pregledača (WebRTC, preko [PeerJS](https://peerjs.com)); nalog nije potreban. Domaćin mora da drži stranicu otvorenu do kraja igre.
 
