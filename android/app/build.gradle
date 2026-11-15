@@ -3,29 +3,43 @@ plugins { id 'com.android.application' }
 // Verzija se čita iz version.json u korenu repozitorijuma, da web i aplikacija budu usklađeni.
 def ver = new groovy.json.JsonSlurper().parse(rootProject.file('../version.json'))
 
+// Build za Google Play: gradle bundleRelease -Pplay -PplayVersionCode=N
+// Google Play traži veći versionCode za svako slanje, pa ga workflow uzima iz broja pokretanja.
+def play = project.hasProperty('play')
+def playCode = project.findProperty('playVersionCode')
+
+// Ključ postoji samo u buildovima na GitHubu (iz tajni). Bez njega se potpisuje debug ključem, da build i dalje radi.
+def keystore = System.getenv('KEYSTORE_FILE')
+def hasKey = keystore && new File(keystore).exists() && System.getenv('KEYSTORE_PASSWORD')
+
 android {
     namespace 'rs.kviz.app'
-    compileSdk 34
+    compileSdk 36
     defaultConfig {
         applicationId 'rs.kviz.app'
         minSdk 24
-        targetSdk 34
-        versionCode ver.versionCode as int
+        // Google Play prihvata samo aplikacije koje ciljaju noviji Android.
+        targetSdk 36
+        versionCode play && playCode ? (playCode as int) : (ver.versionCode as int)
         versionName ver.versionName as String
+        // Play verzija se ažurira preko prodavnice, pa sama ne nudi preuzimanje APK-a.
+        resValue 'bool', 'play_store', play ? 'true' : 'false'
     }
     signingConfigs {
-        release {
-            // Stalni ključ (iz GitHub tajni), da nova verzija može da se instalira preko stare.
-            storeFile file(System.getenv('KEYSTORE_FILE') ?: 'kviz.keystore')
-            storePassword System.getenv('KEYSTORE_PASSWORD')
-            keyAlias 'kviz'
-            keyPassword System.getenv('KEYSTORE_PASSWORD')
+        if (hasKey) {
+            release {
+                // Stalni ključ (iz GitHub tajni), da nova verzija može da se instalira preko stare.
+                storeFile file(keystore)
+                storePassword System.getenv('KEYSTORE_PASSWORD')
+                keyAlias 'kviz'
+                keyPassword System.getenv('KEYSTORE_PASSWORD')
+            }
         }
     }
     buildTypes {
         release {
             minifyEnabled false
-            signingConfig signingConfigs.release
+            signingConfig hasKey ? signingConfigs.release : signingConfigs.debug
         }
     }
     compileOptions {

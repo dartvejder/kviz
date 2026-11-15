@@ -17,3 +17,11 @@ Folder `android/` je mala Android aplikacija koja otvara sajt https://dartvejder
 Za potpisivanje su potrebne dve tajne u Settings → Secrets and variables → Actions: `ANDROID_KEYSTORE` (keystore u base64) i `ANDROID_KEYSTORE_PASSWORD`. Ključ se ne čuva u repou; uvek koristiti isti ključ, inače telefon neće prihvatiti ažuriranje.
 
 Nova verzija: u `version.json` povećati `versionCode`, promeniti `versionName` i `notes`, pa pushovati. Aplikacija čita `version.json` sa sajta i, kad je `versionCode` veći od instaliranog, prikazuje obaveštenje sa dugmetom za preuzimanje. Verzija se vidi u dnu ekrana.
+
+## Google Play
+
+Workflow `.github/workflows/play.yml` pravi potpisan paket `kviz-play.aab` za Google Play, istim ključem kao APK (tajne `ANDROID_KEYSTORE` i `ANDROID_KEYSTORE_PASSWORD`). Pokreće se pri svakom pushu na `main` koji menja `android/` ili `version.json`, ili ručno iz kartice Actions („Google Play” → „Run workflow”). Paket se preuzima iz rezultata pokretanja (Artifacts → `kviz-play-bundle`) i šalje u Play Console. Na pull requestu samo proverava da se Play verzija prevodi.
+
+Play verzija (`-Pplay`) se razlikuje od APK-a samo po tome što ne nudi preuzimanje novog APK-a, jer nju ažurira prodavnica. Njen `versionCode` je 1000 + broj pokretanja workflowa, pa svako slanje ima veći broj. Ažuriranje sajta (pitanja, izgled) stiže u aplikaciju odmah, bez nove verzije u prodavnici.
+
+Politika privatnosti: https://dartvejder.github.io/kviz/privacy.html
