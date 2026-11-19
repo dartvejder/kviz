@@ -310,15 +310,31 @@ class Tabela extends StatelessWidget {
   final Map<String, dynamic> s;
   final Map<String, int>? poeni;
 
+  /// Ispod pitanja se vidi samo prvih [vidljivo] i tvoj red, da i sa 30
+  /// igrača odgovori ostanu na vrhu ekrana.
+  static const vidljivo = 5;
+
   @override
   Widget build(BuildContext context) {
-    final igraci = _igraci(s).where((i) => i['uIgri'] == true).toList()
+    final svi = _igraci(s).where((i) => i['uIgri'] == true).toList()
       ..sort((a, b) => (b['poeni'] as int).compareTo(a['poeni'] as int));
+    final ja = Api.i.nalog?.id;
+    final igraci = [
+      for (final (r, i) in svi.indexed)
+        if (r < vidljivo || i['id'] == ja) (r, i),
+    ];
+    final odgovorilo = svi.where((i) => i['odgovorio'] == true).length;
     return Column(children: [
-      for (final i in igraci)
+      if (poeni == null && svi.length > 1)
+        Padding(
+          padding: const EdgeInsets.only(bottom: 4),
+          child: Text('Odgovorilo $odgovorilo od ${svi.length}'),
+        ),
+      for (final (r, i) in igraci)
         ListTile(
+          selected: i['id'] == ja,
           dense: true,
-          leading: Text(i['avatar'], style: const TextStyle(fontSize: 22)),
+          leading: Text('${r + 1}. ${i['avatar']}', style: const TextStyle(fontSize: 22)),
           title: Text(i['ime']),
           subtitle: poeni == null ? (i['odgovorio'] == true ? const Text('odgovorio') : null) : null,
           trailing: Row(mainAxisSize: MainAxisSize.min, children: [
@@ -330,6 +346,8 @@ class Tabela extends StatelessWidget {
             Text('${i['poeni']}', style: Theme.of(context).textTheme.titleMedium),
           ]),
         ),
+      if (svi.length > igraci.length)
+        Text('i još ${svi.length - igraci.length}', style: const TextStyle(fontSize: 13)),
     ]);
   }
 }
