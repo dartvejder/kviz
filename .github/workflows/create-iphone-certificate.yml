@@ -1,0 +1,56 @@
+name: Create iPhone certificate
+
+# Run this once, by hand, from the Actions tab, after the App Store Connect
+# key secrets are added. It asks Apple for the certificate that signs the
+# iPhone builds and hands it to you as a private download. Nothing is stored
+# in the repository. Follow the README inside the download. Run it again only
+# when a build says the certificate is no longer valid (after about a year).
+on:
+  workflow_dispatch:
+
+permissions:
+  # Only to read the helper script from this private repository.
+  contents: read
+
+jobs:
+  create:
+    name: Create the Apple distribution certificate
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    env:
+      ASC_KEY_ID: ${{ secrets.APP_STORE_CONNECT_KEY_ID }}
+      ASC_ISSUER_ID: ${{ secrets.APP_STORE_CONNECT_ISSUER_ID }}
+      ASC_KEY: ${{ secrets.APP_STORE_CONNECT_KEY }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: .github/scripts
+      - run: python3 -m pip install -q pyjwt cryptography
+      - name: Create the certificate
+        run: |
+          umask 077
+          python3 .github/scripts/appstore.py create-certificate out
+          cat > out/README.txt <<'TEXT'
+          Kviz certificate for iPhone builds
+          =======================================
+
+          This download is the only copy. Keep the folder somewhere safe
+          and private, or simply delete it after step 4: if it is lost, run
+          the workflow again.
+
+          1. On GitHub open the kviz repository, then Settings,
+             "Secrets and variables", Actions, "New repository secret".
+          2. Name: IOS_CERTIFICATE_P12_BASE64
+             Secret: the whole contents of IOS_CERTIFICATE_P12_BASE64.txt
+          3. Add a second secret.
+             Name: IOS_CERTIFICATE_PASSWORD
+             Secret: the whole contents of IOS_CERTIFICATE_PASSWORD.txt
+          4. Back on the Actions tab, open this run and delete its download
+             (the trash icon next to it), so no copy stays on GitHub.
+          TEXT
+          sed -i 's/^          //' out/README.txt
+      - uses: actions/upload-artifact@v4
+        with:
+          name: kviz-iphone-certificate
+          path: out/
+          retention-days: 1

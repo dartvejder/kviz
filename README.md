@@ -25,3 +25,13 @@ Workflow `.github/workflows/play.yml` pravi potpisan paket `kviz-play.aab` nove 
 Broj verzije je 2000 + broj pokretanja workflowa, pa je uvek veći od starih WebView verzija (1000+) iz `android/`.
 
 Politika privatnosti: https://dartvejder.github.io/kviz/privacy.html
+
+## iPhone (TestFlight)
+
+Isto kao u Dart Chatu. `.github/workflows/ios-release.yml` pravi potpisanu iPhone aplikaciju na GitHub Mac mašini i šalje je na TestFlight (grupa „Prijatelji”). Pokreće se samo ručno iz kartice Actions, jer svaki build košta plaćene Mac minute (oko 15–20 minuta).
+
+Tajne (Settings → Secrets and variables → Actions):
+- `APP_STORE_CONNECT_KEY_ID`, `APP_STORE_CONNECT_ISSUER_ID`, `APP_STORE_CONNECT_KEY` (ceo .p8 fajl), ključ iz App Store Connect → Users and Access → Integrations, pristup App Manager.
+- `IOS_CERTIFICATE_P12_BASE64` i `IOS_CERTIFICATE_PASSWORD`: pravi ih workflow „Create iPhone certificate” (jednom, na Linuxu, besplatno); uputstvo je u preuzetom fajlu.
+
+Pomoćni skript `.github/scripts/appstore.py` sam registruje Bundle ID `rs.kviz.app`, pravi profil i daje build TestFlight grupi.
