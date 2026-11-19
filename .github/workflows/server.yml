@@ -1,0 +1,76 @@
+name: Server
+
+# Testovi servera (Cloudflare Worker) na pull requestu, a na main grani
+# postavljanje na Cloudflare i uvoz pitanja u D1. Radi na WSL runneru na PC-ju.
+on:
+  pull_request:
+    paths: ["server/**", "questions.js", ".github/workflows/server.yml"]
+  push:
+    branches: [main]
+    paths: ["server/**", "questions.js", ".github/workflows/server.yml"]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: server-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  test:
+    name: Testovi servera
+    runs-on: [self-hosted, Linux]
+    timeout-minutes: 15
+    defaults:
+      run:
+        working-directory: server
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - run: npm ci
+      - run: npx tsc --noEmit
+      - run: npx vitest run
+
+  deploy:
+    name: Postavljanje na Cloudflare
+    needs: test
+    if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
+    runs-on: [self-hosted, Linux]
+    timeout-minutes: 20
+    defaults:
+      run:
+        working-directory: server
+    env:
+      CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+      CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+    steps:
+      - name: Provera tokena
+        id: tok
+        run: |
+          if [ -n "$CLOUDFLARE_API_TOKEN" ] && [ -n "$CLOUDFLARE_ACCOUNT_ID" ]; then
+            echo "present=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "Tajne CLOUDFLARE_API_TOKEN i CLOUDFLARE_ACCOUNT_ID nisu podešene, pa server nije postavljen."
+          fi
+      - uses: actions/checkout@v4
+        if: steps.tok.outputs.present == 'true'
+      - uses: actions/setup-node@v4
+        if: steps.tok.outputs.present == 'true'
+        with:
+          node-version: "22"
+      - run: npm ci
+        if: steps.tok.outputs.present == 'true'
+      - name: Šema baze
+        if: steps.tok.outputs.present == 'true'
+        run: npx wrangler d1 execute kviz --remote --file schema.sql
+      - name: Uvoz pitanja
+        if: steps.tok.outputs.present == 'true'
+        run: |
+          node scripts/pitanja-sql.mjs ../questions.js build/pitanja.sql
+          npx wrangler d1 execute kviz --remote --file build/pitanja.sql
+      - name: Postavi Worker
+        if: steps.tok.outputs.present == 'true'
+        run: npx wrangler deploy
