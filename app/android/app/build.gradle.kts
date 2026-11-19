@@ -1,8 +1,16 @@
+import java.io.File
+
 plugins {
     id("com.android.application")
     // The Flutter Gradle Plugin must be applied after the Android and Kotlin Gradle plugins.
     id("dev.flutter.flutter-gradle-plugin")
 }
+
+// Potpis za Google Play: workflow vrati ključ u KEYSTORE_FILE (alias "kviz",
+// lozinka u KEYSTORE_PASSWORD). Bez toga se potpisuje debug ključem.
+val keystorePath: String? = System.getenv("KEYSTORE_FILE")
+val keystorePassword: String? = System.getenv("KEYSTORE_PASSWORD")
+val imaKljuc = keystorePath != null && File(keystorePath).exists() && !keystorePassword.isNullOrEmpty()
 
 android {
     namespace = "rs.kviz.kviz"
@@ -15,7 +23,6 @@ android {
     }
 
     defaultConfig {
-        // TODO: Specify your own unique Application ID (https://developer.android.com/studio/build/application-id.html).
         applicationId = "rs.kviz.app"
         // You can update the following values to match your application needs.
         // For more information, see: https://flutter.dev/to/review-gradle-config.
@@ -29,11 +36,20 @@ android {
         versionName = flutter.versionName
     }
 
+    signingConfigs {
+        if (imaKljuc) {
+            create("release") {
+                storeFile = File(keystorePath!!)
+                storePassword = keystorePassword
+                keyAlias = "kviz"
+                keyPassword = keystorePassword
+            }
+        }
+    }
+
     buildTypes {
         release {
-            // TODO: Add your own signing config for the release build.
-            // Signing with the debug keys for now, so `flutter run --release` works.
-            signingConfig = signingConfigs.getByName("debug")
+            signingConfig = signingConfigs.getByName(if (imaKljuc) "release" else "debug")
         }
     }
 }
