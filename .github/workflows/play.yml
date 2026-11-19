@@ -3,8 +3,8 @@ name: Google Play
 # Pravi potpisan paket (.aab) za Google Play, isto kao u Dart Chatu.
 # Na pull requestu samo proverava da se Play verzija prevodi (bez potpisa).
 # Na main grani (ili ručno iz kartice Actions) pravi potpisan kviz-play.aab
-# i, ako postoji tajna PLAY_SERVICE_ACCOUNT_JSON, sam ga šalje na interno
-# testiranje u Play Console. Bez te tajne paket se preuzme iz rezultata.
+# koji Claude preko Chrome-a postavi u Play Console. Sve radi na PC runneru
+# (barcodeDesktop), koji mora biti upaljen i prijavljen; run čeka dok ne bude.
 on:
   pull_request:
     paths: ["android/**", "version.json", ".github/workflows/play.yml"]
@@ -20,8 +20,12 @@ jobs:
   check:
     name: Play verzija se prevodi
     if: github.event_name == 'pull_request'
-    runs-on: ubuntu-latest
-    timeout-minutes: 20
+    runs-on: [self-hosted, Windows, dartchat-pc]
+    timeout-minutes: 30
+    defaults:
+      run:
+        # Git bash punom putanjom: obični "bash" na Windowsu je WSL.
+        shell: 'C:\PROGRA~1\Git\bin\bash.exe --noprofile --norc -e -o pipefail {0}'
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-java@v4
@@ -38,12 +42,15 @@ jobs:
   bundle:
     name: Potpisan paket za Google Play
     if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
-    runs-on: ubuntu-latest
-    timeout-minutes: 20
+    runs-on: [self-hosted, Windows, dartchat-pc]
+    timeout-minutes: 30
+    defaults:
+      run:
+        # Git bash punom putanjom: obični "bash" na Windowsu je WSL.
+        shell: 'C:\PROGRA~1\Git\bin\bash.exe --noprofile --norc -e -o pipefail {0}'
     env:
       KEYSTORE_B64: ${{ secrets.ANDROID_KEYSTORE }}
       KEYSTORE_PASSWORD: ${{ secrets.ANDROID_KEYSTORE_PASSWORD }}
-      PLAY_JSON: ${{ secrets.PLAY_SERVICE_ACCOUNT_JSON }}
     steps:
       - name: Provera ključa
         id: key
@@ -88,23 +95,3 @@ jobs:
           name: kviz-play-bundle
           path: kviz-play.aab
           retention-days: 1
-      # Ako je podešena tajna PLAY_SERVICE_ACCOUNT_JSON, paket ide pravo na
-      # interno testiranje u Play Console, bez ručnog prebacivanja .aab fajla.
-      - name: Provera Play naloga za slanje
-        id: play
-        if: steps.key.outputs.present == 'true'
-        run: |
-          if [ -n "$PLAY_JSON" ]; then
-            echo "present=true" >> "$GITHUB_OUTPUT"
-          else
-            echo "Tajna PLAY_SERVICE_ACCOUNT_JSON nije podešena, pa se paket ne šalje na Play (preuzmi ga iz rezultata pokretanja)."
-          fi
-      - name: Pošalji na interno testiranje
-        if: steps.play.outputs.present == 'true'
-        uses: r0adkll/upload-google-play@v1
-        with:
-          serviceAccountJsonPlainText: ${{ secrets.PLAY_SERVICE_ACCOUNT_JSON }}
-          packageName: rs.kviz.app
-          releaseFiles: kviz-play.aab
-          track: internal
-          status: completed
