@@ -20,7 +20,7 @@ Nova verzija: u `version.json` povećati `versionCode`, promeniti `versionName` 
 
 ## Google Play
 
-Workflow `.github/workflows/play.yml` pravi potpisan paket `kviz-play.aab` za Google Play, istim ključem kao APK (tajne `ANDROID_KEYSTORE` i `ANDROID_KEYSTORE_PASSWORD`). Pokreće se pri svakom pushu na `main` koji menja `android/` ili `version.json`, ili ručno iz kartice Actions („Google Play” → „Run workflow”). Paket se preuzima iz rezultata pokretanja (Artifacts → `kviz-play-bundle`) i šalje u Play Console. Na pull requestu samo proverava da se Play verzija prevodi.
+Workflow `.github/workflows/play.yml` pravi potpisan paket `kviz-play.aab` za Google Play, istim ključem kao APK (tajne `ANDROID_KEYSTORE` i `ANDROID_KEYSTORE_PASSWORD`). Pokreće se pri svakom pushu na `main` koji menja `android/` ili `version.json`, ili ručno iz kartice Actions („Google Play” → „Run workflow”). Ako je podešena tajna `PLAY_SERVICE_ACCOUNT_JSON` (JSON ključ Google Cloud service accounta kome je u Play Console dat pristup aplikaciji), paket sam ide na interno testiranje. Bez nje se paket preuzima iz rezultata pokretanja (Artifacts → `kviz-play-bundle`) i ručno šalje u Play Console. Na pull requestu samo proverava da se Play verzija prevodi.
 
 Play verzija (`-Pplay`) se razlikuje od APK-a samo po tome što ne nudi preuzimanje novog APK-a, jer nju ažurira prodavnica. Njen `versionCode` je 1000 + broj pokretanja workflowa, pa svako slanje ima veći broj. Ažuriranje sajta (pitanja, izgled) stiže u aplikaciju odmah, bez nove verzije u prodavnici.
 
