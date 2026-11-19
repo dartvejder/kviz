@@ -1,0 +1,30 @@
+name: Aplikacija
+
+# Flutter aplikacija (Android, iPhone, web): analiza i testovi na pull
+# requestu, na PC runneru (barcodeDesktop, Flutter u C:\flutter).
+on:
+  pull_request:
+    paths: ["app/**", ".github/workflows/app.yml"]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    name: Analiza i testovi
+    runs-on: [self-hosted, Windows, dartchat-pc]
+    timeout-minutes: 30
+    defaults:
+      run:
+        # Git bash punom putanjom: obični "bash" na Windowsu je WSL.
+        shell: 'C:\PROGRA~1\Git\bin\bash.exe --noprofile --norc -e -o pipefail {0}'
+        working-directory: app
+    steps:
+      - uses: actions/checkout@v4
+      - name: Flutter sa PC-ja
+        run: echo 'C:\flutter\bin' >> "$GITHUB_PATH"
+      - run: flutter --version
+      - run: flutter pub get
+      - run: flutter analyze
+      - run: flutter test
