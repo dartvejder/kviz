@@ -1,0 +1,149 @@
+name: iPhone release
+
+# Builds the signed iPhone app and uploads it to TestFlight. Runs only by
+# hand from the Actions tab: each build costs paid Mac minutes, so the owner
+# decides which versions go to iPhone. TestFlight builds stop working after
+# 90 days, so run it again before then.
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: iphone-release
+  cancel-in-progress: false
+
+env:
+  # Every TestFlight upload needs a higher build number.
+  BUILD_NUMBER: ${{ github.run_number }}
+  TESTFLIGHT_GROUP: Prijatelji
+
+jobs:
+  build:
+    name: Build and upload to TestFlight
+    runs-on: macos-26
+    timeout-minutes: 60
+    env:
+      ASC_KEY_ID: ${{ secrets.APP_STORE_CONNECT_KEY_ID }}
+      ASC_ISSUER_ID: ${{ secrets.APP_STORE_CONNECT_ISSUER_ID }}
+      ASC_KEY: ${{ secrets.APP_STORE_CONNECT_KEY }}
+      CERT_P12_BASE64: ${{ secrets.IOS_CERTIFICATE_P12_BASE64 }}
+      CERT_PASSWORD: ${{ secrets.IOS_CERTIFICATE_PASSWORD }}
+    outputs:
+      uploaded: ${{ steps.upload.outcome == 'success' }}
+    defaults:
+      run:
+        working-directory: app
+    steps:
+      - name: Check the secrets
+        working-directory: .
+        run: |
+          missing=""
+          for name in ASC_KEY_ID ASC_ISSUER_ID ASC_KEY CERT_P12_BASE64 CERT_PASSWORD; do
+            [ -n "${!name}" ] || missing="$missing $name"
+          done
+          if [ -n "$missing" ]; then
+            echo "::error::Missing secrets:$missing. See the iPhone section of README.md."
+            exit 1
+          fi
+      - uses: actions/checkout@v4
+      - uses: subosito/flutter-action@v2
+        with:
+          channel: stable
+          flutter-version: "3.50.0"
+          cache: true
+      - name: Install the App Store Connect helper
+        run: |
+          python3 -m venv "$RUNNER_TEMP/venv"
+          "$RUNNER_TEMP/venv/bin/pip" install -q pyjwt cryptography
+      - name: Load the certificate into a temporary keychain
+        run: |
+          umask 077
+          KEYCHAIN="$RUNNER_TEMP/signing.keychain-db"
+          KEYCHAIN_PASSWORD="$(openssl rand -hex 16)"
+          printf '%s' "$CERT_P12_BASE64" | base64 --decode > "$RUNNER_TEMP/cert.p12"
+          security create-keychain -p "$KEYCHAIN_PASSWORD" "$KEYCHAIN"
+          security set-keychain-settings -lut 3600 "$KEYCHAIN"
+          security unlock-keychain -p "$KEYCHAIN_PASSWORD" "$KEYCHAIN"
+          security import "$RUNNER_TEMP/cert.p12" -P "$CERT_PASSWORD" -A -t cert -f pkcs12 -k "$KEYCHAIN"
+          security set-key-partition-list -S apple-tool:,apple: -k "$KEYCHAIN_PASSWORD" "$KEYCHAIN" > /dev/null
+          security list-keychains -d user -s "$KEYCHAIN" $(security list-keychains -d user | tr -d '"')
+      - name: Get a provisioning profile from Apple
+        id: signing
+        run: |
+          "$RUNNER_TEMP/venv/bin/python" ../.github/scripts/appstore.py prepare-signing \
+            "$RUNNER_TEMP/cert.p12" "$CERT_PASSWORD" "$HOME/Library/MobileDevice/Provisioning Profiles"
+      - name: Use the certificate and profiles for this build
+        env:
+          TEAM: ${{ steps.signing.outputs.team }}
+          PROFILE: ${{ steps.signing.outputs.profile }}
+        run: |
+          python3 - <<'PY'
+          import os
+          path = "ios/Runner.xcodeproj/project.pbxproj"
+          text = open(path).read()
+          marker = "\t\t\t\tPRODUCT_BUNDLE_IDENTIFIER = rs.kviz.app;\n"
+          settings = (
+              "\t\t\t\tCODE_SIGN_STYLE = Manual;\n"
+              f"\t\t\t\tDEVELOPMENT_TEAM = {os.environ['TEAM']};\n"
+              f"\t\t\t\tPROVISIONING_PROFILE_SPECIFIER = \"{os.environ['PROFILE']}\";\n"
+              "\t\t\t\t\"CODE_SIGN_IDENTITY[sdk=iphoneos*]\" = \"Apple Distribution\";\n"
+          )
+          assert text.count(marker) == 3, "unexpected Xcode project layout"
+          open(path, "w").write(text.replace(marker, settings + marker))
+          PY
+          cat > "$RUNNER_TEMP/ExportOptions.plist" <<PLIST
+          <?xml version="1.0" encoding="UTF-8"?>
+          <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+          <plist version="1.0">
+          <dict>
+            <key>method</key><string>app-store-connect</string>
+            <key>teamID</key><string>$TEAM</string>
+            <key>signingStyle</key><string>manual</string>
+            <key>signingCertificate</key><string>Apple Distribution</string>
+            <key>provisioningProfiles</key>
+            <dict>
+              <key>rs.kviz.app</key><string>$PROFILE</string>
+            </dict>
+            <key>uploadSymbols</key><true/>
+          </dict>
+          </plist>
+          PLIST
+      - run: flutter pub get
+      - name: Build the signed app
+        run: >
+          flutter build ipa --release
+          --build-number=${{ env.BUILD_NUMBER }}
+          --export-options-plist="$RUNNER_TEMP/ExportOptions.plist"
+      - name: Upload to TestFlight
+        id: upload
+        run: |
+          umask 077
+          mkdir -p private_keys
+          printf '%s' "$ASC_KEY" > "private_keys/AuthKey_$ASC_KEY_ID.p8"
+          xcrun altool --upload-app --type ios --file build/ios/ipa/*.ipa \
+            --apiKey "$ASC_KEY_ID" --apiIssuer "$ASC_ISSUER_ID"
+      - name: Remove the signing material
+        if: always()
+        run: |
+          rm -rf private_keys "$RUNNER_TEMP/cert.p12"
+          security delete-keychain "$RUNNER_TEMP/signing.keychain-db" || true
+
+  # Waiting for Apple to process the upload takes up to half an hour, so it
+  # happens on a Linux runner, which costs a tenth of a Mac runner.
+  distribute:
+    name: Give the build to the TestFlight group
+    needs: build
+    runs-on: ubuntu-latest
+    timeout-minutes: 50
+    env:
+      ASC_KEY_ID: ${{ secrets.APP_STORE_CONNECT_KEY_ID }}
+      ASC_ISSUER_ID: ${{ secrets.APP_STORE_CONNECT_ISSUER_ID }}
+      ASC_KEY: ${{ secrets.APP_STORE_CONNECT_KEY }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: .github/scripts
+      - run: python3 -m pip install -q pyjwt cryptography
+      - run: python3 .github/scripts/appstore.py distribute "$BUILD_NUMBER" "$TESTFLIGHT_GROUP"
