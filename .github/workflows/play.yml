@@ -3,7 +3,8 @@ name: Google Play
 # Pravi potpisan paket (.aab) za Google Play, isto kao u Dart Chatu.
 # Na pull requestu samo proverava da se Play verzija prevodi (bez potpisa).
 # Na main grani (ili ručno iz kartice Actions) pravi potpisan kviz-play.aab
-# koji se preuzme iz rezultata pokretanja i pošalje u Play Console.
+# i, ako postoji tajna PLAY_SERVICE_ACCOUNT_JSON, sam ga šalje na interno
+# testiranje u Play Console. Bez te tajne paket se preuzme iz rezultata.
 on:
   pull_request:
     paths: ["android/**", "version.json", ".github/workflows/play.yml"]
@@ -42,6 +43,7 @@ jobs:
     env:
       KEYSTORE_B64: ${{ secrets.ANDROID_KEYSTORE }}
       KEYSTORE_PASSWORD: ${{ secrets.ANDROID_KEYSTORE_PASSWORD }}
+      PLAY_JSON: ${{ secrets.PLAY_SERVICE_ACCOUNT_JSON }}
     steps:
       - name: Provera ključa
         id: key
@@ -86,3 +88,23 @@ jobs:
           name: kviz-play-bundle
           path: kviz-play.aab
           retention-days: 1
+      # Ako je podešena tajna PLAY_SERVICE_ACCOUNT_JSON, paket ide pravo na
+      # interno testiranje u Play Console, bez ručnog prebacivanja .aab fajla.
+      - name: Provera Play naloga za slanje
+        id: play
+        if: steps.key.outputs.present == 'true'
+        run: |
+          if [ -n "$PLAY_JSON" ]; then
+            echo "present=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "Tajna PLAY_SERVICE_ACCOUNT_JSON nije podešena, pa se paket ne šalje na Play (preuzmi ga iz rezultata pokretanja)."
+          fi
+      - name: Pošalji na interno testiranje
+        if: steps.play.outputs.present == 'true'
+        uses: r0adkll/upload-google-play@v1
+        with:
+          serviceAccountJsonPlainText: ${{ secrets.PLAY_SERVICE_ACCOUNT_JSON }}
+          packageName: rs.kviz.app
+          releaseFiles: kviz-play.aab
+          track: internal
+          status: completed
