@@ -1,0 +1,19 @@
+{
+  "name": "kviz-server",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "check": "tsc --noEmit",
+    "test": "vitest run",
+    "pitanja": "node scripts/pitanja-sql.mjs ../questions.js build/pitanja.sql"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^5.20261119.1",
+    "@types/node": "^22.19.0",
+    "typescript": "^5.9.3",
+    "vitest": "^3.2.0",
+    "wrangler": "^4.165.0"
+  }
+}

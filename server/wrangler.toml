@@ -1,0 +1,24 @@
+# Kviz server: Worker + jedan Durable Object po sobi + D1 baza.
+name = "kviz-server"
+main = "src/index.ts"
+compatibility_date = "2026-11-01"
+account_id = "1787c5e5402c2c9bb99cfc08b5d52df7"
+
+# kviz.dartchat.trade/api/* i /ws/* idu na Worker; ostalo služi Pages.
+routes = [
+  { pattern = "kviz.dartchat.trade/api/*", zone_name = "dartchat.trade" },
+  { pattern = "kviz.dartchat.trade/ws/*", zone_name = "dartchat.trade" }
+]
+
+[[durable_objects.bindings]]
+name = "SOBA"
+class_name = "Soba"
+
+[[migrations]]
+tag = "v1"
+new_sqlite_classes = ["Soba"]
+
+[[d1_databases]]
+binding = "DB"
+database_name = "kviz"
+database_id = "65ecc81b-b948-4470-aaf7-529bebf0a11e"
