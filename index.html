@@ -812,11 +812,13 @@ function updateDynamic(){
     }catch(e){ if(st&&manual) st.textContent=" · Provera nije uspela, proverite internet"; }
   }
   if(m){
+    // Verziju iz Google Playa ažurira prodavnica, pa ona ne nudi preuzimanje APK-a.
+    if(/KvizPlay/.test(navigator.userAgent||"")){ el.innerHTML=`Android aplikacija v${esc(m[2])} · <a href="privacy.html">Privatnost</a>`; return; }
     el.innerHTML=`Android aplikacija v${esc(m[2])} · <button class="linkbtn" id="chk" type="button">Proveri ažuriranje</button><span id="chkst"></span>`;
     $("#chk").onclick=()=>check(true);
     check(false);
   }else{
-    el.innerHTML=`<a href="https://github.com/dartvejder/kviz/releases/latest/download/kviz.apk">Preuzmi Android aplikaciju (APK)</a>`;
+    el.innerHTML=`<a href="https://github.com/dartvejder/kviz/releases/latest/download/kviz.apk">Preuzmi Android aplikaciju (APK)</a> · <a href="privacy.html">Privatnost</a>`;
   }
 })();
 

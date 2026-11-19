@@ -17,6 +17,8 @@ import android.webkit.WebResourceRequest;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
+import android.widget.FrameLayout;
+import android.view.WindowInsets;
 
 /** Omotač oko web kviza: otvara sajt u WebView-u i šalje broj verzije aplikacije sajtu. */
 public class MainActivity extends Activity {
@@ -29,14 +31,27 @@ public class MainActivity extends Activity {
         getWindow().setStatusBarColor(Color.parseColor("#1a2f9e"));
         web = new WebView(this);
         web.setBackgroundColor(Color.parseColor("#0f1e6e"));
-        setContentView(web);
+        // Od Androida 15 aplikacija se crta i ispod statusne i donje trake, pa sajt odmičemo od njih.
+        FrameLayout root = new FrameLayout(this);
+        root.setBackgroundColor(Color.parseColor("#1a2f9e"));
+        root.addView(web);
+        if (Build.VERSION.SDK_INT >= 30) {
+            root.setOnApplyWindowInsetsListener((v, insets) -> {
+                android.graphics.Insets b = insets.getInsets(WindowInsets.Type.systemBars() | WindowInsets.Type.ime());
+                v.setPadding(b.left, b.top, b.right, b.bottom);
+                return WindowInsets.CONSUMED;
+            });
+        }
+        setContentView(root);
 
         WebSettings s = web.getSettings();
         s.setJavaScriptEnabled(true);
         s.setDomStorageEnabled(true);
         s.setMediaPlaybackRequiresUserGesture(true);
         // Sajt po ovome zna da je otvoren u aplikaciji i koju verziju ima.
-        s.setUserAgentString(s.getUserAgentString() + " KvizAndroid/" + BuildConfigInfo.code(this));
+        // Play verzija dodaje "KvizPlay", da sajt ne nudi preuzimanje APK-a (ažurira je prodavnica).
+        boolean play = getResources().getBoolean(R.bool.play_store);
+        s.setUserAgentString(s.getUserAgentString() + " KvizAndroid/" + BuildConfigInfo.code(this) + (play ? " KvizPlay" : ""));
 
         web.addJavascriptInterface(new Bridge(), "KvizApp");
 
