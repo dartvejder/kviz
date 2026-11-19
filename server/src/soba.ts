@@ -15,7 +15,7 @@ import type { Env } from "./index";
 const PAUZA_POSLE_OTKRIVANJA = 5_000;
 const ZIVOT_SOBE = 24 * 60 * 60 * 1000;
 const PROZIVKA = 60_000;
-const MAX_IGRACA = 12;
+const MAX_IGRACA = 30;
 
 interface Prikljucak {
   igracId: string;
