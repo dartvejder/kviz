@@ -45,15 +45,14 @@ jobs:
         working-directory: server
     env:
       CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-      CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
     steps:
       - name: Provera tokena
         id: tok
         run: |
-          if [ -n "$CLOUDFLARE_API_TOKEN" ] && [ -n "$CLOUDFLARE_ACCOUNT_ID" ]; then
+          if [ -n "$CLOUDFLARE_API_TOKEN" ]; then
             echo "present=true" >> "$GITHUB_OUTPUT"
           else
-            echo "Tajne CLOUDFLARE_API_TOKEN i CLOUDFLARE_ACCOUNT_ID nisu podešene, pa server nije postavljen."
+            echo "Tajna CLOUDFLARE_API_TOKEN nije podešena, pa server nije postavljen."
           fi
       - uses: actions/checkout@v4
         if: steps.tok.outputs.present == 'true'

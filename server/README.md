@@ -18,8 +18,8 @@ npm run pitanja && npx wrangler d1 execute kviz --local --file build/pitanja.sql
 npx wrangler dev
 ```
 
-Postavljanje radi `.github/workflows/server.yml` na main grani (tajne
-`CLOUDFLARE_API_TOKEN` i `CLOUDFLARE_ACCOUNT_ID`).
+Postavljanje radi `.github/workflows/server.yml` na main grani (tajna
+`CLOUDFLARE_API_TOKEN`).
 
 ## WebSocket poruke
 
