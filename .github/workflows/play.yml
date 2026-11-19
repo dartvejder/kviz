@@ -85,4 +85,4 @@ jobs:
         with:
           name: kviz-play-bundle
           path: kviz-play.aab
-          retention-days: 30
+          retention-days: 1
