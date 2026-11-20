@@ -7,7 +7,9 @@ account_id = "1787c5e5402c2c9bb99cfc08b5d52df7"
 # kviz.dartchat.trade/api/* i /ws/* idu na Worker; ostalo služi Pages.
 routes = [
   { pattern = "kviz.dartchat.trade/api/*", zone_name = "dartchat.trade" },
-  { pattern = "kviz.dartchat.trade/ws/*", zone_name = "dartchat.trade" }
+  { pattern = "kviz.dartchat.trade/ws/*", zone_name = "dartchat.trade" },
+  { pattern = "kviz.dartchat.trade/i/*", zone_name = "dartchat.trade" },
+  { pattern = "kviz.dartchat.trade/.well-known/*", zone_name = "dartchat.trade" }
 ]
 
 [[durable_objects.bindings]]

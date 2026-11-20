@@ -1,6 +1,7 @@
 // Kviz server: HTTP API (/api) i WebSocket za sobe (/ws/KOD).
 import { KOD_REGEX, noviKod } from "./igra";
 import { pocetakPerioda } from "./period";
+import { stranicaPozivnice, wellKnown } from "./pozivnica";
 
 export { Soba } from "./soba";
 
@@ -58,6 +59,8 @@ export default {
   async fetch(req: Request, env: Env): Promise<Response> {
     const url = new URL(req.url);
     const put = url.pathname;
+    const staticno = wellKnown(put) ?? (req.method === "GET" ? stranicaPozivnice(put) : null);
+    if (staticno) return staticno;
 
     if (req.method === "OPTIONS") {
       return new Response(null, {
