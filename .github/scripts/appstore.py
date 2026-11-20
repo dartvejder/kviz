@@ -126,17 +126,21 @@ def find_bundle_id(identifier=BUNDLE_ID, name=APP_NAME):
     return created["data"]["id"]
 
 
-def ensure_push(bundle_id):
+def ensure_capability(bundle_id, kind):
     capabilities = call("GET", f"/bundleIds/{bundle_id}/bundleIdCapabilities")
     kinds = {item["attributes"]["capabilityType"] for item in capabilities["data"]}
-    if "PUSH_NOTIFICATIONS" in kinds:
+    if kind in kinds:
         return
     call("POST", "/bundleIdCapabilities", {"data": {
         "type": "bundleIdCapabilities",
-        "attributes": {"capabilityType": "PUSH_NOTIFICATIONS"},
+        "attributes": {"capabilityType": kind},
         "relationships": {"bundleId": {"data": {"type": "bundleIds", "id": bundle_id}}},
     }})
-    log("Turned on push notifications for the app ID")
+    log(f"Turned on {kind} for the app ID")
+
+
+def ensure_push(bundle_id):
+    ensure_capability(bundle_id, "PUSH_NOTIFICATIONS")
 
 
 def make_profile(name, bundle_id, cert_id, out_dir):
@@ -171,6 +175,8 @@ def prepare_signing(p12_path, password, out_dir):
                          "Run the 'Create iPhone certificate' workflow again.")
     # Push (FCM) comes later; then call ensure_push(bundle_id) here.
     bundle_id = find_bundle_id()
+    # Invite links https://kviz.dartchat.trade/i/CODE open the app.
+    ensure_capability(bundle_id, "ASSOCIATED_DOMAINS")
     os.makedirs(out_dir, exist_ok=True)
     make_profile(PROFILE_NAME, bundle_id, cert_id, out_dir)
     with open(os.environ.get("GITHUB_OUTPUT", "/dev/stdout"), "a") as out:

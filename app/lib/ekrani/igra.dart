@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
 import '../api.dart';
+import '../pozivnica.dart';
 import '../tema.dart';
 
 /// Soba: čekaonica, pitanja, otkrivanje i kraj, sve iz stanja sa servera.
@@ -71,13 +72,12 @@ class _IgraEkranState extends State<IgraEkran> {
         title: Text(widget.solo ? 'Vežbaj sam' : 'Soba ${widget.kod}'),
         actions: [
           if (!widget.solo)
-            IconButton(
-              tooltip: 'Kopiraj pozivnicu',
-              icon: const Icon(Icons.share),
-              onPressed: () {
-                Clipboard.setData(ClipboardData(text: 'Igraj kviz sa mnom: https://kviz.dartchat.trade/i/${widget.kod}'));
-                ScaffoldMessenger.of(context).showSnackBar(const SnackBar(content: Text('Pozivnica je kopirana.')));
-              },
+            Builder(
+              builder: (c) => IconButton(
+                tooltip: 'Pozovi prijatelje',
+                icon: const Icon(Icons.share),
+                onPressed: () => podeliPozivnicu(c, widget.kod),
+              ),
             ),
         ],
       ),
@@ -108,7 +108,23 @@ class Cekaonica extends StatelessWidget {
           child: Column(children: [
             const Text('Kod sobe'),
             SelectableText(s['kod'], style: const TextStyle(fontSize: 36, fontWeight: FontWeight.w800, letterSpacing: 6)),
-            const Text('Pošalji pozivnicu (dugme gore desno). Soba čeka do 24 sata.', textAlign: TextAlign.center),
+            const SizedBox(height: 12),
+            Builder(
+              builder: (c) => FilledButton.icon(
+                onPressed: () => podeliPozivnicu(c, s['kod']),
+                icon: const Icon(Icons.share),
+                label: const Text('Pozovi prijatelje'),
+              ),
+            ),
+            TextButton.icon(
+              onPressed: () {
+                Clipboard.setData(ClipboardData(text: linkPozivnice(s['kod'])));
+                ScaffoldMessenger.of(context).showSnackBar(const SnackBar(content: Text('Link je kopiran.')));
+              },
+              icon: const Icon(Icons.link),
+              label: const Text('Kopiraj link'),
+            ),
+            const Text('Viber, WhatsApp, Signal, Dart Chat... Soba čeka do 24 sata.', textAlign: TextAlign.center),
           ]),
         ),
       ),

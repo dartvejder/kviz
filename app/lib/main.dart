@@ -1,9 +1,12 @@
+import 'dart:async';
+
 import 'package:flutter/material.dart';
 
 import 'api.dart';
 import 'ekrani/igra.dart';
 import 'ekrani/profil.dart';
 import 'ekrani/top.dart';
+import 'pozivnica.dart';
 import 'tema.dart';
 
 void main() => runApp(const KvizApp());
@@ -54,6 +57,24 @@ class PocetnaEkran extends StatefulWidget {
 
 class _PocetnaEkranState extends State<PocetnaEkran> {
   bool _radim = false;
+  StreamSubscription<String>? _linkovi;
+
+  @override
+  void initState() {
+    super.initState();
+    // Link pozivnice (Viber, WhatsApp...) vodi pravo u sobu.
+    _linkovi = kodoviIzLinkova().listen((kod) {
+      if (!mounted) return;
+      Navigator.of(context).popUntil((r) => r.isFirst);
+      Navigator.of(context).push(MaterialPageRoute(builder: (_) => IgraEkran(kod: kod)));
+    });
+  }
+
+  @override
+  void dispose() {
+    _linkovi?.cancel();
+    super.dispose();
+  }
 
   Future<void> _novaIgra({bool solo = false}) async {
     setState(() => _radim = true);
