@@ -17,6 +17,7 @@ import 'ekrani/statistika.dart';
 import 'ekrani/top.dart';
 import 'moje_sobe.dart';
 import 'pozivnica.dart';
+import 'push.dart';
 import 'obavestenja.dart';
 import 'tema.dart';
 import 'zvuk.dart';
@@ -26,6 +27,7 @@ Future<void> main() async {
   await Teme.i.ucitaj();
   await Zvuk.i.ucitaj();
   await Obavestenja.i.ucitaj();
+  await Push.i.ucitaj();
   runApp(const KvizApp());
 }
 
@@ -181,7 +183,9 @@ class _PocetnaEkranState extends State<PocetnaEkran> with WidgetsBindingObserver
           _niz = r['niz'] as Map<String, dynamic>?;
         });
       }
-      // Podsetnici: preskače se dan kad je izazov već odigran (i telefon traži dozvolu prvi put).
+      // Push ključ serveru (jutarnji rezultat izazova), pa podsetnici: preskače se dan kad je
+      // izazov već odigran (i telefon traži dozvolu prvi put).
+      await Push.i.uskladi();
       await Obavestenja.i.zakazi(odigranDan: ja != null ? r['dan'] as String? : null, traziDozvolu: true);
     } catch (_) {
       // Bez interneta: dugme ostaje "Dnevni izazov".

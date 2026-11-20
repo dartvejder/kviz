@@ -6,6 +6,7 @@ import '../obavestenja.dart';
 import 'profil.dart';
 import 'sacuvaj.dart';
 import '../prijava.dart';
+import '../push.dart';
 import '../tema.dart';
 import '../zvuk.dart';
 
@@ -132,11 +133,12 @@ class _PodesavanjaEkranState extends State<PodesavanjaEkran> {
           SwitchListTile(
             contentPadding: EdgeInsets.zero,
             title: const Text('Podseti me'),
-            subtitle: const Text('Ne javlja se kad je izazov taj dan već odigran.'),
+            subtitle: const Text('Ne javlja se kad je izazov taj dan već odigran. Jutro posle izazova stiže tvoj rezultat.'),
             value: Obavestenja.i.ukljuceno,
             onChanged: (v) async {
               final poruke = ScaffoldMessenger.of(context);
               final ok = await Obavestenja.i.postavi(v);
+              await Push.i.uskladi();
               if (!ok) {
                 poruke.showSnackBar(
                   const SnackBar(content: Text('Obaveštenja nisu dozvoljena. Uključi ih u podešavanjima telefona.')),

@@ -4,9 +4,13 @@ import 'package:shared_preferences/shared_preferences.dart';
 import 'package:timezone/data/latest.dart' as tzdata;
 import 'package:timezone/timezone.dart' as tz;
 
+import 'push.dart';
+
 /// Podsetnici za dnevni izazov (podrazumevano jedan, u 8:00 po beogradskom vremenu).
 /// Korisnik u Podešavanjima menja vremena i dodaje nove. Telefon ih sam zakazuje
-/// za narednih 7 dana; dan kad je izazov odigran se preskače.
+/// za narednih 7 dana; dan kad je izazov odigran se preskače. Kad radi push sa servera,
+/// jutro posle odigranog izazova stiže push sa rezultatom, pa se jutarnji podsetnici
+/// (do 8:30) tog dana preskaču da ne bude duplo.
 class Obavestenja {
   Obavestenja._();
   static final Obavestenja i = Obavestenja._();
@@ -92,6 +96,7 @@ class Obavestenja {
           final kad = tz.TZDateTime(tz.local, sad.year, sad.month, sad.day + d, int.parse(hm[0]), int.parse(hm[1]));
           if (!kad.isAfter(sad)) continue;
           if (_dan(kad) == _odigranDan) continue;
+          if (_jutroPosle(kad) && Push.i.aktivan) continue;
           await _plugin.zonedSchedule(
             id: 900 + d * 10 + k,
             title: 'Dnevni izazov je spreman',
@@ -109,6 +114,31 @@ class Obavestenja {
           );
         }
       }
+    } catch (e) {
+      debugPrint('Obaveštenja: $e');
+    }
+  }
+
+  /// Jutro (do 8:30) posle dana kad je izazov odigran: tada stiže push sa rezultatom.
+  bool _jutroPosle(tz.TZDateTime kad) {
+    if (_odigranDan == null || kad.hour * 60 + kad.minute > 8 * 60 + 30) return false;
+    final juce = tz.TZDateTime(tz.local, kad.year, kad.month, kad.day - 1);
+    return _dan(juce) == _odigranDan;
+  }
+
+  /// Odmah prikazuje obaveštenje (push koji stigne dok je aplikacija otvorena).
+  Future<void> prikazi(String naslov, String tekst) async {
+    if (!_spreman) return;
+    try {
+      await _plugin.show(
+        id: 899,
+        title: naslov,
+        body: tekst,
+        notificationDetails: const NotificationDetails(
+          android: AndroidNotificationDetails('izazov', 'Dnevni izazov', channelDescription: 'Jutarnje obaveštenje za dnevni izazov'),
+          iOS: DarwinNotificationDetails(),
+        ),
+      );
     } catch (e) {
       debugPrint('Obaveštenja: $e');
     }

@@ -15,10 +15,11 @@ import {
 import { stranicaPozivnice, wellKnown } from "./pozivnica";
 import { PrijavaGreska, proveriIdToken, type PrijavaEnv, type Provajder } from "./prijava";
 import { spisakTema, tema } from "./teme";
+import { ispravanPushToken, jutarnjiPush, PLATFORME, satUBeogradu, type PushEnv } from "./push";
 
 export { Soba } from "./soba";
 
-export interface Env extends DartChatEnv, PrijavaEnv {
+export interface Env extends DartChatEnv, PrijavaEnv, PushEnv {
   DB: D1Database;
   SOBA: DurableObjectNamespace;
   /** Najmanji build aplikacije koji sme da igra (Cloudflare promenljive, menjaju se bez postavljanja). */
@@ -180,6 +181,7 @@ export default {
           env.DB.prepare("DELETE FROM veze_naloga WHERE igrac_id = ?").bind(ja.id),
           env.DB.prepare("DELETE FROM tokeni WHERE igrac_id = ?").bind(ja.id),
           env.DB.prepare("DELETE FROM pozivi WHERE kome = ? OR od = ?").bind(ja.id, ja.id),
+          env.DB.prepare("DELETE FROM push_kljucevi WHERE igrac_id = ?").bind(ja.id),
           env.DB.prepare("DELETE FROM igraci WHERE id = ?").bind(ja.id),
         ]);
         return json({ obrisan: true });
@@ -241,6 +243,30 @@ export default {
         ),
       ]);
       return json({ stanje, ...nalog }, stanje === "nov" ? 201 : 200);
+    }
+
+    // Push ključ telefona (FCM): POST ga prijavljuje, DELETE odjavljuje (isključen push ili odjava).
+    if (put === "/api/push" && (req.method === "POST" || req.method === "DELETE")) {
+      const telo = (await req.json().catch(() => ({}))) as { token?: unknown; platforma?: unknown };
+      const token = ispravanPushToken(telo.token);
+      if (!token) return greska("Neispravan push ključ.", 400);
+      if (req.method === "DELETE") {
+        await env.DB.prepare("DELETE FROM push_kljucevi WHERE token = ?").bind(token).run();
+        return json({ ok: true });
+      }
+      const ja = await prijavljen(req, env);
+      if (!ja) return greska("Nisi prijavljen.", 401);
+      const platforma = PLATFORME.includes(telo.platforma as (typeof PLATFORME)[number]) ? (telo.platforma as string) : "android";
+      const sad = Date.now();
+      // Upis samo kad je ključ nov, prešao na drugi nalog, ili nije osvežen nedelju dana.
+      await env.DB.prepare(
+        `INSERT INTO push_kljucevi (token, igrac_id, platforma, azuriran) VALUES (?, ?, ?, ?)
+         ON CONFLICT(token) DO UPDATE SET igrac_id = excluded.igrac_id, platforma = excluded.platforma, azuriran = excluded.azuriran
+         WHERE push_kljucevi.igrac_id != excluded.igrac_id OR push_kljucevi.azuriran < ?`,
+      )
+        .bind(token, ja.id, platforma, sad, sad - 7 * 24 * 60 * 60 * 1000)
+        .run();
+      return json({ ok: true });
     }
 
     // Moja statistika: ukupno i po oblastima.
@@ -564,5 +590,17 @@ export default {
     }
 
     return greska("Nije pronađeno.", 404);
+  },
+
+  // Cron u 6:00 i 7:00 UTC: jedan od ta dva je 8:00 u Beogradu (zimsko i letnje vreme).
+  async scheduled(_ctrl: ScheduledController, env: Env, ctx: ExecutionContext): Promise<void> {
+    if (satUBeogradu() !== 8) return;
+    ctx.waitUntil(
+      (async () => {
+        await jutarnjiPush(env);
+        // Ključevi telefona koji se dva meseca nisu javili.
+        await env.DB.prepare("DELETE FROM push_kljucevi WHERE azuriran < ?").bind(Date.now() - 60 * 24 * 60 * 60 * 1000).run();
+      })(),
+    );
   },
 } satisfies ExportedHandler<Env>;

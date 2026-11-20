@@ -27,6 +27,10 @@ binding = "DB"
 database_name = "kviz"
 database_id = "65ecc81b-b948-4470-aaf7-529bebf0a11e"
 
+# Jutarnji push sa rezultatom dnevnog izazova (8:00 u Beogradu, vidi scheduled u src/index.ts).
+[triggers]
+crons = ["0 6,7 * * *"]
+
 [vars]
 DARTCHAT_URL = "https://chat.dartchat.trade"
 # Prijava preko Apple naloga: bundle ID aplikacije. Google: client ID-jevi (web, iOS), zarezom; prazno = isključeno.

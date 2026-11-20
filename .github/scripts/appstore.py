@@ -173,8 +173,9 @@ def prepare_signing(p12_path, password, out_dir):
     if not cert_id:
         raise SystemExit("Apple no longer knows the certificate in the secrets. "
                          "Run the 'Create iPhone certificate' workflow again.")
-    # Push (FCM) comes later; then call ensure_push(bundle_id) here.
     bundle_id = find_bundle_id()
+    # Morning push with the daily challenge result (FCM via APNs).
+    ensure_push(bundle_id)
     # Invite links https://kviz.dartchat.trade/i/CODE open the app.
     ensure_capability(bundle_id, "ASSOCIATED_DOMAINS")
     # Prijava preko Apple naloga ("Sačuvaj napredak").
