@@ -1,0 +1,96 @@
+{
+ "id": "studio",
+ "naziv": "Studio",
+ "opis": "Večernji TV kviz: reflektori i zlatna dugmad.",
+ "svetla": false,
+ "font": {
+  "naslov": "Montserrat",
+  "tekst": "Nunito Sans",
+  "naslovTezina": 800
+ },
+ "logo": {
+  "velicina": 56,
+  "senke": [
+   {
+    "x": 0,
+    "y": 3,
+    "blur": 0,
+    "boja": "#b5741b"
+   },
+   {
+    "x": 0,
+    "y": 0,
+    "blur": 28,
+    "boja": "#ffd65a73"
+   }
+  ]
+ },
+ "boje": {
+  "tekst": "#ffffff",
+  "povrsina": "#ffffff17",
+  "povrsina2": "#ffffff12",
+  "primarna": "#ffc83d",
+  "naPrimarnoj": "#1a1340",
+  "tacno": "#21b26b",
+  "netacno": "#e2463f",
+  "logo": "#ffd65a",
+  "slovoPozadina": "#ffc83d",
+  "slovoTekst": "#1a1340",
+  "tajmerPozadina": "#0d1557",
+  "ivica": "#ffffff24"
+ },
+ "pozadina": {
+  "boja": "#070b36",
+  "slojevi": [
+   {
+    "tip": "radial",
+    "centar": [
+     0,
+     -1.15
+    ],
+    "radijus": 1.6,
+    "boje": [
+     "#3e56d6",
+     "#1a2780",
+     "#0a1150",
+     "#070b36"
+    ],
+    "stopovi": [
+     0,
+     0.38,
+     0.7,
+     1
+    ]
+   }
+  ]
+ },
+ "dugme": {
+  "zaobljenje": 14,
+  "ivica": 1,
+  "senkaPrimarna": [
+   {
+    "x": 0,
+    "y": 6,
+    "blur": 22,
+    "boja": "#ffc83d59"
+   }
+  ]
+ },
+ "traka": [
+  "#ffc83d",
+  "#ff8a3d"
+ ],
+ "odgovori": "lista",
+ "ukrasi": [
+  {
+   "tip": "reflektori",
+   "boja": "#ffecaa3d"
+  }
+ ],
+ "uzorak": [
+  "#0a1150",
+  "#3e56d6",
+  "#ffc83d"
+ ],
+ "verzija": "728c660fbd6a"
+}

@@ -8,12 +8,14 @@ String linkPozivnice(String kod) => 'https://kviz.dartchat.trade/i/$kod';
 /// Sistemski "Podeli" meni: Viber, WhatsApp, Signal, Dart Chat i sve ostalo.
 Future<void> podeliPozivnicu(BuildContext context, String kod) {
   final box = context.findRenderObject() as RenderBox?;
-  return SharePlus.instance.share(ShareParams(
-    text: 'Igraj Kviz opšte kulture sa mnom! Kod sobe: $kod\n${linkPozivnice(kod)}',
-    subject: 'Poziv u kviz',
-    // iPad traži mesto odakle meni iskače.
-    sharePositionOrigin: box == null ? null : box.localToGlobal(Offset.zero) & box.size,
-  ));
+  return SharePlus.instance.share(
+    ShareParams(
+      text: 'Igraj Kviz opšte kulture sa mnom! Kod sobe: $kod\n${linkPozivnice(kod)}',
+      subject: 'Poziv u kviz',
+      // iPad traži mesto odakle meni iskače.
+      sharePositionOrigin: box == null ? null : box.localToGlobal(Offset.zero) & box.size,
+    ),
+  );
 }
 
 /// Kod sobe iz linka https://kviz.dartchat.trade/i/KOD, ili null.

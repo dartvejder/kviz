@@ -2,8 +2,13 @@
 // WebSocket hibernacija: stanje je uvek u storage-u, ne samo u memoriji.
 import { DurableObject } from "cloudflare:workers";
 import {
+  IZAZOV_OPCIJE,
+  REAKCIJE,
   bodujPitanje,
   ispravneOpcije,
+  polaPola,
+  primeniDupli,
+  seme,
   napraviPitanje,
   novoStanje,
   svePrimljeno,
@@ -12,7 +17,8 @@ import {
 } from "./igra";
 import type { Env } from "./index";
 
-const PAUZA_POSLE_OTKRIVANJA = 5_000;
+/** Pauza posle otkrivanja odgovora; starije sobe nemaju opciju pa važi 5 s. */
+const pauzaMs = (s: { opcije: { pauza?: number } }) => (s.opcije.pauza ?? 5) * 1000;
 const ZIVOT_SOBE = 24 * 60 * 60 * 1000;
 const PROZIVKA = 60_000;
 const MAX_IGRACA = 30;
@@ -23,6 +29,8 @@ interface Prikljucak {
 
 export class Soba extends DurableObject<Env> {
   private stanje: Stanje | null = null;
+  /** Poslednja reakcija po igraču (u memoriji), da se ne zatrpa soba. */
+  private reakcije = new Map<string, number>();
 
   private async ucitaj(): Promise<Stanje | null> {
     if (!this.stanje) this.stanje = (await this.ctx.storage.get<Stanje>("s")) ?? null;
@@ -38,7 +46,7 @@ export class Soba extends DurableObject<Env> {
   private async zakaziAlarm(s: Stanje) {
     const rokovi = [s.napravljena + ZIVOT_SOBE];
     if (s.faza === "pitanje") rokovi.push(s.krajPitanja);
-    if (s.faza === "otkriveno") rokovi.push(s.krajPitanja + PAUZA_POSLE_OTKRIVANJA);
+    if (s.faza === "otkriveno") rokovi.push(s.krajPitanja + pauzaMs(s));
     if (s.prozivkaDo) rokovi.push(s.prozivkaDo);
     await this.ctx.storage.setAlarm(Math.min(...rokovi));
   }
@@ -46,9 +54,13 @@ export class Soba extends DurableObject<Env> {
   async fetch(req: Request): Promise<Response> {
     const url = new URL(req.url);
     if (url.pathname === "/init" && req.method === "POST") {
-      const { kod, moderatorId } = (await req.json()) as { kod: string; moderatorId: string };
+      const { kod, moderatorId, izazov } = (await req.json()) as { kod: string; moderatorId: string; izazov?: string };
       if (await this.ucitaj()) return new Response("postoji", { status: 409 });
       const s = novoStanje(kod, moderatorId, Date.now());
+      if (izazov) {
+        s.izazov = izazov;
+        s.opcije = { ...IZAZOV_OPCIJE };
+      }
       const oblasti = await this.env.DB.prepare("SELECT DISTINCT oblast FROM pitanja ORDER BY oblast").all<{ oblast: string }>();
       await this.ctx.storage.put("oblasti", oblasti.results.map((r) => r.oblast));
       await this.sacuvaj(s);
@@ -63,6 +75,7 @@ export class Soba extends DurableObject<Env> {
       const avatar = decodeURIComponent(req.headers.get("X-Igrac-Avatar") ?? "🦊");
       let igrac = s.igraci.find((i) => i.id === id);
       if (!igrac) {
+        if (s.izazov && id !== s.moderatorId) return new Response("izazov se igra sam", { status: 403 });
         if (s.igraci.length >= MAX_IGRACA) return new Response("soba je puna", { status: 403 });
         igrac = { id, ime, avatar, spreman: false, uIgri: false, poeni: 0, tacnih: 0 };
         s.igraci.push(igrac);
@@ -101,7 +114,7 @@ export class Soba extends DurableObject<Env> {
         igrac.spreman = Boolean(m.da);
         break;
       case "opcije": {
-        if (!jeModerator || s.faza !== "cekaonica") return;
+        if (!jeModerator || s.faza !== "cekaonica" || s.izazov) return;
         const sve = (await this.ctx.storage.get<string[]>("oblasti")) ?? [];
         s.opcije = ispravneOpcije(m as never, sve);
         break;
@@ -113,6 +126,8 @@ export class Soba extends DurableObject<Env> {
         break;
       case "pokreni":
         if (!jeModerator || (s.faza !== "cekaonica" && s.faza !== "kraj")) return;
+        // Dnevni izazov se igra jednom.
+        if (s.izazov && s.pitanja.length) return;
         if (!(await this.pokreni(s))) {
           ws.send(JSON.stringify({ t: "greska", poruka: "Nema dovoljno pitanja za izabrane oblasti." }));
           return;
@@ -129,8 +144,38 @@ export class Soba extends DurableObject<Env> {
         if (svePrimljeno(s)) this.otkrij(s);
         break;
       }
+      case "dzoker": {
+        if (s.faza !== "pitanje" || !igrac.uIgri || !s.opcije.dzokeri || igracId in s.odgovori) return;
+        if (m.pitanje !== s.trenutno) return;
+        igrac.dzokeri ??= {};
+        if (m.vrsta === "pola" && !igrac.dzokeri.pola) {
+          igrac.dzokeri.pola = true;
+          // Koji odgovori nestaju zna samo taj igrač.
+          ws.send(JSON.stringify({ t: "pola", pitanje: s.trenutno, sakrij: polaPola(s.pitanja[s.trenutno].tacan) }));
+        } else if (m.vrsta === "dupli" && !igrac.dzokeri.dupli) {
+          igrac.dzokeri.dupli = true;
+          s.dupli = { ...s.dupli, [igracId]: true };
+        } else return;
+        break;
+      }
+      case "reakcija": {
+        const e = String(m.e);
+        if (!REAKCIJE.includes(e)) return;
+        const sad = Date.now();
+        if (sad - (this.reakcije.get(igracId) ?? 0) < 800) return;
+        this.reakcije.set(igracId, sad);
+        const poruka = JSON.stringify({ t: "reakcija", id: igracId, e });
+        for (const w of this.ctx.getWebSockets()) {
+          try {
+            w.send(poruka);
+          } catch {
+            // zatvoren priključak
+          }
+        }
+        return;
+      }
       case "revans":
-        if (!jeModerator || s.faza !== "kraj") return;
+        if (!jeModerator || s.faza !== "kraj" || s.izazov) return;
         s.faza = "cekaonica";
         for (const i of s.igraci) {
           i.spreman = false;
@@ -166,7 +211,7 @@ export class Soba extends DurableObject<Env> {
     }
     if (s.prozivkaDo && sad >= s.prozivkaDo) s.prozivkaDo = 0;
     if (s.faza === "pitanje" && sad >= s.krajPitanja) this.otkrij(s);
-    else if (s.faza === "otkriveno" && sad >= s.krajPitanja + PAUZA_POSLE_OTKRIVANJA) await this.sledece(s);
+    else if (s.faza === "otkriveno" && sad >= s.krajPitanja + pauzaMs(s)) await this.sledece(s);
     await this.sacuvaj(s);
     this.posaljiSvima(s);
   }
@@ -175,19 +220,37 @@ export class Soba extends DurableObject<Env> {
     const igraju = s.igraci.filter((i) => i.spreman || i.id === s.moderatorId);
     if (!igraju.length) return false;
     const { brojPitanja, oblasti } = s.opcije;
-    const pitanja = await this.izaberiPitanja(igraju.map((i) => i.id), oblasti, brojPitanja);
+    const pitanja = s.izazov
+      ? await this.pitanjaIzazova(s.izazov, brojPitanja)
+      : await this.izaberiPitanja(igraju.map((i) => i.id), oblasti, brojPitanja);
     if (pitanja.length < Math.min(5, brojPitanja)) return false;
     for (const i of s.igraci) {
       i.uIgri = igraju.includes(i);
       i.poeni = 0;
       i.tacnih = 0;
+      i.dzokeri = {};
+      i.poOblasti = {};
     }
-    s.pitanja = pitanja.map((r) => napraviPitanje(r));
+    // U izazovu su i redosled odgovora isti za sve.
+    const rnd = s.izazov ? seme(`odgovori-${s.izazov}`) : Math.random;
+    s.pitanja = pitanja.map((r) => napraviPitanje(r, rnd));
     s.trenutno = -1;
     s.pocetakIgre = Date.now();
     s.prozivkaDo = 0;
     await this.sledece(s);
     return true;
+  }
+
+  /** Ista pitanja za sve tog dana: redosled po otisku id-a i dana. */
+  private async pitanjaIzazova(dan: string, broj: number) {
+    const k = Math.floor(seme(`pitanja-${dan}`)() * 1_000_000) + 1;
+    const r = await this.env.DB.prepare(
+      `SELECT id, oblast, tekst, tacan, netacan1, netacan2, netacan3 FROM pitanja
+       ORDER BY ((id * 2654435761 + ?) % 1000003), id LIMIT ?`,
+    )
+      .bind(k, broj)
+      .all<{ id: number; oblast: string; tekst: string; tacan: string; netacan1: string; netacan2: string; netacan3: string }>();
+    return r.results;
   }
 
   private async izaberiPitanja(igraci: string[], oblasti: string[], broj: number) {
@@ -217,6 +280,7 @@ export class Soba extends DurableObject<Env> {
     s.trenutno++;
     s.odgovori = {};
     s.poslednjiPoeni = {};
+    s.dupli = {};
     if (s.trenutno >= s.pitanja.length) {
       await this.zavrsi(s);
       return;
@@ -228,12 +292,16 @@ export class Soba extends DurableObject<Env> {
 
   private otkrij(s: Stanje) {
     const p = s.pitanja[s.trenutno];
-    const delta = bodujPitanje(p.tacan, s.odgovori);
+    const delta = primeniDupli(bodujPitanje(p.tacan, s.odgovori, !s.izazov), s.dupli);
     for (const i of s.igraci) {
       if (!i.uIgri) continue;
       const d = delta[i.id] ?? 0;
       i.poeni += d;
-      if (s.odgovori[i.id]?.izbor === p.tacan) i.tacnih++;
+      const tacno = s.odgovori[i.id]?.izbor === p.tacan;
+      if (tacno) i.tacnih++;
+      i.poOblasti ??= {};
+      const [t, u] = i.poOblasti[p.oblast] ?? [0, 0];
+      i.poOblasti[p.oblast] = [t + (tacno ? 1 : 0), u + 1];
     }
     s.poslednjiPoeni = delta;
     s.faza = "otkriveno";
@@ -263,6 +331,25 @@ export class Soba extends DurableObject<Env> {
         ),
       ),
       ...igraju.flatMap((i) =>
+        Object.entries(i.poOblasti ?? {}).map(([oblast, [t, u]]) =>
+          this.env.DB.prepare(
+            `INSERT INTO statistika (igrac_id, oblast, tacnih, ukupno) VALUES (?, ?, ?, ?)
+             ON CONFLICT (igrac_id, oblast) DO UPDATE SET tacnih = tacnih + excluded.tacnih, ukupno = ukupno + excluded.ukupno`,
+          ).bind(i.id, oblast, t, u),
+        ),
+      ),
+      ...(s.izazov
+        ? igraju.map((i) =>
+            this.env.DB.prepare("UPDATE izazov SET poeni = ?, tacnih = ?, kraj = ? WHERE dan = ? AND igrac_id = ?").bind(
+              i.poeni,
+              i.tacnih,
+              kraj,
+              s.izazov,
+              i.id,
+            ),
+          )
+        : []),
+      ...igraju.flatMap((i) =>
         s.pitanja.map((p) =>
           this.env.DB.prepare("INSERT OR IGNORE INTO odigrano (igrac_id, pitanje_id) VALUES (?, ?)").bind(i.id, p.id),
         ),
@@ -285,6 +372,8 @@ export class Soba extends DurableObject<Env> {
       faza: s.faza,
       moderatorId: s.moderatorId,
       opcije: s.opcije,
+      izazov: s.izazov ?? null,
+      dupli: Object.keys(s.dupli ?? {}),
       prozivkaDo: s.prozivkaDo,
       igraci: s.igraci.map((i: Igrac) => ({
         ...i,

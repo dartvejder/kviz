@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 
 import '../api.dart';
 import '../main.dart';
+import '../tema.dart';
+import 'statistika.dart';
 
 /// Ime i avatar; prvi put pravi nalog. Ovde je i "Obriši nalog".
 class ProfilEkran extends StatefulWidget {
@@ -49,16 +51,16 @@ class _ProfilEkranState extends State<ProfilEkran> {
     if (da != true) return;
     await Api.i.obrisiNalog();
     if (!mounted) return;
-    Navigator.of(context).pushAndRemoveUntil(
-      MaterialPageRoute(builder: (_) => const ProfilEkran(prvi: true)),
-      (_) => false,
-    );
+    Navigator.of(context)
+        .pushAndRemoveUntil(MaterialPageRoute(builder: (_) => const ProfilEkran(prvi: true)), (_) => false);
   }
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(title: Text(widget.prvi ? 'Dobro došao' : 'Profil'), automaticallyImplyLeading: !widget.prvi),
+    return KvizEkran(
+      tema: temaOd(context),
+      naslov: widget.prvi ? 'Dobro došao' : 'Profil',
+      nazad: !widget.prvi,
       body: Center(
         child: ConstrainedBox(
           constraints: const BoxConstraints(maxWidth: 480),
@@ -90,7 +92,14 @@ class _ProfilEkranState extends State<ProfilEkran> {
               const SizedBox(height: 24),
               FilledButton(onPressed: _radim ? null : _sacuvaj, child: const Text('Sačuvaj')),
               if (!widget.prvi) ...[
-                const SizedBox(height: 48),
+                const SizedBox(height: 12),
+                OutlinedButton.icon(
+                  onPressed: () =>
+                      Navigator.of(context).push(MaterialPageRoute(builder: (_) => const StatistikaEkran())),
+                  icon: const Icon(Icons.bar_chart),
+                  label: const Text('Moja statistika'),
+                ),
+                const SizedBox(height: 36),
                 TextButton.icon(
                   onPressed: _obrisi,
                   icon: const Icon(Icons.delete_outline),
