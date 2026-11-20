@@ -6,6 +6,12 @@ import 'api.dart';
 import 'azuriranje.dart';
 import 'ekrani/igra.dart';
 import 'ekrani/podesavanja.dart';
+import 'ekrani/prijatelji.dart';
+import 'ekrani/sacuvaj.dart';
+import 'prijava.dart';
+
+import 'package:shared_preferences/shared_preferences.dart';
+
 import 'ekrani/profil.dart';
 import 'ekrani/statistika.dart';
 import 'ekrani/top.dart';
@@ -98,18 +104,83 @@ class PocetnaEkran extends StatefulWidget {
   State<PocetnaEkran> createState() => _PocetnaEkranState();
 }
 
-class _PocetnaEkranState extends State<PocetnaEkran> {
+class _PocetnaEkranState extends State<PocetnaEkran> with WidgetsBindingObserver {
   bool _radim = false;
+
+  /// Pozivi prijatelja u sobe (osvežava se na 30 s i kad se aplikacija vrati u prvi plan).
+  List<Map<String, dynamic>> _pozivi = [];
+  Timer? _osvezi;
+
+  /// Kartica "Sačuvaj napredak": dok nalog nije sačuvan, a korisnik je nije sklonio u poslednjih 7 dana.
+  bool _ponudiPrijavu = false;
+
+  Future<void> _proveriPrijavu() async {
+    try {
+      await Api.i.osveziNalog().timeout(const Duration(seconds: 6));
+    } catch (_) {}
+    final p = await SharedPreferences.getInstance();
+    final sklonjeno = DateTime.fromMillisecondsSinceEpoch(p.getInt('sacuvaj_sklonjeno') ?? 0);
+    final ponudi =
+        Api.i.nalog!.prijave.isEmpty &&
+        DateTime.now().difference(sklonjeno) > const Duration(days: 7) &&
+        await Prijava.dostupna();
+    if (mounted) setState(() => _ponudiPrijavu = ponudi);
+  }
+
+  Future<void> _skloniPrijavu() async {
+    setState(() => _ponudiPrijavu = false);
+    final p = await SharedPreferences.getInstance();
+    await p.setInt('sacuvaj_sklonjeno', DateTime.now().millisecondsSinceEpoch);
+  }
+
+  Future<void> _ucitajPozive() async {
+    try {
+      final p = await Api.i.pozivi().timeout(const Duration(seconds: 6));
+      if (mounted) setState(() => _pozivi = p);
+    } catch (_) {
+      // Bez interneta: ostaje prethodni spisak.
+    }
+  }
+
+  @override
+  void didChangeAppLifecycleState(AppLifecycleState stanje) {
+    if (stanje == AppLifecycleState.resumed) {
+      _ucitajPozive();
+      _ucitajSobe();
+    }
+  }
+
+  Future<void> _prihvatiPoziv(Map<String, dynamic> p) async {
+    final kod = p['kod'] as String;
+    setState(() => _pozivi = _pozivi.where((x) => x['kod'] != kod).toList());
+    Api.i.skloniPoziv(kod).ignore();
+    await _uSobu(kod);
+  }
+
+  void _odbijPoziv(Map<String, dynamic> p) {
+    final kod = p['kod'] as String;
+    setState(() => _pozivi = _pozivi.where((x) => x['kod'] != kod).toList());
+    Api.i.skloniPoziv(kod).ignore();
+  }
+
   StreamSubscription<Pozivnica>? _linkovi;
 
   /// Moj današnji izazov: null dok se ne učita ili ako nije igran.
   Map<String, dynamic>? _izazov;
 
+  /// Niz dana dnevnog izazova: {niz, danas}.
+  Map<String, dynamic>? _niz;
+
   Future<void> _ucitajIzazov() async {
     try {
       final r = await Api.i.izazovTop();
       final ja = r['ja'] as Map<String, dynamic>?;
-      if (mounted) setState(() => _izazov = ja);
+      if (mounted) {
+        setState(() {
+          _izazov = ja;
+          _niz = r['niz'] as Map<String, dynamic>?;
+        });
+      }
       // Podsetnici: preskače se dan kad je izazov već odigran (i telefon traži dozvolu prvi put).
       await Obavestenja.i.zakazi(odigranDan: ja != null ? r['dan'] as String? : null, traziDozvolu: true);
     } catch (_) {
@@ -179,9 +250,11 @@ class _PocetnaEkranState extends State<PocetnaEkran> {
 
   String get _izazovTekst {
     final z = _izazov;
-    if (z == null) return 'Dnevni izazov';
+    final niz = _niz?['niz'] as int? ?? 0;
+    if (z == null) return niz > 0 ? 'Dnevni izazov · 🔥 ${dana(niz)} zaredom' : 'Dnevni izazov';
     if (z['zavrsen'] != true) return 'Izazov: prekinut danas';
-    return 'Izazov: ${z['poeni']} poena${z['mesto'] != null ? ' · ${z['mesto']}. mesto' : ''}';
+    return 'Izazov: ${z['poeni']} poena${z['mesto'] != null ? ' · ${z['mesto']}. mesto' : ''}'
+        '${niz > 1 ? ' · 🔥 $niz' : ''}';
   }
 
   @override
@@ -189,6 +262,10 @@ class _PocetnaEkranState extends State<PocetnaEkran> {
     super.initState();
     _ucitajIzazov();
     _ucitajSobe();
+    _ucitajPozive();
+    _proveriPrijavu();
+    WidgetsBinding.instance.addObserver(this);
+    _osvezi = Timer.periodic(const Duration(seconds: 30), (_) => _ucitajPozive());
     // Link pozivnice (Viber, WhatsApp...) vodi pravo u sobu.
     _linkovi = pozivniceIzLinkova().listen(_otvoriPozivnicu);
   }
@@ -214,6 +291,8 @@ class _PocetnaEkranState extends State<PocetnaEkran> {
   @override
   void dispose() {
     _linkovi?.cancel();
+    _osvezi?.cancel();
+    WidgetsBinding.instance.removeObserver(this);
     super.dispose();
   }
 
@@ -224,7 +303,7 @@ class _PocetnaEkranState extends State<PocetnaEkran> {
       if (!mounted) return;
       await Navigator.of(context).push(
         MaterialPageRoute(
-          builder: (_) => IgraEkran(kod: kod, solo: solo),
+          builder: (_) => IgraEkran(kod: kod, solo: solo, nova: !solo),
         ),
       );
       await _ucitajSobe();
@@ -311,6 +390,39 @@ class _PocetnaEkranState extends State<PocetnaEkran> {
                     ),
                   ),
                   const SizedBox(height: 24),
+                  if (_ponudiPrijavu)
+                    SacuvajKartica(
+                      skloni: _skloniPrijavu,
+                      otvori: () async {
+                        await Navigator.of(context).push(MaterialPageRoute(builder: (_) => const SacuvajEkran()));
+                        await _proveriPrijavu();
+                      },
+                    ),
+                  if (_pozivi.isNotEmpty) ...[
+                    Padding(
+                      padding: const EdgeInsets.only(left: 4, bottom: 8),
+                      child: Text('Pozivi', style: t.naslov(velicina: 15, tezina: FontWeight.w700)),
+                    ),
+                    for (final p in _pozivi)
+                      Row(
+                        children: [
+                          Expanded(
+                            child: VelikoDugme(
+                              ikona: Icons.mail,
+                              tekst: '${p['avatar']} ${p['ime']} te zove · ${p['kod']}',
+                              glavno: true,
+                              onTap: _radim ? null : () => _prihvatiPoziv(p),
+                            ),
+                          ),
+                          IconButton(
+                            tooltip: 'Skloni poziv',
+                            icon: const Icon(Icons.close),
+                            onPressed: () => _odbijPoziv(p),
+                          ),
+                        ],
+                      ),
+                    const SizedBox(height: 12),
+                  ],
                   if (_sobe.isNotEmpty) ...[
                     Padding(
                       padding: const EdgeInsets.only(left: 4, bottom: 8),
@@ -341,6 +453,11 @@ class _PocetnaEkranState extends State<PocetnaEkran> {
                     ikona: Icons.person,
                     tekst: 'Vežbaj sam',
                     onTap: _radim ? null : () => _novaIgra(solo: true),
+                  ),
+                  VelikoDugme(
+                    ikona: Icons.group,
+                    tekst: 'Prijatelji',
+                    onTap: () => Navigator.of(context).push(MaterialPageRoute(builder: (_) => const PrijateljiEkran())),
                   ),
                   VelikoDugme(
                     ikona: Icons.emoji_events,
@@ -374,3 +491,6 @@ class _PocetnaEkranState extends State<PocetnaEkran> {
     );
   }
 }
+
+/// "1 dan", "2 dana", "5 dana", "21 dan".
+String dana(int n) => n % 10 == 1 && n % 100 != 11 ? '$n dan' : '$n dana';

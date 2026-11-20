@@ -1,7 +1,7 @@
 // Kviz server: HTTP API (/api) i WebSocket za sobe (/ws/KOD).
-import { KOD_REGEX, noviKod } from "./igra";
+import { KOD_REGEX, RAZLOZI_PRIJAVE, ZNACKE, noviKod } from "./igra";
 import { minVerzija } from "./verzija";
-import { danas, pocetakPerioda } from "./period";
+import { danas, nizDana, pocetakPerioda } from "./period";
 import {
   DartChatGreska,
   istekla,
@@ -13,11 +13,12 @@ import {
   type DartChatKorisnik,
 } from "./dartchat";
 import { stranicaPozivnice, wellKnown } from "./pozivnica";
+import { PrijavaGreska, proveriIdToken, type PrijavaEnv, type Provajder } from "./prijava";
 import { spisakTema, tema } from "./teme";
 
 export { Soba } from "./soba";
 
-export interface Env extends DartChatEnv {
+export interface Env extends DartChatEnv, PrijavaEnv {
   DB: D1Database;
   SOBA: DurableObjectNamespace;
   /** Najmanji build aplikacije koji sme da igra (Cloudflare promenljive, menjaju se bez postavljanja). */
@@ -68,8 +69,36 @@ async function prijavljen(req: Request, env: Env): Promise<IgracRed | null> {
   const red = await env.DB.prepare("SELECT id, ime, avatar, token_hash FROM igraci WHERE id = ?")
     .bind(id)
     .first<IgracRed & { token_hash: string }>();
-  if (!red || red.token_hash !== (await sha256(token))) return null;
+  if (!red) return null;
+  const hash = await sha256(token);
+  if (red.token_hash !== hash) {
+    // Drugi uređaj istog igrača (posle prijave preko Google/Apple naloga) ima svoj token.
+    const drugi = await env.DB.prepare("SELECT 1 AS da FROM tokeni WHERE hash = ? AND igrac_id = ?").bind(hash, id).first();
+    if (!drugi) return null;
+  }
   return { id: red.id, ime: red.ime, avatar: red.avatar };
+}
+
+function noviToken(): string {
+  return [...crypto.getRandomValues(new Uint8Array(24))].map((b) => b.toString(16).padStart(2, "0")).join("");
+}
+
+/** Novi Kviz nalog; robot = Google-ov test uređaj (ne vidi se na listama). */
+async function napraviIgraca(env: Env, ime: string, avatar: string, robot = false) {
+  const id = crypto.randomUUID();
+  const token = noviToken();
+  const upisi = [
+    env.DB.prepare("INSERT INTO igraci (id, token_hash, ime, avatar, napravljen) VALUES (?, ?, ?, ?, ?)").bind(
+      id,
+      await sha256(token),
+      ime,
+      avatar,
+      Date.now(),
+    ),
+  ];
+  if (robot) upisi.push(env.DB.prepare("INSERT OR IGNORE INTO roboti (igrac_id, vreme) VALUES (?, ?)").bind(id, Date.now()));
+  await env.DB.batch(upisi);
+  return { id, token };
 }
 
 /** Dart Chat korisnik iz "Authorization: DartChat <token>", ili odgovor sa greškom. */
@@ -114,22 +143,22 @@ export default {
 
     // Novi igrač: vraća id i token koje aplikacija čuva.
     if (put === "/api/igraci" && req.method === "POST") {
-      const telo = (await req.json().catch(() => ({}))) as { ime?: unknown; avatar?: unknown };
+      const telo = (await req.json().catch(() => ({}))) as { ime?: unknown; avatar?: unknown; robot?: unknown };
       const ime = cistoIme(telo.ime);
       if (!ime) return greska("Upiši ime.", 400);
       const avatar = AVATARI.includes(telo.avatar as string) ? (telo.avatar as string) : AVATARI[0];
-      const id = crypto.randomUUID();
-      const token = [...crypto.getRandomValues(new Uint8Array(24))].map((b) => b.toString(16).padStart(2, "0")).join("");
-      await env.DB.prepare("INSERT INTO igraci (id, token_hash, ime, avatar, napravljen) VALUES (?, ?, ?, ?, ?)")
-        .bind(id, await sha256(token), ime, avatar, Date.now())
-        .run();
+      // Aplikacija javlja kad radi na Google-ovom test uređaju (Firebase Test Lab): takav nalog se ne vidi na listama.
+      const { id, token } = await napraviIgraca(env, ime, avatar, telo.robot === true);
       return json({ id, token, ime, avatar }, 201);
     }
 
     if (put === "/api/igraci/ja") {
       const ja = await prijavljen(req, env);
       if (!ja) return greska("Nisi prijavljen.", 401);
-      if (req.method === "GET") return json(ja);
+      if (req.method === "GET") {
+        const veze = await env.DB.prepare("SELECT provajder FROM veze_naloga WHERE igrac_id = ?").bind(ja.id).all<{ provajder: string }>();
+        return json({ ...ja, prijave: veze.results.map((v) => v.provajder) });
+      }
       if (req.method === "PUT") {
         const telo = (await req.json().catch(() => ({}))) as { ime?: unknown; avatar?: unknown };
         const ime = cistoIme(telo.ime) ?? ja.ime;
@@ -145,10 +174,73 @@ export default {
           env.DB.prepare("DELETE FROM statistika WHERE igrac_id = ?").bind(ja.id),
           env.DB.prepare("DELETE FROM izazov WHERE igrac_id = ?").bind(ja.id),
           env.DB.prepare("DELETE FROM dartchat_veze WHERE igrac_id = ?").bind(ja.id),
+          env.DB.prepare("DELETE FROM prijave WHERE igrac_id = ?").bind(ja.id),
+          env.DB.prepare("DELETE FROM roboti WHERE igrac_id = ?").bind(ja.id),
+          env.DB.prepare("DELETE FROM znacke WHERE igrac_id = ?").bind(ja.id),
+          env.DB.prepare("DELETE FROM veze_naloga WHERE igrac_id = ?").bind(ja.id),
+          env.DB.prepare("DELETE FROM tokeni WHERE igrac_id = ?").bind(ja.id),
+          env.DB.prepare("DELETE FROM pozivi WHERE kome = ? OR od = ?").bind(ja.id, ja.id),
           env.DB.prepare("DELETE FROM igraci WHERE id = ?").bind(ja.id),
         ]);
         return json({ obrisan: true });
       }
+    }
+
+    // Prijava preko Google/Apple naloga (opciona): čuva Kviz nalog ili ga vraća na novom telefonu.
+    // Vraća stanje: "povezan" (ovaj nalog je sada sačuvan), "vec" (već je bio), "vracen" (Google/Apple
+    // nalog već čuva drugi Kviz nalog: novi token za njega), "nov" (bez naloga na telefonu: napravljen nov).
+    if (put === "/api/prijava" && req.method === "POST") {
+      const telo = (await req.json().catch(() => ({}))) as { provajder?: unknown; id_token?: unknown; ime?: unknown; avatar?: unknown };
+      const provajder = telo.provajder === "google" || telo.provajder === "apple" ? (telo.provajder as Provajder) : null;
+      if (!provajder || typeof telo.id_token !== "string" || telo.id_token.length > 8192) return greska("Neispravna prijava.", 400);
+      let identitet;
+      try {
+        identitet = await proveriIdToken(provajder, telo.id_token, env);
+      } catch (e) {
+        if (e instanceof PrijavaGreska) return greska(e.message, e.status);
+        throw e;
+      }
+      const ja = await prijavljen(req, env);
+      const veza = await env.DB.prepare(
+        "SELECT v.igrac_id, i.ime, i.avatar FROM veze_naloga v JOIN igraci i ON i.id = v.igrac_id WHERE v.provajder = ? AND v.sub = ?",
+      )
+        .bind(provajder, identitet.sub)
+        .first<{ igrac_id: string; ime: string; avatar: string }>();
+      if (veza && ja?.id === veza.igrac_id) return json({ stanje: "vec", ...ja });
+      if (veza) {
+        const token = noviToken();
+        await env.DB.prepare("INSERT INTO tokeni (hash, igrac_id, napravljen) VALUES (?, ?, ?)")
+          .bind(await sha256(token), veza.igrac_id, Date.now())
+          .run();
+        return json({ stanje: "vracen", id: veza.igrac_id, token, ime: veza.ime, avatar: veza.avatar });
+      }
+      let nalog: { id: string; token?: string; ime: string; avatar: string };
+      let stanje: string;
+      if (ja) {
+        nalog = ja;
+        stanje = "povezan";
+      } else {
+        const ime = cistoIme(telo.ime) ?? identitet.ime ?? "Igrač";
+        const avatar = AVATARI.includes(telo.avatar as string) ? (telo.avatar as string) : AVATARI[0];
+        nalog = { ...(await napraviIgraca(env, ime, avatar)), ime, avatar };
+        stanje = "nov";
+      }
+      await env.DB.batch([
+        // Jedan Kviz nalog ima najviše jedan nalog istog provajdera; obrisana veza (nalog obrisan) se zamenjuje.
+        env.DB.prepare("DELETE FROM veze_naloga WHERE (igrac_id = ? AND provajder = ?) OR (provajder = ? AND sub = ?)").bind(
+          nalog.id,
+          provajder,
+          provajder,
+          identitet.sub,
+        ),
+        env.DB.prepare("INSERT INTO veze_naloga (provajder, sub, igrac_id, povezan) VALUES (?, ?, ?, ?)").bind(
+          provajder,
+          identitet.sub,
+          nalog.id,
+          Date.now(),
+        ),
+      ]);
+      return json({ stanje, ...nalog }, stanje === "nov" ? 201 : 200);
     }
 
     // Moja statistika: ukupno i po oblastima.
@@ -162,6 +254,82 @@ export default {
         env.DB.prepare("SELECT oblast, tacnih, ukupno FROM statistika WHERE igrac_id = ? ORDER BY ukupno DESC").bind(ja.id),
       ]);
       return json({ ...(ukupno.results[0] as object), oblasti: oblasti.results });
+    }
+
+    // Moje značke i spisak svih.
+    if (put === "/api/igraci/ja/znacke" && req.method === "GET") {
+      const ja = await prijavljen(req, env);
+      if (!ja) return greska("Nisi prijavljen.", 401);
+      const r = await env.DB.prepare("SELECT znacka, vreme FROM znacke WHERE igrac_id = ?").bind(ja.id).all();
+      return json({ sve: ZNACKE, moje: r.results });
+    }
+
+    // Prijatelji: ljudi sa kojima sam igrao, poslednji prvi.
+    if (put === "/api/prijatelji" && req.method === "GET") {
+      const ja = await prijavljen(req, env);
+      if (!ja) return greska("Nisi prijavljen.", 401);
+      const r = await env.DB.prepare(
+        `SELECT i.id, i.ime, i.avatar, COUNT(*) AS partija, MAX(o.kraj) AS poslednja
+         FROM rezultati m
+         JOIN rezultati o ON o.igra_id = m.igra_id AND o.igrac_id != m.igrac_id
+         JOIN igraci i ON i.id = o.igrac_id
+         WHERE m.igrac_id = ? AND o.igrac_id NOT IN (SELECT igrac_id FROM roboti)
+         GROUP BY i.id ORDER BY poslednja DESC LIMIT 50`,
+      )
+        .bind(ja.id)
+        .all();
+      return json({ lista: r.results });
+    }
+
+    // Poziv prijateljima u moju sobu: vidi se na njihovom početnom ekranu 24 sata.
+    if (put === "/api/pozivi" && req.method === "POST") {
+      const ja = await prijavljen(req, env);
+      if (!ja) return greska("Nisi prijavljen.", 401);
+      const telo = (await req.json().catch(() => ({}))) as { kod?: unknown; kome?: unknown };
+      const kod = typeof telo.kod === "string" ? telo.kod.toUpperCase() : "";
+      if (!KOD_REGEX.test(kod)) return greska("Pogrešan kod.", 400);
+      const kome = Array.isArray(telo.kome) ? [...new Set(telo.kome.filter((x): x is string => typeof x === "string"))].slice(0, 29) : [];
+      if (!kome.length) return greska("Izaberi koga zoveš.", 400);
+      const soba = await env.SOBA.get(env.SOBA.idFromName(kod)).fetch(`https://soba/pregled?id=${encodeURIComponent(ja.id)}`);
+      if (!soba.ok) return greska("Soba je istekla.", 404);
+      if (!((await soba.json()) as { ja: boolean }).ja) return greska("Nisi u toj sobi.", 403);
+      // Zvati se mogu samo oni sa kojima sam već igrao.
+      const igrali = await env.DB.prepare(
+        `SELECT DISTINCT o.igrac_id AS id FROM rezultati m JOIN rezultati o ON o.igra_id = m.igra_id
+         WHERE m.igrac_id = ? AND o.igrac_id IN (${kome.map(() => "?").join(",")})`,
+      )
+        .bind(ja.id, ...kome)
+        .all<{ id: string }>();
+      const ok = igrali.results.map((r) => r.id).filter((id) => id !== ja.id);
+      if (!ok.length) return greska("Možeš da zoveš samo one sa kojima si igrao.", 400);
+      const sad = Date.now();
+      await env.DB.batch(
+        ok.map((id) =>
+          env.DB.prepare("INSERT OR REPLACE INTO pozivi (kome, kod, od, vreme) VALUES (?, ?, ?, ?)").bind(id, kod, ja.id, sad),
+        ),
+      );
+      return json({ pozvano: ok.length }, 201);
+    }
+
+    // Moji pozivi (poslednja 24 sata).
+    if (put === "/api/pozivi" && req.method === "GET") {
+      const ja = await prijavljen(req, env);
+      if (!ja) return greska("Nisi prijavljen.", 401);
+      const r = await env.DB.prepare(
+        `SELECT p.kod, p.vreme, i.id, i.ime, i.avatar FROM pozivi p JOIN igraci i ON i.id = p.od
+         WHERE p.kome = ? AND p.vreme > ? ORDER BY p.vreme DESC LIMIT 20`,
+      )
+        .bind(ja.id, Date.now() - ZIVOT_SOBE)
+        .all();
+      return json({ lista: r.results });
+    }
+
+    const poziv = put.match(/^\/api\/pozivi\/([A-Za-z0-9]{6})$/);
+    if (poziv && req.method === "DELETE") {
+      const ja = await prijavljen(req, env);
+      if (!ja) return greska("Nisi prijavljen.", 401);
+      await env.DB.prepare("DELETE FROM pozivi WHERE kome = ? AND kod = ?").bind(ja.id, poziv[1].toUpperCase()).run();
+      return json({ obrisan: true });
     }
 
     // Dnevni izazov: jedan pokušaj dnevno, ista pitanja za sve.
@@ -184,13 +352,21 @@ export default {
       const dan = danas();
       const lista = await env.DB.prepare(
         `SELECT i.id, i.ime, i.avatar, z.poeni, z.tacnih, z.kraj FROM izazov z JOIN igraci i ON i.id = z.igrac_id
-         WHERE z.dan = ? AND z.kraj > 0 ORDER BY z.poeni DESC, z.kraj ASC LIMIT 50`,
+         WHERE z.dan = ? AND z.kraj > 0 AND z.igrac_id NOT IN (SELECT igrac_id FROM roboti) ORDER BY z.poeni DESC, z.kraj ASC LIMIT 50`,
       )
         .bind(dan)
         .all<{ id: string; poeni: number; kraj: number }>();
       const ja = await prijavljen(req, env);
       let moj: Record<string, unknown> | null = null;
+      let niz: { niz: number; danas: boolean } | null = null;
       if (ja) {
+        const dani = await env.DB.prepare("SELECT dan FROM izazov WHERE igrac_id = ? ORDER BY dan DESC LIMIT 400")
+          .bind(ja.id)
+          .all<{ dan: string }>();
+        niz = nizDana(
+          dani.results.map((d) => d.dan),
+          dan,
+        );
         const r = await env.DB.prepare("SELECT poeni, tacnih, kraj FROM izazov WHERE dan = ? AND igrac_id = ?")
           .bind(dan, ja.id)
           .first<{ poeni: number; tacnih: number; kraj: number }>();
@@ -205,7 +381,28 @@ export default {
           moj = { ...r, zavrsen: r.kraj > 0, mesto: ispred ? ispred.n + 1 : null };
         }
       }
-      return json({ dan, lista: lista.results, ja: moj });
+      return json({ dan, lista: lista.results, ja: moj, niz });
+    }
+
+    // Prijava lošeg pitanja (netačno, nejasno, zastarelo, drugo).
+    const prijava = put.match(/^\/api\/pitanja\/(\d{1,9})\/prijava$/);
+    if (prijava && req.method === "POST") {
+      const ja = await prijavljen(req, env);
+      if (!ja) return greska("Nisi prijavljen.", 401);
+      const telo = (await req.json().catch(() => ({}))) as { razlog?: unknown; napomena?: unknown };
+      const razlog = RAZLOZI_PRIJAVE.find((x) => x === telo.razlog);
+      if (!razlog) return greska("Izaberi razlog.", 400);
+      const napomena = typeof telo.napomena === "string" ? telo.napomena.replace(/[\u0000-\u001f]/g, " ").trim().slice(0, 300) : "";
+      const id = Number(prijava[1]);
+      const postoji = await env.DB.prepare("SELECT 1 AS da FROM pitanja WHERE id = ?").bind(id).first();
+      if (!postoji) return greska("Pitanje ne postoji.", 404);
+      await env.DB.prepare(
+        `INSERT INTO prijave (pitanje_id, igrac_id, razlog, napomena, vreme) VALUES (?, ?, ?, ?, ?)
+         ON CONFLICT (pitanje_id, igrac_id) DO UPDATE SET razlog = excluded.razlog, napomena = excluded.napomena, vreme = excluded.vreme`,
+      )
+        .bind(id, ja.id, razlog, napomena, Date.now())
+        .run();
+      return json({ prijavljeno: true }, 201);
     }
 
     // Teme izgleda: spisak za Podešavanja i cela tema za preuzimanje.
@@ -333,7 +530,7 @@ export default {
         `SELECT i.id, i.ime, i.avatar, COUNT(*) AS partija, SUM(r.poeni) AS ukupno,
                 ROUND(AVG(r.poeni), 1) AS prosek
          FROM rezultati r JOIN igraci i ON i.id = r.igrac_id
-         WHERE r.kraj >= ?
+         WHERE r.kraj >= ? AND r.igrac_id NOT IN (SELECT igrac_id FROM roboti)
          GROUP BY i.id
          ${prosek ? "HAVING COUNT(*) >= 3" : ""}
          ORDER BY ${prosek ? "prosek" : "ukupno"} DESC, partija DESC
