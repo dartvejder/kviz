@@ -80,7 +80,13 @@ class _IgraEkranState extends State<IgraEkran> {
         setState(() => _greska = m['kod'] == 4001 ? 'Soba je istekla.' : 'Ušao si u ovu sobu sa drugog uređaja.');
       } else {
         _zvukZa(m);
-        setState(() => _s = m);
+        setState(() {
+          _s = m;
+          // 50:50 važi samo za partiju u kojoj je iskorišćen. Bez ovoga bi posle
+          // "Još jednom" ista pozicija pitanja u novoj partiji ostala bez dva
+          // odgovora, a među njima je mogao biti i tačan.
+          if (m['faza'] == 'kraj' || m['faza'] == 'cekaonica') _sakriveno.clear();
+        });
         if (m['faza'] == 'kraj' && m['sledeca'] is String) _predjiU(m['sledeca'] as String);
         if (widget.nova && !_opcijePonudjene && m['faza'] == 'cekaonica' && m['moderatorId'] == Api.i.nalog!.id) {
           _opcijePonudjene = true;
