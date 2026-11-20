@@ -69,7 +69,15 @@ jobs:
         if: steps.tok.outputs.present == 'true'
         run: |
           node scripts/pitanja-sql.mjs ../questions.js build/pitanja.sql
-          npx wrangler d1 execute kviz --remote --file build/pitanja.sql
+          NOVI=$(cat build/pitanja.sql.otisak)
+          STARI=$(npx wrangler d1 execute kviz --remote --json \
+            --command "SELECT vrednost FROM uvoz WHERE kljuc = 'pitanja'" 2>/dev/null \
+            | node -e 'let s="";process.stdin.on("data",d=>s+=d).on("end",()=>{try{console.log(JSON.parse(s)[0].results[0]?.vrednost??"")}catch{console.log("")}})') || STARI=""
+          if [ "$NOVI" = "$STARI" ]; then
+            echo "Pitanja se nisu menjala od poslednjeg uvoza, preskačem (štedi D1 upise)."
+          else
+            npx wrangler d1 execute kviz --remote --file build/pitanja.sql
+          fi
       - name: Postavi Worker
         if: steps.tok.outputs.present == 'true'
         run: npx wrangler deploy

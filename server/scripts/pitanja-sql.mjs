@@ -4,6 +4,7 @@
 // umesto da pravi duplikate, i id pitanja ostaje isti (bitno za "odigrano").
 import { readFileSync, writeFileSync, mkdirSync } from "node:fs";
 import { dirname } from "node:path";
+import { createHash } from "node:crypto";
 
 const [ulaz = "../questions.js", izlaz = "build/pitanja.sql"] = process.argv.slice(2);
 const js = readFileSync(ulaz, "utf8");
@@ -28,8 +29,18 @@ for (let i = 0; i < redovi.length; i += 200) {
     "INSERT INTO pitanja (oblast, tekst, tacan, netacan1, netacan2, netacan3, kljuc) VALUES\n" +
     redovi.slice(i, i + 200).join(",\n") +
     "\nON CONFLICT(kljuc) DO UPDATE SET oblast = excluded.oblast, tekst = excluded.tekst, tacan = excluded.tacan," +
-    " netacan1 = excluded.netacan1, netacan2 = excluded.netacan2, netacan3 = excluded.netacan3;\n";
+    " netacan1 = excluded.netacan1, netacan2 = excluded.netacan2, netacan3 = excluded.netacan3" +
+    // Bez ovoga D1 ponovo upisuje svih ~9.000 redova (plus indekse) pri svakom
+    // postavljanju i brzo potroši besplatnih 100.000 upisanih redova dnevno.
+    "\nWHERE pitanja.oblast IS NOT excluded.oblast OR pitanja.tekst IS NOT excluded.tekst" +
+    " OR pitanja.tacan IS NOT excluded.tacan OR pitanja.netacan1 IS NOT excluded.netacan1" +
+    " OR pitanja.netacan2 IS NOT excluded.netacan2 OR pitanja.netacan3 IS NOT excluded.netacan3;\n";
 }
 mkdirSync(dirname(izlaz), { recursive: true });
+// Otisak sadržaja: workflow preskače uvoz ako je isti kao poslednji uvezeni.
+const otisak = createHash("sha256").update(sql).digest("hex");
+sql += `INSERT INTO uvoz (kljuc, vrednost) VALUES ('pitanja', '${otisak}')` +
+  " ON CONFLICT(kljuc) DO UPDATE SET vrednost = excluded.vrednost;\n";
 writeFileSync(izlaz, sql);
+writeFileSync(izlaz + ".otisak", otisak + "\n");
 console.log(`${redovi.length} pitanja → ${izlaz}`);
