@@ -3,13 +3,13 @@ import { bodujPitanje, ispravneOpcije, napraviPitanje, noviKod, KOD_REGEX, prome
 import { pocetakPerioda } from "../src/period";
 
 describe("bodovanje", () => {
-  it("tačan +3, najbrži tačan još +2, netačan −1", () => {
+  it("tačan +3, najbrži tačan još +1, netačan −1", () => {
     const d = bodujPitanje(1, {
       a: { izbor: 1, vreme: 3000 },
       b: { izbor: 1, vreme: 1500 },
       c: { izbor: 0, vreme: 500 },
     });
-    expect(d).toEqual({ a: 3, b: 5, c: -1 });
+    expect(d).toEqual({ a: 3, b: 4, c: -1 });
   });
   it("niko tačan: nema bonusa", () => {
     expect(bodujPitanje(2, { a: { izbor: 0, vreme: 1 } })).toEqual({ a: -1 });
@@ -20,11 +20,18 @@ describe("bodovanje", () => {
 });
 
 describe("opcije", () => {
+  it("korak je 1 s: vreme 5–30, pauza 1–20, podrazumevano 20 i 5", () => {
+    expect(ispravneOpcije({ vreme: 13, pauza: 1 } as never, [])).toMatchObject({ vreme: 13, pauza: 1 });
+    expect(ispravneOpcije({ vreme: 99, pauza: 0 } as never, [])).toMatchObject({ vreme: 30, pauza: 1 });
+    expect(ispravneOpcije({} as never, [])).toMatchObject({ vreme: 20, pauza: 5 });
+  });
   it("ograničava vreme i broj pitanja i izbacuje nepoznate oblasti", () => {
-    expect(ispravneOpcije({ vreme: 5, brojPitanja: 500, oblasti: ["Film", "X"] }, ["Film", "Sport"])).toEqual({
-      vreme: 10,
+    expect(ispravneOpcije({ vreme: 2, pauza: 50, brojPitanja: 500, oblasti: ["Film", "X"] }, ["Film", "Sport"])).toEqual({
+      vreme: 5,
+      pauza: 20,
       brojPitanja: 50,
       oblasti: ["Film"],
+      dzokeri: true,
     });
   });
 });
@@ -63,4 +70,34 @@ describe("periodi top liste (Beograd)", () => {
     expect(pocetakPerioda("dan", Date.UTC(2026, 6, 1, 12))).toBe(Date.UTC(2026, 5, 30, 22, 0));
   });
   it("sve = 0", () => expect(pocetakPerioda("sve")).toBe(0));
+});
+
+describe("džokeri i izazov", () => {
+  it("dupli poeni duplaju i plus i minus", async () => {
+    const { primeniDupli } = await import("../src/igra");
+    expect(primeniDupli({ a: 4, b: -1, c: 3 }, { a: true, b: true })).toEqual({ a: 8, b: -2, c: 3 });
+  });
+  it("50:50 sklanja dva netačna", async () => {
+    const { polaPola } = await import("../src/igra");
+    for (let t = 0; t < 4; t++) {
+      const s = polaPola(t);
+      expect(s).toHaveLength(2);
+      expect(s).not.toContain(t);
+      expect(new Set(s).size).toBe(2);
+    }
+  });
+  it("seme daje isti niz za isti dan", async () => {
+    const { seme } = await import("../src/igra");
+    const a = seme("2026-11-20"), b = seme("2026-11-20"), c = seme("2026-11-21");
+    const x = [a(), a(), a()];
+    expect([b(), b(), b()]).toEqual(x);
+    expect(c()).not.toBe(x[0]);
+  });
+  it("u izazovu nema bonusa za brzinu", () => {
+    expect(bodujPitanje(1, { a: { izbor: 1, vreme: 10 } }, false)).toEqual({ a: 3 });
+  });
+  it("današnji dan po beogradskom vremenu", async () => {
+    const { danas } = await import("../src/period");
+    expect(danas(Date.UTC(2026, 10, 19, 23, 30))).toBe("2026-11-20");
+  });
 });

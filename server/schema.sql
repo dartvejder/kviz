@@ -43,3 +43,22 @@ CREATE TABLE IF NOT EXISTS rezultati (
   PRIMARY KEY (igra_id, igrac_id)
 );
 CREATE INDEX IF NOT EXISTS rezultati_kraj ON rezultati(kraj);
+
+-- Statistika igrača po oblastima (zbir svih partija).
+CREATE TABLE IF NOT EXISTS statistika (
+  igrac_id TEXT NOT NULL,
+  oblast TEXT NOT NULL,
+  tacnih INTEGER NOT NULL,
+  ukupno INTEGER NOT NULL,
+  PRIMARY KEY (igrac_id, oblast)
+) WITHOUT ROWID;
+
+-- Dnevni izazov: jedan pokušaj dnevno po igraču.
+CREATE TABLE IF NOT EXISTS izazov (
+  igrac_id TEXT NOT NULL,
+  dan TEXT NOT NULL,
+  poeni INTEGER NOT NULL,
+  tacnih INTEGER NOT NULL,
+  kraj INTEGER NOT NULL,
+  PRIMARY KEY (dan, igrac_id)
+) WITHOUT ROWID;

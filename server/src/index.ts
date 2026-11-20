@@ -1,7 +1,8 @@
 // Kviz server: HTTP API (/api) i WebSocket za sobe (/ws/KOD).
 import { KOD_REGEX, noviKod } from "./igra";
-import { pocetakPerioda } from "./period";
+import { danas, pocetakPerioda } from "./period";
 import { stranicaPozivnice, wellKnown } from "./pozivnica";
+import { spisakTema, tema } from "./teme";
 
 export { Soba } from "./soba";
 
@@ -102,10 +103,86 @@ export default {
         await env.DB.batch([
           env.DB.prepare("DELETE FROM rezultati WHERE igrac_id = ?").bind(ja.id),
           env.DB.prepare("DELETE FROM odigrano WHERE igrac_id = ?").bind(ja.id),
+          env.DB.prepare("DELETE FROM statistika WHERE igrac_id = ?").bind(ja.id),
+          env.DB.prepare("DELETE FROM izazov WHERE igrac_id = ?").bind(ja.id),
           env.DB.prepare("DELETE FROM igraci WHERE id = ?").bind(ja.id),
         ]);
         return json({ obrisan: true });
       }
+    }
+
+    // Moja statistika: ukupno i po oblastima.
+    if (put === "/api/igraci/ja/statistika" && req.method === "GET") {
+      const ja = await prijavljen(req, env);
+      if (!ja) return greska("Nisi prijavljen.", 401);
+      const [ukupno, oblasti] = await env.DB.batch([
+        env.DB.prepare(
+          "SELECT COUNT(*) AS partija, COALESCE(SUM(poeni), 0) AS poena, COALESCE(MAX(poeni), 0) AS najvise FROM rezultati WHERE igrac_id = ?",
+        ).bind(ja.id),
+        env.DB.prepare("SELECT oblast, tacnih, ukupno FROM statistika WHERE igrac_id = ? ORDER BY ukupno DESC").bind(ja.id),
+      ]);
+      return json({ ...(ukupno.results[0] as object), oblasti: oblasti.results });
+    }
+
+    // Dnevni izazov: jedan pokušaj dnevno, ista pitanja za sve.
+    if (put === "/api/izazov" && req.method === "POST") {
+      const ja = await prijavljen(req, env);
+      if (!ja) return greska("Nisi prijavljen.", 401);
+      const dan = danas();
+      const upis = await env.DB.prepare("INSERT OR IGNORE INTO izazov (igrac_id, dan, poeni, tacnih, kraj) VALUES (?, ?, 0, 0, 0)")
+        .bind(ja.id, dan)
+        .run();
+      if (!upis.meta.changes) return greska("Današnji izazov si već odigrao. Novi stiže u ponoć.", 409);
+      for (let pokusaj = 0; pokusaj < 5; pokusaj++) {
+        const kod = noviKod();
+        const soba = env.SOBA.get(env.SOBA.idFromName(kod));
+        const r = await soba.fetch("https://soba/init", {
+          method: "POST",
+          body: JSON.stringify({ kod, moderatorId: ja.id, izazov: dan }),
+        });
+        if (r.ok) return json({ kod, dan }, 201);
+      }
+      await env.DB.prepare("DELETE FROM izazov WHERE igrac_id = ? AND dan = ?").bind(ja.id, dan).run();
+      return greska("Pokušaj ponovo.", 503);
+    }
+
+    // Današnja top lista izazova (i moj rezultat, ako sam prijavljen).
+    if (put === "/api/izazov/top" && req.method === "GET") {
+      const dan = danas();
+      const lista = await env.DB.prepare(
+        `SELECT i.id, i.ime, i.avatar, z.poeni, z.tacnih, z.kraj FROM izazov z JOIN igraci i ON i.id = z.igrac_id
+         WHERE z.dan = ? AND z.kraj > 0 ORDER BY z.poeni DESC, z.kraj ASC LIMIT 50`,
+      )
+        .bind(dan)
+        .all<{ id: string; poeni: number; kraj: number }>();
+      const ja = await prijavljen(req, env);
+      let moj: Record<string, unknown> | null = null;
+      if (ja) {
+        const r = await env.DB.prepare("SELECT poeni, tacnih, kraj FROM izazov WHERE dan = ? AND igrac_id = ?")
+          .bind(dan, ja.id)
+          .first<{ poeni: number; tacnih: number; kraj: number }>();
+        if (r) {
+          const ispred = r.kraj
+            ? await env.DB.prepare(
+                "SELECT COUNT(*) AS n FROM izazov WHERE dan = ? AND kraj > 0 AND (poeni > ? OR (poeni = ? AND kraj < ?))",
+              )
+                .bind(dan, r.poeni, r.poeni, r.kraj)
+                .first<{ n: number }>()
+            : null;
+          moj = { ...r, zavrsen: r.kraj > 0, mesto: ispred ? ispred.n + 1 : null };
+        }
+      }
+      return json({ dan, lista: lista.results, ja: moj });
+    }
+
+    // Teme izgleda: spisak za Podešavanja i cela tema za preuzimanje.
+    if (put === "/api/teme" && req.method === "GET") {
+      return json(await spisakTema());
+    }
+    const t = put.match(/^\/api\/teme\/([a-z0-9-]{1,40})$/);
+    if (t && req.method === "GET") {
+      const nadjena = await tema(t[1]);
+      return nadjena ? json(nadjena) : greska("Tema ne postoji.", 404);
     }
 
     if (put === "/api/oblasti" && req.method === "GET") {

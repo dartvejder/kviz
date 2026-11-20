@@ -24,3 +24,10 @@ export function pocetakPerioda(period: string, sad = Date.now()): number {
   }
   return ponoc;
 }
+
+/** Današnji dan po beogradskom vremenu, "2026-11-20". */
+export function danas(sad = Date.now()): string {
+  return new Intl.DateTimeFormat("en-CA", { timeZone: "Europe/Belgrade", year: "numeric", month: "2-digit", day: "2-digit" }).format(
+    new Date(sad),
+  );
+}
