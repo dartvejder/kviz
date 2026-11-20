@@ -1,5 +1,6 @@
 // Kviz server: HTTP API (/api) i WebSocket za sobe (/ws/KOD).
 import { KOD_REGEX, noviKod } from "./igra";
+import { minVerzija } from "./verzija";
 import { danas, pocetakPerioda } from "./period";
 import {
   DartChatGreska,
@@ -19,6 +20,9 @@ export { Soba } from "./soba";
 export interface Env extends DartChatEnv {
   DB: D1Database;
   SOBA: DurableObjectNamespace;
+  /** Najmanji build aplikacije koji sme da igra (Cloudflare promenljive, menjaju se bez postavljanja). */
+  MIN_ANDROID?: string;
+  MIN_IOS?: string;
 }
 
 const ZIVOT_SOBE = 24 * 60 * 60 * 1000;
@@ -213,6 +217,9 @@ export default {
       const nadjena = await tema(t[1]);
       return nadjena ? json(nadjena) : greska("Tema ne postoji.", 404);
     }
+
+    // Najmanja dozvoljena verzija: starija aplikacija traži ažuriranje pre igre.
+    if (put === "/api/verzija" && req.method === "GET") return json(minVerzija(env));
 
     if (put === "/api/oblasti" && req.method === "GET") {
       const r = await env.DB.prepare("SELECT oblast, COUNT(*) AS broj FROM pitanja GROUP BY oblast ORDER BY oblast").all();
