@@ -187,6 +187,38 @@ class Api {
     );
   }
 
+  /// Sve značke ("sve": id, ikona, naziv, opis) i moje osvojene ("moje": znacka, vreme).
+  Future<Map<String, dynamic>> znacke() async =>
+      _json(await http.get(Uri.parse('$server/api/igraci/ja/znacke'), headers: _zaglavlja));
+
+  /// Ljudi sa kojima sam igrao: id, ime, avatar, partija, poslednja.
+  Future<List<Map<String, dynamic>>> prijatelji() async {
+    final r = _json(await http.get(Uri.parse('$server/api/prijatelji'), headers: _zaglavlja));
+    return (r['lista'] as List).cast<Map<String, dynamic>>();
+  }
+
+  /// Zove prijatelje u sobu; vraća koliko je poziva poslato.
+  Future<int> pozovi(String kod, List<String> kome) async {
+    final r = _json(
+      await http.post(
+        Uri.parse('$server/api/pozivi'),
+        headers: _zaglavlja,
+        body: jsonEncode({'kod': kod, 'kome': kome}),
+      ),
+    );
+    return r['pozvano'] as int? ?? 0;
+  }
+
+  /// Pozivi za mene: kod, vreme, id, ime, avatar (ko zove).
+  Future<List<Map<String, dynamic>>> pozivi() async {
+    final r = _json(await http.get(Uri.parse('$server/api/pozivi'), headers: _zaglavlja));
+    return (r['lista'] as List).cast<Map<String, dynamic>>();
+  }
+
+  Future<void> skloniPoziv(String kod) async {
+    _json(await http.delete(Uri.parse('$server/api/pozivi/$kod'), headers: _zaglavlja));
+  }
+
   Soba udji(String kod) => Soba(kod, nalog!);
 }
 

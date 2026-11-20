@@ -47,6 +47,7 @@ class _StatistikaEkranState extends State<StatistikaEkran> {
                 ],
               ),
               const SizedBox(height: 12),
+              const _Znacke(),
               if (ozbiljne.length >= 2) ...[
                 RedTeme(
                   child: Text(
@@ -119,6 +120,76 @@ class _Broj extends StatelessWidget {
           ],
         ),
       ),
+    );
+  }
+}
+
+/// Značke: osvojene u boji, ostale bledo, sa opisom kako se dobijaju.
+class _Znacke extends StatefulWidget {
+  const _Znacke();
+  @override
+  State<_Znacke> createState() => _ZnackeState();
+}
+
+class _ZnackeState extends State<_Znacke> {
+  final _podaci = Api.i.znacke();
+
+  @override
+  Widget build(BuildContext context) {
+    final t = temaOd(context);
+    return FutureBuilder(
+      future: _podaci,
+      builder: (context, snap) {
+        if (!snap.hasData) return const SizedBox.shrink();
+        final sve = (snap.data!['sve'] as List).cast<Map<String, dynamic>>();
+        final moje = {for (final m in (snap.data!['moje'] as List).cast<Map<String, dynamic>>()) m['znacka']};
+        return Padding(
+          padding: const EdgeInsets.only(bottom: 16),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Text(
+                'ZNAČKE (${moje.length}/${sve.length})',
+                style: t.naslov(velicina: 13, tezina: FontWeight.w800).copyWith(letterSpacing: 1.5),
+              ),
+              const SizedBox(height: 8),
+              Wrap(
+                spacing: 8,
+                runSpacing: 8,
+                children: [
+                  for (final z in sve)
+                    Tooltip(
+                      message: '${z['naziv']}: ${z['opis']}',
+                      triggerMode: TooltipTriggerMode.tap,
+                      child: Opacity(
+                        opacity: moje.contains(z['id']) ? 1 : .3,
+                        child: Container(
+                          width: 64,
+                          padding: const EdgeInsets.symmetric(vertical: 8, horizontal: 4),
+                          decoration: BoxDecoration(
+                            color: t.povrsina2,
+                            borderRadius: BorderRadius.circular(t.zaobljenje),
+                          ),
+                          child: Column(
+                            children: [
+                              Text(z['ikona'], style: const TextStyle(fontSize: 26)),
+                              Text(
+                                z['naziv'],
+                                maxLines: 2,
+                                textAlign: TextAlign.center,
+                                style: t.tekstStil(velicina: 10.5, tezina: FontWeight.w600),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ),
+                    ),
+                ],
+              ),
+            ],
+          ),
+        );
+      },
     );
   }
 }

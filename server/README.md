@@ -8,7 +8,9 @@ Object (`Soba`) po sobi, D1 baza `kviz`.
 - `src/index.ts` – API: `POST /api/igraci`, `GET|PUT|DELETE /api/igraci/ja`, `POST /api/sobe`,
   `GET /api/oblasti`, `GET /api/top?period=dan|nedelja|sve&poredak=ukupno|prosek`, `GET /ws/KOD`,
   `POST /api/pitanja/ID/prijava {razlog, napomena}` (prijava lošeg pitanja, tabela `prijave`),
-  `GET /api/izazov/top` (i `niz`: dani izazova zaredom)
+  `GET /api/izazov/top` (i `niz`: dani izazova zaredom), `GET /api/igraci/ja/znacke`,
+  `GET /api/prijatelji` (sa kim sam igrao), `POST|GET /api/pozivi`, `DELETE /api/pozivi/KOD`
+- Opcije sobe: i `tezina` (sve/lako/srednje/teško, iz tabele `pitanja_stat`) i `timovi` (Plavi/Crveni, rezultat = prosek)
 - Nalozi Google-ovih test uređaja (Firebase Test Lab) su u tabeli `roboti` i ne vide se na top listama.
   Prijave pitanja: `SELECT * FROM prijave ORDER BY vreme DESC` u D1 konzoli.
 - `schema.sql` – tabele; `scripts/pitanja-sql.mjs` – pitanja iz `questions.js` u SQL

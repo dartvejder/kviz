@@ -10,13 +10,19 @@ import '../pozivnica.dart';
 import '../tema.dart';
 import '../obavestenja.dart';
 import '../zvuk.dart';
+import '../konfete.dart';
+import '../znacke.dart';
 import 'pregled.dart';
+import 'prijatelji.dart';
 
 /// Soba: čekaonica, pitanja, otkrivanje i kraj, sve iz stanja sa servera.
 class IgraEkran extends StatefulWidget {
-  const IgraEkran({super.key, required this.kod, this.solo = false, this.izazov = false});
+  const IgraEkran({super.key, required this.kod, this.solo = false, this.izazov = false, this.nova = false});
   final String kod;
   final bool solo;
+
+  /// Upravo napravljena soba: moderator odmah vidi opcije (oblasti, težina, timovi).
+  final bool nova;
 
   /// Dnevni izazov: igra se sam, jednom.
   final bool izazov;
@@ -38,6 +44,7 @@ class _IgraEkranState extends State<IgraEkran> {
   String? _faza;
   int? _pitanje;
   bool _prelazim = false;
+  bool _opcijePonudjene = false;
 
   /// "Igraj ponovo": moderator je napravio novu sobu, svi prelaze tamo.
   void _predjiU(String kod) {
@@ -75,6 +82,17 @@ class _IgraEkranState extends State<IgraEkran> {
         _zvukZa(m);
         setState(() => _s = m);
         if (m['faza'] == 'kraj' && m['sledeca'] is String) _predjiU(m['sledeca'] as String);
+        if (widget.nova && !_opcijePonudjene && m['faza'] == 'cekaonica' && m['moderatorId'] == Api.i.nalog!.id) {
+          _opcijePonudjene = true;
+          WidgetsBinding.instance.addPostFrameCallback((_) {
+            if (!mounted) return;
+            showModalBottomSheet(
+              context: context,
+              isScrollControlled: true,
+              builder: (_) => OpcijeSheet(opcije: m['opcije'] as Map<String, dynamic>, soba: _soba),
+            );
+          });
+        }
         // "Vežbaj sam" i izazov: soba se odmah pokreće.
         if ((widget.solo || widget.izazov) && !_soloPokrenut && m['faza'] == 'cekaonica') {
           _soloPokrenut = true;
@@ -101,6 +119,17 @@ class _IgraEkranState extends State<IgraEkran> {
     if (faza == 'otkriveno' && (_faza != 'otkriveno' || _pitanje != n)) {
       final moj = (p?['odgovori'] as Map?)?[Api.i.nalog!.id];
       if (moj != null) moj == p!['tacan'] ? Zvuk.i.tacno() : Zvuk.i.netacno();
+      // "5 tačnih zaredom": leti preko ekrana kao reakcija.
+      for (final i in _igraci(m)) {
+        final poruka = porukaZaredom(i['zaredom'] as int? ?? 0);
+        if (i['uIgri'] != true || poruka == null) continue;
+        final id = ++_rid;
+        final ja = i['id'] == Api.i.nalog!.id;
+        _reakcije.add(_Reakcija(id, '🔥', ja ? 'Ti: $poruka' : '${i['ime']}: $poruka'));
+        Future.delayed(const Duration(milliseconds: 2600), () {
+          if (mounted) setState(() => _reakcije.removeWhere((r) => r.id == id));
+        });
+      }
     }
     if (faza == 'kraj' && _faza != null && _faza != 'kraj') Zvuk.i.kraj();
     _faza = faza;
@@ -122,7 +151,7 @@ class _IgraEkranState extends State<IgraEkran> {
         'otkriveno' => PitanjeView(s: s, soba: _soba, sakriveno: _sakriveno, solo: widget.solo || widget.izazov),
         _ => Kraj(s: s, soba: _soba, moderator: _moderator, solo: widget.solo, izazov: widget.izazov),
       };
-      if (!widget.solo && !widget.izazov) {
+      {
         telo = Stack(
           children: [
             Positioned.fill(child: telo),
@@ -179,6 +208,7 @@ class Cekaonica extends StatelessWidget {
     final opcije = s['opcije'] as Map<String, dynamic>;
     final spremni = igraci.where((i) => i['spreman'] == true || i['id'] == s['moderatorId']).length;
     final prozivka = (s['prozivkaDo'] as int) > 0;
+    final timovi = opcije['timovi'] == true;
     final t = temaOd(context);
     return ListView(
       padding: const EdgeInsets.all(16),
@@ -202,6 +232,13 @@ class Cekaonica extends StatelessWidget {
                     onPressed: () => podeliPozivnicu(c, s['kod']),
                     icon: const Icon(Icons.share),
                     label: const Text('Pozovi prijatelje'),
+                  ),
+                ),
+                Builder(
+                  builder: (c) => TextButton.icon(
+                    onPressed: () => pozoviUSobu(c, s['kod'], {for (final i in igraci) i['id'] as String}),
+                    icon: const Icon(Icons.group_add),
+                    label: const Text('Pozovi iz Kviza'),
                   ),
                 ),
                 TextButton.icon(
@@ -231,22 +268,45 @@ class Cekaonica extends StatelessWidget {
           ),
         const SizedBox(height: 8),
         Text('Igrači ($spremni/${igraci.length} spremno)', style: Theme.of(context).textTheme.titleMedium),
-        for (final i in igraci)
-          ListTile(
-            leading: Text(i['avatar'], style: const TextStyle(fontSize: 28)),
-            title: Text(i['ime'] + (i['id'] == s['moderatorId'] ? '  (moderator)' : '')),
-            subtitle: Text(i['povezan'] == true ? 'u sobi' : 'nije tu'),
-            trailing: Icon(
-              i['spreman'] == true || i['id'] == s['moderatorId'] ? Icons.check_circle : Icons.hourglass_empty,
-              color: i['spreman'] == true || i['id'] == s['moderatorId'] ? t.tacno : null,
+        if (timovi) ...[
+          for (final tim in const [0, 1]) ...[
+            Padding(
+              padding: const EdgeInsets.only(top: 10, bottom: 2),
+              child: Row(
+                children: [
+                  Icon(Icons.circle, size: 14, color: _bojaTima(tim)),
+                  const SizedBox(width: 6),
+                  Expanded(
+                    child: Text(tim == 0 ? 'Plavi' : 'Crveni', style: t.naslov(velicina: 16, tezina: FontWeight.w800)),
+                  ),
+                  if (ja.isNotEmpty && ja['tim'] != tim)
+                    TextButton(
+                      onPressed: () => soba.posalji({'t': 'tim', 'tim': tim}),
+                      child: Text(tim == 0 ? 'Pređi u Plave' : 'Pređi u Crvene'),
+                    ),
+                ],
+              ),
             ),
-          ),
+            for (final i in igraci.where((i) => i['tim'] == tim)) _redIgraca(context, i),
+          ],
+          if (moderator)
+            Align(
+              alignment: Alignment.centerLeft,
+              child: TextButton.icon(
+                onPressed: () => soba.posalji({'t': 'izmesaj'}),
+                icon: const Icon(Icons.shuffle),
+                label: const Text('Izmešaj timove'),
+              ),
+            ),
+        ] else
+          for (final i in igraci) _redIgraca(context, i),
         const SizedBox(height: 8),
         ReakcijeTraka(soba: soba),
         const Divider(),
         Text(
           'Opcije: ${opcije['vreme']} s po pitanju, pauza ${opcije['pauza'] ?? 5} s, ${opcije['brojPitanja']} pitanja, '
           '${opcije['dzokeri'] == false ? 'bez džokera' : 'sa džokerima'}, '
+          '${tezine[opcije['tezina']] ?? 'sve težine'}${timovi ? ', timski mod' : ''}, '
           '${(opcije['oblasti'] as List).isEmpty ? 'sve oblasti' : (opcije['oblasti'] as List).join(', ')}',
         ),
         const SizedBox(height: 16),
@@ -279,7 +339,22 @@ class Cekaonica extends StatelessWidget {
       ],
     );
   }
+
+  Widget _redIgraca(BuildContext context, Map<String, dynamic> i) {
+    final t = temaOd(context);
+    final spreman = i['spreman'] == true || i['id'] == s['moderatorId'];
+    return ListTile(
+      leading: Text(i['avatar'], style: const TextStyle(fontSize: 28)),
+      title: Text(i['ime'] + (i['id'] == s['moderatorId'] ? '  (moderator)' : '')),
+      subtitle: Text(i['povezan'] == true ? 'u sobi' : 'nije tu'),
+      trailing: Icon(spreman ? Icons.check_circle : Icons.hourglass_empty, color: spreman ? t.tacno : null),
+    );
+  }
 }
+
+const tezine = {'lako': 'lakša pitanja', 'srednje': 'srednja pitanja', 'tesko': 'teža pitanja'};
+
+Color _bojaTima(int tim) => tim == 0 ? const Color(0xFF2F80ED) : const Color(0xFFE5484D);
 
 class OpcijeSheet extends StatefulWidget {
   const OpcijeSheet({super.key, required this.opcije, required this.soba});
@@ -293,6 +368,8 @@ class _OpcijeSheetState extends State<OpcijeSheet> {
   late double _vreme = ((widget.opcije['vreme'] as int).clamp(5, 30)).toDouble();
   late double _pauza = ((widget.opcije['pauza'] as int? ?? 5).clamp(1, 20)).toDouble();
   late bool _dzokeri = widget.opcije['dzokeri'] != false;
+  late bool _timovi = widget.opcije['timovi'] == true;
+  late String _tezina = widget.opcije['tezina'] as String? ?? 'sve';
   late double _broj = (widget.opcije['brojPitanja'] as int).toDouble();
   late final Set<String> _oblasti = {...(widget.opcije['oblasti'] as List).cast<String>()};
   late final Future<List<Map<String, dynamic>>> _sve = Api.i.oblasti();
@@ -315,6 +392,33 @@ class _OpcijeSheetState extends State<OpcijeSheet> {
             title: const Text('Džokeri (50:50 i Dupli poeni)'),
             value: _dzokeri,
             onChanged: (v) => setState(() => _dzokeri = v),
+          ),
+          SwitchListTile(
+            contentPadding: EdgeInsets.zero,
+            title: const Text('Timski mod (Plavi protiv Crvenih)'),
+            subtitle: const Text('Rezultat tima je prosek poena njegovih igrača.'),
+            value: _timovi,
+            onChanged: (v) => setState(() => _timovi = v),
+          ),
+          const Text('Težina'),
+          const SizedBox(height: 6),
+          SegmentedButton<String>(
+            showSelectedIcon: false,
+            segments: const [
+              ButtonSegment(value: 'sve', label: Text('Sve')),
+              ButtonSegment(value: 'lako', label: Text('Lako')),
+              ButtonSegment(value: 'srednje', label: Text('Srednje')),
+              ButtonSegment(value: 'tesko', label: Text('Teško')),
+            ],
+            selected: {_tezina},
+            onSelectionChanged: (v) => setState(() => _tezina = v.first),
+          ),
+          const Padding(
+            padding: EdgeInsets.only(top: 4, bottom: 12),
+            child: Text(
+              'Težina se računa iz odgovora svih igrača, pa je sve tačnija što se više igra.',
+              style: TextStyle(fontSize: 12),
+            ),
           ),
           const Text('Oblasti (ništa izabrano = sve)'),
           FutureBuilder(
@@ -340,6 +444,8 @@ class _OpcijeSheetState extends State<OpcijeSheet> {
                 'vreme': _vreme.round(),
                 'pauza': _pauza.round(),
                 'dzokeri': _dzokeri,
+                'timovi': _timovi,
+                'tezina': _tezina,
                 'brojPitanja': _broj.round(),
                 'oblasti': _oblasti.toList(),
               });
@@ -623,8 +729,10 @@ class Tabela extends StatelessWidget {
     ];
     final odgovorilo = svi.where((i) => i['odgovorio'] == true).length;
     final slabo = t.tekst.withValues(alpha: .7);
+    final timovi = (s['timovi'] as List?)?.cast<Map<String, dynamic>>();
     return Column(
       children: [
+        if (timovi != null) TimoviTraka(timovi: timovi),
         if (poeni == null && svi.length > 1)
           Padding(
             padding: const EdgeInsets.only(bottom: 6),
@@ -637,6 +745,7 @@ class Tabela extends StatelessWidget {
               children: [
                 SizedBox(width: 26, child: Text('${r + 1}.')),
                 Text(i['avatar'], style: const TextStyle(fontSize: 20)),
+                if (timovi != null) Icon(Icons.circle, size: 10, color: _bojaTima(i['tim'] as int? ?? 0)),
                 const SizedBox(width: 8),
                 Expanded(child: Text(i['ime'], overflow: TextOverflow.ellipsis)),
                 if (dupli.contains(i['id'])) Text('×2  ', style: t.tekstStil(velicina: 12, boja: t.istaknut)),
@@ -659,6 +768,48 @@ class Tabela extends StatelessWidget {
           Text('i još ${svi.length - igraci.length}', style: t.tekstStil(velicina: 13, boja: slabo)),
       ],
     );
+  }
+}
+
+/// Rezultat timova: Plavi prosek : prosek Crveni.
+class TimoviTraka extends StatelessWidget {
+  const TimoviTraka({super.key, required this.timovi, this.velika = false});
+  final List<Map<String, dynamic>> timovi;
+  final bool velika;
+
+  @override
+  Widget build(BuildContext context) {
+    final t = temaOd(context);
+    Widget strana(Map<String, dynamic> tim) => Expanded(
+      child: Container(
+        padding: EdgeInsets.symmetric(vertical: velika ? 14 : 8),
+        decoration: BoxDecoration(
+          color: _bojaTima(tim['tim'] as int),
+          borderRadius: BorderRadius.circular(min(t.zaobljenje, 14)),
+        ),
+        child: Column(
+          children: [
+            Text(
+              '${tim['naziv']} (${tim['igraca']})',
+              style: t.tekstStil(velicina: velika ? 15 : 13, boja: Colors.white, tezina: FontWeight.w700),
+            ),
+            Text(
+              _broj(tim['prosek']),
+              style: t.naslov(velicina: velika ? 30 : 20, boja: Colors.white, tezina: FontWeight.w800),
+            ),
+          ],
+        ),
+      ),
+    );
+    return Padding(
+      padding: const EdgeInsets.only(bottom: 10),
+      child: Row(children: [strana(timovi[0]), const SizedBox(width: 10), strana(timovi[1])]),
+    );
+  }
+
+  static String _broj(dynamic x) {
+    final v = (x as num).toDouble();
+    return v == v.roundToDouble() ? v.toInt().toString() : v.toStringAsFixed(1).replaceAll('.', ',');
   }
 }
 
@@ -687,6 +838,9 @@ class _KrajState extends State<Kraj> {
   @override
   void initState() {
     super.initState();
+    Future.delayed(const Duration(milliseconds: 4500), () {
+      if (mounted) setState(() => _konfeteGotove = true);
+    });
     if (widget.izazov) {
       // Mesto na današnjoj listi; rezultat se upisuje na kraju partije.
       _izazov = Future.delayed(const Duration(milliseconds: 600), Api.i.izazovTop).then((r) {
@@ -702,6 +856,34 @@ class _KrajState extends State<Kraj> {
     final igraci = _igraci(widget.s).where((i) => i['uIgri'] == true).toList()
       ..sort((a, b) => (b['poeni'] as int).compareTo(a['poeni'] as int));
     final viseIgraca = igraci.length > 1;
+    final timovi = (widget.s['timovi'] as List?)?.cast<Map<String, dynamic>>();
+    final mene = igraci.where((i) => i['id'] == Api.i.nalog?.id).firstOrNull;
+    final nove = ((mene?['noveZnacke'] as List?) ?? const []).cast<String>();
+    String? pobednikTimova;
+    if (timovi != null && timovi.every((x) => (x['igraca'] as int) > 0)) {
+      final a = (timovi[0]['prosek'] as num), b = (timovi[1]['prosek'] as num);
+      pobednikTimova = a == b ? 'Nerešeno!' : 'Pobedili su ${a > b ? 'Plavi' : 'Crveni'}!';
+    }
+    return Stack(
+      children: [
+        _listaKraja(context, t, igraci, viseIgraca, timovi, pobednikTimova, nove),
+        if (viseIgraca && !_konfeteGotove)
+          Positioned.fill(child: Konfete(boje: [t.istaknut, t.primarna, t.tacno, const Color(0xFFE5484D)])),
+      ],
+    );
+  }
+
+  bool _konfeteGotove = false;
+
+  Widget _listaKraja(
+    BuildContext context,
+    KvizTema t,
+    List<Map<String, dynamic>> igraci,
+    bool viseIgraca,
+    List<Map<String, dynamic>>? timovi,
+    String? pobednikTimova,
+    List<String> nove,
+  ) {
     return ListView(
       padding: const EdgeInsets.all(16),
       children: [
@@ -711,6 +893,36 @@ class _KrajState extends State<Kraj> {
           style: t.naslov(velicina: 40, boja: t.logoBoja, senke: t.logoSenke),
           textAlign: TextAlign.center,
         ),
+        if (pobednikTimova != null) ...[
+          Text(
+            pobednikTimova,
+            style: t.naslov(velicina: 22, tezina: FontWeight.w800),
+            textAlign: TextAlign.center,
+          ),
+          const SizedBox(height: 10),
+          TimoviTraka(timovi: timovi!, velika: true),
+        ],
+        if (nove.isNotEmpty)
+          Card(
+            color: t.primarna,
+            margin: const EdgeInsets.symmetric(vertical: 10),
+            child: Padding(
+              padding: const EdgeInsets.all(12),
+              child: Column(
+                children: [
+                  Text(
+                    nove.length == 1 ? 'Nova značka!' : 'Nove značke!',
+                    style: t.naslov(velicina: 17, boja: t.naPrimarnoj, tezina: FontWeight.w800),
+                  ),
+                  for (final z in nove)
+                    Text(
+                      '${znacke[z]?.$1 ?? '🏅'}  ${znacke[z]?.$2 ?? z}',
+                      style: t.tekstStil(velicina: 16, boja: t.naPrimarnoj),
+                    ),
+                ],
+              ),
+            ),
+          ),
         if (igraci.isNotEmpty && viseIgraca)
           Text(
             'Pobednik: ${igraci.first['avatar']} ${igraci.first['ime']}',

@@ -1,5 +1,5 @@
 // Kviz server: HTTP API (/api) i WebSocket za sobe (/ws/KOD).
-import { KOD_REGEX, RAZLOZI_PRIJAVE, noviKod } from "./igra";
+import { KOD_REGEX, RAZLOZI_PRIJAVE, ZNACKE, noviKod } from "./igra";
 import { minVerzija } from "./verzija";
 import { danas, nizDana, pocetakPerioda } from "./period";
 import {
@@ -158,6 +158,8 @@ export default {
           env.DB.prepare("DELETE FROM dartchat_veze WHERE igrac_id = ?").bind(ja.id),
           env.DB.prepare("DELETE FROM prijave WHERE igrac_id = ?").bind(ja.id),
           env.DB.prepare("DELETE FROM roboti WHERE igrac_id = ?").bind(ja.id),
+          env.DB.prepare("DELETE FROM znacke WHERE igrac_id = ?").bind(ja.id),
+          env.DB.prepare("DELETE FROM pozivi WHERE kome = ? OR od = ?").bind(ja.id, ja.id),
           env.DB.prepare("DELETE FROM igraci WHERE id = ?").bind(ja.id),
         ]);
         return json({ obrisan: true });
@@ -175,6 +177,82 @@ export default {
         env.DB.prepare("SELECT oblast, tacnih, ukupno FROM statistika WHERE igrac_id = ? ORDER BY ukupno DESC").bind(ja.id),
       ]);
       return json({ ...(ukupno.results[0] as object), oblasti: oblasti.results });
+    }
+
+    // Moje značke i spisak svih.
+    if (put === "/api/igraci/ja/znacke" && req.method === "GET") {
+      const ja = await prijavljen(req, env);
+      if (!ja) return greska("Nisi prijavljen.", 401);
+      const r = await env.DB.prepare("SELECT znacka, vreme FROM znacke WHERE igrac_id = ?").bind(ja.id).all();
+      return json({ sve: ZNACKE, moje: r.results });
+    }
+
+    // Prijatelji: ljudi sa kojima sam igrao, poslednji prvi.
+    if (put === "/api/prijatelji" && req.method === "GET") {
+      const ja = await prijavljen(req, env);
+      if (!ja) return greska("Nisi prijavljen.", 401);
+      const r = await env.DB.prepare(
+        `SELECT i.id, i.ime, i.avatar, COUNT(*) AS partija, MAX(o.kraj) AS poslednja
+         FROM rezultati m
+         JOIN rezultati o ON o.igra_id = m.igra_id AND o.igrac_id != m.igrac_id
+         JOIN igraci i ON i.id = o.igrac_id
+         WHERE m.igrac_id = ? AND o.igrac_id NOT IN (SELECT igrac_id FROM roboti)
+         GROUP BY i.id ORDER BY poslednja DESC LIMIT 50`,
+      )
+        .bind(ja.id)
+        .all();
+      return json({ lista: r.results });
+    }
+
+    // Poziv prijateljima u moju sobu: vidi se na njihovom početnom ekranu 24 sata.
+    if (put === "/api/pozivi" && req.method === "POST") {
+      const ja = await prijavljen(req, env);
+      if (!ja) return greska("Nisi prijavljen.", 401);
+      const telo = (await req.json().catch(() => ({}))) as { kod?: unknown; kome?: unknown };
+      const kod = typeof telo.kod === "string" ? telo.kod.toUpperCase() : "";
+      if (!KOD_REGEX.test(kod)) return greska("Pogrešan kod.", 400);
+      const kome = Array.isArray(telo.kome) ? [...new Set(telo.kome.filter((x): x is string => typeof x === "string"))].slice(0, 29) : [];
+      if (!kome.length) return greska("Izaberi koga zoveš.", 400);
+      const soba = await env.SOBA.get(env.SOBA.idFromName(kod)).fetch(`https://soba/pregled?id=${encodeURIComponent(ja.id)}`);
+      if (!soba.ok) return greska("Soba je istekla.", 404);
+      if (!((await soba.json()) as { ja: boolean }).ja) return greska("Nisi u toj sobi.", 403);
+      // Zvati se mogu samo oni sa kojima sam već igrao.
+      const igrali = await env.DB.prepare(
+        `SELECT DISTINCT o.igrac_id AS id FROM rezultati m JOIN rezultati o ON o.igra_id = m.igra_id
+         WHERE m.igrac_id = ? AND o.igrac_id IN (${kome.map(() => "?").join(",")})`,
+      )
+        .bind(ja.id, ...kome)
+        .all<{ id: string }>();
+      const ok = igrali.results.map((r) => r.id).filter((id) => id !== ja.id);
+      if (!ok.length) return greska("Možeš da zoveš samo one sa kojima si igrao.", 400);
+      const sad = Date.now();
+      await env.DB.batch(
+        ok.map((id) =>
+          env.DB.prepare("INSERT OR REPLACE INTO pozivi (kome, kod, od, vreme) VALUES (?, ?, ?, ?)").bind(id, kod, ja.id, sad),
+        ),
+      );
+      return json({ pozvano: ok.length }, 201);
+    }
+
+    // Moji pozivi (poslednja 24 sata).
+    if (put === "/api/pozivi" && req.method === "GET") {
+      const ja = await prijavljen(req, env);
+      if (!ja) return greska("Nisi prijavljen.", 401);
+      const r = await env.DB.prepare(
+        `SELECT p.kod, p.vreme, i.id, i.ime, i.avatar FROM pozivi p JOIN igraci i ON i.id = p.od
+         WHERE p.kome = ? AND p.vreme > ? ORDER BY p.vreme DESC LIMIT 20`,
+      )
+        .bind(ja.id, Date.now() - ZIVOT_SOBE)
+        .all();
+      return json({ lista: r.results });
+    }
+
+    const poziv = put.match(/^\/api\/pozivi\/([A-Za-z0-9]{6})$/);
+    if (poziv && req.method === "DELETE") {
+      const ja = await prijavljen(req, env);
+      if (!ja) return greska("Nisi prijavljen.", 401);
+      await env.DB.prepare("DELETE FROM pozivi WHERE kome = ? AND kod = ?").bind(ja.id, poziv[1].toUpperCase()).run();
+      return json({ obrisan: true });
     }
 
     // Dnevni izazov: jedan pokušaj dnevno, ista pitanja za sve.

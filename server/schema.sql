@@ -49,6 +49,7 @@ CREATE TABLE IF NOT EXISTS rezultati (
   PRIMARY KEY (igra_id, igrac_id)
 );
 CREATE INDEX IF NOT EXISTS rezultati_kraj ON rezultati(kraj);
+CREATE INDEX IF NOT EXISTS rezultati_igrac ON rezultati(igrac_id);
 
 -- Statistika igrača po oblastima (zbir svih partija).
 CREATE TABLE IF NOT EXISTS statistika (
@@ -99,4 +100,28 @@ CREATE TABLE IF NOT EXISTS prijave (
   napomena TEXT NOT NULL DEFAULT '',
   vreme INTEGER NOT NULL,
   PRIMARY KEY (pitanje_id, igrac_id)
+) WITHOUT ROWID;
+
+-- Uspeh svih igrača po pitanju: od toga se računa težina (lako / srednje / teško).
+CREATE TABLE IF NOT EXISTS pitanja_stat (
+  pitanje_id INTEGER PRIMARY KEY,
+  tacnih INTEGER NOT NULL,
+  ukupno INTEGER NOT NULL
+);
+
+-- Osvojene značke (spisak značaka je u src/igra.ts, ZNACKE).
+CREATE TABLE IF NOT EXISTS znacke (
+  igrac_id TEXT NOT NULL,
+  znacka TEXT NOT NULL,
+  vreme INTEGER NOT NULL,
+  PRIMARY KEY (igrac_id, znacka)
+) WITHOUT ROWID;
+
+-- Pozivi prijateljima u sobu (važe 24 sata, dok soba traje).
+CREATE TABLE IF NOT EXISTS pozivi (
+  kome TEXT NOT NULL,
+  kod TEXT NOT NULL,
+  od TEXT NOT NULL,
+  vreme INTEGER NOT NULL,
+  PRIMARY KEY (kome, kod)
 ) WITHOUT ROWID;

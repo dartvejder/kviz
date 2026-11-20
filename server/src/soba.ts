@@ -17,11 +17,19 @@ import {
   pregledPartije,
   svePrimljeno,
   zapamtiOdgovore,
+  azurirajNizove,
+  izmesajTimove,
+  rasporediUTimove,
+  rezultatTimova,
+  uslovTezine,
+  znackeIzPartije,
+  type Tezina,
   type Igrac,
   type Stanje,
 } from "./igra";
 import type { Env } from "./index";
 import { javiDartChatu, poredak, stanjeZaDartChat, type Dogadjaj } from "./dartchat";
+import { nizDana } from "./period";
 
 /** Pauza posle otkrivanja odgovora; starije sobe nemaju opciju pa važi 5 s. */
 const pauzaMs = (s: { opcije: { pauza?: number } }) => (s.opcije.pauza ?? 5) * 1000;
@@ -117,6 +125,7 @@ export class Soba extends DurableObject<Env> {
       // Soba iz Dart Chata: pozivar je moderator čim uđe; do tada je to prvi koji uđe.
       if (s.dartchat && matrix === s.dartchat.moderator) s.moderatorId = id;
       else if (!s.moderatorId) s.moderatorId = id;
+      if (s.opcije.timovi) rasporediUTimove(s.igraci);
       if (nov) this.javi(s, "usao", { igrac: igrac.matrix ?? null, ime: igrac.ime });
       const par = new WebSocketPair();
       // Stari priključak istog igrača (npr. drugi tab) se zatvara.
@@ -152,8 +161,18 @@ export class Soba extends DurableObject<Env> {
         if (!jeModerator || s.faza !== "cekaonica" || s.izazov) return;
         const sve = (await this.ctx.storage.get<string[]>("oblasti")) ?? [];
         s.opcije = ispravneOpcije(m as never, sve);
+        if (s.opcije.timovi) rasporediUTimove(s.igraci);
         break;
       }
+      case "tim":
+        // Igrač sam bira tim u čekaonici.
+        if (!s.opcije.timovi || (s.faza !== "cekaonica" && s.faza !== "kraj")) return;
+        igrac.tim = m.tim === 1 ? 1 : 0;
+        break;
+      case "izmesaj":
+        if (!jeModerator || !s.opcije.timovi || (s.faza !== "cekaonica" && s.faza !== "kraj")) return;
+        izmesajTimove(s.igraci);
+        break;
       case "prozovi":
         if (!jeModerator || s.faza !== "cekaonica") return;
         s.prozivkaDo = Date.now() + PROZIVKA;
@@ -163,6 +182,14 @@ export class Soba extends DurableObject<Env> {
         if (!jeModerator || (s.faza !== "cekaonica" && s.faza !== "kraj")) return;
         // Dnevni izazov se igra jednom.
         if (s.izazov && s.pitanja.length) return;
+        if (s.opcije.timovi && !s.izazov) {
+          rasporediUTimove(s.igraci);
+          const igraju = s.igraci.filter((i) => i.spreman || i.id === s.moderatorId);
+          if (!igraju.some((i) => i.tim === 0) || !igraju.some((i) => i.tim === 1)) {
+            ws.send(JSON.stringify({ t: "greska", poruka: "Za timsku igru treba bar po jedan spreman igrač u oba tima." }));
+            return;
+          }
+        }
         if (!(await this.pokreni(s))) {
           ws.send(JSON.stringify({ t: "greska", poruka: "Nema dovoljno pitanja za izabrane oblasti." }));
           return;
@@ -272,7 +299,7 @@ export class Soba extends DurableObject<Env> {
     const { brojPitanja, oblasti } = s.opcije;
     const pitanja = s.izazov
       ? await this.pitanjaIzazova(s.izazov, brojPitanja)
-      : await this.izaberiPitanja(igraju.map((i) => i.id), oblasti, brojPitanja);
+      : await this.izaberiPitanja(igraju.map((i) => i.id), oblasti, brojPitanja, s.opcije.tezina ?? "sve");
     if (pitanja.length < Math.min(5, brojPitanja)) return false;
     delete s.sledeca;
     for (const i of s.igraci) {
@@ -281,6 +308,10 @@ export class Soba extends DurableObject<Env> {
       i.tacnih = 0;
       i.dzokeri = {};
       i.poOblasti = {};
+      i.zaredom = 0;
+      i.najviseZaredom = 0;
+      i.najbrzih = 0;
+      delete i.noveZnacke;
     }
     // U izazovu su i redosled odgovora isti za sve.
     const rnd = s.izazov ? seme(`odgovori-${s.izazov}`) : Math.random;
@@ -305,27 +336,37 @@ export class Soba extends DurableObject<Env> {
     return r.results;
   }
 
-  private async izaberiPitanja(igraci: string[], oblasti: string[], broj: number) {
+  private async izaberiPitanja(igraci: string[], oblasti: string[], broj: number, tezina: Tezina) {
     type Red = { id: number; oblast: string; tekst: string; tacan: string; netacan1: string; netacan2: string; netacan3: string };
-    const uslovOblasti = oblasti.length ? `AND oblast IN (${oblasti.map(() => "?").join(",")})` : "";
-    const nevidjena = await this.env.DB.prepare(
-      `SELECT id, oblast, tekst, tacan, netacan1, netacan2, netacan3 FROM pitanja
-       WHERE 1=1 ${uslovOblasti}
-       AND id NOT IN (SELECT pitanje_id FROM odigrano WHERE igrac_id IN (${igraci.map(() => "?").join(",")}))
-       ORDER BY random() LIMIT ?`,
-    )
-      .bind(...oblasti, ...igraci, broj)
-      .all<Red>();
-    if (nevidjena.results.length >= broj) return nevidjena.results;
-    // Kad su sva pitanja viđena, dopuni nasumičnim (ponavljanje je bolje od prekida).
-    const dopuna = await this.env.DB.prepare(
-      `SELECT id, oblast, tekst, tacan, netacan1, netacan2, netacan3 FROM pitanja
-       WHERE 1=1 ${uslovOblasti} ORDER BY random() LIMIT ?`,
-    )
-      .bind(...oblasti, broj)
-      .all<Red>();
-    const vec = new Set(nevidjena.results.map((r) => r.id));
-    return [...nevidjena.results, ...dopuna.results.filter((r) => !vec.has(r.id))].slice(0, broj);
+    const uslovOblasti = oblasti.length ? `AND p.oblast IN (${oblasti.map(() => "?").join(",")})` : "";
+    const polja = "p.id, p.oblast, p.tekst, p.tacan, p.netacan1, p.netacan2, p.netacan3";
+    const nevidjeno = `AND p.id NOT IN (SELECT pitanje_id FROM odigrano WHERE igrac_id IN (${igraci.map(() => "?").join(",")}))`;
+    const izbor = (uslov: string, saIgracima: boolean) =>
+      this.env.DB.prepare(
+        `SELECT ${polja} FROM pitanja p LEFT JOIN pitanja_stat s ON s.pitanje_id = p.id
+         WHERE 1=1 ${uslovOblasti} ${uslov} ORDER BY random() LIMIT ?`,
+      )
+        .bind(...oblasti, ...(saIgracima ? igraci : []), broj)
+        .all<Red>();
+    // Redom: neviđena te težine, pa neviđena bilo koje težine, pa bilo koja
+    // (ponavljanje je bolje od prekida). Težina se zna tek kad pitanje ima bar 5 odgovora.
+    const pokusaji: [string, boolean][] = [
+      ...(tezina !== "sve" ? ([[`${uslovTezine(tezina)} ${nevidjeno}`, true]] as [string, boolean][]) : []),
+      [nevidjeno, true],
+      ["", false],
+    ];
+    const izabrana: Red[] = [];
+    const vec = new Set<number>();
+    for (const [uslov, saIgracima] of pokusaji) {
+      for (const red of (await izbor(uslov, saIgracima)).results) {
+        if (izabrana.length < broj && !vec.has(red.id)) {
+          vec.add(red.id);
+          izabrana.push(red);
+        }
+      }
+      if (izabrana.length >= broj) break;
+    }
+    return izabrana;
   }
 
   private async sledece(s: Stanje) {
@@ -344,8 +385,10 @@ export class Soba extends DurableObject<Env> {
 
   private otkrij(s: Stanje) {
     const p = s.pitanja[s.trenutno];
-    const delta = primeniDupli(bodujPitanje(p.tacan, s.odgovori, !s.izazov), s.dupli);
+    const osnovno = bodujPitanje(p.tacan, s.odgovori, !s.izazov);
+    const delta = primeniDupli(osnovno, s.dupli);
     zapamtiOdgovore(s);
+    azurirajNizove(s.igraci, p.tacan, s.odgovori, osnovno);
     for (const i of s.igraci) {
       if (!i.uIgri) continue;
       const d = delta[i.id] ?? 0;
@@ -408,9 +451,72 @@ export class Soba extends DurableObject<Env> {
         ),
       ),
     ];
+    // Uspeh svih igrača po pitanju, za težinu (jedan upis po pitanju).
+    for (const [k, p] of s.pitanja.entries()) {
+      const tacnih = igraju.filter((i) => s.istorija?.[i.id]?.[k] === p.tacan).length;
+      upiti.push(
+        this.env.DB.prepare(
+          `INSERT INTO pitanja_stat (pitanje_id, tacnih, ukupno) VALUES (?, ?, ?)
+           ON CONFLICT (pitanje_id) DO UPDATE SET tacnih = tacnih + excluded.tacnih, ukupno = ukupno + excluded.ukupno`,
+        ).bind(p.id, tacnih, igraju.length),
+      );
+    }
     await this.env.DB.batch(upiti);
+    try {
+      await this.dodeliZnacke(s, igraju, kraj);
+    } catch {
+      // Značke nisu bitne za kraj partije.
+    }
     for (const i of s.igraci) i.spreman = false;
     this.javi(s, "kraj", { poredak: poredak(s.igraci) });
+  }
+
+  /** Značke: iz same partije, broja partija i niza dnevnog izazova. Upisuju se samo nove. */
+  private async dodeliZnacke(s: Stanje, igraju: Igrac[], kraj: number) {
+    const brojevi = await this.env.DB.batch(
+      igraju.map((i) => this.env.DB.prepare("SELECT COUNT(*) AS n FROM rezultati WHERE igrac_id = ?").bind(i.id)),
+    );
+    const kandidati = new Map<string, string[]>();
+    for (const [k, i] of igraju.entries()) {
+      const z = znackeIzPartije(s, i);
+      const n = (brojevi[k].results[0] as { n: number } | undefined)?.n ?? 0;
+      if (n >= 10) z.push("partija10");
+      if (n >= 100) z.push("partija100");
+      kandidati.set(i.id, z);
+    }
+    if (s.izazov) {
+      for (const i of igraju) {
+        const dani = await this.env.DB.prepare("SELECT dan FROM izazov WHERE igrac_id = ? ORDER BY dan DESC LIMIT 40")
+          .bind(i.id)
+          .all<{ dan: string }>();
+        const { niz } = nizDana(
+          dani.results.map((d) => d.dan),
+          s.izazov,
+        );
+        if (niz >= 7) kandidati.get(i.id)!.push("izazov7");
+        if (niz >= 30) kandidati.get(i.id)!.push("izazov30");
+      }
+    }
+    const parovi = [...kandidati].flatMap(([id, z]) => z.map((znacka) => [id, znacka] as const));
+    if (!parovi.length) return;
+    // Već osvojene se ne upisuju ponovo (štedi D1 upise).
+    const imaju = await this.env.DB.prepare(
+      `SELECT igrac_id, znacka FROM znacke WHERE igrac_id IN (${igraju.map(() => "?").join(",")})`,
+    )
+      .bind(...igraju.map((i) => i.id))
+      .all<{ igrac_id: string; znacka: string }>();
+    const vec = new Set(imaju.results.map((r) => `${r.igrac_id} ${r.znacka}`));
+    const nove = parovi.filter(([id, z]) => !vec.has(`${id} ${z}`));
+    if (!nove.length) return;
+    await this.env.DB.batch(
+      nove.map(([id, z]) =>
+        this.env.DB.prepare("INSERT OR IGNORE INTO znacke (igrac_id, znacka, vreme) VALUES (?, ?, ?)").bind(id, z, kraj),
+      ),
+    );
+    for (const [id, z] of nove) {
+      const i = igraju.find((x) => x.id === id)!;
+      (i.noveZnacke ??= []).push(z);
+    }
   }
 
   /** Nova soba sa istim moderatorom i opcijama ("Igraj ponovo"). */
@@ -447,6 +553,7 @@ export class Soba extends DurableObject<Env> {
       opcije: s.opcije,
       izazov: s.izazov ?? null,
       sledeca: s.faza === "kraj" ? (s.sledeca ?? null) : null,
+      timovi: s.opcije.timovi && !s.izazov ? rezultatTimova(s.igraci) : null,
       pregled: s.faza === "kraj" ? pregledPartije(s) : null,
       dupli: Object.keys(s.dupli ?? {}),
       prozivkaDo: s.prozivkaDo,
