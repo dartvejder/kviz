@@ -42,10 +42,14 @@ class Prijava {
       if (token == null) throw Exception('Google nije dao potvrdu prijave.');
       return token;
     } on GoogleSignInException catch (e) {
-      if (e.code == GoogleSignInExceptionCode.canceled || e.code == GoogleSignInExceptionCode.interrupted) {
+      final opis = e.description ?? '';
+      // Android javlja i pogrešno podešen nalog (npr. "[16] Account reauth failed") kao "canceled",
+      // pa tiho odustajemo samo kad nema opisa greške.
+      if ((e.code == GoogleSignInExceptionCode.canceled || e.code == GoogleSignInExceptionCode.interrupted) &&
+          (opis.isEmpty || opis.toLowerCase().contains('cancel'))) {
         throw Odustao();
       }
-      throw Exception('Google prijava nije uspela (${e.code.name}).');
+      throw Exception('Google prijava nije uspela (${e.code.name}${opis.isEmpty ? '' : ': $opis'}).');
     }
   }
 
