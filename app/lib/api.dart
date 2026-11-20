@@ -299,8 +299,19 @@ class Soba {
     final ws = server.replaceFirst('http', 'ws');
     final k = WebSocketChannel.connect(Uri.parse('$ws/ws/$kod?id=${ja.id}&token=${ja.token}'));
     _kanal = k;
+    var kraj = false;
+    // Greška i kraj veze stižu oba za isti priključak; ponovo se povezuje samo jednom,
+    // i samo ako je to i dalje trenutni priključak. Inače dve nove veze istog igrača
+    // jedna drugu zatvaraju (4000) i ekran pogrešno kaže "sa drugog uređaja".
+    void gotovo() {
+      if (kraj) return;
+      kraj = true;
+      if (identical(_kanal, k)) _ponovo(k);
+    }
+
     k.stream.listen(
       (poruka) {
+        if (!identical(_kanal, k)) return;
         _pokusaj = 0;
         final m = jsonDecode(poruka as String) as Map<String, dynamic>;
         if (m['t'] == 'stanje') {
@@ -309,21 +320,22 @@ class Soba {
         }
         _stanja.add(m);
       },
-      onDone: _ponovo,
-      onError: (_) => _ponovo(),
+      onDone: gotovo,
+      onError: (_) => gotovo(),
+      cancelOnError: true,
     );
   }
 
-  void _ponovo() {
+  void _ponovo(WebSocketChannel k) {
     if (_zatvoreno) return;
-    final kod = _kanal?.closeCode;
+    final kod = k.closeCode;
     if (kod == 4000 || kod == 4001) {
       _stanja.add({'t': 'zatvoreno', 'kod': kod});
       return;
     }
     _pokusaj++;
     Future.delayed(Duration(milliseconds: 500 * _pokusaj.clamp(1, 10)), () {
-      if (!_zatvoreno) _povezi();
+      if (!_zatvoreno && identical(_kanal, k)) _povezi();
     });
   }
 
