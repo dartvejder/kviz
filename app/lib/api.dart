@@ -145,6 +145,13 @@ class Api {
     return r['kod'];
   }
 
+  /// Pregled sobe za "Moje sobe"; null ako je soba istekla.
+  Future<Map<String, dynamic>?> pregledSobe(String kod) async {
+    final r = await http.get(Uri.parse('$server/api/sobe/$kod'), headers: _zaglavlja);
+    if (r.statusCode == 404) return null;
+    return _json(r);
+  }
+
   Future<List<Map<String, dynamic>>> oblasti() async {
     final r = _json(await http.get(Uri.parse('$server/api/oblasti')));
     return (r['lista'] as List).cast<Map<String, dynamic>>();

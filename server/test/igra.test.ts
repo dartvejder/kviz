@@ -101,3 +101,17 @@ describe("džokeri i izazov", () => {
     expect(danas(Date.UTC(2026, 10, 19, 23, 30))).toBe("2026-11-20");
   });
 });
+
+describe("pregled sobe", () => {
+  it("faza, broj igrača, moderator i da li sam u sobi", async () => {
+    const { novoStanje, pregledSobe } = await import("../src/igra");
+    const s = novoStanje("K7QX2M", "a", 1000);
+    s.igraci = [
+      { id: "a", ime: "Ana", avatar: "🦊", spreman: false, uIgri: true, poeni: 0, tacnih: 0 },
+      { id: "b", ime: "Bojan", avatar: "🐼", spreman: false, uIgri: true, poeni: 0, tacnih: 0 },
+    ];
+    expect(pregledSobe(s, "b", 10)).toEqual({ kod: "K7QX2M", faza: "cekaonica", igraca: 2, moderator: "Ana", ja: true, istice: 1010 });
+    s.faza = "otkriveno";
+    expect(pregledSobe(s, "x", 10)).toMatchObject({ faza: "igra", ja: false });
+  });
+});

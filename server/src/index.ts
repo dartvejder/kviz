@@ -260,6 +260,18 @@ export default {
       );
     }
 
+    // Pregled sobe za "Moje sobe" u aplikaciji (povratak u sobu posle izlaska sa ekrana).
+    const pregled = put.match(/^\/api\/sobe\/([A-Za-z0-9]{6})$/);
+    if (pregled && req.method === "GET") {
+      const kod = pregled[1].toUpperCase();
+      if (!KOD_REGEX.test(kod)) return greska("Pogrešan kod.", 400);
+      const ja = await prijavljen(req, env);
+      if (!ja) return greska("Nisi prijavljen.", 401);
+      const r = await env.SOBA.get(env.SOBA.idFromName(kod)).fetch(`https://soba/pregled?id=${encodeURIComponent(ja.id)}`);
+      if (!r.ok) return greska("Soba je istekla.", 404);
+      return json(await r.json());
+    }
+
     // Stanje sobe za karticu u Dart Chatu.
     const dcSoba = put.match(/^\/api\/dartchat\/sobe\/([A-Za-z0-9]{6})$/);
     if (dcSoba && req.method === "GET") {
