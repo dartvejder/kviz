@@ -14,7 +14,8 @@ val imaKljuc = keystorePath != null && File(keystorePath).exists() && !keystoreP
 
 android {
     namespace = "rs.kviz.kviz"
-    compileSdk = flutter.compileSdkVersion
+    // flutter_local_notifications i androidx.core 1.19 traže SDK 37 za prevođenje (targetSdk ostaje isti).
+    compileSdk = maxOf(flutter.compileSdkVersion, 37)
     ndkVersion = flutter.ndkVersion
 
     compileOptions {
