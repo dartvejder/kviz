@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
 import '../api.dart';
+import '../moje_sobe.dart';
 import '../pozivnica.dart';
 import '../tema.dart';
 import '../obavestenja.dart';
@@ -39,6 +40,8 @@ class _IgraEkranState extends State<IgraEkran> {
   @override
   void initState() {
     super.initState();
+    // Da se posle "Nazad" vratim u sobu sa početnog ekrana.
+    if (!widget.solo && !widget.izazov) MojeSobe.zapamti(widget.kod);
     _sub = _soba.stanja.listen((m) {
       if (!mounted) return;
       if (m['t'] == 'greska') {
@@ -53,6 +56,7 @@ class _IgraEkranState extends State<IgraEkran> {
       } else if (m['t'] == 'pola') {
         setState(() => _sakriveno[m['pitanje'] as int] = (m['sakrij'] as List).cast<int>());
       } else if (m['t'] == 'zatvoreno') {
+        if (m['kod'] == 4001) MojeSobe.zaboravi(widget.kod);
         setState(() => _greska = m['kod'] == 4001 ? 'Soba je istekla.' : 'Ušao si u ovu sobu sa drugog uređaja.');
       } else {
         _zvukZa(m);

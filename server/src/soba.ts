@@ -5,6 +5,7 @@ import {
   IZAZOV_OPCIJE,
   PODRAZUMEVANE_OPCIJE,
   REAKCIJE,
+  pregledSobe,
   bodujPitanje,
   ispravneOpcije,
   polaPola,
@@ -79,6 +80,12 @@ export class Soba extends DurableObject<Env> {
       }
       await this.sacuvaj(s);
       return new Response("ok");
+    }
+    // Kratak pregled za "Moje sobe" u aplikaciji.
+    if (url.pathname === "/pregled") {
+      const s = await this.ucitaj();
+      if (!s) return new Response("nema sobe", { status: 404 });
+      return Response.json(pregledSobe(s, url.searchParams.get("id") ?? "", ZIVOT_SOBE));
     }
     if (url.pathname === "/dartchat") {
       const s = await this.ucitaj();

@@ -192,3 +192,16 @@ export function seme(tekst: string): () => number {
 export const IZAZOV_OPCIJE: Opcije = { vreme: 15, pauza: 3, brojPitanja: 10, oblasti: [], dzokeri: false };
 
 export const REAKCIJE = ["👏", "😂", "😮", "🔥", "😅", "👍"];
+
+/** Pregled sobe za spisak "Moje sobe": faza, broj igrača, moderator i da li sam u sobi. */
+export function pregledSobe(s: Stanje, igracId: string, zivotSobe: number) {
+  const moderator = s.igraci.find((i) => i.id === s.moderatorId);
+  return {
+    kod: s.kod,
+    faza: s.faza === "cekaonica" ? "cekaonica" : s.faza === "kraj" ? "kraj" : "igra",
+    igraca: s.igraci.length,
+    moderator: moderator?.ime ?? null,
+    ja: s.igraci.some((i) => i.id === igracId),
+    istice: s.napravljena + zivotSobe,
+  };
+}

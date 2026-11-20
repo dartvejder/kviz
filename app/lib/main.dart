@@ -8,6 +8,7 @@ import 'ekrani/podesavanja.dart';
 import 'ekrani/profil.dart';
 import 'ekrani/statistika.dart';
 import 'ekrani/top.dart';
+import 'moje_sobe.dart';
 import 'pozivnica.dart';
 import 'obavestenja.dart';
 import 'tema.dart';
@@ -104,6 +105,48 @@ class _PocetnaEkranState extends State<PocetnaEkran> {
     }
   }
 
+  /// Sobe u koje sam ulazio, sa stanjem sa servera (null dok se ne učita ili bez interneta).
+  List<(MojaSoba, Map<String, dynamic>?)> _sobe = [];
+
+  Future<void> _ucitajSobe() async {
+    final lista = await MojeSobe.lista();
+    final sobe = <(MojaSoba, Map<String, dynamic>?)>[];
+    await Future.wait([
+      for (final s in lista)
+        () async {
+          try {
+            final p = await Api.i.pregledSobe(s.kod).timeout(const Duration(seconds: 6));
+            // Istekla ili sam izašao iz nje: nema je više u spisku.
+            if (p == null || p['ja'] == false) {
+              await MojeSobe.zaboravi(s.kod);
+              return;
+            }
+            sobe.add((s, p));
+          } catch (_) {
+            sobe.add((s, null));
+          }
+        }(),
+    ]);
+    sobe.sort((a, b) => b.$1.usao.compareTo(a.$1.usao));
+    if (mounted) setState(() => _sobe = sobe);
+  }
+
+  String _opisSobe(MojaSoba s, Map<String, dynamic>? p) {
+    if (p == null) return 'Soba ${s.kod}';
+    final faza = switch (p['faza']) {
+      'cekaonica' => 'čeka igrače',
+      'igra' => 'igra u toku',
+      _ => 'kraj partije',
+    };
+    final n = p['igraca'] as int? ?? 0;
+    return 'Soba ${s.kod} · $faza · $n ${n % 10 == 1 && n % 100 != 11 ? 'igrač' : 'igrača'}';
+  }
+
+  Future<void> _uSobu(String kod) async {
+    await Navigator.of(context).push(MaterialPageRoute(builder: (_) => IgraEkran(kod: kod)));
+    await _ucitajSobe();
+  }
+
   Future<void> _dnevniIzazov() async {
     if (_izazov != null) {
       await Navigator.of(context).push(MaterialPageRoute(builder: (_) => const TopEkran(period: 'izazov')));
@@ -133,6 +176,7 @@ class _PocetnaEkranState extends State<PocetnaEkran> {
   void initState() {
     super.initState();
     _ucitajIzazov();
+    _ucitajSobe();
     // Link pozivnice (Viber, WhatsApp...) vodi pravo u sobu.
     _linkovi = pozivniceIzLinkova().listen(_otvoriPozivnicu);
   }
@@ -152,7 +196,7 @@ class _PocetnaEkranState extends State<PocetnaEkran> {
     }
     if (!mounted) return;
     Navigator.of(context).popUntil((r) => r.isFirst);
-    Navigator.of(context).push(MaterialPageRoute(builder: (_) => IgraEkran(kod: p.kod)));
+    await _uSobu(p.kod);
   }
 
   @override
@@ -171,6 +215,7 @@ class _PocetnaEkranState extends State<PocetnaEkran> {
           builder: (_) => IgraEkran(kod: kod, solo: solo),
         ),
       );
+      await _ucitajSobe();
     } on Exception catch (e) {
       if (mounted) ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text('$e')));
     } finally {
@@ -200,7 +245,7 @@ class _PocetnaEkranState extends State<PocetnaEkran> {
     );
     final k = kod?.trim().toUpperCase() ?? '';
     if (k.length != 6 || !mounted) return;
-    await Navigator.of(context).push(MaterialPageRoute(builder: (_) => IgraEkran(kod: k)));
+    await _uSobu(k);
   }
 
   @override
@@ -254,6 +299,20 @@ class _PocetnaEkranState extends State<PocetnaEkran> {
                     ),
                   ),
                   const SizedBox(height: 24),
+                  if (_sobe.isNotEmpty) ...[
+                    Padding(
+                      padding: const EdgeInsets.only(left: 4, bottom: 8),
+                      child: Text('Tvoje sobe', style: t.naslov(velicina: 15, tezina: FontWeight.w700)),
+                    ),
+                    for (final (soba, p) in _sobe)
+                      VelikoDugme(
+                        ikona: Icons.meeting_room,
+                        tekst: _opisSobe(soba, p),
+                        glavno: p?['faza'] == 'igra',
+                        onTap: _radim ? null : () => _uSobu(soba.kod),
+                      ),
+                    const SizedBox(height: 12),
+                  ],
                   VelikoDugme(
                     ikona: Icons.add,
                     tekst: 'Nova igra',
