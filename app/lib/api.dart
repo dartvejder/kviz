@@ -9,8 +9,31 @@ import 'package:web_socket_channel/web_socket_channel.dart';
 const server = String.fromEnvironment('KVIZ_SERVER', defaultValue: 'https://kviz.dartchat.trade');
 
 const avatari = [
-  '🦊', '🐼', '🐯', '🦁', '🐸', '🐵', '🐨', '🐙', '🦄', '🐲', '🦉', '🐧', '🐢',
-  '🦖', '🐝', '🐬', '🦀', '🐺', '🐮', '🐷', '🦋', '🐞', '🐻', '🐰', '🦒',
+  '🦊',
+  '🐼',
+  '🐯',
+  '🦁',
+  '🐸',
+  '🐵',
+  '🐨',
+  '🐙',
+  '🦄',
+  '🐲',
+  '🦉',
+  '🐧',
+  '🐢',
+  '🦖',
+  '🐝',
+  '🐬',
+  '🦀',
+  '🐺',
+  '🐮',
+  '🐷',
+  '🦋',
+  '🐞',
+  '🐻',
+  '🐰',
+  '🦒',
 ];
 
 class GreskaServera implements Exception {
@@ -60,19 +83,29 @@ class Api {
   }
 
   Map<String, String> get _zaglavlja => {
-        'content-type': 'application/json',
-        if (nalog != null) 'authorization': nalog!.auth,
-      };
+    'content-type': 'application/json',
+    if (nalog != null) 'authorization': nalog!.auth,
+  };
 
   /// Pravi nalog ili menja ime/avatar postojećeg.
   Future<Nalog> postaviIgraca(String ime, String avatar) async {
     if (nalog == null) {
-      final r = _json(await http.post(Uri.parse('$server/api/igraci'),
-          headers: _zaglavlja, body: jsonEncode({'ime': ime, 'avatar': avatar})));
+      final r = _json(
+        await http.post(
+          Uri.parse('$server/api/igraci'),
+          headers: _zaglavlja,
+          body: jsonEncode({'ime': ime, 'avatar': avatar}),
+        ),
+      );
       nalog = Nalog(id: r['id'], token: r['token'], ime: r['ime'], avatar: r['avatar']);
     } else {
-      final r = _json(await http.put(Uri.parse('$server/api/igraci/ja'),
-          headers: _zaglavlja, body: jsonEncode({'ime': ime, 'avatar': avatar})));
+      final r = _json(
+        await http.put(
+          Uri.parse('$server/api/igraci/ja'),
+          headers: _zaglavlja,
+          body: jsonEncode({'ime': ime, 'avatar': avatar}),
+        ),
+      );
       nalog!
         ..ime = r['ime']
         ..avatar = r['avatar'];
@@ -103,13 +136,26 @@ class Api {
     return (r['lista'] as List).cast<Map<String, dynamic>>();
   }
 
+  /// Novi pokušaj dnevnog izazova; vraća kod sobe. Ako je već odigran, baca GreskaServera.
+  Future<String> izazov() async {
+    final r = _json(await http.post(Uri.parse('$server/api/izazov'), headers: _zaglavlja));
+    return r['kod'];
+  }
+
+  /// Današnja top lista izazova i moj rezultat ("ja", ili null ako nisam igrao).
+  Future<Map<String, dynamic>> izazovTop() async =>
+      _json(await http.get(Uri.parse('$server/api/izazov/top'), headers: _zaglavlja));
+
+  Future<Map<String, dynamic>> statistika() async =>
+      _json(await http.get(Uri.parse('$server/api/igraci/ja/statistika'), headers: _zaglavlja));
+
   Soba udji(String kod) => Soba(kod, nalog!);
 }
 
 /// Jedna otvorena soba: šalje poruke i prima stanje.
 class Soba {
-  Soba(this.kod, this.ja) {
-    _povezi();
+  Soba(this.kod, this.ja, {bool povezi = true}) {
+    if (povezi) _povezi();
   }
 
   final String kod;
@@ -129,15 +175,19 @@ class Soba {
     final ws = server.replaceFirst('http', 'ws');
     final k = WebSocketChannel.connect(Uri.parse('$ws/ws/$kod?id=${ja.id}&token=${ja.token}'));
     _kanal = k;
-    k.stream.listen((poruka) {
-      _pokusaj = 0;
-      final m = jsonDecode(poruka as String) as Map<String, dynamic>;
-      if (m['t'] == 'stanje') {
-        pomakSata = (m['sad'] as int) - DateTime.now().millisecondsSinceEpoch;
-        poslednje = m;
-      }
-      _stanja.add(m);
-    }, onDone: _ponovo, onError: (_) => _ponovo());
+    k.stream.listen(
+      (poruka) {
+        _pokusaj = 0;
+        final m = jsonDecode(poruka as String) as Map<String, dynamic>;
+        if (m['t'] == 'stanje') {
+          pomakSata = (m['sad'] as int) - DateTime.now().millisecondsSinceEpoch;
+          poslednje = m;
+        }
+        _stanja.add(m);
+      },
+      onDone: _ponovo,
+      onError: (_) => _ponovo(),
+    );
   }
 
   void _ponovo() {
