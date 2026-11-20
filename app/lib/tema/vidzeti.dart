@@ -191,7 +191,10 @@ class TajmerTeme extends StatelessWidget {
       child: CustomPaint(
         painter: _Krug(t, deo.clamp(0, 1)),
         child: Center(
-          child: Text('$sekunde', style: t.naslov(velicina: 16, tezina: FontWeight.w800)),
+          child: Text(
+            '$sekunde',
+            style: t.naslov(velicina: 16, tezina: FontWeight.w800, boja: t.zaobljenje == 0 ? t.naPovrsini : t.tekst),
+          ),
         ),
       ),
     );

@@ -15,16 +15,18 @@ Future<void> main() async {
   final r = await http.get(Uri.base.resolve('teme/${q['tema'] ?? 'studio'}.json'));
   Teme.i.tema.value = KvizTema(jsonDecode(utf8.decode(r.bodyBytes)));
   Api.i.nalog = Nalog(id: 'ja', token: 'x', ime: 'Marko', avatar: '🦊');
-  runApp(TemaScope(
-    builder: (c, t) => MaterialApp(
-      debugShowCheckedModeBanner: false,
-      theme: t.themeData(),
-      home: switch (q['ekran']) {
-        'pitanje' || 'otkriveno' || 'kraj' => _Igra(q['ekran']!),
-        _ => const PocetnaEkran(),
-      },
+  runApp(
+    TemaScope(
+      builder: (c, t) => MaterialApp(
+        debugShowCheckedModeBanner: false,
+        theme: t.themeData(),
+        home: switch (q['ekran']) {
+          'pitanje' || 'otkriveno' || 'kraj' => _Igra(q['ekran']!),
+          _ => const PocetnaEkran(),
+        },
+      ),
     ),
-  ));
+  );
 }
 
 class _Igra extends StatelessWidget {
@@ -42,7 +44,15 @@ class _Igra extends StatelessWidget {
       'dupli': ['b'],
       'igraci': [
         {'id': 'a', 'ime': 'Jelena', 'avatar': '🐼', 'poeni': 52, 'tacnih': 8, 'uIgri': true, 'odgovorio': true},
-        {'id': 'ja', 'ime': 'Marko', 'avatar': '🦊', 'poeni': 38, 'tacnih': 6, 'uIgri': true, 'dzokeri': {'pola': true}},
+        {
+          'id': 'ja',
+          'ime': 'Marko',
+          'avatar': '🦊',
+          'poeni': 38,
+          'tacnih': 6,
+          'uIgri': true,
+          'dzokeri': {'pola': true},
+        },
         {'id': 'b', 'ime': 'Stefan', 'avatar': '🦉', 'poeni': 31, 'tacnih': 5, 'uIgri': true, 'odgovorio': true},
         {'id': 'c', 'ime': 'Ana', 'avatar': '🐢', 'poeni': 22, 'tacnih': 4, 'uIgri': true},
       ],
