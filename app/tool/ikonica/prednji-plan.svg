@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+<defs>
+<radialGradient id="bg" cx="50%" cy="35%" r="75%"><stop offset="0" stop-color="#2b3db8"/><stop offset=".6" stop-color="#0d1466"/><stop offset="1" stop-color="#070b36"/></radialGradient>
+<linearGradient id="zl" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff1a8"/><stop offset=".45" stop-color="#ffd65a"/><stop offset="1" stop-color="#e09a1e"/></linearGradient>
+<linearGradient id="zr" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff" stop-opacity=".35"/><stop offset="1" stop-color="#ffffff" stop-opacity="0"/></linearGradient>
+<filter id="sj"><feGaussianBlur stdDeviation="14"/></filter>
+</defs>
+<g transform="translate(256 256) scale(0.95) translate(-256 -268)">
+<circle cx="256" cy="268" r="150" fill="#ffc83d" opacity=".35" filter="url(#sj)"/>
+<circle cx="256" cy="268" r="132" fill="#0d1466"/><circle cx="256" cy="268" r="140" fill="none" stroke="url(#zl)" stroke-width="18"/>
+<text x="256" y="345" text-anchor="middle" font-family="DejaVu Sans" font-weight="bold" font-size="230" fill="#b5741b">?</text>
+<text x="256" y="338" text-anchor="middle" font-family="DejaVu Sans" font-weight="bold" font-size="230" fill="url(#zl)">?</text>
+</g>
+</svg>
