@@ -11,6 +11,12 @@ CREATE TABLE IF NOT EXISTS pitanja (
 );
 CREATE INDEX IF NOT EXISTS pitanja_oblast ON pitanja(oblast);
 
+-- Otisak poslednjeg uvoza pitanja, da se isti sadržaj ne uvozi ponovo.
+CREATE TABLE IF NOT EXISTS uvoz (
+  kljuc TEXT PRIMARY KEY,
+  vrednost TEXT NOT NULL
+);
+
 CREATE TABLE IF NOT EXISTS igraci (
   id TEXT PRIMARY KEY,
   token_hash TEXT NOT NULL,
