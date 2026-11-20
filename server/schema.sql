@@ -125,3 +125,20 @@ CREATE TABLE IF NOT EXISTS pozivi (
   vreme INTEGER NOT NULL,
   PRIMARY KEY (kome, kod)
 ) WITHOUT ROWID;
+
+-- Prijava preko Google/Apple naloga (opciona): koji nalog provajdera čuva koji Kviz nalog.
+CREATE TABLE IF NOT EXISTS veze_naloga (
+  provajder TEXT NOT NULL,            -- google | apple
+  sub TEXT NOT NULL,                  -- stalni ID korisnika kod provajdera (mejl se ne čuva)
+  igrac_id TEXT NOT NULL,
+  povezan INTEGER NOT NULL,
+  PRIMARY KEY (provajder, sub)
+) WITHOUT ROWID;
+CREATE UNIQUE INDEX IF NOT EXISTS veze_naloga_igrac ON veze_naloga(igrac_id, provajder);
+
+-- Dodatni tokeni istog igrača (drugi telefon posle prijave), po SHA-256 otisku.
+CREATE TABLE IF NOT EXISTS tokeni (
+  hash TEXT PRIMARY KEY,
+  igrac_id TEXT NOT NULL,
+  napravljen INTEGER NOT NULL
+) WITHOUT ROWID;

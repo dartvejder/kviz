@@ -10,6 +10,9 @@ Object (`Soba`) po sobi, D1 baza `kviz`.
   `POST /api/pitanja/ID/prijava {razlog, napomena}` (prijava lošeg pitanja, tabela `prijave`),
   `GET /api/izazov/top` (i `niz`: dani izazova zaredom), `GET /api/igraci/ja/znacke`,
   `GET /api/prijatelji` (sa kim sam igrao), `POST|GET /api/pozivi`, `DELETE /api/pozivi/KOD`
+- `POST /api/prijava {provajder: google|apple, id_token}` – opciona prijava („Sačuvaj napredak”): proverava
+  ID token (`src/prijava.ts`), veže Kviz nalog (`veze_naloga`, bez mejla) ili ga vraća na novom telefonu
+  (dodatni token u `tokeni`). Uključuje se promenljivima `GOOGLE_CLIENT_IDS` i `APPLE_AUDIENCE` u `wrangler.toml`.
 - Opcije sobe: i `tezina` (sve/lako/srednje/teško, iz tabele `pitanja_stat`) i `timovi` (Plavi/Crveni, rezultat = prosek)
 - Nalozi Google-ovih test uređaja (Firebase Test Lab) su u tabeli `roboti` i ne vide se na top listama.
   Prijave pitanja: `SELECT * FROM prijave ORDER BY vreme DESC` u D1 konzoli.

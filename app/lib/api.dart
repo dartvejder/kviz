@@ -46,11 +46,15 @@ class GreskaServera implements Exception {
 }
 
 class Nalog {
-  Nalog({required this.id, required this.token, required this.ime, required this.avatar});
+  Nalog({required this.id, required this.token, required this.ime, required this.avatar, List<String>? prijave})
+    : prijave = prijave ?? [];
   final String id;
   final String token;
   String ime;
   String avatar;
+
+  /// Google/Apple nalozi koji čuvaju ovaj Kviz nalog (prazno = nije sačuvan).
+  List<String> prijave;
   String get auth => 'Bearer $id.$token';
 }
 
@@ -64,7 +68,13 @@ class Api {
     final p = await SharedPreferences.getInstance();
     final id = p.getString('id'), token = p.getString('token');
     if (id == null || token == null) return null;
-    nalog = Nalog(id: id, token: token, ime: p.getString('ime') ?? '', avatar: p.getString('avatar') ?? avatari.first);
+    nalog = Nalog(
+      id: id,
+      token: token,
+      ime: p.getString('ime') ?? '',
+      avatar: p.getString('avatar') ?? avatari.first,
+      prijave: p.getStringList('prijave'),
+    );
     return nalog;
   }
 
@@ -74,6 +84,50 @@ class Api {
     await p.setString('token', n.token);
     await p.setString('ime', n.ime);
     await p.setString('avatar', n.avatar);
+    await p.setStringList('prijave', n.prijave);
+  }
+
+  /// Osvežava ime, avatar i prijave sa servera (npr. posle prijave na drugom telefonu).
+  Future<void> osveziNalog() async {
+    final n = nalog;
+    if (n == null) return;
+    final r = _json(await http.get(Uri.parse('$server/api/igraci/ja'), headers: _zaglavlja));
+    n
+      ..ime = r['ime'] as String? ?? n.ime
+      ..avatar = r['avatar'] as String? ?? n.avatar
+      ..prijave = ((r['prijave'] as List?) ?? const []).cast<String>();
+    await _sacuvaj(n);
+  }
+
+  /// Prijava preko Google/Apple naloga. Vraća stanje: "povezan", "vec", "nov" ili "vracen".
+  /// Kod "vracen" se nalog NE menja sam: vraća se nalog sa servera, pa korisnik potvrdi prelazak ([predjiNa]).
+  Future<(String, Nalog?)> prijava(String provajder, String idToken, {String? ime, String? avatar}) async {
+    final r = _json(
+      await http.post(
+        Uri.parse('$server/api/prijava'),
+        headers: _zaglavlja,
+        body: jsonEncode({'provajder': provajder, 'id_token': idToken, 'ime': ?ime, 'avatar': ?avatar}),
+      ),
+    );
+    final stanje = r['stanje'] as String;
+    if (stanje == 'povezan' || stanje == 'vec') {
+      if (!nalog!.prijave.contains(provajder)) nalog!.prijave.add(provajder);
+      await _sacuvaj(nalog!);
+      return (stanje, nalog);
+    }
+    final novi = Nalog(id: r['id'], token: r['token'], ime: r['ime'], avatar: r['avatar'], prijave: [provajder]);
+    if (stanje == 'nov') {
+      nalog = novi;
+      await _sacuvaj(novi);
+    }
+    return (stanje, novi);
+  }
+
+  /// Prelazak na nalog koji čuva Google/Apple (posle potvrde).
+  Future<void> predjiNa(Nalog n) async {
+    nalog = n;
+    await _sacuvaj(n);
+    await osveziNalog().catchError((_) {});
   }
 
   Map<String, dynamic> _json(http.Response r) {

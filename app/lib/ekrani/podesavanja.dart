@@ -1,7 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:package_info_plus/package_info_plus.dart';
 
+import '../api.dart';
 import '../obavestenja.dart';
+import 'profil.dart';
+import 'sacuvaj.dart';
+import '../prijava.dart';
 import '../tema.dart';
 import '../zvuk.dart';
 
@@ -71,6 +75,39 @@ class _PodesavanjaEkranState extends State<PodesavanjaEkran> {
       body: ListView(
         padding: const EdgeInsets.all(16),
         children: [
+          _Naslov('NALOG'),
+          ListTile(
+            contentPadding: EdgeInsets.zero,
+            leading: Text(Api.i.nalog?.avatar ?? '', style: const TextStyle(fontSize: 26)),
+            title: Text(Api.i.nalog?.ime ?? ''),
+            subtitle: Text(
+              (Api.i.nalog?.prijave ?? const []).isEmpty
+                  ? 'Napredak je samo na ovom telefonu'
+                  : 'Sačuvan preko ${(Api.i.nalog!.prijave).map((p) => p == 'google' ? 'Google' : 'Apple').join(' i ')} naloga',
+            ),
+            trailing: const Icon(Icons.chevron_right),
+            onTap: () async {
+              await Navigator.of(context).push(MaterialPageRoute(builder: (_) => const ProfilEkran()));
+              if (mounted) setState(() {});
+            },
+          ),
+          FutureBuilder(
+            future: Prijava.dostupna(),
+            builder: (context, snap) => snap.data == true && (Api.i.nalog?.prijave ?? const []).isEmpty
+                ? Align(
+                    alignment: Alignment.centerLeft,
+                    child: TextButton.icon(
+                      onPressed: () async {
+                        await Navigator.of(context).push(MaterialPageRoute(builder: (_) => const SacuvajEkran()));
+                        if (mounted) setState(() {});
+                      },
+                      icon: const Icon(Icons.cloud_upload),
+                      label: const Text('Sačuvaj napredak'),
+                    ),
+                  )
+                : const SizedBox.shrink(),
+          ),
+          const SizedBox(height: 12),
           _Naslov('ZVUK'),
           SwitchListTile(
             contentPadding: EdgeInsets.zero,

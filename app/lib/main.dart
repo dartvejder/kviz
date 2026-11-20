@@ -7,6 +7,11 @@ import 'azuriranje.dart';
 import 'ekrani/igra.dart';
 import 'ekrani/podesavanja.dart';
 import 'ekrani/prijatelji.dart';
+import 'ekrani/sacuvaj.dart';
+import 'prijava.dart';
+
+import 'package:shared_preferences/shared_preferences.dart';
+
 import 'ekrani/profil.dart';
 import 'ekrani/statistika.dart';
 import 'ekrani/top.dart';
@@ -105,6 +110,28 @@ class _PocetnaEkranState extends State<PocetnaEkran> with WidgetsBindingObserver
   /// Pozivi prijatelja u sobe (osvežava se na 30 s i kad se aplikacija vrati u prvi plan).
   List<Map<String, dynamic>> _pozivi = [];
   Timer? _osvezi;
+
+  /// Kartica "Sačuvaj napredak": dok nalog nije sačuvan, a korisnik je nije sklonio u poslednjih 7 dana.
+  bool _ponudiPrijavu = false;
+
+  Future<void> _proveriPrijavu() async {
+    try {
+      await Api.i.osveziNalog().timeout(const Duration(seconds: 6));
+    } catch (_) {}
+    final p = await SharedPreferences.getInstance();
+    final sklonjeno = DateTime.fromMillisecondsSinceEpoch(p.getInt('sacuvaj_sklonjeno') ?? 0);
+    final ponudi =
+        Api.i.nalog!.prijave.isEmpty &&
+        DateTime.now().difference(sklonjeno) > const Duration(days: 7) &&
+        await Prijava.dostupna();
+    if (mounted) setState(() => _ponudiPrijavu = ponudi);
+  }
+
+  Future<void> _skloniPrijavu() async {
+    setState(() => _ponudiPrijavu = false);
+    final p = await SharedPreferences.getInstance();
+    await p.setInt('sacuvaj_sklonjeno', DateTime.now().millisecondsSinceEpoch);
+  }
 
   Future<void> _ucitajPozive() async {
     try {
@@ -236,6 +263,7 @@ class _PocetnaEkranState extends State<PocetnaEkran> with WidgetsBindingObserver
     _ucitajIzazov();
     _ucitajSobe();
     _ucitajPozive();
+    _proveriPrijavu();
     WidgetsBinding.instance.addObserver(this);
     _osvezi = Timer.periodic(const Duration(seconds: 30), (_) => _ucitajPozive());
     // Link pozivnice (Viber, WhatsApp...) vodi pravo u sobu.
@@ -362,6 +390,14 @@ class _PocetnaEkranState extends State<PocetnaEkran> with WidgetsBindingObserver
                     ),
                   ),
                   const SizedBox(height: 24),
+                  if (_ponudiPrijavu)
+                    SacuvajKartica(
+                      skloni: _skloniPrijavu,
+                      otvori: () async {
+                        await Navigator.of(context).push(MaterialPageRoute(builder: (_) => const SacuvajEkran()));
+                        await _proveriPrijavu();
+                      },
+                    ),
                   if (_pozivi.isNotEmpty) ...[
                     Padding(
                       padding: const EdgeInsets.only(left: 4, bottom: 8),
