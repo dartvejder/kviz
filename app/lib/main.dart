@@ -199,8 +199,8 @@ class _PocetnaEkranState extends State<PocetnaEkran> with WidgetsBindingObserver
         () async {
           try {
             final p = await Api.i.pregledSobe(s.kod).timeout(const Duration(seconds: 6));
-            // Istekla ili sam izašao iz nje: nema je više u spisku.
-            if (p == null || p['ja'] == false) {
+            // Istekla, izašao sam iz nje ili je partija gotova: nema je više u spisku.
+            if (p == null || p['ja'] == false || p['faza'] == 'kraj') {
               await MojeSobe.zaboravi(s.kod);
               return;
             }
