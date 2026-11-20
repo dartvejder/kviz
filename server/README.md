@@ -27,10 +27,10 @@ Ugovor: https://claude.ai/artifact/UvZjUecCpVXmjfU7fEXoWg. Kod je u `src/dartcha
 - Token proverava Dart Chat dodatak (`POST /_dartchat/v1/quiz/whoami`); Kviz pamti samo otisak, najviše 1 h.
 - Soba iz Dart Chata javlja `usao`, `pocelo`, `kraj`, `istekla` na `POST /_dartchat/v1/quiz/status`.
 
-Podešavanja Workera (Cloudflare → Workers → kviz-server → Settings → Variables):
-`DARTCHAT_URL` (npr. `https://chat.dartchat.trade`), tajna `KVIZ_KLJUC` (ista kao `quiz_api_key` u Home Assistantu)
-i, samo za probu, `DARTCHAT_TEST=1` (prihvata token `test:@ime:chat.dartchat.trade`). Bez njih Dart Chat putanje
-vraćaju 503, a ostatak servera radi kao i pre.
+`DARTCHAT_URL` je u `wrangler.toml`. U Cloudflare-u (Workers → kviz-server → Settings → Variables and Secrets)
+upisuje se tajna `KVIZ_KLJUC` (ista kao `quiz_api_key` u Home Assistantu) i, samo za probu, `DARTCHAT_TEST=1`
+(prihvata token `test:@ime:chat.dartchat.trade`; `keep_vars` je čuva pri postavljanju). Bez ključa Dart Chat
+putanje vraćaju 503, a ostatak servera radi kao i pre.
 
 Lokalno: `npx wrangler dev --var DARTCHAT_TEST:1`.
 
