@@ -6,4 +6,4 @@
 const googleWebClientId = '861174080262-rcjlu7emvt2nlq8sea1r9em6a4itjt5o.apps.googleusercontent.com';
 
 /// "iOS" client iz Google Cloud-a (bundle ID rs.kviz.app).
-const googleIosClientId = '';
+const googleIosClientId = '861174080262-pdob3d6griff15saqbg1u14nham5bqhh.apps.googleusercontent.com';
