@@ -3,6 +3,7 @@
 import { DurableObject } from "cloudflare:workers";
 import {
   IZAZOV_OPCIJE,
+  PODRAZUMEVANE_OPCIJE,
   REAKCIJE,
   bodujPitanje,
   ispravneOpcije,
@@ -16,6 +17,7 @@ import {
   type Stanje,
 } from "./igra";
 import type { Env } from "./index";
+import { javiDartChatu, poredak, stanjeZaDartChat, type Dogadjaj } from "./dartchat";
 
 /** Pauza posle otkrivanja odgovora; starije sobe nemaju opciju pa važi 5 s. */
 const pauzaMs = (s: { opcije: { pauza?: number } }) => (s.opcije.pauza ?? 5) * 1000;
@@ -54,7 +56,13 @@ export class Soba extends DurableObject<Env> {
   async fetch(req: Request): Promise<Response> {
     const url = new URL(req.url);
     if (url.pathname === "/init" && req.method === "POST") {
-      const { kod, moderatorId, izazov } = (await req.json()) as { kod: string; moderatorId: string; izazov?: string };
+      const { kod, moderatorId, izazov, dartchat, opcije } = (await req.json()) as {
+        kod: string;
+        moderatorId: string;
+        izazov?: string;
+        dartchat?: Stanje["dartchat"];
+        opcije?: Record<string, unknown> | null;
+      };
       if (await this.ucitaj()) return new Response("postoji", { status: 409 });
       const s = novoStanje(kod, moderatorId, Date.now());
       if (izazov) {
@@ -62,9 +70,20 @@ export class Soba extends DurableObject<Env> {
         s.opcije = { ...IZAZOV_OPCIJE };
       }
       const oblasti = await this.env.DB.prepare("SELECT DISTINCT oblast FROM pitanja ORDER BY oblast").all<{ oblast: string }>();
-      await this.ctx.storage.put("oblasti", oblasti.results.map((r) => r.oblast));
+      const sveOblasti = oblasti.results.map((r) => r.oblast);
+      await this.ctx.storage.put("oblasti", sveOblasti);
+      if (dartchat) {
+        s.dartchat = dartchat;
+        // Predlog iz Dart Chata; moderator ih menja u čekaonici.
+        if (opcije) s.opcije = ispravneOpcije({ ...PODRAZUMEVANE_OPCIJE, ...opcije } as never, sveOblasti);
+      }
       await this.sacuvaj(s);
       return new Response("ok");
+    }
+    if (url.pathname === "/dartchat") {
+      const s = await this.ucitaj();
+      if (!s) return new Response("nema sobe", { status: 404 });
+      return Response.json(stanjeZaDartChat(s, ZIVOT_SOBE));
     }
     if (url.pathname === "/ws") {
       if (req.headers.get("Upgrade") !== "websocket") return new Response("ocekujem websocket", { status: 426 });
@@ -73,7 +92,9 @@ export class Soba extends DurableObject<Env> {
       const id = req.headers.get("X-Igrac-Id")!;
       const ime = decodeURIComponent(req.headers.get("X-Igrac-Ime") ?? "Igrač");
       const avatar = decodeURIComponent(req.headers.get("X-Igrac-Avatar") ?? "🦊");
+      const matrix = req.headers.get("X-Igrac-Matrix") || undefined;
       let igrac = s.igraci.find((i) => i.id === id);
+      const nov = !igrac;
       if (!igrac) {
         if (s.izazov && id !== s.moderatorId) return new Response("izazov se igra sam", { status: 403 });
         if (s.igraci.length >= MAX_IGRACA) return new Response("soba je puna", { status: 403 });
@@ -83,6 +104,12 @@ export class Soba extends DurableObject<Env> {
         igrac.ime = ime;
         igrac.avatar = avatar;
       }
+      if (matrix) igrac.matrix = matrix;
+      else delete igrac.matrix;
+      // Soba iz Dart Chata: pozivar je moderator čim uđe; do tada je to prvi koji uđe.
+      if (s.dartchat && matrix === s.dartchat.moderator) s.moderatorId = id;
+      else if (!s.moderatorId) s.moderatorId = id;
+      if (nov) this.javi(s, "usao", { igrac: igrac.matrix ?? null, ime: igrac.ime });
       const par = new WebSocketPair();
       // Stari priključak istog igrača (npr. drugi tab) se zatvara.
       for (const ws of this.ctx.getWebSockets(id)) ws.close(4000, "novi priključak");
@@ -132,6 +159,7 @@ export class Soba extends DurableObject<Env> {
           ws.send(JSON.stringify({ t: "greska", poruka: "Nema dovoljno pitanja za izabrane oblasti." }));
           return;
         }
+        this.javi(s, "pocelo");
         break;
       case "odgovor": {
         if (s.faza !== "pitanje" || !igrac.uIgri || igracId in s.odgovori) return;
@@ -204,6 +232,7 @@ export class Soba extends DurableObject<Env> {
     if (!s) return;
     const sad = Date.now();
     if (sad >= s.napravljena + ZIVOT_SOBE && (s.faza === "cekaonica" || s.faza === "kraj")) {
+      this.javi(s, "istekla");
       for (const ws of this.ctx.getWebSockets()) ws.close(4001, "soba je istekla");
       await this.ctx.storage.deleteAll();
       this.stanje = null;
@@ -357,6 +386,13 @@ export class Soba extends DurableObject<Env> {
     ];
     await this.env.DB.batch(upiti);
     for (const i of s.igraci) i.spreman = false;
+    this.javi(s, "kraj", { poredak: poredak(s.igraci) });
+  }
+
+  /** Događaj za Dart Chat (samo sobe napravljene iz Dart Chata); igra ne čeka odgovor. */
+  private javi(s: Stanje, dogadjaj: Dogadjaj, dodatak: { igrac?: string | null; ime?: string; poredak?: unknown } = {}) {
+    if (!s.dartchat) return;
+    this.ctx.waitUntil(javiDartChatu(this.env, { kod: s.kod, chat: s.dartchat.chat, dogadjaj, ...dodatak }));
   }
 
   /** Šta klijent vidi: tačan odgovor tek posle otkrivanja, tuđi izbori nikad pre kraja pitanja. */

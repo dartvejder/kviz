@@ -18,6 +18,22 @@ npm run pitanja && npx wrangler d1 execute kviz --local --file build/pitanja.sql
 npx wrangler dev
 ```
 
+## Dart Chat
+
+Ugovor: https://claude.ai/artifact/UvZjUecCpVXmjfU7fEXoWg. Kod je u `src/dartchat.ts`.
+
+- `GET /api/dartchat/ja`, `POST /api/dartchat/sobe`, `GET /api/dartchat/sobe/KOD` – zaglavlje `Authorization: DartChat <token>`
+- `POST /api/dartchat/povezi {openid_token}` – Kviz nalog (`Bearer ID.TOKEN`) dobija Matrix ID
+- Token proverava Dart Chat dodatak (`POST /_dartchat/v1/quiz/whoami`); Kviz pamti samo otisak, najviše 1 h.
+- Soba iz Dart Chata javlja `usao`, `pocelo`, `kraj`, `istekla` na `POST /_dartchat/v1/quiz/status`.
+
+Podešavanja Workera (Cloudflare → Workers → kviz-server → Settings → Variables):
+`DARTCHAT_URL` (npr. `https://chat.dartchat.trade`), tajna `KVIZ_KLJUC` (ista kao `quiz_api_key` u Home Assistantu)
+i, samo za probu, `DARTCHAT_TEST=1` (prihvata token `test:@ime:chat.dartchat.trade`). Bez njih Dart Chat putanje
+vraćaju 503, a ostatak servera radi kao i pre.
+
+Lokalno: `npx wrangler dev --var DARTCHAT_TEST:1`.
+
 Postavljanje radi `.github/workflows/server.yml` na main grani (tajna
 `CLOUDFLARE_API_TOKEN`).
 

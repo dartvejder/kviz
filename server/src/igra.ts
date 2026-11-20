@@ -26,6 +26,8 @@ export interface Igrac {
   dzokeri?: { pola?: boolean; dupli?: boolean };
   /** Po oblasti: [tačnih, pitanja] u ovoj partiji, za statistiku. */
   poOblasti?: Record<string, [number, number]>;
+  /** Matrix ID, ako je igrač povezao Dart Chat. */
+  matrix?: string;
 }
 
 export interface Pitanje {
@@ -60,6 +62,14 @@ export interface Stanje {
   dupli?: Record<string, true>;
   /** Dnevni izazov: dan "2026-11-20" (beogradsko vreme); samo tvorac igra. */
   izazov?: string;
+  /** Soba napravljena iz Dart Chata. */
+  dartchat?: {
+    /** Matrix ID pozivara: njegov Kviz nalog postaje moderator kad uđe. */
+    moderator: string;
+    pozvani: string[];
+    /** Matrix soba iz koje je poziv poslat; samo se vraća u događajima. */
+    chat: string | null;
+  };
 }
 
 export function novoStanje(kod: string, moderatorId: string, sad: number): Stanje {

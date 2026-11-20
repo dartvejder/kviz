@@ -62,3 +62,19 @@ CREATE TABLE IF NOT EXISTS izazov (
   kraj INTEGER NOT NULL,
   PRIMARY KEY (dan, igrac_id)
 ) WITHOUT ROWID;
+
+-- Dart Chat: jedan Matrix ID je povezan sa najviše jednim Kviz nalogom (novo povezivanje preuzima vezu).
+CREATE TABLE IF NOT EXISTS dartchat_veze (
+  matrix_id TEXT PRIMARY KEY,
+  igrac_id TEXT NOT NULL UNIQUE,
+  povezan INTEGER NOT NULL
+) WITHOUT ROWID;
+
+-- Provereni Dart Chat tokeni (po SHA-256 otisku, ne sam token), dok važe a najviše 1 h.
+CREATE TABLE IF NOT EXISTS dartchat_tokeni (
+  hash TEXT PRIMARY KEY,
+  matrix_id TEXT NOT NULL,
+  ime TEXT NOT NULL,
+  istice INTEGER NOT NULL
+) WITHOUT ROWID;
+CREATE INDEX IF NOT EXISTS dartchat_tokeni_istice ON dartchat_tokeni(istice);
