@@ -1,14 +1,10 @@
 # Kviz opšte kulture
 
-Kviz na srpskom za 2–8 igrača. Domaćin upiše ime, izabere vreme po pitanju i broj pitanja i pošalje pozivnicu (link ili kod). Ostali upišu ime i uđu. Domaćin pokreće kviz.
+Kviz na srpskom za više igrača. Igra se u Flutter aplikaciji (`app/`, Android i iPhone) preko servera na Cloudflare-u (`server/`).
 
-Bodovanje: tačan odgovor +3, najbrži tačan odgovor dobija još +2, netačan −1, bez odgovora 0.
+Stara igra u pregledaču (PeerJS) je ugašena 20. 11. 2026: `index.html` na https://dartvejder.github.io/kviz/ sada samo kaže da je kviz aplikacija. Sajt ostaje zbog politike privatnosti (`privacy.html`).
 
-Igrači se povezuju direktno između pregledača (WebRTC, preko [PeerJS](https://peerjs.com)); nalog nije potreban. Domaćin mora da drži stranicu otvorenu do kraja igre.
-
-Pitanja (oko 8900, 18 oblasti; domaćin u čekaonici bira koje oblasti ulaze u igru) su u `questions.js`, koji se pravi skriptom `src/build.py` iz fajlova `src/*.txt` (format: `pitanje|tačan|netačan|netačan|netačan`). Domaćinov pregledač pamti već odigrana pitanja, pa se ona ne ponavljaju dok se ne iskoriste sva.
-
-`peerjs.min.js` je PeerJS 1.5.4 (MIT licenca).
+Pitanja su u `questions.js`, koji se pravi skriptom `src/build.py` iz fajlova `src/*.txt` (format: `pitanje|tačan|netačan|netačan|netačan`); server ih uvozi u D1 bazu.
 
 ## Android aplikacija
 
