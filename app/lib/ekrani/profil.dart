@@ -3,6 +3,8 @@ import 'package:flutter/material.dart';
 import '../api.dart';
 import '../main.dart';
 import '../tema.dart';
+import '../prijava.dart';
+import 'sacuvaj.dart';
 import 'statistika.dart';
 
 /// Ime i avatar; prvi put pravi nalog. Ovde je i "Obriši nalog".
@@ -20,6 +22,7 @@ class _ProfilEkranState extends State<ProfilEkran> {
   late final _ime = TextEditingController(text: Api.i.nalog?.ime ?? widget.predlogImena ?? '');
   late String _avatar = Api.i.nalog?.avatar ?? avatari.first;
   bool _radim = false;
+  late final Future<bool> _prijava = Prijava.dostupna();
 
   Future<void> _sacuvaj() async {
     if (_ime.text.trim().isEmpty) return;
@@ -94,6 +97,40 @@ class _ProfilEkranState extends State<ProfilEkran> {
               ),
               const SizedBox(height: 24),
               FilledButton(onPressed: _radim ? null : _sacuvaj, child: const Text('Sačuvaj')),
+              FutureBuilder(
+                future: _prijava,
+                builder: (context, snap) {
+                  if (snap.data != true) return const SizedBox.shrink();
+                  final prijave = Api.i.nalog?.prijave ?? const <String>[];
+                  if (prijave.isNotEmpty) {
+                    return Padding(
+                      padding: const EdgeInsets.only(top: 16),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          const Icon(Icons.cloud_done, size: 18),
+                          const SizedBox(width: 6),
+                          Text(
+                            'Napredak je sačuvan (${prijave.map((p) => p == 'google' ? 'Google' : 'Apple').join(', ')})',
+                          ),
+                        ],
+                      ),
+                    );
+                  }
+                  return Padding(
+                    padding: const EdgeInsets.only(top: 12),
+                    child: OutlinedButton.icon(
+                      onPressed: () async {
+                        await Navigator.of(context)
+                            .push(MaterialPageRoute(builder: (_) => SacuvajEkran(prvi: widget.prvi)));
+                        if (mounted) setState(() {});
+                      },
+                      icon: Icon(widget.prvi ? Icons.restore : Icons.cloud_upload),
+                      label: Text(widget.prvi ? 'Već si igrao? Vrati svoj nalog' : 'Sačuvaj napredak'),
+                    ),
+                  );
+                },
+              ),
               if (!widget.prvi) ...[
                 const SizedBox(height: 12),
                 OutlinedButton.icon(

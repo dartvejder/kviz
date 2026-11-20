@@ -33,3 +33,6 @@ crons = ["0 6,7 * * *"]
 
 [vars]
 DARTCHAT_URL = "https://chat.dartchat.trade"
+# Prijava preko Apple naloga: bundle ID aplikacije. Google: client ID-jevi (web, iOS), zarezom; prazno = isključeno.
+APPLE_AUDIENCE = "rs.kviz.app"
+GOOGLE_CLIENT_IDS = "861174080262-rcjlu7emvt2nlq8sea1r9em6a4itjt5o.apps.googleusercontent.com,861174080262-pdob3d6griff15saqbg1u14nham5bqhh.apps.googleusercontent.com"

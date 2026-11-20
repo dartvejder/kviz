@@ -1,6 +1,25 @@
 import { describe, expect, it } from "vitest";
-import { bodujPitanje, ispravneOpcije, napraviPitanje, noviKod, KOD_REGEX, promesaj } from "../src/igra";
-import { pocetakPerioda } from "../src/period";
+import {
+  azurirajNizove,
+  bodujPitanje,
+  ispravneOpcije,
+  izmesajTimove,
+  napraviPitanje,
+  noviKod,
+  novoStanje,
+  pobednickiTim,
+  pregledPartije,
+  rasporediUTimove,
+  rezultatTimova,
+  seme,
+  uslovTezine,
+  zapamtiOdgovore,
+  znackeIzPartije,
+  KOD_REGEX,
+  promesaj,
+  type Igrac,
+} from "../src/igra";
+import { juce, nizDana, pocetakPerioda } from "../src/period";
 
 describe("bodovanje", () => {
   it("tačan +3, najbrži tačan još +1, netačan −1", () => {
@@ -32,6 +51,8 @@ describe("opcije", () => {
       brojPitanja: 50,
       oblasti: ["Film"],
       dzokeri: true,
+      tezina: "sve",
+      timovi: false,
     });
   });
 });
@@ -113,5 +134,98 @@ describe("pregled sobe", () => {
     expect(pregledSobe(s, "b", 10)).toEqual({ kod: "K7QX2M", faza: "cekaonica", igraca: 2, moderator: "Ana", ja: true, istice: 1010 });
     s.faza = "otkriveno";
     expect(pregledSobe(s, "x", 10)).toMatchObject({ faza: "igra", ja: false });
+  });
+});
+
+describe("pregled posle partije", () => {
+  it("pamti izbor svakog igrača po pitanju, null kad nije odgovorio", () => {
+    const s = novoStanje("ABCDEF", "a", 0);
+    s.igraci = [
+      { id: "a", ime: "A", avatar: "🦊", spreman: true, uIgri: true, poeni: 0, tacnih: 0 },
+      { id: "b", ime: "B", avatar: "🐼", spreman: true, uIgri: true, poeni: 0, tacnih: 0 },
+      { id: "c", ime: "C", avatar: "🐯", spreman: false, uIgri: false, poeni: 0, tacnih: 0 },
+    ];
+    s.pitanja = [
+      { id: 7, oblast: "Istorija", tekst: "P1", opcije: ["a", "b", "c", "d"], tacan: 2 },
+      { id: 9, oblast: "Sport", tekst: "P2", opcije: ["a", "b", "c", "d"], tacan: 0 },
+    ];
+    s.trenutno = 0;
+    s.odgovori = { a: { izbor: 2, vreme: 1 } };
+    zapamtiOdgovore(s);
+    s.trenutno = 1;
+    s.odgovori = { a: { izbor: 1, vreme: 1 }, b: { izbor: 0, vreme: 1 } };
+    zapamtiOdgovore(s);
+    const p = pregledPartije(s);
+    expect(p).toHaveLength(2);
+    expect(p[0]).toMatchObject({ id: 7, tacan: 2, odgovori: { a: 2, b: null } });
+    expect(p[1].odgovori).toEqual({ a: 1, b: 0 });
+    expect("c" in p[0].odgovori).toBe(false);
+  });
+});
+
+describe("niz dana izazova", () => {
+  it("broji dane zaredom od danas ili od juče", () => {
+    expect(nizDana(["2026-11-20", "2026-11-19", "2026-11-18", "2026-11-16"], "2026-11-20")).toEqual({ niz: 3, danas: true });
+    expect(nizDana(["2026-11-19", "2026-11-18"], "2026-11-20")).toEqual({ niz: 2, danas: false });
+    expect(nizDana(["2026-11-18"], "2026-11-20")).toEqual({ niz: 0, danas: false });
+    expect(nizDana(["2026-03-01", "2026-02-28"], "2026-03-01")).toEqual({ niz: 2, danas: true });
+    expect(juce("2026-01-01")).toBe("2025-12-31");
+  });
+});
+
+const igrac = (id: string, dodatak: Partial<Igrac> = {}): Igrac => ({
+  id,
+  ime: id,
+  avatar: "🦊",
+  spreman: true,
+  uIgri: true,
+  poeni: 0,
+  tacnih: 0,
+  ...dodatak,
+});
+
+describe("timovi", () => {
+  it("raspoređuje u manji tim i meša ravnomerno", () => {
+    const ig = [igrac("a", { tim: 0 }), igrac("b", { tim: 0 }), igrac("c"), igrac("d")];
+    rasporediUTimove(ig);
+    expect(ig.map((i) => i.tim)).toEqual([0, 0, 1, 1]);
+    const vise = ["a", "b", "c", "d", "e"].map((x) => igrac(x));
+    izmesajTimove(vise, seme("x"));
+    const plavih = vise.filter((i) => i.tim === 0).length;
+    expect([2, 3]).toContain(plavih);
+  });
+  it("rezultat tima je prosek, pobednik po proseku", () => {
+    const ig = [igrac("a", { tim: 0, poeni: 10 }), igrac("b", { tim: 0, poeni: 2 }), igrac("c", { tim: 1, poeni: 7 })];
+    const [p, c] = rezultatTimova(ig);
+    expect(p).toMatchObject({ naziv: "Plavi", igraca: 2, ukupno: 12, prosek: 6 });
+    expect(c).toMatchObject({ naziv: "Crveni", igraca: 1, prosek: 7 });
+    expect(pobednickiTim(ig)).toBe(1);
+    expect(pobednickiTim([igrac("a", { tim: 0, poeni: 3 })])).toBeNull();
+  });
+});
+
+describe("nizovi i značke", () => {
+  it("broji tačne zaredom i najbrže", () => {
+    const ig = [igrac("a"), igrac("b")];
+    azurirajNizove(ig, 1, { a: { izbor: 1, vreme: 5 }, b: { izbor: 1, vreme: 9 } }, { a: 4, b: 3 });
+    azurirajNizove(ig, 2, { a: { izbor: 2, vreme: 5 }, b: { izbor: 0, vreme: 9 } }, { a: 4, b: -1 });
+    expect(ig[0]).toMatchObject({ zaredom: 2, najviseZaredom: 2, najbrzih: 2 });
+    expect(ig[1]).toMatchObject({ zaredom: 0, najviseZaredom: 1 });
+  });
+  it("pobeda, savršeno i deset zaredom", () => {
+    const s = novoStanje("ABCDEF", "a", 0);
+    s.pitanja = Array.from({ length: 10 }, (_, k) => ({ id: k, oblast: "X", tekst: "", opcije: [], tacan: 0 }));
+    s.igraci = [igrac("a", { poeni: 30, tacnih: 10, najviseZaredom: 10 }), igrac("b", { poeni: 5, tacnih: 3 })];
+    expect(znackeIzPartije(s, s.igraci[0])).toEqual(["pobeda", "savrseno", "zaredom10"]);
+    expect(znackeIzPartije(s, s.igraci[1])).toEqual([]);
+  });
+});
+
+describe("opcije: težina i timovi", () => {
+  it("nepoznata težina je sve", () => {
+    expect(ispravneOpcije({ tezina: "xx" as never, timovi: true }, []).tezina).toBe("sve");
+    expect(ispravneOpcije({ tezina: "tesko", timovi: true }, [])).toMatchObject({ tezina: "tesko", timovi: true });
+    expect(uslovTezine("sve")).toBe("");
+    expect(uslovTezine("lako")).toContain(">= 0.7");
   });
 });

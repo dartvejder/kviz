@@ -10,9 +10,22 @@ export interface Opcije {
   brojPitanja: number; // 5–50
   oblasti: string[]; // prazno = sve oblasti
   dzokeri: boolean; // 50:50 i Dupli poeni, po jednom u partiji
+  tezina: Tezina; // po uspehu svih igrača na pitanju
+  timovi: boolean; // dve ekipe; rezultat ekipe = prosek poena njenih igrača
 }
 
-export const PODRAZUMEVANE_OPCIJE: Opcije = { vreme: 20, pauza: 5, brojPitanja: 10, oblasti: [], dzokeri: true };
+export const TEZINE = ["sve", "lako", "srednje", "tesko"] as const;
+export type Tezina = (typeof TEZINE)[number];
+
+export const PODRAZUMEVANE_OPCIJE: Opcije = {
+  vreme: 20,
+  pauza: 5,
+  brojPitanja: 10,
+  oblasti: [],
+  dzokeri: true,
+  tezina: "sve",
+  timovi: false,
+};
 
 export interface Igrac {
   id: string;
@@ -28,6 +41,25 @@ export interface Igrac {
   poOblasti?: Record<string, [number, number]>;
   /** Matrix ID, ako je igrač povezao Dart Chat. */
   matrix?: string;
+  /** Tačnih zaredom upravo sada, i najviše zaredom u ovoj partiji. */
+  zaredom?: number;
+  najviseZaredom?: number;
+  /** Koliko puta je bio najbrži tačan u ovoj partiji. */
+  najbrzih?: number;
+  /** Timski mod: 0 = Plavi, 1 = Crveni. */
+  tim?: 0 | 1;
+  /** Značke osvojene na kraju ove partije (prikaz "Nova značka!"). */
+  noveZnacke?: string[];
+}
+
+export interface PitanjePregleda {
+  id: number;
+  oblast: string;
+  tekst: string;
+  opcije: string[];
+  tacan: number;
+  /** Izbor svakog igrača (null = bez odgovora). */
+  odgovori: Record<string, number | null>;
 }
 
 export interface Pitanje {
@@ -60,6 +92,10 @@ export interface Stanje {
   prozivkaDo: number; // 0 = nema prozivke
   /** Ko je na trenutnom pitanju uključio Dupli poeni. */
   dupli?: Record<string, true>;
+  /** Izbor svakog igrača po pitanju u ovoj partiji (null = nije odgovorio), za pregled posle partije. */
+  istorija?: Record<string, (number | null)[]>;
+  /** "Igraj ponovo": kod nove sobe u koju prelaze svi iz ove. */
+  sledeca?: string;
   /** Dnevni izazov: dan "2026-11-20" (beogradsko vreme); samo tvorac igra. */
   izazov?: string;
   /** Soba napravljena iz Dart Chata. */
@@ -102,6 +138,8 @@ export function ispravneOpcije(o: Partial<Opcije>, sveOblasti: string[]): Opcije
     brojPitanja: Number.isFinite(broj) ? Math.min(50, Math.max(5, broj)) : PODRAZUMEVANE_OPCIJE.brojPitanja,
     oblasti: [...new Set(oblasti)],
     dzokeri: o.dzokeri !== false,
+    tezina: TEZINE.find((t) => t === o.tezina) ?? "sve",
+    timovi: o.timovi === true,
   };
 }
 
@@ -189,7 +227,15 @@ export function seme(tekst: string): () => number {
 }
 
 /** Dnevni izazov: 10 pitanja, 15 s, pauza 3 s, bez džokera, isto za sve. */
-export const IZAZOV_OPCIJE: Opcije = { vreme: 15, pauza: 3, brojPitanja: 10, oblasti: [], dzokeri: false };
+export const IZAZOV_OPCIJE: Opcije = {
+  vreme: 15,
+  pauza: 3,
+  brojPitanja: 10,
+  oblasti: [],
+  dzokeri: false,
+  tezina: "sve",
+  timovi: false,
+};
 
 export const REAKCIJE = ["👏", "😂", "😮", "🔥", "😅", "👍"];
 
@@ -204,4 +250,126 @@ export function pregledSobe(s: Stanje, igracId: string, zivotSobe: number) {
     ja: s.igraci.some((i) => i.id === igracId),
     istice: s.napravljena + zivotSobe,
   };
+}
+
+/** Pregled posle partije: sva pitanja, tačan odgovor i izbor svakog igrača. */
+export function pregledPartije(s: Stanje): PitanjePregleda[] {
+  const igraju = s.igraci.filter((i) => i.uIgri);
+  return s.pitanja.map((p, k) => ({
+    id: p.id,
+    oblast: p.oblast,
+    tekst: p.tekst,
+    opcije: p.opcije,
+    tacan: p.tacan,
+    odgovori: Object.fromEntries(igraju.map((i) => [i.id, s.istorija?.[i.id]?.[k] ?? null])),
+  }));
+}
+
+/** Upisuje izbore za trenutno pitanje u istoriju partije. */
+export function zapamtiOdgovore(s: Stanje) {
+  s.istorija ??= {};
+  for (const i of s.igraci) {
+    if (!i.uIgri) continue;
+    const niz = (s.istorija[i.id] ??= []);
+    niz[s.trenutno] = s.odgovori[i.id]?.izbor ?? null;
+  }
+}
+
+export const RAZLOZI_PRIJAVE = ["netacan", "nejasno", "zastarelo", "drugo"] as const;
+
+/**
+ * Težina pitanja po uspehu svih igrača (tabela pitanja_stat). Dok pitanje nema bar 5 odgovora,
+ * smatra se srednjim. Vraća SQL uslov nad kolonama s.tacnih i s.ukupno (LEFT JOIN).
+ */
+export function uslovTezine(t: Tezina): string {
+  const poznato = "COALESCE(s.ukupno, 0) >= 5";
+  const uspeh = "(s.tacnih * 1.0 / s.ukupno)";
+  if (t === "lako") return `AND ${poznato} AND ${uspeh} >= 0.7`;
+  if (t === "tesko") return `AND ${poznato} AND ${uspeh} < 0.4`;
+  if (t === "srednje") return `AND NOT (${poznato} AND (${uspeh} >= 0.7 OR ${uspeh} < 0.4))`;
+  return "";
+}
+
+/** Posle otkrivanja: niz tačnih zaredom i broj najbržih, za značke i poruke u sobi. */
+export function azurirajNizove(igraci: Igrac[], tacan: number, odgovori: Record<string, Odgovor>, delta: Record<string, number>) {
+  for (const i of igraci) {
+    if (!i.uIgri) continue;
+    const tacno = odgovori[i.id]?.izbor === tacan;
+    i.zaredom = tacno ? (i.zaredom ?? 0) + 1 : 0;
+    i.najviseZaredom = Math.max(i.najviseZaredom ?? 0, i.zaredom);
+    if (tacno && delta[i.id] === BODOVI.tacan + BODOVI.najbrzi) i.najbrzih = (i.najbrzih ?? 0) + 1;
+  }
+}
+
+export interface Znacka {
+  id: string;
+  ikona: string;
+  naziv: string;
+  opis: string;
+}
+
+export const ZNACKE: Znacka[] = [
+  { id: "pobeda", ikona: "🏆", naziv: "Prva pobeda", opis: "Pobedi u partiji sa bar dva igrača." },
+  { id: "savrseno", ikona: "💯", naziv: "Savršena partija", opis: "Odgovori tačno na sva pitanja (bar 10)." },
+  { id: "zaredom10", ikona: "🔥", naziv: "Deset zaredom", opis: "10 tačnih odgovora zaredom u jednoj partiji." },
+  { id: "munja", ikona: "⚡", naziv: "Munja", opis: "Budi najbrži sa tačnim odgovorom 5 puta u jednoj partiji." },
+  { id: "drustvo", ikona: "🎉", naziv: "Veliko društvo", opis: "Odigraj partiju sa bar 10 igrača." },
+  { id: "tim", ikona: "🤝", naziv: "Timski igrač", opis: "Pobedi u timskoj partiji." },
+  { id: "partija10", ikona: "🎯", naziv: "Deset partija", opis: "Odigraj 10 partija." },
+  { id: "partija100", ikona: "🏅", naziv: "Sto partija", opis: "Odigraj 100 partija." },
+  { id: "izazov7", ikona: "📅", naziv: "Nedelja izazova", opis: "Igraj dnevni izazov 7 dana zaredom." },
+  { id: "izazov30", ikona: "🗓️", naziv: "Mesec izazova", opis: "Igraj dnevni izazov 30 dana zaredom." },
+];
+
+/** Značke koje se vide iz same partije (bez baze): pobeda, savršeno, zaredom, munja, društvo. */
+export function znackeIzPartije(s: Stanje, i: Igrac): string[] {
+  const igraju = s.igraci.filter((x) => x.uIgri);
+  const z: string[] = [];
+  const najvise = Math.max(...igraju.map((x) => x.poeni));
+  if (igraju.length >= 2 && i.poeni > 0 && i.poeni === najvise && !s.opcije.timovi) z.push("pobeda");
+  if (s.pitanja.length >= 10 && i.tacnih === s.pitanja.length) z.push("savrseno");
+  if (s.opcije.timovi && i.tim === pobednickiTim(s.igraci)) z.push("tim");
+  if ((i.najviseZaredom ?? 0) >= 10) z.push("zaredom10");
+  if (igraju.length >= 2 && (i.najbrzih ?? 0) >= 5) z.push("munja");
+  if (igraju.length >= 10) z.push("drustvo");
+  return z;
+}
+
+export const TIMOVI = ["Plavi", "Crveni"] as const;
+
+/** Igrači bez tima idu u manji tim (kod jednakih u Plave). */
+export function rasporediUTimove(igraci: Igrac[]) {
+  for (const i of igraci) {
+    if (i.tim === 0 || i.tim === 1) continue;
+    const plavih = igraci.filter((x) => x.tim === 0).length;
+    const crvenih = igraci.filter((x) => x.tim === 1).length;
+    i.tim = crvenih < plavih ? 1 : 0;
+  }
+}
+
+/** Izmešaj timove: nasumično, a brojevi se razlikuju najviše za jedan. */
+export function izmesajTimove(igraci: Igrac[], rnd: () => number = Math.random) {
+  promesaj(igraci, rnd).forEach((i, k) => (i.tim = (k % 2) as 0 | 1));
+}
+
+/** Rezultat timova: prosek poena igrača tima (na jednu decimalu), ukupno i broj igrača. */
+export function rezultatTimova(igraci: Igrac[]) {
+  return TIMOVI.map((naziv, tim) => {
+    const clanovi = igraci.filter((i) => i.uIgri && i.tim === tim);
+    const ukupno = clanovi.reduce((a, i) => a + i.poeni, 0);
+    return {
+      tim,
+      naziv,
+      igraca: clanovi.length,
+      ukupno,
+      prosek: clanovi.length ? Math.round((ukupno / clanovi.length) * 10) / 10 : 0,
+    };
+  });
+}
+
+/** Pobednički tim (0 ili 1), ili null kad je nerešeno ili tim nema igrača. */
+export function pobednickiTim(igraci: Igrac[]): 0 | 1 | null {
+  const [a, b] = rezultatTimova(igraci);
+  if (!a.igraca || !b.igraca || a.prosek === b.prosek) return null;
+  return a.prosek > b.prosek ? 0 : 1;
 }

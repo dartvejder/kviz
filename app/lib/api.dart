@@ -6,6 +6,8 @@ import 'package:http/http.dart' as http;
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:web_socket_channel/web_socket_channel.dart';
 
+import 'uredjaj.dart';
+
 const server = String.fromEnvironment('KVIZ_SERVER', defaultValue: 'https://kviz.dartchat.trade');
 
 const avatari = [
@@ -44,11 +46,15 @@ class GreskaServera implements Exception {
 }
 
 class Nalog {
-  Nalog({required this.id, required this.token, required this.ime, required this.avatar});
+  Nalog({required this.id, required this.token, required this.ime, required this.avatar, List<String>? prijave})
+    : prijave = prijave ?? [];
   final String id;
   final String token;
   String ime;
   String avatar;
+
+  /// Google/Apple nalozi koji čuvaju ovaj Kviz nalog (prazno = nije sačuvan).
+  List<String> prijave;
   String get auth => 'Bearer $id.$token';
 }
 
@@ -62,7 +68,13 @@ class Api {
     final p = await SharedPreferences.getInstance();
     final id = p.getString('id'), token = p.getString('token');
     if (id == null || token == null) return null;
-    nalog = Nalog(id: id, token: token, ime: p.getString('ime') ?? '', avatar: p.getString('avatar') ?? avatari.first);
+    nalog = Nalog(
+      id: id,
+      token: token,
+      ime: p.getString('ime') ?? '',
+      avatar: p.getString('avatar') ?? avatari.first,
+      prijave: p.getStringList('prijave'),
+    );
     return nalog;
   }
 
@@ -72,6 +84,50 @@ class Api {
     await p.setString('token', n.token);
     await p.setString('ime', n.ime);
     await p.setString('avatar', n.avatar);
+    await p.setStringList('prijave', n.prijave);
+  }
+
+  /// Osvežava ime, avatar i prijave sa servera (npr. posle prijave na drugom telefonu).
+  Future<void> osveziNalog() async {
+    final n = nalog;
+    if (n == null) return;
+    final r = _json(await http.get(Uri.parse('$server/api/igraci/ja'), headers: _zaglavlja));
+    n
+      ..ime = r['ime'] as String? ?? n.ime
+      ..avatar = r['avatar'] as String? ?? n.avatar
+      ..prijave = ((r['prijave'] as List?) ?? const []).cast<String>();
+    await _sacuvaj(n);
+  }
+
+  /// Prijava preko Google/Apple naloga. Vraća stanje: "povezan", "vec", "nov" ili "vracen".
+  /// Kod "vracen" se nalog NE menja sam: vraća se nalog sa servera, pa korisnik potvrdi prelazak ([predjiNa]).
+  Future<(String, Nalog?)> prijava(String provajder, String idToken, {String? ime, String? avatar}) async {
+    final r = _json(
+      await http.post(
+        Uri.parse('$server/api/prijava'),
+        headers: _zaglavlja,
+        body: jsonEncode({'provajder': provajder, 'id_token': idToken, 'ime': ?ime, 'avatar': ?avatar}),
+      ),
+    );
+    final stanje = r['stanje'] as String;
+    if (stanje == 'povezan' || stanje == 'vec') {
+      if (!nalog!.prijave.contains(provajder)) nalog!.prijave.add(provajder);
+      await _sacuvaj(nalog!);
+      return (stanje, nalog);
+    }
+    final novi = Nalog(id: r['id'], token: r['token'], ime: r['ime'], avatar: r['avatar'], prijave: [provajder]);
+    if (stanje == 'nov') {
+      nalog = novi;
+      await _sacuvaj(novi);
+    }
+    return (stanje, novi);
+  }
+
+  /// Prelazak na nalog koji čuva Google/Apple (posle potvrde).
+  Future<void> predjiNa(Nalog n) async {
+    nalog = n;
+    await _sacuvaj(n);
+    await osveziNalog().catchError((_) {});
   }
 
   Map<String, dynamic> _json(http.Response r) {
@@ -90,11 +146,12 @@ class Api {
   /// Pravi nalog ili menja ime/avatar postojećeg.
   Future<Nalog> postaviIgraca(String ime, String avatar) async {
     if (nalog == null) {
+      final robot = await testUredjaj();
       final r = _json(
         await http.post(
           Uri.parse('$server/api/igraci'),
           headers: _zaglavlja,
-          body: jsonEncode({'ime': ime, 'avatar': avatar}),
+          body: jsonEncode({'ime': ime, 'avatar': avatar, if (robot) 'robot': true}),
         ),
       );
       nalog = Nalog(id: r['id'], token: r['token'], ime: r['ime'], avatar: r['avatar']);
@@ -123,9 +180,7 @@ class Api {
 
   /// Ime iz Dart Chata, kao predlog pre pravljenja naloga.
   Future<String?> dartChatIme(String dc) async {
-    final r = _json(
-      await http.get(Uri.parse('$server/api/dartchat/ja'), headers: {'authorization': 'DartChat $dc'}),
-    );
+    final r = _json(await http.get(Uri.parse('$server/api/dartchat/ja'), headers: {'authorization': 'DartChat $dc'}));
     return r['ime_predlog'] as String?;
   }
 
@@ -181,6 +236,49 @@ class Api {
 
   Future<Map<String, dynamic>> statistika() async =>
       _json(await http.get(Uri.parse('$server/api/igraci/ja/statistika'), headers: _zaglavlja));
+
+  /// Prijava lošeg pitanja: razlog je netacan, nejasno, zastarelo ili drugo.
+  Future<void> prijaviPitanje(int id, String razlog, String napomena) async {
+    _json(
+      await http.post(
+        Uri.parse('$server/api/pitanja/$id/prijava'),
+        headers: _zaglavlja,
+        body: jsonEncode({'razlog': razlog, 'napomena': napomena}),
+      ),
+    );
+  }
+
+  /// Sve značke ("sve": id, ikona, naziv, opis) i moje osvojene ("moje": znacka, vreme).
+  Future<Map<String, dynamic>> znacke() async =>
+      _json(await http.get(Uri.parse('$server/api/igraci/ja/znacke'), headers: _zaglavlja));
+
+  /// Ljudi sa kojima sam igrao: id, ime, avatar, partija, poslednja.
+  Future<List<Map<String, dynamic>>> prijatelji() async {
+    final r = _json(await http.get(Uri.parse('$server/api/prijatelji'), headers: _zaglavlja));
+    return (r['lista'] as List).cast<Map<String, dynamic>>();
+  }
+
+  /// Zove prijatelje u sobu; vraća koliko je poziva poslato.
+  Future<int> pozovi(String kod, List<String> kome) async {
+    final r = _json(
+      await http.post(
+        Uri.parse('$server/api/pozivi'),
+        headers: _zaglavlja,
+        body: jsonEncode({'kod': kod, 'kome': kome}),
+      ),
+    );
+    return r['pozvano'] as int? ?? 0;
+  }
+
+  /// Pozivi za mene: kod, vreme, id, ime, avatar (ko zove).
+  Future<List<Map<String, dynamic>>> pozivi() async {
+    final r = _json(await http.get(Uri.parse('$server/api/pozivi'), headers: _zaglavlja));
+    return (r['lista'] as List).cast<Map<String, dynamic>>();
+  }
+
+  Future<void> skloniPoziv(String kod) async {
+    _json(await http.delete(Uri.parse('$server/api/pozivi/$kod'), headers: _zaglavlja));
+  }
 
   Soba udji(String kod) => Soba(kod, nalog!);
 }

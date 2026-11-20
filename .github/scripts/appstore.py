@@ -126,14 +126,14 @@ def find_bundle_id(identifier=BUNDLE_ID, name=APP_NAME):
     return created["data"]["id"]
 
 
-def ensure_capability(bundle_id, kind):
+def ensure_capability(bundle_id, kind, settings=None):
     capabilities = call("GET", f"/bundleIds/{bundle_id}/bundleIdCapabilities")
     kinds = {item["attributes"]["capabilityType"] for item in capabilities["data"]}
     if kind in kinds:
         return
     call("POST", "/bundleIdCapabilities", {"data": {
         "type": "bundleIdCapabilities",
-        "attributes": {"capabilityType": kind},
+        "attributes": {"capabilityType": kind, **({"settings": settings} if settings else {})},
         "relationships": {"bundleId": {"data": {"type": "bundleIds", "id": bundle_id}}},
     }})
     log(f"Turned on {kind} for the app ID")
@@ -178,6 +178,10 @@ def prepare_signing(p12_path, password, out_dir):
     ensure_push(bundle_id)
     # Invite links https://kviz.dartchat.trade/i/CODE open the app.
     ensure_capability(bundle_id, "ASSOCIATED_DOMAINS")
+    # Prijava preko Apple naloga ("Sačuvaj napredak").
+    ensure_capability(bundle_id, "APPLE_ID_AUTH", [
+        {"key": "APPLE_ID_AUTH_APP_CONSENT", "options": [{"key": "PRIMARY_APP_CONSENT"}]},
+    ])
     os.makedirs(out_dir, exist_ok=True)
     make_profile(PROFILE_NAME, bundle_id, cert_id, out_dir)
     with open(os.environ.get("GITHUB_OUTPUT", "/dev/stdout"), "a") as out:
