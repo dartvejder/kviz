@@ -31,4 +31,4 @@ database_id = "65ecc81b-b948-4470-aaf7-529bebf0a11e"
 DARTCHAT_URL = "https://chat.dartchat.trade"
 # Prijava preko Apple naloga: bundle ID aplikacije. Google: client ID-jevi (web, iOS), zarezom; prazno = isključeno.
 APPLE_AUDIENCE = "rs.kviz.app"
-GOOGLE_CLIENT_IDS = ""
+GOOGLE_CLIENT_IDS = "861174080262-rcjlu7emvt2nlq8sea1r9em6a4itjt5o.apps.googleusercontent.com"
