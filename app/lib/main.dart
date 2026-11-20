@@ -3,6 +3,7 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 
 import 'api.dart';
+import 'azuriranje.dart';
 import 'ekrani/igra.dart';
 import 'ekrani/podesavanja.dart';
 import 'ekrani/profil.dart';
@@ -48,6 +49,15 @@ class Pokretanje extends StatefulWidget {
 class _PokretanjeState extends State<Pokretanje> {
   late final Future<(Nalog?, String?)> _nalog = _ucitaj();
 
+  /// Adresa prodavnice ako je ova verzija prestara za igru.
+  late final Future<String?> _azuriranje = proveriVerziju();
+
+  @override
+  void initState() {
+    super.initState();
+    androidAzuriranje();
+  }
+
   /// Nalog, a ako ga nema i aplikacija je otvorena linkom iz Dart Chata, predlog imena odande.
   Future<(Nalog?, String?)> _ucitaj() async {
     final nalog = await Api.i.ucitajNalog();
@@ -64,7 +74,7 @@ class _PokretanjeState extends State<Pokretanje> {
   @override
   Widget build(BuildContext context) {
     return FutureBuilder(
-      future: _nalog,
+      future: Future.wait([_nalog, _azuriranje]),
       builder: (context, snap) {
         if (snap.connectionState != ConnectionState.done) {
           return KvizEkran(
@@ -73,7 +83,9 @@ class _PokretanjeState extends State<Pokretanje> {
             body: const Center(child: CircularProgressIndicator()),
           );
         }
-        final (nalog, predlogImena) = snap.data ?? (null, null);
+        final adresa = snap.data?[1] as String?;
+        if (adresa != null) return AzurirajEkran(adresa: adresa);
+        final (nalog, predlogImena) = (snap.data?[0] as (Nalog?, String?)?) ?? (null, null);
         return nalog == null ? ProfilEkran(prvi: true, predlogImena: predlogImena) : const PocetnaEkran();
       },
     );
