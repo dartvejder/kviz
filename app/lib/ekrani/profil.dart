@@ -7,14 +7,17 @@ import 'statistika.dart';
 
 /// Ime i avatar; prvi put pravi nalog. Ovde je i "Obriši nalog".
 class ProfilEkran extends StatefulWidget {
-  const ProfilEkran({super.key, this.prvi = false});
+  const ProfilEkran({super.key, this.prvi = false, this.predlogImena});
   final bool prvi;
+
+  /// Ime iz Dart Chata kad je aplikacija prvi put otvorena njegovim linkom.
+  final String? predlogImena;
   @override
   State<ProfilEkran> createState() => _ProfilEkranState();
 }
 
 class _ProfilEkranState extends State<ProfilEkran> {
-  late final _ime = TextEditingController(text: Api.i.nalog?.ime ?? '');
+  late final _ime = TextEditingController(text: Api.i.nalog?.ime ?? widget.predlogImena ?? '');
   late String _avatar = Api.i.nalog?.avatar ?? avatari.first;
   bool _radim = false;
 

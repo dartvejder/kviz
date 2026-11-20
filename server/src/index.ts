@@ -1,15 +1,27 @@
 // Kviz server: HTTP API (/api) i WebSocket za sobe (/ws/KOD).
 import { KOD_REGEX, noviKod } from "./igra";
 import { danas, pocetakPerioda } from "./period";
+import {
+  DartChatGreska,
+  istekla,
+  proveriToken,
+  ispravanToken,
+  teloSobe,
+  tokenIzZaglavlja,
+  type DartChatEnv,
+  type DartChatKorisnik,
+} from "./dartchat";
 import { stranicaPozivnice, wellKnown } from "./pozivnica";
 import { spisakTema, tema } from "./teme";
 
 export { Soba } from "./soba";
 
-export interface Env {
+export interface Env extends DartChatEnv {
   DB: D1Database;
   SOBA: DurableObjectNamespace;
 }
+
+const ZIVOT_SOBE = 24 * 60 * 60 * 1000;
 
 const AVATARI = [
   "🦊", "🐼", "🐯", "🦁", "🐸", "🐵", "🐨", "🐙", "🦄", "🐲", "🦉", "🐧", "🐢",
@@ -54,6 +66,29 @@ async function prijavljen(req: Request, env: Env): Promise<IgracRed | null> {
     .first<IgracRed & { token_hash: string }>();
   if (!red || red.token_hash !== (await sha256(token))) return null;
   return { id: red.id, ime: red.ime, avatar: red.avatar };
+}
+
+/** Dart Chat korisnik iz "Authorization: DartChat <token>", ili odgovor sa greškom. */
+async function dartChatKorisnik(req: Request, env: Env): Promise<DartChatKorisnik | Response> {
+  const token = tokenIzZaglavlja(req.headers.get("authorization"));
+  if (!token) return greska("Nedostaje Dart Chat prijava.", 401);
+  return proveriToken(token, env).catch((e) => {
+    if (e instanceof DartChatGreska) return greska(e.message, e.status);
+    throw e;
+  });
+}
+
+async function novaSoba(
+  env: Env,
+  init: { moderatorId: string; izazov?: string; dartchat?: unknown; opcije?: unknown },
+): Promise<string | null> {
+  for (let pokusaj = 0; pokusaj < 5; pokusaj++) {
+    const kod = noviKod();
+    const soba = env.SOBA.get(env.SOBA.idFromName(kod));
+    const r = await soba.fetch("https://soba/init", { method: "POST", body: JSON.stringify({ kod, ...init }) });
+    if (r.ok) return kod;
+  }
+  return null;
 }
 
 export default {
@@ -105,6 +140,7 @@ export default {
           env.DB.prepare("DELETE FROM odigrano WHERE igrac_id = ?").bind(ja.id),
           env.DB.prepare("DELETE FROM statistika WHERE igrac_id = ?").bind(ja.id),
           env.DB.prepare("DELETE FROM izazov WHERE igrac_id = ?").bind(ja.id),
+          env.DB.prepare("DELETE FROM dartchat_veze WHERE igrac_id = ?").bind(ja.id),
           env.DB.prepare("DELETE FROM igraci WHERE id = ?").bind(ja.id),
         ]);
         return json({ obrisan: true });
@@ -133,15 +169,8 @@ export default {
         .bind(ja.id, dan)
         .run();
       if (!upis.meta.changes) return greska("Današnji izazov si već odigrao. Novi stiže u ponoć.", 409);
-      for (let pokusaj = 0; pokusaj < 5; pokusaj++) {
-        const kod = noviKod();
-        const soba = env.SOBA.get(env.SOBA.idFromName(kod));
-        const r = await soba.fetch("https://soba/init", {
-          method: "POST",
-          body: JSON.stringify({ kod, moderatorId: ja.id, izazov: dan }),
-        });
-        if (r.ok) return json({ kod, dan }, 201);
-      }
+      const kod = await novaSoba(env, { moderatorId: ja.id, izazov: dan });
+      if (kod) return json({ kod, dan }, 201);
       await env.DB.prepare("DELETE FROM izazov WHERE igrac_id = ? AND dan = ?").bind(ja.id, dan).run();
       return greska("Pokušaj ponovo.", 503);
     }
@@ -194,16 +223,84 @@ export default {
     if (put === "/api/sobe" && req.method === "POST") {
       const ja = await prijavljen(req, env);
       if (!ja) return greska("Nisi prijavljen.", 401);
-      for (let pokusaj = 0; pokusaj < 5; pokusaj++) {
-        const kod = noviKod();
-        const soba = env.SOBA.get(env.SOBA.idFromName(kod));
-        const r = await soba.fetch("https://soba/init", {
-          method: "POST",
-          body: JSON.stringify({ kod, moderatorId: ja.id }),
-        });
-        if (r.ok) return json({ kod, link: `https://kviz.dartchat.trade/i/${kod}` }, 201);
-      }
+      const kod = await novaSoba(env, { moderatorId: ja.id });
+      if (kod) return json({ kod, link: `https://kviz.dartchat.trade/i/${kod}` }, 201);
       return greska("Pokušaj ponovo.", 503);
+    }
+
+    // Dart Chat: ko sam (predlog imena pre pravljenja Kviz naloga).
+    if (put === "/api/dartchat/ja" && req.method === "GET") {
+      const dc = await dartChatKorisnik(req, env);
+      if (dc instanceof Response) return dc;
+      return json({ matrix_id: dc.matrixId, ime_predlog: dc.ime });
+    }
+
+    // Dart Chat pravi sobu u ime pozivara; njegov povezani Kviz nalog postaje moderator kad uđe.
+    if (put === "/api/dartchat/sobe" && req.method === "POST") {
+      const dc = await dartChatKorisnik(req, env);
+      if (dc instanceof Response) return dc;
+      const t = teloSobe(await req.json().catch(() => ({})));
+      if ("greska" in t) return greska(t.greska, 400);
+      const veza = await env.DB.prepare("SELECT igrac_id FROM dartchat_veze WHERE matrix_id = ?")
+        .bind(dc.matrixId)
+        .first<{ igrac_id: string }>();
+      const kod = await novaSoba(env, {
+        moderatorId: veza?.igrac_id ?? "",
+        dartchat: { moderator: dc.matrixId, pozvani: t.pozvani.filter((p) => p !== dc.matrixId), chat: t.chat },
+        opcije: t.opcije,
+      });
+      if (!kod) return greska("Pokušaj ponovo.", 503);
+      return json(
+        {
+          kod,
+          link: `https://kviz.dartchat.trade/i/${kod}`,
+          istice: new Date(Date.now() + ZIVOT_SOBE).toISOString().replace(/\.\d{3}Z$/, "Z"),
+        },
+        201,
+      );
+    }
+
+    // Stanje sobe za karticu u Dart Chatu.
+    const dcSoba = put.match(/^\/api\/dartchat\/sobe\/([A-Za-z0-9]{6})$/);
+    if (dcSoba && req.method === "GET") {
+      const kod = dcSoba[1].toUpperCase();
+      if (!KOD_REGEX.test(kod)) return greska("Pogrešan kod.", 400);
+      const dc = await dartChatKorisnik(req, env);
+      if (dc instanceof Response) return dc;
+      const r = await env.SOBA.get(env.SOBA.idFromName(kod)).fetch("https://soba/dartchat");
+      const telo = r.ok ? await r.json() : istekla(kod);
+      return new Response(JSON.stringify(telo), {
+        headers: {
+          "content-type": "application/json; charset=utf-8",
+          "access-control-allow-origin": "*",
+          "cache-control": "private, max-age=10",
+        },
+      });
+    }
+
+    // Kviz nalog se povezuje sa Dart Chat nalogom (link iz Dart Chata nosi #dc=TOKEN).
+    if (put === "/api/dartchat/povezi" && req.method === "POST") {
+      const ja = await prijavljen(req, env);
+      if (!ja) return greska("Nisi prijavljen.", 401);
+      const telo = (await req.json().catch(() => ({}))) as { openid_token?: unknown };
+      const token = ispravanToken(telo.openid_token);
+      if (!token) return greska("Nedostaje Dart Chat prijava.", 400);
+      let dc: DartChatKorisnik;
+      try {
+        dc = await proveriToken(token, env);
+      } catch (e) {
+        if (e instanceof DartChatGreska) return greska(e.message, e.status);
+        throw e;
+      }
+      await env.DB.batch([
+        env.DB.prepare("DELETE FROM dartchat_veze WHERE matrix_id = ? OR igrac_id = ?").bind(dc.matrixId, ja.id),
+        env.DB.prepare("INSERT INTO dartchat_veze (matrix_id, igrac_id, povezan) VALUES (?, ?, ?)").bind(
+          dc.matrixId,
+          ja.id,
+          Date.now(),
+        ),
+      ]);
+      return json({ matrix_id: dc.matrixId, ime_predlog: dc.ime });
     }
 
     // Top lista: ?period=dan|nedelja|sve&poredak=ukupno|prosek
@@ -241,6 +338,11 @@ export default {
       zaglavlja.set("X-Igrac-Id", ja.id);
       zaglavlja.set("X-Igrac-Ime", encodeURIComponent(ja.ime));
       zaglavlja.set("X-Igrac-Avatar", encodeURIComponent(ja.avatar));
+      const veza = await env.DB.prepare("SELECT matrix_id FROM dartchat_veze WHERE igrac_id = ?")
+        .bind(ja.id)
+        .first<{ matrix_id: string }>();
+      if (veza) zaglavlja.set("X-Igrac-Matrix", veza.matrix_id);
+      else zaglavlja.delete("X-Igrac-Matrix");
       const soba = env.SOBA.get(env.SOBA.idFromName(kod));
       return soba.fetch(new Request("https://soba/ws", { headers: zaglavlja }));
     }

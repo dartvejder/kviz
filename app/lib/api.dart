@@ -121,6 +121,25 @@ class Api {
     nalog = null;
   }
 
+  /// Ime iz Dart Chata, kao predlog pre pravljenja naloga.
+  Future<String?> dartChatIme(String dc) async {
+    final r = _json(
+      await http.get(Uri.parse('$server/api/dartchat/ja'), headers: {'authorization': 'DartChat $dc'}),
+    );
+    return r['ime_predlog'] as String?;
+  }
+
+  /// Povezuje ovaj Kviz nalog sa Dart Chat nalogom (pozivar tako postaje moderator svoje sobe).
+  Future<void> poveziDartChat(String dc) async {
+    _json(
+      await http.post(
+        Uri.parse('$server/api/dartchat/povezi'),
+        headers: _zaglavlja,
+        body: jsonEncode({'openid_token': dc}),
+      ),
+    );
+  }
+
   Future<String> novaSoba() async {
     final r = _json(await http.post(Uri.parse('$server/api/sobe'), headers: _zaglavlja));
     return r['kod'];

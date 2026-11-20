@@ -45,7 +45,20 @@ class Pokretanje extends StatefulWidget {
 }
 
 class _PokretanjeState extends State<Pokretanje> {
-  late final Future<Nalog?> _nalog = Api.i.ucitajNalog();
+  late final Future<(Nalog?, String?)> _nalog = _ucitaj();
+
+  /// Nalog, a ako ga nema i aplikacija je otvorena linkom iz Dart Chata, predlog imena odande.
+  Future<(Nalog?, String?)> _ucitaj() async {
+    final nalog = await Api.i.ucitajNalog();
+    if (nalog != null) return (nalog, null);
+    final dc = (await prvaPozivnica())?.dartChat;
+    if (dc == null) return (null, null);
+    try {
+      return (null, await Api.i.dartChatIme(dc).timeout(const Duration(seconds: 5)));
+    } catch (_) {
+      return (null, null);
+    }
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -59,7 +72,8 @@ class _PokretanjeState extends State<Pokretanje> {
             body: const Center(child: CircularProgressIndicator()),
           );
         }
-        return snap.data == null ? const ProfilEkran(prvi: true) : const PocetnaEkran();
+        final (nalog, predlogImena) = snap.data ?? (null, null);
+        return nalog == null ? ProfilEkran(prvi: true, predlogImena: predlogImena) : const PocetnaEkran();
       },
     );
   }
@@ -73,7 +87,7 @@ class PocetnaEkran extends StatefulWidget {
 
 class _PocetnaEkranState extends State<PocetnaEkran> {
   bool _radim = false;
-  StreamSubscription<String>? _linkovi;
+  StreamSubscription<Pozivnica>? _linkovi;
 
   /// Moj današnji izazov: null dok se ne učita ili ako nije igran.
   Map<String, dynamic>? _izazov;
@@ -120,11 +134,25 @@ class _PocetnaEkranState extends State<PocetnaEkran> {
     super.initState();
     _ucitajIzazov();
     // Link pozivnice (Viber, WhatsApp...) vodi pravo u sobu.
-    _linkovi = kodoviIzLinkova().listen((kod) {
-      if (!mounted) return;
-      Navigator.of(context).popUntil((r) => r.isFirst);
-      Navigator.of(context).push(MaterialPageRoute(builder: (_) => IgraEkran(kod: kod)));
-    });
+    _linkovi = pozivniceIzLinkova().listen(_otvoriPozivnicu);
+  }
+
+  /// Link iz Dart Chata prvo poveže nalog (pre ulaska, da pozivar dobije ulogu moderatora), pa ulazi u sobu.
+  Future<void> _otvoriPozivnicu(Pozivnica p) async {
+    final dc = p.dartChat;
+    if (dc != null) {
+      try {
+        await Api.i.poveziDartChat(dc).timeout(const Duration(seconds: 8));
+      } catch (e) {
+        // Igra radi i bez veze sa Dart Chatom.
+        if (mounted) {
+          ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text('Dart Chat nalog nije povezan: $e')));
+        }
+      }
+    }
+    if (!mounted) return;
+    Navigator.of(context).popUntil((r) => r.isFirst);
+    Navigator.of(context).push(MaterialPageRoute(builder: (_) => IgraEkran(kod: p.kod)));
   }
 
   @override
