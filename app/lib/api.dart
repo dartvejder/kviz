@@ -172,6 +172,13 @@ class Api {
   Future<Map<String, dynamic>> izazovTop() async =>
       _json(await http.get(Uri.parse('$server/api/izazov/top'), headers: _zaglavlja));
 
+  /// Prijavljuje (ili odjavljuje) push ključ ovog telefona za jutarnju poruku izazova.
+  Future<void> pushKljuc(String token, String platforma, {bool odjavi = false}) async {
+    final telo = jsonEncode({'token': token, 'platforma': platforma});
+    final u = Uri.parse('$server/api/push');
+    _json(odjavi ? await http.delete(u, headers: _zaglavlja, body: telo) : await http.post(u, headers: _zaglavlja, body: telo));
+  }
+
   Future<Map<String, dynamic>> statistika() async =>
       _json(await http.get(Uri.parse('$server/api/igraci/ja/statistika'), headers: _zaglavlja));
 

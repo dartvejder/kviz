@@ -84,3 +84,13 @@ CREATE TABLE IF NOT EXISTS dartchat_tokeni (
   istice INTEGER NOT NULL
 ) WITHOUT ROWID;
 CREATE INDEX IF NOT EXISTS dartchat_tokeni_istice ON dartchat_tokeni(istice);
+
+-- Push ključevi (FCM) telefona, za jutarnju poruku sa rezultatom izazova.
+-- Upisuje se samo kad se ključ promeni ili jednom nedeljno, da se štede D1 upisi.
+CREATE TABLE IF NOT EXISTS push_kljucevi (
+  token TEXT PRIMARY KEY,
+  igrac_id TEXT NOT NULL,
+  platforma TEXT NOT NULL,
+  azuriran INTEGER NOT NULL
+) WITHOUT ROWID;
+CREATE INDEX IF NOT EXISTS push_kljucevi_igrac ON push_kljucevi(igrac_id);
