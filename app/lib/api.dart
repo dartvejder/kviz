@@ -6,6 +6,8 @@ import 'package:http/http.dart' as http;
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:web_socket_channel/web_socket_channel.dart';
 
+import 'uredjaj.dart';
+
 const server = String.fromEnvironment('KVIZ_SERVER', defaultValue: 'https://kviz.dartchat.trade');
 
 const avatari = [
@@ -90,11 +92,12 @@ class Api {
   /// Pravi nalog ili menja ime/avatar postojećeg.
   Future<Nalog> postaviIgraca(String ime, String avatar) async {
     if (nalog == null) {
+      final robot = await testUredjaj();
       final r = _json(
         await http.post(
           Uri.parse('$server/api/igraci'),
           headers: _zaglavlja,
-          body: jsonEncode({'ime': ime, 'avatar': avatar}),
+          body: jsonEncode({'ime': ime, 'avatar': avatar, if (robot) 'robot': true}),
         ),
       );
       nalog = Nalog(id: r['id'], token: r['token'], ime: r['ime'], avatar: r['avatar']);
@@ -123,9 +126,7 @@ class Api {
 
   /// Ime iz Dart Chata, kao predlog pre pravljenja naloga.
   Future<String?> dartChatIme(String dc) async {
-    final r = _json(
-      await http.get(Uri.parse('$server/api/dartchat/ja'), headers: {'authorization': 'DartChat $dc'}),
-    );
+    final r = _json(await http.get(Uri.parse('$server/api/dartchat/ja'), headers: {'authorization': 'DartChat $dc'}));
     return r['ime_predlog'] as String?;
   }
 
@@ -174,6 +175,17 @@ class Api {
 
   Future<Map<String, dynamic>> statistika() async =>
       _json(await http.get(Uri.parse('$server/api/igraci/ja/statistika'), headers: _zaglavlja));
+
+  /// Prijava lošeg pitanja: razlog je netacan, nejasno, zastarelo ili drugo.
+  Future<void> prijaviPitanje(int id, String razlog, String napomena) async {
+    _json(
+      await http.post(
+        Uri.parse('$server/api/pitanja/$id/prijava'),
+        headers: _zaglavlja,
+        body: jsonEncode({'razlog': razlog, 'napomena': napomena}),
+      ),
+    );
+  }
 
   Soba udji(String kod) => Soba(kod, nalog!);
 }

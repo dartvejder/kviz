@@ -84,3 +84,19 @@ CREATE TABLE IF NOT EXISTS dartchat_tokeni (
   istice INTEGER NOT NULL
 ) WITHOUT ROWID;
 CREATE INDEX IF NOT EXISTS dartchat_tokeni_istice ON dartchat_tokeni(istice);
+
+-- Nalozi Google Play robota (Firebase Test Lab, pre-launch izveštaj): ne prikazuju se na top listama.
+CREATE TABLE IF NOT EXISTS roboti (
+  igrac_id TEXT PRIMARY KEY,
+  vreme INTEGER NOT NULL
+) WITHOUT ROWID;
+
+-- Prijave loših pitanja (jedna po igraču i pitanju; nova zamenjuje staru).
+CREATE TABLE IF NOT EXISTS prijave (
+  pitanje_id INTEGER NOT NULL,
+  igrac_id TEXT NOT NULL,
+  razlog TEXT NOT NULL,
+  napomena TEXT NOT NULL DEFAULT '',
+  vreme INTEGER NOT NULL,
+  PRIMARY KEY (pitanje_id, igrac_id)
+) WITHOUT ROWID;

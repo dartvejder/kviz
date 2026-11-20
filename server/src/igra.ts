@@ -30,6 +30,16 @@ export interface Igrac {
   matrix?: string;
 }
 
+export interface PitanjePregleda {
+  id: number;
+  oblast: string;
+  tekst: string;
+  opcije: string[];
+  tacan: number;
+  /** Izbor svakog igrača (null = bez odgovora). */
+  odgovori: Record<string, number | null>;
+}
+
 export interface Pitanje {
   id: number;
   oblast: string;
@@ -60,6 +70,10 @@ export interface Stanje {
   prozivkaDo: number; // 0 = nema prozivke
   /** Ko je na trenutnom pitanju uključio Dupli poeni. */
   dupli?: Record<string, true>;
+  /** Izbor svakog igrača po pitanju u ovoj partiji (null = nije odgovorio), za pregled posle partije. */
+  istorija?: Record<string, (number | null)[]>;
+  /** "Igraj ponovo": kod nove sobe u koju prelaze svi iz ove. */
+  sledeca?: string;
   /** Dnevni izazov: dan "2026-11-20" (beogradsko vreme); samo tvorac igra. */
   izazov?: string;
   /** Soba napravljena iz Dart Chata. */
@@ -205,3 +219,28 @@ export function pregledSobe(s: Stanje, igracId: string, zivotSobe: number) {
     istice: s.napravljena + zivotSobe,
   };
 }
+
+/** Pregled posle partije: sva pitanja, tačan odgovor i izbor svakog igrača. */
+export function pregledPartije(s: Stanje): PitanjePregleda[] {
+  const igraju = s.igraci.filter((i) => i.uIgri);
+  return s.pitanja.map((p, k) => ({
+    id: p.id,
+    oblast: p.oblast,
+    tekst: p.tekst,
+    opcije: p.opcije,
+    tacan: p.tacan,
+    odgovori: Object.fromEntries(igraju.map((i) => [i.id, s.istorija?.[i.id]?.[k] ?? null])),
+  }));
+}
+
+/** Upisuje izbore za trenutno pitanje u istoriju partije. */
+export function zapamtiOdgovore(s: Stanje) {
+  s.istorija ??= {};
+  for (const i of s.igraci) {
+    if (!i.uIgri) continue;
+    const niz = (s.istorija[i.id] ??= []);
+    niz[s.trenutno] = s.odgovori[i.id]?.izbor ?? null;
+  }
+}
+
+export const RAZLOZI_PRIJAVE = ["netacan", "nejasno", "zastarelo", "drugo"] as const;

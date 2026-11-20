@@ -4,9 +4,13 @@ Cloudflare Worker na `kviz.dartchat.trade/api/*` i `/ws/*`, jedan Durable
 Object (`Soba`) po sobi, D1 baza `kviz`.
 
 - `src/igra.ts` – bodovanje (+3 tačan, +2 najbrži tačan, −1 netačan), opcije, mešanje
-- `src/soba.ts` – soba: čekaonica, spremnost, prozivka, tajmer (alarm), kraj partije, revanš
+- `src/soba.ts` – soba: čekaonica, spremnost, prozivka, tajmer (alarm), kraj partije, „Igraj ponovo” (nova soba, ista ekipa), pregled pitanja posle partije
 - `src/index.ts` – API: `POST /api/igraci`, `GET|PUT|DELETE /api/igraci/ja`, `POST /api/sobe`,
-  `GET /api/oblasti`, `GET /api/top?period=dan|nedelja|sve&poredak=ukupno|prosek`, `GET /ws/KOD`
+  `GET /api/oblasti`, `GET /api/top?period=dan|nedelja|sve&poredak=ukupno|prosek`, `GET /ws/KOD`,
+  `POST /api/pitanja/ID/prijava {razlog, napomena}` (prijava lošeg pitanja, tabela `prijave`),
+  `GET /api/izazov/top` (i `niz`: dani izazova zaredom)
+- Nalozi Google-ovih test uređaja (Firebase Test Lab) su u tabeli `roboti` i ne vide se na top listama.
+  Prijave pitanja: `SELECT * FROM prijave ORDER BY vreme DESC` u D1 konzoli.
 - `schema.sql` – tabele; `scripts/pitanja-sql.mjs` – pitanja iz `questions.js` u SQL
 
 Lokalno:

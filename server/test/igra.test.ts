@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
-import { bodujPitanje, ispravneOpcije, napraviPitanje, noviKod, KOD_REGEX, promesaj } from "../src/igra";
-import { pocetakPerioda } from "../src/period";
+import { bodujPitanje, ispravneOpcije, napraviPitanje, noviKod, novoStanje, pregledPartije, zapamtiOdgovore, KOD_REGEX, promesaj } from "../src/igra";
+import { juce, nizDana, pocetakPerioda } from "../src/period";
 
 describe("bodovanje", () => {
   it("tačan +3, najbrži tačan još +1, netačan −1", () => {
@@ -113,5 +113,41 @@ describe("pregled sobe", () => {
     expect(pregledSobe(s, "b", 10)).toEqual({ kod: "K7QX2M", faza: "cekaonica", igraca: 2, moderator: "Ana", ja: true, istice: 1010 });
     s.faza = "otkriveno";
     expect(pregledSobe(s, "x", 10)).toMatchObject({ faza: "igra", ja: false });
+  });
+});
+
+describe("pregled posle partije", () => {
+  it("pamti izbor svakog igrača po pitanju, null kad nije odgovorio", () => {
+    const s = novoStanje("ABCDEF", "a", 0);
+    s.igraci = [
+      { id: "a", ime: "A", avatar: "🦊", spreman: true, uIgri: true, poeni: 0, tacnih: 0 },
+      { id: "b", ime: "B", avatar: "🐼", spreman: true, uIgri: true, poeni: 0, tacnih: 0 },
+      { id: "c", ime: "C", avatar: "🐯", spreman: false, uIgri: false, poeni: 0, tacnih: 0 },
+    ];
+    s.pitanja = [
+      { id: 7, oblast: "Istorija", tekst: "P1", opcije: ["a", "b", "c", "d"], tacan: 2 },
+      { id: 9, oblast: "Sport", tekst: "P2", opcije: ["a", "b", "c", "d"], tacan: 0 },
+    ];
+    s.trenutno = 0;
+    s.odgovori = { a: { izbor: 2, vreme: 1 } };
+    zapamtiOdgovore(s);
+    s.trenutno = 1;
+    s.odgovori = { a: { izbor: 1, vreme: 1 }, b: { izbor: 0, vreme: 1 } };
+    zapamtiOdgovore(s);
+    const p = pregledPartije(s);
+    expect(p).toHaveLength(2);
+    expect(p[0]).toMatchObject({ id: 7, tacan: 2, odgovori: { a: 2, b: null } });
+    expect(p[1].odgovori).toEqual({ a: 1, b: 0 });
+    expect("c" in p[0].odgovori).toBe(false);
+  });
+});
+
+describe("niz dana izazova", () => {
+  it("broji dane zaredom od danas ili od juče", () => {
+    expect(nizDana(["2026-11-20", "2026-11-19", "2026-11-18", "2026-11-16"], "2026-11-20")).toEqual({ niz: 3, danas: true });
+    expect(nizDana(["2026-11-19", "2026-11-18"], "2026-11-20")).toEqual({ niz: 2, danas: false });
+    expect(nizDana(["2026-11-18"], "2026-11-20")).toEqual({ niz: 0, danas: false });
+    expect(nizDana(["2026-03-01", "2026-02-28"], "2026-03-01")).toEqual({ niz: 2, danas: true });
+    expect(juce("2026-01-01")).toBe("2025-12-31");
   });
 });

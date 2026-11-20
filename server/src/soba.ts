@@ -13,7 +13,10 @@ import {
   seme,
   napraviPitanje,
   novoStanje,
+  noviKod,
+  pregledPartije,
   svePrimljeno,
+  zapamtiOdgovore,
   type Igrac,
   type Stanje,
 } from "./igra";
@@ -73,11 +76,9 @@ export class Soba extends DurableObject<Env> {
       const oblasti = await this.env.DB.prepare("SELECT DISTINCT oblast FROM pitanja ORDER BY oblast").all<{ oblast: string }>();
       const sveOblasti = oblasti.results.map((r) => r.oblast);
       await this.ctx.storage.put("oblasti", sveOblasti);
-      if (dartchat) {
-        s.dartchat = dartchat;
-        // Predlog iz Dart Chata; moderator ih menja u čekaonici.
-        if (opcije) s.opcije = ispravneOpcije({ ...PODRAZUMEVANE_OPCIJE, ...opcije } as never, sveOblasti);
-      }
+      if (dartchat) s.dartchat = dartchat;
+      // Predlog iz Dart Chata ili opcije prethodne sobe ("Igraj ponovo"); moderator ih menja u čekaonici.
+      if (opcije && !izazov) s.opcije = ispravneOpcije({ ...PODRAZUMEVANE_OPCIJE, ...opcije } as never, sveOblasti);
       await this.sacuvaj(s);
       return new Response("ok");
     }
@@ -209,6 +210,19 @@ export class Soba extends DurableObject<Env> {
         }
         return;
       }
+      case "ponovo": {
+        // Ista ekipa, nova soba (novih 24 sata), iste opcije; svi iz ove sobe prelaze tamo.
+        if (!jeModerator || s.faza !== "kraj" || s.izazov) return;
+        if (!s.sledeca) {
+          const kod = await this.novaSoba(s);
+          if (!kod) {
+            ws.send(JSON.stringify({ t: "greska", poruka: "Nova soba nije napravljena. Pokušaj ponovo." }));
+            return;
+          }
+          s.sledeca = kod;
+        }
+        break;
+      }
       case "revans":
         if (!jeModerator || s.faza !== "kraj" || s.izazov) return;
         s.faza = "cekaonica";
@@ -260,6 +274,7 @@ export class Soba extends DurableObject<Env> {
       ? await this.pitanjaIzazova(s.izazov, brojPitanja)
       : await this.izaberiPitanja(igraju.map((i) => i.id), oblasti, brojPitanja);
     if (pitanja.length < Math.min(5, brojPitanja)) return false;
+    delete s.sledeca;
     for (const i of s.igraci) {
       i.uIgri = igraju.includes(i);
       i.poeni = 0;
@@ -270,6 +285,7 @@ export class Soba extends DurableObject<Env> {
     // U izazovu su i redosled odgovora isti za sve.
     const rnd = s.izazov ? seme(`odgovori-${s.izazov}`) : Math.random;
     s.pitanja = pitanja.map((r) => napraviPitanje(r, rnd));
+    s.istorija = {};
     s.trenutno = -1;
     s.pocetakIgre = Date.now();
     s.prozivkaDo = 0;
@@ -329,6 +345,7 @@ export class Soba extends DurableObject<Env> {
   private otkrij(s: Stanje) {
     const p = s.pitanja[s.trenutno];
     const delta = primeniDupli(bodujPitanje(p.tacan, s.odgovori, !s.izazov), s.dupli);
+    zapamtiOdgovore(s);
     for (const i of s.igraci) {
       if (!i.uIgri) continue;
       const d = delta[i.id] ?? 0;
@@ -396,6 +413,19 @@ export class Soba extends DurableObject<Env> {
     this.javi(s, "kraj", { poredak: poredak(s.igraci) });
   }
 
+  /** Nova soba sa istim moderatorom i opcijama ("Igraj ponovo"). */
+  private async novaSoba(s: Stanje): Promise<string | null> {
+    for (let pokusaj = 0; pokusaj < 5; pokusaj++) {
+      const kod = noviKod();
+      const r = await this.env.SOBA.get(this.env.SOBA.idFromName(kod)).fetch("https://soba/init", {
+        method: "POST",
+        body: JSON.stringify({ kod, moderatorId: s.moderatorId, opcije: s.opcije }),
+      });
+      if (r.ok) return kod;
+    }
+    return null;
+  }
+
   /** Događaj za Dart Chat (samo sobe napravljene iz Dart Chata); igra ne čeka odgovor. */
   private javi(s: Stanje, dogadjaj: Dogadjaj, dodatak: { igrac?: string | null; ime?: string; poredak?: unknown } = {}) {
     if (!s.dartchat) return;
@@ -416,6 +446,8 @@ export class Soba extends DurableObject<Env> {
       moderatorId: s.moderatorId,
       opcije: s.opcije,
       izazov: s.izazov ?? null,
+      sledeca: s.faza === "kraj" ? (s.sledeca ?? null) : null,
+      pregled: s.faza === "kraj" ? pregledPartije(s) : null,
       dupli: Object.keys(s.dupli ?? {}),
       prozivkaDo: s.prozivkaDo,
       igraci: s.igraci.map((i: Igrac) => ({
@@ -427,6 +459,7 @@ export class Soba extends DurableObject<Env> {
         (s.faza === "pitanje" || otkriveno) && p
           ? {
               n: s.trenutno,
+              id: p.id,
               ukupno: s.pitanja.length,
               oblast: p.oblast,
               tekst: p.tekst,

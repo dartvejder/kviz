@@ -1,7 +1,7 @@
 // Kviz server: HTTP API (/api) i WebSocket za sobe (/ws/KOD).
-import { KOD_REGEX, noviKod } from "./igra";
+import { KOD_REGEX, RAZLOZI_PRIJAVE, noviKod } from "./igra";
 import { minVerzija } from "./verzija";
-import { danas, pocetakPerioda } from "./period";
+import { danas, nizDana, pocetakPerioda } from "./period";
 import {
   DartChatGreska,
   istekla,
@@ -114,15 +114,26 @@ export default {
 
     // Novi igrač: vraća id i token koje aplikacija čuva.
     if (put === "/api/igraci" && req.method === "POST") {
-      const telo = (await req.json().catch(() => ({}))) as { ime?: unknown; avatar?: unknown };
+      const telo = (await req.json().catch(() => ({}))) as { ime?: unknown; avatar?: unknown; robot?: unknown };
       const ime = cistoIme(telo.ime);
       if (!ime) return greska("Upiši ime.", 400);
       const avatar = AVATARI.includes(telo.avatar as string) ? (telo.avatar as string) : AVATARI[0];
       const id = crypto.randomUUID();
       const token = [...crypto.getRandomValues(new Uint8Array(24))].map((b) => b.toString(16).padStart(2, "0")).join("");
-      await env.DB.prepare("INSERT INTO igraci (id, token_hash, ime, avatar, napravljen) VALUES (?, ?, ?, ?, ?)")
-        .bind(id, await sha256(token), ime, avatar, Date.now())
-        .run();
+      const upisi = [
+        env.DB.prepare("INSERT INTO igraci (id, token_hash, ime, avatar, napravljen) VALUES (?, ?, ?, ?, ?)").bind(
+          id,
+          await sha256(token),
+          ime,
+          avatar,
+          Date.now(),
+        ),
+      ];
+      // Aplikacija javlja kad radi na Google-ovom test uređaju (Firebase Test Lab): takav nalog se ne vidi na listama.
+      if (telo.robot === true) {
+        upisi.push(env.DB.prepare("INSERT OR IGNORE INTO roboti (igrac_id, vreme) VALUES (?, ?)").bind(id, Date.now()));
+      }
+      await env.DB.batch(upisi);
       return json({ id, token, ime, avatar }, 201);
     }
 
@@ -145,6 +156,8 @@ export default {
           env.DB.prepare("DELETE FROM statistika WHERE igrac_id = ?").bind(ja.id),
           env.DB.prepare("DELETE FROM izazov WHERE igrac_id = ?").bind(ja.id),
           env.DB.prepare("DELETE FROM dartchat_veze WHERE igrac_id = ?").bind(ja.id),
+          env.DB.prepare("DELETE FROM prijave WHERE igrac_id = ?").bind(ja.id),
+          env.DB.prepare("DELETE FROM roboti WHERE igrac_id = ?").bind(ja.id),
           env.DB.prepare("DELETE FROM igraci WHERE id = ?").bind(ja.id),
         ]);
         return json({ obrisan: true });
@@ -184,13 +197,21 @@ export default {
       const dan = danas();
       const lista = await env.DB.prepare(
         `SELECT i.id, i.ime, i.avatar, z.poeni, z.tacnih, z.kraj FROM izazov z JOIN igraci i ON i.id = z.igrac_id
-         WHERE z.dan = ? AND z.kraj > 0 ORDER BY z.poeni DESC, z.kraj ASC LIMIT 50`,
+         WHERE z.dan = ? AND z.kraj > 0 AND z.igrac_id NOT IN (SELECT igrac_id FROM roboti) ORDER BY z.poeni DESC, z.kraj ASC LIMIT 50`,
       )
         .bind(dan)
         .all<{ id: string; poeni: number; kraj: number }>();
       const ja = await prijavljen(req, env);
       let moj: Record<string, unknown> | null = null;
+      let niz: { niz: number; danas: boolean } | null = null;
       if (ja) {
+        const dani = await env.DB.prepare("SELECT dan FROM izazov WHERE igrac_id = ? ORDER BY dan DESC LIMIT 400")
+          .bind(ja.id)
+          .all<{ dan: string }>();
+        niz = nizDana(
+          dani.results.map((d) => d.dan),
+          dan,
+        );
         const r = await env.DB.prepare("SELECT poeni, tacnih, kraj FROM izazov WHERE dan = ? AND igrac_id = ?")
           .bind(dan, ja.id)
           .first<{ poeni: number; tacnih: number; kraj: number }>();
@@ -205,7 +226,28 @@ export default {
           moj = { ...r, zavrsen: r.kraj > 0, mesto: ispred ? ispred.n + 1 : null };
         }
       }
-      return json({ dan, lista: lista.results, ja: moj });
+      return json({ dan, lista: lista.results, ja: moj, niz });
+    }
+
+    // Prijava lošeg pitanja (netačno, nejasno, zastarelo, drugo).
+    const prijava = put.match(/^\/api\/pitanja\/(\d{1,9})\/prijava$/);
+    if (prijava && req.method === "POST") {
+      const ja = await prijavljen(req, env);
+      if (!ja) return greska("Nisi prijavljen.", 401);
+      const telo = (await req.json().catch(() => ({}))) as { razlog?: unknown; napomena?: unknown };
+      const razlog = RAZLOZI_PRIJAVE.find((x) => x === telo.razlog);
+      if (!razlog) return greska("Izaberi razlog.", 400);
+      const napomena = typeof telo.napomena === "string" ? telo.napomena.replace(/[\u0000-\u001f]/g, " ").trim().slice(0, 300) : "";
+      const id = Number(prijava[1]);
+      const postoji = await env.DB.prepare("SELECT 1 AS da FROM pitanja WHERE id = ?").bind(id).first();
+      if (!postoji) return greska("Pitanje ne postoji.", 404);
+      await env.DB.prepare(
+        `INSERT INTO prijave (pitanje_id, igrac_id, razlog, napomena, vreme) VALUES (?, ?, ?, ?, ?)
+         ON CONFLICT (pitanje_id, igrac_id) DO UPDATE SET razlog = excluded.razlog, napomena = excluded.napomena, vreme = excluded.vreme`,
+      )
+        .bind(id, ja.id, razlog, napomena, Date.now())
+        .run();
+      return json({ prijavljeno: true }, 201);
     }
 
     // Teme izgleda: spisak za Podešavanja i cela tema za preuzimanje.
@@ -333,7 +375,7 @@ export default {
         `SELECT i.id, i.ime, i.avatar, COUNT(*) AS partija, SUM(r.poeni) AS ukupno,
                 ROUND(AVG(r.poeni), 1) AS prosek
          FROM rezultati r JOIN igraci i ON i.id = r.igrac_id
-         WHERE r.kraj >= ?
+         WHERE r.kraj >= ? AND r.igrac_id NOT IN (SELECT igrac_id FROM roboti)
          GROUP BY i.id
          ${prosek ? "HAVING COUNT(*) >= 3" : ""}
          ORDER BY ${prosek ? "prosek" : "ukupno"} DESC, partija DESC

@@ -10,6 +10,7 @@ import '../pozivnica.dart';
 import '../tema.dart';
 import '../obavestenja.dart';
 import '../zvuk.dart';
+import 'pregled.dart';
 
 /// Soba: čekaonica, pitanja, otkrivanje i kraj, sve iz stanja sa servera.
 class IgraEkran extends StatefulWidget {
@@ -36,6 +37,18 @@ class _IgraEkranState extends State<IgraEkran> {
   final Map<int, List<int>> _sakriveno = {};
   String? _faza;
   int? _pitanje;
+  bool _prelazim = false;
+
+  /// "Igraj ponovo": moderator je napravio novu sobu, svi prelaze tamo.
+  void _predjiU(String kod) {
+    if (_prelazim) return;
+    _prelazim = true;
+    MojeSobe.zaboravi(widget.kod);
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      if (!mounted) return;
+      Navigator.of(context).pushReplacement(MaterialPageRoute(builder: (_) => IgraEkran(kod: kod)));
+    });
+  }
 
   @override
   void initState() {
@@ -61,6 +74,7 @@ class _IgraEkranState extends State<IgraEkran> {
       } else {
         _zvukZa(m);
         setState(() => _s = m);
+        if (m['faza'] == 'kraj' && m['sledeca'] is String) _predjiU(m['sledeca'] as String);
         // "Vežbaj sam" i izazov: soba se odmah pokreće.
         if ((widget.solo || widget.izazov) && !_soloPokrenut && m['faza'] == 'cekaonica') {
           _soloPokrenut = true;
@@ -478,6 +492,13 @@ class _PitanjeViewState extends State<PitanjeView> {
             Expanded(child: Text('${n + 1} / ${p['ukupno']} · ${p['oblast']}', style: stil)),
             if (dupli) _Znacka(tekst: '×2', boja: t.primarna, naBoji: t.naPrimarnoj),
             const SizedBox(width: 8),
+            if (otkriveno && p['id'] is int)
+              IconButton(
+                tooltip: 'Prijavi loše pitanje',
+                visualDensity: VisualDensity.compact,
+                icon: Icon(Icons.flag_outlined, size: 20, color: t.tekst.withValues(alpha: .6)),
+                onPressed: () => prijaviPitanje(context, p['id'] as int, p['tekst'] as String),
+              ),
             TajmerTeme(deo: otkriveno ? 0 : ostalo / ukupno, sekunde: otkriveno ? 0 : sekunde),
           ],
         ),
@@ -714,12 +735,23 @@ class _KrajState extends State<Kraj> {
             future: _izazov,
             builder: (context, snap) {
               final mesto = (snap.data?['ja'] as Map?)?['mesto'];
+              final niz = (snap.data?['niz'] as Map?)?['niz'] as int? ?? 0;
               return Padding(
                 padding: const EdgeInsets.only(top: 8),
-                child: Text(
-                  mesto == null ? ' ' : 'Danas si $mesto. na listi izazova',
-                  style: t.naslov(velicina: 17, tezina: FontWeight.w700),
-                  textAlign: TextAlign.center,
+                child: Column(
+                  children: [
+                    Text(
+                      mesto == null ? ' ' : 'Danas si $mesto. na listi izazova',
+                      style: t.naslov(velicina: 17, tezina: FontWeight.w700),
+                      textAlign: TextAlign.center,
+                    ),
+                    if (niz > 0)
+                      Text(
+                        niz == 1 ? '🔥 Počeo si niz! Igraj i sutra.' : '🔥 Niz: $niz dana zaredom',
+                        style: t.naslov(velicina: 16, boja: t.istaknut, tezina: FontWeight.w800),
+                        textAlign: TextAlign.center,
+                      ),
+                  ],
                 ),
               );
             },
@@ -741,17 +773,33 @@ class _KrajState extends State<Kraj> {
               ),
             ),
         const SizedBox(height: 20),
+        if (widget.s['pregled'] is List && (widget.s['pregled'] as List).isNotEmpty) ...[
+          TemaDugme(
+            poravnanje: MainAxisAlignment.center,
+            onTap: () => Navigator.of(context).push(
+              MaterialPageRoute(
+                builder: (_) => PregledEkran(pregled: (widget.s['pregled'] as List).cast<Map<String, dynamic>>()),
+              ),
+            ),
+            child: const Text('Pregled pitanja'),
+          ),
+          const SizedBox(height: 10),
+        ],
         if (widget.izazov)
           Text('Sledeći izazov stiže u ponoć.', textAlign: TextAlign.center, style: t.tekstStil(velicina: 14))
         else if (widget.moderator)
           TemaDugme(
             glavno: true,
             poravnanje: MainAxisAlignment.center,
-            onTap: () => widget.soba.posalji(widget.solo ? {'t': 'pokreni'} : {'t': 'revans'}),
-            child: Text(widget.solo ? 'Još jednom' : 'Revanš'),
+            onTap: () => widget.soba.posalji(widget.solo ? {'t': 'pokreni'} : {'t': 'ponovo'}),
+            child: Text(widget.solo ? 'Još jednom' : 'Igraj ponovo'),
           )
         else
-          Text('Čeka se da moderator pokrene revanš.', textAlign: TextAlign.center, style: t.tekstStil(velicina: 14)),
+          Text(
+            'Kad moderator pokrene novu partiju, prelaziš u novu sobu sam.',
+            textAlign: TextAlign.center,
+            style: t.tekstStil(velicina: 14),
+          ),
         if (!widget.solo && !widget.izazov) ...[const SizedBox(height: 12), ReakcijeTraka(soba: widget.soba)],
         const SizedBox(height: 10),
         TemaDugme(

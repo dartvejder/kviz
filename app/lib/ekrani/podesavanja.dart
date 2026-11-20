@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:package_info_plus/package_info_plus.dart';
 
 import '../obavestenja.dart';
 import '../tema.dart';
@@ -161,6 +162,15 @@ class _PodesavanjaEkranState extends State<PodesavanjaEkran> {
             'Izabrana tema se čuva na telefonu. Kad je izmenimo, telefon preuzme novu verziju.',
             textAlign: TextAlign.center,
             style: t.tekstStil(velicina: 12.5, tezina: FontWeight.w500, boja: t.tekst.withValues(alpha: .75)),
+          ),
+          const SizedBox(height: 28),
+          FutureBuilder(
+            future: PackageInfo.fromPlatform(),
+            builder: (context, snap) => Text(
+              snap.hasData ? 'Verzija ${snap.data!.version} (build ${snap.data!.buildNumber})' : ' ',
+              textAlign: TextAlign.center,
+              style: t.tekstStil(velicina: 12.5, tezina: FontWeight.w500, boja: t.tekst.withValues(alpha: .6)),
+            ),
           ),
         ],
       ),

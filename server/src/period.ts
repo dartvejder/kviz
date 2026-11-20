@@ -31,3 +31,25 @@ export function danas(sad = Date.now()): string {
     new Date(sad),
   );
 }
+
+/** Dan pre datog dana "YYYY-MM-DD". */
+export function juce(dan: string): string {
+  const [g, m, d] = dan.split("-").map(Number);
+  return new Date(Date.UTC(g, m - 1, d - 1)).toISOString().slice(0, 10);
+}
+
+/**
+ * Niz dana dnevnog izazova: koliko dana zaredom je igrač igrao, računajući od danas
+ * (ili od juče, ako danas još nije igrao: niz tada još traje).
+ */
+export function nizDana(dani: string[], dan: string): { niz: number; danas: boolean } {
+  const skup = new Set(dani);
+  const igraoDanas = skup.has(dan);
+  let d = igraoDanas ? dan : juce(dan);
+  let niz = 0;
+  while (skup.has(d)) {
+    niz++;
+    d = juce(d);
+  }
+  return { niz, danas: igraoDanas };
+}

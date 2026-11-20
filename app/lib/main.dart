@@ -105,11 +105,19 @@ class _PocetnaEkranState extends State<PocetnaEkran> {
   /// Moj današnji izazov: null dok se ne učita ili ako nije igran.
   Map<String, dynamic>? _izazov;
 
+  /// Niz dana dnevnog izazova: {niz, danas}.
+  Map<String, dynamic>? _niz;
+
   Future<void> _ucitajIzazov() async {
     try {
       final r = await Api.i.izazovTop();
       final ja = r['ja'] as Map<String, dynamic>?;
-      if (mounted) setState(() => _izazov = ja);
+      if (mounted) {
+        setState(() {
+          _izazov = ja;
+          _niz = r['niz'] as Map<String, dynamic>?;
+        });
+      }
       // Podsetnici: preskače se dan kad je izazov već odigran (i telefon traži dozvolu prvi put).
       await Obavestenja.i.zakazi(odigranDan: ja != null ? r['dan'] as String? : null, traziDozvolu: true);
     } catch (_) {
@@ -179,9 +187,11 @@ class _PocetnaEkranState extends State<PocetnaEkran> {
 
   String get _izazovTekst {
     final z = _izazov;
-    if (z == null) return 'Dnevni izazov';
+    final niz = _niz?['niz'] as int? ?? 0;
+    if (z == null) return niz > 0 ? 'Dnevni izazov · 🔥 ${dana(niz)} zaredom' : 'Dnevni izazov';
     if (z['zavrsen'] != true) return 'Izazov: prekinut danas';
-    return 'Izazov: ${z['poeni']} poena${z['mesto'] != null ? ' · ${z['mesto']}. mesto' : ''}';
+    return 'Izazov: ${z['poeni']} poena${z['mesto'] != null ? ' · ${z['mesto']}. mesto' : ''}'
+        '${niz > 1 ? ' · 🔥 $niz' : ''}';
   }
 
   @override
@@ -374,3 +384,6 @@ class _PocetnaEkranState extends State<PocetnaEkran> {
     );
   }
 }
+
+/// "1 dan", "2 dana", "5 dana", "21 dan".
+String dana(int n) => n % 10 == 1 && n % 100 != 11 ? '$n dan' : '$n dana';
