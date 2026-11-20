@@ -203,7 +203,7 @@ class _PocetnaEkranState extends State<PocetnaEkran> with WidgetsBindingObserver
         () async {
           try {
             final p = await Api.i.pregledSobe(s.kod).timeout(const Duration(seconds: 6));
-            // Istekla ili sam izašao iz nje: nema je više u spisku.
+            // Istekla ili sam izašao iz nje: nema je više u spisku (završena ostaje dok je ne obrišem).
             if (p == null || p['ja'] == false) {
               await MojeSobe.zaboravi(s.kod);
               return;
@@ -223,10 +223,16 @@ class _PocetnaEkranState extends State<PocetnaEkran> with WidgetsBindingObserver
     final faza = switch (p['faza']) {
       'cekaonica' => 'čeka igrače',
       'igra' => 'igra u toku',
-      _ => 'kraj partije',
+      _ => 'završena',
     };
     final n = p['igraca'] as int? ?? 0;
     return 'Soba ${s.kod} · $faza · $n ${n % 10 == 1 && n % 100 != 11 ? 'igrač' : 'igrača'}';
+  }
+
+  /// Kantica: soba nestaje samo sa ovog spiska (igrač ne izlazi iz nje na serveru).
+  Future<void> _ukloniSobu(String kod) async {
+    await MojeSobe.zaboravi(kod);
+    if (mounted) setState(() => _sobe = _sobe.where((x) => x.$1.kod != kod).toList());
   }
 
   Future<void> _uSobu(String kod) async {
@@ -434,10 +440,16 @@ class _PocetnaEkranState extends State<PocetnaEkran> with WidgetsBindingObserver
                     ),
                     for (final (soba, p) in _sobe)
                       VelikoDugme(
-                        ikona: Icons.meeting_room,
+                        ikona: p?['faza'] == 'kraj' ? Icons.emoji_events : Icons.meeting_room,
                         tekst: _opisSobe(soba, p),
                         glavno: p?['faza'] == 'igra',
+                        zatamnjeno: p?['faza'] == 'kraj',
                         onTap: _radim ? null : () => _uSobu(soba.kod),
+                        desno: IconButton(
+                          tooltip: 'Ukloni sa spiska',
+                          icon: const Icon(Icons.delete_outline),
+                          onPressed: () => _ukloniSobu(soba.kod),
+                        ),
                       ),
                     const SizedBox(height: 12),
                   ],

@@ -104,6 +104,8 @@ class _IgraEkranState extends State<IgraEkran> {
 
   @override
   void dispose() {
+    // Gotova partija ne ostaje u "Tvoje sobe" na početnom ekranu.
+    if (_s?['faza'] == 'kraj') MojeSobe.zaboravi(widget.kod);
     _sub?.cancel();
     _soba.zatvori();
     super.dispose();
