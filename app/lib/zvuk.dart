@@ -9,16 +9,21 @@ class Zvuk {
 
   bool zvuk = true;
   bool vibracija = true;
+
+  /// Otkucavanje sata dok teče vreme za pitanje (posebno od ostalih zvukova).
+  bool sat = true;
   final _plejeri = <String, AudioPlayer>{};
 
   Future<void> ucitaj() async {
     final p = await SharedPreferences.getInstance();
     zvuk = p.getBool('zvuk') ?? true;
     vibracija = p.getBool('vibracija') ?? true;
+    sat = p.getBool('sat') ?? true;
   }
 
-  Future<void> postavi({bool? zvuk, bool? vibracija}) async {
+  Future<void> postavi({bool? zvuk, bool? vibracija, bool? sat}) async {
     final p = await SharedPreferences.getInstance();
+    if (sat != null) await p.setBool('sat', this.sat = sat);
     if (zvuk != null) await p.setBool('zvuk', this.zvuk = zvuk);
     if (vibracija != null) await p.setBool('vibracija', this.vibracija = vibracija);
   }
@@ -44,10 +49,12 @@ class Zvuk {
     if (vibracija) HapticFeedback.heavyImpact();
   }
 
-  /// Otkucaj u poslednjih 5 sekundi.
-  void tik() {
-    _pusti('tik');
-    if (vibracija) HapticFeedback.selectionClick();
+  /// Otkucaj sata. [nivo] -1 je dublji „tak”, 0 običan „tik”, a 1–10 sve
+  /// viši i glasniji tik za poslednjih 10 sekundi. Vibrira samo pred sam kraj.
+  void otkucaj(int nivo) {
+    if (!sat) return;
+    _pusti(nivo < 0 ? 'sat_tak' : 'sat_${nivo.clamp(0, 10)}');
+    if (vibracija && nivo >= 6) HapticFeedback.selectionClick();
   }
 
   void klik() {

@@ -479,9 +479,15 @@ class PitanjeView extends StatefulWidget {
 
 class _PitanjeViewState extends State<PitanjeView> {
   Timer? _tik;
+  Timer? _sat;
   int? _mojIzbor;
   int _n = -1;
-  int _poslednjiTik = -1;
+
+  /// Da li sat treba da kuca (pitanje traje, a još nisi odgovorio).
+  bool _satKuca = false;
+
+  /// Preostalo vreme (ms) pri poslednjem otkucaju, da se ne kucne dvaput.
+  int _poslednjiOtkucaj = 1 << 30;
 
   @override
   void initState() {
@@ -492,7 +498,42 @@ class _PitanjeViewState extends State<PitanjeView> {
   @override
   void dispose() {
     _tik?.cancel();
+    _sat?.cancel();
     super.dispose();
+  }
+
+  /// Zakazuje sledeći otkucaj sata. Do poslednjih 10 sekundi naizmenično
+  /// tik-tak svake sekunde, od 10 do 5 sekundi tik koji se penje po tonu, a
+  /// u poslednjih 5 sekundi dva otkucaja u sekundi, sve viša i glasnija.
+  void _zakaziSat() {
+    _sat?.cancel();
+    if (!mounted || widget.s['faza'] == 'otkriveno') return;
+    final p = widget.s['pitanje'] as Map<String, dynamic>?;
+    if (p == null) return;
+    final n = p['n'] as int;
+    final sad = DateTime.now().millisecondsSinceEpoch + widget.soba.pomakSata;
+    final ostalo = (p['krajU'] as int) - sad;
+    if (ostalo <= 0) return;
+    final korak = ostalo > 5000 ? 1000 : 500;
+    var sledeci = (ostalo ~/ korak) * korak;
+    if (sledeci >= _poslednjiOtkucaj) sledeci = _poslednjiOtkucaj - korak;
+    if (sledeci <= 0) return;
+    _sat = Timer(Duration(milliseconds: (ostalo - sledeci).clamp(0, 600000)), () {
+      if (!mounted || _n != n) return;
+      _poslednjiOtkucaj = sledeci;
+      if (_satKuca && widget.s['faza'] != 'otkriveno') {
+        final int nivo;
+        if (sledeci > 10000) {
+          nivo = (sledeci ~/ 1000).isEven ? 0 : -1;
+        } else if (sledeci > 5000) {
+          nivo = 11 - sledeci ~/ 1000;
+        } else {
+          nivo = 6 + (5000 - sledeci) ~/ 1000;
+        }
+        Zvuk.i.otkucaj(nivo);
+      }
+      _zakaziSat();
+    });
   }
 
   void _odgovori(int k, int n) {
@@ -509,7 +550,8 @@ class _PitanjeViewState extends State<PitanjeView> {
     if (n != _n) {
       _n = n;
       _mojIzbor = null;
-      _poslednjiTik = -1;
+      _poslednjiOtkucaj = 1 << 30;
+      WidgetsBinding.instance.addPostFrameCallback((_) => _zakaziSat());
     }
     final otkriveno = widget.s['faza'] == 'otkriveno';
     final ja = Api.i.nalog!.id;
@@ -528,11 +570,8 @@ class _PitanjeViewState extends State<PitanjeView> {
     final iskorisceno = (mene?['dzokeri'] as Map?) ?? const {};
     final mogu = !otkriveno && uIgri && _mojIzbor == null;
 
-    // Otkucaji u poslednjih 5 sekundi, dok nisi odgovorio.
-    if (!otkriveno && mogu && sekunde <= 5 && sekunde > 0 && sekunde != _poslednjiTik) {
-      _poslednjiTik = sekunde;
-      Zvuk.i.tik();
-    }
+    // Sat kuca dok teče vreme i dok nisi odgovorio (vidi _zakaziSat).
+    _satKuca = mogu;
 
     Widget odgovor(int k) {
       final tacan = otkriveno && k == p['tacan'];
