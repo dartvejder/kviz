@@ -121,6 +121,18 @@ class _PodesavanjaEkranState extends State<PodesavanjaEkran> {
           ),
           SwitchListTile(
             contentPadding: EdgeInsets.zero,
+            title: const Text('Otkucavanje sata'),
+            subtitle: const Text('Tik-tak dok teče vreme, sve brže i više pred kraj'),
+            value: Zvuk.i.sat,
+            onChanged: Zvuk.i.zvuk
+                ? (v) async {
+                    await Zvuk.i.postavi(sat: v);
+                    setState(() {});
+                  }
+                : null,
+          ),
+          SwitchListTile(
+            contentPadding: EdgeInsets.zero,
             title: const Text('Vibracija'),
             value: Zvuk.i.vibracija,
             onChanged: (v) async {
