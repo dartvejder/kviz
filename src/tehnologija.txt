@@ -420,3 +420,17 @@ Koja je rezolucija 4K (UHD)?|3840 × 2160|1920 × 1080|7680 × 4320|2560 × 1440
 Šta znači piksel?|Najmanja tačka slike na ekranu|Jedinica zvuka|Vrsta baterije|Brzina procesora
 Kako se meri brzina procesora?|U hercima (GHz)|U bajtovima|U vatima|U pikselima
 Kako se meri brzina interneta?|U bitovima u sekundi (Mb/s)|U hercima|U pikselima|U voltima
+Kako se zvao jedan od prvih crva koji se proširio internetom 1988?|Morisov crv|ILOVEYOU|Staksnet|Melisa
+Koji je bio prvi automobil kompanije Tesla, predstavljen 2008?|Roudster|Model S|Model 3|Sajbertrak
+Ko je stvorio programski jezik Java?|Džejms Gosling|Denis Riči|Bjarne Strustrup|Gvido van Rosum
+Koja su bila prva dva slova poslata preko ARPANET-a 1969, pre pada sistema?|LO|OK|HI|AB
+Koje godine je poslata prva SMS poruka („Merry Christmas”)?|1992.|1985.|1999.|2001.
+Kako se zove lažni video ili snimak glasa napravljen veštačkom inteligencijom?|Dipfejk|Mim|Gif|Strim
+Koja popularna Linuks distribucija nosi afričku reč koja znači „ljudskost”?|Ubuntu|Debijan|Fedora|Mint
+Koja kompanija pravi procesore Ryzen?|AMD|Intel|Kvalkom|Nvidia
+Koja aplikacija za video-sastanke je postala najpoznatija tokom pandemije 2020?|Zoom|Skajp|Viber|Telegram
+Programeri iz koje zemlje su napisali Skajp?|Estonije|Finske|Švedske|Irske
+Koja aplikacija je osnovana 2009. u San Francisku i proslavila naručivanje prevoza telefonom?|Uber|Lift|Bolt|Kar Go
+Kako se zove mali, jeftini britanski računar veličine kartice, napravljen za učenje programiranja?|Raspberi Paj|Arduino|Komodor 64|ZX Spektrum
+Iz koje zemlje potiče razvojna ploča Arduino?|Italije|Nemačke|SAD|Japana
+Ko je 2007. predložio upotrebu heštega (#) na Tviteru?|Kris Mesina|Džek Dorsi|Ilon Mask|Mark Zakerberg
